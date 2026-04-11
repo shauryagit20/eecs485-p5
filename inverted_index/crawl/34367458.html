@@ -1,0 +1,3426 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Windows Driver Model - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"0b7c7e4a-9d02-41e0-935c-f68e8b2c3f1a","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Windows_Driver_Model","wgTitle":"Windows Driver Model","wgCurRevisionId":1240416333,"wgRevisionId":1240416333,"wgArticleId":252077,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from May 2024","All articles needing additional references","All articles with unsourced statements","Articles with unsourced statements from February 2024","Webarchive template wayback links","Device drivers","Microsoft application programming interfaces","Windows 98"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Windows_Driver_Model","wgRelevantArticleId":252077,
+"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1329009","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model",
+"platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar",
+"ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.23" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Windows Driver Model - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Windows_Driver_Model" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Windows_Driver_Model&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Windows_Driver_Model" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Windows_Driver_Model"/>
+  <meta eecs485_docid="34367458"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Windows_Driver_Model rootpage-Windows_Driver_Model skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Windows+Driver+Model" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Windows+Driver+Model" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Windows+Driver+Model" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Windows+Driver+Model" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Overview">
+           <a class="vector-toc-link" href="#Overview">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Overview
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Overview-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Overview subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Overview-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Device_kernel-mode_drivers">
+             <a class="vector-toc-link" href="#Device_kernel-mode_drivers">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.1
+               </span>
+               <span>
+                Device kernel-mode drivers
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Device_kernel-mode_drivers-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Object-oriented_driver_stack">
+             <a class="vector-toc-link" href="#Object-oriented_driver_stack">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.2
+               </span>
+               <span>
+                Object-oriented driver stack
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Object-oriented_driver_stack-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Device_drivers_for_different_Windows_operating_systems">
+           <a class="vector-toc-link" href="#Device_drivers_for_different_Windows_operating_systems">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Device drivers for different Windows operating systems
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Device_drivers_for_different_Windows_operating_systems-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Device_Manager">
+           <a class="vector-toc-link" href="#Device_Manager">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Device Manager
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Device_Manager-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Criticism">
+           <a class="vector-toc-link" href="#Criticism">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Criticism
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Criticism-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              7
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Windows Driver Model
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 11 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-11" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          11 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-da mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Dansk" data-language-local-name="Danish" data-title="Windows Driver Model" href="https://da.wikipedia.org/wiki/Windows_Driver_Model" hreflang="da" lang="da" title="Windows Driver Model – Danish">
+             <span>
+              Dansk
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Windows Driver Model" href="https://es.wikipedia.org/wiki/Windows_Driver_Model" hreflang="es" lang="es" title="Windows Driver Model – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Windows Driver Model" href="https://fr.wikipedia.org/wiki/Windows_Driver_Model" hreflang="fr" lang="fr" title="Windows Driver Model – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="윈도우 드라이버 모델" href="https://ko.wikipedia.org/wiki/%EC%9C%88%EB%8F%84%EC%9A%B0_%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84_%EB%AA%A8%EB%8D%B8" hreflang="ko" lang="ko" title="윈도우 드라이버 모델 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Windows Driver Model" href="https://it.wikipedia.org/wiki/Windows_Driver_Model" hreflang="it" lang="it" title="Windows Driver Model – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="Windows Driver Model" href="https://nl.wikipedia.org/wiki/Windows_Driver_Model" hreflang="nl" lang="nl" title="Windows Driver Model – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="Windows Driver Model" href="https://ja.wikipedia.org/wiki/Windows_Driver_Model" hreflang="ja" lang="ja" title="Windows Driver Model – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Windows Driver Model" href="https://pt.wikipedia.org/wiki/Windows_Driver_Model" hreflang="pt" lang="pt" title="Windows Driver Model – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Windows Driver Model" href="https://ru.wikipedia.org/wiki/Windows_Driver_Model" hreflang="ru" lang="ru" title="Windows Driver Model – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sv mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Svenska" data-language-local-name="Swedish" data-title="Windows Driver Model" href="https://sv.wikipedia.org/wiki/Windows_Driver_Model" hreflang="sv" lang="sv" title="Windows Driver Model – Swedish">
+             <span>
+              Svenska
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="Windows Driver Model" href="https://zh.wikipedia.org/wiki/Windows_Driver_Model" hreflang="zh" lang="zh" title="Windows Driver Model – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1329009#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Windows_Driver_Model" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Windows_Driver_Model" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Windows_Driver_Model">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Windows_Driver_Model&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Windows_Driver_Model&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Windows_Driver_Model">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Windows_Driver_Model&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Windows_Driver_Model&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Windows_Driver_Model" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Windows_Driver_Model" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Windows_Driver_Model&amp;oldid=1240416333" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Windows_Driver_Model&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Windows_Driver_Model&amp;id=1240416333&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWindows_Driver_Model">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWindows_Driver_Model">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1329009" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Windows_Driver_Model&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Windows_Driver_Model&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          Not to be confused with the
+          <a href="/wiki/Windows_Display_Driver_Model" title="Windows Display Driver Model">
+           Windows Display Driver Model
+          </a>
+          (WDDM), a display driver architecture introduced with
+          <a href="/wiki/Windows_Vista" title="Windows Vista">
+           Windows Vista
+          </a>
+          .
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+               </a>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              This article
+              <b>
+               needs additional citations for
+               <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                verification
+               </a>
+              </b>
+              .
+              <span class="hide-when-compact">
+               Please help
+               <a href="/wiki/Special:EditPage/Windows_Driver_Model" title="Special:EditPage/Windows Driver Model">
+                improve this article
+               </a>
+               by
+               <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                adding citations to reliable sources
+               </a>
+               . Unsourced material may be challenged and removed.
+               <br/>
+               <small>
+                <span class="plainlinks">
+                 <i>
+                  Find sources:
+                 </i>
+                 <a class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Windows+Driver+Model%22" rel="nofollow">
+                  "Windows Driver Model"
+                 </a>
+                 –
+                 <a class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Windows+Driver+Model%22+-wikipedia&amp;tbs=ar:1" rel="nofollow">
+                  news
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?&amp;q=%22Windows+Driver+Model%22&amp;tbs=bkt:s&amp;tbm=bks" rel="nofollow">
+                  newspapers
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Windows+Driver+Model%22+-wikipedia" rel="nofollow">
+                  books
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://scholar.google.com/scholar?q=%22Windows+Driver+Model%22" rel="nofollow">
+                  scholar
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Windows+Driver+Model%22&amp;acc=on&amp;wc=on" rel="nofollow">
+                  JSTOR
+                 </a>
+                </span>
+               </small>
+              </span>
+              <span class="date-container">
+               <i>
+                (
+                <span class="date">
+                 May 2024
+                </span>
+                )
+               </i>
+              </span>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          In
+          <a href="/wiki/Computing" title="Computing">
+           computing
+          </a>
+          , the
+          <b>
+           Windows Driver Model
+          </b>
+          (
+          <b>
+           WDM
+          </b>
+          ) –  also known at one point as the
+          <b>
+           Win32 Driver Model
+          </b>
+          –  is a framework for
+          <a href="/wiki/Device_driver" title="Device driver">
+           device drivers
+          </a>
+          that was introduced with
+          <a href="/wiki/Windows_98" title="Windows 98">
+           Windows 98
+          </a>
+          and
+          <a href="/wiki/Windows_2000" title="Windows 2000">
+           Windows 2000
+          </a>
+          to replace
+          <a href="/wiki/VxD" title="VxD">
+           VxD
+          </a>
+          , which was used on older versions of Windows such as
+          <a href="/wiki/Windows_95" title="Windows 95">
+           Windows 95
+          </a>
+          and
+          <a class="mw-redirect" href="/wiki/Windows_3.1x" title="Windows 3.1x">
+           Windows 3.1
+          </a>
+          , as well as the
+          <a class="mw-redirect" href="/wiki/Windows_NT_Driver_Model" title="Windows NT Driver Model">
+           Windows NT Driver Model
+          </a>
+          .
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Overview">
+            Overview
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Windows_Driver_Model&amp;action=edit&amp;section=1" title="Edit section: Overview">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           WDM drivers are layered in a stack and communicate with each other via
+           <a class="mw-redirect" href="/wiki/I/O_request_packets" title="I/O request packets">
+            I/O request packets
+           </a>
+           (IRPs). The Microsoft Windows Driver Model unified driver models for the Windows 9x and Windows NT product lines by standardizing requirements and reducing the amount of code that needed to be written. WDM drivers will not run on operating systems earlier than Windows 98 or Windows 2000, such as Windows 95 (before the OSR2 update that sideloads the WDM model), Windows NT 4.0 and Windows 3.1. By conforming to WDM, drivers can be
+           <a href="/wiki/Binary-code_compatibility" title="Binary-code compatibility">
+            binary compatible
+           </a>
+           and
+           <a href="/wiki/Source-code_compatibility" title="Source-code compatibility">
+            source-compatible
+           </a>
+           across Windows 98, Windows 98 Second Edition,
+           <a href="/wiki/Windows_Me" title="Windows Me">
+            Windows Me
+           </a>
+           , Windows 2000,
+           <a href="/wiki/Windows_XP" title="Windows XP">
+            Windows XP
+           </a>
+           ,
+           <a href="/wiki/Windows_Server_2003" title="Windows Server 2003">
+            Windows Server 2003
+           </a>
+           and
+           <a href="/wiki/Windows_Vista" title="Windows Vista">
+            Windows Vista
+           </a>
+           (for backwards compatibility) on
+           <a href="/wiki/X86" title="X86">
+            x86
+           </a>
+           -based computers
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="Drivers on windows went through some major changes in vista and i feel this claim about vista needs a citation supporting it (February 2024)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           . WDM drivers are designed to be
+           <a href="/wiki/Forward_compatibility" title="Forward compatibility">
+            forward-compatible
+           </a>
+           so that a WDM driver can run on a version of Windows newer than what the driver was initially written for, but doing that would mean that the driver cannot take advantage of any new features introduced with the new version. WDM is generally not
+           <a href="/wiki/Backward_compatibility" title="Backward compatibility">
+            backward-compatible
+           </a>
+           , that is, a WDM driver is not guaranteed to run on any older version of Windows.  For example,
+           <a href="/wiki/Windows_XP" title="Windows XP">
+            Windows XP
+           </a>
+           can use a driver written for
+           <a href="/wiki/Windows_2000" title="Windows 2000">
+            Windows 2000
+           </a>
+           but will not make use of any of the new WDM features that were introduced in Windows XP. However, a driver written for Windows XP may or may not load on Windows 2000.
+          </p>
+          <p>
+           WDM exists in the intermediary layer of Windows 2000
+           <a class="mw-redirect" href="/wiki/Kernel-mode" title="Kernel-mode">
+            kernel-mode
+           </a>
+           drivers and was introduced to increase the functionality and ease of writing drivers for Windows. Although WDM was mainly designed to be binary and source compatible between
+           <a href="/wiki/Windows_98" title="Windows 98">
+            Windows 98
+           </a>
+           and Windows 2000, this may not always be desired and so specific drivers can be developed for either operating system.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Device_kernel-mode_drivers">
+            Device kernel-mode drivers
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Windows_Driver_Model&amp;action=edit&amp;section=2" title="Edit section: Device kernel-mode drivers">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           With the Windows Drivers Model (WDM) for devices Microsoft implements an approach to
+           <a class="mw-redirect" href="/wiki/Kernel_mode" title="Kernel mode">
+            kernel mode
+           </a>
+           drivers that is unique to
+           <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">
+            Windows operating systems
+           </a>
+           . WDM implements a layered architecture for
+           <a class="mw-redirect" href="/wiki/Device_drivers" title="Device drivers">
+            device drivers
+           </a>
+           , and every device of a computer is served by a stack of drivers. However, every driver in that stack can chain isolate hardware-independent features from the driver above and beneath it. So drivers in the stack do not need to interact directly with one another. WDM defines architecture and device procedures for a range of devices, such as display and the
+           <a class="mw-redirect" href="/wiki/Network_card" title="Network card">
+            network card
+           </a>
+           , known as
+           <a href="/wiki/Network_Driver_Interface_Specification" title="Network Driver Interface Specification">
+            Network Driver Interface Specification
+           </a>
+           (NDIS). In the NDIS architecture the layered network drivers include lower-level drivers that manage the hardware and upper-level drivers that implement network data transport, such as the
+           <a href="/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">
+            Transmission Control Protocol
+           </a>
+           (TCP).
+           <sup class="reference" id="cite_ref-Vieira_1-0">
+            <a href="#cite_note-Vieira-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           While WDM defines three types of device drivers, not all driver stacks for a given device contain all types of device drivers. The three WDM device driver types are:
+           <sup class="reference" id="cite_ref-Vieira_1-1">
+            <a href="#cite_note-Vieira-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           <b>
+            Bus driver
+           </b>
+           : For every
+           <a href="/wiki/Bus_(computing)" title="Bus (computing)">
+            bus
+           </a>
+           on the mainboard there is a one bus driver, with the primary responsibility for the identification of all devices connected to that bus and responding to plug and play events. Microsoft will provide bus drivers as part of the operating system,
+           <sup class="reference" id="cite_ref-Vieira_1-2">
+            <a href="#cite_note-Vieira-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           such as
+           <a href="/wiki/Peripheral_Component_Interconnect" title="Peripheral Component Interconnect">
+            PCI
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Plug-And-Play" title="Plug-And-Play">
+            PnPISA
+           </a>
+           ,
+           <a href="/wiki/SCSI" title="SCSI">
+            SCSI
+           </a>
+           ,
+           <a href="/wiki/USB" title="USB">
+            USB
+           </a>
+           and
+           <a class="mw-redirect" href="/wiki/FireWire" title="FireWire">
+            FireWire
+           </a>
+           .
+          </p>
+          <p>
+           <b>
+            Function driver
+           </b>
+           : this is the principal driver for a device and it provides the operational interface for a device by handling read and write operations. Function drivers are written by the device vendors, and for their interaction with the hardware they depend on a specific bus driver being present in the Windows operating system.
+           <sup class="reference" id="cite_ref-Vieira_1-3">
+            <a href="#cite_note-Vieira-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           <b>
+            Filter driver
+           </b>
+           : This driver is optional, and can modify the behaviour of a device, such as input and output requests. These drivers can be implemented as lower-level and upper-level filter drivers.
+           <sup class="reference" id="cite_ref-Vieira_1-4">
+            <a href="#cite_note-Vieira-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Object-oriented_driver_stack">
+            Object-oriented driver stack
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Windows_Driver_Model&amp;action=edit&amp;section=3" title="Edit section: Object-oriented driver stack">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Function drivers and bus drivers are often implemented as driver/minidriver pairs, which in practice is either a class or miniclass, or a port or miniport pair.
+           <sup class="reference" id="cite_ref-Blunden_2-0">
+            <a href="#cite_note-Blunden-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Bus drivers for devices attached to a bus are implemented as class drivers and are hardware-agnostic. They will support the operations of a certain type of device. Windows operating systems include a number of class drivers, such as the kbdclass.sys driver for keyboards. Miniclass drivers on the other hand are supplied by the vendor of a device, and only support device specific operations, for a particular device of a given class.
+           <sup class="reference" id="cite_ref-Blunden_2-1">
+            <a href="#cite_note-Blunden-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Port drivers support general
+           <a href="/wiki/Input/output" title="Input/output">
+            input/output
+           </a>
+           (I/O) operations for a peripheral hardware interface. The core functionality of port drivers is mandated by the operating system, and Windows operating systems integrate a variety of port drivers.  For example, the i8042prt.sys port driver for the 8042 microcontroller connects
+           <a class="mw-redirect" href="/wiki/PS/2" title="PS/2">
+            PS/2
+           </a>
+           keyboards to the mainboard peripheral bus. The miniport drivers, like the miniclass drivers, are supplied by the hardware vendors and support only device specific operations of peripheral hardware that is connected to a port on the mainboard.
+           <sup class="reference" id="cite_ref-3">
+            <a href="#cite_note-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-4">
+            <a href="#cite_note-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Each driver that processes an I/O request for a device has a corresponding object, which is loaded into
+           <a class="mw-redirect" href="/wiki/Main_memory" title="Main memory">
+            main memory
+           </a>
+           . A device object is created by the Windows operating system from the associated device class. Device objects contain structures of type DEVICE_OBJECT, which store pointers to their driver. At run time these pointers are used to locate a driver's dispatch routine and member functions. In the WDM driver stack, the filter driver device object, known as the upper filter, will receive an
+           <a href="/wiki/I/O_request_packet" title="I/O request packet">
+            I/O request packet
+           </a>
+           (IRP) for a device from the I/O manager. If the upper filter driver can not serve the request, it will locate the object of the driver one step down in the driver stack. The IRP is passed down the driver stack by calling the function IoCallDriver(), and processed by the function driver device object, also known as functional device object. The function driver device object in turn may pass the IRP to the lower filter, another filter device object. Then the IRP may be passed down to the bus driver, which operates as the physical device object. The bus driver object is at the bottom of the driver stack, and interacts with the
+           <a class="mw-redirect" href="/wiki/Hardware_abstraction_layer" title="Hardware abstraction layer">
+            hardware abstraction layer
+           </a>
+           , which is part of the
+           <a href="/wiki/Architecture_of_Windows_NT" title="Architecture of Windows NT">
+            Windows operating system kernel
+           </a>
+           and allows Windows operating systems to run on a variety of
+           <a href="/wiki/Processor_(computing)" title="Processor (computing)">
+            processors
+           </a>
+           , different
+           <a href="/wiki/Memory_management_unit" title="Memory management unit">
+            memory management unit
+           </a>
+           architectures, and a variety of computer systems with different I/O bus architectures.
+           <sup class="reference" id="cite_ref-5">
+            <a href="#cite_note-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The execution of an IRP is finished when any of the driver objects in the stack returns the request back to the I/O manager, with the result and a status flag.
+           <sup class="reference" id="cite_ref-Penkler_6-0">
+            <a href="#cite_note-Penkler-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Device_drivers_for_different_Windows_operating_systems">
+            Device drivers for different Windows operating systems
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Windows_Driver_Model&amp;action=edit&amp;section=4" title="Edit section: Device drivers for different Windows operating systems">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The WDM framework was developed by Microsoft to simplify the communication between the operating system and drivers inside the kernel. In Windows operating systems, drivers are implemented as
+           <a class="mw-redirect" href="/wiki/Dynamic_Link_Libraries" title="Dynamic Link Libraries">
+            Dynamic Link Libraries
+           </a>
+           .DLL or .SYS files. WDM compliant drivers must follow rules of design, initialisation, plug-and-play, power management and memory allocation. In practice WDM driver programmers reuse large pieces of code when building new
+           <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">
+            object-oriented
+           </a>
+           drivers. This means that drivers in the WDM stack may contain residual functionality, which is not documented in specifications.
+           <sup class="reference" id="cite_ref-Penkler_6-1">
+            <a href="#cite_note-Penkler-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Drivers that have passed the Microsoft quality test are digitally signed by Microsoft. The
+           <a href="/wiki/WHQL_Testing" title="WHQL Testing">
+            Microsoft Hardware Compatibility Tests
+           </a>
+           and the Driver Development Kit include reliability and stress tests.
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           A device driver that is not designed for a specific hardware component may allow another device to function. This is because the basic functionality of a hardware device class is similar. The functionality of the video card class, for example, allows the Microsoft Basic Display Adapter driver to work with a wide variety of video cards. However, installing the wrong driver for a device will mean that the full functionality of the device can not be used, and may result in poor performance and the destabilization of the Windows operating system. Hardware device vendors may release updated device drivers for particular Windows operating systems, to improve performance, add functionality or fix
+           <a href="/wiki/Software_bug" title="Software bug">
+            bugs
+           </a>
+           . If a device is not working as expected the latest device drivers should be downloaded from the vendor website and installed.
+           <sup class="reference" id="cite_ref-:2_8-0">
+            <a href="#cite_note-:2-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Device drivers are designed for particular Windows operating system versions, and device drivers for a previous version of Windows may not work correctly or at all with other versions. Because many device drivers run in kernel mode installing drivers for a previous operating system version may destabilise the Windows operating system. Migrating a computer to a higher version of a Windows operating system therefore requires that new device drivers are installed for all hardware components. Finding up to date device drivers and installing them for
+           <a href="/wiki/Windows_10" title="Windows 10">
+            Windows 10
+           </a>
+           has introduced complications into the migration process.
+           <sup class="reference" id="cite_ref-:2_8-1">
+            <a href="#cite_note-:2-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Common device driver compatibility issues include: a
+           <a class="mw-redirect" href="/wiki/32-bit" title="32-bit">
+            32-bit
+           </a>
+           device driver is required for a 32-bit Windows operating system, and a
+           <a class="mw-redirect" href="/wiki/64-bit" title="64-bit">
+            64-bit
+           </a>
+           device driver is required for a 64-bit Windows operating system. 64-bit device drivers must be signed by Microsoft, because they run in kernel mode and have unrestricted access to the computer hardware. For operating systems prior to Windows 10 Microsoft allowed vendors to sign their 64-bit drivers themselves, assuming vendors had undertaken compatibility tests. However, Windows 10 64-bit drivers now need to be signed by Microsoft. Therefore, device vendors have to submit their drivers to Microsoft for testing and approval. The driver installation package includes all files in the .inf directory, and all files in the package need to be installed, otherwise the installation of the device driver may fail. For operating system versions before Windows 10 not all files necessary for the driver installation were included in the package, as this requirement was not consistently enforced. Some device driver installers have a user interface
+           <a class="mw-redirect" href="/wiki/GUI" title="GUI">
+            GUI
+           </a>
+           , often requiring user configuration input. The absence of a user interface does not mean that the installation of the device driver is not successful. Besides, Windows 10 device drivers are not allowed to include a user interface. The
+           <a href="/wiki/Network_Driver_Interface_Specification" title="Network Driver Interface Specification">
+            Network Driver Interface Specification
+           </a>
+           (NDIS) 10.x is used for network devices by the Windows 10 operating system. Network device drivers for
+           <a href="/wiki/Windows_XP" title="Windows XP">
+            Windows XP
+           </a>
+           use NDIS 5.x and may work with subsequent Windows operating systems, but for performance reasons network device drivers should implement NDIS 6.0 or higher.
+           <sup class="reference" id="cite_ref-:2_8-2">
+            <a href="#cite_note-:2-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Similarly,
+           <a class="mw-redirect" href="/wiki/WDDM" title="WDDM">
+            WDDM
+           </a>
+           is the driver model for Windows Vista and up, which replaces XPDM used in graphics drivers.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Device_Manager">
+            Device Manager
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Windows_Driver_Model&amp;action=edit&amp;section=5" title="Edit section: Device Manager">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The
+           <a href="/wiki/Device_Manager" title="Device Manager">
+            Device Manager
+           </a>
+           is a Control Panel applet in Microsoft Windows operating systems. It allows users to view and control the hardware attached to the computer. It allows users to view and modify hardware device properties, and is also the primary tool to manage device drivers.
+           <sup class="reference" id="cite_ref-:2_8-3">
+            <a href="#cite_note-:2-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Criticism">
+            Criticism
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Windows_Driver_Model&amp;action=edit&amp;section=6" title="Edit section: Criticism">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The Windows Driver Model, while a significant improvement over the
+           <a href="/wiki/VxD" title="VxD">
+            VxD
+           </a>
+           and
+           <a class="mw-redirect" href="/wiki/Windows_NT_Driver_Model" title="Windows NT Driver Model">
+            Windows NT Driver Model
+           </a>
+           used before it, has been criticised by driver software developers,
+           <sup class="reference" id="cite_ref-9">
+            <a href="#cite_note-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           most significantly for the following:
+          </p>
+          <ul>
+           <li>
+            Interactions with
+            <a href="/wiki/Power_management" title="Power management">
+             power management
+            </a>
+            events and
+            <a href="/wiki/Plug_and_play" title="Plug and play">
+             plug and play
+            </a>
+            are difficult. This can lead to situations where Windows machines cannot enter or exit
+            <a href="/wiki/Sleep_mode" title="Sleep mode">
+             sleep modes
+            </a>
+            correctly due to bugs in driver code.
+           </li>
+           <li>
+            I/O cancellation is difficult to get right.
+            <sup class="reference" id="cite_ref-10">
+             <a href="#cite_note-10">
+              <span class="cite-bracket">
+               [
+              </span>
+              10
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Complex boilerplate support code is required for every driver.
+           </li>
+           <li>
+            There is no support for writing pure
+            <a class="mw-redirect" href="/wiki/User-mode" title="User-mode">
+             user-mode
+            </a>
+            drivers.
+           </li>
+          </ul>
+          <p>
+           There were also a number of concerns about the quality of documentation and samples that Microsoft provided.
+          </p>
+          <p>
+           Because of these issues, Microsoft has released a new set of frameworks on top of WDM, called the
+           <a href="/wiki/Windows_Driver_Frameworks" title="Windows Driver Frameworks">
+            Windows Driver Frameworks
+           </a>
+           (WDF; formerly Windows Driver Foundation), which includes
+           <a href="/wiki/Kernel-Mode_Driver_Framework" title="Kernel-Mode Driver Framework">
+            Kernel-Mode Driver Framework
+           </a>
+           (KMDF) and
+           <a href="/wiki/User-Mode_Driver_Framework" title="User-Mode Driver Framework">
+            User-Mode Driver Framework
+           </a>
+           (UMDF).
+           <a href="/wiki/Windows_Vista" title="Windows Vista">
+            Windows Vista
+           </a>
+           supports both pure WDM and the newer WDF. KMDF is also available for download for Windows XP and even Windows 2000, while UMDF is available for Windows XP and above.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Windows_Driver_Model&amp;action=edit&amp;section=7" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Windows_Driver_Frameworks" title="Windows Driver Frameworks">
+             Windows Driver Frameworks
+            </a>
+            (WDF)
+            <ul>
+             <li>
+              <a href="/wiki/Kernel-Mode_Driver_Framework" title="Kernel-Mode Driver Framework">
+               Kernel-Mode Driver Framework
+              </a>
+              (KMDF)
+             </li>
+             <li>
+              <a href="/wiki/User-Mode_Driver_Framework" title="User-Mode Driver Framework">
+               User-Mode Driver Framework
+              </a>
+              (UMDF)
+             </li>
+            </ul>
+           </li>
+           <li>
+            <a href="/wiki/Windows_Display_Driver_Model" title="Windows Display Driver Model">
+             Windows Display Driver Model
+            </a>
+            (WDDM)
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Windows_Driver_Model&amp;action=edit&amp;section=8" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap">
+            <ol class="references">
+             <li id="cite_note-Vieira-1">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-Vieira_1-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Vieira_1-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Vieira_1-2">
+                <sup>
+                 <i>
+                  <b>
+                   c
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Vieira_1-3">
+                <sup>
+                 <i>
+                  <b>
+                   d
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Vieira_1-4">
+                <sup>
+                 <i>
+                  <b>
+                   e
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation book cs1" id="CITEREFMarco_VieiraJoao_Carlos_Cunha2013">
+                Marco Vieira; Joao Carlos Cunha, eds. (2013).
+                <i>
+                 Dependable Computing: 14th European Workshop, EWDC 2013, Coimbra, Portugal, May 15-16, 2013, Proceedings
+                </i>
+                . Springer. p. 64.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9783642387890" title="Special:BookSources/9783642387890">
+                 <bdi>
+                  9783642387890
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Dependable+Computing%3A+14th+European+Workshop%2C+EWDC+2013%2C+Coimbra%2C+Portugal%2C+May+15-16%2C+2013%2C+Proceedings&amp;rft.pages=64&amp;rft.pub=Springer&amp;rft.date=2013&amp;rft.isbn=9783642387890&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWindows+Driver+Model">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Blunden-2">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-Blunden_2-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Blunden_2-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFBill_Blunden2009">
+                Bill Blunden (2009).
+                <i>
+                 The Rootkit Arsenal: Escape and Evasion
+                </i>
+                . Jones &amp; Bartlett Publishers. p. 460.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9781449661229" title="Special:BookSources/9781449661229">
+                 <bdi>
+                  9781449661229
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Rootkit+Arsenal%3A+Escape+and+Evasion&amp;rft.pages=460&amp;rft.pub=Jones+%26+Bartlett+Publishers&amp;rft.date=2009&amp;rft.isbn=9781449661229&amp;rft.au=Bill+Blunden&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWindows+Driver+Model">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFBill_Blunden2009">
+                Bill Blunden (2009).
+                <i>
+                 The Rootkit Arsenal: Escape and Evasion
+                </i>
+                . Jones &amp; Bartlett Publishers. p. 460.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9781449661229" title="Special:BookSources/9781449661229">
+                 <bdi>
+                  9781449661229
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Rootkit+Arsenal%3A+Escape+and+Evasion&amp;rft.pages=460&amp;rft.pub=Jones+%26+Bartlett+Publishers&amp;rft.date=2009&amp;rft.isbn=9781449661229&amp;rft.au=Bill+Blunden&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWindows+Driver+Model">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://www.microsoft.com/whdc/driver/wdf/wdf-intro.mspx" rel="nofollow">
+                 "Introduction to the Windows Driver Foundation"
+                </a>
+                .
+                <a href="/wiki/Microsoft_Developer_Network" title="Microsoft Developer Network">
+                 Microsoft Developer Network
+                </a>
+                . 2006-10-13
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2010-12-06
+                 </span>
+                </span>
+                .
+                <q>
+                 The device class-specific driver models are typically structured as a port driver written by Microsoft paired with a miniport driver written by an independent hardware vendor. The port driver does much of the work required for the device class, and the miniport driver supports device-specific characteristics.
+                </q>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Introduction+to+the+Windows+Driver+Foundation&amp;rft.pub=Microsoft+Developer+Network&amp;rft.date=2006-10-13&amp;rft_id=http%3A%2F%2Fwww.microsoft.com%2Fwhdc%2Fdriver%2Fwdf%2Fwdf-intro.mspx&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWindows+Driver+Model">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFBill_Blunden2009">
+                Bill Blunden (2009).
+                <i>
+                 The Rootkit Arsenal: Escape and Evasion
+                </i>
+                . Jones &amp; Bartlett Publishers. pp. 460–461.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9781449661229" title="Special:BookSources/9781449661229">
+                 <bdi>
+                  9781449661229
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Rootkit+Arsenal%3A+Escape+and+Evasion&amp;rft.pages=460-461&amp;rft.pub=Jones+%26+Bartlett+Publishers&amp;rft.date=2009&amp;rft.isbn=9781449661229&amp;rft.au=Bill+Blunden&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWindows+Driver+Model">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Penkler-6">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-Penkler_6-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Penkler_6-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFDave_PenklerManfred_ReitenspiessFrancis_Tam2006">
+                Dave Penkler; Manfred Reitenspiess; Francis Tam, eds. (2006).
+                <i>
+                 Service Availability: Third International Service Availability Symposium, ISAS 2006, Helsinki, Finland, May 15-16, 2006, Revised Selected Papers
+                </i>
+                . Springer Science &amp; Business Media. p. 124.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9783540687245" title="Special:BookSources/9783540687245">
+                 <bdi>
+                  9783540687245
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Service+Availability%3A+Third+International+Service+Availability+Symposium%2C+ISAS+2006%2C+Helsinki%2C+Finland%2C+May+15-16%2C+2006%2C+Revised+Selected+Papers&amp;rft.pages=124&amp;rft.pub=Springer+Science+%26+Business+Media&amp;rft.date=2006&amp;rft.isbn=9783540687245&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWindows+Driver+Model">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFDave_PenklerManfred_ReitenspiessFrancis_Tam2006">
+                Dave Penkler; Manfred Reitenspiess; Francis Tam, eds. (2006).
+                <i>
+                 Service Availability: Third International Service Availability Symposium, ISAS 2006, Helsinki, Finland, May 15-16, 2006, Revised Selected Papers
+                </i>
+                . Springer Science &amp; Business Media. p. 132.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9783540687245" title="Special:BookSources/9783540687245">
+                 <bdi>
+                  9783540687245
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Service+Availability%3A+Third+International+Service+Availability+Symposium%2C+ISAS+2006%2C+Helsinki%2C+Finland%2C+May+15-16%2C+2006%2C+Revised+Selected+Papers&amp;rft.pages=132&amp;rft.pub=Springer+Science+%26+Business+Media&amp;rft.date=2006&amp;rft.isbn=9783540687245&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWindows+Driver+Model">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:2-8">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:2_8-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:2_8-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:2_8-2">
+                <sup>
+                 <i>
+                  <b>
+                   c
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:2_8-3">
+                <sup>
+                 <i>
+                  <b>
+                   d
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFByron_WrightLeon_Plesniarski2016">
+                Byron Wright; Leon Plesniarski (2016).
+                <i>
+                 Microsoft Specialist Guide to Microsoft Windows 10 (Exam 70-697, Configuring Windows Devices)
+                </i>
+                . Cengage Learning. p. 96.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9781285868578" title="Special:BookSources/9781285868578">
+                 <bdi>
+                  9781285868578
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Microsoft+Specialist+Guide+to+Microsoft+Windows+10+%28Exam+70-697%2C+Configuring+Windows+Devices%29&amp;rft.pages=96&amp;rft.pub=Cengage+Learning&amp;rft.date=2016&amp;rft.isbn=9781285868578&amp;rft.au=Byron+Wright&amp;rft.au=Leon+Plesniarski&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWindows+Driver+Model">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-9">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation magazine cs1" id="CITEREFOney2003">
+                Oney, Walter (May 6, 2003).
+                <a class="external text" href="https://web.archive.org/web/20160125155441/http://www.wd-3.com/archive/FrameworkIntro.htm" rel="nofollow">
+                 "Introducing Windows Driver Framework"
+                </a>
+                .
+                <i>
+                 Windows Driver Developer's Digest
+                </i>
+                . Vol. 1, no. 3. Archived from
+                <a class="external text" href="http://www.wd-3.com/archive/FrameworkIntro.htm" rel="nofollow">
+                 the original
+                </a>
+                on 2016-01-25.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Windows+Driver+Developer%27s+Digest&amp;rft.atitle=Introducing+Windows+Driver+Framework&amp;rft.volume=1&amp;rft.issue=3&amp;rft.date=2003-05-06&amp;rft.aulast=Oney&amp;rft.aufirst=Walter&amp;rft_id=http%3A%2F%2Fwww.wd-3.com%2Farchive%2FFrameworkIntro.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWindows+Driver+Model">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://msdn.microsoft.com/library/windows/hardware/dn613954" rel="nofollow">
+                 "I/O Completion/Cancellation Guidelines"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/Microsoft_Developer_Network" title="Microsoft Developer Network">
+                  MSDN
+                 </a>
+                </i>
+                .
+                <a href="/wiki/Microsoft" title="Microsoft">
+                 Microsoft
+                </a>
+                . May 5, 2003
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2018-02-08
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MSDN&amp;rft.atitle=I%2FO+Completion%2FCancellation+Guidelines&amp;rft.date=2003-05-05&amp;rft_id=https%3A%2F%2Fmsdn.microsoft.com%2Flibrary%2Fwindows%2Fhardware%2Fdn613954&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWindows+Driver+Model">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <ul>
+           <li>
+            Finnel, Lynn (2000).
+            <i>
+             MCSE Exam 70-215, Microsoft Windows 2000 Server
+            </i>
+            .
+            <a href="/wiki/Microsoft_Press" title="Microsoft Press">
+             Microsoft Press
+            </a>
+            .
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+             ISBN
+            </a>
+            <a href="/wiki/Special:BookSources/1-57231-903-8" title="Special:BookSources/1-57231-903-8">
+             1-57231-903-8
+            </a>
+            .
+           </li>
+           <li>
+            Oney, Walter (2003).
+            <i>
+             Programming the Windows Driver Model
+            </i>
+            ,
+            <a href="/wiki/Microsoft_Press" title="Microsoft Press">
+             Microsoft Press
+            </a>
+            ,
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+             ISBN
+            </a>
+            <a href="/wiki/Special:BookSources/0-7356-1803-8" title="Special:BookSources/0-7356-1803-8">
+             0-7356-1803-8
+            </a>
+            .
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Windows_Driver_Model&amp;action=edit&amp;section=9" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="https://www.scribd.com/doc/61435580/WDM-Input-Output-Concepts" rel="nofollow">
+             WDM Input Output Concepts
+            </a>
+            - This article gives a high level overview of the I/O concepts as defined in the Windows Driver Model.
+           </li>
+           <li>
+            <a class="external text" href="http://www.staudio.de/kb/english/drivers/" rel="nofollow">
+             Windows driver API basics
+            </a>
+            - This article informs you about the basics behind sound card drivers such as WDM,
+            <a href="/wiki/Audio_Stream_Input/Output" title="Audio Stream Input/Output">
+             ASIO
+            </a>
+            ,
+            <a class="mw-redirect" href="/wiki/MultiMedia_Extensions" title="MultiMedia Extensions">
+             MME
+            </a>
+            , DirectX, etc.
+           </li>
+           <li>
+            <a class="external text" href="http://channel9.msdn.com/Showpost.aspx?postid=156316" rel="nofollow">
+             Channel 9 Video
+            </a>
+            - Interview with the Device Management and Installation team at Microsoft, primarily covering
+            <a class="mw-redirect" href="/wiki/Plug-and-play" title="Plug-and-play">
+             Plug-and-play
+            </a>
+            .
+           </li>
+           <li>
+            <a class="external text" href="https://web.archive.org/web/20160303194156/http://hisown.com/Talks/WK.pdf" rel="nofollow">
+             Lecture Notes on Windows Kernel Programming
+            </a>
+            at the
+            <a href="/wiki/Wayback_Machine" title="Wayback Machine">
+             Wayback Machine
+            </a>
+            (archived March 3, 2016) - Free lecture notes book fragment detailing basic creation of Windows Drivers, Kernel Mode programming, and Memory management
+           </li>
+          </ul>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Microsoft_APIs_and_frameworks" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Microsoft_APIs" title="Template:Microsoft APIs">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Microsoft_APIs" title="Template talk:Microsoft APIs">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Microsoft_APIs" title="Special:EditPage/Template:Microsoft APIs">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Microsoft_APIs_and_frameworks" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/List_of_Microsoft_Windows_application_programming_interfaces_and_frameworks" title="List of Microsoft Windows application programming interfaces and frameworks">
+                 Microsoft APIs and frameworks
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               Graphics and UI
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Desktop_Window_Manager" title="Desktop Window Manager">
+                   Desktop Window Manager
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Direct2D" title="Direct2D">
+                   Direct2D
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Direct3D" title="Direct3D">
+                   Direct3D
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/D3DX" title="D3DX">
+                   D3D (extensions)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Graphics_Device_Interface" title="Graphics Device Interface">
+                   GDI / GDI+
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Presentation_Foundation" title="Windows Presentation Foundation">
+                   WPF
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Microsoft_Silverlight" title="Microsoft Silverlight">
+                   Silverlight
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_UI_Library" title="Windows UI Library">
+                   WinUI
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Color_System" title="Windows Color System">
+                   Windows Color System
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Image_Acquisition" title="Windows Image Acquisition">
+                   Windows Image Acquisition
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Imaging_Component" title="Windows Imaging Component">
+                   Windows Imaging Component
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/DirectX_Graphics_Infrastructure" title="DirectX Graphics Infrastructure">
+                   DirectX Graphics Infrastructure (DXGI)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Advanced_Rasterization_Platform" title="Windows Advanced Rasterization Platform">
+                   Windows Advanced Rasterization Platform
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/WinG" title="WinG">
+                   WinG
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               Audio
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/DirectMusic" title="DirectMusic">
+                   DirectMusic
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/DirectSound" title="DirectSound">
+                   DirectSound
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/DirectX_plugin" title="DirectX plugin">
+                   DirectX plugin
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Cross-platform_Audio_Creation_Tool" title="Cross-platform Audio Creation Tool">
+                   XACT
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Microsoft_Speech_API" title="Microsoft Speech API">
+                   Speech API
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/XAudio2" title="XAudio2">
+                   XAudio2
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               Multimedia
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/DirectX" title="DirectX">
+                   DirectX
+                  </a>
+                  <ul>
+                   <li>
+                    <a class="mw-redirect" href="/wiki/DirectX_Media_Objects" title="DirectX Media Objects">
+                     Media Objects
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/DirectX_Video_Acceleration" title="DirectX Video Acceleration">
+                     Video Acceleration
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Xinput" title="Xinput">
+                   Xinput
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/DirectInput" title="DirectInput">
+                   DirectInput
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/DirectShow" title="DirectShow">
+                   DirectShow
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Image_Mastering_API" title="Image Mastering API">
+                   Image Mastering API
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Managed_DirectX" title="Managed DirectX">
+                   Managed DirectX
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Media_Foundation" title="Media Foundation">
+                   Media Foundation
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Microsoft_XNA" title="Microsoft XNA">
+                   XNA
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Media" title="Windows Media">
+                   Windows Media
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Video_for_Windows" title="Video for Windows">
+                   Video for Windows
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               Web
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Trident_(software)" title="Trident (software)">
+                   MSHTML
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_RSS_Platform" title="Windows RSS Platform">
+                   RSS Platform
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/JScript" title="JScript">
+                   JScript
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/VBScript" title="VBScript">
+                   VBScript
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Browser_Helper_Object" title="Browser Helper Object">
+                   BHO
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/XMLHttpRequest" title="XMLHttpRequest">
+                   XDR
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Microsoft_Gadgets" title="Microsoft Gadgets">
+                   SideBar Gadgets
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/TypeScript" title="TypeScript">
+                   TypeScript
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               Data access
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Microsoft_Data_Access_Components" title="Microsoft Data Access Components">
+                   Data Access Components (MDAC)
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/ActiveX_Data_Objects" title="ActiveX Data Objects">
+                     ADO
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/ADO.NET" title="ADO.NET">
+                     ADO.NET
+                    </a>
+                   </li>
+                   <li>
+                    <a class="mw-redirect" href="/wiki/ODBC" title="ODBC">
+                     ODBC
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/OLE_DB" title="OLE DB">
+                     OLE DB
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Extensible_Storage_Engine" title="Extensible Storage Engine">
+                   Extensible Storage Engine
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Entity_Framework" title="Entity Framework">
+                   Entity Framework
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Microsoft_Sync_Framework" title="Microsoft Sync Framework">
+                   Sync Framework
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Access_Database_Engine" title="Access Database Engine">
+                   Access Database Engine
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/MSXML" title="MSXML">
+                   MSXML
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Open_Packaging_Conventions" title="Open Packaging Conventions">
+                   OPC
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               Networking
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Winsock" title="Winsock">
+                   Winsock
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Layered_Service_Provider" title="Layered Service Provider">
+                     LSP
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Vista_networking_technologies#Winsock_Kernel" title="Windows Vista networking technologies">
+                   Winsock Kernel
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Filtering_Platform" title="Windows Filtering Platform">
+                   Filtering Platform
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Network_Driver_Interface_Specification" title="Network Driver Interface Specification">
+                   NDIS
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Rally" title="Windows Rally">
+                   Windows Rally
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Background_Intelligent_Transfer_Service" title="Background Intelligent Transfer Service">
+                   BITS
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Vista_networking_technologies#Peer-to-peer_communication" title="Windows Vista networking technologies">
+                   P2P API
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Microsoft_Message_Queuing" title="Microsoft Message Queuing">
+                   MSMQ
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Microsoft_Messaging_Passing_Interface" title="Microsoft Messaging Passing Interface">
+                   MS MPI
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/DirectPlay" title="DirectPlay">
+                   DirectPlay
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               Communication
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/MAPI" title="MAPI">
+                   Messaging API
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Telephony_Application_Programming_Interface" title="Telephony Application Programming Interface">
+                   Telephony API
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Communication_Foundation" title="Windows Communication Foundation">
+                   WCF
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               Administration and
+               <br/>
+               management
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Win32_console" title="Win32 console">
+                   Win32 console
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Script_Host" title="Windows Script Host">
+                   Windows Script Host
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Management_Instrumentation" title="Windows Management Instrumentation">
+                   WMI (extensions)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/PowerShell" title="PowerShell">
+                   PowerShell
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Task_Scheduler" title="Windows Task Scheduler">
+                   Task Scheduler
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Vista_I/O_technologies#Offline_Files" title="Windows Vista I/O technologies">
+                   Offline Files
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Shadow_Copy" title="Shadow Copy">
+                   Shadow Copy
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Installer" title="Windows Installer">
+                   Windows Installer
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Error_Reporting" title="Windows Error Reporting">
+                   Error Reporting
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Event_Viewer#Windows_Event_Log" title="Event Viewer">
+                   Event Log
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Common_Log_File_System" title="Common Log File System">
+                   Common Log File System
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               <a href="/wiki/Component-based_software_engineering" title="Component-based software engineering">
+                Component model
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Component_Object_Model" title="Component Object Model">
+                   COM
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Component_Object_Model#COM+" title="Component Object Model">
+                   COM+
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/ActiveX" title="ActiveX">
+                   ActiveX
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Distributed_Component_Object_Model" title="Distributed Component Object Model">
+                   Distributed Component Object Model
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/.NET_Framework" title=".NET Framework">
+                   .NET Framework
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               <a href="/wiki/Library_(computing)" title="Library (computing)">
+                Libraries
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Framework_Class_Library" title="Framework Class Library">
+                   Framework Class Library
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Microsoft_Foundation_Class_Library" title="Microsoft Foundation Class Library">
+                   Microsoft Foundation Classes (MFC)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Active_Template_Library" title="Active Template Library">
+                   Active Template Library (ATL)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Template_Library" title="Windows Template Library">
+                   Windows Template Library (WTL)
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               <a href="/wiki/Device_driver" title="Device driver">
+                Device drivers
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   WDM
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Driver_Frameworks" title="Windows Driver Frameworks">
+                   WDF
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Kernel-Mode_Driver_Framework" title="Kernel-Mode Driver Framework">
+                     KMDF
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/User-Mode_Driver_Framework" title="User-Mode Driver Framework">
+                     UMDF
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Display_Driver_Model" title="Windows Display Driver Model">
+                   WDDM
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Network_Driver_Interface_Specification" title="Network Driver Interface Specification">
+                   NDIS
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Universal_Audio_Architecture" title="Universal Audio Architecture">
+                   UAA
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Broadcast_Driver_Architecture" title="Broadcast Driver Architecture">
+                   BDA
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/VxD" title="VxD">
+                   VxD
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               Security
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Microsoft_CryptoAPI" title="Microsoft CryptoAPI">
+                   Crypto API
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/CAPICOM" title="CAPICOM">
+                     CAPICOM
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_CardSpace" title="Windows CardSpace">
+                   Windows CardSpace
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Data_Protection_API" title="Data Protection API">
+                   Data Protection API
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Security_Support_Provider_Interface" title="Security Support Provider Interface">
+                   Security Support Provider Interface (SSPI)
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               <a href="/wiki/.NET_Framework" title=".NET Framework">
+                .NET
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/ASP.NET" title="ASP.NET">
+                   ASP.NET
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/ADO.NET" title="ADO.NET">
+                   ADO.NET
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/.NET_Remoting" title=".NET Remoting">
+                   Remoting
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Microsoft_Silverlight" title="Microsoft Silverlight">
+                   Silverlight
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Task_Parallel_Library" title="Task Parallel Library">
+                   TPL
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Communication_Foundation" title="Windows Communication Foundation">
+                   WCF
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_CardSpace" title="Windows CardSpace">
+                   WCS
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Presentation_Foundation" title="Windows Presentation Foundation">
+                   WPF
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Workflow_Foundation" title="Windows Workflow Foundation">
+                   WF
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               <a class="mw-redirect" href="/wiki/Software_Factory_(Microsoft_.NET)" title="Software Factory (Microsoft .NET)">
+                Software factories
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/EFx_Factory" title="EFx Factory">
+                   EFx Factory
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Microsoft_Enterprise_Library" title="Microsoft Enterprise Library">
+                   Enterprise Library
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Composite_UI_Application_Block" title="Composite UI Application Block">
+                   Composite UI
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Microsoft_Customer_Care_Framework" title="Microsoft Customer Care Framework">
+                   CCF
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Microsoft_Connected_Services_Framework" title="Microsoft Connected Services Framework">
+                   CSF
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               <a href="/wiki/Inter-process_communication" title="Inter-process communication">
+                IPC
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Microsoft_RPC" title="Microsoft RPC">
+                   MSRPC
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Dynamic_Data_Exchange" title="Dynamic Data Exchange">
+                   Dynamic Data Exchange (DDE)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/.NET_Remoting" title=".NET Remoting">
+                   Remoting
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_Communication_Foundation" title="Windows Communication Foundation">
+                   WCF
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               Accessibility
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Microsoft_Active_Accessibility" title="Microsoft Active Accessibility">
+                   Active Accessibility
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Microsoft_UI_Automation" title="Microsoft UI Automation">
+                   UI Automation
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%;line-height:1.2em">
+               Text and multilingual
+               <br/>
+               support
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/DirectWrite" title="DirectWrite">
+                   DirectWrite
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Text_Services_Framework" title="Text Services Framework">
+                   Text Services Framework
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Text_Object_Model" title="Text Object Model">
+                   Text Object Model
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Input_method" title="Input method">
+                   Input method editor
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Language_Interface_Pack" title="Language Interface Pack">
+                   Language Interface Pack
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Multilingual_User_Interface" title="Multilingual User Interface">
+                   Multilingual User Interface
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Uniscribe" title="Uniscribe">
+                   Uniscribe
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐69bbc47869‐qpk8j
+Cached time: 20240903205953
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.414 seconds
+Real time usage: 0.509 seconds
+Preprocessor visited node count: 1501/1000000
+Post‐expand include size: 59195/2097152 bytes
+Template argument size: 1172/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 51779/5000000 bytes
+Lua time usage: 0.270/10.000 seconds
+Lua memory usage: 5279707/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  436.241      1 -total
+ 33.92%  147.984      1 Template:Reflist
+ 26.34%  114.906      1 Template:Microsoft_APIs
+ 25.86%  112.810      1 Template:Navbox
+ 25.43%  110.935      7 Template:Cite_book
+ 15.30%   66.745      1 Template:More_citations_needed
+ 14.25%   62.155      1 Template:Ambox
+  8.49%   37.018      1 Template:Distinguish
+  6.56%   28.601      1 Template:Citation_needed
+  5.35%   23.352      1 Template:Fix
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:252077-0!canonical and timestamp 20240903205953 and revision id 1240416333. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Windows_Driver_Model&amp;oldid=1240416333">
+          https://en.wikipedia.org/w/index.php?title=Windows_Driver_Model&amp;oldid=1240416333
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Device_drivers" title="Category:Device drivers">
+            Device drivers
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Microsoft_application_programming_interfaces" title="Category:Microsoft application programming interfaces">
+            Microsoft application programming interfaces
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Windows_98" title="Category:Windows 98">
+            Windows 98
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_May_2024" title="Category:Articles needing additional references from May 2024">
+            Articles needing additional references from May 2024
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">
+            All articles with unsourced statements
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_February_2024" title="Category:Articles with unsourced statements from February 2024">
+            Articles with unsourced statements from February 2024
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">
+            Webarchive template wayback links
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 15 August 2024, at 07:44
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Windows_Driver_Model&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-85f7dbfd46-bxkc4","wgBackendResponseTime":135,"wgPageParseReport":{"limitreport":{"cputime":"0.414","walltime":"0.509","ppvisitednodes":{"value":1501,"limit":1000000},"postexpandincludesize":{"value":59195,"limit":2097152},"templateargumentsize":{"value":1172,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":51779,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  436.241      1 -total"," 33.92%  147.984      1 Template:Reflist"," 26.34%  114.906      1 Template:Microsoft_APIs"," 25.86%  112.810      1 Template:Navbox"," 25.43%  110.935      7 Template:Cite_book"," 15.30%   66.745      1 Template:More_citations_needed"," 14.25%   62.155      1 Template:Ambox","  8.49%   37.018      1 Template:Distinguish","  6.56%   28.601      1 Template:Citation_needed","  5.35%   23.352      1 Template:Fix"]},"scribunto":{"limitreport-timeusage":{"value":"0.270","limit":"10.000"},"limitreport-memusage":{"value":5279707,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-69bbc47869-qpk8j","timestamp":"20240903205953","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Windows Driver Model","url":"https:\/\/en.wikipedia.org\/wiki\/Windows_Driver_Model","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1329009","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1329009","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-06-24T10:32:16Z","dateModified":"2024-08-15T07:44:13Z","headline":"device driver framework"}
+  </script>
+ </body>
+</html>

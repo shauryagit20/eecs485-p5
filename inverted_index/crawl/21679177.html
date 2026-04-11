@@ -1,0 +1,3954 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Site reliability engineering - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"09c3abe0-f810-403a-8d39-2c95cc7c5912","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Site_reliability_engineering","wgTitle":"Site reliability engineering","wgCurRevisionId":1247895088,"wgRevisionId":1247895088,"wgArticleId":49946142,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Articles with peacock terms from May 2023","All articles with peacock terms","Wikipedia articles containing buzzwords from May 2023","Articles with multiple maintenance issues","All articles with unsourced statements","Articles with unsourced statements from June 2023","CS1 maint: multiple names: authors list","2003 introductions","Google","Reliability engineering",
+"Software engineering"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Site_reliability_engineering","wgRelevantArticleId":49946142,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,
+"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q56351687","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site",
+"mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.23" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Site reliability engineering - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Site_reliability_engineering" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Site_reliability_engineering&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Site_reliability_engineering" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Site_reliability_engineering"/>
+  <meta eecs485_docid="21679177"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Site_reliability_engineering rootpage-Site_reliability_engineering skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Site+reliability+engineering" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Site+reliability+engineering" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Site+reliability+engineering" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Site+reliability+engineering" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-History">
+           <a class="vector-toc-link" href="#History">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              History
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-History-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Definition">
+           <a class="vector-toc-link" href="#Definition">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Definition
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Definition-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Principles_and_practices">
+           <a class="vector-toc-link" href="#Principles_and_practices">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Principles and practices
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Principles_and_practices-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Implementations">
+           <a class="vector-toc-link" href="#Implementations">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Implementations
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Implementations-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Implementations subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Implementations-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Kitchen_Sink,_a.k.a._“Everything_SRE”">
+             <a class="vector-toc-link" href="#Kitchen_Sink,_a.k.a._“Everything_SRE”">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.1
+               </span>
+               <span>
+                Kitchen Sink, a.k.a. “Everything SRE”
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Kitchen_Sink,_a.k.a._“Everything_SRE”-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Infrastructure">
+             <a class="vector-toc-link" href="#Infrastructure">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.2
+               </span>
+               <span>
+                Infrastructure
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Infrastructure-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Tools">
+             <a class="vector-toc-link" href="#Tools">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.3
+               </span>
+               <span>
+                Tools
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Tools-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Product_or_application">
+             <a class="vector-toc-link" href="#Product_or_application">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.4
+               </span>
+               <span>
+                Product or application
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Product_or_application-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Embedded">
+             <a class="vector-toc-link" href="#Embedded">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.5
+               </span>
+               <span>
+                Embedded
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Embedded-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Consulting">
+             <a class="vector-toc-link" href="#Consulting">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.6
+               </span>
+               <span>
+                Consulting
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Consulting-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Industry">
+           <a class="vector-toc-link" href="#Industry">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              Industry
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Industry-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              7
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Further_reading">
+           <a class="vector-toc-link" href="#Further_reading">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              8
+             </span>
+             <span>
+              Further reading
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Further_reading-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              9
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Site reliability engineering
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 9 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-9" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          9 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="هندسة موثوقية الموقع" href="https://ar.wikipedia.org/wiki/%D9%87%D9%86%D8%AF%D8%B3%D8%A9_%D9%85%D9%88%D8%AB%D9%88%D9%82%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B9" hreflang="ar" lang="ar" title="هندسة موثوقية الموقع – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Site Reliability Engineering" href="https://de.wikipedia.org/wiki/Site_Reliability_Engineering" hreflang="de" lang="de" title="Site Reliability Engineering – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="مهندسی قابلیت اطمینان سایت" href="https://fa.wikipedia.org/wiki/%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C_%D9%82%D8%A7%D8%A8%D9%84%DB%8C%D8%AA_%D8%A7%D8%B7%D9%85%DB%8C%D9%86%D8%A7%D9%86_%D8%B3%D8%A7%DB%8C%D8%AA" hreflang="fa" lang="fa" title="مهندسی قابلیت اطمینان سایت – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Site Reliability Engineering" href="https://fr.wikipedia.org/wiki/Site_Reliability_Engineering" hreflang="fr" lang="fr" title="Site Reliability Engineering – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="사이트 신뢰성 공학" href="https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9D%B4%ED%8A%B8_%EC%8B%A0%EB%A2%B0%EC%84%B1_%EA%B3%B5%ED%95%99" hreflang="ko" lang="ko" title="사이트 신뢰성 공학 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-id mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Bahasa Indonesia" data-language-local-name="Indonesian" data-title="Rekayasa keandalan situs" href="https://id.wikipedia.org/wiki/Rekayasa_keandalan_situs" hreflang="id" lang="id" title="Rekayasa keandalan situs – Indonesian">
+             <span>
+              Bahasa Indonesia
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="サイトリライアビリティエンジニアリング" href="https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AA%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0" hreflang="ja" lang="ja" title="サイトリライアビリティエンジニアリング – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Site Reliability Engineering" href="https://pt.wikipedia.org/wiki/Site_Reliability_Engineering" hreflang="pt" lang="pt" title="Site Reliability Engineering – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="站点可靠性工程" href="https://zh.wikipedia.org/wiki/%E7%AB%99%E7%82%B9%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%B7%A5%E7%A8%8B" hreflang="zh" lang="zh" title="站点可靠性工程 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q56351687#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Site_reliability_engineering" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Site_reliability_engineering" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Site_reliability_engineering">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Site_reliability_engineering&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Site_reliability_engineering&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Site_reliability_engineering">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Site_reliability_engineering&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Site_reliability_engineering&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Site_reliability_engineering" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Site_reliability_engineering" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Site_reliability_engineering&amp;oldid=1247895088" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Site_reliability_engineering&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Site_reliability_engineering&amp;id=1247895088&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSite_reliability_engineering">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSite_reliability_engineering">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q56351687" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Site_reliability_engineering&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Site_reliability_engineering&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Use of software engineering practices for IT
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <style data-mw-deduplicate="TemplateStyles:r1211361296">
+          .mw-parser-output .multiple-issues-text{width:95%;margin:0.2em 0}.mw-parser-output .multiple-issues-text>.mw-collapsible-content{margin-top:0.3em}.mw-parser-output .compact-ambox .ambox{border:none;border-collapse:collapse;background-color:transparent;margin:0 0 0 1.6em!important;padding:0!important;width:auto;display:block}body.mediawiki .mw-parser-output .compact-ambox .ambox.mbox-small-left{font-size:100%;width:auto;margin:0}.mw-parser-output .compact-ambox .ambox .mbox-text{padding:0!important;margin:0!important}.mw-parser-output .compact-ambox .ambox .mbox-text-span{display:list-item;line-height:1.5em;list-style-type:disc}body.skin-minerva .mw-parser-output .multiple-issues-text>.mw-collapsible-toggle{display:none}.mw-parser-output .compact-ambox .ambox .mbox-image,.mw-parser-output .compact-ambox .ambox .mbox-imageright,.mw-parser-output .compact-ambox .ambox .mbox-empty-cell,.mw-parser-output .compact-ambox .hide-when-compact{display:none}
+         </style>
+         <table class="box-Multiple_issues plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <span>
+                <img alt="" class="mw-file-element" data-file-height="40" data-file-width="40" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" width="40"/>
+               </span>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              <div class="multiple-issues-text mw-collapsible">
+               <b>
+                This article has multiple issues.
+               </b>
+               Please help
+               <b>
+                <a href="/wiki/Special:EditPage/Site_reliability_engineering" title="Special:EditPage/Site reliability engineering">
+                 improve it
+                </a>
+               </b>
+               or discuss these issues on the
+               <b>
+                <a href="/wiki/Talk:Site_reliability_engineering" title="Talk:Site reliability engineering">
+                 talk page
+                </a>
+               </b>
+               .
+               <small>
+                <i>
+                 (
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove these messages
+                 </a>
+                 )
+                </i>
+               </small>
+               <div class="mw-collapsible-content">
+                <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+                <table class="box-Peacock plainlinks metadata ambox ambox-content ambox-peacock" role="presentation">
+                 <tbody>
+                  <tr>
+                   <td class="mbox-image">
+                    <div class="mbox-image-div">
+                     <span typeof="mw:File">
+                      <span>
+                       <img alt="" class="mw-file-element" data-file-height="40" data-file-width="40" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" width="40"/>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="mbox-text">
+                    <div class="mbox-text-span">
+                     This article contains wording that
+                     <b>
+                      <a href="/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Puffery" title="Wikipedia:Manual of Style/Words to watch">
+                       promotes the subject in a subjective manner
+                      </a>
+                      without imparting real information
+                     </b>
+                     .
+                     <span class="hide-when-compact">
+                      Please remove or replace such wording and instead of making proclamations about a subject's importance, use facts and attribution to demonstrate that importance.
+                     </span>
+                     <span class="date-container">
+                      <i>
+                       (
+                       <span class="date">
+                        May 2023
+                       </span>
+                       )
+                      </i>
+                     </span>
+                     <span class="hide-when-compact">
+                      <i>
+                       (
+                       <small>
+                        <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                         Learn how and when to remove this message
+                        </a>
+                       </small>
+                       )
+                      </i>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+                <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+                <table class="box-Buzzword plainlinks metadata ambox ambox-style" role="presentation">
+                 <tbody>
+                  <tr>
+                   <td class="mbox-image">
+                    <div class="mbox-image-div">
+                     <span typeof="mw:File">
+                      <span>
+                       <img alt="" class="mw-file-element" data-file-height="48" data-file-width="48" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" width="40"/>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="mbox-text">
+                    <div class="mbox-text-span">
+                     This article appears to
+                     <b>
+                      contain a large number of
+                      <a href="/wiki/Buzzword" title="Buzzword">
+                       buzzwords
+                      </a>
+                     </b>
+                     .
+                     <span class="hide-when-compact">
+                      There might be a discussion about this on the
+                      <a href="/wiki/Talk:Site_reliability_engineering" title="Talk:Site reliability engineering">
+                       talk page
+                      </a>
+                      . Please help
+                      <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Site_reliability_engineering&amp;action=edit">
+                       improve this article
+                      </a>
+                      if you can.
+                     </span>
+                     <span class="date-container">
+                      <i>
+                       (
+                       <span class="date">
+                        May 2023
+                       </span>
+                       )
+                      </i>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </div>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          <b>
+           Site reliability engineering
+          </b>
+          (
+          <b>
+           SRE
+          </b>
+          ) is a set of principles and practices that applies aspects of
+          <a href="/wiki/Software_engineering" title="Software engineering">
+           software engineering
+          </a>
+          to IT
+          <a href="/wiki/IT_infrastructure" title="IT infrastructure">
+           infrastructure
+          </a>
+          and
+          <a class="mw-redirect" href="/wiki/IT_operations" title="IT operations">
+           operations
+          </a>
+          .
+          <sup class="reference" id="cite_ref-:7_1-0">
+           <a href="#cite_note-:7-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          SRE aims to create
+          <a href="/wiki/Reliability_engineering" title="Reliability engineering">
+           highly reliable
+          </a>
+          and
+          <a class="mw-redirect" href="/wiki/Scalable" title="Scalable">
+           scalable
+          </a>
+          IT systems. Although they are closely related, SRE is slightly different from
+          <a href="/wiki/DevOps" title="DevOps">
+           DevOps
+          </a>
+          .
+          <sup class="reference" id="cite_ref-:0_2-0">
+           <a href="#cite_note-:0-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-:2_3-0">
+           <a href="#cite_note-:2-3">
+            <span class="cite-bracket">
+             [
+            </span>
+            3
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-:6_4-0">
+           <a href="#cite_note-:6-4">
+            <span class="cite-bracket">
+             [
+            </span>
+            4
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="History">
+            History
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=1" title="Edit section: History">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The field of site reliability engineering originated at
+           <a href="/wiki/Google" title="Google">
+            Google
+           </a>
+           with Ben Treynor Sloss,
+           <sup class="reference" id="cite_ref-5">
+            <a href="#cite_note-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-:3_6-0">
+            <a href="#cite_note-:3-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           who founded a site reliability team after joining the company in 2003.
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           By 2016, Google employed more than 1,000 site reliability engineers.
+           <sup class="reference" id="cite_ref-:1_8-0">
+            <a href="#cite_note-:1-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           After originating at Google in 2003, the concept spread into the broader software development industry, and other companies subsequently began to employ site reliability engineers.
+           <sup class="reference" id="cite_ref-:5_9-0">
+            <a href="#cite_note-:5-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Dedicated SRE teams are common at larger web companies, however it is not uncommon to find Devops team serving dual purpose of SRE in some midsize and many smaller companies.
+           <sup class="reference" id="cite_ref-:5_9-1">
+            <a href="#cite_note-:5-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <a href="/wiki/Organization" title="Organization">
+            Organizations
+           </a>
+           that have adopted the concept include
+           <a href="/wiki/Airbnb" title="Airbnb">
+            Airbnb
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Dropbox_(service)" title="Dropbox (service)">
+            Dropbox
+           </a>
+           ,
+           <a href="/wiki/IBM" title="IBM">
+            IBM
+           </a>
+           ,
+           <sup class="reference" id="cite_ref-10">
+            <a href="#cite_note-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <a href="/wiki/LinkedIn" title="LinkedIn">
+            LinkedIn
+           </a>
+           ,
+           <sup class="reference" id="cite_ref-11">
+            <a href="#cite_note-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <a href="/wiki/Netflix" title="Netflix">
+            Netflix
+           </a>
+           ,
+           <sup class="reference" id="cite_ref-:1_8-1">
+            <a href="#cite_note-:1-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           and
+           <a href="/wiki/Wikimedia_Foundation" title="Wikimedia Foundation">
+            Wikimedia
+           </a>
+           .
+           <sup class="reference" id="cite_ref-12">
+            <a href="#cite_note-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           According to a 2021 report by the DevOps Institute, 22% of respondents in a survey of 2,000 worldwide IT professionals had adopted the SRE model compared to 15% percent the previous year.
+           <sup class="reference" id="cite_ref-13">
+            <a href="#cite_note-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-14">
+            <a href="#cite_note-14">
+             <span class="cite-bracket">
+              [
+             </span>
+             14
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Definition">
+            Definition
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=2" title="Edit section: Definition">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Site reliability engineering, as a job role, may be performed by individual contributors or organized in teams, responsible for a combination of the following within a broader engineering organization: System
+           <a href="/wiki/Availability" title="Availability">
+            availability
+           </a>
+           ,
+           <a href="/wiki/Latency_(engineering)" title="Latency (engineering)">
+            latency
+           </a>
+           ,
+           <a href="/wiki/Computer_performance" title="Computer performance">
+            performance
+           </a>
+           , efficiency,
+           <a href="/wiki/Change_management_(engineering)" title="Change management (engineering)">
+            change management
+           </a>
+           ,
+           <a href="/wiki/Website_monitoring" title="Website monitoring">
+            monitoring
+           </a>
+           ,
+           <a href="/wiki/Incident_management" title="Incident management">
+            emergency response
+           </a>
+           , and
+           <a href="/wiki/Capacity_planning" title="Capacity planning">
+            capacity planning
+           </a>
+           .
+           <sup class="reference" id="cite_ref-15">
+            <a href="#cite_note-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Site reliability engineers often have backgrounds in
+           <a href="/wiki/Software_engineering" title="Software engineering">
+            software engineering
+           </a>
+           ,
+           <a href="/wiki/Systems_engineering" title="Systems engineering">
+            system engineering
+           </a>
+           , or
+           <a href="/wiki/System_administrator" title="System administrator">
+            system administration
+           </a>
+           .
+           <sup class="reference" id="cite_ref-:4_16-0">
+            <a href="#cite_note-:4-16">
+             <span class="cite-bracket">
+              [
+             </span>
+             16
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Focuses of SRE include automation,
+           <a href="/wiki/Systems_design" title="Systems design">
+            system design
+           </a>
+           , and improvements to
+           <a href="/wiki/Robustness_(computer_science)" title="Robustness (computer science)">
+            system resilience
+           </a>
+           .
+           <sup class="reference" id="cite_ref-:4_16-1">
+            <a href="#cite_note-:4-16">
+             <span class="cite-bracket">
+              [
+             </span>
+             16
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Site reliability engineering, as a set of principles and practices, can be performed by anyone. Though everyone should contribute to good practices, as occurs in
+           <a href="/wiki/Security_engineering" title="Security engineering">
+            security engineering
+           </a>
+           , a company may eventually hire specialists and engineers for the job.
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (June 2023)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+          </p>
+          <p>
+           Site reliability engineering is considered a specific implementation of DevOps;
+           <sup class="reference" id="cite_ref-17">
+            <a href="#cite_note-17">
+             <span class="cite-bracket">
+              [
+             </span>
+             17
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           SRE focuses specifically on building reliable systems, whereas DevOps focuses more broadly.
+           <sup class="reference" id="cite_ref-:0_2-1">
+            <a href="#cite_note-:0-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-:2_3-1">
+            <a href="#cite_note-:2-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-:6_4-1">
+            <a href="#cite_note-:6-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Although they have different focuses, some companies have rebranded their operations teams to SRE teams with little meaningful change.
+           <sup class="reference" id="cite_ref-:5_9-2">
+            <a href="#cite_note-:5-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Principles_and_practices">
+            Principles and practices
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=3" title="Edit section: Principles and practices">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           There have been multiple attempts to define a canonical list of site reliability engineering principles, but while consensus is lacking, the following characteristics are usually included in most definitions:
+           <sup class="reference" id="cite_ref-:7_1-1">
+            <a href="#cite_note-:7-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-18">
+            <a href="#cite_note-18">
+             <span class="cite-bracket">
+              [
+             </span>
+             18
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <ul>
+           <li>
+            Automation or elimination of anything repetitive in a cost-effective way.
+           </li>
+           <li>
+            Avoidance to pursue much more reliability than what's strictly necessary. Defining what's necessary is a practice by itself (see list of practices below).
+           </li>
+           <li>
+            Systems designed with a bias toward the reduction of risks to availability, latency, and efficiency.
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Software_observability" title="Software observability">
+             Observability
+            </a>
+            —as in, the ability to ask arbitrary questions about a system without having to know ahead of time what to ask.
+            <sup class="reference" id="cite_ref-19">
+             <a href="#cite_note-19">
+              <span class="cite-bracket">
+               [
+              </span>
+              19
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+          </ul>
+          <p>
+           The site reliability engineering practices also vary widely, but the list below is relatively commonly seen as at least partially implemented:
+          </p>
+          <ul>
+           <li>
+            <a class="external text" href="https://sre.google/sre-book/eliminating-toil/" rel="nofollow">
+             Toil management
+            </a>
+            as the implementation of the first principle outlined above.
+           </li>
+           <li>
+            Defining and measuring reliability goals—
+            <a href="/wiki/Service_level_indicator" title="Service level indicator">
+             SLIs
+            </a>
+            ,
+            <a href="/wiki/Service-level_objective" title="Service-level objective">
+             SLOs
+            </a>
+            , and error budgets.
+           </li>
+           <li>
+            Non-Abstract Large Scale Systems Design (
+            <a class="external text" href="https://sre.google/workbook/non-abstract-design/" rel="nofollow">
+             NALSD
+            </a>
+            ) with a focus on reliability.
+           </li>
+           <li>
+            Designing for and implementing observability.
+           </li>
+           <li>
+            Defining, testing, and running an
+            <a href="/wiki/Incident_management" title="Incident management">
+             incident management
+            </a>
+            process.
+           </li>
+           <li>
+            <a href="/wiki/Capacity_planning" title="Capacity planning">
+             Capacity planning
+            </a>
+            .
+           </li>
+           <li>
+            Change and release management, including
+            <a href="/wiki/CI/CD" title="CI/CD">
+             CI/CD
+            </a>
+            .
+           </li>
+           <li>
+            <a href="/wiki/Chaos_engineering" title="Chaos engineering">
+             Chaos engineering
+            </a>
+            .
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Implementations">
+            Implementations
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=4" title="Edit section: Implementations">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Site Reliability Engineering (SRE) teams collaborate with other departments within organizations to implement SRE principles effectively. Below is an overview of common practices:
+           <sup class="reference" id="cite_ref-20">
+            <a href="#cite_note-20">
+             <span class="cite-bracket">
+              [
+             </span>
+             20
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Kitchen_Sink,_a.k.a._“Everything_SRE”">
+            <span id="Kitchen_Sink.2C_a.k.a._.E2.80.9CEverything_SRE.E2.80.9D">
+            </span>
+            Kitchen Sink, a.k.a. “Everything SRE”
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=5" title="Edit section: Kitchen Sink, a.k.a. “Everything SRE”">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           In Site Reliability Engineering (SRE), "
+           <a class="external text" href="https://cloud.google.com/blog/products/devops-sre/how-sre-teams-are-organized-and-how-to-get-started" rel="nofollow">
+            Kitchen Sink
+           </a>
+           " refers to the expansive and often unbounded scope of services and workflows that SRE teams oversee. Unlike traditional roles with clearly defined boundaries, SREs are tasked with various responsibilities, including everything from system design and performance optimization to incident management and automation. This holistic approach allows SREs to address many challenges, ensuring that systems run efficiently and evolve in response to changing demands and complexities. By embracing this comprehensive perspective, SRE teams can foster a culture of continuous improvement and resilience, ultimately enhancing the overall reliability of services.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Infrastructure">
+            Infrastructure
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=6" title="Edit section: Infrastructure">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Infrastructure SRE (Site Reliability Engineering) teams focus on maintaining and improving the reliability of key systems that support other teams’ workflows. While they sometimes collaborate with platform engineering teams, their primary responsibility is ensuring uptime, performance, and efficiency. Platform teams, on the other hand, primarily develop the software and systems used across the organization. While reliability is a goal for both, platform teams prioritize creating and maintaining the tools and services used by internal stakeholders, whereas Infrastructure SRE teams are tasked with ensuring those systems run smoothly and meet reliability standards.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Tools">
+            Tools
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=7" title="Edit section: Tools">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Teams utilize a variety of tools to measure, maintain, and enhance system reliability. These tools play a crucial role in monitoring performance, identifying issues, and facilitating proactive maintenance. For instance,
+           <a class="mw-redirect" href="/wiki/Nagios_Core" title="Nagios Core">
+            Nagios Core
+           </a>
+           is widely used for system monitoring and alerting, while
+           <a href="/wiki/Prometheus_(software)" title="Prometheus (software)">
+            Prometheus (software)
+           </a>
+           is popular for collecting and querying metrics in cloud-native environments. Leveraging these tools, SRE teams can ensure optimal performance and quickly respond to potential reliability challenges.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Product_or_application">
+            Product or application
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=8" title="Edit section: Product or application">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Site Reliability Engineering (SRE) teams dedicated to specific products or applications are common in large organizations. These teams are responsible for ensuring the reliability, scalability, and performance of key services. In larger companies, it's typical to have multiple SRE teams, each focusing on different products or applications, ensuring that each area receives specialized attention to meet performance and availability targets
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Embedded">
+            Embedded
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=9" title="Edit section: Embedded">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           In an embedded model, individual SREs or small SRE pairs are integrated directly within software engineering teams. These SREs work closely with developers, applying core SRE principles, such as automation, monitoring, and incident response—directly to the software development lifecycle. This approach helps improve reliability and performance while fostering collaboration between SREs and developers.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Consulting">
+            Consulting
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=10" title="Edit section: Consulting">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Consulting SRE teams specialize in advising organizations on the implementation of SRE principles and practices. Typically composed of seasoned SREs with extensive experience across various implementations, these teams provide valuable insights and guidance tailored to specific organizational needs. When working directly with clients, these SREs are often referred to as '
+           <a class="external text" href="https://cloud.google.com/blog/products/devops-sre/introducing-a-new-era-of-customer-support-google-customer-reliability-engineering" rel="nofollow">
+            Customer Reliability Engineers
+           </a>
+           .'
+          </p>
+          <p>
+           In large organizations that have adopted SRE, a hybrid model is common. This model includes various implementations, such as multiple Product/Application SRE teams dedicated to addressing the unique reliability needs of different products. An Infrastructure SRE team may collaborate with a Platform engineering group to achieve shared reliability goals for a unified platform that supports all products and applications
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Industry">
+            Industry
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=11" title="Edit section: Industry">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Since 2014, the
+           <a href="/wiki/USENIX" title="USENIX">
+            USENIX
+           </a>
+           organization has hosted the annual
+           <a class="external text" href="https://www.usenix.org/srecon" rel="nofollow">
+            SREcon
+           </a>
+           conference, bringing together site reliability engineers from various industries. This conference serves as a platform for professionals to share knowledge, explore best practices, and discuss the latest trends in site reliability engineering.
+           <sup class="reference" id="cite_ref-21">
+            <a href="#cite_note-21">
+             <span class="cite-bracket">
+              [
+             </span>
+             21
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=12" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1184024115">
+           .mw-parser-output .div-col{margin-top:0.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:1px solid #aaa}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column}
+          </style>
+          <div class="div-col">
+           <ul>
+            <li>
+             <a href="/wiki/Chaos_engineering" title="Chaos engineering">
+              Chaos engineering
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Cloud_computing" title="Cloud computing">
+              Cloud computing
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Data_center" title="Data center">
+              Data center
+             </a>
+            </li>
+            <li>
+             <a class="mw-redirect" href="/wiki/Disaster_recovery" title="Disaster recovery">
+              Disaster recovery
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/High_availability_software" title="High availability software">
+              High availability software
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Infrastructure_as_code" title="Infrastructure as code">
+              Infrastructure as code
+             </a>
+            </li>
+            <li>
+             <a class="mw-redirect" href="/wiki/Operations,_administration_and_management" title="Operations, administration and management">
+              Operations, administration and management
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Operations_management" title="Operations management">
+              Operations management
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Reliability_engineering" title="Reliability engineering">
+              Reliability engineering
+             </a>
+            </li>
+            <li>
+             <a class="mw-redirect" href="/wiki/System_administration" title="System administration">
+              System administration
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Backup_site" title="Backup site">
+              Backup site
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=13" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-:7-1">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:7_1-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:7_1-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://cloud.google.com/blog/products/devops-sre/evaluating-where-your-team-lies-on-the-sre-spectrum/" rel="nofollow">
+                 "Evaluating where your team lies on the SRE spectrum"
+                </a>
+                .
+                <i>
+                 Google Cloud Blog
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2021-06-26
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Google+Cloud+Blog&amp;rft.atitle=Evaluating+where+your+team+lies+on+the+SRE+spectrum&amp;rft_id=https%3A%2F%2Fcloud.google.com%2Fblog%2Fproducts%2Fdevops-sre%2Fevaluating-where-your-team-lies-on-the-sre-spectrum%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:0-2">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:0_2-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:0_2-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFBeyerJonesPetoffMurphy2016">
+                Beyer, Betsy; Jones, Chris; Petoff, Jennifer; Murphy, Niall, eds. (2016).
+                <a class="external text" href="https://sre.google/sre-book/table-of-contents/" rel="nofollow">
+                 <i>
+                  Site Reliability Engineering: How Google Runs Production Systems
+                 </i>
+                </a>
+                . Sebastopol, CA:
+                <a href="/wiki/O%27Reilly_Media" title="O'Reilly Media">
+                 O'Reilly Media
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-1-4919-5118-7" title="Special:BookSources/978-1-4919-5118-7">
+                 <bdi>
+                  978-1-4919-5118-7
+                 </bdi>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/OCLC_(identifier)" title="OCLC (identifier)">
+                 OCLC
+                </a>
+                <a class="external text" href="https://search.worldcat.org/oclc/945577030" rel="nofollow">
+                 945577030
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Site+Reliability+Engineering%3A+How+Google+Runs+Production+Systems&amp;rft.place=Sebastopol%2C+CA&amp;rft.pub=O%27Reilly+Media&amp;rft.date=2016&amp;rft_id=info%3Aoclcnum%2F945577030&amp;rft.isbn=978-1-4919-5118-7&amp;rft_id=https%3A%2F%2Fsre.google%2Fsre-book%2Ftable-of-contents%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:2-3">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:2_3-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:2_3-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation audio-visual cs1" id="CITEREFVargoFong-Jones2018">
+                Vargo, Seth;
+                <a href="/wiki/Liz_Fong-Jones" title="Liz Fong-Jones">
+                 Fong-Jones, Liz
+                </a>
+                (March 1, 2018).
+                <a class="external text" href="https://www.youtube.com/watch?v=uTEL8Ff1Zvk" rel="nofollow">
+                 <i>
+                  What's the Difference Between DevOps and SRE? (class SRE implements DevOps)
+                 </i>
+                </a>
+                (Video).
+                <a href="/wiki/Google" title="Google">
+                 Google
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=What%27s+the+Difference+Between+DevOps+and+SRE%3F+%28class+SRE+implements+DevOps%29&amp;rft.pub=Google&amp;rft.date=2018-03-01&amp;rft.aulast=Vargo&amp;rft.aufirst=Seth&amp;rft.au=Fong-Jones%2C+Liz&amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DuTEL8Ff1Zvk&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:6-4">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:6_4-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:6_4-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://aws.amazon.com/what-is/sre/" rel="nofollow">
+                 "What is SRE? - SRE Explained - AWS"
+                </a>
+                .
+                <i>
+                 Amazon Web Services, Inc
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2022-11-05
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Amazon+Web+Services%2C+Inc.&amp;rft.atitle=What+is+SRE%3F+-+SRE+Explained+-+AWS&amp;rft_id=https%3A%2F%2Faws.amazon.com%2Fwhat-is%2Fsre%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFHill">
+                Hill, Patrick.
+                <a class="external text" href="https://www.atlassian.com/incident-management/devops/sre" rel="nofollow">
+                 "Love DevOps? Wait until you meet SRE"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/Atlassian" title="Atlassian">
+                  Atlassian
+                 </a>
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 17,
+                 </span>
+                 2021
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Atlassian&amp;rft.atitle=Love+DevOps%3F+Wait+until+you+meet+SRE&amp;rft.aulast=Hill&amp;rft.aufirst=Patrick&amp;rft_id=https%3A%2F%2Fwww.atlassian.com%2Fincident-management%2Fdevops%2Fsre&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:3-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-:3_6-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.redhat.com/en/topics/devops/what-is-sre" rel="nofollow">
+                 "What is SRE?"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/Red_Hat" title="Red Hat">
+                  Red Hat
+                 </a>
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 17,
+                 </span>
+                 2021
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Red+Hat&amp;rft.atitle=What+is+SRE%3F&amp;rft_id=https%3A%2F%2Fwww.redhat.com%2Fen%2Ftopics%2Fdevops%2Fwhat-is-sre&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFTreynor2014">
+                Treynor, Ben (2014).
+                <a class="external text" href="https://www.usenix.org/conference/srecon14/technical-sessions/presentation/keys-sre" rel="nofollow">
+                 "Keys to SRE"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/USENIX" title="USENIX">
+                  USENIX
+                 </a>
+                 SREcon14
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 17,
+                 </span>
+                 2021
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=USENIX+SREcon14&amp;rft.atitle=Keys+to+SRE&amp;rft.date=2014&amp;rft.aulast=Treynor&amp;rft.aufirst=Ben&amp;rft_id=https%3A%2F%2Fwww.usenix.org%2Fconference%2Fsrecon14%2Ftechnical-sessions%2Fpresentation%2Fkeys-sre&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:1-8">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:1_8-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:1_8-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFFischer2016">
+                Fischer, Donald (March 2, 2016).
+                <a class="external text" href="https://techcrunch.com/2016/03/02/are-site-reliability-engineers-the-next-data-scientists/" rel="nofollow">
+                 "Are site reliability engineers the next data scientists?"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/TechCrunch" title="TechCrunch">
+                  TechCrunch
+                 </a>
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 17,
+                 </span>
+                 2021
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=TechCrunch&amp;rft.atitle=Are+site+reliability+engineers+the+next+data+scientists%3F&amp;rft.date=2016-03-02&amp;rft.aulast=Fischer&amp;rft.aufirst=Donald&amp;rft_id=https%3A%2F%2Ftechcrunch.com%2F2016%2F03%2F02%2Fare-site-reliability-engineers-the-next-data-scientists%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:5-9">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:5_9-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:5_9-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:5_9-2">
+                <sup>
+                 <i>
+                  <b>
+                   c
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFGossett2020">
+                Gossett, Stephen (June 1, 2020).
+                <a class="external text" href="https://builtin.com/software-engineering-perspectives/site-reliability-engineer" rel="nofollow">
+                 "What Is a Site Reliability Engineer? What Does an SRE Do?"
+                </a>
+                .
+                <i>
+                 Built In
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 17,
+                 </span>
+                 2021
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Built+In&amp;rft.atitle=What+Is+a+Site+Reliability+Engineer%3F+What+Does+an+SRE+Do%3F&amp;rft.date=2020-06-01&amp;rft.aulast=Gossett&amp;rft.aufirst=Stephen&amp;rft_id=https%3A%2F%2Fbuiltin.com%2Fsoftware-engineering-perspectives%2Fsite-reliability-engineer&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.ibm.com/cloud/learn/site-reliability-engineering" rel="nofollow">
+                 "Site Reliability Engineering"
+                </a>
+                .
+                <i>
+                 IBM Cloud Education
+                </i>
+                .
+                <a href="/wiki/IBM" title="IBM">
+                 IBM
+                </a>
+                . November 12, 2020
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 21,
+                 </span>
+                 2021
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=IBM+Cloud+Education&amp;rft.atitle=Site+Reliability+Engineering&amp;rft.date=2020-11-12&amp;rft_id=https%3A%2F%2Fwww.ibm.com%2Fcloud%2Flearn%2Fsite-reliability-engineering&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-11">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://engineering.linkedin.com/india-engineering/site-reliability-engineers" rel="nofollow">
+                 "Site Reliability Engineering (SRE)"
+                </a>
+                .
+                <i>
+                 engineering.linkedin.com
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  March 12,
+                 </span>
+                 2024
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=engineering.linkedin.com&amp;rft.atitle=Site+Reliability+Engineering+%28SRE%29&amp;rft_id=https%3A%2F%2Fengineering.linkedin.com%2Findia-engineering%2Fsite-reliability-engineers&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-12">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-12">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://wikitech.wikimedia.org/wiki/SRE">
+                 "SRE - Wikitech"
+                </a>
+                .
+                <i>
+                 wikitech.wikimedia.org
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2021-10-17
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=wikitech.wikimedia.org&amp;rft.atitle=SRE+-+Wikitech&amp;rft_id=https%3A%2F%2Fwikitech.wikimedia.org%2Fwiki%2FSRE&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-13">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-13">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation report cs1" id="CITEREFOehrlichGrollGarbani2021">
+                Oehrlich, Eveline; Groll, Jayne; Garbani, Jean-Pierre (2021).
+                <a class="external text" href="https://insights.devopsinstitute.com/hubfs/Automation%20Downloads/Upskilling%202021-Enterprise%20DevOps%20Skills%20Report.pdf" rel="nofollow">
+                 Upskilling 2021 Enterprise DevOps SkillsReport
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                (Report). DevOps Institute
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 17,
+                 </span>
+                 2021
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=Upskilling+2021+Enterprise+DevOps+SkillsReport&amp;rft.pub=DevOps+Institute&amp;rft.date=2021&amp;rft.aulast=Oehrlich&amp;rft.aufirst=Eveline&amp;rft.au=Groll%2C+Jayne&amp;rft.au=Garbani%2C+Jean-Pierre&amp;rft_id=https%3A%2F%2Finsights.devopsinstitute.com%2Fhubfs%2FAutomation%2520Downloads%2FUpskilling%25202021-Enterprise%2520DevOps%2520Skills%2520Report.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-14">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-14">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFOehrlich2021">
+                Oehrlich, Eveline (May 4, 2021).
+                <a class="external text" href="https://techbeacon.com/enterprise-it/what-it-takes-be-site-reliability-engineer" rel="nofollow">
+                 "What it takes to be a site reliability engineer"
+                </a>
+                .
+                <i>
+                 TechBeacon
+                </i>
+                .
+                <a href="/wiki/Micro_Focus" title="Micro Focus">
+                 Micro Focus
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 17,
+                 </span>
+                 2021
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=TechBeacon&amp;rft.atitle=What+it+takes+to+be+a+site+reliability+engineer&amp;rft.date=2021-05-04&amp;rft.aulast=Oehrlich&amp;rft.aufirst=Eveline&amp;rft_id=https%3A%2F%2Ftechbeacon.com%2Fenterprise-it%2Fwhat-it-takes-be-site-reliability-engineer&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-15">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-15">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation interview cs1" id="CITEREFTreynor">
+                Treynor, Ben.
+                <a class="external text" href="https://sre.google/in-conversation/" rel="nofollow">
+                 "In Conversation"
+                </a>
+                (Interview). Interviewed by Niall Murphy. Google Site Reliability Engineering.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=In+Conversation&amp;rft.pub=Google+Site+Reliability+Engineering&amp;rft.aulast=Treynor&amp;rft.aufirst=Ben&amp;rft_id=https%3A%2F%2Fsre.google%2Fin-conversation%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:4-16">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:4_16-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:4_16-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation magazine cs1" id="CITEREFJonesUnderwoodNukala2015">
+                Jones, Chris; Underwood, Todd; Nukala, Shylaja (June 2015).
+                <a class="external text" href="https://www.usenix.org/system/files/login/articles/login_june_07_jones.pdf" rel="nofollow">
+                 "Hiring Site Reliability Engineers"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 <a href="/wiki/;login:" title=";login:">
+                  ;login:
+                 </a>
+                </i>
+                . Vol. 40, no. 3. pp. 35–39
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 17,
+                 </span>
+                 2021
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=%3Blogin%3A&amp;rft.atitle=Hiring+Site+Reliability+Engineers&amp;rft.volume=40&amp;rft.issue=3&amp;rft.pages=35-39&amp;rft.date=2015-06&amp;rft.aulast=Jones&amp;rft.aufirst=Chris&amp;rft.au=Underwood%2C+Todd&amp;rft.au=Nukala%2C+Shylaja&amp;rft_id=https%3A%2F%2Fwww.usenix.org%2Fsystem%2Ffiles%2Flogin%2Farticles%2Flogin_june_07_jones.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-17">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-17">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFDave_Harrison2018">
+                Dave Harrison (9 Oct 2018).
+                <a class="external text" href="https://driftboatdave.com/2018/10/09/interview-with-betsy-beyer-stephen-thorne-of-google/" rel="nofollow">
+                 "Interview with Betsy Beyer, Stephen Thorne of Google"
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  24 July
+                 </span>
+                 2024
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Interview+with+Betsy+Beyer%2C+Stephen+Thorne+of+Google&amp;rft.date=2018-10-09&amp;rft.au=Dave+Harrison&amp;rft_id=https%3A%2F%2Fdriftboatdave.com%2F2018%2F10%2F09%2Finterview-with-betsy-beyer-stephen-thorne-of-google%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-18">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-18">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.blameless.com//blog/sre-principles" rel="nofollow">
+                 "The 7 SRE Principles [And How to Put Them Into Practice]"
+                </a>
+                .
+                <i>
+                 www.blameless.com
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2021-06-26
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.blameless.com&amp;rft.atitle=The+7+SRE+Principles+%5BAnd+How+to+Put+Them+Into+Practice%5D&amp;rft_id=https%3A%2F%2Fwww.blameless.com%2F%2Fblog%2Fsre-principles&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-19">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-19">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://docs.honeycomb.io/getting-started/learning-about-observability/" rel="nofollow">
+                 "Learn about observability | Honeycomb"
+                </a>
+                .
+                <i>
+                 docs.honeycomb.io
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2021-06-26
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=docs.honeycomb.io&amp;rft.atitle=Learn+about+observability+%7C+Honeycomb&amp;rft_id=https%3A%2F%2Fdocs.honeycomb.io%2Fgetting-started%2Flearning-about-observability%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-20">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-20">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://cloud.google.com/blog/products/devops-sre/how-sre-teams-are-organized-and-how-to-get-started/" rel="nofollow">
+                 "SRE at Google: How to structure your SRE team"
+                </a>
+                .
+                <i>
+                 Google Cloud Blog
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2021-06-26
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Google+Cloud+Blog&amp;rft.atitle=SRE+at+Google%3A+How+to+structure+your+SRE+team&amp;rft_id=https%3A%2F%2Fcloud.google.com%2Fblog%2Fproducts%2Fdevops-sre%2Fhow-sre-teams-are-organized-and-how-to-get-started%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-21">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-21">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.usenix.org/srecon" rel="nofollow">
+                 "Usenix SREcon"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/USENIX" title="USENIX">
+                  USENIX
+                 </a>
+                </i>
+                . 2021
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 17,
+                 </span>
+                 2021
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=USENIX&amp;rft.atitle=Usenix+SREcon&amp;rft.date=2021&amp;rft_id=https%3A%2F%2Fwww.usenix.org%2Fsrecon&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Further_reading">
+            Further reading
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=14" title="Edit section: Further reading">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFLimoncelliChalupHogan2014">
+             Limoncelli, Tom; Chalup, Strata R.; Hogan, Christina J. (September 2014).
+             <a class="external text" href="https://www.worldcat.org/oclc/891786231" rel="nofollow">
+              <i>
+               The Practice of Cloud System Administration: DevOps and SRE Practices for Web Services
+              </i>
+             </a>
+             . Vol. 2. Upper Saddle River, NJ:
+             <a href="/wiki/Addison-Wesley" title="Addison-Wesley">
+              Addison-Wesley
+             </a>
+             .
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-0133478549" title="Special:BookSources/978-0133478549">
+              <bdi>
+               978-0133478549
+              </bdi>
+             </a>
+             .
+             <a class="mw-redirect" href="/wiki/OCLC_(identifier)" title="OCLC (identifier)">
+              OCLC
+             </a>
+             <a class="external text" href="https://search.worldcat.org/oclc/891786231" rel="nofollow">
+              891786231
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Practice+of+Cloud+System+Administration%3A+DevOps+and+SRE+Practices+for+Web+Services&amp;rft.place=Upper+Saddle+River%2C+NJ&amp;rft.pub=Addison-Wesley&amp;rft.date=2014-09&amp;rft_id=info%3Aoclcnum%2F891786231&amp;rft.isbn=978-0133478549&amp;rft.aulast=Limoncelli&amp;rft.aufirst=Tom&amp;rft.au=Chalup%2C+Strata+R.&amp;rft.au=Hogan%2C+Christina+J.&amp;rft_id=https%3A%2F%2Fwww.worldcat.org%2Foclc%2F891786231&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFBeyerJonesPetoffMurphy2016">
+             Beyer, Betsy; Jones, Chris; Petoff, Jennifer; Murphy, Niall Richard, eds. (2016).
+             <a class="external text" href="https://archive.org/details/sitereliabilitye0000unse" rel="nofollow">
+              <i>
+               Site Reliability Engineering: How Google Runs Production Systems
+              </i>
+             </a>
+             .
+             <a href="/wiki/O%27Reilly_Media" title="O'Reilly Media">
+              O'Reilly
+             </a>
+             .
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-1491929124" title="Special:BookSources/978-1491929124">
+              <bdi>
+               978-1491929124
+              </bdi>
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Site+Reliability+Engineering%3A+How+Google+Runs+Production+Systems&amp;rft.pub=O%27Reilly&amp;rft.date=2016&amp;rft.isbn=978-1491929124&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fsitereliabilitye0000unse&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFBlank-Edelman2018">
+             Blank-Edelman, David N., ed. (2018).
+             <a class="external text" href="https://www.worldcat.org/oclc/1052565720" rel="nofollow">
+              <i>
+               Seeking SRE: Conversations About Running Production Systems at Scale
+              </i>
+             </a>
+             (1 ed.). Sebastopol, CA: O'Reilly.
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-1491978863" title="Special:BookSources/978-1491978863">
+              <bdi>
+               978-1491978863
+              </bdi>
+             </a>
+             .
+             <a class="mw-redirect" href="/wiki/OCLC_(identifier)" title="OCLC (identifier)">
+              OCLC
+             </a>
+             <a class="external text" href="https://search.worldcat.org/oclc/1052565720" rel="nofollow">
+              1052565720
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Seeking+SRE%3A+Conversations+About+Running+Production+Systems+at+Scale&amp;rft.place=Sebastopol%2C+CA&amp;rft.edition=1&amp;rft.pub=O%27Reilly&amp;rft.date=2018&amp;rft_id=info%3Aoclcnum%2F1052565720&amp;rft.isbn=978-1491978863&amp;rft_id=https%3A%2F%2Fwww.worldcat.org%2Foclc%2F1052565720&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFBeyerMurphyKawaharaRensin2018">
+             Beyer, Betsy; Murphy, Niall; Kawahara, Kent; Rensin, David; Thorne, Stephen (2018).
+             <i>
+              The Site Reliability Workbook: Practical Ways to Implement SRE
+             </i>
+             . O'Reilly.
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-1492029502" title="Special:BookSources/978-1492029502">
+              <bdi>
+               978-1492029502
+              </bdi>
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Site+Reliability+Workbook%3A+Practical+Ways+to+Implement+SRE&amp;rft.pub=O%27Reilly&amp;rft.date=2018&amp;rft.isbn=978-1492029502&amp;rft.aulast=Beyer&amp;rft.aufirst=Betsy&amp;rft.au=Murphy%2C+Niall&amp;rft.au=Kawahara%2C+Kent&amp;rft.au=Rensin%2C+David&amp;rft.au=Thorne%2C+Stephen&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFWelch2018">
+             Welch, Nat (2018).
+             <i>
+              Real-World SRE: The Survival Guide for Responding to a System Outage and Maximizing Uptime
+             </i>
+             .
+             <a href="/wiki/Packt" title="Packt">
+              Packt
+             </a>
+             .
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-1788628884" title="Special:BookSources/978-1788628884">
+              <bdi>
+               978-1788628884
+              </bdi>
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Real-World+SRE%3A+The+Survival+Guide+for+Responding+to+a+System+Outage+and+Maximizing+Uptime&amp;rft.pub=Packt&amp;rft.date=2018&amp;rft.isbn=978-1788628884&amp;rft.aulast=Welch&amp;rft.aufirst=Nat&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFAdkinsBeyerBlankinshipLewandowski2020">
+             Adkins, Heather; Beyer, Betsy; Blankinship, Paul; Lewandowski, Piotr; Oprea, Ana; Stubblefield, Adam (2020).
+             <i>
+              Building Secure and Reliable Systems: Best Practices for Designing, Implementing, and Maintaining Systems
+             </i>
+             . O'Reilly.
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-1-4920-8312-2" title="Special:BookSources/978-1-4920-8312-2">
+              <bdi>
+               978-1-4920-8312-2
+              </bdi>
+             </a>
+             .
+             <a class="mw-redirect" href="/wiki/OCLC_(identifier)" title="OCLC (identifier)">
+              OCLC
+             </a>
+             <a class="external text" href="https://search.worldcat.org/oclc/1129470292" rel="nofollow">
+              1129470292
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Building+Secure+and+Reliable+Systems%3A+Best+Practices+for+Designing%2C+Implementing%2C+and+Maintaining+Systems&amp;rft.pub=O%27Reilly&amp;rft.date=2020&amp;rft_id=info%3Aoclcnum%2F1129470292&amp;rft.isbn=978-1-4920-8312-2&amp;rft.aulast=Adkins&amp;rft.aufirst=Heather&amp;rft.au=Beyer%2C+Betsy&amp;rft.au=Blankinship%2C+Paul&amp;rft.au=Lewandowski%2C+Piotr&amp;rft.au=Oprea%2C+Ana&amp;rft.au=Stubblefield%2C+Adam&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFRosenthal,_Jones2020">
+             Rosenthal, Jones, Casey, Nora (2020).
+             <i>
+              Chaos Engineering: System Resiliency in Practice
+             </i>
+             . O'Reilly.
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-1492043867" title="Special:BookSources/978-1492043867">
+              <bdi>
+               978-1492043867
+              </bdi>
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Chaos+Engineering%3A+System+Resiliency+in+Practice&amp;rft.pub=O%27Reilly&amp;rft.date=2020&amp;rft.isbn=978-1492043867&amp;rft.aulast=Rosenthal%2C+Jones&amp;rft.aufirst=Casey%2C+Nora&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASite+reliability+engineering">
+            </span>
+            <span class="cs1-maint citation-comment">
+             <code class="cs1-code">
+              {{
+              <a href="/wiki/Template:Cite_book" title="Template:Cite book">
+               cite book
+              </a>
+              }}
+             </code>
+             :  CS1 maint: multiple names: authors list (
+             <a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">
+              link
+             </a>
+             )
+            </span>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Site_reliability_engineering&amp;action=edit&amp;section=15" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="https://github.com/dastergon/awesome-sre" rel="nofollow">
+             Awesome Site Reliability Engineering
+            </a>
+            resources list
+           </li>
+           <li>
+            <a class="external text" href="https://github.com/upgundecha/howtheysre" rel="nofollow">
+             How they SRE
+            </a>
+            resources list
+           </li>
+           <li>
+            <a class="external text" href="https://sreweekly.com/" rel="nofollow">
+             SRE Weekly
+            </a>
+            weekly newsletter devoted to SRE
+           </li>
+           <li>
+            <a class="external text" href="https://sre.google/" rel="nofollow">
+             SRE at Google
+            </a>
+            landing page for learning more about SRE in Google
+           </li>
+           <li>
+            <a class="external text" href="https://komodor.com/learning-center/?category=troubleshooting/" rel="nofollow">
+             Komodor K8s Reliability
+            </a>
+            learning center with resources for SREs working with Kubernetes
+           </li>
+           <li>
+            <a class="external text" href="https://diamantinoalmeida.com/sre-what-do-you-need-to-know-to-master-this-role/" rel="nofollow">
+             SRE: What Do You Need To Know To Master This Role?
+            </a>
+            resource list
+           </li>
+          </ul>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Software_engineering" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Software_engineering" title="Template:Software engineering">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Software_engineering" title="Template talk:Software engineering">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Software_engineering" title="Special:EditPage/Template:Software engineering">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Software_engineering" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Software_engineering" title="Software engineering">
+                 Software engineering
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Fields
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Computer_programming" title="Computer programming">
+                   Computer programming
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/DevOps" title="DevOps">
+                   DevOps
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Empirical_software_engineering" title="Empirical software engineering">
+                   Empirical software engineering
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Experimental_software_engineering" title="Experimental software engineering">
+                   Experimental software engineering
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Formal_methods" title="Formal methods">
+                   Formal methods
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Requirements_engineering" title="Requirements engineering">
+                   Requirements engineering
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Search-based_software_engineering" title="Search-based software engineering">
+                   Search-based software engineering
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Site reliability engineering
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Social_software_engineering" title="Social software engineering">
+                   Social software engineering
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software_deployment" title="Software deployment">
+                   Software deployment
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software_design" title="Software design">
+                   Software design
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software_maintenance" title="Software maintenance">
+                   Software maintenance
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software_testing" title="Software testing">
+                   Software testing
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Systems_analysis" title="Systems analysis">
+                   Systems analysis
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Concepts
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Abstraction_(computer_science)" title="Abstraction (computer science)">
+                   Abstraction
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Component-based_software_engineering" title="Component-based software engineering">
+                   Component-based software engineering
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Computer_compatibility" title="Computer compatibility">
+                   Software compatibility
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Backward_compatibility" title="Backward compatibility">
+                     Backward compatibility
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Compatibility_layer" title="Compatibility layer">
+                     Compatibility layer
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Compatibility_mode" title="Compatibility mode">
+                     Compatibility mode
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Forward_compatibility" title="Forward compatibility">
+                     Forward compatibility
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Software_incompatibility" title="Software incompatibility">
+                     Software incompatibility
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Data_modeling" title="Data modeling">
+                   Data modeling
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Enterprise_architecture" title="Enterprise architecture">
+                   Enterprise architecture
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Functional_specification" title="Functional specification">
+                   Functional specification
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Modeling_language" title="Modeling language">
+                   Modeling language
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Programming_paradigm" title="Programming paradigm">
+                   Programming paradigm
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software" title="Software">
+                   Software
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software_archaeology" title="Software archaeology">
+                   Software archaeology
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software_architecture" title="Software architecture">
+                   Software architecture
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software_configuration_management" title="Software configuration management">
+                   Software configuration management
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software_development_process" title="Software development process">
+                   Software development process/methodology
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software_quality" title="Software quality">
+                   Software quality
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software_quality_assurance" title="Software quality assurance">
+                   Software quality assurance
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software_verification_and_validation" title="Software verification and validation">
+                   Software verification and validation
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software_system" title="Software system">
+                   Software system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Structured_analysis" title="Structured analysis">
+                   Structured analysis
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Essential_systems_analysis" title="Essential systems analysis">
+                     Essential analysis
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/CI/CD" title="CI/CD">
+                   CI/CD
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Orientations
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Agile_software_development" title="Agile software development">
+                   Agile
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">
+                   Aspect-oriented
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">
+                   Object orientation
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Ontology_(information_science)" title="Ontology (information science)">
+                   Ontology
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Service-oriented_architecture" title="Service-oriented architecture">
+                   Service orientation
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Systems_development_life_cycle" title="Systems development life cycle">
+                   SDLC
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Models
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%;font-weight:normal;">
+                   Developmental
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Agile_software_development" title="Agile software development">
+                       Agile
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Enterprise_unified_process" title="Enterprise unified process">
+                       EUP
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Executable_UML" title="Executable UML">
+                       Executable UML
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Incremental_build_model" title="Incremental build model">
+                       Incremental model
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Iterative_and_incremental_development" title="Iterative and incremental development">
+                       Iterative model
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Software_prototyping" title="Software prototyping">
+                       Prototype model
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Rapid_application_development" title="Rapid application development">
+                       RAD
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Unified_Process" title="Unified Process">
+                       UP
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Scrum_(software_development)" title="Scrum (software development)">
+                       Scrum
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Spiral_model" title="Spiral model">
+                       Spiral model
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/V-model_(software_development)" title="V-model (software development)">
+                       V-model
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Waterfall_model" title="Waterfall model">
+                       Waterfall model
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Extreme_programming" title="Extreme programming">
+                       XP
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Model-driven_engineering" title="Model-driven engineering">
+                       Model-driven engineering
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Round-trip_engineering" title="Round-trip engineering">
+                       Round-trip engineering
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%;font-weight:normal;">
+                   Other
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/ISO/IEC_15504" title="ISO/IEC 15504">
+                       SPICE
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Capability_Maturity_Model_Integration" title="Capability Maturity Model Integration">
+                       CMMI
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Data_model" title="Data model">
+                       Data model
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Entity%E2%80%93relationship_model" title="Entity–relationship model">
+                       ER model
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Function_model" title="Function model">
+                       Function model
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Information_model" title="Information model">
+                       Information model
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Metamodeling" title="Metamodeling">
+                       Metamodeling
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Object_model" title="Object model">
+                       Object model
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Systems_modeling" title="Systems modeling">
+                       Systems model
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/View_model" title="View model">
+                       View model
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%;font-weight:normal;">
+                   Languages
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/IDEF" title="IDEF">
+                       IDEF
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Unified_Modeling_Language" title="Unified Modeling Language">
+                       UML
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Universal_Systems_Language" title="Universal Systems Language">
+                       USL
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Systems_modeling_language" title="Systems modeling language">
+                       SysML
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Related fields
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Computer_science" title="Computer science">
+                   Computer science
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Computer_engineering" title="Computer engineering">
+                   Computer engineering
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Information_science" title="Information science">
+                   Information science
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Project_management" title="Project management">
+                   Project management
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Risk_management" title="Risk management">
+                   Risk management
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Systems_engineering" title="Systems engineering">
+                   Systems engineering
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <td class="navbox-abovebelow" colspan="2" style="font-weight:bold;">
+               <div>
+                <ul>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Commons page">
+                    <img alt="" class="mw-file-element" data-file-height="1376" data-file-width="1024" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" width="12"/>
+                   </span>
+                  </span>
+                  <a class="extiw" href="https://commons.wikimedia.org/wiki/Category:Software_engineering" title="commons:Category:Software engineering">
+                   Commons
+                  </a>
+                 </li>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Category">
+                    <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Category:Software_engineering" title="Category:Software engineering">
+                   Category
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐api‐int.codfw.canary‐675cb7fbfb‐2csgf
+Cached time: 20240926160605
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.657 seconds
+Real time usage: 0.769 seconds
+Preprocessor visited node count: 2129/1000000
+Post‐expand include size: 89765/2097152 bytes
+Template argument size: 7192/2097152 bytes
+Highest expansion depth: 17/100
+Expensive parser function count: 4/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 103297/5000000 bytes
+Lua time usage: 0.429/10.000 seconds
+Lua memory usage: 6127822/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  677.023      1 -total
+ 36.69%  248.422      1 Template:Reflist
+ 26.25%  177.686     16 Template:Cite_web
+ 17.88%  121.073      1 Template:Software_engineering
+ 17.69%  119.763      2 Template:Navbox
+ 15.30%  103.598      1 Template:Multiple_issues
+ 12.28%   83.110      1 Template:Short_description
+  8.76%   59.340      8 Template:Cite_book
+  7.75%   52.467      2 Template:Ambox
+  7.14%   48.362      2 Template:Pagetype
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:49946142-0!canonical and timestamp 20240926160605 and revision id 1247895088. Rendering was triggered because: api-parse
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Site_reliability_engineering&amp;oldid=1247895088">
+          https://en.wikipedia.org/w/index.php?title=Site_reliability_engineering&amp;oldid=1247895088
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:2003_introductions" title="Category:2003 introductions">
+            2003 introductions
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Google" title="Category:Google">
+            Google
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Reliability_engineering" title="Category:Reliability engineering">
+            Reliability engineering
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Software_engineering" title="Category:Software engineering">
+            Software engineering
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_peacock_terms_from_May_2023" title="Category:Articles with peacock terms from May 2023">
+            Articles with peacock terms from May 2023
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_peacock_terms" title="Category:All articles with peacock terms">
+            All articles with peacock terms
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_articles_containing_buzzwords_from_May_2023" title="Category:Wikipedia articles containing buzzwords from May 2023">
+            Wikipedia articles containing buzzwords from May 2023
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_multiple_maintenance_issues" title="Category:Articles with multiple maintenance issues">
+            Articles with multiple maintenance issues
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">
+            All articles with unsourced statements
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_June_2023" title="Category:Articles with unsourced statements from June 2023">
+            Articles with unsourced statements from June 2023
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">
+            CS1 maint: multiple names: authors list
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 26 September 2024, at 16:05
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Site_reliability_engineering&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-865f9cc494-x7rrx","wgBackendResponseTime":205,"wgPageParseReport":{"limitreport":{"cputime":"0.657","walltime":"0.769","ppvisitednodes":{"value":2129,"limit":1000000},"postexpandincludesize":{"value":89765,"limit":2097152},"templateargumentsize":{"value":7192,"limit":2097152},"expansiondepth":{"value":17,"limit":100},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":103297,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  677.023      1 -total"," 36.69%  248.422      1 Template:Reflist"," 26.25%  177.686     16 Template:Cite_web"," 17.88%  121.073      1 Template:Software_engineering"," 17.69%  119.763      2 Template:Navbox"," 15.30%  103.598      1 Template:Multiple_issues"," 12.28%   83.110      1 Template:Short_description","  8.76%   59.340      8 Template:Cite_book","  7.75%   52.467      2 Template:Ambox","  7.14%   48.362      2 Template:Pagetype"]},"scribunto":{"limitreport-timeusage":{"value":"0.429","limit":"10.000"},"limitreport-memusage":{"value":6127822,"limit":52428800}},"cachereport":{"origin":"mw-api-int.codfw.canary-675cb7fbfb-2csgf","timestamp":"20240926160605","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Site reliability engineering","url":"https:\/\/en.wikipedia.org\/wiki\/Site_reliability_engineering","sameAs":"http:\/\/www.wikidata.org\/entity\/Q56351687","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q56351687","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2016-03-25T21:32:01Z","dateModified":"2024-09-26T16:05:59Z","headline":"discipline that incorporates aspects of software engineering and applies them to infrastructure and operations problems"}
+  </script>
+ </body>
+</html>

@@ -1,0 +1,3799 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Exception handling - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"e117139c-4a26-4ddd-a061-633ea7f1624d","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Exception_handling","wgTitle":"Exception handling","wgCurRevisionId":1187744531,"wgRevisionId":1187744531,"wgArticleId":59231,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with example Java code","CS1 errors: missing periodical","Articles with short description","Short description is different from Wikidata","Articles with excerpts","Control flow","Software anomalies"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Exception_handling","wgRelevantArticleId":59231,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],
+"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q471748","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,
+"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.pygments.view","ext.scribunto.logs","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.popups",
+"ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Exception handling - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//en.m.wikipedia.org/wiki/Exception_handling" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Exception_handling&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Exception_handling" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Exception_handling"/>
+  <meta eecs485_docid="52290135"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Exception_handling rootpage-Exception_handling skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Exception+handling" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Exception+handling" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Exception+handling" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Exception+handling" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Definition">
+           <a class="vector-toc-link" href="#Definition">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Definition
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Definition-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-History">
+           <a class="vector-toc-link" href="#History">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              History
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-History-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Hardware_exceptions">
+           <a class="vector-toc-link" href="#Hardware_exceptions">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Hardware exceptions
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Hardware_exceptions-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-IEEE_754_floating-point_exceptions">
+           <a class="vector-toc-link" href="#IEEE_754_floating-point_exceptions">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              IEEE 754 floating-point exceptions
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-IEEE_754_floating-point_exceptions-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-In_programming_languages">
+           <a class="vector-toc-link" href="#In_programming_languages">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              In programming languages
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-In_programming_languages-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-In_user_interfaces">
+           <a class="vector-toc-link" href="#In_user_interfaces">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              In user interfaces
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-In_user_interfaces-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              7
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              8
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              9
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Exception handling
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 36 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-36" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          36 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="تدبير الحالات الاستثنائية" href="https://ar.wikipedia.org/wiki/%D8%AA%D8%AF%D8%A8%D9%8A%D8%B1_%D8%A7%D9%84%D8%AD%D8%A7%D9%84%D8%A7%D8%AA_%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A6%D9%8A%D8%A9" hreflang="ar" lang="ar" title="تدبير الحالات الاستثنائية – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-bn mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="বাংলা" data-language-local-name="Bangla" data-title="এক্সেপশন ব্যবস্থাপনা" href="https://bn.wikipedia.org/wiki/%E0%A6%8F%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A7%87%E0%A6%AA%E0%A6%B6%E0%A6%A8_%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%AA%E0%A6%A8%E0%A6%BE" hreflang="bn" lang="bn" title="এক্সেপশন ব্যবস্থাপনা – Bangla">
+             <span>
+              বাংলা
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-bg mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Български" data-language-local-name="Bulgarian" data-title="Управление на изключения" href="https://bg.wikipedia.org/wiki/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0_%D0%B8%D0%B7%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F" hreflang="bg" lang="bg" title="Управление на изключения – Bulgarian">
+             <span>
+              Български
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Tractament d'excepcions" href="https://ca.wikipedia.org/wiki/Tractament_d%27excepcions" hreflang="ca" lang="ca" title="Tractament d'excepcions – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-cs mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Čeština" data-language-local-name="Czech" data-title="Výjimka (programování)" href="https://cs.wikipedia.org/wiki/V%C3%BDjimka_(programov%C3%A1n%C3%AD)" hreflang="cs" lang="cs" title="Výjimka (programování) – Czech">
+             <span>
+              Čeština
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Ausnahmebehandlung" href="https://de.wikipedia.org/wiki/Ausnahmebehandlung" hreflang="de" lang="de" title="Ausnahmebehandlung – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-et mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Eesti" data-language-local-name="Estonian" data-title="Eranditöötlus" href="https://et.wikipedia.org/wiki/Erandit%C3%B6%C3%B6tlus" hreflang="et" lang="et" title="Eranditöötlus – Estonian">
+             <span>
+              Eesti
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Manejo de excepciones" href="https://es.wikipedia.org/wiki/Manejo_de_excepciones" hreflang="es" lang="es" title="Manejo de excepciones – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="رسیدگی به استثناء" href="https://fa.wikipedia.org/wiki/%D8%B1%D8%B3%DB%8C%D8%AF%DA%AF%DB%8C_%D8%A8%D9%87_%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A1" hreflang="fa" lang="fa" title="رسیدگی به استثناء – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Système de gestion d'exceptions" href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_d%27exceptions" hreflang="fr" lang="fr" title="Système de gestion d'exceptions – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="예외 처리" href="https://ko.wikipedia.org/wiki/%EC%98%88%EC%99%B8_%EC%B2%98%EB%A6%AC" hreflang="ko" lang="ko" title="예외 처리 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="हिन्दी" data-language-local-name="Hindi" data-title="अपवाद संचालन" href="https://hi.wikipedia.org/wiki/%E0%A4%85%E0%A4%AA%E0%A4%B5%E0%A4%BE%E0%A4%A6_%E0%A4%B8%E0%A4%82%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A4%A8" hreflang="hi" lang="hi" title="अपवाद संचालन – Hindi">
+             <span>
+              हिन्दी
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Hrvatski" data-language-local-name="Croatian" data-title="Upravljanje iznimkama" href="https://hr.wikipedia.org/wiki/Upravljanje_iznimkama" hreflang="hr" lang="hr" title="Upravljanje iznimkama – Croatian">
+             <span>
+              Hrvatski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-id mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Bahasa Indonesia" data-language-local-name="Indonesian" data-title="Penanganan pengecualian" href="https://id.wikipedia.org/wiki/Penanganan_pengecualian" hreflang="id" lang="id" title="Penanganan pengecualian – Indonesian">
+             <span>
+              Bahasa Indonesia
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-is mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Íslenska" data-language-local-name="Icelandic" data-title="Frábrigðissýslari" href="https://is.wikipedia.org/wiki/Fr%C3%A1brig%C3%B0iss%C3%BDslari" hreflang="is" lang="is" title="Frábrigðissýslari – Icelandic">
+             <span>
+              Íslenska
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Gestione delle eccezioni" href="https://it.wikipedia.org/wiki/Gestione_delle_eccezioni" hreflang="it" lang="it" title="Gestione delle eccezioni – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="טיפול בחריגות" href="https://he.wikipedia.org/wiki/%D7%98%D7%99%D7%A4%D7%95%D7%9C_%D7%91%D7%97%D7%A8%D7%99%D7%92%D7%95%D7%AA" hreflang="he" lang="he" title="טיפול בחריגות – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-kn mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="ಕನ್ನಡ" data-language-local-name="Kannada" data-title="ಎಕ್ಸೆಪ್ಶನ್ ಹ್ಯಾಂಡ್ಲಿಂಗ್‌ (ವಿನಾಯಿತಿ ನಿರ್ವಹಣೆ)" href="https://kn.wikipedia.org/wiki/%E0%B2%8E%E0%B2%95%E0%B3%8D%E0%B2%B8%E0%B3%86%E0%B2%AA%E0%B3%8D%E0%B2%B6%E0%B2%A8%E0%B3%8D_%E0%B2%B9%E0%B3%8D%E0%B2%AF%E0%B2%BE%E0%B2%82%E0%B2%A1%E0%B3%8D%E0%B2%B2%E0%B2%BF%E0%B2%82%E0%B2%97%E0%B3%8D%E2%80%8C_(%E0%B2%B5%E0%B2%BF%E0%B2%A8%E0%B2%BE%E0%B2%AF%E0%B2%BF%E0%B2%A4%E0%B2%BF_%E0%B2%A8%E0%B2%BF%E0%B2%B0%E0%B3%8D%E0%B2%B5%E0%B2%B9%E0%B2%A3%E0%B3%86)" hreflang="kn" lang="kn" title="ಎಕ್ಸೆಪ್ಶನ್ ಹ್ಯಾಂಡ್ಲಿಂಗ್‌ (ವಿನಾಯಿತಿ ನಿರ್ವಹಣೆ) – Kannada">
+             <span>
+              ಕನ್ನಡ
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Magyar" data-language-local-name="Hungarian" data-title="Kivételkezelés" href="https://hu.wikipedia.org/wiki/Kiv%C3%A9telkezel%C3%A9s" hreflang="hu" lang="hu" title="Kivételkezelés – Hungarian">
+             <span>
+              Magyar
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="Exception handling" href="https://nl.wikipedia.org/wiki/Exception_handling" hreflang="nl" lang="nl" title="Exception handling – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="例外処理" href="https://ja.wikipedia.org/wiki/%E4%BE%8B%E5%A4%96%E5%87%A6%E7%90%86" hreflang="ja" lang="ja" title="例外処理 – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-no mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" data-title="Unntakshåndtering" href="https://no.wikipedia.org/wiki/Unntaksh%C3%A5ndtering" hreflang="nb" lang="nb" title="Unntakshåndtering – Norwegian Bokmål">
+             <span>
+              Norsk bokmål
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Wyjątek" href="https://pl.wikipedia.org/wiki/Wyj%C4%85tek" hreflang="pl" lang="pl" title="Wyjątek – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Tratamento de exceção" href="https://pt.wikipedia.org/wiki/Tratamento_de_exce%C3%A7%C3%A3o" hreflang="pt" lang="pt" title="Tratamento de exceção – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Обработка исключений" href="https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B9" hreflang="ru" lang="ru" title="Обработка исключений – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-simple mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Simple English" data-language-local-name="Simple English" data-title="Exception handling" href="https://simple.wikipedia.org/wiki/Exception_handling" hreflang="en-simple" lang="en-simple" title="Exception handling – Simple English">
+             <span>
+              Simple English
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Slovenščina" data-language-local-name="Slovenian" data-title="Upravljanje z izjemami" href="https://sl.wikipedia.org/wiki/Upravljanje_z_izjemami" hreflang="sl" lang="sl" title="Upravljanje z izjemami – Slovenian">
+             <span>
+              Slovenščina
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" data-title="Изузетак (програмирање)" href="https://sr.wikipedia.org/wiki/%D0%98%D0%B7%D1%83%D0%B7%D0%B5%D1%82%D0%B0%D0%BA_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5)" hreflang="sr" lang="sr" title="Изузетак (програмирање) – Serbian">
+             <span>
+              Српски / srpski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="Finnish" data-title="Poikkeus" href="https://fi.wikipedia.org/wiki/Poikkeus" hreflang="fi" lang="fi" title="Poikkeus – Finnish">
+             <span>
+              Suomi
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sv mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Svenska" data-language-local-name="Swedish" data-title="Undantagshantering" href="https://sv.wikipedia.org/wiki/Undantagshantering" hreflang="sv" lang="sv" title="Undantagshantering – Swedish">
+             <span>
+              Svenska
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ta mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="தமிழ்" data-language-local-name="Tamil" data-title="விதிவிலக்கை கையாளுதல்" href="https://ta.wikipedia.org/wiki/%E0%AE%B5%E0%AE%BF%E0%AE%A4%E0%AE%BF%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%88_%E0%AE%95%E0%AF%88%E0%AE%AF%E0%AE%BE%E0%AE%B3%E0%AF%81%E0%AE%A4%E0%AE%B2%E0%AF%8D" hreflang="ta" lang="ta" title="விதிவிலக்கை கையாளுதல் – Tamil">
+             <span>
+              தமிழ்
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-th mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="ไทย" data-language-local-name="Thai" data-title="การจัดการสิ่งผิดปรกติ" href="https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%9C%E0%B8%B4%E0%B8%94%E0%B8%9B%E0%B8%A3%E0%B8%81%E0%B8%95%E0%B8%B4" hreflang="th" lang="th" title="การจัดการสิ่งผิดปรกติ – Thai">
+             <span>
+              ไทย
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Türkçe" data-language-local-name="Turkish" data-title="Hata işleme" href="https://tr.wikipedia.org/wiki/Hata_i%C5%9Fleme" hreflang="tr" lang="tr" title="Hata işleme – Turkish">
+             <span>
+              Türkçe
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Обробка винятків" href="https://uk.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_%D0%B2%D0%B8%D0%BD%D1%8F%D1%82%D0%BA%D1%96%D0%B2" hreflang="uk" lang="uk" title="Обробка винятків – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh-yue mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="粵語" data-language-local-name="Cantonese" data-title="例外處理" href="https://zh-yue.wikipedia.org/wiki/%E4%BE%8B%E5%A4%96%E8%99%95%E7%90%86" hreflang="yue" lang="yue" title="例外處理 – Cantonese">
+             <span>
+              粵語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="异常处理" href="https://zh.wikipedia.org/wiki/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86" hreflang="zh" lang="zh" title="异常处理 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q471748#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Exception_handling" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Exception_handling" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Exception_handling">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Exception_handling&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Exception_handling&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Exception_handling">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Exception_handling&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Exception_handling&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Exception_handling" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Exception_handling" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Exception_handling&amp;oldid=1187744531" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Exception_handling&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Exception_handling&amp;id=1187744531&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FException_handling">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FException_handling">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q471748" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Exception_handling&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Exception_handling&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Programming language construct for special conditions
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          "Error handling" redirects here. Not to be confused with
+          <a href="/wiki/Error_detection_and_correction" title="Error detection and correction">
+           Error detection and correction
+          </a>
+          .
+         </div>
+         <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+         <div class="hatnote navigation-not-searchable" role="note">
+          This article is about computing. For knowledge, see
+          <a class="mw-redirect" href="/wiki/Fact_checking" title="Fact checking">
+           fact checking
+          </a>
+          and
+          <a href="/wiki/Problem_solving" title="Problem solving">
+           problem solving
+          </a>
+          .
+         </div>
+         <p>
+          In
+          <a href="/wiki/Computing" title="Computing">
+           computing
+          </a>
+          and
+          <a href="/wiki/Computer_programming" title="Computer programming">
+           computer programming
+          </a>
+          ,
+          <b>
+           exception handling
+          </b>
+          is the process of responding to the occurrence of
+          <i>
+           exceptions
+          </i>
+          – anomalous or exceptional conditions requiring special processing – during the
+          <a href="/wiki/Execution_(computing)" title="Execution (computing)">
+           execution
+          </a>
+          of a
+          <a href="/wiki/Computer_program" title="Computer program">
+           program
+          </a>
+          . In general, an exception breaks the normal flow of execution and executes a pre-registered
+          <i>
+           exception handler
+          </i>
+          ; the details of how this is done depend on whether it is a
+          <a href="/wiki/Computer_hardware" title="Computer hardware">
+           hardware
+          </a>
+          or
+          <a href="/wiki/Software" title="Software">
+           software
+          </a>
+          exception and how the software exception is implemented.
+         </p>
+         <p>
+          Exceptions are defined by different layers of a computer system, and the typical layers are CPU-defined
+          <a href="/wiki/Interrupt" title="Interrupt">
+           interrupts
+          </a>
+          ,
+          <a href="/wiki/Operating_system" title="Operating system">
+           operating system
+          </a>
+          (OS)-defined
+          <a href="/wiki/Signal_(IPC)" title="Signal (IPC)">
+           signals
+          </a>
+          ,
+          <a href="/wiki/Programming_language" title="Programming language">
+           programming language
+          </a>
+          -defined exceptions. Each layer requires different ways of exception handling although they may be interrelated, e.g. a CPU interrupt could be turned into an OS signal. Some exceptions, especially hardware ones, may be handled so gracefully that execution can resume where it was interrupted.
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Definition">
+            Definition
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Exception_handling&amp;action=edit&amp;section=1" title="Edit section: Definition">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Further information:
+           <a href="/wiki/Interrupt#Terminology" title="Interrupt">
+            Interrupt § Terminology
+           </a>
+          </div>
+          <p>
+           The definition of an exception is based on the observation that each
+           <a class="mw-redirect" href="/wiki/Subroutine" title="Subroutine">
+            procedure
+           </a>
+           has a
+           <a href="/wiki/Precondition" title="Precondition">
+            precondition
+           </a>
+           , a set of circumstances for which it will terminate "normally".
+           <sup class="reference" id="cite_ref-Cristian_1-0">
+            <a href="#cite_note-Cristian-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           An exception handling mechanism allows the procedure to
+           <i>
+            raise an exception
+           </i>
+           <sup class="reference" id="cite_ref-FOOTNOTEGoodenough1975b683–684_2-0">
+            <a href="#cite_note-FOOTNOTEGoodenough1975b683–684-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           if this precondition is violated,
+           <sup class="reference" id="cite_ref-Cristian_1-1">
+            <a href="#cite_note-Cristian-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           for example if the procedure has been called on an abnormal set of arguments. The exception handling mechanism then
+           <i>
+            handles
+           </i>
+           the exception.
+           <sup class="reference" id="cite_ref-FOOTNOTEGoodenough1975b684_3-0">
+            <a href="#cite_note-FOOTNOTEGoodenough1975b684-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The precondition, and the definition of exception, is
+           <a class="mw-redirect" href="/wiki/Subjectivity" title="Subjectivity">
+            subjective
+           </a>
+           . The set of "normal" circumstances is defined entirely by the programmer, e.g. the programmer may deem division by zero to be undefined, hence an exception, or devise some behavior such as returning zero or a special "ZERO DIVIDE" value (circumventing the need for exceptions).
+           <sup class="reference" id="cite_ref-FOOTNOTEBlack198213–15_4-0">
+            <a href="#cite_note-FOOTNOTEBlack198213–15-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Common exceptions include an invalid argument (e.g. value is outside of the
+           <a href="/wiki/Domain_of_a_function" title="Domain of a function">
+            domain of a function
+           </a>
+           ),
+           <sup class="reference" id="cite_ref-5">
+            <a href="#cite_note-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           an unavailable resource (like a missing file,
+           <sup class="reference" id="cite_ref-6">
+            <a href="#cite_note-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           a network drive error,
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           or out-of-memory errors
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           ), or that the routine has detected a normal condition that requires special handling, e.g., attention, end of file.
+           <sup class="reference" id="cite_ref-9">
+            <a href="#cite_note-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Social pressure is a major influence on the scope of exceptions and use of exception-handling mechanisms, i.e. "examples of use, typically found in core libraries, and code examples in technical books, magazine articles, and online discussion forums, and in an organization’s code standards".
+           <sup class="reference" id="cite_ref-Kiniry_10-0">
+            <a href="#cite_note-Kiniry-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Exception handling solves the
+           <a href="/wiki/Semipredicate_problem" title="Semipredicate problem">
+            semipredicate problem
+           </a>
+           , in that the mechanism distinguishes normal return values from erroneous ones. In languages without built-in exception handling such as C, routines would need to signal the error in some other way, such as the common
+           <a class="mw-redirect" href="/wiki/Return_code" title="Return code">
+            return code
+           </a>
+           and
+           <a class="mw-redirect" href="/wiki/Errno" title="Errno">
+            errno
+           </a>
+           pattern.
+           <sup class="reference" id="cite_ref-Lang_11-0">
+            <a href="#cite_note-Lang-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Taking a broad view, errors can be considered to be a proper subset of exceptions,
+           <sup class="reference" id="cite_ref-FOOTNOTELevin19775_12-0">
+            <a href="#cite_note-FOOTNOTELevin19775-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           and explicit error mechanisms such as errno can be considered (verbose) forms of exception handling.
+           <sup class="reference" id="cite_ref-Lang_11-1">
+            <a href="#cite_note-Lang-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The term "exception" is preferred to "error" because it does not imply that anything is wrong - a condition viewed as an error by one procedure or programmer may not be viewed that way by another.
+           <sup class="reference" id="cite_ref-CLU_13-0">
+            <a href="#cite_note-CLU-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The term "exception" may be misleading because its connotation of "anomaly" indicates that raising an exception is abnormal or unusual,
+           <sup class="reference" id="cite_ref-14">
+            <a href="#cite_note-14">
+             <span class="cite-bracket">
+              [
+             </span>
+             14
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           when in fact raising the exception may be a normal and usual situation in the program.
+           <sup class="reference" id="cite_ref-CLU_13-1">
+            <a href="#cite_note-CLU-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           For example, suppose a lookup function for an
+           <a href="/wiki/Associative_array" title="Associative array">
+            associative array
+           </a>
+           throws an exception if the key has no value associated. Depending on context, this "key absent" exception may occur much more often than a successful lookup.
+           <sup class="reference" id="cite_ref-FOOTNOTELevin19774_15-0">
+            <a href="#cite_note-FOOTNOTELevin19774-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="History">
+            History
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Exception_handling&amp;action=edit&amp;section=2" title="Edit section: History">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main articles:
+           <a href="/wiki/Interrupt#History" title="Interrupt">
+            Interrupt § History
+           </a>
+           ,
+           <a href="/wiki/IEEE_754#History" title="IEEE 754">
+            IEEE 754 § History
+           </a>
+           , and
+           <a href="/wiki/Exception_handling_(programming)#History" title="Exception handling (programming)">
+            Exception handling (programming) § History
+           </a>
+          </div>
+          <p>
+           The first hardware exception handling was found in the
+           <a href="/wiki/UNIVAC_I" title="UNIVAC I">
+            UNIVAC I
+           </a>
+           from 1951. 
+Arithmetic overflow executed two instructions at address 0 which could transfer control or fix up the result.
+           <sup class="reference" id="cite_ref-Smotherman_16-0">
+            <a href="#cite_note-Smotherman-16">
+             <span class="cite-bracket">
+              [
+             </span>
+             16
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Software exception handling developed in the 1960s and 1970s. Exception handling was subsequently widely adopted by many programming languages from the 1980s onward.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Hardware_exceptions">
+            Hardware exceptions
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Exception_handling&amp;action=edit&amp;section=3" title="Edit section: Hardware exceptions">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Interrupt" title="Interrupt">
+            Interrupt
+           </a>
+          </div>
+          <p>
+           There is no clear consensus as to the exact meaning of an exception with respect to hardware.
+           <sup class="reference" id="cite_ref-17">
+            <a href="#cite_note-17">
+             <span class="cite-bracket">
+              [
+             </span>
+             17
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           From the implementation point of view, it is handled identically to an
+           <a href="/wiki/Interrupt" title="Interrupt">
+            interrupt
+           </a>
+           : the processor halts execution of the current program, looks up the
+           <a href="/wiki/Interrupt_handler" title="Interrupt handler">
+            interrupt handler
+           </a>
+           in the
+           <a href="/wiki/Interrupt_vector_table" title="Interrupt vector table">
+            interrupt vector table
+           </a>
+           for that exception or interrupt condition, saves state, and switches control.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="IEEE_754_floating-point_exceptions">
+            IEEE 754 floating-point exceptions
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Exception_handling&amp;action=edit&amp;section=4" title="Edit section: IEEE 754 floating-point exceptions">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/IEEE_754#Exception_handling" title="IEEE 754">
+            IEEE 754 § Exception handling
+           </a>
+          </div>
+          <p>
+           Exception handling in the
+           <a href="/wiki/IEEE_754" title="IEEE 754">
+            IEEE 754
+           </a>
+           <a href="/wiki/Floating-point_arithmetic#Dealing_with_exceptional_cases" title="Floating-point arithmetic">
+            floating-point
+           </a>
+           standard refers in general to exceptional conditions and defines an exception as "an event that occurs when an operation on some particular operands has no outcome suitable for every reasonable application. That operation might signal one or more exceptions by invoking the default or, if explicitly requested, a language-defined alternate handling."
+          </p>
+          <p>
+           By default, an IEEE 754 exception is resumable and is handled by substituting a predefined value for different exceptions, e.g. infinity for a divide by zero exception, and providing
+           <a class="new" href="/w/index.php?title=Floating-point_arithmetict&amp;action=edit&amp;redlink=1" title="Floating-point arithmetict (page does not exist)">
+            status flags
+           </a>
+           for later checking of whether the exception occurred (see
+           <a href="/wiki/C99#IEEE_754_floating-point_support" title="C99">
+            C99 programming language
+           </a>
+           for a typical example of handling of IEEE 754 exceptions). An exception-handling style enabled by the use of status flags involves: first computing an expression using a fast, direct implementation; checking whether it failed by testing status flags; and then, if necessary, calling a slower, more numerically robust, implementation.
+           <sup class="reference" id="cite_ref-Xiaoye_Li_and_James_Demmel_1994_983–992_18-0">
+            <a href="#cite_note-Xiaoye_Li_and_James_Demmel_1994_983–992-18">
+             <span class="cite-bracket">
+              [
+             </span>
+             18
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The IEEE 754 standard uses the term "trapping" to refer to the calling of a user-supplied exception-handling routine on exceptional conditions, and is an optional feature of the standard. The standard recommends several usage scenarios for this, including the implementation of non-default pre-substitution of a value followed by resumption, to concisely handle
+           <a href="/wiki/Removable_singularity" title="Removable singularity">
+            removable singularities
+           </a>
+           .
+           <sup class="reference" id="cite_ref-Xiaoye_Li_and_James_Demmel_1994_983–992_18-1">
+            <a href="#cite_note-Xiaoye_Li_and_James_Demmel_1994_983–992-18">
+             <span class="cite-bracket">
+              [
+             </span>
+             18
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-grail_19-0">
+            <a href="#cite_note-grail-19">
+             <span class="cite-bracket">
+              [
+             </span>
+             19
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-20">
+            <a href="#cite_note-20">
+             <span class="cite-bracket">
+              [
+             </span>
+             20
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The default IEEE 754 exception handling behaviour of resumption following pre-substitution of a default value avoids the risks inherent in changing flow of program control on numerical exceptions. For example, the 1996
+           <a class="mw-redirect" href="/wiki/Cluster_(spacecraft)" title="Cluster (spacecraft)">
+            Cluster spacecraft
+           </a>
+           launch ended in a catastrophic explosion due in part to the
+           <a href="/wiki/Ada_(programming_language)" title="Ada (programming language)">
+            Ada
+           </a>
+           exception handling policy of aborting computation on arithmetic error.
+           <a href="/wiki/William_Kahan" title="William Kahan">
+            William Kahan
+           </a>
+           claims the default IEEE 754 exception handling behavior would have prevented this.
+           <sup class="reference" id="cite_ref-grail_19-1">
+            <a href="#cite_note-grail-19">
+             <span class="cite-bracket">
+              [
+             </span>
+             19
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="In_programming_languages">
+            In programming languages
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Exception_handling&amp;action=edit&amp;section=5" title="Edit section: In programming languages">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="excerpt-block">
+           <style data-mw-deduplicate="TemplateStyles:r1066933788">
+            .mw-parser-output .excerpt-hat .mw-editsection-like{font-style:normal}
+           </style>
+           <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+           <div class="hatnote navigation-not-searchable dablink excerpt-hat selfref" role="note">
+            This section is an excerpt from
+            <a href="/wiki/Exception_handling_(programming)" title="Exception handling (programming)">
+             Exception handling (programming)
+            </a>
+            .
+            <span class="mw-editsection-like plainlinks">
+             <span class="mw-editsection-bracket">
+              [
+             </span>
+             <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Exception_handling_(programming)&amp;action=edit">
+              edit
+             </a>
+             <span class="mw-editsection-bracket">
+              ]
+             </span>
+            </span>
+           </div>
+           <div class="excerpt">
+            In
+            <a href="/wiki/Computer_programming" title="Computer programming">
+             computer programming
+            </a>
+            , several
+            <a href="/wiki/Programming_language" title="Programming language">
+             language
+            </a>
+            mechanisms exist for
+            <a href="/wiki/Exception_handling_(programming)" title="Exception handling (programming)">
+             exception handling
+            </a>
+            . The term
+            <i>
+             exception
+            </i>
+            is typically used to denote a data structure storing information about an exceptional condition. One mechanism to transfer control, or
+            <i>
+             raise
+            </i>
+            an exception, is known as a
+            <i>
+             throw
+            </i>
+            ; the exception is said to be
+            <i>
+             thrown
+            </i>
+            . Execution is transferred to a
+            <i>
+             catch
+            </i>
+            .
+           </div>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="In_user_interfaces">
+            In user interfaces
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Exception_handling&amp;action=edit&amp;section=6" title="Edit section: In user interfaces">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           <a href="/wiki/Front-end_web_development" title="Front-end web development">
+            Front-end web development
+           </a>
+           frameworks, such as
+           <a href="/wiki/React_(JavaScript_library)" title="React (JavaScript library)">
+            React
+           </a>
+           and
+           <a href="/wiki/Vue.js" title="Vue.js">
+            Vue
+           </a>
+           , have introduced error handling mechanisms where errors propagate up the
+           <a href="/wiki/User_interface" title="User interface">
+            user interface
+           </a>
+           (UI) component hierarchy, in a way that is analogous to how errors propagate up the call stack in executing code.
+           <sup class="reference" id="cite_ref-21">
+            <a href="#cite_note-21">
+             <span class="cite-bracket">
+              [
+             </span>
+             21
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-22">
+            <a href="#cite_note-22">
+             <span class="cite-bracket">
+              [
+             </span>
+             22
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Here the error boundary mechanism serves as an analogue to the typical try-catch mechanism. Thus a component can ensure that errors from its child components are caught and handled, and not propagated up to parent components.
+          </p>
+          <p>
+           For example, in Vue, a component would catch errors by implementing
+           <code>
+            errorCaptured
+           </code>
+          </p>
+          <div class="mw-highlight mw-highlight-lang-javascript mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="nx">Vue</span><span class="p">.</span><span class="nx">component</span><span class="p">(</span><span class="s1">'parent'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="s1">'&lt;div&gt;&lt;slot&gt;&lt;/slot&gt;&lt;/div&gt;'</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">errorCaptured</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="w"> </span><span class="nx">vm</span><span class="p">,</span><span class="w"> </span><span class="nx">info</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s1">'An error occurred'</span><span class="p">);</span>
+<span class="p">})</span>
+<span class="nx">Vue</span><span class="p">.</span><span class="nx">component</span><span class="p">(</span><span class="s1">'child'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="s1">'&lt;div&gt;{{ cause_error() }}&lt;/div&gt;'</span>
+<span class="p">})</span>
+</pre>
+          </div>
+          <p>
+           When used like this in markup:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-html mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="p">&lt;</span><span class="nt">parent</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">child</span><span class="p">&gt;&lt;/</span><span class="nt">child</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">parent</span><span class="p">&gt;</span>
+</pre>
+          </div>
+          <p>
+           The error produced by the child component is caught and handled by the parent component.
+           <sup class="reference" id="cite_ref-23">
+            <a href="#cite_note-23">
+             <span class="cite-bracket">
+              [
+             </span>
+             23
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Exception_handling&amp;action=edit&amp;section=7" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Triple_fault" title="Triple fault">
+             Triple fault
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Data_validation" title="Data validation">
+             Data validation
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Exception_handling&amp;action=edit&amp;section=8" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist reflist-columns references-column-width reflist-columns-2">
+           <ol class="references">
+            <li id="cite_note-Cristian-1">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-Cristian_1-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-Cristian_1-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <style data-mw-deduplicate="TemplateStyles:r1238218222">
+               .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+              </style>
+              <cite class="citation journal cs1" id="CITEREFCristian1980">
+               Cristian, Flaviu (1980). "Exception Handling and Software Fault Tolerance".
+               <i>
+                Proc. 10th Int. Symp. On Fault Tolerant Computing
+               </i>
+               (6) (FTCS-25 reprint ed.): 531–540.
+               <a class="mw-redirect" href="/wiki/CiteSeerX_(identifier)" title="CiteSeerX (identifier)">
+                CiteSeerX
+               </a>
+               <span class="id-lock-free" title="Freely accessible">
+                <a class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.116.8736" rel="nofollow">
+                 10.1.1.116.8736
+                </a>
+               </span>
+               .
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1109%2FTC.1982.1676035" rel="nofollow">
+                10.1109/TC.1982.1676035
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/OCLC_(identifier)" title="OCLC (identifier)">
+                OCLC
+               </a>
+               <a class="external text" href="https://search.worldcat.org/oclc/1029229019" rel="nofollow">
+                1029229019
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                S2CID
+               </a>
+               <a class="external text" href="https://api.semanticscholar.org/CorpusID:18345469" rel="nofollow">
+                18345469
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proc.+10th+Int.+Symp.+On+Fault+Tolerant+Computing&amp;rft.atitle=Exception+Handling+and+Software+Fault+Tolerance&amp;rft.issue=6&amp;rft.pages=531-540&amp;rft.date=1980&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.116.8736%23id-name%3DCiteSeerX&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A18345469%23id-name%3DS2CID&amp;rft_id=info%3Aoclcnum%2F1029229019&amp;rft_id=info%3Adoi%2F10.1109%2FTC.1982.1676035&amp;rft.aulast=Cristian&amp;rft.aufirst=Flaviu&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-FOOTNOTEGoodenough1975b683–684-2">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-FOOTNOTEGoodenough1975b683–684_2-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a href="#CITEREFGoodenough1975b">
+               Goodenough 1975b
+              </a>
+              , pp. 683–684.
+             </span>
+            </li>
+            <li id="cite_note-FOOTNOTEGoodenough1975b684-3">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-FOOTNOTEGoodenough1975b684_3-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a href="#CITEREFGoodenough1975b">
+               Goodenough 1975b
+              </a>
+              , p. 684.
+             </span>
+            </li>
+            <li id="cite_note-FOOTNOTEBlack198213–15-4">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-FOOTNOTEBlack198213–15_4-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a href="#CITEREFBlack1982">
+               Black 1982
+              </a>
+              , pp. 13–15.
+             </span>
+            </li>
+            <li id="cite_note-5">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-5">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a href="#CITEREFKeetonCavanessFriesen2001">
+               Keeton, Cavaness &amp; Friesen 2001
+              </a>
+              :
+              <code class="mw-highlight mw-highlight-lang-java mw-content-ltr" dir="ltr">
+               <span class="n">
+                ArrayIndexOutOfBoundsException
+               </span>
+              </code>
+             </span>
+            </li>
+            <li id="cite_note-6">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-6">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a href="#CITEREFKeetonCavanessFriesen2001">
+               Keeton, Cavaness &amp; Friesen 2001
+              </a>
+              :
+              <code class="mw-highlight mw-highlight-lang-java mw-content-ltr" dir="ltr">
+               <span class="n">
+                FileNotFoundException
+               </span>
+              </code>
+             </span>
+            </li>
+            <li id="cite_note-7">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-7">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://groups.google.com/g/h2-database/c/udeVfmkeZuE" rel="nofollow">
+                "Unusual error message : java.io.SyncFailedException: sync failed"
+               </a>
+               .
+               <i>
+                groups.google.com
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 17 November
+                </span>
+                2023
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=groups.google.com&amp;rft.atitle=Unusual+error+message+%3A+java.io.SyncFailedException%3A+sync+failed&amp;rft_id=https%3A%2F%2Fgroups.google.com%2Fg%2Fh2-database%2Fc%2FudeVfmkeZuE&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-8">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-8">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/memleaks002.html" rel="nofollow">
+                "Understand the OutOfMemoryError Exception"
+               </a>
+               .
+               <i>
+                docs.oracle.com
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 17 November
+                </span>
+                2023
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=docs.oracle.com&amp;rft.atitle=Understand+the+OutOfMemoryError+Exception&amp;rft_id=https%3A%2F%2Fdocs.oracle.com%2Fjavase%2F8%2Fdocs%2Ftechnotes%2Fguides%2Ftroubleshoot%2Fmemleaks002.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-9">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-9">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              Java:
+              <code class="mw-highlight mw-highlight-lang-java mw-content-ltr" dir="ltr">
+               <span class="n">
+                FileNotFoundException
+               </span>
+              </code>
+             </span>
+            </li>
+            <li id="cite_note-Kiniry-10">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-Kiniry_10-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation book cs1" id="CITEREFKiniry2006">
+               Kiniry, J. R. (2006). "Exceptions in Java and Eiffel: Two Extremes in Exception Design and Application".
+               <a class="external text" href="http://staffwww.dcs.shef.ac.uk/people/A.Simons/remodel/papers/ExceptionsInEiffelAndJava.pdf" rel="nofollow">
+                <i>
+                 Advanced Topics in Exception Handling Techniques
+                </i>
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               . Lecture Notes in Computer Science. Vol. 4119. pp. 288–300.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1007%2F11818502_16" rel="nofollow">
+                10.1007/11818502_16
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-3-540-37443-5" title="Special:BookSources/978-3-540-37443-5">
+                <bdi>
+                 978-3-540-37443-5
+                </bdi>
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                S2CID
+               </a>
+               <a class="external text" href="https://api.semanticscholar.org/CorpusID:33283674" rel="nofollow">
+                33283674
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Exceptions+in+Java+and+Eiffel%3A+Two+Extremes+in+Exception+Design+and+Application&amp;rft.btitle=Advanced+Topics+in+Exception+Handling+Techniques&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.pages=288-300&amp;rft.date=2006&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A33283674%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1007%2F11818502_16&amp;rft.isbn=978-3-540-37443-5&amp;rft.aulast=Kiniry&amp;rft.aufirst=J.+R.&amp;rft_id=http%3A%2F%2Fstaffwww.dcs.shef.ac.uk%2Fpeople%2FA.Simons%2Fremodel%2Fpapers%2FExceptionsInEiffelAndJava.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-Lang-11">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-Lang_11-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-Lang_11-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFLangStewart1998">
+               Lang, Jun; Stewart, David B. (March 1998). "A study of the applicability of existing exception-handling techniques to component-based real-time software technology".
+               <i>
+                ACM Transactions on Programming Languages and Systems
+               </i>
+               .
+               <b>
+                20
+               </b>
+               (2): 276.
+               <a class="mw-redirect" href="/wiki/CiteSeerX_(identifier)" title="CiteSeerX (identifier)">
+                CiteSeerX
+               </a>
+               <span class="id-lock-free" title="Freely accessible">
+                <a class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.33.3400" rel="nofollow">
+                 10.1.1.33.3400
+                </a>
+               </span>
+               .
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1145%2F276393.276395" rel="nofollow">
+                10.1145/276393.276395
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                S2CID
+               </a>
+               <a class="external text" href="https://api.semanticscholar.org/CorpusID:18875882" rel="nofollow">
+                18875882
+               </a>
+               .
+               <q>
+                Perhaps the most common form of exception-handling method used by software programmers is the "return-code" technique that was popularized as part of C and UNIX.
+               </q>
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+Transactions+on+Programming+Languages+and+Systems&amp;rft.atitle=A+study+of+the+applicability+of+existing+exception-handling+techniques+to+component-based+real-time+software+technology&amp;rft.volume=20&amp;rft.issue=2&amp;rft.pages=276&amp;rft.date=1998-03&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.33.3400%23id-name%3DCiteSeerX&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A18875882%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F276393.276395&amp;rft.aulast=Lang&amp;rft.aufirst=Jun&amp;rft.au=Stewart%2C+David+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-FOOTNOTELevin19775-12">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-FOOTNOTELevin19775_12-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a href="#CITEREFLevin1977">
+               Levin 1977
+              </a>
+              , p. 5.
+             </span>
+            </li>
+            <li id="cite_note-CLU-13">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-CLU_13-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-CLU_13-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFLiskovSnyder1979">
+               Liskov, B.H.; Snyder, A. (November 1979).
+               <a class="external text" href="http://csg.csail.mit.edu/CSGArchives/memos/Memo-155-3.pdf" rel="nofollow">
+                "Exception Handling in CLU"
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               .
+               <i>
+                IEEE Transactions on Software Engineering
+               </i>
+               .
+               <b>
+                SE-5
+               </b>
+               (6): 546–558.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1109%2FTSE.1979.230191" rel="nofollow">
+                10.1109/TSE.1979.230191
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                S2CID
+               </a>
+               <a class="external text" href="https://api.semanticscholar.org/CorpusID:15506879" rel="nofollow">
+                15506879
+               </a>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 19 December
+                </span>
+                2021
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Software+Engineering&amp;rft.atitle=Exception+Handling+in+CLU&amp;rft.volume=SE-5&amp;rft.issue=6&amp;rft.pages=546-558&amp;rft.date=1979-11&amp;rft_id=info%3Adoi%2F10.1109%2FTSE.1979.230191&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A15506879%23id-name%3DS2CID&amp;rft.aulast=Liskov&amp;rft.aufirst=B.H.&amp;rft.au=Snyder%2C+A.&amp;rft_id=http%3A%2F%2Fcsg.csail.mit.edu%2FCSGArchives%2Fmemos%2FMemo-155-3.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-14">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-14">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.merriam-webster.com/thesaurus/exception" rel="nofollow">
+                "Thesaurus results for EXCEPTION"
+               </a>
+               .
+               <i>
+                www.merriam-webster.com
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 17 November
+                </span>
+                2023
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.merriam-webster.com&amp;rft.atitle=Thesaurus+results+for+EXCEPTION&amp;rft_id=https%3A%2F%2Fwww.merriam-webster.com%2Fthesaurus%2Fexception&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-FOOTNOTELevin19774-15">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-FOOTNOTELevin19774_15-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a href="#CITEREFLevin1977">
+               Levin 1977
+              </a>
+              , p. 4.
+             </span>
+            </li>
+            <li id="cite_note-Smotherman-16">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-Smotherman_16-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFSmotherman">
+               Smotherman, Mark.
+               <a class="external text" href="https://people.cs.clemson.edu/~mark/interrupts.html" rel="nofollow">
+                "Interrupts"
+               </a>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 4 January
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Interrupts&amp;rft.aulast=Smotherman&amp;rft.aufirst=Mark&amp;rft_id=https%3A%2F%2Fpeople.cs.clemson.edu%2F~mark%2Finterrupts.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-17">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-17">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFHyde">
+               Hyde, Randall.
+               <a class="external text" href="https://www.plantation-productions.com/Webster/www.artofasm.com/DOS/ch17/CH17-1.html#HEADING1-0" rel="nofollow">
+                "Art of Assembly: Chapter Seventeen"
+               </a>
+               .
+               <i>
+                www.plantation-productions.com
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 22 December
+                </span>
+                2021
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.plantation-productions.com&amp;rft.atitle=Art+of+Assembly%3A+Chapter+Seventeen&amp;rft.aulast=Hyde&amp;rft.aufirst=Randall&amp;rft_id=https%3A%2F%2Fwww.plantation-productions.com%2FWebster%2Fwww.artofasm.com%2FDOS%2Fch17%2FCH17-1.html%23HEADING1-0&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-Xiaoye_Li_and_James_Demmel_1994_983–992-18">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-Xiaoye_Li_and_James_Demmel_1994_983–992_18-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-Xiaoye_Li_and_James_Demmel_1994_983–992_18-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFXiaoye_LiJames_Demmel1994">
+               <a href="/wiki/Sherry_Li" title="Sherry Li">
+                Xiaoye Li
+               </a>
+               ; James Demmel (1994). "Faster Numerical Algorithms via Exception Handling, IEEE Transactions on Computers, 43(8)": 983–992.
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Faster+Numerical+Algorithms+via+Exception+Handling%2C+IEEE+Transactions+on+Computers%2C+43%288%29&amp;rft.pages=983-992&amp;rft.date=1994&amp;rft.au=Xiaoye+Li&amp;rft.au=James+Demmel&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+              <span class="cs1-visible-error citation-comment">
+               <code class="cs1-code">
+                {{
+                <a href="/wiki/Template:Cite_journal" title="Template:Cite journal">
+                 cite journal
+                </a>
+                }}
+               </code>
+               :
+              </span>
+              <span class="cs1-visible-error citation-comment">
+               Cite journal requires
+               <code class="cs1-code">
+                |journal=
+               </code>
+               (
+               <a href="/wiki/Help:CS1_errors#missing_periodical" title="Help:CS1 errors">
+                help
+               </a>
+               )
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-grail-19">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-grail_19-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-grail_19-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFW.Kahan2005">
+               W.Kahan (July 5, 2005).
+               <a class="external text" href="http://www.cs.berkeley.edu/~wkahan/Grail.pdf" rel="nofollow">
+                "A Demonstration of Presubstitution for ∞/∞"
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               .
+               <a class="external text" href="https://web.archive.org/web/20120310130507/http://www.cs.berkeley.edu/~wkahan/Grail.pdf" rel="nofollow">
+                Archived
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               from the original on March 10, 2012.
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=A+Demonstration+of+Presubstitution+for+%E2%88%9E%2F%E2%88%9E&amp;rft.date=2005-07-05&amp;rft.au=W.Kahan&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F~wkahan%2FGrail.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-20">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-20">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFHauser1996">
+               Hauser, John R. (March 1996).
+               <a class="external text" href="https://doi.org/10.1145%2F227699.227701" rel="nofollow">
+                "Handling floating-point exceptions in numeric programs"
+               </a>
+               .
+               <i>
+                ACM Transactions on Programming Languages and Systems
+               </i>
+               .
+               <b>
+                18
+               </b>
+               (2): 139–174.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <span class="id-lock-free" title="Freely accessible">
+                <a class="external text" href="https://doi.org/10.1145%2F227699.227701" rel="nofollow">
+                 10.1145/227699.227701
+                </a>
+               </span>
+               .
+               <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                S2CID
+               </a>
+               <a class="external text" href="https://api.semanticscholar.org/CorpusID:9820157" rel="nofollow">
+                9820157
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+Transactions+on+Programming+Languages+and+Systems&amp;rft.atitle=Handling+floating-point+exceptions+in+numeric+programs&amp;rft.volume=18&amp;rft.issue=2&amp;rft.pages=139-174&amp;rft.date=1996-03&amp;rft_id=info%3Adoi%2F10.1145%2F227699.227701&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A9820157%23id-name%3DS2CID&amp;rft.aulast=Hauser&amp;rft.aufirst=John+R.&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1145%252F227699.227701&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-21">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-21">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://reactjs.org/docs/error-boundaries.html" rel="nofollow">
+                "Error Boundaries"
+               </a>
+               .
+               <i>
+                React
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2018-12-10
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=React&amp;rft.atitle=Error+Boundaries&amp;rft_id=https%3A%2F%2Freactjs.org%2Fdocs%2Ferror-boundaries.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-22">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-22">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://vuejs.org/v2/api/#errorCaptured" rel="nofollow">
+                "Vue.js API"
+               </a>
+               .
+               <i>
+                Vue.js
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2018-12-10
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Vue.js&amp;rft.atitle=Vue.js+API&amp;rft_id=https%3A%2F%2Fvuejs.org%2Fv2%2Fapi%2F%23errorCaptured&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-23">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-23">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://catchjs.com/Docs/Vue" rel="nofollow">
+                "Error handling with Vue.js"
+               </a>
+               .
+               <i>
+                CatchJS
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2018-12-10
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=CatchJS&amp;rft.atitle=Error+handling+with+Vue.js&amp;rft_id=https%3A%2F%2Fcatchjs.com%2FDocs%2FVue&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+              </span>
+             </span>
+            </li>
+           </ol>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239549316">
+           .mw-parser-output .refbegin{margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li{margin-left:0;padding-left:3.2em;text-indent:-3.2em}.mw-parser-output .refbegin-hanging-indents ul,.mw-parser-output .refbegin-hanging-indents ul li{list-style:none}@media(max-width:720px){.mw-parser-output .refbegin-hanging-indents>ul>li{padding-left:1.6em;text-indent:-1.6em}}.mw-parser-output .refbegin-columns{margin-top:0.3em}.mw-parser-output .refbegin-columns ul{margin-top:0}.mw-parser-output .refbegin-columns li{page-break-inside:avoid;break-inside:avoid-column}@media screen{.mw-parser-output .refbegin{font-size:90%}}
+          </style>
+          <div class="refbegin" style="">
+           <ul>
+            <li>
+             <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+             <cite class="citation thesis cs1" id="CITEREFBlack1982">
+              Black, Andrew P. (January 1982).
+              <a class="external text" href="http://web.cecs.pdx.edu/~black/publications/Black%20D.%20Phil%20Thesis.pdf" rel="nofollow">
+               <i>
+                Exception handling: The case against
+               </i>
+              </a>
+              <span class="cs1-format">
+               (PDF)
+              </span>
+              (PhD). University of Oxford.
+              <a class="mw-redirect" href="/wiki/CiteSeerX_(identifier)" title="CiteSeerX (identifier)">
+               CiteSeerX
+              </a>
+              <span class="id-lock-free" title="Freely accessible">
+               <a class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.94.5554" rel="nofollow">
+                10.1.1.94.5554
+               </a>
+              </span>
+              .
+              <a class="mw-redirect" href="/wiki/OCLC_(identifier)" title="OCLC (identifier)">
+               OCLC
+              </a>
+              <a class="external text" href="https://search.worldcat.org/oclc/123311492" rel="nofollow">
+               123311492
+              </a>
+              .
+             </cite>
+             <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adissertation&amp;rft.title=Exception+handling%3A+The+case+against&amp;rft.inst=University+of+Oxford&amp;rft.date=1982-01&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.94.5554%23id-name%3DCiteSeerX&amp;rft_id=info%3Aoclcnum%2F123311492&amp;rft.aulast=Black&amp;rft.aufirst=Andrew+P.&amp;rft_id=http%3A%2F%2Fweb.cecs.pdx.edu%2F~black%2Fpublications%2FBlack%2520D.%2520Phil%2520Thesis.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+             </span>
+            </li>
+            <li>
+             <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+             <cite class="citation conference cs1" id="CITEREFGabrielSteele2008">
+              <a href="/wiki/Richard_P._Gabriel" title="Richard P. Gabriel">
+               Gabriel, Richard P.
+              </a>
+              ;
+              <a class="mw-redirect" href="/wiki/Guy_L._Steele,_Jr." title="Guy L. Steele, Jr.">
+               Steele, Guy L.
+              </a>
+              (2008).
+              <a class="external text" href="http://www.dreamsongs.com/Files/PatternOfLanguageEvolution.pdf" rel="nofollow">
+               <i>
+                A Pattern of Language Evolution
+               </i>
+              </a>
+              <span class="cs1-format">
+               (PDF)
+              </span>
+              . LISP50: Celebrating the 50th Anniversary of Lisp. pp. 1–10.
+              <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+               doi
+              </a>
+              :
+              <a class="external text" href="https://doi.org/10.1145%2F1529966.1529967" rel="nofollow">
+               10.1145/1529966.1529967
+              </a>
+              .
+              <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+               ISBN
+              </a>
+              <a href="/wiki/Special:BookSources/978-1-60558-383-9" title="Special:BookSources/978-1-60558-383-9">
+               <bdi>
+                978-1-60558-383-9
+               </bdi>
+              </a>
+              .
+             </cite>
+             <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=A+Pattern+of+Language+Evolution&amp;rft.pages=1-10&amp;rft.date=2008&amp;rft_id=info%3Adoi%2F10.1145%2F1529966.1529967&amp;rft.isbn=978-1-60558-383-9&amp;rft.aulast=Gabriel&amp;rft.aufirst=Richard+P.&amp;rft.au=Steele%2C+Guy+L.&amp;rft_id=http%3A%2F%2Fwww.dreamsongs.com%2FFiles%2FPatternOfLanguageEvolution.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+             </span>
+            </li>
+            <li>
+             <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+             <cite class="citation conference cs1" id="CITEREFGoodenough1975a">
+              Goodenough, John B. (1975a).
+              <i>
+               Structured exception handling
+              </i>
+              . Proceedings of the 2nd ACM SIGACT-SIGPLAN symposium on Principles of programming languages - POPL '75. pp. 204–224.
+              <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+               doi
+              </a>
+              :
+              <a class="external text" href="https://doi.org/10.1145%2F512976.512997" rel="nofollow">
+               10.1145/512976.512997
+              </a>
+              .
+             </cite>
+             <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Structured+exception+handling&amp;rft.pages=204-224&amp;rft.date=1975&amp;rft_id=info%3Adoi%2F10.1145%2F512976.512997&amp;rft.aulast=Goodenough&amp;rft.aufirst=John+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+             </span>
+            </li>
+            <li>
+             <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+             <cite class="citation journal cs1" id="CITEREFGoodenough1975b">
+              Goodenough, John B. (1975).
+              <a class="external text" href="http://www.cs.colorado.edu/~bec/courses/csci5535-s09/reading/goodenough-exceptions.pdf" rel="nofollow">
+               "Exception handling: Issues and a proposed notation"
+              </a>
+              <span class="cs1-format">
+               (PDF)
+              </span>
+              .
+              <i>
+               Communications of the ACM
+              </i>
+              .
+              <b>
+               18
+              </b>
+              (12): 683–696.
+              <a class="mw-redirect" href="/wiki/CiteSeerX_(identifier)" title="CiteSeerX (identifier)">
+               CiteSeerX
+              </a>
+              <span class="id-lock-free" title="Freely accessible">
+               <a class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.122.7791" rel="nofollow">
+                10.1.1.122.7791
+               </a>
+              </span>
+              .
+              <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+               doi
+              </a>
+              :
+              <a class="external text" href="https://doi.org/10.1145%2F361227.361230" rel="nofollow">
+               10.1145/361227.361230
+              </a>
+              .
+              <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+               S2CID
+              </a>
+              <a class="external text" href="https://api.semanticscholar.org/CorpusID:12935051" rel="nofollow">
+               12935051
+              </a>
+              .
+             </cite>
+             <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.atitle=Exception+handling%3A+Issues+and+a+proposed+notation&amp;rft.volume=18&amp;rft.issue=12&amp;rft.pages=683-696&amp;rft.date=1975&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.122.7791%23id-name%3DCiteSeerX&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A12935051%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F361227.361230&amp;rft.aulast=Goodenough&amp;rft.aufirst=John+B.&amp;rft_id=http%3A%2F%2Fwww.cs.colorado.edu%2F~bec%2Fcourses%2Fcsci5535-s09%2Freading%2Fgoodenough-exceptions.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+             </span>
+            </li>
+            <li>
+             <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+             <cite class="citation thesis cs1" id="CITEREFLevin1977">
+              Levin, Roy (June 1977).
+              <a class="external text" href="https://apps.dtic.mil/sti/pdfs/ADA043449.pdf" rel="nofollow">
+               <i>
+                Program Structures for Exceptional Condition Handling
+               </i>
+              </a>
+              <span class="cs1-format">
+               (PDF)
+              </span>
+              (PhD). Carnegie-Mellon University.
+              <a class="mw-redirect" href="/wiki/DTIC_(identifier)" title="DTIC (identifier)">
+               DTIC
+              </a>
+              <a class="external text" href="https://apps.dtic.mil/sti/citations/ADA043449" rel="nofollow">
+               ADA043449
+              </a>
+              .
+              <a class="external text" href="https://web.archive.org/web/20211222205616/https://apps.dtic.mil/sti/pdfs/ADA043449.pdf" rel="nofollow">
+               Archived
+              </a>
+              <span class="cs1-format">
+               (PDF)
+              </span>
+              from the original on December 22, 2021.
+             </cite>
+             <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adissertation&amp;rft.title=Program+Structures+for+Exceptional+Condition+Handling&amp;rft.inst=Carnegie-Mellon+University&amp;rft.date=1977-06&amp;rft.aulast=Levin&amp;rft.aufirst=Roy&amp;rft_id=https%3A%2F%2Fapps.dtic.mil%2Fsti%2Fpdfs%2FADA043449.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+             </span>
+            </li>
+            <li>
+             <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+             <cite class="citation book cs1" id="CITEREFStroustrup1994">
+              Stroustrup, Bjarne (1994).
+              <i>
+               The design and evolution of C++
+              </i>
+              (1st ed.). Reading, Mass.: Addison-Wesley.
+              <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+               ISBN
+              </a>
+              <a href="/wiki/Special:BookSources/0-201-54330-3" title="Special:BookSources/0-201-54330-3">
+               <bdi>
+                0-201-54330-3
+               </bdi>
+              </a>
+              .
+             </cite>
+             <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+design+and+evolution+of+C%2B%2B&amp;rft.place=Reading%2C+Mass.&amp;rft.edition=1st&amp;rft.pub=Addison-Wesley&amp;rft.date=1994&amp;rft.isbn=0-201-54330-3&amp;rft.aulast=Stroustrup&amp;rft.aufirst=Bjarne&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+             </span>
+            </li>
+            <li>
+             <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+             <cite class="citation conference cs1" id="CITEREFWhite1979">
+              White, Jon L (May 1979).
+              <a class="external text" href="http://www.softwarepreservation.org/projects/LISP/MIT/White-NIL_A_Perspective-1979.pdf" rel="nofollow">
+               <i>
+                NIL - A Perspective
+               </i>
+              </a>
+              <span class="cs1-format">
+               (PDF)
+              </span>
+              . Proceedings of the 1979 Macsyma User's Conference.
+             </cite>
+             <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=NIL+-+A+Perspective&amp;rft.date=1979-05&amp;rft.aulast=White&amp;rft.aufirst=Jon+L&amp;rft_id=http%3A%2F%2Fwww.softwarepreservation.org%2Fprojects%2FLISP%2FMIT%2FWhite-NIL_A_Perspective-1979.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+             </span>
+            </li>
+            <li>
+             <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+             <cite class="citation book cs1" id="CITEREFKeetonCavanessFriesen2001">
+              Keeton, Brian; Cavaness, Chuck; Friesen, Geoff (2001).
+              <a class="external text" href="https://books.google.com/books?id=yhFxiVyd1MgC&amp;pg=PA89" rel="nofollow">
+               <i>
+                Special Edition Using Java 2 Standard Edition
+               </i>
+              </a>
+              . Que Publishing.
+              <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+               ISBN
+              </a>
+              <a href="/wiki/Special:BookSources/978-0-7897-2468-7" title="Special:BookSources/978-0-7897-2468-7">
+               <bdi>
+                978-0-7897-2468-7
+               </bdi>
+              </a>
+              .
+             </cite>
+             <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Special+Edition+Using+Java+2+Standard+Edition&amp;rft.pub=Que+Publishing&amp;rft.date=2001&amp;rft.isbn=978-0-7897-2468-7&amp;rft.aulast=Keeton&amp;rft.aufirst=Brian&amp;rft.au=Cavaness%2C+Chuck&amp;rft.au=Friesen%2C+Geoff&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DyhFxiVyd1MgC%26pg%3DPA89&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AException+handling">
+             </span>
+            </li>
+           </ul>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Exception_handling&amp;action=edit&amp;section=9" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="https://web.archive.org/web/20150929000043/http://www.microsoft.com/msj/0197/exception/exception.aspx" rel="nofollow">
+             A Crash Course on the Depths of Win32 Structured Exception Handling
+            </a>
+            by
+            <a href="/wiki/Matt_Pietrek" title="Matt Pietrek">
+             Matt Pietrek
+            </a>
+            - Microsoft Systems Journal (1997)
+           </li>
+           <li>
+            Article "
+            <a class="external text" href="https://db.usenix.org/events/wiess2000/full_papers/dinechin/dinechin.pdf" rel="nofollow">
+             C++ Exception Handling
+            </a>
+            " by Christophe de Dinechin
+           </li>
+           <li>
+            Article "
+            <a class="external text" href="http://java.sun.com/developer/technicalArticles/Programming/exceptions2/index.html" rel="nofollow">
+             Exceptional practices
+            </a>
+            " by Brian Goetz
+           </li>
+           <li>
+            Article "
+            <a class="external text" href="http://perl.com/pub/a/2002/11/14/exception.html" rel="nofollow">
+             Object Oriented Exception Handling in Perl
+            </a>
+            " by Arun Udaya Shankar
+           </li>
+           <li>
+            Article "
+            <a class="external text" href="http://oreillynet.com/pub/a/network/2003/05/05/cpluspocketref.html" rel="nofollow">
+             Programming with Exceptions in C++
+            </a>
+            " by Kyle Loudon
+           </li>
+           <li>
+            Article "
+            <a class="external text" href="http://java.sun.com/docs/books/tutorial/essential/exceptions/runtime.html" rel="nofollow">
+             Unchecked Exceptions - The Controversy
+            </a>
+            "
+           </li>
+           <li>
+            Conference slides
+            <a class="external text" href="http://www.eecs.berkeley.edu/~wkahan/Boulder.pdf" rel="nofollow">
+             Floating-Point Exception-Handling policies (pdf p. 46)
+            </a>
+            by William Kahan
+           </li>
+           <li>
+            <a class="external text" href="http://c2.com/cgi/wiki?CategoryException" rel="nofollow">
+             Descriptions from Portland Pattern Repository
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="https://web.archive.org/web/20020405175011/http://www.mindview.net/Etc/Discussions/CheckedExceptions" rel="nofollow">
+             Does Java Need Checked Exceptions?
+            </a>
+           </li>
+          </ul>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Data_types" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Data_types" title="Template:Data types">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Data_types" title="Template talk:Data types">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Data_types" title="Special:EditPage/Template:Data types">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Data_types" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Data_type" title="Data type">
+                 Data types
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Units_of_information" title="Units of information">
+                Uninterpreted
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Bit" title="Bit">
+                   Bit
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Byte" title="Byte">
+                   Byte
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Ternary_numeral_system" title="Ternary numeral system">
+                   Trit
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Ternary_numeral_system#Tryte" title="Ternary numeral system">
+                   Tryte
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Word_(computer_architecture)" title="Word (computer architecture)">
+                   Word
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Bit_array" title="Bit array">
+                   Bit array
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Numeric
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">
+                   Arbitrary-precision or bignum
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Complex_data_type" title="Complex data type">
+                   Complex
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Decimal_data_type" title="Decimal data type">
+                   Decimal
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Fixed-point_arithmetic" title="Fixed-point arithmetic">
+                   Fixed point
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Floating-point_arithmetic" title="Floating-point arithmetic">
+                   Floating point
+                  </a>
+                  <ul>
+                   <li>
+                    Reduced precision
+                    <ul>
+                     <li>
+                      <a href="/wiki/Minifloat" title="Minifloat">
+                       Minifloat
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Half-precision_floating-point_format" title="Half-precision floating-point format">
+                       Half precision
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Bfloat16_floating-point_format" title="Bfloat16 floating-point format">
+                       bfloat16
+                      </a>
+                     </li>
+                    </ul>
+                   </li>
+                   <li>
+                    <a href="/wiki/Single-precision_floating-point_format" title="Single-precision floating-point format">
+                     Single precision
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Double-precision_floating-point_format" title="Double-precision floating-point format">
+                     Double precision
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Quadruple-precision_floating-point_format" title="Quadruple-precision floating-point format">
+                     Quadruple precision
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Octuple-precision_floating-point_format" title="Octuple-precision floating-point format">
+                     Octuple precision
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Extended_precision" title="Extended precision">
+                     Extended precision
+                    </a>
+                    <ul>
+                     <li>
+                      <a href="/wiki/Long_double" title="Long double">
+                       Long double
+                      </a>
+                     </li>
+                    </ul>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Integer_(computer_science)" title="Integer (computer science)">
+                   Integer
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Signedness" title="Signedness">
+                     signedness
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Interval_arithmetic#Implementations" title="Interval arithmetic">
+                   Interval
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Rational_data_type" title="Rational data type">
+                   Rational
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Pointer_(computer_programming)" title="Pointer (computer programming)">
+                Pointer
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Memory_address" title="Memory address">
+                   Address
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Physical_address" title="Physical address">
+                     physical
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Virtual_address_space" title="Virtual address space">
+                     virtual
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Reference_(computer_science)" title="Reference (computer science)">
+                   Reference
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Plain_text" title="Plain text">
+                Text
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Character_(computing)" title="Character (computing)">
+                   Character
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/String_(computer_science)" title="String (computer science)">
+                   String
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Null-terminated_string" title="Null-terminated string">
+                     null-terminated
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Composite_data_type" title="Composite data type">
+                Composite
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Algebraic_data_type" title="Algebraic data type">
+                   Algebraic data type
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Generalized_algebraic_data_type" title="Generalized algebraic data type">
+                     generalized
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Array_data_type" title="Array data type">
+                   Array
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Associative_array" title="Associative array">
+                   Associative array
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Class_(computer_programming)" title="Class (computer programming)">
+                   Class
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Dependent_type" title="Dependent type">
+                   Dependent
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Intuitionistic_type_theory#Equality_type" title="Intuitionistic type theory">
+                   Equality
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Inductive_type" title="Inductive type">
+                   Inductive
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Intersection_type" title="Intersection type">
+                   Intersection
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/List_(abstract_data_type)" title="List (abstract data type)">
+                   List
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Object_(computer_science)" title="Object (computer science)">
+                   Object
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Metaobject" title="Metaobject">
+                     metaobject
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Option_type" title="Option type">
+                   Option type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Product_type" title="Product type">
+                   Product
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Record_(computer_science)" title="Record (computer science)">
+                   Record or Struct
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Refinement_type" title="Refinement type">
+                   Refinement
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Set_(abstract_data_type)" title="Set (abstract data type)">
+                   Set
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Union_type" title="Union type">
+                   Union
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Tagged_union" title="Tagged union">
+                     tagged
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Other
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Boolean_data_type" title="Boolean data type">
+                   Boolean
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Bottom_type" title="Bottom type">
+                   Bottom type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Container_(abstract_data_type)" title="Container (abstract data type)">
+                   Collection
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Enumerated_type" title="Enumerated type">
+                   Enumerated type
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Exception
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Function_type" title="Function type">
+                   Function type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Opaque_data_type" title="Opaque data type">
+                   Opaque data type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Recursive_data_type" title="Recursive data type">
+                   Recursive data type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Semaphore_(programming)" title="Semaphore (programming)">
+                   Semaphore
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Stream_(computing)" title="Stream (computing)">
+                   Stream
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Strongly_typed_identifier" title="Strongly typed identifier">
+                   Strongly typed identifier
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Top_type" title="Top type">
+                   Top type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Type_class" title="Type class">
+                   Type class
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Empty_type" title="Empty type">
+                   Empty type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Unit_type" title="Unit type">
+                   Unit type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Void_type" title="Void type">
+                   Void
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Related
+               <br/>
+               topics
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Abstract_data_type" title="Abstract data type">
+                   Abstract data type
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Boxing_(computer_science)" title="Boxing (computer science)">
+                   Boxing
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Data_structure" title="Data structure">
+                   Data structure
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Generic_programming" title="Generic programming">
+                   Generic
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Kind_(type_theory)" title="Kind (type theory)">
+                   Kind
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Metaclass" title="Metaclass">
+                     metaclass
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Parametric_polymorphism" title="Parametric polymorphism">
+                   Parametric polymorphism
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Primitive_data_type" title="Primitive data type">
+                   Primitive data type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Interface_(object-oriented_programming)" title="Interface (object-oriented programming)">
+                   Interface
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Subtyping" title="Subtyping">
+                   Subtyping
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Type_constructor" title="Type constructor">
+                   Type constructor
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Type_conversion" title="Type conversion">
+                   Type conversion
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Type_system" title="Type system">
+                   Type system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Type_theory" title="Type theory">
+                   Type theory
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Variable_(computer_science)" title="Variable (computer science)">
+                   Variable
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐jpnwp
+Cached time: 20240926233123
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.607 seconds
+Real time usage: 0.838 seconds
+Preprocessor visited node count: 1895/1000000
+Post‐expand include size: 67103/2097152 bytes
+Template argument size: 1175/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 14/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 90972/5000000 bytes
+Lua time usage: 0.421/10.000 seconds
+Lua memory usage: 7335053/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  766.848      1 -total
+ 25.28%  193.886      1 Template:Reflist
+ 16.18%  124.086      6 Template:Cite_journal
+ 13.00%   99.724      1 Template:Short_description
+ 12.28%   94.166      1 Template:Data_types
+ 11.94%   91.556      1 Template:Navbox
+  7.95%   60.976      1 Template:Excerpt
+  7.73%   59.281      2 Template:Pagetype
+  6.62%   50.761      5 Template:Sfn
+  4.89%   37.462      1 Template:Redirect-distinguish
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:59231-0!canonical and timestamp 20240926233123 and revision id 1187744531. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Exception_handling&amp;oldid=1187744531">
+          https://en.wikipedia.org/w/index.php?title=Exception_handling&amp;oldid=1187744531
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Control_flow" title="Category:Control flow">
+            Control flow
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Software_anomalies" title="Category:Software anomalies">
+            Software anomalies
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_example_Java_code" title="Category:Articles with example Java code">
+            Articles with example Java code
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:CS1_errors:_missing_periodical" title="Category:CS1 errors: missing periodical">
+            CS1 errors: missing periodical
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_excerpts" title="Category:Articles with excerpts">
+            Articles with excerpts
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 1 December 2023, at 04:12
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Exception_handling&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-cgx2k","wgBackendResponseTime":163,"wgPageParseReport":{"limitreport":{"cputime":"0.607","walltime":"0.838","ppvisitednodes":{"value":1895,"limit":1000000},"postexpandincludesize":{"value":67103,"limit":2097152},"templateargumentsize":{"value":1175,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":14,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":90972,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  766.848      1 -total"," 25.28%  193.886      1 Template:Reflist"," 16.18%  124.086      6 Template:Cite_journal"," 13.00%   99.724      1 Template:Short_description"," 12.28%   94.166      1 Template:Data_types"," 11.94%   91.556      1 Template:Navbox","  7.95%   60.976      1 Template:Excerpt","  7.73%   59.281      2 Template:Pagetype","  6.62%   50.761      5 Template:Sfn","  4.89%   37.462      1 Template:Redirect-distinguish"]},"scribunto":{"limitreport-timeusage":{"value":"0.421","limit":"10.000"},"limitreport-memusage":{"value":7335053,"limit":52428800},"limitreport-logs":"anchor_id_list = table#1 {\n    [\"CITEREFBlack1982\"] = 1,\n    [\"CITEREFCristian1980\"] = 1,\n    [\"CITEREFGabrielSteele2008\"] = 1,\n    [\"CITEREFGoodenough1975a\"] = 1,\n    [\"CITEREFGoodenough1975b\"] = 1,\n    [\"CITEREFHauser1996\"] = 1,\n    [\"CITEREFHyde\"] = 1,\n    [\"CITEREFKeetonCavanessFriesen2001\"] = 1,\n    [\"CITEREFKiniry2006\"] = 1,\n    [\"CITEREFLangStewart1998\"] = 1,\n    [\"CITEREFLevin1977\"] = 1,\n    [\"CITEREFLiskovSnyder1979\"] = 1,\n    [\"CITEREFSmotherman\"] = 1,\n    [\"CITEREFStroustrup1994\"] = 1,\n    [\"CITEREFW.Kahan2005\"] = 1,\n    [\"CITEREFWhite1979\"] = 1,\n    [\"CITEREFXiaoye_LiJames_Demmel1994\"] = 1,\n}\ntemplate_list = table#1 {\n    [\"About\"] = 1,\n    [\"Authority control\"] = 1,\n    [\"Cite book\"] = 3,\n    [\"Cite conference\"] = 3,\n    [\"Cite journal\"] = 6,\n    [\"Cite thesis\"] = 2,\n    [\"Cite web\"] = 9,\n    [\"DEFAULTSORT:Exception Handling\"] = 1,\n    [\"DTIC\"] = 1,\n    [\"Data types\"] = 1,\n    [\"Excerpt\"] = 1,\n    [\"Further\"] = 1,\n    [\"Harvid\"] = 1,\n    [\"Harvnb\"] = 2,\n    [\"Java\"] = 3,\n    [\"Main\"] = 3,\n    [\"Redirect-distinguish\"] = 1,\n    [\"Refbegin\"] = 1,\n    [\"Refend\"] = 1,\n    [\"Reflist\"] = 1,\n    [\"Sfn\"] = 5,\n    [\"Short description\"] = 1,\n}\narticle_whitelist = table#1 {\n}\n"},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-jpnwp","timestamp":"20240926233123","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Exception handling","url":"https:\/\/en.wikipedia.org\/wiki\/Exception_handling","sameAs":"http:\/\/www.wikidata.org\/entity\/Q471748","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q471748","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-06-24T17:13:30Z","dateModified":"2023-12-01T04:12:48Z","headline":"process of responding to anomalous or exceptional conditions requiring special processing in computer programming"}
+  </script>
+ </body>
+</html>

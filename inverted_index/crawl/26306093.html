@@ -1,0 +1,3379 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   ACID - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"63b7bc75-1fc7-47e3-86cb-e71baf2e84c8","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ACID","wgTitle":"ACID","wgCurRevisionId":1240678711,"wgRevisionId":1240678711,"wgArticleId":60776,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Articles needing additional references from May 2018","All articles needing additional references","Database management systems","Transaction processing","Concurrency control"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ACID","wgRelevantArticleId":60776,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q288435","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,
+"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.pygments.view","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin",
+"mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="ACID - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/ACID" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=ACID&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/ACID" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/ACID"/>
+  <meta eecs485_docid="26306093"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-ACID rootpage-ACID skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=ACID" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=ACID" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=ACID" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=ACID" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Characteristics">
+           <a class="vector-toc-link" href="#Characteristics">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Characteristics
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Characteristics-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Characteristics subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Characteristics-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Atomicity">
+             <a class="vector-toc-link" href="#Atomicity">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.1
+               </span>
+               <span>
+                Atomicity
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Atomicity-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Consistency">
+             <a class="vector-toc-link" href="#Consistency">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.2
+               </span>
+               <span>
+                Consistency
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Consistency-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Isolation">
+             <a class="vector-toc-link" href="#Isolation">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.3
+               </span>
+               <span>
+                Isolation
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Isolation-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Durability">
+             <a class="vector-toc-link" href="#Durability">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.4
+               </span>
+               <span>
+                Durability
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Durability-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Examples">
+           <a class="vector-toc-link" href="#Examples">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Examples
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Examples-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Examples subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Examples-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Atomicity_2">
+             <a class="vector-toc-link" href="#Atomicity_2">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.1
+               </span>
+               <span>
+                Atomicity
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Atomicity_2-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Consistency_failure">
+             <a class="vector-toc-link" href="#Consistency_failure">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.2
+               </span>
+               <span>
+                Consistency failure
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Consistency_failure-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Isolation_failure">
+             <a class="vector-toc-link" href="#Isolation_failure">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.3
+               </span>
+               <span>
+                Isolation failure
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Isolation_failure-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Durability_failure">
+             <a class="vector-toc-link" href="#Durability_failure">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.4
+               </span>
+               <span>
+                Durability failure
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Durability_failure-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Implementation">
+           <a class="vector-toc-link" href="#Implementation">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Implementation
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Implementation-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Implementation subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Implementation-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Locking_vs._multiversioning">
+             <a class="vector-toc-link" href="#Locking_vs._multiversioning">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.1
+               </span>
+               <span>
+                Locking vs. multiversioning
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Locking_vs._multiversioning-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Distributed_transactions">
+             <a class="vector-toc-link" href="#Distributed_transactions">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.2
+               </span>
+               <span>
+                Distributed transactions
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Distributed_transactions-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         ACID
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 30 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-30" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          30 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="أسيد (معلوماتية)" href="https://ar.wikipedia.org/wiki/%D8%A3%D8%B3%D9%8A%D8%AF_(%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%D9%8A%D8%A9)" hreflang="ar" lang="ar" title="أسيد (معلوماتية) – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="ACID" href="https://ca.wikipedia.org/wiki/ACID" hreflang="ca" lang="ca" title="ACID – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-cs mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Čeština" data-language-local-name="Czech" data-title="ACID" href="https://cs.wikipedia.org/wiki/ACID" hreflang="cs" lang="cs" title="ACID – Czech">
+             <span>
+              Čeština
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-da mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Dansk" data-language-local-name="Danish" data-title="ACID-transaktion" href="https://da.wikipedia.org/wiki/ACID-transaktion" hreflang="da" lang="da" title="ACID-transaktion – Danish">
+             <span>
+              Dansk
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="ACID" href="https://de.wikipedia.org/wiki/ACID" hreflang="de" lang="de" title="ACID – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-el mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Ελληνικά" data-language-local-name="Greek" data-title="ACID" href="https://el.wikipedia.org/wiki/ACID" hreflang="el" lang="el" title="ACID – Greek">
+             <span>
+              Ελληνικά
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="ACID" href="https://es.wikipedia.org/wiki/ACID" hreflang="es" lang="es" title="ACID – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="اسید (پایگاه داده)" href="https://fa.wikipedia.org/wiki/%D8%A7%D8%B3%DB%8C%D8%AF_(%D9%BE%D8%A7%DB%8C%DA%AF%D8%A7%D9%87_%D8%AF%D8%A7%D8%AF%D9%87)" hreflang="fa" lang="fa" title="اسید (پایگاه داده) – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Propriétés ACID" href="https://fr.wikipedia.org/wiki/Propri%C3%A9t%C3%A9s_ACID" hreflang="fr" lang="fr" title="Propriétés ACID – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="ACID" href="https://ko.wikipedia.org/wiki/ACID" hreflang="ko" lang="ko" title="ACID – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Hrvatski" data-language-local-name="Croatian" data-title="ACID (računarstvo)" href="https://hr.wikipedia.org/wiki/ACID_(ra%C4%8Dunarstvo)" hreflang="hr" lang="hr" title="ACID (računarstvo) – Croatian">
+             <span>
+              Hrvatski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-is mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Íslenska" data-language-local-name="Icelandic" data-title="ACID" href="https://is.wikipedia.org/wiki/ACID" hreflang="is" lang="is" title="ACID – Icelandic">
+             <span>
+              Íslenska
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="ACID" href="https://it.wikipedia.org/wiki/ACID" hreflang="it" lang="it" title="ACID – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="ACID" href="https://he.wikipedia.org/wiki/ACID" hreflang="he" lang="he" title="ACID – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Magyar" data-language-local-name="Hungarian" data-title="ACID" href="https://hu.wikipedia.org/wiki/ACID" hreflang="hu" lang="hu" title="ACID – Hungarian">
+             <span>
+              Magyar
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ml mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="മലയാളം" data-language-local-name="Malayalam" data-title="ആസിഡ് ഗുണവിശേഷങ്ങൾ" href="https://ml.wikipedia.org/wiki/%E0%B4%86%E0%B4%B8%E0%B4%BF%E0%B4%A1%E0%B5%8D_%E0%B4%97%E0%B5%81%E0%B4%A3%E0%B4%B5%E0%B4%BF%E0%B4%B6%E0%B5%87%E0%B4%B7%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B5%BE" hreflang="ml" lang="ml" title="ആസിഡ് ഗുണവിശേഷങ്ങൾ – Malayalam">
+             <span>
+              മലയാളം
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-mn mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Монгол" data-language-local-name="Mongolian" data-title="ACID" href="https://mn.wikipedia.org/wiki/ACID" hreflang="mn" lang="mn" title="ACID – Mongolian">
+             <span>
+              Монгол
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="ACID" href="https://nl.wikipedia.org/wiki/ACID" hreflang="nl" lang="nl" title="ACID – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="ACID (コンピュータ科学)" href="https://ja.wikipedia.org/wiki/ACID_(%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E7%A7%91%E5%AD%A6)" hreflang="ja" lang="ja" title="ACID (コンピュータ科学) – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-no mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" data-title="Atomisk, konsistent, isolert, durabel" href="https://no.wikipedia.org/wiki/Atomisk,_konsistent,_isolert,_durabel" hreflang="nb" lang="nb" title="Atomisk, konsistent, isolert, durabel – Norwegian Bokmål">
+             <span>
+              Norsk bokmål
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="ACID" href="https://pl.wikipedia.org/wiki/ACID" hreflang="pl" lang="pl" title="ACID – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="ACID" href="https://pt.wikipedia.org/wiki/ACID" hreflang="pt" lang="pt" title="ACID – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="ACID" href="https://ru.wikipedia.org/wiki/ACID" hreflang="ru" lang="ru" title="ACID – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-simple mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Simple English" data-language-local-name="Simple English" data-title="ACID" href="https://simple.wikipedia.org/wiki/ACID" hreflang="en-simple" lang="en-simple" title="ACID – Simple English">
+             <span>
+              Simple English
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" data-title="ACID (рачунарство)" href="https://sr.wikipedia.org/wiki/ACID_(%D1%80%D0%B0%D1%87%D1%83%D0%BD%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE)" hreflang="sr" lang="sr" title="ACID (рачунарство) – Serbian">
+             <span>
+              Српски / srpski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="Finnish" data-title="ACID" href="https://fi.wikipedia.org/wiki/ACID" hreflang="fi" lang="fi" title="ACID – Finnish">
+             <span>
+              Suomi
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ta mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="தமிழ்" data-language-local-name="Tamil" data-title="அணுமை, சீரொருமை, தனிமை, நிலைப்பு" href="https://ta.wikipedia.org/wiki/%E0%AE%85%E0%AE%A3%E0%AF%81%E0%AE%AE%E0%AF%88,_%E0%AE%9A%E0%AF%80%E0%AE%B0%E0%AF%8A%E0%AE%B0%E0%AF%81%E0%AE%AE%E0%AF%88,_%E0%AE%A4%E0%AE%A9%E0%AE%BF%E0%AE%AE%E0%AF%88,_%E0%AE%A8%E0%AE%BF%E0%AE%B2%E0%AF%88%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AF%81" hreflang="ta" lang="ta" title="அணுமை, சீரொருமை, தனிமை, நிலைப்பு – Tamil">
+             <span>
+              தமிழ்
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="ACID" href="https://uk.wikipedia.org/wiki/ACID" hreflang="uk" lang="uk" title="ACID – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-vi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" data-title="ACID" href="https://vi.wikipedia.org/wiki/ACID" hreflang="vi" lang="vi" title="ACID – Vietnamese">
+             <span>
+              Tiếng Việt
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="ACID" href="https://zh.wikipedia.org/wiki/ACID" hreflang="zh" lang="zh" title="ACID – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q288435#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/ACID" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:ACID" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/ACID">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=ACID&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=ACID&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/ACID">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=ACID&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=ACID&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/ACID" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/ACID" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=ACID&amp;oldid=1240678711" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=ACID&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=ACID&amp;id=1240678711&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FACID">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FACID">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q288435" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=ACID&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=ACID&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Set of properties of database transactions
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          For other uses, see
+          <a class="mw-disambig" href="/wiki/Acid_(disambiguation)" title="Acid (disambiguation)">
+           Acid (disambiguation)
+          </a>
+          .
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+               </a>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              This article
+              <b>
+               needs additional citations for
+               <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                verification
+               </a>
+              </b>
+              .
+              <span class="hide-when-compact">
+               Please help
+               <a href="/wiki/Special:EditPage/ACID" title="Special:EditPage/ACID">
+                improve this article
+               </a>
+               by
+               <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                adding citations to reliable sources
+               </a>
+               . Unsourced material may be challenged and removed.
+               <br/>
+               <small>
+                <span class="plainlinks">
+                 <i>
+                  Find sources:
+                 </i>
+                 <a class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22ACID%22" rel="nofollow">
+                  "ACID"
+                 </a>
+                 –
+                 <a class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22ACID%22+-wikipedia&amp;tbs=ar:1" rel="nofollow">
+                  news
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?&amp;q=%22ACID%22&amp;tbs=bkt:s&amp;tbm=bks" rel="nofollow">
+                  newspapers
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22ACID%22+-wikipedia" rel="nofollow">
+                  books
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://scholar.google.com/scholar?q=%22ACID%22" rel="nofollow">
+                  scholar
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22ACID%22&amp;acc=on&amp;wc=on" rel="nofollow">
+                  JSTOR
+                 </a>
+                </span>
+               </small>
+              </span>
+              <span class="date-container">
+               <i>
+                (
+                <span class="date">
+                 May 2018
+                </span>
+                )
+               </i>
+              </span>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          In
+          <a href="/wiki/Computer_science" title="Computer science">
+           computer science
+          </a>
+          ,
+          <b>
+           ACID
+          </b>
+          (
+          <a href="/wiki/Atomicity_(database_systems)" title="Atomicity (database systems)">
+           atomicity
+          </a>
+          ,
+          <a href="/wiki/Consistency_(database_systems)" title="Consistency (database systems)">
+           consistency
+          </a>
+          ,
+          <a href="/wiki/Isolation_(database_systems)" title="Isolation (database systems)">
+           isolation
+          </a>
+          ,
+          <a href="/wiki/Durability_(database_systems)" title="Durability (database systems)">
+           durability
+          </a>
+          ) is a set of properties of
+          <a href="/wiki/Database_transaction" title="Database transaction">
+           database transactions
+          </a>
+          intended to guarantee data validity despite errors, power failures, and other mishaps. In the context of
+          <a href="/wiki/Database" title="Database">
+           databases
+          </a>
+          , a sequence of database operations that satisfies the ACID properties (which can be perceived as a single logical operation on the data) is called a
+          <i>
+           transaction
+          </i>
+          . For example, a transfer of funds from one bank account to another, even involving multiple changes such as debiting one account and crediting another, is a single transaction.
+         </p>
+         <p>
+          In 1983,
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <a href="/wiki/Andreas_Reuter" title="Andreas Reuter">
+           Andreas Reuter
+          </a>
+          and
+          <a href="/wiki/Theo_H%C3%A4rder" title="Theo Härder">
+           Theo Härder
+          </a>
+          coined the acronym
+          <i>
+           ACID
+          </i>
+          , building on earlier work by
+          <a href="/wiki/Jim_Gray_(computer_scientist)" title="Jim Gray (computer scientist)">
+           Jim Gray
+          </a>
+          <sup class="reference" id="cite_ref-2">
+           <a href="#cite_note-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          who named atomicity, consistency, and durability, but not isolation, when characterizing the transaction concept. These four properties are the major guarantees of the transaction paradigm, which has influenced many aspects of development in
+          <a class="mw-redirect" href="/wiki/Database_management_system" title="Database management system">
+           database systems
+          </a>
+          .
+         </p>
+         <p>
+          According to Gray and Reuter, the
+          <a href="/wiki/IBM_Information_Management_System" title="IBM Information Management System">
+           IBM Information Management System
+          </a>
+          supported ACID transactions as early as 1973 (although the acronym was created later).
+          <sup class="reference" id="cite_ref-3">
+           <a href="#cite_note-3">
+            <span class="cite-bracket">
+             [
+            </span>
+            3
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Characteristics">
+            Characteristics
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=1" title="Edit section: Characteristics">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The characteristics of these four properties as defined by Reuter and Härder are as follows:
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Atomicity">
+            Atomicity
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=2" title="Edit section: Atomicity">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Atomicity_(database_systems)" title="Atomicity (database systems)">
+            Atomicity (database systems)
+           </a>
+          </div>
+          <p>
+           <a href="/wiki/Database_transaction" title="Database transaction">
+            Transactions
+           </a>
+           are often composed of multiple
+           <a href="/wiki/SQL_syntax" title="SQL syntax">
+            statements
+           </a>
+           .
+           <a href="/wiki/Atomicity_(database_systems)" title="Atomicity (database systems)">
+            Atomicity
+           </a>
+           guarantees that each transaction is treated as a single "unit", which either succeeds completely or fails completely: if any of the statements constituting a transaction fails to complete, the entire transaction fails and the database is left unchanged. An atomic system must guarantee atomicity in each and every situation, including power failures, errors, and crashes.
+           <sup class="reference" id="cite_ref-4">
+            <a href="#cite_note-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           A guarantee of atomicity prevents updates to the database from occurring only partially, which can cause greater problems than rejecting the whole series outright. As a consequence, the transaction cannot be observed to be in progress by another database client. At one moment in time, it has not yet happened, and at the next, it has already occurred in whole (or nothing happened if the transaction was canceled in progress).
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Consistency">
+            Consistency
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=3" title="Edit section: Consistency">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Consistency_(database_systems)" title="Consistency (database systems)">
+            Consistency (database systems)
+           </a>
+          </div>
+          <p>
+           <a href="/wiki/Consistency_(database_systems)" title="Consistency (database systems)">
+            Consistency
+           </a>
+           ensures that a transaction can only bring the database from one consistent state to another, preserving database
+           <a class="mw-redirect" href="/wiki/Invariant_(computer_science)" title="Invariant (computer science)">
+            invariants
+           </a>
+           : any data written to the database must be valid according to all defined rules, including
+           <a class="mw-redirect" href="/wiki/Integrity_constraints" title="Integrity constraints">
+            constraints
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Cascading_rollback" title="Cascading rollback">
+            cascades
+           </a>
+           ,
+           <a href="/wiki/Database_trigger" title="Database trigger">
+            triggers
+           </a>
+           , and any combination thereof. This prevents database corruption by an illegal transaction. An example of a database invariant is
+           <a href="/wiki/Referential_integrity" title="Referential integrity">
+            referential integrity
+           </a>
+           , which guarantees the
+           <a href="/wiki/Unique_key" title="Unique key">
+            primary key
+           </a>
+           –
+           <a href="/wiki/Foreign_key" title="Foreign key">
+            foreign key
+           </a>
+           relationship.
+           <sup class="reference" id="cite_ref-Date2012_5-0">
+            <a href="#cite_note-Date2012-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Isolation">
+            Isolation
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=4" title="Edit section: Isolation">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Isolation_(database_systems)" title="Isolation (database systems)">
+            Isolation (database systems)
+           </a>
+          </div>
+          <p>
+           Transactions are often executed
+           <a href="/wiki/Concurrent_computing" title="Concurrent computing">
+            concurrently
+           </a>
+           (e.g., multiple transactions reading and writing to a table at the same time).
+           <a href="/wiki/Isolation_(database_systems)" title="Isolation (database systems)">
+            Isolation
+           </a>
+           ensures that concurrent execution of transactions leaves the database in the same state that would have been obtained if the transactions were executed sequentially. Isolation is the main goal of
+           <a href="/wiki/Concurrency_control" title="Concurrency control">
+            concurrency control
+           </a>
+           ; depending on the isolation level used, the effects of an incomplete transaction might not be visible to other transactions.
+           <sup class="reference" id="cite_ref-6">
+            <a href="#cite_note-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Durability">
+            Durability
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=5" title="Edit section: Durability">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Durability_(database_systems)" title="Durability (database systems)">
+            Durability (database systems)
+           </a>
+          </div>
+          <p>
+           <a class="mw-redirect" href="/wiki/Durability_(computer_science)" title="Durability (computer science)">
+            Durability
+           </a>
+           guarantees that once a transaction has been committed, it will remain committed even in the case of a system failure (e.g., power outage or
+           <a href="/wiki/Crash_(computing)" title="Crash (computing)">
+            crash
+           </a>
+           ). This usually means that completed transactions (or their effects) are recorded in
+           <a href="/wiki/Non-volatile_memory" title="Non-volatile memory">
+            non-volatile memory
+           </a>
+           .
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Examples">
+            Examples
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=6" title="Edit section: Examples">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+          <table class="box-Unreferenced_section plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation">
+           <tbody>
+            <tr>
+             <td class="mbox-image">
+              <div class="mbox-image-div">
+               <span typeof="mw:File">
+                <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                 <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+                </a>
+               </span>
+              </div>
+             </td>
+             <td class="mbox-text">
+              <div class="mbox-text-span">
+               This section
+               <b>
+                does not
+                <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">
+                 cite
+                </a>
+                any
+                <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                 sources
+                </a>
+               </b>
+               .
+               <span class="hide-when-compact">
+                Please help
+                <a href="/wiki/Special:EditPage/ACID" title="Special:EditPage/ACID">
+                 improve this section
+                </a>
+                by
+                <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                 adding citations to reliable sources
+                </a>
+                . Unsourced material may be challenged and
+                <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">
+                 removed
+                </a>
+                .
+               </span>
+               <span class="date-container">
+                <i>
+                 (
+                 <span class="date">
+                  May 2018
+                 </span>
+                 )
+                </i>
+               </span>
+               <span class="hide-when-compact">
+                <i>
+                 (
+                 <small>
+                  <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                   Learn how and when to remove this message
+                  </a>
+                 </small>
+                 )
+                </i>
+               </span>
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <p>
+           The following examples further illustrate the ACID properties. In these examples, the database table has two columns, A and B. An
+           <a class="mw-redirect" href="/wiki/Integrity_constraints" title="Integrity constraints">
+            integrity constraint
+           </a>
+           requires that the value in A and the value in B must sum to 100. The following
+           <a href="/wiki/SQL" title="SQL">
+            SQL
+           </a>
+           code creates a table as described above:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-sql mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">acidtest</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="w"> </span><span class="nb">INTEGER</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="nb">INTEGER</span><span class="p">,</span><span class="w"> </span><span class="k">CHECK</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">));</span>
+</pre>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Atomicity_2">
+            Atomicity
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=7" title="Edit section: Atomicity">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Atomicity is the guarantee that series of database operations in an atomic transaction will either all occur (a successful operation), or none will occur (an unsuccessful operation). The series of operations cannot be separated with only some of them being executed, which makes the series of operations "indivisible". A guarantee of atomicity prevents updates to the database from occurring only partially, which can cause greater problems than rejecting the whole series outright. In other words, atomicity means indivisibility and irreducibility.
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Alternatively, we may say that a logical transaction may be composed of several physical transactions. Unless and until all component physical transactions are executed, the logical transaction will not have occurred.
+          </p>
+          <p>
+           An example of an atomic transaction is a monetary transfer from bank account A to account B. It consists of two operations, withdrawing the money from account A and depositing it to account B. We would not want to see the amount removed from account A before we are sure it has also been transferred into account B. Performing these operations in an atomic transaction ensures that the database remains in a
+           <a href="/wiki/Data_consistency" title="Data consistency">
+            consistent state
+           </a>
+           , that is, money is neither debited nor credited if either of those two operations fails.
+           <sup class="reference" id="cite_ref-9">
+            <a href="#cite_note-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Consistency_failure">
+            Consistency failure
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=8" title="Edit section: Consistency failure">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Consistency is a very general term, which demands that the data must meet all validation rules. In the previous example, the validation is a requirement that
+           <span class="texhtml">
+            <var style="padding-right: 1px;">
+             A
+            </var>
+            +
+            <var style="padding-right: 1px;">
+             B
+            </var>
+            = 100
+           </span>
+           . All validation rules must be checked to ensure consistency. Assume that a transaction attempts to subtract 10 from
+           <var style="padding-right: 1px;">
+            A
+           </var>
+           without altering
+           <var style="padding-right: 1px;">
+            B
+           </var>
+           . Because consistency is checked after each transaction, it is known that
+           <span class="texhtml">
+            <var style="padding-right: 1px;">
+             A
+            </var>
+            +
+            <var style="padding-right: 1px;">
+             B
+            </var>
+            = 100
+           </span>
+           before the transaction begins. If the transaction removes 10 from
+           <var style="padding-right: 1px;">
+            A
+           </var>
+           successfully, atomicity will be achieved. However, a validation check will show that
+           <span class="texhtml">
+            <var style="padding-right: 1px;">
+             A
+            </var>
+            +
+            <var style="padding-right: 1px;">
+             B
+            </var>
+            = 90
+           </span>
+           , which is inconsistent with the rules of the database. The entire transaction must be canceled and the affected rows rolled back to their pre-transaction state. If there had been other constraints, triggers, or cascades, every single change operation would have been checked in the same way as above before the transaction was committed. Similar issues may arise with other constraints. We may have required the data types of both
+           <var style="padding-right: 1px;">
+            A
+           </var>
+           and
+           <var style="padding-right: 1px;">
+            B
+           </var>
+           to be integers. If we were then to enter, say, the value 13.5 for
+           <var style="padding-right: 1px;">
+            A
+           </var>
+           , the transaction will be canceled, or the system may give rise to an alert in the form of a trigger (if/when the trigger has been written to this effect). Another example would be integrity constraints, which would not allow us to delete a row in one table whose primary key is referred to by at least one
+           <a href="/wiki/Foreign_key" title="Foreign key">
+            foreign key
+           </a>
+           in other tables.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Isolation_failure">
+            Isolation failure
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=9" title="Edit section: Isolation failure">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           To demonstrate isolation, we assume two transactions execute at the same time, each attempting to modify the same data. One of the two must wait until the other completes in order to maintain isolation.
+          </p>
+          <p>
+           Consider two transactions:
+          </p>
+          <ul>
+           <li>
+            T
+            <sub>
+             1
+            </sub>
+            transfers 10 from A to B.
+           </li>
+           <li>
+            T
+            <sub>
+             2
+            </sub>
+            transfers 20 from B to A.
+           </li>
+          </ul>
+          <p>
+           Combined, there are four actions:
+          </p>
+          <ol>
+           <li>
+            T
+            <sub>
+             1
+            </sub>
+            subtracts 10 from A.
+           </li>
+           <li>
+            T
+            <sub>
+             1
+            </sub>
+            adds 10 to B.
+           </li>
+           <li>
+            T
+            <sub>
+             2
+            </sub>
+            subtracts 20 from B.
+           </li>
+           <li>
+            T
+            <sub>
+             2
+            </sub>
+            adds 20 to A.
+           </li>
+          </ol>
+          <p>
+           If these operations are performed in order, isolation is maintained, although T
+           <sub>
+            2
+           </sub>
+           must wait. Consider what happens if T
+           <sub>
+            1
+           </sub>
+           fails halfway through. The database eliminates T
+           <sub>
+            1
+           </sub>
+           's effects, and T
+           <sub>
+            2
+           </sub>
+           sees only valid data.
+          </p>
+          <p>
+           By interleaving the transactions, the actual order of actions might be:
+          </p>
+          <ol>
+           <li>
+            T
+            <sub>
+             1
+            </sub>
+            subtracts 10 from A.
+           </li>
+           <li>
+            T
+            <sub>
+             2
+            </sub>
+            subtracts 20 from B.
+           </li>
+           <li>
+            T
+            <sub>
+             2
+            </sub>
+            adds 20 to A.
+           </li>
+           <li>
+            T
+            <sub>
+             1
+            </sub>
+            adds 10 to B.
+           </li>
+          </ol>
+          <p>
+           Again, consider what happens if T
+           <sub>
+            1
+           </sub>
+           fails while modifying B in Step 4. By the time T
+           <sub>
+            1
+           </sub>
+           fails, T
+           <sub>
+            2
+           </sub>
+           has already modified A; it cannot be restored to the value it had before T
+           <sub>
+            1
+           </sub>
+           without leaving an invalid database. This is known as a
+           <a href="/wiki/Write%E2%80%93write_conflict" title="Write–write conflict">
+            write-write contention
+           </a>
+           ,
+           <sup class="reference" id="cite_ref-10">
+            <a href="#cite_note-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           because two transactions attempted to write to the same data field. In a typical system, the problem would be resolved by reverting to the last known good state, canceling the failed transaction T
+           <sub>
+            1
+           </sub>
+           , and restarting the interrupted transaction T
+           <sub>
+            2
+           </sub>
+           from the good state.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Durability_failure">
+            Durability failure
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=10" title="Edit section: Durability failure">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Consider a transaction that transfers 10 from A to B. First, it removes 10 from A, then it adds 10 to B. At this point, the user is told the transaction was a success. However, the changes are still queued in the
+           <a href="/wiki/Disk_buffer" title="Disk buffer">
+            disk buffer
+           </a>
+           waiting to be committed to disk. Power fails and the changes are lost, but the user assumes (understandably) that the changes persist.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Implementation">
+            Implementation
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=11" title="Edit section: Implementation">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Processing a transaction often requires a sequence of operations that is subject to failure for a number of reasons. For instance, the system may have no room left on its disk drives, or it may have used up its allocated CPU time. There are two popular families of techniques:
+           <a href="/wiki/Write-ahead_logging" title="Write-ahead logging">
+            write-ahead logging
+           </a>
+           and
+           <a href="/wiki/Shadow_paging" title="Shadow paging">
+            shadow paging
+           </a>
+           . In both cases,
+           <a href="/wiki/Lock_(computer_science)" title="Lock (computer science)">
+            locks
+           </a>
+           must be acquired on all information to be updated, and depending on the level of isolation, possibly on all data that may be read as well. In write ahead logging, durability is guaranteed by writing the prospective change to a persistent log before changing the database. That allows the database to return to a consistent state in the event of a crash. In shadowing, updates are applied to a partial copy of the database, and the new copy is activated when the transaction commits.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Locking_vs._multiversioning">
+            Locking vs. multiversioning
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=12" title="Edit section: Locking vs. multiversioning">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Many databases rely upon locking to provide ACID capabilities. Locking means that the transaction marks the data that it accesses so that the DBMS knows not to allow other transactions to modify it until the first transaction succeeds or fails. The lock must always be acquired before processing data, including data that is read but not modified. Non-trivial transactions typically require a large number of locks, resulting in substantial overhead as well as blocking other transactions. For example, if user A is running a transaction that has to read a row of data that user B wants to modify, user B must wait until user A's transaction completes.
+           <a href="/wiki/Two-phase_locking" title="Two-phase locking">
+            Two-phase locking
+           </a>
+           is often applied to guarantee full isolation.
+          </p>
+          <p>
+           An alternative to locking is
+           <a href="/wiki/Multiversion_concurrency_control" title="Multiversion concurrency control">
+            multiversion concurrency control
+           </a>
+           , in which the database provides each reading transaction the prior, unmodified version of data that is being modified by another active transaction. This allows readers to operate without acquiring locks, i.e., writing transactions do not block reading transactions, and readers do not block writers. Going back to the example, when user A's transaction requests data that user B is modifying, the database provides A with the version of that data that existed when user B started his transaction. User A gets a consistent view of the database even if other users are changing data. One implementation, namely
+           <a href="/wiki/Snapshot_isolation" title="Snapshot isolation">
+            snapshot isolation
+           </a>
+           , relaxes the isolation property.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Distributed_transactions">
+            Distributed transactions
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=13" title="Edit section: Distributed transactions">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Distributed_transaction" title="Distributed transaction">
+            Distributed transaction
+           </a>
+          </div>
+          <p>
+           Guaranteeing ACID properties in a
+           <a href="/wiki/Distributed_transaction" title="Distributed transaction">
+            distributed transaction
+           </a>
+           across a
+           <a href="/wiki/Distributed_database" title="Distributed database">
+            distributed database
+           </a>
+           , where no single node is responsible for all data affecting a transaction, presents additional complications. Network connections might fail, or one node might successfully complete its part of the transaction and then be required to roll back its changes because of a failure on another node. The
+           <a href="/wiki/Two-phase_commit_protocol" title="Two-phase commit protocol">
+            two-phase commit protocol
+           </a>
+           (not to be confused with
+           <a href="/wiki/Two-phase_locking" title="Two-phase locking">
+            two-phase locking
+           </a>
+           ) provides atomicity for
+           <a href="/wiki/Distributed_transaction" title="Distributed transaction">
+            distributed transactions
+           </a>
+           to ensure that each participant in the transaction agrees on whether the transaction should be committed or not.
+           <sup class="reference" id="cite_ref-Bern2009_11-0">
+            <a href="#cite_note-Bern2009-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Briefly, in the first phase, one node (the coordinator) interrogates the other nodes (the participants), and only when all reply that they are prepared does the coordinator, in the second phase, formalize the transaction.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=14" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Eventual_consistency" title="Eventual consistency">
+             Eventual consistency
+            </a>
+            (BASE)
+           </li>
+           <li>
+            <a href="/wiki/CAP_theorem" title="CAP theorem">
+             CAP theorem
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Concurrency_control" title="Concurrency control">
+             Concurrency control
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Java_Transaction_API" title="Java Transaction API">
+             Java Transaction API
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Open_Systems_Interconnection" title="Open Systems Interconnection">
+             Open Systems Interconnection
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Transactional_NTFS" title="Transactional NTFS">
+             Transactional NTFS
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Two-phase_commit_protocol" title="Two-phase commit protocol">
+             Two-phase commit protocol
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Create,_read,_update_and_delete" title="Create, read, update and delete">
+             CRUD
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=ACID&amp;action=edit&amp;section=15" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation journal cs1" id="CITEREFHaerderReuter1983">
+                <a href="/wiki/Theo_H%C3%A4rder" title="Theo Härder">
+                 Haerder, T.
+                </a>
+                ;
+                <a href="/wiki/Andreas_Reuter" title="Andreas Reuter">
+                 Reuter, A.
+                </a>
+                (1983). "Principles of transaction-oriented database recovery".
+                <i>
+                 ACM Computing Surveys
+                </i>
+                .
+                <b>
+                 15
+                </b>
+                (4): 287.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1145%2F289.291" rel="nofollow">
+                 10.1145/289.291
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:207235758" rel="nofollow">
+                 207235758
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+Computing+Surveys&amp;rft.atitle=Principles+of+transaction-oriented+database+recovery&amp;rft.volume=15&amp;rft.issue=4&amp;rft.pages=287&amp;rft.date=1983&amp;rft_id=info%3Adoi%2F10.1145%2F289.291&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A207235758%23id-name%3DS2CID&amp;rft.aulast=Haerder&amp;rft.aufirst=T.&amp;rft.au=Reuter%2C+A.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AACID">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation conference cs1" id="CITEREFGray1981">
+                <a href="/wiki/Jim_Gray_(computer_scientist)" title="Jim Gray (computer scientist)">
+                 Gray, Jim
+                </a>
+                (September 1981).
+                <a class="external text" href="http://research.microsoft.com/~gray/papers/theTransactionConcept.pdf" rel="nofollow">
+                 "The Transaction Concept: Virtues and Limitations"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 Proceedings of the 7th International Conference on Very Large Databases
+                </i>
+                . Cupertino, California:
+                <a href="/wiki/Tandem_Computers" title="Tandem Computers">
+                 Tandem Computers
+                </a>
+                . pp. 144–154
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  March 27,
+                 </span>
+                 2015
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=The+Transaction+Concept%3A+Virtues+and+Limitations&amp;rft.btitle=Proceedings+of+the+7th+International+Conference+on+Very+Large+Databases&amp;rft.place=Cupertino%2C+California&amp;rft.pages=144-154&amp;rft.pub=Tandem+Computers&amp;rft.date=1981-09&amp;rft.aulast=Gray&amp;rft.aufirst=Jim&amp;rft_id=http%3A%2F%2Fresearch.microsoft.com%2F~gray%2Fpapers%2FtheTransactionConcept.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AACID">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFGrayReuter1993">
+                <a href="/wiki/Jim_Gray_(computer_scientist)" title="Jim Gray (computer scientist)">
+                 Gray, Jim
+                </a>
+                ;
+                <a href="/wiki/Andreas_Reuter" title="Andreas Reuter">
+                 Reuter, Andreas
+                </a>
+                (1993).
+                <span class="id-lock-registration" title="Free registration required">
+                 <a class="external text" href="https://archive.org/details/transactionproce0000gray" rel="nofollow">
+                  <i>
+                   Distributed Transaction Processing: Concepts and Techniques
+                  </i>
+                 </a>
+                </span>
+                .
+                <a class="mw-redirect" href="/wiki/Morgan_Kaufmann" title="Morgan Kaufmann">
+                 Morgan Kaufmann
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/1-55860-190-2" title="Special:BookSources/1-55860-190-2">
+                 <bdi>
+                  1-55860-190-2
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Distributed+Transaction+Processing%3A+Concepts+and+Techniques&amp;rft.pub=Morgan+Kaufmann&amp;rft.date=1993&amp;rft.isbn=1-55860-190-2&amp;rft.aulast=Gray&amp;rft.aufirst=Jim&amp;rft.au=Reuter%2C+Andreas&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Ftransactionproce0000gray&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AACID">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://www.webopedia.com/TERM/A/atomic_operation.html" rel="nofollow">
+                 "Atomic operation"
+                </a>
+                .
+                <i>
+                 webopedia.com
+                </i>
+                . Webopedia. 25 November 2003
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2011-03-23
+                 </span>
+                </span>
+                .
+                <q>
+                 An operation during which a processor can simultaneously read a location and write it in the same bus operation. This prevents any other processor or I/O device from writing or reading memory until the operation is complete.
+                </q>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=webopedia.com&amp;rft.atitle=Atomic+operation&amp;rft.date=2003-11-25&amp;rft_id=http%3A%2F%2Fwww.webopedia.com%2FTERM%2FA%2Fatomic_operation.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AACID">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Date2012-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Date2012_5-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               C. J. Date, "SQL and Relational Theory: How to Write Accurate SQL Code 2nd edition",
+               <i>
+                O'reilly Media, Inc.
+               </i>
+               , 2012, p. 180.
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFArchiveddocs2012">
+                Archiveddocs (2012-10-04).
+                <a class="external text" href="https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms189122(v=sql.105)" rel="nofollow">
+                 "Isolation Levels in the Database Engine"
+                </a>
+                .
+                <i>
+                 learn.microsoft.com
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2023-07-14
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=learn.microsoft.com&amp;rft.atitle=Isolation+Levels+in+the+Database+Engine&amp;rft.date=2012-10-04&amp;rft.au=Archiveddocs&amp;rft_id=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fprevious-versions%2Fsql%2Fsql-server-2008-r2%2Fms189122%28v%3Dsql.105%29&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AACID">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFSilberschatzKorthSudarshan2011">
+                Silberschatz, Abraham; Korth, Henry F.; Sudarshan, S. (2011). "Transactions".
+                <a class="external text" href="https://www.worldcat.org/title/436031093" rel="nofollow">
+                 <i>
+                  Database system concepts
+                 </i>
+                </a>
+                (6th ed.). New York: McGraw-Hill. p. 631.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-07-352332-3" title="Special:BookSources/978-0-07-352332-3">
+                 <bdi>
+                  978-0-07-352332-3
+                 </bdi>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/OCLC_(identifier)" title="OCLC (identifier)">
+                 OCLC
+                </a>
+                <a class="external text" href="https://search.worldcat.org/oclc/436031093" rel="nofollow">
+                 436031093
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Transactions&amp;rft.btitle=Database+system+concepts&amp;rft.place=New+York&amp;rft.pages=631&amp;rft.edition=6th&amp;rft.pub=McGraw-Hill&amp;rft.date=2011&amp;rft_id=info%3Aoclcnum%2F436031093&amp;rft.isbn=978-0-07-352332-3&amp;rft.aulast=Silberschatz&amp;rft.aufirst=Abraham&amp;rft.au=Korth%2C+Henry+F.&amp;rft.au=Sudarshan%2C+S.&amp;rft_id=https%3A%2F%2Fwww.worldcat.org%2Ftitle%2F436031093&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AACID">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://docs.oracle.com/cd/E17276_01/html/programmer_reference/transapp_atomicity.html" rel="nofollow">
+                 "Atomicity"
+                </a>
+                .
+                <i>
+                 docs.oracle.com
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2016-12-13
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=docs.oracle.com&amp;rft.atitle=Atomicity&amp;rft_id=https%3A%2F%2Fdocs.oracle.com%2Fcd%2FE17276_01%2Fhtml%2Fprogrammer_reference%2Ftransapp_atomicity.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AACID">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-9">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFAmsterdam">
+                Amsterdam, Jonathan.
+                <a class="external text" href="https://web.archive.org/web/20160303090517/http://archive.oreilly.com/pub/a/onjava/2001/11/07/atomic.html" rel="nofollow">
+                 "Atomic File Transactions, Part 1"
+                </a>
+                .
+                <i>
+                 O'Reilly
+                </i>
+                . Archived from
+                <a class="external text" href="http://archive.oreilly.com/pub/a/onjava/2001/11/07/atomic.html" rel="nofollow">
+                 the original
+                </a>
+                on 2016-03-03
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2016-02-28
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=O%27Reilly&amp;rft.atitle=Atomic+File+Transactions%2C+Part+1&amp;rft.aulast=Amsterdam&amp;rft.aufirst=Jonathan&amp;rft_id=http%3A%2F%2Farchive.oreilly.com%2Fpub%2Fa%2Fonjava%2F2001%2F11%2F07%2Fatomic.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AACID">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFSilberschatzKorthSudarshan2011">
+                Silberschatz, Abraham; Korth, Henry F.; Sudarshan, S. (2011). "Advanced Application Development".
+                <a class="external text" href="https://www.worldcat.org/title/436031093" rel="nofollow">
+                 <i>
+                  Database system concepts
+                 </i>
+                </a>
+                (6th ed.). New York: McGraw-Hill. p. 1042.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-07-352332-3" title="Special:BookSources/978-0-07-352332-3">
+                 <bdi>
+                  978-0-07-352332-3
+                 </bdi>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/OCLC_(identifier)" title="OCLC (identifier)">
+                 OCLC
+                </a>
+                <a class="external text" href="https://search.worldcat.org/oclc/436031093" rel="nofollow">
+                 436031093
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Advanced+Application+Development&amp;rft.btitle=Database+system+concepts&amp;rft.place=New+York&amp;rft.pages=1042&amp;rft.edition=6th&amp;rft.pub=McGraw-Hill&amp;rft.date=2011&amp;rft_id=info%3Aoclcnum%2F436031093&amp;rft.isbn=978-0-07-352332-3&amp;rft.aulast=Silberschatz&amp;rft.aufirst=Abraham&amp;rft.au=Korth%2C+Henry+F.&amp;rft.au=Sudarshan%2C+S.&amp;rft_id=https%3A%2F%2Fwww.worldcat.org%2Ftitle%2F436031093&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AACID">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Bern2009-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Bern2009_11-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFBernsteinNewcomer2009">
+                <a href="/wiki/Phil_Bernstein" title="Phil Bernstein">
+                 Bernstein, Philip A.
+                </a>
+                ; Newcomer, Eric (2009). "Chapter 8".
+                <a class="external text" href="https://web.archive.org/web/20100807151625/http://www.elsevierdirect.com/product.jsp?isbn=9781558606234" rel="nofollow">
+                 <i>
+                  Principles of Transaction Processing
+                 </i>
+                </a>
+                (2nd ed.). Morgan Kaufmann (Elsevier).
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-1-55860-623-4" title="Special:BookSources/978-1-55860-623-4">
+                 <bdi>
+                  978-1-55860-623-4
+                 </bdi>
+                </a>
+                . Archived from
+                <a class="external text" href="http://www.elsevierdirect.com/product.jsp?isbn=9781558606234" rel="nofollow">
+                 the original
+                </a>
+                on 2010-08-07.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Chapter+8&amp;rft.btitle=Principles+of+Transaction+Processing&amp;rft.edition=2nd&amp;rft.pub=Morgan+Kaufmann+%28Elsevier%29&amp;rft.date=2009&amp;rft.isbn=978-1-55860-623-4&amp;rft.aulast=Bernstein&amp;rft.aufirst=Philip+A.&amp;rft.au=Newcomer%2C+Eric&amp;rft_id=http%3A%2F%2Fwww.elsevierdirect.com%2Fproduct.jsp%3Fisbn%3D9781558606234&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AACID">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="" style="clear:both;">
+          </div>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Database_management_systems" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Databases" title="Template:Databases">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Databases" title="Template talk:Databases">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Databases" title="Special:EditPage/Template:Databases">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Database_management_systems" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Database" title="Database">
+                 Database management systems
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Types
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Object_database" title="Object database">
+                   Object-oriented
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Comparison_of_object_database_management_systems" title="Comparison of object database management systems">
+                     comparison
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Relational_database" title="Relational database">
+                   Relational
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/List_of_relational_database_management_systems" title="List of relational database management systems">
+                     list
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Comparison_of_relational_database_management_systems" title="Comparison of relational database management systems">
+                     comparison
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Key%E2%80%93value_database" title="Key–value database">
+                   Key–value
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Column-oriented_DBMS" title="Column-oriented DBMS">
+                   Column-oriented
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/List_of_column-oriented_DBMSes" title="List of column-oriented DBMSes">
+                     list
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Document-oriented_database" title="Document-oriented database">
+                   Document-oriented
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Wide-column_store" title="Wide-column store">
+                   Wide-column store
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Graph_database" title="Graph database">
+                   Graph
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/NoSQL" title="NoSQL">
+                   NoSQL
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/NewSQL" title="NewSQL">
+                   NewSQL
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/In-memory_database" title="In-memory database">
+                   In-memory
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/List_of_in-memory_databases" title="List of in-memory databases">
+                     list
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Multi-model_database" title="Multi-model database">
+                   Multi-model
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Comparison_of_multi-model_databases" title="Comparison of multi-model databases">
+                     comparison
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Cloud_database" title="Cloud database">
+                   Cloud
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Blockchain-based_database" title="Blockchain-based database">
+                   Blockchain-based database
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Concepts
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Database" title="Database">
+                   Database
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   ACID
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Armstrong%27s_axioms" title="Armstrong's axioms">
+                   Armstrong's axioms
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Codd%27s_12_rules" title="Codd's 12 rules">
+                   Codd's 12 rules
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/CAP_theorem" title="CAP theorem">
+                   CAP theorem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Create,_read,_update_and_delete" title="Create, read, update and delete">
+                   CRUD
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Null_(SQL)" title="Null (SQL)">
+                   Null
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Candidate_key" title="Candidate key">
+                   Candidate key
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Foreign_key" title="Foreign key">
+                   Foreign key
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Superkey" title="Superkey">
+                   Superkey
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Surrogate_key" title="Surrogate key">
+                   Surrogate key
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Unique_key" title="Unique key">
+                   Unique key
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Objects
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Relation_(database)" title="Relation (database)">
+                   Relation
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Table_(database)" title="Table (database)">
+                     table
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Column_(database)" title="Column (database)">
+                     column
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Row_(database)" title="Row (database)">
+                     row
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/View_(SQL)" title="View (SQL)">
+                   View
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Database_transaction" title="Database transaction">
+                   Transaction
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Transaction_log" title="Transaction log">
+                   Transaction log
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Database_trigger" title="Database trigger">
+                   Trigger
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Database_index" title="Database index">
+                   Index
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Stored_procedure" title="Stored procedure">
+                   Stored procedure
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Cursor_(databases)" title="Cursor (databases)">
+                   Cursor
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Partition_(database)" title="Partition (database)">
+                   Partition
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Components
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Concurrency_control" title="Concurrency control">
+                   Concurrency control
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Data_dictionary" title="Data dictionary">
+                   Data dictionary
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Java_Database_Connectivity" title="Java Database Connectivity">
+                   JDBC
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/XQuery_API_for_Java" title="XQuery API for Java">
+                   XQJ
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Open_Database_Connectivity" title="Open Database Connectivity">
+                   ODBC
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Query_language" title="Query language">
+                   Query language
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Query_optimization" title="Query optimization">
+                   Query optimizer
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Query_Rewriting" title="Query Rewriting">
+                   Query rewriting system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Query_plan" title="Query plan">
+                   Query plan
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Functions
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Database_administration" title="Database administration">
+                   Administration
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Query_optimization" title="Query optimization">
+                   Query optimization
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Replication_(computing)#DATABASE" title="Replication (computing)">
+                   Replication
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Shard_(database_architecture)" title="Shard (database architecture)">
+                   Sharding
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Related topics
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Database_model" title="Database model">
+                   Database models
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Database_normalization" title="Database normalization">
+                   Database normalization
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Database_storage_structures" title="Database storage structures">
+                   Database storage
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Distributed_database" title="Distributed database">
+                   Distributed database
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Federated_database_system" title="Federated database system">
+                   Federated database system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Referential_integrity" title="Referential integrity">
+                   Referential integrity
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Relational_algebra" title="Relational algebra">
+                   Relational algebra
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Relational_calculus" title="Relational calculus">
+                   Relational calculus
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Relational_model" title="Relational model">
+                   Relational model
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Object%E2%80%93relational_database" title="Object–relational database">
+                   Object–relational database
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Transaction_processing" title="Transaction processing">
+                   Transaction processing
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <td class="navbox-abovebelow" colspan="2">
+               <div>
+                <ul>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Category">
+                    <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Category:Database_management_systems" title="Category:Database management systems">
+                   Category
+                  </a>
+                 </li>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Outline">
+                    <img alt="" class="mw-file-element" data-file-height="200" data-file-width="130" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Global_thinking.svg/10px-Global_thinking.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Global_thinking.svg/15px-Global_thinking.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/41/Global_thinking.svg/21px-Global_thinking.svg.png 2x" width="10"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Outline_of_databases" title="Outline of databases">
+                   Outline
+                  </a>
+                 </li>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="WikiProject">
+                    <img alt="" class="mw-file-element" data-file-height="100" data-file-width="100" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/16px-People_icon.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/24px-People_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/32px-People_icon.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Wikipedia:WikiProject_Databases" title="Wikipedia:WikiProject Databases">
+                   WikiProject
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐wwsv5
+Cached time: 20240926232248
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.520 seconds
+Real time usage: 0.829 seconds
+Preprocessor visited node count: 1520/1000000
+Post‐expand include size: 52712/2097152 bytes
+Template argument size: 1145/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 9/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 52007/5000000 bytes
+Lua time usage: 0.349/10.000 seconds
+Lua memory usage: 6342197/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  753.373      1 -total
+ 28.69%  216.145      1 Template:Reflist
+ 19.05%  143.491      1 Template:Short_description
+ 17.37%  130.843      1 Template:Cite_journal
+ 14.35%  108.109      1 Template:Databases
+ 13.99%  105.401      1 Template:Navbox
+ 12.60%   94.945      1 Template:Refimprove
+ 12.29%   92.584      2 Template:Ambox
+ 10.92%   82.264      7 Template:Main_other
+ 10.44%   78.643      1 Template:SDcat
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:60776-0!canonical and timestamp 20240926232248 and revision id 1240678711. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=ACID&amp;oldid=1240678711">
+          https://en.wikipedia.org/w/index.php?title=ACID&amp;oldid=1240678711
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Database_management_systems" title="Category:Database management systems">
+            Database management systems
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Transaction_processing" title="Category:Transaction processing">
+            Transaction processing
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Concurrency_control" title="Category:Concurrency control">
+            Concurrency control
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_May_2018" title="Category:Articles needing additional references from May 2018">
+            Articles needing additional references from May 2018
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 16 August 2024, at 18:30
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=ACID&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-2qdmg","wgBackendResponseTime":160,"wgPageParseReport":{"limitreport":{"cputime":"0.520","walltime":"0.829","ppvisitednodes":{"value":1520,"limit":1000000},"postexpandincludesize":{"value":52712,"limit":2097152},"templateargumentsize":{"value":1145,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":9,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":52007,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  753.373      1 -total"," 28.69%  216.145      1 Template:Reflist"," 19.05%  143.491      1 Template:Short_description"," 17.37%  130.843      1 Template:Cite_journal"," 14.35%  108.109      1 Template:Databases"," 13.99%  105.401      1 Template:Navbox"," 12.60%   94.945      1 Template:Refimprove"," 12.29%   92.584      2 Template:Ambox"," 10.92%   82.264      7 Template:Main_other"," 10.44%   78.643      1 Template:SDcat"]},"scribunto":{"limitreport-timeusage":{"value":"0.349","limit":"10.000"},"limitreport-memusage":{"value":6342197,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-wwsv5","timestamp":"20240926232248","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"ACID","url":"https:\/\/en.wikipedia.org\/wiki\/ACID","sameAs":"http:\/\/www.wikidata.org\/entity\/Q288435","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q288435","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-07-06T17:06:10Z","dateModified":"2024-08-16T18:30:56Z","headline":"set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc."}
+  </script>
+ </body>
+</html>

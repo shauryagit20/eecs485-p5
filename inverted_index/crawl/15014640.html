@@ -1,0 +1,3137 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Concurrency (computer science) - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"89cd9e15-f62d-4842-ac44-b83407016dde","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Concurrency_(computer_science)","wgTitle":"Concurrency (computer science)","wgCurRevisionId":1247733772,"wgRevisionId":1247733772,"wgArticleId":928467,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 errors: missing periodical","Articles with short description","Short description is different from Wikidata","Articles needing additional references from April 2007","All articles needing additional references","Articles with specifically marked weasel-worded phrases from August 2023","All articles with specifically marked weasel-worded phrases","All articles needing examples","Articles needing examples from August 2023",
+"Concurrency (computer science)"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Concurrency_(computer_science)","wgRelevantArticleId":928467,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,
+"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1414548","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media",
+"site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/7/7b/An_illustration_of_the_dining_philosophers_problem.png" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="1245" property="og:image:height"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/An_illustration_of_the_dining_philosophers_problem.png/800px-An_illustration_of_the_dining_philosophers_problem.png" property="og:image"/>
+  <meta content="800" property="og:image:width"/>
+  <meta content="830" property="og:image:height"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/An_illustration_of_the_dining_philosophers_problem.png/640px-An_illustration_of_the_dining_philosophers_problem.png" property="og:image"/>
+  <meta content="640" property="og:image:width"/>
+  <meta content="664" property="og:image:height"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Concurrency (computer science) - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Concurrency_(computer_science)" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Concurrency_(computer_science)&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Concurrency_(computer_science)" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Concurrency_(computer_science)"/>
+  <meta eecs485_docid="15014640"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Concurrency_computer_science rootpage-Concurrency_computer_science skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Concurrency+%28computer+science%29" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Concurrency+%28computer+science%29" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Concurrency+%28computer+science%29" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Concurrency+%28computer+science%29" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Issues">
+           <a class="vector-toc-link" href="#Issues">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Issues
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Issues-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Theory">
+           <a class="vector-toc-link" href="#Theory">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Theory
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Theory-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Theory subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Theory-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Models">
+             <a class="vector-toc-link" href="#Models">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.1
+               </span>
+               <span>
+                Models
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Models-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Logics">
+             <a class="vector-toc-link" href="#Logics">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.2
+               </span>
+               <span>
+                Logics
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Logics-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Practice">
+           <a class="vector-toc-link" href="#Practice">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Practice
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Practice-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Further_reading">
+           <a class="vector-toc-link" href="#Further_reading">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              Further reading
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Further_reading-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              7
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Concurrency (computer science)
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 28 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-28" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          28 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="تزامن (حوسبة)" href="https://ar.wikipedia.org/wiki/%D8%AA%D8%B2%D8%A7%D9%85%D9%86_(%D8%AD%D9%88%D8%B3%D8%A8%D8%A9)" hreflang="ar" lang="ar" title="تزامن (حوسبة) – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-bn mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="বাংলা" data-language-local-name="Bangla" data-title="সহবর্তমানতা (কম্পিউটার বিজ্ঞান)" href="https://bn.wikipedia.org/wiki/%E0%A6%B8%E0%A6%B9%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A6%A4%E0%A6%BE_(%E0%A6%95%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%BF%E0%A6%89%E0%A6%9F%E0%A6%BE%E0%A6%B0_%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%BE%E0%A6%A8)" hreflang="bn" lang="bn" title="সহবর্তমানতা (কম্পিউটার বিজ্ঞান) – Bangla">
+             <span>
+              বাংলা
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-da mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Dansk" data-language-local-name="Danish" data-title="Samtidighed" href="https://da.wikipedia.org/wiki/Samtidighed" hreflang="da" lang="da" title="Samtidighed – Danish">
+             <span>
+              Dansk
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Nebenläufigkeit" href="https://de.wikipedia.org/wiki/Nebenl%C3%A4ufigkeit" hreflang="de" lang="de" title="Nebenläufigkeit – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-el mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Ελληνικά" data-language-local-name="Greek" data-title="Ταυτοχρονισμός" href="https://el.wikipedia.org/wiki/%CE%A4%CE%B1%CF%85%CF%84%CE%BF%CF%87%CF%81%CE%BF%CE%BD%CE%B9%CF%83%CE%BC%CF%8C%CF%82" hreflang="el" lang="el" title="Ταυτοχρονισμός – Greek">
+             <span>
+              Ελληνικά
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Concurrencia (informática)" href="https://es.wikipedia.org/wiki/Concurrencia_(inform%C3%A1tica)" hreflang="es" lang="es" title="Concurrencia (informática) – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-eu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Euskara" data-language-local-name="Basque" data-title="Konkurrentzia (informatika)" href="https://eu.wikipedia.org/wiki/Konkurrentzia_(informatika)" hreflang="eu" lang="eu" title="Konkurrentzia (informatika) – Basque">
+             <span>
+              Euskara
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="همروندی (علوم رایانه)" href="https://fa.wikipedia.org/wiki/%D9%87%D9%85%D8%B1%D9%88%D9%86%D8%AF%DB%8C_(%D8%B9%D9%84%D9%88%D9%85_%D8%B1%D8%A7%DB%8C%D8%A7%D9%86%D9%87)" hreflang="fa" lang="fa" title="همروندی (علوم رایانه) – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="병행성" href="https://ko.wikipedia.org/wiki/%EB%B3%91%ED%96%89%EC%84%B1" hreflang="ko" lang="ko" title="병행성 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-id mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Bahasa Indonesia" data-language-local-name="Indonesian" data-title="Konkurensi (ilmu komputer)" href="https://id.wikipedia.org/wiki/Konkurensi_(ilmu_komputer)" hreflang="id" lang="id" title="Konkurensi (ilmu komputer) – Indonesian">
+             <span>
+              Bahasa Indonesia
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Concorrenza (informatica)" href="https://it.wikipedia.org/wiki/Concorrenza_(informatica)" hreflang="it" lang="it" title="Concorrenza (informatica) – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="Concurrency (מדעי המחשב)" href="https://he.wikipedia.org/wiki/Concurrency_(%D7%9E%D7%93%D7%A2%D7%99_%D7%94%D7%9E%D7%97%D7%A9%D7%91)" hreflang="he" lang="he" title="Concurrency (מדעי המחשב) – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Magyar" data-language-local-name="Hungarian" data-title="Párhuzamosság (számítástudomány)" href="https://hu.wikipedia.org/wiki/P%C3%A1rhuzamoss%C3%A1g_(sz%C3%A1m%C3%ADt%C3%A1studom%C3%A1ny)" hreflang="hu" lang="hu" title="Párhuzamosság (számítástudomány) – Hungarian">
+             <span>
+              Magyar
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ms mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Bahasa Melayu" data-language-local-name="Malay" data-title="Keserentakan (sains komputer)" href="https://ms.wikipedia.org/wiki/Keserentakan_(sains_komputer)" hreflang="ms" lang="ms" title="Keserentakan (sains komputer) – Malay">
+             <span>
+              Bahasa Melayu
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="Gelijktijdigheid (informatica)" href="https://nl.wikipedia.org/wiki/Gelijktijdigheid_(informatica)" hreflang="nl" lang="nl" title="Gelijktijdigheid (informatica) – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="並行性" href="https://ja.wikipedia.org/wiki/%E4%B8%A6%E8%A1%8C%E6%80%A7" hreflang="ja" lang="ja" title="並行性 – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-no mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" data-title="Samtidighet (informatikk)" href="https://no.wikipedia.org/wiki/Samtidighet_(informatikk)" hreflang="nb" lang="nb" title="Samtidighet (informatikk) – Norwegian Bokmål">
+             <span>
+              Norsk bokmål
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Concorrência (ciência da computação)" href="https://pt.wikipedia.org/wiki/Concorr%C3%AAncia_(ci%C3%AAncia_da_computa%C3%A7%C3%A3o)" hreflang="pt" lang="pt" title="Concorrência (ciência da computação) – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ro mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Română" data-language-local-name="Romanian" data-title="Concurență (informatică)" href="https://ro.wikipedia.org/wiki/Concuren%C8%9B%C4%83_(informatic%C4%83)" hreflang="ro" lang="ro" title="Concurență (informatică) – Romanian">
+             <span>
+              Română
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Параллелизм (информатика)" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D0%B8%D0%B7%D0%BC_(%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)" hreflang="ru" lang="ru" title="Параллелизм (информатика) – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sq mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Shqip" data-language-local-name="Albanian" data-title="Njëkohësisht (shkenca kompjuterike)" href="https://sq.wikipedia.org/wiki/Nj%C3%ABkoh%C3%ABsisht_(shkenca_kompjuterike)" hreflang="sq" lang="sq" title="Njëkohësisht (shkenca kompjuterike) – Albanian">
+             <span>
+              Shqip
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-simple mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Simple English" data-language-local-name="Simple English" data-title="Concurrency (computer science)" href="https://simple.wikipedia.org/wiki/Concurrency_(computer_science)" hreflang="en-simple" lang="en-simple" title="Concurrency (computer science) – Simple English">
+             <span>
+              Simple English
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="Finnish" data-title="Rinnakkaisuus" href="https://fi.wikipedia.org/wiki/Rinnakkaisuus" hreflang="fi" lang="fi" title="Rinnakkaisuus – Finnish">
+             <span>
+              Suomi
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sv mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Svenska" data-language-local-name="Swedish" data-title="Samtidighet (datavetenskap)" href="https://sv.wikipedia.org/wiki/Samtidighet_(datavetenskap)" hreflang="sv" lang="sv" title="Samtidighet (datavetenskap) – Swedish">
+             <span>
+              Svenska
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Türkçe" data-language-local-name="Turkish" data-title="Eşzamanlılık (bilgisayar bilimleri)" href="https://tr.wikipedia.org/wiki/E%C5%9Fzamanl%C4%B1l%C4%B1k_(bilgisayar_bilimleri)" hreflang="tr" lang="tr" title="Eşzamanlılık (bilgisayar bilimleri) – Turkish">
+             <span>
+              Türkçe
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Рівночасність (інформатика)" href="https://uk.wikipedia.org/wiki/%D0%A0%D1%96%D0%B2%D0%BD%D0%BE%D1%87%D0%B0%D1%81%D0%BD%D1%96%D1%81%D1%82%D1%8C_(%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)" hreflang="uk" lang="uk" title="Рівночасність (інформатика) – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-vi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" data-title="Tương tranh (khoa học máy tính)" href="https://vi.wikipedia.org/wiki/T%C6%B0%C6%A1ng_tranh_(khoa_h%E1%BB%8Dc_m%C3%A1y_t%C3%ADnh)" hreflang="vi" lang="vi" title="Tương tranh (khoa học máy tính) – Vietnamese">
+             <span>
+              Tiếng Việt
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="并发性" href="https://zh.wikipedia.org/wiki/%E5%B9%B6%E5%8F%91%E6%80%A7" hreflang="zh" lang="zh" title="并发性 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1414548#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Concurrency_(computer_science)" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Concurrency_(computer_science)" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Concurrency_(computer_science)">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Concurrency_(computer_science)&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Concurrency_(computer_science)&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Concurrency_(computer_science)">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Concurrency_(computer_science)&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Concurrency_(computer_science)&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Concurrency_(computer_science)" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Concurrency_(computer_science)" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Concurrency_(computer_science)&amp;oldid=1247733772" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Concurrency_(computer_science)&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Concurrency_%28computer_science%29&amp;id=1247733772&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FConcurrency_%28computer_science%29">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FConcurrency_%28computer_science%29">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1414548" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Concurrency_%28computer_science%29&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Concurrency_(computer_science)&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="wb-otherproject-link wb-otherproject-commons mw-list-item">
+                  <a href="https://commons.wikimedia.org/wiki/Category:Concurrency_(computer_science)" hreflang="en">
+                   <span>
+                    Wikimedia Commons
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Ability to execute a task in a non-serial manner
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          "Concurrent computer" redirects here. For the company, see
+          <a href="/wiki/Concurrent_Computer_Corporation" title="Concurrent Computer Corporation">
+           Concurrent Computer Corporation
+          </a>
+          .
+         </div>
+         <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+         <div class="hatnote navigation-not-searchable" role="note">
+          For a more practical discussion, see
+          <a href="/wiki/Concurrent_computing" title="Concurrent computing">
+           Concurrent computing
+          </a>
+          . For other uses, see
+          <a class="mw-redirect mw-disambig" href="/wiki/Concurrency_(disambiguation)" title="Concurrency (disambiguation)">
+           Concurrency (disambiguation)
+          </a>
+          .
+         </div>
+         <figure typeof="mw:File/Thumb">
+          <a class="mw-file-description" href="/wiki/File:An_illustration_of_the_dining_philosophers_problem.png">
+           <img class="mw-file-element" data-file-height="1172" data-file-width="1130" decoding="async" height="207" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7b/An_illustration_of_the_dining_philosophers_problem.png/200px-An_illustration_of_the_dining_philosophers_problem.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7b/An_illustration_of_the_dining_philosophers_problem.png/300px-An_illustration_of_the_dining_philosophers_problem.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7b/An_illustration_of_the_dining_philosophers_problem.png/400px-An_illustration_of_the_dining_philosophers_problem.png 2x" width="200"/>
+          </a>
+          <figcaption>
+           The
+           <a href="/wiki/Dining_philosophers_problem" title="Dining philosophers problem">
+            "Dining Philosophers"
+           </a>
+           , a classic problem involving concurrency and shared resources
+          </figcaption>
+         </figure>
+         <p>
+          In
+          <a href="/wiki/Computer_science" title="Computer science">
+           computer science
+          </a>
+          ,
+          <b>
+           concurrency
+          </b>
+          is the ability of different parts or units of a
+          <a href="/wiki/Computer_program" title="Computer program">
+           program
+          </a>
+          ,
+          <a href="/wiki/Algorithm" title="Algorithm">
+           algorithm
+          </a>
+          , or
+          <a href="/wiki/Problem_solving" title="Problem solving">
+           problem
+          </a>
+          to be
+          <a href="/wiki/Execution_(computing)" title="Execution (computing)">
+           executed
+          </a>
+          out-of-order or in
+          <a class="mw-redirect" href="/wiki/Partial_Order" title="Partial Order">
+           partial order
+          </a>
+          , without affecting the outcome.  This allows for
+          <a href="/wiki/Parallel_computing" title="Parallel computing">
+           parallel
+          </a>
+          execution of the concurrent units, which can significantly improve overall speed of the execution in
+          <a href="/wiki/Multiprocessing" title="Multiprocessing">
+           multi-processor
+          </a>
+          and
+          <a href="/wiki/Multi-core_processor" title="Multi-core processor">
+           multi-core
+          </a>
+          systems. In more technical terms, concurrency refers to the
+          <a href="/wiki/Decomposition_(computer_science)" title="Decomposition (computer science)">
+           decomposability
+          </a>
+          of a program, algorithm, or problem into order-independent or partially-ordered components or units of computation.
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <figure class="mw-default-size" typeof="mw:File/Thumb">
+          <a class="mw-file-description" href="/wiki/File:Parallelism_vs_concurrency.png">
+           <img class="mw-file-element" data-file-height="245" data-file-width="962" decoding="async" height="56" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Parallelism_vs_concurrency.png/220px-Parallelism_vs_concurrency.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Parallelism_vs_concurrency.png/330px-Parallelism_vs_concurrency.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/65/Parallelism_vs_concurrency.png/440px-Parallelism_vs_concurrency.png 2x" width="220"/>
+          </a>
+          <figcaption>
+           Parallelism vs concurrency
+          </figcaption>
+         </figure>
+         <p>
+          Note that in
+          <a href="/wiki/Computer_science" title="Computer science">
+           computer science
+          </a>
+          ,
+          <a href="/wiki/Parallel_computing" title="Parallel computing">
+           parallelism
+          </a>
+          and concurrency are two different things: a parallel program uses
+          <a href="/wiki/Multi-core_processor" title="Multi-core processor">
+           multiple CPU cores
+          </a>
+          , each core performing a task independently. On the other hand, concurrency enables a program to deal with multiple tasks even on a single CPU core; the core switches between tasks (i.e.
+          <a href="/wiki/Thread_(computing)" title="Thread (computing)">
+           threads
+          </a>
+          ) without necessarily completing each one. A program can have both, neither, or a combination of
+          <a href="/wiki/Parallel_computing" title="Parallel computing">
+           parallelism
+          </a>
+          and concurrency characteristics.
+          <sup class="reference" id="cite_ref-2">
+           <a href="#cite_note-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          A number of mathematical models have been developed for general concurrent computation including
+          <a href="/wiki/Petri_net" title="Petri net">
+           Petri nets
+          </a>
+          ,
+          <a class="mw-redirect" href="/wiki/Process_calculi" title="Process calculi">
+           process calculi
+          </a>
+          , the
+          <a class="mw-redirect" href="/wiki/Parallel_random-access_machine" title="Parallel random-access machine">
+           parallel random-access machine
+          </a>
+          model, the
+          <a href="/wiki/Actor_model" title="Actor model">
+           actor model
+          </a>
+          and the
+          <a href="/wiki/Reo_Coordination_Language" title="Reo Coordination Language">
+           Reo Coordination Language
+          </a>
+          .
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Issues">
+            Issues
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Concurrency_(computer_science)&amp;action=edit&amp;section=1" title="Edit section: Issues">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Because computations in a concurrent system can interact with each other while being executed, the number of possible execution paths in the system can be extremely large, and the resulting outcome can be
+           <a href="/wiki/Indeterminacy_in_concurrent_computation" title="Indeterminacy in concurrent computation">
+            indeterminate
+           </a>
+           . Concurrent use of shared
+           <a class="mw-redirect" href="/wiki/Resource_(computer_science)" title="Resource (computer science)">
+            resources
+           </a>
+           can be a source of indeterminacy leading to issues such as
+           <a href="/wiki/Deadlock_(computer_science)" title="Deadlock (computer science)">
+            deadlocks
+           </a>
+           , and
+           <a class="mw-redirect" href="/wiki/Resource_starvation" title="Resource starvation">
+            resource starvation
+           </a>
+           .
+           <sup class="reference" id="cite_ref-cleaveland1996_3-0">
+            <a href="#cite_note-cleaveland1996-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Design of concurrent systems often entails finding reliable techniques for coordinating their execution, data exchange,
+           <a class="mw-redirect" href="/wiki/Memory_allocation" title="Memory allocation">
+            memory allocation
+           </a>
+           , and execution scheduling to minimize
+           <a href="/wiki/Latency_(engineering)" title="Latency (engineering)">
+            response time
+           </a>
+           and maximise
+           <a class="mw-redirect" href="/wiki/Throughput" title="Throughput">
+            throughput
+           </a>
+           .
+           <sup class="reference" id="cite_ref-4">
+            <a href="#cite_note-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Theory">
+            Theory
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Concurrency_(computer_science)&amp;action=edit&amp;section=2" title="Edit section: Theory">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Concurrency theory has been an active field of research in
+           <a href="/wiki/Theoretical_computer_science" title="Theoretical computer science">
+            theoretical computer science
+           </a>
+           .  One of the first proposals was
+           <a href="/wiki/Carl_Adam_Petri" title="Carl Adam Petri">
+            Carl Adam Petri
+           </a>
+           's seminal work on
+           <a href="/wiki/Petri_net" title="Petri net">
+            Petri nets
+           </a>
+           in the early 1960s. In the years since, a wide variety of formalisms have been developed for modeling and reasoning about concurrency.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Models">
+            Models
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Concurrency_(computer_science)&amp;action=edit&amp;section=3" title="Edit section: Models">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           A number of formalisms for modeling and understanding concurrent systems have been developed, including:
+           <sup class="reference" id="cite_ref-5">
+            <a href="#cite_note-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <ul>
+           <li>
+            The
+            <a class="mw-redirect" href="/wiki/Parallel_random-access_machine" title="Parallel random-access machine">
+             parallel random-access machine
+            </a>
+            <sup class="reference" id="cite_ref-6">
+             <a href="#cite_note-6">
+              <span class="cite-bracket">
+               [
+              </span>
+              6
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            The
+            <a href="/wiki/Actor_model" title="Actor model">
+             actor model
+            </a>
+           </li>
+           <li>
+            Computational bridging models such as the
+            <a href="/wiki/Bulk_synchronous_parallel" title="Bulk synchronous parallel">
+             bulk synchronous parallel
+            </a>
+            (BSP) model
+           </li>
+           <li>
+            <a href="/wiki/Petri_net" title="Petri net">
+             Petri nets
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Process_calculi" title="Process calculi">
+             Process calculi
+            </a>
+            <ul>
+             <li>
+              <a href="/wiki/Calculus_of_communicating_systems" title="Calculus of communicating systems">
+               Calculus of communicating systems
+              </a>
+              (CCS)
+             </li>
+             <li>
+              <a href="/wiki/Communicating_sequential_processes" title="Communicating sequential processes">
+               Communicating sequential processes
+              </a>
+              (CSP) model
+             </li>
+             <li>
+              <a href="/wiki/%CE%A0-calculus" title="Π-calculus">
+               π-calculus
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li>
+            <a href="/wiki/Tuple_space" title="Tuple space">
+             Tuple spaces
+            </a>
+            , e.g.,
+            <a href="/wiki/Linda_(coordination_language)" title="Linda (coordination language)">
+             Linda
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/SCOOP_(software)" title="SCOOP (software)">
+             Simple Concurrent Object-Oriented Programming
+            </a>
+            (SCOOP)
+           </li>
+           <li>
+            <a href="/wiki/Reo_Coordination_Language" title="Reo Coordination Language">
+             Reo Coordination Language
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Trace_monoid" title="Trace monoid">
+             Trace monoids
+            </a>
+           </li>
+          </ul>
+          <p>
+           Some of these models of concurrency are primarily intended to support reasoning and specification, while others can be used through the entire development cycle, including design, implementation, proof, testing and simulation of concurrent systems. Some of these are based on
+           <a href="/wiki/Message_passing" title="Message passing">
+            message passing
+           </a>
+           , while others have different mechanisms for concurrency.
+          </p>
+          <p>
+           The proliferation of different models of concurrency has motivated some researchers to develop ways to unify these different theoretical models. For example, Lee and Sangiovanni-Vincentelli have demonstrated that a so-called "tagged-signal" model can be used to provide a common framework for defining the
+           <a href="/wiki/Denotational_semantics" title="Denotational semantics">
+            denotational semantics
+           </a>
+           of a variety of different models of concurrency,
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           while Nielsen, Sassone, and Winskel have demonstrated that
+           <a href="/wiki/Category_theory" title="Category theory">
+            category theory
+           </a>
+           can be used to provide a similar unified understanding of different models.
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The Concurrency Representation Theorem in the actor model provides a fairly general way to represent concurrent systems that are closed in the sense that they do not receive communications from outside. (Other concurrency systems, e.g.,
+           <a class="mw-redirect" href="/wiki/Process_calculi" title="Process calculi">
+            process calculi
+           </a>
+           can be modeled in the actor model using a
+           <a href="/wiki/Two-phase_commit_protocol" title="Two-phase commit protocol">
+            two-phase commit protocol
+           </a>
+           .
+           <sup class="reference" id="cite_ref-9">
+            <a href="#cite_note-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           ) The mathematical denotation denoted by a closed system
+           <style data-mw-deduplicate="TemplateStyles:r886049734">
+            .mw-parser-output .monospaced{font-family:monospace,monospace}
+           </style>
+           <span class="monospaced">
+            S
+           </span>
+           is constructed increasingly better approximations from an initial behavior called
+           <link href="mw-data:TemplateStyles:r886049734" rel="mw-deduplicated-inline-style"/>
+           <span class="monospaced">
+            ⊥
+            <sub>
+             S
+            </sub>
+           </span>
+           using a behavior approximating function
+           <link href="mw-data:TemplateStyles:r886049734" rel="mw-deduplicated-inline-style"/>
+           <span class="monospaced">
+            <b>
+             progression
+            </b>
+            <sub>
+             S
+            </sub>
+           </span>
+           to construct a denotation (meaning ) for
+           <link href="mw-data:TemplateStyles:r886049734" rel="mw-deduplicated-inline-style"/>
+           <span class="monospaced">
+            S
+           </span>
+           as follows:
+           <sup class="reference" id="cite_ref-clinger1981_10-0">
+            <a href="#cite_note-clinger1981-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <dl>
+           <dd>
+            <dl>
+             <dd>
+              <link href="mw-data:TemplateStyles:r886049734" rel="mw-deduplicated-inline-style"/>
+              <span class="monospaced">
+               <b>
+                Denote
+               </b>
+               <sub>
+                S
+               </sub>
+               ≡ ⊔
+               <sub>
+                i∈ω
+               </sub>
+               <b>
+                progression
+               </b>
+               <sub>
+                S
+               </sub>
+               <sup>
+                i
+               </sup>
+               (⊥
+               <sub>
+                S
+               </sub>
+               )
+              </span>
+             </dd>
+            </dl>
+           </dd>
+          </dl>
+          <p>
+           In this way,
+           <link href="mw-data:TemplateStyles:r886049734" rel="mw-deduplicated-inline-style"/>
+           <span class="monospaced">
+            S
+           </span>
+           can be mathematically characterized in terms of all its possible behaviors.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Logics">
+            Logics
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Concurrency_(computer_science)&amp;action=edit&amp;section=4" title="Edit section: Logics">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Various types of
+           <a href="/wiki/Temporal_logic" title="Temporal logic">
+            temporal logic
+           </a>
+           <sup class="reference" id="cite_ref-stirling_11-0">
+            <a href="#cite_note-stirling-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           can be used to help reason about concurrent systems. Some of these logics, such as
+           <a href="/wiki/Linear_temporal_logic" title="Linear temporal logic">
+            linear temporal logic
+           </a>
+           and
+           <a href="/wiki/Computation_tree_logic" title="Computation tree logic">
+            computation tree logic
+           </a>
+           , allow assertions to be made about the sequences of states that a concurrent system can pass through. Others, such as
+           <a class="new" href="/w/index.php?title=Action_computational_tree_logic&amp;action=edit&amp;redlink=1" title="Action computational tree logic (page does not exist)">
+            action computational tree logic
+           </a>
+           ,
+           <a href="/wiki/Hennessy%E2%80%93Milner_logic" title="Hennessy–Milner logic">
+            Hennessy–Milner logic
+           </a>
+           , and
+           <a href="/wiki/Leslie_Lamport" title="Leslie Lamport">
+            Lamport's
+           </a>
+           <a href="/wiki/Temporal_logic_of_actions" title="Temporal logic of actions">
+            temporal logic of actions
+           </a>
+           , build their assertions from sequences of
+           <i>
+            actions
+           </i>
+           (changes in state). The principal application of these logics is in writing specifications for concurrent systems.
+           <sup class="reference" id="cite_ref-cleaveland1996_3-1">
+            <a href="#cite_note-cleaveland1996-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Practice">
+            Practice
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Concurrency_(computer_science)&amp;action=edit&amp;section=5" title="Edit section: Practice">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1236091366">
+           .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+          </style>
+          <table class="box-Unreferenced_section plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation">
+           <tbody>
+            <tr>
+             <td class="mbox-image">
+              <div class="mbox-image-div">
+               <span typeof="mw:File">
+                <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                 <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+                </a>
+               </span>
+              </div>
+             </td>
+             <td class="mbox-text">
+              <div class="mbox-text-span">
+               This section
+               <b>
+                does not
+                <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">
+                 cite
+                </a>
+                any
+                <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                 sources
+                </a>
+               </b>
+               .
+               <span class="hide-when-compact">
+                Please help
+                <a href="/wiki/Special:EditPage/Concurrency_(computer_science)" title="Special:EditPage/Concurrency (computer science)">
+                 improve this section
+                </a>
+                by
+                <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                 adding citations to reliable sources
+                </a>
+                . Unsourced material may be challenged and
+                <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">
+                 removed
+                </a>
+                .
+               </span>
+               <span class="date-container">
+                <i>
+                 (
+                 <span class="date">
+                  April 2007
+                 </span>
+                 )
+                </i>
+               </span>
+               <span class="hide-when-compact">
+                <i>
+                 (
+                 <small>
+                  <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                   Learn how and when to remove this message
+                  </a>
+                 </small>
+                 )
+                </i>
+               </span>
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <p>
+           <a class="mw-redirect" href="/wiki/Concurrent_programming" title="Concurrent programming">
+            Concurrent programming
+           </a>
+           encompasses programming languages and algorithms used to implement concurrent systems.  Concurrent programming is usually considered
+           <sup class="noprint Inline-Template" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Unsupported_attributions" title="Wikipedia:Manual of Style/Words to watch">
+              <span title="The material near this tag may use weasel words or too-vague attribution. (August 2023)">
+               by whom?
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           to be more general than
+           <a class="mw-redirect" href="/wiki/Parallel_programming" title="Parallel programming">
+            parallel programming
+           </a>
+           because it can involve arbitrary and dynamic patterns of communication and interaction, whereas parallel systems generally
+           <sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Unsupported_attributions" title="Wikipedia:Manual of Style/Words to watch">
+              <span title="The material near this tag may use weasel words or too-vague attribution. (August 2023)">
+               according to whom?
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           have a predefined and well-structured communications pattern. The base goals of concurrent programming include
+           <i>
+            correctness
+           </i>
+           ,
+           <i>
+            performance
+           </i>
+           and
+           <i>
+            robustness
+           </i>
+           . Concurrent systems such as
+           <a href="/wiki/Operating_system" title="Operating system">
+            Operating systems
+           </a>
+           and
+           <a class="mw-redirect" href="/wiki/Database_management_system" title="Database management system">
+            Database management systems
+           </a>
+           are generally designed
+           <sup class="noprint Inline-Template" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Unsupported_attributions" title="Wikipedia:Manual of Style/Words to watch">
+              <span title="The material near this tag may use weasel words or too-vague attribution. (August 2023)">
+               by whom?
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           to operate indefinitely, including automatic recovery from failure, and not terminate unexpectedly (see
+           <a href="/wiki/Concurrency_control" title="Concurrency control">
+            Concurrency control
+           </a>
+           ). Some
+           <sup class="noprint Inline-Template" style="white-space:nowrap;">
+            [
+            <i>
+             <a class="mw-redirect" href="/wiki/Wikipedia:AUDIENCE" title="Wikipedia:AUDIENCE">
+              <span title="An editor has requested that an example be provided. (August 2023)">
+               example  needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           concurrent systems implement a form of transparent concurrency, in which concurrent computational entities may compete for and share a single resource, but the complexities of this competition and sharing are shielded from the programmer.
+          </p>
+          <p>
+           Because they use shared resources, concurrent systems in general
+           <sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Unsupported_attributions" title="Wikipedia:Manual of Style/Words to watch">
+              <span title="The material near this tag may use weasel words or too-vague attribution. (August 2023)">
+               according to whom?
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           require the inclusion of some
+           <sup class="noprint Inline-Template" style="white-space:nowrap;">
+            [
+            <i>
+             <a class="mw-redirect" href="/wiki/Wikipedia:AUDIENCE" title="Wikipedia:AUDIENCE">
+              <span title="An editor has requested that an example be provided. (August 2023)">
+               example  needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           kind of
+           <a href="/wiki/Arbiter_(electronics)" title="Arbiter (electronics)">
+            arbiter
+           </a>
+           somewhere in their implementation (often in the underlying hardware), to control access to those resources. The use of arbiters introduces the possibility of
+           <a href="/wiki/Indeterminacy_in_concurrent_computation" title="Indeterminacy in concurrent computation">
+            indeterminacy in concurrent computation
+           </a>
+           which has major implications for practice including correctness and performance.  For example, arbitration introduces
+           <a href="/wiki/Unbounded_nondeterminism" title="Unbounded nondeterminism">
+            unbounded nondeterminism
+           </a>
+           which raises issues with
+           <a href="/wiki/Model_checking" title="Model checking">
+            model checking
+           </a>
+           because it causes explosion in the state space and can even cause models to have an infinite number of states.
+          </p>
+          <p>
+           Some concurrent programming models include
+           <a href="/wiki/Coprocess" title="Coprocess">
+            coprocesses
+           </a>
+           and
+           <a class="mw-redirect" href="/wiki/Deterministic_concurrency" title="Deterministic concurrency">
+            deterministic concurrency
+           </a>
+           . In these models, threads of control explicitly
+           <a href="/wiki/Yield_(multithreading)" title="Yield (multithreading)">
+            yield
+           </a>
+           their timeslices, either to the system or to another process.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Concurrency_(computer_science)&amp;action=edit&amp;section=6" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Chu_space" title="Chu space">
+             Chu space
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Client%E2%80%93server" title="Client–server">
+             Client–server
+            </a>
+            network nodes
+           </li>
+           <li>
+            <a href="/wiki/Clojure" title="Clojure">
+             Clojure
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Cluster_computing" title="Cluster computing">
+             Cluster
+            </a>
+            nodes
+           </li>
+           <li>
+            <a href="/wiki/Concurrency_control" title="Concurrency control">
+             Concurrency control
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Concurrent_computing" title="Concurrent computing">
+             Concurrent computing
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Concurrent_object-oriented_programming" title="Concurrent object-oriented programming">
+             Concurrent object-oriented programming
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Concurrency_pattern" title="Concurrency pattern">
+             Concurrency pattern
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Construction_and_Analysis_of_Distributed_Processes" title="Construction and Analysis of Distributed Processes">
+             Construction and Analysis of Distributed Processes
+            </a>
+            (CADP)
+           </li>
+           <li>
+            <a href="/wiki/D_(programming_language)" title="D (programming language)">
+             D (programming language)
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Distributed_computing" title="Distributed computing">
+             Distributed system
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Elixir_(programming_language)" title="Elixir (programming language)">
+             Elixir (programming language)
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Erlang_(programming_language)" title="Erlang (programming language)">
+             Erlang (programming language)
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Go_(programming_language)" title="Go (programming language)">
+             Go (programming language)
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Gordon_Pask" title="Gordon Pask">
+             Gordon Pask
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/International_Conference_on_Concurrency_Theory" title="International Conference on Concurrency Theory">
+             International Conference on Concurrency Theory
+            </a>
+            (CONCUR)
+           </li>
+           <li>
+            <a href="/wiki/OpenMP" title="OpenMP">
+             OpenMP
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Parallel_computing" title="Parallel computing">
+             Parallel computing
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Partitioned_global_address_space" title="Partitioned global address space">
+             Partitioned global address space
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Process_(computing)" title="Process (computing)">
+             Processes
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Ptolemy_Project" title="Ptolemy Project">
+             Ptolemy Project
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Rust_(programming_language)" title="Rust (programming language)">
+             Rust (programming language)
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Sheaf_(mathematics)" title="Sheaf (mathematics)">
+             Sheaf (mathematics)
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Thread_(computing)" title="Thread (computing)">
+             Threads
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/X10_(programming_language)" title="X10 (programming language)">
+             X10 (programming language)
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Structured_concurrency" title="Structured concurrency">
+             Structured concurrency
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Concurrency_(computer_science)&amp;action=edit&amp;section=7" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation journal cs1" id="CITEREFLamport1978">
+                Lamport, Leslie (July 1978).
+                <a class="external text" href="http://research.microsoft.com/en-us/um/people/lamport/pubs/time-clocks.pdf" rel="nofollow">
+                 "Time, Clocks, and the Ordering of Events in a Distributed System"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 Communications of the ACM
+                </i>
+                .
+                <b>
+                 21
+                </b>
+                (7): 558–565.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1145%2F359545.359563" rel="nofollow">
+                 10.1145/359545.359563
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:215822405" rel="nofollow">
+                 215822405
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  4 February
+                 </span>
+                 2016
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.atitle=Time%2C+Clocks%2C+and+the+Ordering+of+Events+in+a+Distributed+System&amp;rft.volume=21&amp;rft.issue=7&amp;rft.pages=558-565&amp;rft.date=1978-07&amp;rft_id=info%3Adoi%2F10.1145%2F359545.359563&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A215822405%23id-name%3DS2CID&amp;rft.aulast=Lamport&amp;rft.aufirst=Leslie&amp;rft_id=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Flamport%2Fpubs%2Ftime-clocks.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1">
+                <i>
+                 Parallel and Concurrent Programming in Haskell
+                </i>
+                . O'Reilly Media. 2013.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9781449335922" title="Special:BookSources/9781449335922">
+                 <bdi>
+                  9781449335922
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Parallel+and+Concurrent+Programming+in+Haskell&amp;rft.pub=O%27Reilly+Media&amp;rft.date=2013&amp;rft.isbn=9781449335922&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-cleaveland1996-3">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-cleaveland1996_3-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-cleaveland1996_3-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFCleavelandScott_Smolka1996">
+                Cleaveland, Rance; Scott Smolka (December 1996).
+                <a class="external text" href="https://doi.org/10.1145%2F242223.242252" rel="nofollow">
+                 "Strategic Directions in Concurrency Research"
+                </a>
+                .
+                <i>
+                 ACM Computing Surveys
+                </i>
+                .
+                <b>
+                 28
+                </b>
+                (4): 607.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://doi.org/10.1145%2F242223.242252" rel="nofollow">
+                  10.1145/242223.242252
+                 </a>
+                </span>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:13264261" rel="nofollow">
+                 13264261
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+Computing+Surveys&amp;rft.atitle=Strategic+Directions+in+Concurrency+Research&amp;rft.volume=28&amp;rft.issue=4&amp;rft.pages=607&amp;rft.date=1996-12&amp;rft_id=info%3Adoi%2F10.1145%2F242223.242252&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A13264261%23id-name%3DS2CID&amp;rft.aulast=Cleaveland&amp;rft.aufirst=Rance&amp;rft.au=Scott+Smolka&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1145%252F242223.242252&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFCampbellJohnsonMillerToub2010">
+                Campbell, Colin; Johnson, Ralph; Miller, Ade; Toub, Stephen (August 2010).
+                <a class="external text" href="http://msdn.microsoft.com/en-us/library/ff963542.aspx" rel="nofollow">
+                 <i>
+                  Parallel Programming with Microsoft .NET
+                 </i>
+                </a>
+                . Microsoft Press.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-7356-5159-3" title="Special:BookSources/978-0-7356-5159-3">
+                 <bdi>
+                  978-0-7356-5159-3
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Parallel+Programming+with+Microsoft+.NET&amp;rft.pub=Microsoft+Press&amp;rft.date=2010-08&amp;rft.isbn=978-0-7356-5159-3&amp;rft.aulast=Campbell&amp;rft.aufirst=Colin&amp;rft.au=Johnson%2C+Ralph&amp;rft.au=Miller%2C+Ade&amp;rft.au=Toub%2C+Stephen&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fff963542.aspx&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFFilmanDaniel_Friedman1984">
+                Filman, Robert; Daniel Friedman (1984).
+                <span class="id-lock-registration" title="Free registration required">
+                 <a class="external text" href="https://archive.org/details/coordinatedcompu0000film" rel="nofollow">
+                  <i>
+                   Coordinated Computing - Tools and Techniques for Distributed Software
+                  </i>
+                 </a>
+                </span>
+                . McGraw-Hill.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-07-022439-1" title="Special:BookSources/978-0-07-022439-1">
+                 <bdi>
+                  978-0-07-022439-1
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Coordinated+Computing+-+Tools+and+Techniques+for+Distributed+Software&amp;rft.pub=McGraw-Hill&amp;rft.date=1984&amp;rft.isbn=978-0-07-022439-1&amp;rft.aulast=Filman&amp;rft.aufirst=Robert&amp;rft.au=Daniel+Friedman&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fcoordinatedcompu0000film&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFKellerChristoph_KeßlerJesper_Träff2001">
+                Keller, Jörg; Christoph Keßler; Jesper Träff (2001).
+                <i>
+                 Practical PRAM Programming
+                </i>
+                . John Wiley and Sons.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Practical+PRAM+Programming&amp;rft.pub=John+Wiley+and+Sons&amp;rft.date=2001&amp;rft.aulast=Keller&amp;rft.aufirst=J%C3%B6rg&amp;rft.au=Christoph+Ke%C3%9Fler&amp;rft.au=Jesper+Tr%C3%A4ff&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFLeeAlberto_Sangiovanni-Vincentelli1998">
+                Lee, Edward; Alberto Sangiovanni-Vincentelli (December 1998).
+                <a class="external text" href="http://ptolemy.eecs.berkeley.edu/publications/papers/98/framework/ieeeVersion.pdf" rel="nofollow">
+                 "A Framework for Comparing Models of Computation"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 <a class="mw-redirect" href="/wiki/IEEE_Transactions_on_CAD" title="IEEE Transactions on CAD">
+                  IEEE Transactions on CAD
+                 </a>
+                </i>
+                .
+                <b>
+                 17
+                </b>
+                (12): 1217–1229.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2F43.736561" rel="nofollow">
+                 10.1109/43.736561
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+CAD&amp;rft.atitle=A+Framework+for+Comparing+Models+of+Computation&amp;rft.volume=17&amp;rft.issue=12&amp;rft.pages=1217-1229&amp;rft.date=1998-12&amp;rft_id=info%3Adoi%2F10.1109%2F43.736561&amp;rft.aulast=Lee&amp;rft.aufirst=Edward&amp;rft.au=Alberto+Sangiovanni-Vincentelli&amp;rft_id=http%3A%2F%2Fptolemy.eecs.berkeley.edu%2Fpublications%2Fpapers%2F98%2Fframework%2FieeeVersion.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation conference cs1" id="CITEREFMogens_NielsenVladimiro_SassoneGlynn_Winskel1993">
+                Mogens Nielsen; Vladimiro Sassone; Glynn Winskel (1993).
+                <a class="external text" href="http://citeseer.ist.psu.edu/article/nielsen94relationships.html" rel="nofollow">
+                 "Relationships Between Models of Concurrency"
+                </a>
+                .
+                <i>
+                 REX School/Symposium
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=Relationships+Between+Models+of+Concurrency&amp;rft.btitle=REX+School%2FSymposium&amp;rft.date=1993&amp;rft.au=Mogens+Nielsen&amp;rft.au=Vladimiro+Sassone&amp;rft.au=Glynn+Winskel&amp;rft_id=http%3A%2F%2Fciteseer.ist.psu.edu%2Farticle%2Fnielsen94relationships.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-9">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               Frederick Knabe. A Distributed Protocol for Channel-Based Communication with Choice PARLE 1992.
+              </span>
+             </li>
+             <li id="cite_note-clinger1981-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-clinger1981_10-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFWilliam_Clinger1981">
+                <a href="/wiki/William_Clinger_(computer_scientist)" title="William Clinger (computer scientist)">
+                 William Clinger
+                </a>
+                (June 1981). "Foundations of Actor Semantics". Mathematics Doctoral Dissertation. MIT.
+                <a class="mw-redirect" href="/wiki/Hdl_(identifier)" title="Hdl (identifier)">
+                 hdl
+                </a>
+                :
+                <a class="external text" href="https://hdl.handle.net/1721.1%2F6935" rel="nofollow">
+                 1721.1/6935
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Foundations+of+Actor+Semantics&amp;rft.date=1981-06&amp;rft_id=info%3Ahdl%2F1721.1%2F6935&amp;rft.au=William+Clinger&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+               </span>
+               <span class="cs1-visible-error citation-comment">
+                <code class="cs1-code">
+                 {{
+                 <a href="/wiki/Template:Cite_journal" title="Template:Cite journal">
+                  cite journal
+                 </a>
+                 }}
+                </code>
+                :
+               </span>
+               <span class="cs1-visible-error citation-comment">
+                Cite journal requires
+                <code class="cs1-code">
+                 |journal=
+                </code>
+                (
+                <a href="/wiki/Help:CS1_errors#missing_periodical" title="Help:CS1 errors">
+                 help
+                </a>
+                )
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-stirling-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-stirling_11-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFRoscoe2001">
+                Roscoe, Colin (2001).
+                <i>
+                 Modal and Temporal Properties of Processes
+                </i>
+                . Springer.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-387-98717-0" title="Special:BookSources/978-0-387-98717-0">
+                 <bdi>
+                  978-0-387-98717-0
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Modal+and+Temporal+Properties+of+Processes&amp;rft.pub=Springer&amp;rft.date=2001&amp;rft.isbn=978-0-387-98717-0&amp;rft.aulast=Roscoe&amp;rft.aufirst=Colin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Further_reading">
+            Further reading
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Concurrency_(computer_science)&amp;action=edit&amp;section=8" title="Edit section: Further reading">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFLynch1996">
+             Lynch, Nancy A. (1996).
+             <span class="id-lock-registration" title="Free registration required">
+              <a class="external text" href="https://archive.org/details/distributedalgor0000lync" rel="nofollow">
+               <i>
+                Distributed Algorithms
+               </i>
+              </a>
+             </span>
+             . Morgan Kaufmann.
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-1-55860-348-6" title="Special:BookSources/978-1-55860-348-6">
+              <bdi>
+               978-1-55860-348-6
+              </bdi>
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Distributed+Algorithms&amp;rft.pub=Morgan+Kaufmann&amp;rft.date=1996&amp;rft.isbn=978-1-55860-348-6&amp;rft.aulast=Lynch&amp;rft.aufirst=Nancy+A.&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fdistributedalgor0000lync&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFTanenbaumVan_Steen2002">
+             Tanenbaum, Andrew S.; Van Steen, Maarten (2002).
+             <i>
+              Distributed Systems: Principles and Paradigms
+             </i>
+             . Prentice Hall.
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-0-13-088893-8" title="Special:BookSources/978-0-13-088893-8">
+              <bdi>
+               978-0-13-088893-8
+              </bdi>
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Distributed+Systems%3A+Principles+and+Paradigms&amp;rft.pub=Prentice+Hall&amp;rft.date=2002&amp;rft.isbn=978-0-13-088893-8&amp;rft.aulast=Tanenbaum&amp;rft.aufirst=Andrew+S.&amp;rft.au=Van+Steen%2C+Maarten&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFKurki-Suonio2005">
+             Kurki-Suonio, Reino (2005).
+             <i>
+              A Practical Theory of Reactive Systems
+             </i>
+             . Springer.
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-3-540-23342-8" title="Special:BookSources/978-3-540-23342-8">
+              <bdi>
+               978-3-540-23342-8
+              </bdi>
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+Practical+Theory+of+Reactive+Systems&amp;rft.pub=Springer&amp;rft.date=2005&amp;rft.isbn=978-3-540-23342-8&amp;rft.aulast=Kurki-Suonio&amp;rft.aufirst=Reino&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFGarg2002">
+             Garg, Vijay K. (2002).
+             <i>
+              Elements of Distributed Computing
+             </i>
+             . Wiley-IEEE Press.
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-0-471-03600-5" title="Special:BookSources/978-0-471-03600-5">
+              <bdi>
+               978-0-471-03600-5
+              </bdi>
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Elements+of+Distributed+Computing&amp;rft.pub=Wiley-IEEE+Press&amp;rft.date=2002&amp;rft.isbn=978-0-471-03600-5&amp;rft.aulast=Garg&amp;rft.aufirst=Vijay+K.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFMageeKramer,_Jeff2006">
+             Magee, Jeff; Kramer, Jeff (2006).
+             <i>
+              Concurrency: State Models and Java Programming
+             </i>
+             . Wiley.
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-0-470-09355-9" title="Special:BookSources/978-0-470-09355-9">
+              <bdi>
+               978-0-470-09355-9
+              </bdi>
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Concurrency%3A+State+Models+and+Java+Programming&amp;rft.pub=Wiley&amp;rft.date=2006&amp;rft.isbn=978-0-470-09355-9&amp;rft.aulast=Magee&amp;rft.aufirst=Jeff&amp;rft.au=Kramer%2C+Jeff&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConcurrency+%28computer+science%29">
+            </span>
+           </li>
+           <li>
+            Distefano, S., &amp; Bruneo, D. (2015).
+            <i>
+             Quantitative assessments of distributed systems: Methodologies and techniques
+            </i>
+            (1st ed.). Somerset: John Wiley &amp; Sons Inc.
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+             ISBN
+            </a>
+            <a href="/wiki/Special:BookSources/9781119131144" title="Special:BookSources/9781119131144">
+             9781119131144
+            </a>
+           </li>
+           <li>
+            Bhattacharyya, S. S. (2013;2014;).
+            <i>
+             Handbook of signal processing systems
+            </i>
+            (Second;2;2nd 2013; ed.). New York, NY: Springer.10.1007/978-1-4614-6859-2
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+             ISBN
+            </a>
+            <a href="/wiki/Special:BookSources/9781461468592" title="Special:BookSources/9781461468592">
+             9781461468592
+            </a>
+           </li>
+           <li>
+            Wolter, K. (2012;2014;).
+            <i>
+             Resilience assessment and evaluation of computing systems
+            </i>
+            (1. Aufl.;1; ed.). London;Berlin;: Springer.
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+             ISBN
+            </a>
+            <a href="/wiki/Special:BookSources/9783642290329" title="Special:BookSources/9783642290329">
+             9783642290329
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Concurrency_(computer_science)&amp;action=edit&amp;section=9" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="http://processalgebra.blogspot.com/" rel="nofollow">
+             Process Algebra Diary - Prof. Luca Aceto's blog on Concurrency Theory
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="https://web.archive.org/web/20060128114620/http://vl.fmnet.info/concurrent/" rel="nofollow">
+             Concurrent Systems
+            </a>
+            at
+            <a class="external text" href="http://vlib.org/" rel="nofollow">
+             The WWW Virtual Library
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://shairosenfeld.com/concurrency.html" rel="nofollow">
+             Concurrency patterns presentation
+            </a>
+            given at
+            <a class="external text" href="http://scaleconf.org" rel="nofollow">
+             scaleconf
+            </a>
+           </li>
+          </ul>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Concurrent_computing" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Concurrent_computing" title="Template:Concurrent computing">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Concurrent_computing" title="Template talk:Concurrent computing">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Concurrent_computing" title="Special:EditPage/Template:Concurrent computing">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Concurrent_computing" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Concurrent_computing" title="Concurrent computing">
+                 Concurrent computing
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               General
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Concurrency
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Concurrency_control" title="Concurrency control">
+                   Concurrency control
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Concurrent_data_structure" title="Concurrent data structure">
+                   Concurrent data structures
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Concurrent_hash_table" title="Concurrent hash table">
+                     Concurrent hash tables
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Concurrent_user" title="Concurrent user">
+                   Concurrent users
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Indeterminacy_in_concurrent_computation" title="Indeterminacy in concurrent computation">
+                   Indeterminacy
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Linearizability" title="Linearizability">
+                   Linearizability
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Process_calculus" title="Process calculus">
+                Process calculi
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Communicating_sequential_processes" title="Communicating sequential processes">
+                   CSP
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Calculus_of_communicating_systems" title="Calculus of communicating systems">
+                   CCS
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Algebra_of_Communicating_Processes" title="Algebra of Communicating Processes">
+                   ACP
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Language_Of_Temporal_Ordering_Specification" title="Language Of Temporal Ordering Specification">
+                   LOTOS
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/%CE%A0-calculus" title="Π-calculus">
+                   π-calculus
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Ambient_calculus" title="Ambient calculus">
+                   Ambient calculus
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/API-Calculus" title="API-Calculus">
+                   API-Calculus
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/PEPA" title="PEPA">
+                   PEPA
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Join-calculus" title="Join-calculus">
+                   Join-calculus
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Classic problems
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/ABA_problem" title="ABA problem">
+                   ABA problem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Cigarette_smokers_problem" title="Cigarette smokers problem">
+                   Cigarette smokers problem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Deadlock_(computer_science)" title="Deadlock (computer science)">
+                   Deadlock
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Dining_philosophers_problem" title="Dining philosophers problem">
+                   Dining philosophers problem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Producer%E2%80%93consumer_problem" title="Producer–consumer problem">
+                   Producer–consumer problem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Race_condition" title="Race condition">
+                   Race condition
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Readers%E2%80%93writers_problem" title="Readers–writers problem">
+                   Readers–writers problem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Sleeping_barber_problem" title="Sleeping barber problem">
+                   Sleeping barber problem
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <td class="navbox-abovebelow" colspan="2">
+               <div>
+                <ul>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Category">
+                    <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Category:Concurrent_computing" title="Category:Concurrent computing">
+                   Category: Concurrent computing
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐lm9jf
+Cached time: 20240926234052
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.539 seconds
+Real time usage: 0.671 seconds
+Preprocessor visited node count: 2818/1000000
+Post‐expand include size: 59043/2097152 bytes
+Template argument size: 5033/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 8/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 66187/5000000 bytes
+Lua time usage: 0.339/10.000 seconds
+Lua memory usage: 6461283/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  590.149      1 -total
+ 29.43%  173.675      1 Template:Reflist
+ 18.97%  111.963      4 Template:Cite_journal
+ 18.10%  106.845      1 Template:Concurrent_computing
+ 17.63%  104.051      1 Template:Navbox
+ 13.44%   79.311      1 Template:Short_description
+ 10.24%   60.402      1 Template:Unreferenced_section
+ 10.16%   59.940     10 Template:Cite_book
+  9.28%   54.755      1 Template:Unreferenced
+  8.69%   51.262      1 Template:Ambox
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:928467-0!canonical and timestamp 20240926234052 and revision id 1247733772. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Concurrency_(computer_science)&amp;oldid=1247733772">
+          https://en.wikipedia.org/w/index.php?title=Concurrency_(computer_science)&amp;oldid=1247733772
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Category
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Concurrency_(computer_science)" title="Category:Concurrency (computer science)">
+            Concurrency (computer science)
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:CS1_errors:_missing_periodical" title="Category:CS1 errors: missing periodical">
+            CS1 errors: missing periodical
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_April_2007" title="Category:Articles needing additional references from April 2007">
+            Articles needing additional references from April 2007
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_specifically_marked_weasel-worded_phrases_from_August_2023" title="Category:Articles with specifically marked weasel-worded phrases from August 2023">
+            Articles with specifically marked weasel-worded phrases from August 2023
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_specifically_marked_weasel-worded_phrases" title="Category:All articles with specifically marked weasel-worded phrases">
+            All articles with specifically marked weasel-worded phrases
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_examples" title="Category:All articles needing examples">
+            All articles needing examples
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_examples_from_August_2023" title="Category:Articles needing examples from August 2023">
+            Articles needing examples from August 2023
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 25 September 2024, at 18:15
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Concurrency_(computer_science)&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.canary-69469c98b8-f47x6","wgBackendResponseTime":152,"wgPageParseReport":{"limitreport":{"cputime":"0.539","walltime":"0.671","ppvisitednodes":{"value":2818,"limit":1000000},"postexpandincludesize":{"value":59043,"limit":2097152},"templateargumentsize":{"value":5033,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":8,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":66187,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  590.149      1 -total"," 29.43%  173.675      1 Template:Reflist"," 18.97%  111.963      4 Template:Cite_journal"," 18.10%  106.845      1 Template:Concurrent_computing"," 17.63%  104.051      1 Template:Navbox"," 13.44%   79.311      1 Template:Short_description"," 10.24%   60.402      1 Template:Unreferenced_section"," 10.16%   59.940     10 Template:Cite_book","  9.28%   54.755      1 Template:Unreferenced","  8.69%   51.262      1 Template:Ambox"]},"scribunto":{"limitreport-timeusage":{"value":"0.339","limit":"10.000"},"limitreport-memusage":{"value":6461283,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-lm9jf","timestamp":"20240926234052","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Concurrency (computer science)","url":"https:\/\/en.wikipedia.org\/wiki\/Concurrency_(computer_science)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1414548","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1414548","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-08-25T07:42:49Z","dateModified":"2024-09-25T18:15:52Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/7\/7b\/An_illustration_of_the_dining_philosophers_problem.png","headline":"ability of different parts or units of a program, algorithm, or problem to be executed out-of-order or in partial order, without affecting the final outcome"}
+  </script>
+ </body>
+</html>

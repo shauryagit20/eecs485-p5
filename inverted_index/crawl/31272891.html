@@ -1,0 +1,2761 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Computation - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"6fbfb1ae-1ea0-47a6-a80d-f8abb93ddf29","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Computation","wgTitle":"Computation","wgCurRevisionId":1245756517,"wgRevisionId":1245756517,"wgArticleId":5926,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Wikipedia articles needing clarification from February 2022","Theoretical computer science","Computability theory"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Computation","wgRelevantArticleId":5926,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia",
+"wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q12525525","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,
+"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth",
+"ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Computation - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//en.m.wikipedia.org/wiki/Computation" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Computation&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Computation" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Computation"/>
+  <meta eecs485_docid="31272891"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Computation rootpage-Computation skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Computation" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Computation" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Computation" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Computation" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Introduction">
+           <a class="vector-toc-link" href="#Introduction">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Introduction
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Introduction-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Introduction subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Introduction-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-The_Physical_process_of_computation">
+             <a class="vector-toc-link" href="#The_Physical_process_of_computation">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.1
+               </span>
+               <span>
+                The Physical process of computation
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-The_Physical_process_of_computation-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Alternative_accounts_of_computation">
+           <a class="vector-toc-link" href="#Alternative_accounts_of_computation">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Alternative accounts of computation
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Alternative_accounts_of_computation-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Alternative accounts of computation subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Alternative_accounts_of_computation-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-The_mapping_account">
+             <a class="vector-toc-link" href="#The_mapping_account">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.1
+               </span>
+               <span>
+                The mapping account
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-The_mapping_account-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-The_semantic_account">
+             <a class="vector-toc-link" href="#The_semantic_account">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.2
+               </span>
+               <span>
+                The semantic account
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-The_semantic_account-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-The_mechanistic_account">
+             <a class="vector-toc-link" href="#The_mechanistic_account">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.3
+               </span>
+               <span>
+                The mechanistic account
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-The_mechanistic_account-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Mathematical_models">
+           <a class="vector-toc-link" href="#Mathematical_models">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Mathematical models
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Mathematical_models-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Notes">
+           <a class="vector-toc-link" href="#Notes">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              Notes
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Notes-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Computation
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 29 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-29" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          29 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="حوسبة (عام)" href="https://ar.wikipedia.org/wiki/%D8%AD%D9%88%D8%B3%D8%A8%D8%A9_(%D8%B9%D8%A7%D9%85)" hreflang="ar" lang="ar" title="حوسبة (عام) – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-as mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="অসমীয়া" data-language-local-name="Assamese" data-title="গণনা" href="https://as.wikipedia.org/wiki/%E0%A6%97%E0%A6%A3%E0%A6%A8%E0%A6%BE" hreflang="as" lang="as" title="গণনা – Assamese">
+             <span>
+              অসমীয়া
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-bn mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="বাংলা" data-language-local-name="Bangla" data-title="পরিগণনা" href="https://bn.wikipedia.org/wiki/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%97%E0%A6%A3%E0%A6%A8%E0%A6%BE" hreflang="bn" lang="bn" title="পরিগণনা – Bangla">
+             <span>
+              বাংলা
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh-min-nan mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="閩南語 / Bân-lâm-gú" data-language-local-name="Minnan" data-title="Kè-sǹg khang-khòe" href="https://zh-min-nan.wikipedia.org/wiki/K%C3%A8-s%C7%B9g_khang-kh%C3%B2e" hreflang="nan" lang="nan" title="Kè-sǹg khang-khòe – Minnan">
+             <span>
+              閩南語 / Bân-lâm-gú
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-el mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Ελληνικά" data-language-local-name="Greek" data-title="Υπολογισμός" href="https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CE%BC%CF%8C%CF%82" hreflang="el" lang="el" title="Υπολογισμός – Greek">
+             <span>
+              Ελληνικά
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-eu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Euskara" data-language-local-name="Basque" data-title="Konputazio" href="https://eu.wikipedia.org/wiki/Konputazio" hreflang="eu" lang="eu" title="Konputazio – Basque">
+             <span>
+              Euskara
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="محاسبات" href="https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA" hreflang="fa" lang="fa" title="محاسبات – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-gl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Galego" data-language-local-name="Galician" data-title="Computación" href="https://gl.wikipedia.org/wiki/Computaci%C3%B3n" hreflang="gl" lang="gl" title="Computación – Galician">
+             <span>
+              Galego
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="컴퓨테이션" href="https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%85%8C%EC%9D%B4%EC%85%98" hreflang="ko" lang="ko" title="컴퓨테이션 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hy mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Հայերեն" data-language-local-name="Armenian" data-title="Հաշվարկ" href="https://hy.wikipedia.org/wiki/%D5%80%D5%A1%D5%B7%D5%BE%D5%A1%D6%80%D5%AF" hreflang="hy" lang="hy" title="Հաշվարկ – Armenian">
+             <span>
+              Հայերեն
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Hrvatski" data-language-local-name="Croatian" data-title="Računanje" href="https://hr.wikipedia.org/wiki/Ra%C4%8Dunanje" hreflang="hr" lang="hr" title="Računanje – Croatian">
+             <span>
+              Hrvatski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="IsiZulu" data-language-local-name="Zulu" data-title="Umcikizo" href="https://zu.wikipedia.org/wiki/Umcikizo" hreflang="zu" lang="zu" title="Umcikizo – Zulu">
+             <span>
+              IsiZulu
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Computazione" href="https://it.wikipedia.org/wiki/Computazione" hreflang="it" lang="it" title="Computazione – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="חישוב (מדעי המחשב)" href="https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%A9%D7%95%D7%91_(%D7%9E%D7%93%D7%A2%D7%99_%D7%94%D7%9E%D7%97%D7%A9%D7%91)" hreflang="he" lang="he" title="חישוב (מדעי המחשב) – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ms mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Bahasa Melayu" data-language-local-name="Malay" data-title="Pengiraan" href="https://ms.wikipedia.org/wiki/Pengiraan" hreflang="ms" lang="ms" title="Pengiraan – Malay">
+             <span>
+              Bahasa Melayu
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-mwl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Mirandés" data-language-local-name="Mirandese" data-title="Cumputaçon" href="https://mwl.wikipedia.org/wiki/Cumputa%C3%A7on" hreflang="mwl" lang="mwl" title="Cumputaçon – Mirandese">
+             <span>
+              Mirandés
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-mn mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Монгол" data-language-local-name="Mongolian" data-title="Тооцоолол" href="https://mn.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BE%D1%86%D0%BE%D0%BE%D0%BB%D0%BE%D0%BB" hreflang="mn" lang="mn" title="Тооцоолол – Mongolian">
+             <span>
+              Монгол
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-simple mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Simple English" data-language-local-name="Simple English" data-title="Computation" href="https://simple.wikipedia.org/wiki/Computation" hreflang="en-simple" lang="en-simple" title="Computation – Simple English">
+             <span>
+              Simple English
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ckb mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="کوردی" data-language-local-name="Central Kurdish" data-title="ژمارەکردن" href="https://ckb.wikipedia.org/wiki/%DA%98%D9%85%D8%A7%D8%B1%DB%95%DA%A9%D8%B1%D8%AF%D9%86" hreflang="ckb" lang="ckb" title="ژمارەکردن – Central Kurdish">
+             <span>
+              کوردی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" data-title="Рачунање" href="https://sr.wikipedia.org/wiki/%D0%A0%D0%B0%D1%87%D1%83%D0%BD%D0%B0%D1%9A%D0%B5" hreflang="sr" lang="sr" title="Рачунање – Serbian">
+             <span>
+              Српски / srpski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-su mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Sunda" data-language-local-name="Sundanese" data-title="Komputasi" href="https://su.wikipedia.org/wiki/Komputasi" hreflang="su" lang="su" title="Komputasi – Sundanese">
+             <span>
+              Sunda
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="Finnish" data-title="Komputaatio" href="https://fi.wikipedia.org/wiki/Komputaatio" hreflang="fi" lang="fi" title="Komputaatio – Finnish">
+             <span>
+              Suomi
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Tagalog" data-language-local-name="Tagalog" data-title="Komputasyon" href="https://tl.wikipedia.org/wiki/Komputasyon" hreflang="tl" lang="tl" title="Komputasyon – Tagalog">
+             <span>
+              Tagalog
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ta mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="தமிழ்" data-language-local-name="Tamil" data-title="கணித்தல்" href="https://ta.wikipedia.org/wiki/%E0%AE%95%E0%AE%A3%E0%AE%BF%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%B2%E0%AF%8D" hreflang="ta" lang="ta" title="கணித்தல் – Tamil">
+             <span>
+              தமிழ்
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-th mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="ไทย" data-language-local-name="Thai" data-title="การคำนวณ" href="https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B8%B3%E0%B8%99%E0%B8%A7%E0%B8%93" hreflang="th" lang="th" title="การคำนวณ – Thai">
+             <span>
+              ไทย
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Türkçe" data-language-local-name="Turkish" data-title="Berim" href="https://tr.wikipedia.org/wiki/Berim" hreflang="tr" lang="tr" title="Berim – Turkish">
+             <span>
+              Türkçe
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Обчислення (інформатика)" href="https://uk.wikipedia.org/wiki/%D0%9E%D0%B1%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_(%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)" hreflang="uk" lang="uk" title="Обчислення (інформатика) – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-vi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" data-title="Tính toán" href="https://vi.wikipedia.org/wiki/T%C3%ADnh_to%C3%A1n" hreflang="vi" lang="vi" title="Tính toán – Vietnamese">
+             <span>
+              Tiếng Việt
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh-yue mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="粵語" data-language-local-name="Cantonese" data-title="運算" href="https://zh-yue.wikipedia.org/wiki/%E9%81%8B%E7%AE%97" hreflang="yue" lang="yue" title="運算 – Cantonese">
+             <span>
+              粵語
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q12525525#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Computation" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Computation" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Computation">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Computation&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Computation&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Computation">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Computation&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Computation&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Computation" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Computation" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Computation&amp;oldid=1245756517" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Computation&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Computation&amp;id=1245756517&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FComputation">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FComputation">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q12525525" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Computation&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Computation&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Any type of calculation
+         </div>
+         <p>
+          A
+          <b>
+           computation
+          </b>
+          is any type of
+          <a href="/wiki/Arithmetic" title="Arithmetic">
+           arithmetic
+          </a>
+          or non-arithmetic
+          <a href="/wiki/Calculation" title="Calculation">
+           calculation
+          </a>
+          that is well-defined.
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-2">
+           <a href="#cite_note-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          Common examples of computation are
+          <a class="mw-redirect" href="/wiki/Mathematical_equation" title="Mathematical equation">
+           mathematical equation
+          </a>
+          solving and the
+          <a href="/wiki/Execution_(computing)" title="Execution (computing)">
+           execution
+          </a>
+          of computer
+          <a class="mw-redirect" href="/wiki/Algorithms" title="Algorithms">
+           algorithms
+          </a>
+          .
+         </p>
+         <p>
+          Mechanical or electronic devices (or,
+          <a href="/wiki/History_of_computing_hardware" title="History of computing hardware">
+           historically
+          </a>
+          , people) that perform computations are known as
+          <i>
+           <a href="/wiki/Computer" title="Computer">
+            computers
+           </a>
+          </i>
+          .
+          <a href="/wiki/Computer_science" title="Computer science">
+           Computer science
+          </a>
+          is a field that involves the study of computation.
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Introduction">
+            Introduction
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computation&amp;action=edit&amp;section=1" title="Edit section: Introduction">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The notion that mathematical statements should be 'well-defined' had been argued by mathematicians since at least the
+           <a href="/wiki/1600s_(decade)" title="1600s (decade)">
+            1600s
+           </a>
+           ,
+           <sup class="reference" id="cite_ref-3">
+            <a href="#cite_note-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           but agreement on a suitable definition proved elusive.
+           <sup class="reference" id="cite_ref-Davis_Davis_2000_4-0">
+            <a href="#cite_note-Davis_Davis_2000-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           A candidate definition was proposed independently by several mathematicians in the 1930s.
+           <sup class="reference" id="cite_ref-Davis_5-0">
+            <a href="#cite_note-Davis-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The best-known variant was formalised by the mathematician
+           <a href="/wiki/Alan_Turing" title="Alan Turing">
+            Alan Turing
+           </a>
+           , who defined a well-defined statement or calculation as any statement that could be expressed in terms of the initialisation parameters of a
+           <a href="/wiki/Turing_machine" title="Turing machine">
+            Turing machine
+           </a>
+           .
+           <sup class="reference" id="cite_ref-6">
+            <a href="#cite_note-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Other (mathematically equivalent) definitions include
+           <a href="/wiki/Alonzo_Church" title="Alonzo Church">
+            Alonzo Church
+           </a>
+           's
+           <i>
+            <a href="/wiki/Lambda_calculus" title="Lambda calculus">
+             lambda-definability
+            </a>
+           </i>
+           ,
+           <a href="/wiki/Herbrand" title="Herbrand">
+            Herbrand
+           </a>
+           -
+           <a class="mw-redirect" href="/wiki/G%C3%B6del" title="Gödel">
+            Gödel
+           </a>
+           -
+           <a class="mw-redirect" href="/wiki/Kleene" title="Kleene">
+            Kleene
+           </a>
+           's
+           <i>
+            <a href="/wiki/General_recursive_function" title="General recursive function">
+             general recursiveness
+            </a>
+           </i>
+           and
+           <a class="mw-redirect" href="/wiki/Emil_Post" title="Emil Post">
+            Emil Post
+           </a>
+           's
+           <i>
+            1-definability
+           </i>
+           .
+           <sup class="reference" id="cite_ref-Davis_5-1">
+            <a href="#cite_note-Davis-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Today, any formal statement or calculation that exhibits this quality of well-definedness is termed
+           <b>
+            computable
+           </b>
+           , while the statement or calculation itself is referred to as a
+           <b>
+            computation
+           </b>
+           .
+          </p>
+          <p>
+           Turing's definition apportioned "well-definedness" to a very large class of mathematical statements, including all well-formed
+           <a class="mw-redirect" href="/wiki/Equations" title="Equations">
+            algebraic statements
+           </a>
+           , and all statements written in modern computer programming languages.
+           <sup class="reference" id="cite_ref-Davis_Davis_2000_p._7-0">
+            <a href="#cite_note-Davis_Davis_2000_p.-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Despite the widespread uptake of this definition, there are some mathematical concepts that have no well-defined characterisation under this definition. This includes
+           <a class="mw-redirect" href="/wiki/The_halting_problem" title="The halting problem">
+            the halting problem
+           </a>
+           and
+           <a href="/wiki/Busy_beaver" title="Busy beaver">
+            the busy beaver game
+           </a>
+           . It remains an open question as to whether there exists a more powerful definition of 'well-defined' that is able to capture both computable and 'non-computable' statements.
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             note 1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-9">
+            <a href="#cite_note-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Some examples of mathematical statements that are computable include:
+          </p>
+          <ul>
+           <li>
+            All statements characterised in modern programming languages, including
+            <a href="/wiki/C%2B%2B" title="C++">
+             C++
+            </a>
+            ,
+            <a href="/wiki/Python_(programming_language)" title="Python (programming language)">
+             Python
+            </a>
+            , and
+            <a href="/wiki/Java_(programming_language)" title="Java (programming language)">
+             Java
+            </a>
+            .
+            <sup class="reference" id="cite_ref-Davis_Davis_2000_p._7-1">
+             <a href="#cite_note-Davis_Davis_2000_p.-7">
+              <span class="cite-bracket">
+               [
+              </span>
+              7
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            All calculations carried by an electronic
+            <a href="/wiki/Computer" title="Computer">
+             computer
+            </a>
+            ,
+            <a href="/wiki/Calculator" title="Calculator">
+             calculator
+            </a>
+            or
+            <a href="/wiki/Abacus" title="Abacus">
+             abacus
+            </a>
+            .
+           </li>
+           <li>
+            All calculations carried out on an
+            <a href="/wiki/Analytical_engine" title="Analytical engine">
+             analytical engine
+            </a>
+            .
+           </li>
+           <li>
+            All calculations carried out on a
+            <a class="mw-redirect" href="/wiki/Turing_Machine" title="Turing Machine">
+             Turing Machine
+            </a>
+            .
+           </li>
+           <li>
+            The majority of mathematical statements and calculations given in maths textbooks.
+           </li>
+          </ul>
+          <p>
+           Some examples of mathematical statements that are
+           <i>
+            not
+           </i>
+           computable include:
+          </p>
+          <ul>
+           <li>
+            Calculations or statements which are ill-defined, such that they cannot be unambiguously encoded into a Turing machine: ("Paul loves me twice as much as Joe").
+           </li>
+           <li>
+            Problem statements which do appear to be well-defined, but for which it can be proved that no Turing machine exists to solve them (such as
+            <a class="mw-redirect" href="/wiki/The_halting_problem" title="The halting problem">
+             the halting problem
+            </a>
+            ).
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="The_Physical_process_of_computation">
+            The Physical process of computation
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computation&amp;action=edit&amp;section=2" title="Edit section: The Physical process of computation">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Computation can be seen as a purely physical process occurring inside a closed
+           <a href="/wiki/Physical_system" title="Physical system">
+            physical system
+           </a>
+           called a
+           <a href="/wiki/Computer" title="Computer">
+            computer
+           </a>
+           . Turing's 1937 proof,
+           <i>
+            <a class="mw-redirect" href="/wiki/On_Computable_Numbers,_with_an_Application_to_the_Entscheidungsproblem" title="On Computable Numbers, with an Application to the Entscheidungsproblem">
+             On Computable Numbers, with an Application to the Entscheidungsproblem
+            </a>
+           </i>
+           , demonstrated that there is a formal equivalence between computable statements and particular physical systems, commonly called
+           <a class="mw-redirect" href="/wiki/Computers" title="Computers">
+            computers
+           </a>
+           . Examples of such physical systems are:
+           <a class="mw-redirect" href="/wiki/Turing_machines" title="Turing machines">
+            Turing machines
+           </a>
+           , human mathematicians following strict rules,
+           <a class="mw-redirect" href="/wiki/Digital_computer" title="Digital computer">
+            digital computers
+           </a>
+           ,
+           <a href="/wiki/Mechanical_computer" title="Mechanical computer">
+            mechanical computers
+           </a>
+           ,
+           <a href="/wiki/Analog_computer" title="Analog computer">
+            analog computers
+           </a>
+           and others.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Alternative_accounts_of_computation">
+            Alternative accounts of computation
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computation&amp;action=edit&amp;section=3" title="Edit section: Alternative accounts of computation">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="The_mapping_account">
+            The mapping account
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computation&amp;action=edit&amp;section=4" title="Edit section: The mapping account">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           An alternative account of computation is found throughout the works of
+           <a href="/wiki/Hilary_Putnam" title="Hilary Putnam">
+            Hilary Putnam
+           </a>
+           and others.
+           <a href="/wiki/Peter_Godfrey-Smith" title="Peter Godfrey-Smith">
+            Peter Godfrey-Smith
+           </a>
+           has dubbed this the "simple mapping account."
+           <sup class="reference" id="cite_ref-10">
+            <a href="#cite_note-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <a href="/wiki/Gualtiero_Piccinini" title="Gualtiero Piccinini">
+            Gualtiero Piccinini's
+           </a>
+           summary of this account states that a physical system can be said to perform a specific computation when there is a mapping between the state of that system and the computation such that the "microphysical states [of the system] mirror the state transitions between the computational states."
+           <sup class="reference" id="cite_ref-11">
+            <a href="#cite_note-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="The_semantic_account">
+            The semantic account
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computation&amp;action=edit&amp;section=5" title="Edit section: The semantic account">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Philosophers such as
+           <a href="/wiki/Jerry_Fodor" title="Jerry Fodor">
+            Jerry Fodor
+           </a>
+           <sup class="reference" id="cite_ref-12">
+            <a href="#cite_note-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           have suggested various accounts of computation with the restriction that
+           <a href="/wiki/Semantics" title="Semantics">
+            semantic
+           </a>
+           content be a necessary condition for computation (that is, what differentiates an arbitrary physical system from a computing system is that the operands of the computation represent something).  This notion attempts to prevent the logical abstraction of the mapping account of
+           <a href="/wiki/Digital_physics#Pancomputationalism_or_the_computational_universe_theory" title="Digital physics">
+            pancomputationalism
+           </a>
+           , the idea that everything can be said to be computing everything.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="The_mechanistic_account">
+            The mechanistic account
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computation&amp;action=edit&amp;section=6" title="Edit section: The mechanistic account">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           <a href="/wiki/Gualtiero_Piccinini" title="Gualtiero Piccinini">
+            Gualtiero Piccinini
+           </a>
+           proposes an account of computation based on
+           <a class="mw-redirect" href="/wiki/Mechanical_philosophy" title="Mechanical philosophy">
+            mechanical philosophy
+           </a>
+           . It states that physical computing systems are types of mechanisms that, by design, perform physical computation, or the manipulation (by a functional mechanism) of a "medium-independent" vehicle according to a rule. "Medium-independence" requires that the property can be instantiated
+           <sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify">
+              <span title="The text near this tag may need clarification or removal of jargon. (February 2022)">
+               clarification needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           by multiple realizers
+           <sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify">
+              <span title="The text near this tag may need clarification or removal of jargon. (February 2022)">
+               clarification needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           and multiple mechanisms, and that the inputs and outputs of the mechanism also be
+           <a href="/wiki/Multiple_realizability" title="Multiple realizability">
+            multiply realizable
+           </a>
+           . In short, medium-independence allows for the use of physical variables with properties other than voltage (as in typical digital computers); this is imperative in considering other types of computation, such as that which occurs in the
+           <a href="/wiki/Brain" title="Brain">
+            brain
+           </a>
+           or in a
+           <a class="mw-redirect" href="/wiki/Quantum_computer" title="Quantum computer">
+            quantum computer
+           </a>
+           . A rule, in this sense, provides a mapping among inputs, outputs, and internal states of the physical computing system.
+           <sup class="reference" id="cite_ref-13">
+            <a href="#cite_note-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Mathematical_models">
+            Mathematical models
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computation&amp;action=edit&amp;section=7" title="Edit section: Mathematical models">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1236090951">
+           .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+          </style>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Model_of_computation" title="Model of computation">
+            Model of computation
+           </a>
+          </div>
+          <p>
+           In the
+           <a href="/wiki/Theory_of_computation" title="Theory of computation">
+            theory of computation
+           </a>
+           , a diversity of mathematical models of computation has been developed.
+Typical mathematical
+           <a href="/wiki/Model_of_computation" title="Model of computation">
+            models of computers
+           </a>
+           are the following:
+          </p>
+          <ul>
+           <li>
+            State models including
+            <a href="/wiki/Turing_machine" title="Turing machine">
+             Turing machine
+            </a>
+            ,
+            <a href="/wiki/Pushdown_automaton" title="Pushdown automaton">
+             pushdown automaton
+            </a>
+            ,
+            <a class="mw-redirect" href="/wiki/Finite_state_automaton" title="Finite state automaton">
+             finite state automaton
+            </a>
+            , and
+            <a class="mw-redirect" href="/wiki/Parallel_random_access_machine" title="Parallel random access machine">
+             PRAM
+            </a>
+           </li>
+           <li>
+            Functional models including
+            <a href="/wiki/Lambda_calculus" title="Lambda calculus">
+             lambda calculus
+            </a>
+           </li>
+           <li>
+            Logical models including
+            <a href="/wiki/Logic_programming" title="Logic programming">
+             logic programming
+            </a>
+           </li>
+           <li>
+            Concurrent models including
+            <a href="/wiki/Actor_model" title="Actor model">
+             actor model
+            </a>
+            and
+            <a class="mw-redirect" href="/wiki/Process_calculi" title="Process calculi">
+             process calculi
+            </a>
+           </li>
+          </ul>
+          <p>
+           Giunti calls the models studied by computation theory
+           <i>
+            computational systems,
+           </i>
+           and he argues that all of them are mathematical
+           <a href="/wiki/Dynamical_system" title="Dynamical system">
+            dynamical systems
+           </a>
+           with discrete time and discrete state space.
+           <sup class="reference" id="cite_ref-14">
+            <a href="#cite_note-14">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference nowrap">
+            <span title="Page / location: ch.1">
+             : ch.1
+            </span>
+           </sup>
+           He maintains that a computational system is a complex object which consists of three parts. First, a mathematical dynamical system
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle DS}" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  D
+                 </mi>
+                 <mi>
+                  S
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle DS}
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle DS}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ec04db47707f87ea3a944a1c85e23d5b1f2c171" style="vertical-align: -0.338ex; width:3.423ex; height:2.176ex;"/>
+           </span>
+           with discrete time and discrete state space; second, a computational setup
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle H=\left(F,B_{F}\right)}" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  H
+                 </mi>
+                 <mo>
+                  =
+                 </mo>
+                 <mrow>
+                  <mo>
+                   (
+                  </mo>
+                  <mrow>
+                   <mi>
+                    F
+                   </mi>
+                   <mo>
+                    ,
+                   </mo>
+                   <msub>
+                    <mi>
+                     B
+                    </mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                     <mi>
+                      F
+                     </mi>
+                    </mrow>
+                   </msub>
+                  </mrow>
+                  <mo>
+                   )
+                  </mo>
+                 </mrow>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle H=\left(F,B_{F}\right)}
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle H=\left(F,B_{F}\right)}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e0afbc543cbcb50fa61eb3253b289edc77f9e7ac" style="vertical-align: -0.838ex; width:12.973ex; height:2.843ex;"/>
+           </span>
+           , which is made up of a theoretical part
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle F}" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  F
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle F}
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle F}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/545fd099af8541605f7ee55f08225526be88ce57" style="vertical-align: -0.338ex; width:1.741ex; height:2.176ex;"/>
+           </span>
+           , and a real part
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle B_{F}}" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <msub>
+                  <mi>
+                   B
+                  </mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                   <mi>
+                    F
+                   </mi>
+                  </mrow>
+                 </msub>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle B_{F}}
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle B_{F}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/31ba3be300d6bc9f3abd64a142ac0857b0de302b" style="vertical-align: -0.671ex; width:3.227ex; height:2.509ex;"/>
+           </span>
+           ; third, an interpretation
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle I_{DS,H}}" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <msub>
+                  <mi>
+                   I
+                  </mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                   <mi>
+                    D
+                   </mi>
+                   <mi>
+                    S
+                   </mi>
+                   <mo>
+                    ,
+                   </mo>
+                   <mi>
+                    H
+                   </mi>
+                  </mrow>
+                 </msub>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle I_{DS,H}}
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle I_{DS,H}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7711c408103bec414dab210adfdcf05c3f1b46e4" style="vertical-align: -1.005ex; width:5.593ex; height:2.843ex;"/>
+           </span>
+           , which links the dynamical system
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle DS}" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  D
+                 </mi>
+                 <mi>
+                  S
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle DS}
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle DS}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ec04db47707f87ea3a944a1c85e23d5b1f2c171" style="vertical-align: -0.338ex; width:3.423ex; height:2.176ex;"/>
+           </span>
+           with the setup
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle H}" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  H
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle H}
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle H}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/75a9edddcca2f782014371f75dca39d7e13a9c1b" style="vertical-align: -0.338ex; width:2.064ex; height:2.176ex;"/>
+           </span>
+           .
+           <sup class="reference" id="cite_ref-15">
+            <a href="#cite_note-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             14
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference nowrap">
+            <span title="Page / location: pp.179–80">
+             : pp.179–80
+            </span>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computation&amp;action=edit&amp;section=8" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Computability_theory" title="Computability theory">
+             Computability theory
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Hypercomputation" title="Hypercomputation">
+             Hypercomputation
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Computational_problem" title="Computational problem">
+             Computational problem
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Limits_of_computation" title="Limits of computation">
+             Limits of computation
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Computationalism" title="Computationalism">
+             Computationalism
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Notes">
+            Notes
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computation&amp;action=edit&amp;section=9" title="Edit section: Notes">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap">
+            <ol class="references">
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               The study of non-computable statements is the field of
+               <a href="/wiki/Hypercomputation" title="Hypercomputation">
+                hypercomputation
+               </a>
+               .
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computation&amp;action=edit&amp;section=10" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1239543626" rel="mw-deduplicated-inline-style"/>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="external text" href="http://www.merriam-webster.com/dictionary/computation" rel="nofollow">
+                Computation
+               </a>
+               from the Free Merriam-Webster Dictionary
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://web.archive.org/web/20090222005439/http://www.answers.com/topic/computation" rel="nofollow">
+                 "Computation: Definition and Synonyms from Answers.com"
+                </a>
+                .
+                <i>
+                 Answers.com
+                </i>
+                . Archived from
+                <a class="external text" href="http://www.answers.com:80/topic/computation" rel="nofollow">
+                 the original
+                </a>
+                on 22 February 2009
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  26 April
+                 </span>
+                 2017
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Answers.com&amp;rft.atitle=Computation%3A+Definition+and+Synonyms+from+Answers.com&amp;rft_id=http%3A%2F%2Fwww.answers.com%3A80%2Ftopic%2Fcomputation&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFCouturat1901">
+                Couturat, Louis (1901).
+                <i>
+                 la Logique de Leibniz a'Après des Documents Inédits
+                </i>
+                . Paris.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0343895099" title="Special:BookSources/978-0343895099">
+                 <bdi>
+                  978-0343895099
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=la+Logique+de+Leibniz+a%27Apr%C3%A8s+des+Documents+In%C3%A9dits&amp;rft.pub=Paris&amp;rft.date=1901&amp;rft.isbn=978-0343895099&amp;rft.aulast=Couturat&amp;rft.aufirst=Louis&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Davis_Davis_2000-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Davis_Davis_2000_4-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFDavisDavis2000">
+                Davis, Martin; Davis, Martin D. (2000).
+                <i>
+                 The Universal Computer
+                </i>
+                . W. W. Norton &amp; Company.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-393-04785-1" title="Special:BookSources/978-0-393-04785-1">
+                 <bdi>
+                  978-0-393-04785-1
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Universal+Computer&amp;rft.pub=W.+W.+Norton+%26+Company&amp;rft.date=2000&amp;rft.isbn=978-0-393-04785-1&amp;rft.aulast=Davis&amp;rft.aufirst=Martin&amp;rft.au=Davis%2C+Martin+D.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Davis-5">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-Davis_5-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Davis_5-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFDavis1982">
+                Davis, Martin (1982-01-01).
+                <i>
+                 Computability &amp; Unsolvability
+                </i>
+                . Courier Corporation.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-486-61471-7" title="Special:BookSources/978-0-486-61471-7">
+                 <bdi>
+                  978-0-486-61471-7
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Computability+%26+Unsolvability&amp;rft.pub=Courier+Corporation&amp;rft.date=1982-01-01&amp;rft.isbn=978-0-486-61471-7&amp;rft.aulast=Davis&amp;rft.aufirst=Martin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation news cs1" id="CITEREFTuring1937">
+                Turing, A.M. (1937) [Delivered to the Society November 1936].
+                <a class="external text" href="http://www.comlab.ox.ac.uk/activities/ieg/e-library/sources/tp2-ie.pdf" rel="nofollow">
+                 "On Computable Numbers, with an Application to the Entscheidungsproblem"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 Proceedings of the London Mathematical Society
+                </i>
+                . 2. Vol. 42. pp. 230–65.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1112%2Fplms%2Fs2-42.1.230" rel="nofollow">
+                 10.1112/plms/s2-42.1.230
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+London+Mathematical+Society&amp;rft.atitle=On+Computable+Numbers%2C+with+an+Application+to+the+Entscheidungsproblem&amp;rft.volume=42&amp;rft.pages=230-65&amp;rft.date=1937&amp;rft_id=info%3Adoi%2F10.1112%2Fplms%2Fs2-42.1.230&amp;rft.aulast=Turing&amp;rft.aufirst=A.M.&amp;rft_id=http%3A%2F%2Fwww.comlab.ox.ac.uk%2Factivities%2Fieg%2Fe-library%2Fsources%2Ftp2-ie.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Davis_Davis_2000_p.-7">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-Davis_Davis_2000_p._7-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Davis_Davis_2000_p._7-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFDavisDavis2000">
+                Davis, Martin; Davis, Martin D. (2000).
+                <i>
+                 The Universal Computer
+                </i>
+                . W. W. Norton &amp; Company.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-393-04785-1" title="Special:BookSources/978-0-393-04785-1">
+                 <bdi>
+                  978-0-393-04785-1
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Universal+Computer&amp;rft.pub=W.+W.+Norton+%26+Company&amp;rft.date=2000&amp;rft.isbn=978-0-393-04785-1&amp;rft.aulast=Davis&amp;rft.aufirst=Martin&amp;rft.au=Davis%2C+Martin+D.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-9">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFDavis,_Martin2006">
+                Davis, Martin (2006). "Why there is no such discipline as hypercomputation".
+                <i>
+                 Applied Mathematics and Computation
+                </i>
+                .
+                <b>
+                 178
+                </b>
+                (1): 4–7.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1016%2Fj.amc.2005.09.066" rel="nofollow">
+                 10.1016/j.amc.2005.09.066
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Applied+Mathematics+and+Computation&amp;rft.atitle=Why+there+is+no+such+discipline+as+hypercomputation&amp;rft.volume=178&amp;rft.issue=1&amp;rft.pages=4-7&amp;rft.date=2006&amp;rft_id=info%3Adoi%2F10.1016%2Fj.amc.2005.09.066&amp;rft.au=Davis%2C+Martin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation cs2" id="CITEREFGodfrey-Smith2009">
+                Godfrey-Smith, P. (2009), "Triviality Arguments against Functionalism",
+                <i>
+                 Philosophical Studies
+                </i>
+                ,
+                <b>
+                 145
+                </b>
+                (2): 273–95,
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1007%2Fs11098-008-9231-3" rel="nofollow">
+                 10.1007/s11098-008-9231-3
+                </a>
+                ,
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:73619367" rel="nofollow">
+                 73619367
+                </a>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Philosophical+Studies&amp;rft.atitle=Triviality+Arguments+against+Functionalism&amp;rft.volume=145&amp;rft.issue=2&amp;rft.pages=273-95&amp;rft.date=2009&amp;rft_id=info%3Adoi%2F10.1007%2Fs11098-008-9231-3&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A73619367%23id-name%3DS2CID&amp;rft.aulast=Godfrey-Smith&amp;rft.aufirst=P.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-11">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFPiccinini2015">
+                Piccinini, Gualtiero (2015).
+                <i>
+                 Physical Computation: A Mechanistic Account
+                </i>
+                . Oxford: Oxford University Press. p. 18.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9780199658855" title="Special:BookSources/9780199658855">
+                 <bdi>
+                  9780199658855
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Physical+Computation%3A+A+Mechanistic+Account&amp;rft.place=Oxford&amp;rft.pages=18&amp;rft.pub=Oxford+University+Press&amp;rft.date=2015&amp;rft.isbn=9780199658855&amp;rft.aulast=Piccinini&amp;rft.aufirst=Gualtiero&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-12">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-12">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation cs2" id="CITEREFFodor1986">
+                Fodor, J. A. (1986), "The Mind-Body Problem",
+                <i>
+                 Scientific American
+                </i>
+                ,
+                <b>
+                 244
+                </b>
+                (January 1986)
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Scientific+American&amp;rft.atitle=The+Mind-Body+Problem&amp;rft.volume=244&amp;rft.issue=January+1986&amp;rft.date=1986&amp;rft.aulast=Fodor&amp;rft.aufirst=J.+A.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-13">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-13">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFPiccinini2015">
+                Piccinini, Gualtiero (2015).
+                <i>
+                 Physical Computation: A Mechanistic Account
+                </i>
+                . Oxford: Oxford University Press. p. 10.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9780199658855" title="Special:BookSources/9780199658855">
+                 <bdi>
+                  9780199658855
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Physical+Computation%3A+A+Mechanistic+Account&amp;rft.place=Oxford&amp;rft.pages=10&amp;rft.pub=Oxford+University+Press&amp;rft.date=2015&amp;rft.isbn=9780199658855&amp;rft.aulast=Piccinini&amp;rft.aufirst=Gualtiero&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-14">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-14">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFGiunti1997">
+                Giunti, Marco (1997).
+                <i>
+                 Computation, Dynamics, and Cognition
+                </i>
+                . New York: Oxford University Press.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-19-509009-3" title="Special:BookSources/978-0-19-509009-3">
+                 <bdi>
+                  978-0-19-509009-3
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Computation%2C+Dynamics%2C+and+Cognition&amp;rft.place=New+York&amp;rft.pub=Oxford+University+Press&amp;rft.date=1997&amp;rft.isbn=978-0-19-509009-3&amp;rft.aulast=Giunti&amp;rft.aufirst=Marco&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-15">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-15">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation cs2" id="CITEREFGiunti2017">
+                Giunti, Marco (2017),
+                <a class="external text" href="https://www.researchgate.net/publication/319631506" rel="nofollow">
+                 "What is a Physical Realization of a Computational System?"
+                </a>
+                ,
+                <i>
+                 Isonomia -- Epistemologica
+                </i>
+                ,
+                <b>
+                 9
+                </b>
+                : 177–92,
+                <a class="mw-redirect" href="/wiki/ISSN_(identifier)" title="ISSN (identifier)">
+                 ISSN
+                </a>
+                <a class="external text" href="https://search.worldcat.org/issn/2037-4348" rel="nofollow">
+                 2037-4348
+                </a>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Isonomia+--+Epistemologica&amp;rft.atitle=What+is+a+Physical+Realization+of+a+Computational+System%3F&amp;rft.volume=9&amp;rft.pages=177-92&amp;rft.date=2017&amp;rft.issn=2037-4348&amp;rft.aulast=Giunti&amp;rft.aufirst=Marco&amp;rft_id=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F319631506&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputation">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐f22pr
+Cached time: 20240926232049
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.345 seconds
+Real time usage: 0.491 seconds
+Preprocessor visited node count: 1744/1000000
+Post‐expand include size: 25797/2097152 bytes
+Template argument size: 1524/2097152 bytes
+Highest expansion depth: 16/100
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 47394/5000000 bytes
+Lua time usage: 0.203/10.000 seconds
+Lua memory usage: 6458566/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  382.881      1 -total
+ 52.22%  199.953      2 Template:Reflist
+ 26.15%  100.133      1 Template:Cite_web
+ 18.57%   71.113      1 Template:Short_description
+ 12.33%   47.219      2 Template:Clarify
+ 10.82%   41.423      2 Template:Fix-span
+ 10.49%   40.146      2 Template:Pagetype
+  9.94%   38.068      7 Template:Cite_book
+  8.41%   32.182      2 Template:Rp
+  6.83%   26.161      2 Template:R/superscript
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:5926-0!canonical and timestamp 20240926232049 and revision id 1245756517. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Computation&amp;oldid=1245756517">
+          https://en.wikipedia.org/w/index.php?title=Computation&amp;oldid=1245756517
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Theoretical_computer_science" title="Category:Theoretical computer science">
+            Theoretical computer science
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Computability_theory" title="Category:Computability theory">
+            Computability theory
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_February_2022" title="Category:Wikipedia articles needing clarification from February 2022">
+            Wikipedia articles needing clarification from February 2022
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 14 September 2024, at 22:09
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Computation&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-kkpr2","wgBackendResponseTime":144,"wgPageParseReport":{"limitreport":{"cputime":"0.345","walltime":"0.491","ppvisitednodes":{"value":1744,"limit":1000000},"postexpandincludesize":{"value":25797,"limit":2097152},"templateargumentsize":{"value":1524,"limit":2097152},"expansiondepth":{"value":16,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":47394,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  382.881      1 -total"," 52.22%  199.953      2 Template:Reflist"," 26.15%  100.133      1 Template:Cite_web"," 18.57%   71.113      1 Template:Short_description"," 12.33%   47.219      2 Template:Clarify"," 10.82%   41.423      2 Template:Fix-span"," 10.49%   40.146      2 Template:Pagetype","  9.94%   38.068      7 Template:Cite_book","  8.41%   32.182      2 Template:Rp","  6.83%   26.161      2 Template:R/superscript"]},"scribunto":{"limitreport-timeusage":{"value":"0.203","limit":"10.000"},"limitreport-memusage":{"value":6458566,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-f22pr","timestamp":"20240926232049","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Computation","url":"https:\/\/en.wikipedia.org\/wiki\/Computation","sameAs":"http:\/\/www.wikidata.org\/entity\/Q12525525","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q12525525","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-10-21T16:17:12Z","dateModified":"2024-09-14T22:09:59Z","headline":"any type of calculation or use of computing technology in information processing"}
+  </script>
+ </body>
+</html>

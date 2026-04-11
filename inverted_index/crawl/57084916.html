@@ -1,0 +1,4069 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Computational learning theory - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"4a214876-5849-45aa-935a-e545b5653d4d","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Computational_learning_theory","wgTitle":"Computational learning theory","wgCurRevisionId":1242501990,"wgRevisionId":1242501990,"wgArticleId":387537,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Articles needing additional references from November 2018","All articles needing additional references","All articles with unsourced statements","Articles with unsourced statements from October 2017","All articles with dead external links","Articles with dead external links from August 2024","Computational learning theory","Computational fields of study"],"wgPageViewLanguage":"en",
+"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Computational_learning_theory","wgRelevantArticleId":387537,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":8000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,
+"wgWikibaseItemId":"Q2462783","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js",
+"ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Computational learning theory - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Computational_learning_theory" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Computational_learning_theory&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Computational_learning_theory" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Computational_learning_theory"/>
+  <meta eecs485_docid="57084916"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Computational_learning_theory rootpage-Computational_learning_theory skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Computational+learning+theory" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Computational+learning+theory" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Computational+learning+theory" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Computational+learning+theory" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Overview">
+           <a class="vector-toc-link" href="#Overview">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Overview
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Overview-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Further_reading">
+           <a class="vector-toc-link" href="#Further_reading">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Further reading
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Further_reading-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Further reading subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Further_reading-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Surveys">
+             <a class="vector-toc-link" href="#Surveys">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.1
+               </span>
+               <span>
+                Surveys
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Surveys-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Feature_selection">
+             <a class="vector-toc-link" href="#Feature_selection">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.2
+               </span>
+               <span>
+                Feature selection
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Feature_selection-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Optimal_O_notation_learning">
+             <a class="vector-toc-link" href="#Optimal_O_notation_learning">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.3
+               </span>
+               <span>
+                Optimal O notation learning
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Optimal_O_notation_learning-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Negative_results">
+             <a class="vector-toc-link" href="#Negative_results">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.4
+               </span>
+               <span>
+                Negative results
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Negative_results-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Error_tolerance">
+             <a class="vector-toc-link" href="#Error_tolerance">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.5
+               </span>
+               <span>
+                Error tolerance
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Error_tolerance-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Equivalence">
+             <a class="vector-toc-link" href="#Equivalence">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.6
+               </span>
+               <span>
+                Equivalence
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Equivalence-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Computational learning theory
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 9 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-9" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          9 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="نظرية التعلم الحوسبي" href="https://ar.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%85_%D8%A7%D9%84%D8%AD%D9%88%D8%B3%D8%A8%D9%8A" hreflang="ar" lang="ar" title="نظرية التعلم الحوسبي – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Teoria de l'aprenentatge computacional" href="https://ca.wikipedia.org/wiki/Teoria_de_l%27aprenentatge_computacional" hreflang="ca" lang="ca" title="Teoria de l'aprenentatge computacional – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Maschinelles Lernen" href="https://de.wikipedia.org/wiki/Maschinelles_Lernen" hreflang="de" lang="de" title="Maschinelles Lernen – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="نظریه یادگیری محاسباتی" href="https://fa.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%DB%8C%D9%87_%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C_%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA%DB%8C" hreflang="fa" lang="fa" title="نظریه یادگیری محاسباتی – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="Computationele leertheorie" href="https://nl.wikipedia.org/wiki/Computationele_leertheorie" hreflang="nl" lang="nl" title="Computationele leertheorie – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Teoria da aprendizagem computacional" href="https://pt.wikipedia.org/wiki/Teoria_da_aprendizagem_computacional" hreflang="pt" lang="pt" title="Teoria da aprendizagem computacional – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Теория вычислительного обучения" href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F" hreflang="ru" lang="ru" title="Теория вычислительного обучения – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" data-title="Teorija računarskog učenja" href="https://sr.wikipedia.org/wiki/Teorija_ra%C4%8Dunarskog_u%C4%8Denja" hreflang="sr" lang="sr" title="Teorija računarskog učenja – Serbian">
+             <span>
+              Српски / srpski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh-yue mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="粵語" data-language-local-name="Cantonese" data-title="運算學習論" href="https://zh-yue.wikipedia.org/wiki/%E9%81%8B%E7%AE%97%E5%AD%B8%E7%BF%92%E8%AB%96" hreflang="yue" lang="yue" title="運算學習論 – Cantonese">
+             <span>
+              粵語
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q2462783#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Computational_learning_theory" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Computational_learning_theory" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Computational_learning_theory">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Computational_learning_theory&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Computational_learning_theory&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Computational_learning_theory">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Computational_learning_theory&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Computational_learning_theory&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Computational_learning_theory" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Computational_learning_theory" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Computational_learning_theory&amp;oldid=1242501990" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Computational_learning_theory&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Computational_learning_theory&amp;id=1242501990&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FComputational_learning_theory">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FComputational_learning_theory">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q2462783" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Computational_learning_theory&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Computational_learning_theory&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          See also:
+          <a href="/wiki/Statistical_learning_theory" title="Statistical learning theory">
+           Statistical learning theory
+          </a>
+         </div>
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Theory of machine learning
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+               </a>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              This article
+              <b>
+               needs additional citations for
+               <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                verification
+               </a>
+              </b>
+              .
+              <span class="hide-when-compact">
+               Please help
+               <a href="/wiki/Special:EditPage/Computational_learning_theory" title="Special:EditPage/Computational learning theory">
+                improve this article
+               </a>
+               by
+               <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                adding citations to reliable sources
+               </a>
+               . Unsourced material may be challenged and removed.
+               <br/>
+               <small>
+                <span class="plainlinks">
+                 <i>
+                  Find sources:
+                 </i>
+                 <a class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Computational+learning+theory%22" rel="nofollow">
+                  "Computational learning theory"
+                 </a>
+                 –
+                 <a class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Computational+learning+theory%22+-wikipedia&amp;tbs=ar:1" rel="nofollow">
+                  news
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?&amp;q=%22Computational+learning+theory%22&amp;tbs=bkt:s&amp;tbm=bks" rel="nofollow">
+                  newspapers
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Computational+learning+theory%22+-wikipedia" rel="nofollow">
+                  books
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://scholar.google.com/scholar?q=%22Computational+learning+theory%22" rel="nofollow">
+                  scholar
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Computational+learning+theory%22&amp;acc=on&amp;wc=on" rel="nofollow">
+                  JSTOR
+                 </a>
+                </span>
+               </small>
+              </span>
+              <span class="date-container">
+               <i>
+                (
+                <span class="date">
+                 November 2018
+                </span>
+                )
+               </i>
+              </span>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <style data-mw-deduplicate="TemplateStyles:r1244144826">
+          .mw-parser-output .machine-learning-list-title{background-color:#ddddff}html.skin-theme-clientpref-night .mw-parser-output .machine-learning-list-title{background-color:#222}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .machine-learning-list-title{background-color:#222}}
+         </style>
+         <style data-mw-deduplicate="TemplateStyles:r1129693374">
+          .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+         </style>
+         <style data-mw-deduplicate="TemplateStyles:r1246091330">
+          .mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:var(--background-color-neutral-subtle,#f8f9fa);border:1px solid var(--border-color-base,#a2a9b1);padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:640px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}body.skin--responsive .mw-parser-output .sidebar a>img{max-width:none!important}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sidebar:not(.notheme) .sidebar-list-title,html.skin-theme-clientpref-night .mw-parser-output .sidebar:not(.notheme) .sidebar-title-with-pretitle{background:transparent!important}html.skin-theme-clientpref-night .mw-parser-output .sidebar:not(.notheme) .sidebar-title-with-pretitle a{color:var(--color-progressive)!important}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sidebar:not(.notheme) .sidebar-list-title,html.skin-theme-clientpref-os .mw-parser-output .sidebar:not(.notheme) .sidebar-title-with-pretitle{background:transparent!important}html.skin-theme-clientpref-os .mw-parser-output .sidebar:not(.notheme) .sidebar-title-with-pretitle a{color:var(--color-progressive)!important}}@media print{body.ns-0 .mw-parser-output .sidebar{display:none!important}}
+         </style>
+         <style data-mw-deduplicate="TemplateStyles:r886047488">
+          .mw-parser-output .nobold{font-weight:normal}
+         </style>
+         <link href="mw-data:TemplateStyles:r886047488" rel="mw-deduplicated-inline-style"/>
+         <table class="sidebar sidebar-collapse nomobile nowraplinks">
+          <tbody>
+           <tr>
+            <td class="sidebar-pretitle">
+             Part of a series on
+            </td>
+           </tr>
+           <tr>
+            <th class="sidebar-title-with-pretitle">
+             <a href="/wiki/Machine_learning" title="Machine learning">
+              Machine learning
+             </a>
+             <br/>
+             and
+             <a href="/wiki/Data_mining" title="Data mining">
+              data mining
+             </a>
+            </th>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               Paradigms
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/Supervised_learning" title="Supervised learning">
+                  Supervised learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Unsupervised_learning" title="Unsupervised learning">
+                  Unsupervised learning
+                 </a>
+                </li>
+                <li>
+                 <a class="mw-redirect" href="/wiki/Semi-supervised_learning" title="Semi-supervised learning">
+                  Semi-supervised learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Self-supervised_learning" title="Self-supervised learning">
+                  Self-supervised learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Reinforcement_learning" title="Reinforcement learning">
+                  Reinforcement learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Meta-learning_(computer_science)" title="Meta-learning (computer science)">
+                  Meta-learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Online_machine_learning" title="Online machine learning">
+                  Online learning
+                 </a>
+                </li>
+                <li>
+                 <a class="mw-redirect" href="/wiki/Batch_learning" title="Batch learning">
+                  Batch learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Curriculum_learning" title="Curriculum learning">
+                  Curriculum learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Rule-based_machine_learning" title="Rule-based machine learning">
+                  Rule-based learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Neuro-symbolic_AI" title="Neuro-symbolic AI">
+                  Neuro-symbolic AI
+                 </a>
+                </li>
+                <li>
+                 <a class="mw-redirect" href="/wiki/Neuromorphic_engineering" title="Neuromorphic engineering">
+                  Neuromorphic engineering
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Quantum_machine_learning" title="Quantum machine learning">
+                  Quantum machine learning
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               Problems
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/Statistical_classification" title="Statistical classification">
+                  Classification
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Generative_model" title="Generative model">
+                  Generative modeling
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Regression_analysis" title="Regression analysis">
+                  Regression
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Cluster_analysis" title="Cluster analysis">
+                  Clustering
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Dimensionality_reduction" title="Dimensionality reduction">
+                  Dimensionality reduction
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Density_estimation" title="Density estimation">
+                  Density estimation
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Anomaly_detection" title="Anomaly detection">
+                  Anomaly detection
+                 </a>
+                </li>
+                <li>
+                 <a class="mw-redirect" href="/wiki/Data_cleaning" title="Data cleaning">
+                  Data cleaning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Automated_machine_learning" title="Automated machine learning">
+                  AutoML
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Association_rule_learning" title="Association rule learning">
+                  Association rules
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Semantic_analysis_(machine_learning)" title="Semantic analysis (machine learning)">
+                  Semantic analysis
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Structured_prediction" title="Structured prediction">
+                  Structured prediction
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Feature_engineering" title="Feature engineering">
+                  Feature engineering
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Feature_learning" title="Feature learning">
+                  Feature learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Learning_to_rank" title="Learning to rank">
+                  Learning to rank
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Grammar_induction" title="Grammar induction">
+                  Grammar induction
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Ontology_learning" title="Ontology learning">
+                  Ontology learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Multimodal_learning" title="Multimodal learning">
+                  Multimodal learning
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               <div style="display: inline-block; line-height: 1.2em; padding: .1em 0;">
+                <a href="/wiki/Supervised_learning" title="Supervised learning">
+                 Supervised learning
+                </a>
+                <br/>
+                <span class="nobold">
+                 <span style="font-size:85%;">
+                  (
+                  <b>
+                   <a href="/wiki/Statistical_classification" title="Statistical classification">
+                    classification
+                   </a>
+                  </b>
+                  •
+                  <b>
+                   <a href="/wiki/Regression_analysis" title="Regression analysis">
+                    regression
+                   </a>
+                  </b>
+                  )
+                 </span>
+                </span>
+               </div>
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/Apprenticeship_learning" title="Apprenticeship learning">
+                  Apprenticeship learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Decision_tree_learning" title="Decision tree learning">
+                  Decision trees
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Ensemble_learning" title="Ensemble learning">
+                  Ensembles
+                 </a>
+                 <ul>
+                  <li>
+                   <a href="/wiki/Bootstrap_aggregating" title="Bootstrap aggregating">
+                    Bagging
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Boosting_(machine_learning)" title="Boosting (machine learning)">
+                    Boosting
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Random_forest" title="Random forest">
+                    Random forest
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li>
+                 <a href="/wiki/K-nearest_neighbors_algorithm" title="K-nearest neighbors algorithm">
+                  <i>
+                   k
+                  </i>
+                  -NN
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Linear_regression" title="Linear regression">
+                  Linear regression
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Naive_Bayes_classifier" title="Naive Bayes classifier">
+                  Naive Bayes
+                 </a>
+                </li>
+                <li>
+                 <a class="mw-redirect" href="/wiki/Artificial_neural_network" title="Artificial neural network">
+                  Artificial neural networks
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Logistic_regression" title="Logistic regression">
+                  Logistic regression
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Perceptron" title="Perceptron">
+                  Perceptron
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Relevance_vector_machine" title="Relevance vector machine">
+                  Relevance vector machine (RVM)
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Support_vector_machine" title="Support vector machine">
+                  Support vector machine (SVM)
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               <a href="/wiki/Cluster_analysis" title="Cluster analysis">
+                Clustering
+               </a>
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/BIRCH" title="BIRCH">
+                  BIRCH
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/CURE_algorithm" title="CURE algorithm">
+                  CURE
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Hierarchical_clustering" title="Hierarchical clustering">
+                  Hierarchical
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/K-means_clustering" title="K-means clustering">
+                  <i>
+                   k
+                  </i>
+                  -means
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Fuzzy_clustering" title="Fuzzy clustering">
+                  Fuzzy
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Expectation%E2%80%93maximization_algorithm" title="Expectation–maximization algorithm">
+                  Expectation–maximization (EM)
+                 </a>
+                </li>
+                <li>
+                 <br/>
+                 <a href="/wiki/DBSCAN" title="DBSCAN">
+                  DBSCAN
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/OPTICS_algorithm" title="OPTICS algorithm">
+                  OPTICS
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Mean_shift" title="Mean shift">
+                  Mean shift
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               <a href="/wiki/Dimensionality_reduction" title="Dimensionality reduction">
+                Dimensionality reduction
+               </a>
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/Factor_analysis" title="Factor analysis">
+                  Factor analysis
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Canonical_correlation" title="Canonical correlation">
+                  CCA
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Independent_component_analysis" title="Independent component analysis">
+                  ICA
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Linear_discriminant_analysis" title="Linear discriminant analysis">
+                  LDA
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Non-negative_matrix_factorization" title="Non-negative matrix factorization">
+                  NMF
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Principal_component_analysis" title="Principal component analysis">
+                  PCA
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Proper_generalized_decomposition" title="Proper generalized decomposition">
+                  PGD
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/T-distributed_stochastic_neighbor_embedding" title="T-distributed stochastic neighbor embedding">
+                  t-SNE
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Sparse_dictionary_learning" title="Sparse dictionary learning">
+                  SDL
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               <a href="/wiki/Structured_prediction" title="Structured prediction">
+                Structured prediction
+               </a>
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/Graphical_model" title="Graphical model">
+                  Graphical models
+                 </a>
+                 <ul>
+                  <li>
+                   <a href="/wiki/Bayesian_network" title="Bayesian network">
+                    Bayes net
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Conditional_random_field" title="Conditional random field">
+                    Conditional random field
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Hidden_Markov_model" title="Hidden Markov model">
+                    Hidden Markov
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               <a href="/wiki/Anomaly_detection" title="Anomaly detection">
+                Anomaly detection
+               </a>
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/Random_sample_consensus" title="Random sample consensus">
+                  RANSAC
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/K-nearest_neighbors_algorithm" title="K-nearest neighbors algorithm">
+                  <i>
+                   k
+                  </i>
+                  -NN
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Local_outlier_factor" title="Local outlier factor">
+                  Local outlier factor
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Isolation_forest" title="Isolation forest">
+                  Isolation forest
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               <a class="mw-redirect" href="/wiki/Artificial_neural_network" title="Artificial neural network">
+                Artificial neural network
+               </a>
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/Autoencoder" title="Autoencoder">
+                  Autoencoder
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Deep_learning" title="Deep learning">
+                  Deep learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Feedforward_neural_network" title="Feedforward neural network">
+                  Feedforward neural network
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Recurrent_neural_network" title="Recurrent neural network">
+                  Recurrent neural network
+                 </a>
+                 <ul>
+                  <li>
+                   <a href="/wiki/Long_short-term_memory" title="Long short-term memory">
+                    LSTM
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Gated_recurrent_unit" title="Gated recurrent unit">
+                    GRU
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Echo_state_network" title="Echo state network">
+                    ESN
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Reservoir_computing" title="Reservoir computing">
+                    reservoir computing
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li>
+                 <a href="/wiki/Boltzmann_machine" title="Boltzmann machine">
+                  Boltzmann machine
+                 </a>
+                 <ul>
+                  <li>
+                   <a href="/wiki/Restricted_Boltzmann_machine" title="Restricted Boltzmann machine">
+                    Restricted
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li>
+                 <a href="/wiki/Generative_adversarial_network" title="Generative adversarial network">
+                  GAN
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Diffusion_model" title="Diffusion model">
+                  Diffusion model
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Self-organizing_map" title="Self-organizing map">
+                  SOM
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Convolutional_neural_network" title="Convolutional neural network">
+                  Convolutional neural network
+                 </a>
+                 <ul>
+                  <li>
+                   <a href="/wiki/U-Net" title="U-Net">
+                    U-Net
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/LeNet" title="LeNet">
+                    LeNet
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/AlexNet" title="AlexNet">
+                    AlexNet
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/DeepDream" title="DeepDream">
+                    DeepDream
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li>
+                 <a href="/wiki/Neural_radiance_field" title="Neural radiance field">
+                  Neural radiance field
+                 </a>
+                </li>
+                <li>
+                 <a class="mw-redirect" href="/wiki/Transformer_(machine_learning_model)" title="Transformer (machine learning model)">
+                  Transformer
+                 </a>
+                 <ul>
+                  <li>
+                   <a href="/wiki/Vision_transformer" title="Vision transformer">
+                    Vision
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li>
+                 <a href="/wiki/Mamba_(deep_learning_architecture)" title="Mamba (deep learning architecture)">
+                  Mamba
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Spiking_neural_network" title="Spiking neural network">
+                  Spiking neural network
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Memtransistor" title="Memtransistor">
+                  Memtransistor
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Electrochemical_RAM" title="Electrochemical RAM">
+                  Electrochemical RAM
+                 </a>
+                 (ECRAM)
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               <a href="/wiki/Reinforcement_learning" title="Reinforcement learning">
+                Reinforcement learning
+               </a>
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/Q-learning" title="Q-learning">
+                  Q-learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action" title="State–action–reward–state–action">
+                  SARSA
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Temporal_difference_learning" title="Temporal difference learning">
+                  Temporal difference (TD)
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Multi-agent_reinforcement_learning" title="Multi-agent reinforcement learning">
+                  Multi-agent
+                 </a>
+                 <ul>
+                  <li>
+                   <a class="mw-redirect" href="/wiki/Self-play_(reinforcement_learning_technique)" title="Self-play (reinforcement learning technique)">
+                    Self-play
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               Learning with humans
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/Active_learning_(machine_learning)" title="Active learning (machine learning)">
+                  Active learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Crowdsourcing" title="Crowdsourcing">
+                  Crowdsourcing
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Human-in-the-loop" title="Human-in-the-loop">
+                  Human-in-the-loop
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Reinforcement_learning_from_human_feedback" title="Reinforcement learning from human feedback">
+                  RLHF
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               Model diagnostics
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/Coefficient_of_determination" title="Coefficient of determination">
+                  Coefficient of determination
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Confusion_matrix" title="Confusion matrix">
+                  Confusion matrix
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Learning_curve_(machine_learning)" title="Learning curve (machine learning)">
+                  Learning curve
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Receiver_operating_characteristic" title="Receiver operating characteristic">
+                  ROC curve
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               Mathematical foundations
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a class="mw-redirect" href="/wiki/Kernel_machines" title="Kernel machines">
+                  Kernel machines
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Bias%E2%80%93variance_tradeoff" title="Bias–variance tradeoff">
+                  Bias–variance tradeoff
+                 </a>
+                </li>
+                <li>
+                 <a class="mw-selflink selflink">
+                  Computational learning theory
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Empirical_risk_minimization" title="Empirical risk minimization">
+                  Empirical risk minimization
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Occam_learning" title="Occam learning">
+                  Occam learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Probably_approximately_correct_learning" title="Probably approximately correct learning">
+                  PAC learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Statistical_learning_theory" title="Statistical learning theory">
+                  Statistical learning
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Vapnik%E2%80%93Chervonenkis_theory" title="Vapnik–Chervonenkis theory">
+                  VC theory
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               Journals and conferences
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/ECML_PKDD" title="ECML PKDD">
+                  ECML PKDD
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Conference_on_Neural_Information_Processing_Systems" title="Conference on Neural Information Processing Systems">
+                  NeurIPS
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/International_Conference_on_Machine_Learning" title="International Conference on Machine Learning">
+                  ICML
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/International_Conference_on_Learning_Representations" title="International Conference on Learning Representations">
+                  ICLR
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/International_Joint_Conference_on_Artificial_Intelligence" title="International Joint Conference on Artificial Intelligence">
+                  IJCAI
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Machine_Learning_(journal)" title="Machine Learning (journal)">
+                  ML
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Journal_of_Machine_Learning_Research" title="Journal of Machine Learning Research">
+                  JMLR
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-content">
+             <div class="sidebar-list mw-collapsible mw-collapsed machine-learning-list-title">
+              <div class="sidebar-list-title" style="border-top:1px solid #aaa; text-align:center;;color: var(--color-base)">
+               Related articles
+              </div>
+              <div class="sidebar-list-content mw-collapsible-content hlist">
+               <ul>
+                <li>
+                 <a href="/wiki/Glossary_of_artificial_intelligence" title="Glossary of artificial intelligence">
+                  Glossary of artificial intelligence
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/List_of_datasets_for_machine-learning_research" title="List of datasets for machine-learning research">
+                  List of datasets for machine-learning research
+                 </a>
+                 <ul>
+                  <li>
+                   <a href="/wiki/List_of_datasets_in_computer_vision_and_image_processing" title="List of datasets in computer vision and image processing">
+                    List of datasets in computer vision and image processing
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li>
+                 <a href="/wiki/Outline_of_machine_learning" title="Outline of machine learning">
+                  Outline of machine learning
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-navbar">
+             <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+             <style data-mw-deduplicate="TemplateStyles:r1239400231">
+              .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+             </style>
+             <div class="navbar plainlinks hlist navbar-mini">
+              <ul>
+               <li class="nv-view">
+                <a href="/wiki/Template:Machine_learning" title="Template:Machine learning">
+                 <abbr title="View this template">
+                  v
+                 </abbr>
+                </a>
+               </li>
+               <li class="nv-talk">
+                <a href="/wiki/Template_talk:Machine_learning" title="Template talk:Machine learning">
+                 <abbr title="Discuss this template">
+                  t
+                 </abbr>
+                </a>
+               </li>
+               <li class="nv-edit">
+                <a href="/wiki/Special:EditPage/Template:Machine_learning" title="Special:EditPage/Template:Machine learning">
+                 <abbr title="Edit this template">
+                  e
+                 </abbr>
+                </a>
+               </li>
+              </ul>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          In
+          <a href="/wiki/Computer_science" title="Computer science">
+           computer science
+          </a>
+          ,
+          <b>
+           computational learning theory
+          </b>
+          (or just
+          <b>
+           learning theory
+          </b>
+          ) is a subfield of
+          <a href="/wiki/Artificial_intelligence" title="Artificial intelligence">
+           artificial intelligence
+          </a>
+          devoted to studying the design and analysis of
+          <a href="/wiki/Machine_learning" title="Machine learning">
+           machine learning
+          </a>
+          algorithms.
+          <sup class="reference" id="cite_ref-ACL_1-0">
+           <a href="#cite_note-ACL-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Overview">
+            Overview
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computational_learning_theory&amp;action=edit&amp;section=1" title="Edit section: Overview">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Theoretical results in machine learning mainly deal with a type of inductive learning called
+           <a href="/wiki/Supervised_learning" title="Supervised learning">
+            supervised learning
+           </a>
+           .  In supervised learning, an algorithm is given samples that are labeled in some useful way.  For example, the samples might be descriptions of mushrooms, and the labels could be whether or not the mushrooms are edible.  The algorithm takes these previously labeled samples and uses them to induce a classifier.  This classifier is a function that assigns labels to samples, including samples that have not been seen previously by the algorithm.  The goal of the supervised learning algorithm is to optimize some measure of performance such as minimizing the number of mistakes made on new samples.
+          </p>
+          <p>
+           In addition to performance bounds, computational learning theory studies the time complexity and feasibility of learning.
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (October 2017)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           In
+computational learning theory, a computation is considered feasible if it can be done in
+           <a class="mw-redirect" href="/wiki/Polynomial_time" title="Polynomial time">
+            polynomial time
+           </a>
+           .
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (October 2017)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           There are two kinds of time
+complexity results:
+          </p>
+          <ul>
+           <li>
+            Positive results – Showing that a certain class of functions is learnable in polynomial time.
+           </li>
+           <li>
+            Negative results – Showing that certain classes cannot be learned in polynomial time.
+           </li>
+          </ul>
+          <p>
+           Negative results often rely on commonly believed, but yet unproven assumptions,
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (October 2017)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           such as:
+          </p>
+          <ul>
+           <li>
+            Computational complexity –
+            <a href="/wiki/P_versus_NP_problem" title="P versus NP problem">
+             P ≠ NP (the P versus NP problem)
+            </a>
+            ;
+           </li>
+           <li>
+            <a href="/wiki/Cryptography" title="Cryptography">
+             Cryptographic
+            </a>
+            –
+            <a href="/wiki/One-way_function" title="One-way function">
+             One-way functions
+            </a>
+            exist.
+           </li>
+          </ul>
+          <p>
+           There are several different approaches to computational learning theory based on making different assumptions about the
+           <a href="/wiki/Inference" title="Inference">
+            inference
+           </a>
+           principles used to generalise from limited data. This includes different definitions of
+           <a href="/wiki/Probability" title="Probability">
+            probability
+           </a>
+           (see
+           <a class="mw-redirect" href="/wiki/Frequency_probability" title="Frequency probability">
+            frequency probability
+           </a>
+           ,
+           <a href="/wiki/Bayesian_probability" title="Bayesian probability">
+            Bayesian probability
+           </a>
+           ) and different assumptions on the generation of samples.
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (October 2017)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           The different approaches include:
+          </p>
+          <ul>
+           <li>
+            Exact learning, proposed by
+            <a href="/wiki/Dana_Angluin" title="Dana Angluin">
+             Dana Angluin
+            </a>
+            <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+             [
+             <i>
+              <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+               <span title="This claim needs references to reliable sources. (October 2017)">
+                citation needed
+               </span>
+              </a>
+             </i>
+             ]
+            </sup>
+            ;
+           </li>
+           <li>
+            <a href="/wiki/Probably_approximately_correct_learning" title="Probably approximately correct learning">
+             Probably approximately correct learning
+            </a>
+            (PAC learning), proposed by
+            <a href="/wiki/Leslie_Valiant" title="Leslie Valiant">
+             Leslie Valiant
+            </a>
+            ;
+            <sup class="reference" id="cite_ref-2">
+             <a href="#cite_note-2">
+              <span class="cite-bracket">
+               [
+              </span>
+              2
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/VC_theory" title="VC theory">
+             VC theory
+            </a>
+            , proposed by
+            <a href="/wiki/Vladimir_Vapnik" title="Vladimir Vapnik">
+             Vladimir Vapnik
+            </a>
+            and
+            <a href="/wiki/Alexey_Chervonenkis" title="Alexey Chervonenkis">
+             Alexey Chervonenkis
+            </a>
+            ;
+            <sup class="reference" id="cite_ref-3">
+             <a href="#cite_note-3">
+              <span class="cite-bracket">
+               [
+              </span>
+              3
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            <a href="/wiki/Solomonoff%27s_theory_of_inductive_inference" title="Solomonoff's theory of inductive inference">
+             Inductive inference
+            </a>
+            as developed by
+            <a href="/wiki/Ray_Solomonoff" title="Ray Solomonoff">
+             Ray Solomonoff
+            </a>
+            ;
+            <sup class="reference" id="cite_ref-4">
+             <a href="#cite_note-4">
+              <span class="cite-bracket">
+               [
+              </span>
+              4
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="reference" id="cite_ref-5">
+             <a href="#cite_note-5">
+              <span class="cite-bracket">
+               [
+              </span>
+              5
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            <a href="/wiki/Algorithmic_learning_theory" title="Algorithmic learning theory">
+             Algorithmic learning theory
+            </a>
+            , from the work of
+            <a href="/wiki/E._Mark_Gold" title="E. Mark Gold">
+             E. Mark Gold
+            </a>
+            ;
+            <sup class="reference" id="cite_ref-6">
+             <a href="#cite_note-6">
+              <span class="cite-bracket">
+               [
+              </span>
+              6
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            <a href="/wiki/Online_machine_learning" title="Online machine learning">
+             Online machine learning
+            </a>
+            , from the work of Nick Littlestone
+            <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+             [
+             <i>
+              <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+               <span title="This claim needs references to reliable sources. (October 2017)">
+                citation needed
+               </span>
+              </a>
+             </i>
+             ]
+            </sup>
+            .
+           </li>
+          </ul>
+          <p>
+           While its primary goal is to understand learning abstractly, computational learning theory has led to the development of practical algorithms. For example, PAC theory inspired
+           <a class="mw-redirect" href="/wiki/Boosting_(meta-algorithm)" title="Boosting (meta-algorithm)">
+            boosting
+           </a>
+           , VC theory led to
+           <a href="/wiki/Support_vector_machine" title="Support vector machine">
+            support vector machines
+           </a>
+           , and Bayesian inference led to
+           <a class="mw-redirect" href="/wiki/Belief_networks" title="Belief networks">
+            belief networks
+           </a>
+           .
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computational_learning_theory&amp;action=edit&amp;section=2" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Error_tolerance_(PAC_learning)" title="Error tolerance (PAC learning)">
+             Error tolerance (PAC learning)
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Grammar_induction" title="Grammar induction">
+             Grammar induction
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Information_theory" title="Information theory">
+             Information theory
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Occam_learning" title="Occam learning">
+             Occam learning
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Stability_(learning_theory)" title="Stability (learning theory)">
+             Stability (learning theory)
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computational_learning_theory&amp;action=edit&amp;section=3" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap">
+            <ol class="references">
+             <li id="cite_note-ACL-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-ACL_1-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://www.learningtheory.org/" rel="nofollow">
+                 "ACL - Association for Computational Learning"
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=ACL+-+Association+for+Computational+Learning&amp;rft_id=http%3A%2F%2Fwww.learningtheory.org%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputational+learning+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="ValTotL">
+                Valiant, Leslie (1984).
+                <a class="external text" href="https://web.archive.org/web/20190517235548/http://www.montefiore.ulg.ac.be/~geurts/Cours/AML/Readings/Valiant.pdf" rel="nofollow">
+                 "A Theory of the Learnable"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 Communications of the ACM
+                </i>
+                .
+                <b>
+                 27
+                </b>
+                (11): 1134–1142.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1145%2F1968.1972" rel="nofollow">
+                 10.1145/1968.1972
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:12837541" rel="nofollow">
+                 12837541
+                </a>
+                . Archived from
+                <a class="external text" href="https://www.montefiore.ulg.ac.be/~geurts/Cours/AML/Readings/Valiant.pdf" rel="nofollow">
+                 the original
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                on 2019-05-17
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2022-11-24
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.atitle=A+Theory+of+the+Learnable&amp;rft.volume=27&amp;rft.issue=11&amp;rft.pages=1134-1142&amp;rft.date=1984&amp;rft_id=info%3Adoi%2F10.1145%2F1968.1972&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A12837541%23id-name%3DS2CID&amp;rft.aulast=Valiant&amp;rft.aufirst=Leslie&amp;rft_id=https%3A%2F%2Fwww.montefiore.ulg.ac.be%2F~geurts%2FCours%2FAML%2FReadings%2FValiant.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputational+learning+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="VCdim">
+                Vapnik, V.; Chervonenkis, A. (1971).
+                <a class="external text" href="https://courses.engr.illinois.edu/ece544na/fa2014/vapnik71.pdf" rel="nofollow">
+                 "On the uniform convergence of relative frequencies of events to their probabilities"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 Theory of Probability and Its Applications
+                </i>
+                .
+                <b>
+                 16
+                </b>
+                (2): 264–280.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1137%2F1116025" rel="nofollow">
+                 10.1137/1116025
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Theory+of+Probability+and+Its+Applications&amp;rft.atitle=On+the+uniform+convergence+of+relative+frequencies+of+events+to+their+probabilities&amp;rft.volume=16&amp;rft.issue=2&amp;rft.pages=264-280&amp;rft.date=1971&amp;rft_id=info%3Adoi%2F10.1137%2F1116025&amp;rft.aulast=Vapnik&amp;rft.aufirst=V.&amp;rft.au=Chervonenkis%2C+A.&amp;rft_id=https%3A%2F%2Fcourses.engr.illinois.edu%2Fece544na%2Ffa2014%2Fvapnik71.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputational+learning+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFSolomonoff1964">
+                Solomonoff, Ray (March 1964).
+                <a class="external text" href="https://doi.org/10.1016%2FS0019-9958%2864%2990223-2" rel="nofollow">
+                 "A Formal Theory of Inductive Inference Part 1"
+                </a>
+                .
+                <i>
+                 Information and Control
+                </i>
+                .
+                <b>
+                 7
+                </b>
+                (1): 1–22.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://doi.org/10.1016%2FS0019-9958%2864%2990223-2" rel="nofollow">
+                  10.1016/S0019-9958(64)90223-2
+                 </a>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Information+and+Control&amp;rft.atitle=A+Formal+Theory+of+Inductive+Inference+Part+1&amp;rft.volume=7&amp;rft.issue=1&amp;rft.pages=1-22&amp;rft.date=1964-03&amp;rft_id=info%3Adoi%2F10.1016%2FS0019-9958%2864%2990223-2&amp;rft.aulast=Solomonoff&amp;rft.aufirst=Ray&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1016%252FS0019-9958%252864%252990223-2&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputational+learning+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFSolomonoff1964">
+                Solomonoff, Ray (1964). "A Formal Theory of Inductive Inference Part 2".
+                <i>
+                 Information and Control
+                </i>
+                .
+                <b>
+                 7
+                </b>
+                (2): 224–254.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1016%2FS0019-9958%2864%2990131-7" rel="nofollow">
+                 10.1016/S0019-9958(64)90131-7
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Information+and+Control&amp;rft.atitle=A+Formal+Theory+of+Inductive+Inference+Part+2&amp;rft.volume=7&amp;rft.issue=2&amp;rft.pages=224-254&amp;rft.date=1964&amp;rft_id=info%3Adoi%2F10.1016%2FS0019-9958%2864%2990131-7&amp;rft.aulast=Solomonoff&amp;rft.aufirst=Ray&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputational+learning+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFGold1967">
+                Gold, E. Mark (1967).
+                <a class="external text" href="http://web.mit.edu/~6.863/www/spring2009/readings/gold67limit.pdf" rel="nofollow">
+                 "Language identification in the limit"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 Information and Control
+                </i>
+                .
+                <b>
+                 10
+                </b>
+                (5): 447–474.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://doi.org/10.1016%2FS0019-9958%2867%2991165-5" rel="nofollow">
+                  10.1016/S0019-9958(67)91165-5
+                 </a>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Information+and+Control&amp;rft.atitle=Language+identification+in+the+limit&amp;rft.volume=10&amp;rft.issue=5&amp;rft.pages=447-474&amp;rft.date=1967&amp;rft_id=info%3Adoi%2F10.1016%2FS0019-9958%2867%2991165-5&amp;rft.aulast=Gold&amp;rft.aufirst=E.+Mark&amp;rft_id=http%3A%2F%2Fweb.mit.edu%2F~6.863%2Fwww%2Fspring2009%2Freadings%2Fgold67limit.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputational+learning+theory">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Further_reading">
+            Further reading
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computational_learning_theory&amp;action=edit&amp;section=4" title="Edit section: Further reading">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           A description of some of these publications is given at important publications in machine learning.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Surveys">
+            Surveys
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computational_learning_theory&amp;action=edit&amp;section=5" title="Edit section: Surveys">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            Angluin, D. 1992. Computational learning theory: Survey and selected bibliography. In Proceedings of the Twenty-Fourth Annual ACM Symposium on Theory of Computing (May 1992), pages 351–369.
+            <a class="external free" href="http://portal.acm.org/citation.cfm?id=129712.129746" rel="nofollow">
+             http://portal.acm.org/citation.cfm?id=129712.129746
+            </a>
+           </li>
+           <li>
+            D. Haussler. Probably approximately correct learning. In AAAI-90 Proceedings of the Eight National Conference on Artificial Intelligence, Boston, MA, pages 1101–1108. American Association for Artificial Intelligence, 1990.
+            <a class="external free" href="http://citeseer.ist.psu.edu/haussler90probably.html" rel="nofollow">
+             http://citeseer.ist.psu.edu/haussler90probably.html
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Feature_selection">
+            Feature selection
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computational_learning_theory&amp;action=edit&amp;section=6" title="Edit section: Feature selection">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            A. Dhagat and L. Hellerstein, "PAC learning with irrelevant attributes", in 'Proceedings of the IEEE Symp. on Foundation of Computer Science', 1994.
+            <a class="external free" href="http://citeseer.ist.psu.edu/dhagat94pac.html" rel="nofollow">
+             http://citeseer.ist.psu.edu/dhagat94pac.html
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Optimal_O_notation_learning">
+            Optimal O notation learning
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computational_learning_theory&amp;action=edit&amp;section=7" title="Edit section: Optimal O notation learning">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Oded_Goldreich" title="Oded Goldreich">
+             Oded Goldreich
+            </a>
+            ,
+            <a href="/wiki/Dana_Ron" title="Dana Ron">
+             Dana Ron
+            </a>
+            .
+            <i>
+             <a class="external text" href="http://www.wisdom.weizmann.ac.il/~oded/PS/ul.ps" rel="nofollow">
+              On universal learning algorithms
+             </a>
+            </i>
+            .
+            <a class="external free" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.47.2224" rel="nofollow">
+             http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.47.2224
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Negative_results">
+            Negative results
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computational_learning_theory&amp;action=edit&amp;section=8" title="Edit section: Negative results">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            M. Kearns and
+            <a href="/wiki/Leslie_Valiant" title="Leslie Valiant">
+             Leslie Valiant
+            </a>
+            . 1989. Cryptographic limitations on learning boolean formulae and finite automata. In Proceedings of the 21st Annual ACM Symposium on Theory of Computing, pages 433–444, New York. ACM.
+            <a class="external free" href="http://citeseer.ist.psu.edu/kearns89cryptographic.html" rel="nofollow">
+             http://citeseer.ist.psu.edu/kearns89cryptographic.html
+            </a>
+            <sup class="noprint Inline-Template">
+             <span style="white-space: nowrap;">
+              [
+              <i>
+               <a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot">
+                <span title=" Dead link tagged August 2024">
+                 dead link
+                </span>
+               </a>
+              </i>
+              ]
+             </span>
+            </sup>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Error_tolerance">
+            Error tolerance
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computational_learning_theory&amp;action=edit&amp;section=9" title="Edit section: Error tolerance">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            Michael Kearns and Ming Li. Learning in the presence of malicious errors. SIAM Journal on Computing, 22(4):807–837, August 1993.
+            <a class="external free" href="http://citeseer.ist.psu.edu/kearns93learning.html" rel="nofollow">
+             http://citeseer.ist.psu.edu/kearns93learning.html
+            </a>
+           </li>
+           <li>
+            Kearns, M. (1993). Efficient noise-tolerant learning from statistical queries. In Proceedings of the Twenty-Fifth Annual ACM Symposium on Theory of Computing, pages 392–401.
+            <a class="external free" href="http://citeseer.ist.psu.edu/kearns93efficient.html" rel="nofollow">
+             http://citeseer.ist.psu.edu/kearns93efficient.html
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Equivalence">
+            Equivalence
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computational_learning_theory&amp;action=edit&amp;section=10" title="Edit section: Equivalence">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            D.Haussler, M.Kearns, N.Littlestone and
+            <a href="/wiki/Manfred_K._Warmuth" title="Manfred K. Warmuth">
+             M. Warmuth
+            </a>
+            , Equivalence of models for polynomial learnability, Proc. 1st ACM Workshop on Computational Learning Theory, (1988) 42-55.
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation journal cs1" id="CITEREFPittWarmuth1990">
+             Pitt, L.; Warmuth, M. K. (1990).
+             <a class="external text" href="https://doi.org/10.1016%2F0022-0000%2890%2990028-J" rel="nofollow">
+              "Prediction-Preserving Reducibility"
+             </a>
+             .
+             <i>
+              Journal of Computer and System Sciences
+             </i>
+             .
+             <b>
+              41
+             </b>
+             (3): 430–467.
+             <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+              doi
+             </a>
+             :
+             <span class="id-lock-free" title="Freely accessible">
+              <a class="external text" href="https://doi.org/10.1016%2F0022-0000%2890%2990028-J" rel="nofollow">
+               10.1016/0022-0000(90)90028-J
+              </a>
+             </span>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Computer+and+System+Sciences&amp;rft.atitle=Prediction-Preserving+Reducibility&amp;rft.volume=41&amp;rft.issue=3&amp;rft.pages=430-467&amp;rft.date=1990&amp;rft_id=info%3Adoi%2F10.1016%2F0022-0000%2890%2990028-J&amp;rft.aulast=Pitt&amp;rft.aufirst=L.&amp;rft.au=Warmuth%2C+M.+K.&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1016%252F0022-0000%252890%252990028-J&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputational+learning+theory">
+            </span>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Computational_learning_theory&amp;action=edit&amp;section=11" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="http://research.microsoft.com/adapt/MSBNx/msbnx/Basics_of_Bayesian_Inference.htm" rel="nofollow">
+             Basics of Bayesian inference
+            </a>
+           </li>
+          </ul>
+          <div class="navbox-styles">
+           <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Differentiable_computing" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <link href="mw-data:TemplateStyles:r1239400231" rel="mw-deduplicated-inline-style"/>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Differentiable_computing" title="Template:Differentiable computing">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Differentiable_computing" title="Template talk:Differentiable computing">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Differentiable_computing" title="Special:EditPage/Template:Differentiable computing">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Differentiable_computing" style="font-size:114%;margin:0 4em">
+                Differentiable computing
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Differentiable_function" title="Differentiable function">
+                General
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <b>
+                   <a href="/wiki/Differentiable_programming" title="Differentiable programming">
+                    Differentiable programming
+                   </a>
+                  </b>
+                 </li>
+                 <li>
+                  <a href="/wiki/Information_geometry" title="Information geometry">
+                   Information geometry
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Statistical_manifold" title="Statistical manifold">
+                   Statistical manifold
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Automatic_differentiation" title="Automatic differentiation">
+                   Automatic differentiation
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Neuromorphic_engineering" title="Neuromorphic engineering">
+                   Neuromorphic engineering
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Pattern_recognition" title="Pattern recognition">
+                   Pattern recognition
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Tensor_calculus" title="Tensor calculus">
+                   Tensor calculus
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Computational learning theory
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Inductive_bias" title="Inductive bias">
+                   Inductive bias
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Concepts
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Gradient_descent" title="Gradient descent">
+                   Gradient descent
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Stochastic_gradient_descent" title="Stochastic gradient descent">
+                     SGD
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Cluster_analysis" title="Cluster analysis">
+                   Clustering
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Regression_analysis" title="Regression analysis">
+                   Regression
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Overfitting" title="Overfitting">
+                     Overfitting
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Hallucination_(artificial_intelligence)" title="Hallucination (artificial intelligence)">
+                   Hallucination
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Adversarial_machine_learning" title="Adversarial machine learning">
+                   Adversary
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Attention_(machine_learning)" title="Attention (machine learning)">
+                   Attention
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Convolution" title="Convolution">
+                   Convolution
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Loss_functions_for_classification" title="Loss functions for classification">
+                   Loss functions
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Backpropagation" title="Backpropagation">
+                   Backpropagation
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Batch_normalization" title="Batch normalization">
+                   Batchnorm
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Activation_function" title="Activation function">
+                   Activation
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Softmax_function" title="Softmax function">
+                     Softmax
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Sigmoid_function" title="Sigmoid function">
+                     Sigmoid
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Rectifier_(neural_networks)" title="Rectifier (neural networks)">
+                     Rectifier
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Regularization_(mathematics)" title="Regularization (mathematics)">
+                   Regularization
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Training,_validation,_and_test_sets" title="Training, validation, and test sets">
+                   Datasets
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Data_augmentation" title="Data augmentation">
+                     Augmentation
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Diffusion_process" title="Diffusion process">
+                   Diffusion
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Autoregressive_model" title="Autoregressive model">
+                   Autoregression
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Applications
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Machine_learning" title="Machine learning">
+                   Machine learning
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Prompt_engineering#In-context_learning" title="Prompt engineering">
+                     In-context learning
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Artificial_neural_network" title="Artificial neural network">
+                   Artificial neural network
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Deep_learning" title="Deep learning">
+                     Deep learning
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Computational_science" title="Computational science">
+                   Scientific computing
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Artificial_intelligence" title="Artificial intelligence">
+                   Artificial Intelligence
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Language_model" title="Language model">
+                   Language model
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Large_language_model" title="Large language model">
+                     Large language model
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Hardware
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Graphcore" title="Graphcore">
+                   IPU
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Tensor_Processing_Unit" title="Tensor Processing Unit">
+                   TPU
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Vision_processing_unit" title="Vision processing unit">
+                   VPU
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Memristor" title="Memristor">
+                   Memristor
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/SpiNNaker" title="SpiNNaker">
+                   SpiNNaker
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Software libraries
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/TensorFlow" title="TensorFlow">
+                   TensorFlow
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/PyTorch" title="PyTorch">
+                   PyTorch
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Keras" title="Keras">
+                   Keras
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Theano_(software)" title="Theano (software)">
+                   Theano
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Google_JAX" title="Google JAX">
+                   JAX
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Flux_(machine-learning_framework)" title="Flux (machine-learning framework)">
+                   Flux.jl
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/MindSpore" title="MindSpore">
+                   MindSpore
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Implementations
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   Audio–visual
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/AlexNet" title="AlexNet">
+                       AlexNet
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/WaveNet" title="WaveNet">
+                       WaveNet
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Human_image_synthesis" title="Human image synthesis">
+                       Human image synthesis
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Handwriting_recognition" title="Handwriting recognition">
+                       HWR
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Optical_character_recognition" title="Optical character recognition">
+                       OCR
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Deep_learning_speech_synthesis" title="Deep learning speech synthesis">
+                       Speech synthesis
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Speech_recognition" title="Speech recognition">
+                       Speech recognition
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Facial_recognition_system" title="Facial recognition system">
+                       Facial recognition
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/AlphaFold" title="AlphaFold">
+                       AlphaFold
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Text-to-image_model" title="Text-to-image model">
+                       Text-to-image models
+                      </a>
+                      <ul>
+                       <li>
+                        <a href="/wiki/DALL-E" title="DALL-E">
+                         DALL-E
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Midjourney" title="Midjourney">
+                         Midjourney
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Stable_Diffusion" title="Stable Diffusion">
+                         Stable Diffusion
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Text-to-video_model" title="Text-to-video model">
+                       Text-to-video models
+                      </a>
+                      <ul>
+                       <li>
+                        <a href="/wiki/Sora_(text-to-video_model)" title="Sora (text-to-video model)">
+                         Sora
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/VideoPoet" title="VideoPoet">
+                         VideoPoet
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Whisper_(speech_recognition_system)" title="Whisper (speech recognition system)">
+                       Whisper
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   Text
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Word2vec" title="Word2vec">
+                       Word2vec
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Seq2seq" title="Seq2seq">
+                       Seq2seq
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/BERT_(language_model)" title="BERT (language model)">
+                       BERT
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Claude_(language_model)" title="Claude (language model)">
+                       Claude
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Gemini_(language_model)" title="Gemini (language model)">
+                       Gemini
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/LaMDA" title="LaMDA">
+                       LaMDA
+                      </a>
+                      <ul>
+                       <li>
+                        <a class="mw-redirect" href="/wiki/Bard_(chatbot)" title="Bard (chatbot)">
+                         Bard
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Neural_machine_translation" title="Neural machine translation">
+                       NMT
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Project_Debater" title="Project Debater">
+                       Project Debater
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/IBM_Watson" title="IBM Watson">
+                       IBM Watson
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/IBM_Watsonx" title="IBM Watsonx">
+                       IBM Watsonx
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/IBM_Granite" title="IBM Granite">
+                       Granite
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/GPT-1" title="GPT-1">
+                       GPT-1
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/GPT-2" title="GPT-2">
+                       GPT-2
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/GPT-3" title="GPT-3">
+                       GPT-3
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/GPT-4" title="GPT-4">
+                       GPT-4
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/ChatGPT" title="ChatGPT">
+                       ChatGPT
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/GPT-J" title="GPT-J">
+                       GPT-J
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Chinchilla_AI" title="Chinchilla AI">
+                       Chinchilla AI
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/PaLM" title="PaLM">
+                       PaLM
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/BLOOM_(language_model)" title="BLOOM (language model)">
+                       BLOOM
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/LLaMA" title="LLaMA">
+                       LLaMA
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Huawei_PanGu" title="Huawei PanGu">
+                       PanGu-Σ
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   Decisional
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/AlphaGo" title="AlphaGo">
+                       AlphaGo
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/AlphaZero" title="AlphaZero">
+                       AlphaZero
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Q-learning" title="Q-learning">
+                       Q-learning
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action" title="State–action–reward–state–action">
+                       SARSA
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/OpenAI_Five" title="OpenAI Five">
+                       OpenAI Five
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Self-driving_car" title="Self-driving car">
+                       Self-driving car
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/MuZero" title="MuZero">
+                       MuZero
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Action_selection" title="Action selection">
+                       Action selection
+                      </a>
+                      <ul>
+                       <li>
+                        <a class="mw-redirect" href="/wiki/Auto-GPT" title="Auto-GPT">
+                         Auto-GPT
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Robot_control" title="Robot control">
+                       Robot control
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               People
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Yoshua_Bengio" title="Yoshua Bengio">
+                   Yoshua Bengio
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Alex_Graves_(computer_scientist)" title="Alex Graves (computer scientist)">
+                   Alex Graves
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Ian_Goodfellow" title="Ian Goodfellow">
+                   Ian Goodfellow
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Stephen_Grossberg" title="Stephen Grossberg">
+                   Stephen Grossberg
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Demis_Hassabis" title="Demis Hassabis">
+                   Demis Hassabis
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Geoffrey_Hinton" title="Geoffrey Hinton">
+                   Geoffrey Hinton
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Yann_LeCun" title="Yann LeCun">
+                   Yann LeCun
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Fei-Fei_Li" title="Fei-Fei Li">
+                   Fei-Fei Li
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Andrew_Ng" title="Andrew Ng">
+                   Andrew Ng
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/J%C3%BCrgen_Schmidhuber" title="Jürgen Schmidhuber">
+                   Jürgen Schmidhuber
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/David_Silver_(computer_scientist)" title="David Silver (computer scientist)">
+                   David Silver
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Ilya_Sutskever" title="Ilya Sutskever">
+                   Ilya Sutskever
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Organizations
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Anthropic" title="Anthropic">
+                   Anthropic
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/EleutherAI" title="EleutherAI">
+                   EleutherAI
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Google_DeepMind" title="Google DeepMind">
+                   Google DeepMind
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Hugging_Face" title="Hugging Face">
+                   Hugging Face
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/OpenAI" title="OpenAI">
+                   OpenAI
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Meta_AI" title="Meta AI">
+                   Meta AI
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Mila_(research_institute)" title="Mila (research institute)">
+                   Mila
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory" title="MIT Computer Science and Artificial Intelligence Laboratory">
+                   MIT CSAIL
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Huawei" title="Huawei">
+                   Huawei
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Architectures
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Neural_Turing_machine" title="Neural Turing machine">
+                   Neural Turing machine
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Differentiable_neural_computer" title="Differentiable neural computer">
+                   Differentiable neural computer
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Transformer_(machine_learning_model)" title="Transformer (machine learning model)">
+                   Transformer
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Recurrent_neural_network" title="Recurrent neural network">
+                   Recurrent neural network (RNN)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Long_short-term_memory" title="Long short-term memory">
+                   Long short-term memory (LSTM)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Gated_recurrent_unit" title="Gated recurrent unit">
+                   Gated recurrent unit (GRU)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Echo_state_network" title="Echo state network">
+                   Echo state network
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Multilayer_perceptron" title="Multilayer perceptron">
+                   Multilayer perceptron (MLP)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Convolutional_neural_network" title="Convolutional neural network">
+                   Convolutional neural network
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Residual_neural_network" title="Residual neural network">
+                   Residual neural network
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Mamba_(deep_learning)" title="Mamba (deep learning)">
+                   Mamba
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Autoencoder" title="Autoencoder">
+                   Autoencoder
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Variational_autoencoder" title="Variational autoencoder">
+                   Variational autoencoder (VAE)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Generative_adversarial_network" title="Generative adversarial network">
+                   Generative adversarial network (GAN)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Graph_neural_network" title="Graph neural network">
+                   Graph neural network
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <td class="navbox-abovebelow" colspan="2">
+               <div>
+                <ul>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <a class="mw-file-description" href="/wiki/File:Symbol_portal_class.svg" title="Portal">
+                    <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/e/e2/Symbol_portal_class.svg/16px-Symbol_portal_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/e/e2/Symbol_portal_class.svg/23px-Symbol_portal_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/e/e2/Symbol_portal_class.svg/31px-Symbol_portal_class.svg.png 2x" width="16"/>
+                   </a>
+                  </span>
+                  Portals
+                  <ul>
+                   <li>
+                    <a href="/wiki/Portal:Computer_programming" title="Portal:Computer programming">
+                     Computer programming
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Portal:Technology" title="Portal:Technology">
+                     Technology
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Category">
+                    <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  Categories
+                  <ul>
+                   <li>
+                    <a href="/wiki/Category:Artificial_neural_networks" title="Category:Artificial neural networks">
+                     Artificial neural networks
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Category:Machine_learning" title="Category:Machine learning">
+                     Machine learning
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐k5mx5
+Cached time: 20240926234744
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.589 seconds
+Real time usage: 0.716 seconds
+Preprocessor visited node count: 2377/1000000
+Post‐expand include size: 101207/2097152 bytes
+Template argument size: 6288/2097152 bytes
+Highest expansion depth: 15/100
+Expensive parser function count: 5/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 45143/5000000 bytes
+Lua time usage: 0.379/10.000 seconds
+Lua memory usage: 5845570/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  604.300      1 -total
+ 24.15%  145.932      1 Template:Machine_learning
+ 22.61%  136.620      1 Template:Sidebar_with_collapsible_lists
+ 21.79%  131.687      1 Template:Reflist
+ 13.72%   82.884      1 Template:More_citations_needed
+ 13.35%   80.652      1 Template:Cite_web
+ 12.87%   77.792      1 Template:Ambox
+ 10.81%   65.302      6 Template:Citation_needed
+ 10.36%   62.608      1 Template:Short_description
+  9.72%   58.728      7 Template:Fix
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:387537-0!canonical and timestamp 20240926234744 and revision id 1242501990. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Computational_learning_theory&amp;oldid=1242501990">
+          https://en.wikipedia.org/w/index.php?title=Computational_learning_theory&amp;oldid=1242501990
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Computational_learning_theory" title="Category:Computational learning theory">
+            Computational learning theory
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Computational_fields_of_study" title="Category:Computational fields of study">
+            Computational fields of study
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">
+            Short description matches Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_November_2018" title="Category:Articles needing additional references from November 2018">
+            Articles needing additional references from November 2018
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">
+            All articles with unsourced statements
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_October_2017" title="Category:Articles with unsourced statements from October 2017">
+            Articles with unsourced statements from October 2017
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_dead_external_links" title="Category:All articles with dead external links">
+            All articles with dead external links
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_dead_external_links_from_August_2024" title="Category:Articles with dead external links from August 2024">
+            Articles with dead external links from August 2024
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 27 August 2024, at 04:00
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Computational_learning_theory&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-zqndw","wgBackendResponseTime":139,"wgPageParseReport":{"limitreport":{"cputime":"0.589","walltime":"0.716","ppvisitednodes":{"value":2377,"limit":1000000},"postexpandincludesize":{"value":101207,"limit":2097152},"templateargumentsize":{"value":6288,"limit":2097152},"expansiondepth":{"value":15,"limit":100},"expensivefunctioncount":{"value":5,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":45143,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  604.300      1 -total"," 24.15%  145.932      1 Template:Machine_learning"," 22.61%  136.620      1 Template:Sidebar_with_collapsible_lists"," 21.79%  131.687      1 Template:Reflist"," 13.72%   82.884      1 Template:More_citations_needed"," 13.35%   80.652      1 Template:Cite_web"," 12.87%   77.792      1 Template:Ambox"," 10.81%   65.302      6 Template:Citation_needed"," 10.36%   62.608      1 Template:Short_description","  9.72%   58.728      7 Template:Fix"]},"scribunto":{"limitreport-timeusage":{"value":"0.379","limit":"10.000"},"limitreport-memusage":{"value":5845570,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-k5mx5","timestamp":"20240926234744","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Computational learning theory","url":"https:\/\/en.wikipedia.org\/wiki\/Computational_learning_theory","sameAs":"http:\/\/www.wikidata.org\/entity\/Q2462783","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q2462783","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-12-04T17:55:07Z","dateModified":"2024-08-27T04:00:55Z","headline":"theory of machine learning"}
+  </script>
+ </body>
+</html>

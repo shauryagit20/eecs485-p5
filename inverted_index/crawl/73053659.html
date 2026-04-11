@@ -1,0 +1,2700 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Algorithmic game theory - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"05083ec9-61a9-4001-83de-279c17a29bc4","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Algorithmic_game_theory","wgTitle":"Algorithmic game theory","wgCurRevisionId":1242241913,"wgRevisionId":1242241913,"wgArticleId":16334749,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Wikipedia articles with style issues from August 2013","All articles with style issues","All articles with unsourced statements","Articles with unsourced statements from September 2010","Game theory","Theory of computation","Algorithms"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Algorithmic_game_theory","wgRelevantArticleId":
+16334749,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q623221","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model",
+"platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart",
+"ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Algorithmic game theory - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Algorithmic_game_theory" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Algorithmic_game_theory" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Algorithmic_game_theory"/>
+  <meta eecs485_docid="73053659"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Algorithmic_game_theory rootpage-Algorithmic_game_theory skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Algorithmic+game+theory" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Algorithmic+game+theory" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Algorithmic+game+theory" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Algorithmic+game+theory" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-History">
+           <a class="vector-toc-link" href="#History">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              History
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-History-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle History subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-History-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Nisan-Ronen:_a_new_framework_for_studying_algorithms">
+             <a class="vector-toc-link" href="#Nisan-Ronen:_a_new_framework_for_studying_algorithms">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.1
+               </span>
+               <span>
+                Nisan-Ronen: a new framework for studying algorithms
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Nisan-Ronen:_a_new_framework_for_studying_algorithms-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Price_of_Anarchy">
+             <a class="vector-toc-link" href="#Price_of_Anarchy">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.2
+               </span>
+               <span>
+                Price of Anarchy
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Price_of_Anarchy-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-The_Internet_as_a_catalyst">
+             <a class="vector-toc-link" href="#The_Internet_as_a_catalyst">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.3
+               </span>
+               <span>
+                The Internet as a catalyst
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-The_Internet_as_a_catalyst-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Areas_of_research">
+           <a class="vector-toc-link" href="#Areas_of_research">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Areas of research
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Areas_of_research-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Areas of research subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Areas_of_research-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Algorithmic_mechanism_design">
+             <a class="vector-toc-link" href="#Algorithmic_mechanism_design">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.1
+               </span>
+               <span>
+                Algorithmic mechanism design
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Algorithmic_mechanism_design-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Inefficiency_of_equilibria">
+             <a class="vector-toc-link" href="#Inefficiency_of_equilibria">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.2
+               </span>
+               <span>
+                Inefficiency of equilibria
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Inefficiency_of_equilibria-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Complexity_of_finding_equilibria">
+             <a class="vector-toc-link" href="#Complexity_of_finding_equilibria">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.3
+               </span>
+               <span>
+                Complexity of finding equilibria
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Complexity_of_finding_equilibria-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Computational_social_choice">
+             <a class="vector-toc-link" href="#Computational_social_choice">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.4
+               </span>
+               <span>
+                Computational social choice
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Computational_social_choice-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Journals_and_newsletters">
+           <a class="vector-toc-link" href="#Journals_and_newsletters">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Journals and newsletters
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Journals_and_newsletters-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Algorithmic game theory
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 6 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-6" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          6 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Teoria de jocs algorítmica" href="https://ca.wikipedia.org/wiki/Teoria_de_jocs_algor%C3%ADtmica" hreflang="ca" lang="ca" title="Teoria de jocs algorítmica – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Algorithmische Spieltheorie" href="https://de.wikipedia.org/wiki/Algorithmische_Spieltheorie" hreflang="de" lang="de" title="Algorithmische Spieltheorie – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="نظریه الگوریتمی بازی‌ها" href="https://fa.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%DB%8C%D9%87_%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85%DB%8C_%D8%A8%D8%A7%D8%B2%DB%8C%E2%80%8C%D9%87%D8%A7" hreflang="fa" lang="fa" title="نظریه الگوریتمی بازی‌ها – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Théorie algorithmique des jeux" href="https://fr.wikipedia.org/wiki/Th%C3%A9orie_algorithmique_des_jeux" hreflang="fr" lang="fr" title="Théorie algorithmique des jeux – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="תורת המשחקים האלגוריתמית" href="https://he.wikipedia.org/wiki/%D7%AA%D7%95%D7%A8%D7%AA_%D7%94%D7%9E%D7%A9%D7%97%D7%A7%D7%99%D7%9D_%D7%94%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9E%D7%99%D7%AA" hreflang="he" lang="he" title="תורת המשחקים האלגוריתמית – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="Algoritmische speltheorie" href="https://nl.wikipedia.org/wiki/Algoritmische_speltheorie" hreflang="nl" lang="nl" title="Algoritmische speltheorie – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q623221#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Algorithmic_game_theory" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Algorithmic_game_theory" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Algorithmic_game_theory">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Algorithmic_game_theory&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Algorithmic_game_theory">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Algorithmic_game_theory" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Algorithmic_game_theory" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Algorithmic_game_theory&amp;oldid=1242241913" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Algorithmic_game_theory&amp;id=1242241913&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlgorithmic_game_theory">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlgorithmic_game_theory">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q623221" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Algorithmic_game_theory&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Algorithmic_game_theory&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Study of algorithms in strategic environments
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <table class="box-Essay-like plainlinks metadata ambox ambox-style ambox-essay-like" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <span>
+                <img alt="" class="mw-file-element" data-file-height="48" data-file-width="48" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" width="40"/>
+               </span>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              This article
+              <b>
+               is written like a
+               <a href="/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_publisher_of_original_thought" title="Wikipedia:What Wikipedia is not">
+                personal reflection, personal essay, or argumentative essay
+               </a>
+              </b>
+              that states a Wikipedia editor's personal feelings or presents an original argument about a topic.
+              <span class="hide-when-compact">
+               Please
+               <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Algorithmic_game_theory&amp;action=edit">
+                help improve it
+               </a>
+               by rewriting it in an
+               <a href="/wiki/Wikipedia:Writing_better_articles#Information_style_and_tone" title="Wikipedia:Writing better articles">
+                encyclopedic style
+               </a>
+               .
+              </span>
+              <span class="date-container">
+               <i>
+                (
+                <span class="date">
+                 August 2013
+                </span>
+                )
+               </i>
+              </span>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          <b>
+           Algorithmic game theory
+          </b>
+          (
+          <b>
+           AGT
+          </b>
+          ) is an area in the intersection of
+          <a href="/wiki/Game_theory" title="Game theory">
+           game theory
+          </a>
+          and
+          <a href="/wiki/Computer_science" title="Computer science">
+           computer science
+          </a>
+          , with the objective of understanding and design of algorithms in
+          <a href="/wiki/Strategy_(game_theory)" title="Strategy (game theory)">
+           strategic
+          </a>
+          environments.
+         </p>
+         <p>
+          Typically, in Algorithmic Game Theory problems, the input to a given algorithm is distributed among many players who have a personal interest in the output. In those situations, the
+          <a href="/wiki/Agent_(economics)" title="Agent (economics)">
+           agents
+          </a>
+          might not report the input truthfully because of their own personal interests. We can see Algorithmic Game Theory from two perspectives:
+         </p>
+         <ul>
+          <li>
+           <i>
+            Analysis
+           </i>
+           : given the currently implemented algorithms, analyze them using Game Theory tools (e.g., calculate and prove properties on their
+           <a class="mw-redirect" href="/wiki/Nash_equilibria" title="Nash equilibria">
+            Nash equilibria
+           </a>
+           ,
+           <a href="/wiki/Price_of_anarchy" title="Price of anarchy">
+            price of anarchy
+           </a>
+           , and best-response dynamics).
+          </li>
+          <li>
+           <i>
+            Design
+           </i>
+           : design games that have both good game-theoretical and algorithmic properties. This area is called
+           <a href="/wiki/Algorithmic_mechanism_design" title="Algorithmic mechanism design">
+            algorithmic mechanism design
+           </a>
+           .
+          </li>
+         </ul>
+         <p>
+          On top of the usual requirements in classical algorithm design (e.g.,
+          <i>
+           polynomial-time running time
+          </i>
+          ,
+          <i>
+           good approximation ratio),
+          </i>
+          the designer must also care about incentive constraints.
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="History">
+            History
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=1" title="Edit section: History">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Nisan-Ronen:_a_new_framework_for_studying_algorithms">
+            Nisan-Ronen: a new framework for studying algorithms
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=2" title="Edit section: Nisan-Ronen: a new framework for studying algorithms">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           In 1999, the seminal paper of
+           <a href="/wiki/Noam_Nisan" title="Noam Nisan">
+            Noam Nisan
+           </a>
+           and
+           <a href="/wiki/Amir_Ronen" title="Amir Ronen">
+            Amir Ronen
+           </a>
+           <sup class="reference" id="cite_ref-nr_1-0">
+            <a href="#cite_note-nr-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           drew the attention of the Theoretical Computer Science community to designing algorithms for selfish (strategic) users. As they claim in the abstract:
+          </p>
+          <style data-mw-deduplicate="TemplateStyles:r1244412712">
+           .mw-parser-output .templatequote{overflow:hidden;margin:1em 0;padding:0 32px}.mw-parser-output .templatequotecite{line-height:1.5em;text-align:left;margin-top:0}@media(min-width:500px){.mw-parser-output .templatequotecite{padding-left:1.6em}}
+          </style>
+          <blockquote class="templatequote">
+           <p>
+            We consider algorithmic problems in a distributed setting where the participants cannot be assumed to follow the algorithm but rather their own self-interest. As such participants, termed agents, are capable of manipulating the algorithm, the algorithm designer should ensure in advance that the agents’ interests are best served by behaving correctly.
+Following notions from the field of mechanism design, we suggest a framework for studying such algorithms. In this model the algorithmic solution is adorned with payments to the participants and is termed a mechanism. The payments should be carefully chosen as to motivate all participants to act as the algorithm designer wishes. We apply the standard tools of mechanism design to algorithmic problems and in particular to the shortest path problem.
+           </p>
+          </blockquote>
+          <p>
+           This paper coined the term
+           <a href="/wiki/Algorithmic_mechanism_design" title="Algorithmic mechanism design">
+            algorithmic mechanism design
+           </a>
+           and was recognized by the 2012
+           <a href="/wiki/G%C3%B6del_Prize" title="Gödel Prize">
+            Gödel Prize
+           </a>
+           committee as one of "three papers laying foundation of growth in Algorithmic Game Theory".
+           <sup class="reference" id="cite_ref-2">
+            <a href="#cite_note-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Price_of_Anarchy">
+            Price of Anarchy
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=3" title="Edit section: Price of Anarchy">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1236090951">
+           .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+          </style>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a class="mw-redirect" href="/wiki/Price_of_Anarchy" title="Price of Anarchy">
+            Price of Anarchy
+           </a>
+          </div>
+          <p>
+           The other two papers cited in the 2012 Gödel Prize for fundamental contributions to Algorithmic Game Theory introduced and developed the concept of "Price of Anarchy". 
+In their 1999 paper "Worst-case Equilibria",
+           <sup class="reference" id="cite_ref-kp_3-0">
+            <a href="#cite_note-kp-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Koutsoupias and
+           <a href="/wiki/Christos_Papadimitriou" title="Christos Papadimitriou">
+            Papadimitriou
+           </a>
+           proposed a new measure of the degradation of system efficiency due to the selfish behavior of its agents: the ratio of between system efficiency at an optimal configuration, and its efficiency at the worst Nash equilibrium. (The term "Price of Anarchy" only appeared a couple of years later.
+           <sup class="reference" id="cite_ref-4">
+            <a href="#cite_note-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           )
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="The_Internet_as_a_catalyst">
+            The Internet as a catalyst
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=4" title="Edit section: The Internet as a catalyst">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The Internet created a new economy—both as a foundation for exchange and commerce, and in its own right. The computational nature of the Internet allowed for the use of computational tools in this new emerging economy. On the other hand, the Internet itself is the outcome of actions of many. This was new to the classic, ‘top-down’ approach to computation that held till then. Thus, game theory is a natural way to view the Internet and interactions within it, both human and mechanical.
+          </p>
+          <p>
+           Game theory studies equilibria (such as the
+           <a href="/wiki/Nash_equilibrium" title="Nash equilibrium">
+            Nash equilibrium
+           </a>
+           ). An equilibrium is generally defined as a state in which no player has an incentive to change their strategy. Equilibria are found in several fields related to the Internet, for instance financial interactions and communication load-balancing
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (September 2010)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           . Game theory provides tools to analyze equilibria, and a common approach is then to ‘find the game’—that is, to formalize specific Internet interactions as a game, and to derive the associated equilibria.
+          </p>
+          <p>
+           Rephrasing problems in terms of games allows the analysis of Internet-based interactions and the construction of mechanisms to meet specified demands. If equilibria can be shown to exist, a further question must be answered: can an equilibrium be found, and in reasonable time? This leads to the
+           <a href="/wiki/Analysis_of_algorithms" title="Analysis of algorithms">
+            analysis of algorithms
+           </a>
+           for finding equilibria. Of special importance is the complexity class
+           <a href="/wiki/PPAD_(complexity)" title="PPAD (complexity)">
+            PPAD
+           </a>
+           , which includes many problems in algorithmic game theory.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Areas_of_research">
+            Areas of research
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=5" title="Edit section: Areas of research">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Algorithmic_mechanism_design">
+            Algorithmic mechanism design
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=6" title="Edit section: Algorithmic mechanism design">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Algorithmic_mechanism_design" title="Algorithmic mechanism design">
+            Algorithmic mechanism design
+           </a>
+          </div>
+          <p>
+           <a href="/wiki/Mechanism_design" title="Mechanism design">
+            Mechanism design
+           </a>
+           is the subarea of economics that deals with optimization under incentive constraints.
+           <a href="/wiki/Algorithmic_mechanism_design" title="Algorithmic mechanism design">
+            Algorithmic mechanism design
+           </a>
+           considers the optimization of economic systems under computational efficiency requirements. Typical objectives studied include revenue maximization and social welfare maximization.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Inefficiency_of_equilibria">
+            Inefficiency of equilibria
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=7" title="Edit section: Inefficiency of equilibria">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The concepts of
+           <a href="/wiki/Price_of_anarchy" title="Price of anarchy">
+            price of anarchy
+           </a>
+           and
+           <a href="/wiki/Price_of_stability" title="Price of stability">
+            price of stability
+           </a>
+           were introduced to capture the loss in performance of a system due to the selfish behavior of its participants. The
+           <a href="/wiki/Price_of_anarchy" title="Price of anarchy">
+            price of anarchy
+           </a>
+           captures the worst-case performance of the system at equilibrium relative to the optimal performance possible.
+           <sup class="reference" id="cite_ref-5">
+            <a href="#cite_note-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The
+           <a href="/wiki/Price_of_stability" title="Price of stability">
+            price of stability
+           </a>
+           , on the other hand, captures the relative performance of the best equilibrium of the system.
+           <sup class="reference" id="cite_ref-6">
+            <a href="#cite_note-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           These concepts are counterparts to the notion of
+           <a class="mw-redirect" href="/wiki/Approximation_ratio" title="Approximation ratio">
+            approximation ratio
+           </a>
+           in algorithm design.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Complexity_of_finding_equilibria">
+            Complexity of finding equilibria
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=8" title="Edit section: Complexity of finding equilibria">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The existence of an equilibrium in a game is typically established using non-constructive
+           <a class="mw-redirect" href="/wiki/Fixed_point_theorem" title="Fixed point theorem">
+            fixed point theorems
+           </a>
+           . There are no efficient algorithms known for computing
+           <a href="/wiki/Nash_equilibrium" title="Nash equilibrium">
+            Nash equilibria
+           </a>
+           . The problem is complete for the
+           <a href="/wiki/Complexity_class" title="Complexity class">
+            complexity class
+           </a>
+           <a class="mw-redirect" href="/wiki/PPAD" title="PPAD">
+            PPAD
+           </a>
+           even in 2-player games.
+           <sup class="reference" id="cite_ref-chen2005_7-0">
+            <a href="#cite_note-chen2005-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           In contrast,
+           <a href="/wiki/Correlated_equilibrium" title="Correlated equilibrium">
+            correlated equilibria
+           </a>
+           can be computed efficiently using linear programming,
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           as well as learned via no-regret strategies.
+           <sup class="reference" id="cite_ref-9">
+            <a href="#cite_note-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Computational_social_choice">
+            Computational social choice
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=9" title="Edit section: Computational social choice">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Computational_social_choice" title="Computational social choice">
+            Computational social choice
+           </a>
+          </div>
+          <p>
+           Computational social choice studies computational aspects of
+           <i>
+            social choice
+           </i>
+           , the aggregation of individual agents' preferences. Examples include algorithms and computational complexity of voting rules and coalition formation.
+           <sup class="reference" id="cite_ref-10">
+            <a href="#cite_note-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Other topics include:
+          </p>
+          <ul>
+           <li>
+            Algorithms for computing
+            <a class="mw-redirect" href="/wiki/Market_equilibrium" title="Market equilibrium">
+             Market equilibria
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Fair_division" title="Fair division">
+             Fair division
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Multi-agent_systems" title="Multi-agent systems">
+             Multi-agent systems
+            </a>
+           </li>
+          </ul>
+          <p>
+           And the area counts with diverse practical applications:
+           <sup class="reference" id="cite_ref-11">
+            <a href="#cite_note-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-12">
+            <a href="#cite_note-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <ul>
+           <li>
+            <a href="/wiki/Sponsored_search_auction" title="Sponsored search auction">
+             Sponsored search auctions
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Spectrum_auction" title="Spectrum auction">
+             Spectrum auctions
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Cryptocurrency" title="Cryptocurrency">
+             Cryptocurrencies
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Prediction_markets" title="Prediction markets">
+             Prediction markets
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Reputation_systems" title="Reputation systems">
+             Reputation systems
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Sharing_economy" title="Sharing economy">
+             Sharing economy
+            </a>
+           </li>
+           <li>
+            <a class="new" href="/w/index.php?title=Matching_markets&amp;action=edit&amp;redlink=1" title="Matching markets (page does not exist)">
+             Matching markets
+            </a>
+            such as
+            <a class="mw-redirect" href="/wiki/Kidney_exchange" title="Kidney exchange">
+             kidney exchange
+            </a>
+            and
+            <a href="/wiki/School_choice" title="School choice">
+             school choice
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Crowdsourcing" title="Crowdsourcing">
+             Crowdsourcing
+            </a>
+            and peer grading
+           </li>
+           <li>
+            <a class="new" href="/w/index.php?title=Economics_of_the_cloud&amp;action=edit&amp;redlink=1" title="Economics of the cloud (page does not exist)">
+             Economics of the cloud
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Journals_and_newsletters">
+            Journals and newsletters
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=10" title="Edit section: Journals and newsletters">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">
+             ACM
+            </a>
+            Transactions on Economics and Computation (TEAC)
+            <sup class="reference" id="cite_ref-TEAC_13-0">
+             <a href="#cite_note-TEAC-13">
+              <span class="cite-bracket">
+               [
+              </span>
+              13
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            SIGEcom Exchanges
+            <sup class="reference" id="cite_ref-14">
+             <a href="#cite_note-14">
+              <span class="cite-bracket">
+               [
+              </span>
+              14
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+          </ul>
+          <p>
+           Algorithmic Game Theory papers are often also published in Game Theory journals such as
+           <a href="/wiki/Games_and_Economic_Behavior" title="Games and Economic Behavior">
+            GEB
+           </a>
+           ,
+           <sup class="reference" id="cite_ref-15">
+            <a href="#cite_note-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Economics journals such as
+           <a href="/wiki/Econometrica" title="Econometrica">
+            Econometrica
+           </a>
+           , and Computer Science journals such as
+           <a href="/wiki/SIAM_Journal_on_Computing" title="SIAM Journal on Computing">
+            SICOMP
+           </a>
+           .
+           <sup class="reference" id="cite_ref-16">
+            <a href="#cite_note-16">
+             <span class="cite-bracket">
+              [
+             </span>
+             16
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=11" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="mw-redirect" href="/wiki/Auction_Theory" title="Auction Theory">
+             Auction Theory
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Computational_social_choice" title="Computational social choice">
+             Computational social choice
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Gamification" title="Gamification">
+             Gamification
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Load_balancing_(computing)" title="Load balancing (computing)">
+             Load balancing (computing)
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Mechanism_design" title="Mechanism design">
+             Mechanism design
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Multi-agent_system" title="Multi-agent system">
+             Multi-agent system
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Voting_system#Influence_of_game_theory" title="Voting system">
+             Voting in game theory
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=12" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-nr-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-nr_1-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation cs2" id="CITEREFNisanRonen1999">
+                <a href="/wiki/Noam_Nisan" title="Noam Nisan">
+                 Nisan, Noam
+                </a>
+                ;
+                <a href="/wiki/Amir_Ronen" title="Amir Ronen">
+                 Ronen, Amir
+                </a>
+                (1999), "Algorithmic mechanism design",
+                <i>
+                 Proceedings of the 31st ACM Symposium on Theory of Computing (STOC '99)
+                </i>
+                , pp. 129–140,
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://doi.org/10.1145%2F301250.301287" rel="nofollow">
+                  10.1145/301250.301287
+                 </a>
+                </span>
+                ,
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-1581130676" title="Special:BookSources/978-1581130676">
+                 <bdi>
+                  978-1581130676
+                 </bdi>
+                </a>
+                ,
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:8316937" rel="nofollow">
+                 8316937
+                </a>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Algorithmic+mechanism+design&amp;rft.btitle=Proceedings+of+the+31st+ACM+Symposium+on+Theory+of+Computing+%28STOC+%2799%29&amp;rft.pages=129-140&amp;rft.date=1999&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A8316937%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F301250.301287&amp;rft.isbn=978-1581130676&amp;rft.aulast=Nisan&amp;rft.aufirst=Noam&amp;rft.au=Ronen%2C+Amir&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation pressrelease cs1">
+                <a class="external text" href="https://web.archive.org/web/20130718154540/http://www.acm.org/press-room/news-releases/2012/goedel-prize-2012" rel="nofollow">
+                 "ACM SIGACT Presents Gödel Prize for Research that Illuminated Effects of Selfish Internet Use"
+                </a>
+                (Press release). New York. Association for Computing Machinery. 2012-05-16. Archived from
+                <a class="external text" href="http://www.acm.org/press-room/news-releases/2012/goedel-prize-2012" rel="nofollow">
+                 the original
+                </a>
+                on 2013-07-18
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2018-01-08
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=ACM+SIGACT+Presents+G%C3%B6del+Prize+for+Research+that+Illuminated+Effects+of+Selfish+Internet+Use&amp;rft.place=New+York&amp;rft.date=2012-05-16&amp;rft_id=http%3A%2F%2Fwww.acm.org%2Fpress-room%2Fnews-releases%2F2012%2Fgoedel-prize-2012&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-kp-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-kp_3-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFKoutsoupiasPapadimitriou2009">
+                Koutsoupias, Elias; Papadimitriou, Christos (May 2009).
+                <a class="external text" href="https://web.archive.org/web/20160313023635/http://www.cs.berkeley.edu/~christos/nash.ps" rel="nofollow">
+                 "Worst-case Equilibria"
+                </a>
+                .
+                <i>
+                 Computer Science Review
+                </i>
+                .
+                <b>
+                 3
+                </b>
+                (2): 65–69.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1016%2Fj.cosrev.2009.04.003" rel="nofollow">
+                 10.1016/j.cosrev.2009.04.003
+                </a>
+                . Archived from
+                <a class="external text" href="http://www.cs.berkeley.edu/~christos/nash.ps" rel="nofollow">
+                 the original
+                </a>
+                on 2016-03-13
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2018-01-08
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computer+Science+Review&amp;rft.atitle=Worst-case+Equilibria&amp;rft.volume=3&amp;rft.issue=2&amp;rft.pages=65-69&amp;rft.date=2009-05&amp;rft_id=info%3Adoi%2F10.1016%2Fj.cosrev.2009.04.003&amp;rft.aulast=Koutsoupias&amp;rft.aufirst=Elias&amp;rft.au=Papadimitriou%2C+Christos&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F~christos%2Fnash.ps&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation cs2" id="CITEREFPapadimitriou2001">
+                <a href="/wiki/Christos_Papadimitriou" title="Christos Papadimitriou">
+                 Papadimitriou, Christos
+                </a>
+                (2001), "Algorithms, games, and the Internet",
+                <i>
+                 Proceedings of the 33rd ACM Symposium on Theory of Computing (STOC '01)
+                </i>
+                , pp. 749–753,
+                <a class="mw-redirect" href="/wiki/CiteSeerX_(identifier)" title="CiteSeerX (identifier)">
+                 CiteSeerX
+                </a>
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.70.8836" rel="nofollow">
+                  10.1.1.70.8836
+                 </a>
+                </span>
+                ,
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1145%2F380752.380883" rel="nofollow">
+                 10.1145/380752.380883
+                </a>
+                ,
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-1581133493" title="Special:BookSources/978-1581133493">
+                 <bdi>
+                  978-1581133493
+                 </bdi>
+                </a>
+                ,
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:207594967" rel="nofollow">
+                 207594967
+                </a>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Algorithms%2C+games%2C+and+the+Internet&amp;rft.btitle=Proceedings+of+the+33rd+ACM+Symposium+on+Theory+of+Computing+%28STOC+%2701%29&amp;rft.pages=749-753&amp;rft.date=2001&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.70.8836%23id-name%3DCiteSeerX&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A207594967%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F380752.380883&amp;rft.isbn=978-1581133493&amp;rft.aulast=Papadimitriou&amp;rft.aufirst=Christos&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFTim_Roughgarden2005">
+                <a href="/wiki/Tim_Roughgarden" title="Tim Roughgarden">
+                 Tim Roughgarden
+                </a>
+                (2005).
+                <i>
+                 Selfish routing and the price of anarchy
+                </i>
+                .
+                <a href="/wiki/MIT_Press" title="MIT Press">
+                 MIT Press
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/0-262-18243-2" title="Special:BookSources/0-262-18243-2">
+                 <bdi>
+                  0-262-18243-2
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Selfish+routing+and+the+price+of+anarchy&amp;rft.pub=MIT+Press&amp;rft.date=2005&amp;rft.isbn=0-262-18243-2&amp;rft.au=Tim+Roughgarden&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               *
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFAnshelevichDasguptaKleinbergTardos2008">
+                Anshelevich, Elliot; Dasgupta, Anirban; Kleinberg, Jon; Tardos, Éva; Wexler, Tom; Roughgarden, Tim (2008). "The Price of Stability for Network Design with Fair Cost Allocation".
+                <i>
+                 SIAM J. Comput
+                </i>
+                .
+                <b>
+                 38
+                </b>
+                (4): 1602–1623.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1137%2F070680096" rel="nofollow">
+                 10.1137/070680096
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:2839399" rel="nofollow">
+                 2839399
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=SIAM+J.+Comput.&amp;rft.atitle=The+Price+of+Stability+for+Network+Design+with+Fair+Cost+Allocation&amp;rft.volume=38&amp;rft.issue=4&amp;rft.pages=1602-1623&amp;rft.date=2008&amp;rft_id=info%3Adoi%2F10.1137%2F070680096&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A2839399%23id-name%3DS2CID&amp;rft.aulast=Anshelevich&amp;rft.aufirst=Elliot&amp;rft.au=Dasgupta%2C+Anirban&amp;rft.au=Kleinberg%2C+Jon&amp;rft.au=Tardos%2C+%C3%89va&amp;rft.au=Wexler%2C+Tom&amp;rft.au=Roughgarden%2C+Tim&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-chen2005-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-chen2005_7-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               *
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation conference cs1" id="CITEREFChenDeng2006">
+                Chen, Xi; Deng, Xiaotie (2006).
+                <i>
+                 Settling the complexity of two-player Nash equilibrium
+                </i>
+                . Proc. 47th Symp. Foundations of Computer Science. pp. 261–271.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2FFOCS.2006.69" rel="nofollow">
+                 10.1109/FOCS.2006.69
+                </a>
+                .
+                <a href="/wiki/Electronic_Colloquium_on_Computational_Complexity" title="Electronic Colloquium on Computational Complexity">
+                 ECCC
+                </a>
+                <a class="external text" href="https://eccc.weizmann.ac.il/report/2005/140/" rel="nofollow">
+                 TR05-140
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Settling+the+complexity+of+two-player+Nash+equilibrium&amp;rft.pages=261-271&amp;rft.date=2006&amp;rft_id=info%3Adoi%2F10.1109%2FFOCS.2006.69&amp;rft.aulast=Chen&amp;rft.aufirst=Xi&amp;rft.au=Deng%2C+Xiaotie&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+               .
+              </span>
+             </li>
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFPapadimitriouRoughgarden2008">
+                Papadimitriou, Christos H.; Roughgarden, Tim (2008). "Computing correlated equilibria in multi-player games".
+                <i>
+                 J. ACM
+                </i>
+                .
+                <b>
+                 55
+                </b>
+                (3): 14:1–14:29.
+                <a class="mw-redirect" href="/wiki/CiteSeerX_(identifier)" title="CiteSeerX (identifier)">
+                 CiteSeerX
+                </a>
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.335.2634" rel="nofollow">
+                  10.1.1.335.2634
+                 </a>
+                </span>
+                .
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1145%2F1379759.1379762" rel="nofollow">
+                 10.1145/1379759.1379762
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:53224027" rel="nofollow">
+                 53224027
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=J.+ACM&amp;rft.atitle=Computing+correlated+equilibria+in+multi-player+games&amp;rft.volume=55&amp;rft.issue=3&amp;rft.pages=14%3A1-14%3A29&amp;rft.date=2008&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.335.2634%23id-name%3DCiteSeerX&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A53224027%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F1379759.1379762&amp;rft.aulast=Papadimitriou&amp;rft.aufirst=Christos+H.&amp;rft.au=Roughgarden%2C+Tim&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-9">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFFosterVohra1996">
+                Foster, Dean P.; Vohra, Rakesh V. (1996).
+                <a class="external text" href="https://repository.upenn.edu/cgi/viewcontent.cgi?article=1008&amp;context=statistics_papers" rel="nofollow">
+                 "Calibrated Learning and Correlated Equilibrium"
+                </a>
+                .
+                <i>
+                 Games and Economic Behavior
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Games+and+Economic+Behavior&amp;rft.atitle=Calibrated+Learning+and+Correlated+Equilibrium&amp;rft.date=1996&amp;rft.aulast=Foster&amp;rft.aufirst=Dean+P.&amp;rft.au=Vohra%2C+Rakesh+V.&amp;rft_id=https%3A%2F%2Frepository.upenn.edu%2Fcgi%2Fviewcontent.cgi%3Farticle%3D1008%26context%3Dstatistics_papers&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation cs2" id="CITEREFFelix_BrandtVincent_ConitzerUlle_EndrissJérôme_Lang2016">
+                Felix Brandt; Vincent Conitzer; Ulle Endriss; Jérôme Lang; Ariel D. Procaccia, eds. (2016),
+                <a class="external text" href="http://procaccia.info/papers/comsoc.pdf" rel="nofollow">
+                 <i>
+                  Handbook of Computational Social Choice
+                 </i>
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Handbook+of+Computational+Social+Choice&amp;rft.date=2016&amp;rft_id=http%3A%2F%2Fprocaccia.info%2Fpapers%2Fcomsoc.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-11">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFTim_Roughgarden2016">
+                <a href="/wiki/Tim_Roughgarden" title="Tim Roughgarden">
+                 Tim Roughgarden
+                </a>
+                (2016).
+                <i>
+                 Twenty lectures on algorithmic game theory
+                </i>
+                .
+                <a href="/wiki/Cambridge_University_Press" title="Cambridge University Press">
+                 Cambridge University Press
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9781316624791" title="Special:BookSources/9781316624791">
+                 <bdi>
+                  9781316624791
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Twenty+lectures+on+algorithmic+game+theory&amp;rft.pub=Cambridge+University+Press&amp;rft.date=2016&amp;rft.isbn=9781316624791&amp;rft.au=Tim+Roughgarden&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-12">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-12">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://www.sigecom.org/ec19/callforpapers.html" rel="nofollow">
+                 "EC'19 || 20th ACM Conference on Economics and Computation"
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=EC%2719+%26%23124%3B%26%23124%3B+20th+ACM+Conference+on+Economics+and+Computation&amp;rft_id=http%3A%2F%2Fwww.sigecom.org%2Fec19%2Fcallforpapers.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-TEAC-13">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-TEAC_13-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="external text" href="https://teac.acm.org/" rel="nofollow">
+                TEAC
+               </a>
+              </span>
+             </li>
+             <li id="cite_note-14">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-14">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="external text" href="http://www.sigecom.org/exchanges/" rel="nofollow">
+                SIGEcom Exchanges
+               </a>
+              </span>
+             </li>
+             <li id="cite_note-15">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-15">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation cs2" id="CITEREFChawlaFleischerHartlineTim_Roughgarden2015">
+                <a href="/wiki/Shuchi_Chawla" title="Shuchi Chawla">
+                 Chawla, Shuchi
+                </a>
+                ; Fleischer, Lisa; Hartline, Jason;
+                <a href="/wiki/Tim_Roughgarden" title="Tim Roughgarden">
+                 Tim Roughgarden
+                </a>
+                (2015), "Introduction to the Special Issue – Algorithmic Game Theory – STOC/FOCS/SODA 2011",
+                <i>
+                 <a href="/wiki/Games_and_Economic_Behavior" title="Games and Economic Behavior">
+                  Games and Economic Behavior
+                 </a>
+                </i>
+                ,
+                <b>
+                 92
+                </b>
+                : 228–231,
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1016%2Fj.geb.2015.02.011" rel="nofollow">
+                 10.1016/j.geb.2015.02.011
+                </a>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Games+and+Economic+Behavior&amp;rft.atitle=Introduction+to+the+Special+Issue+%E2%80%93+Algorithmic+Game+Theory+%E2%80%93+STOC%2FFOCS%2FSODA+2011&amp;rft.volume=92&amp;rft.pages=228-231&amp;rft.date=2015&amp;rft_id=info%3Adoi%2F10.1016%2Fj.geb.2015.02.011&amp;rft.aulast=Chawla&amp;rft.aufirst=Shuchi&amp;rft.au=Fleischer%2C+Lisa&amp;rft.au=Hartline%2C+Jason&amp;rft.au=Tim+Roughgarden&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-16">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-16">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="external text" href="https://www-siam-org.stanford.idm.oclc.org/Publications/Journals/SIAM-Journal-on-Computing-SICOMP" rel="nofollow">
+                SICOMP
+               </a>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/John_von_Neumann" title="John von Neumann">
+             John von Neumann
+            </a>
+            ,
+            <a href="/wiki/Oskar_Morgenstern" title="Oskar Morgenstern">
+             Oskar Morgenstern
+            </a>
+            (1944)
+            <i>
+             <a href="/wiki/Theory_of_Games_and_Economic_Behavior" title="Theory of Games and Economic Behavior">
+              Theory of Games and Economic Behavior
+             </a>
+            </i>
+            . Princeton Univ. Press. 2007 edition:
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+             ISBN
+            </a>
+            <a href="/wiki/Special:BookSources/978-0-691-13061-3" title="Special:BookSources/978-0-691-13061-3">
+             978-0-691-13061-3
+            </a>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation cs2" id="CITEREFVaziraniNisanRoughgardenTardos2007">
+             <a href="/wiki/Vijay_Vazirani" title="Vijay Vazirani">
+              Vazirani, Vijay V.
+             </a>
+             ;
+             <a href="/wiki/Noam_Nisan" title="Noam Nisan">
+              Nisan, Noam
+             </a>
+             ;
+             <a href="/wiki/Tim_Roughgarden" title="Tim Roughgarden">
+              Roughgarden, Tim
+             </a>
+             ;
+             <a href="/wiki/%C3%89va_Tardos" title="Éva Tardos">
+              Tardos, Éva
+             </a>
+             (2007),
+             <a class="external text" href="http://www.cambridge.org/journals/nisan/downloads/Nisan_Non-printable.pdf" rel="nofollow">
+              <i>
+               Algorithmic Game Theory
+              </i>
+             </a>
+             <span class="cs1-format">
+              (PDF)
+             </span>
+             , Cambridge, UK: Cambridge University Press,
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/978-0-521-87282-9" title="Special:BookSources/978-0-521-87282-9">
+              <bdi>
+               978-0-521-87282-9
+              </bdi>
+             </a>
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Algorithmic+Game+Theory&amp;rft.place=Cambridge%2C+UK&amp;rft.pub=Cambridge+University+Press&amp;rft.date=2007&amp;rft.isbn=978-0-521-87282-9&amp;rft.aulast=Vazirani&amp;rft.aufirst=Vijay+V.&amp;rft.au=Nisan%2C+Noam&amp;rft.au=Roughgarden%2C+Tim&amp;rft.au=Tardos%2C+%C3%89va&amp;rft_id=http%3A%2F%2Fwww.cambridge.org%2Fjournals%2Fnisan%2Fdownloads%2FNisan_Non-printable.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+game+theory">
+            </span>
+            .
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algorithmic_game_theory&amp;action=edit&amp;section=13" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="http://gambit.sourceforge.net/" rel="nofollow">
+             gambit.sourceforge.net
+            </a>
+            - a library of game theory software and tools for the construction and analysis of finite extensive and strategic games.
+           </li>
+           <li>
+            <a class="external text" href="http://gamut.stanford.edu/" rel="nofollow">
+             gamut.stanford.edu
+            </a>
+            - a suite of game generators designated for testing game-theoretic algorithms.
+           </li>
+          </ul>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-label="Navbox" class="navbox authority-control" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Help:Authority_control" title="Help:Authority control">
+                Authority control databases
+               </a>
+               : National
+               <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless">
+                <a href="https://www.wikidata.org/wiki/Q623221#identifiers" title="Edit this at Wikidata">
+                 <img alt="Edit this at Wikidata" class="mw-file-element" data-file-height="20" data-file-width="20" decoding="async" height="10" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" width="10"/>
+                </a>
+               </span>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <span class="uid">
+                   <a class="external text" href="https://d-nb.info/gnd/1133091814" rel="nofollow">
+                    Germany
+                   </a>
+                  </span>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.canary‐69469c98b8‐vnqth
+Cached time: 20240927004120
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.475 seconds
+Real time usage: 0.577 seconds
+Preprocessor visited node count: 1673/1000000
+Post‐expand include size: 40783/2097152 bytes
+Template argument size: 2556/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 6/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 60945/5000000 bytes
+Lua time usage: 0.320/10.000 seconds
+Lua memory usage: 6064878/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  533.298      1 -total
+ 37.09%  197.816      1 Template:Reflist
+ 21.82%  116.344      5 Template:Citation
+ 19.49%  103.966      1 Template:Authority_control
+ 14.51%   77.373      1 Template:Short_description
+  8.85%   47.223      1 Template:Essay-like
+  8.30%   44.267      2 Template:Pagetype
+  6.78%   36.145      1 Template:Citation_needed
+  6.17%   32.927      1 Template:Fix
+  5.82%   31.062      1 Template:Ambox
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:16334749-0!canonical and timestamp 20240927004120 and revision id 1242241913. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Algorithmic_game_theory&amp;oldid=1242241913">
+          https://en.wikipedia.org/w/index.php?title=Algorithmic_game_theory&amp;oldid=1242241913
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Game_theory" title="Category:Game theory">
+            Game theory
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Theory_of_computation" title="Category:Theory of computation">
+            Theory of computation
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Algorithms" title="Category:Algorithms">
+            Algorithms
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">
+            Short description matches Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_articles_with_style_issues_from_August_2013" title="Category:Wikipedia articles with style issues from August 2013">
+            Wikipedia articles with style issues from August 2013
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_style_issues" title="Category:All articles with style issues">
+            All articles with style issues
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">
+            All articles with unsourced statements
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_September_2010" title="Category:Articles with unsourced statements from September 2010">
+            Articles with unsourced statements from September 2010
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 25 August 2024, at 19:30
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Algorithmic_game_theory&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-tprz6","wgBackendResponseTime":156,"wgPageParseReport":{"limitreport":{"cputime":"0.475","walltime":"0.577","ppvisitednodes":{"value":1673,"limit":1000000},"postexpandincludesize":{"value":40783,"limit":2097152},"templateargumentsize":{"value":2556,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":6,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":60945,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  533.298      1 -total"," 37.09%  197.816      1 Template:Reflist"," 21.82%  116.344      5 Template:Citation"," 19.49%  103.966      1 Template:Authority_control"," 14.51%   77.373      1 Template:Short_description","  8.85%   47.223      1 Template:Essay-like","  8.30%   44.267      2 Template:Pagetype","  6.78%   36.145      1 Template:Citation_needed","  6.17%   32.927      1 Template:Fix","  5.82%   31.062      1 Template:Ambox"]},"scribunto":{"limitreport-timeusage":{"value":"0.320","limit":"10.000"},"limitreport-memusage":{"value":6064878,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.canary-69469c98b8-vnqth","timestamp":"20240927004120","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Algorithmic game theory","url":"https:\/\/en.wikipedia.org\/wiki\/Algorithmic_game_theory","sameAs":"http:\/\/www.wikidata.org\/entity\/Q623221","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q623221","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2008-03-16T15:49:59Z","dateModified":"2024-08-25T19:30:44Z","headline":"study of algorithms in strategic environments"}
+  </script>
+ </body>
+</html>

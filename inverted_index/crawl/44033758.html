@@ -1,0 +1,3001 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Formal verification - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"240a8def-32b9-49d1-90c3-a4b7e789c675","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Formal_verification","wgTitle":"Formal verification","wgCurRevisionId":1243999563,"wgRevisionId":1243999563,"wgArticleId":270054,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Webarchive template wayback links","Articles with short description","Short description is different from Wikidata","Use mdy dates from June 2019","All articles with unsourced statements","Articles with unsourced statements from December 2014","Articles needing cleanup from October 2022","All pages needing cleanup","Cleanup tagged articles with a reason field from October 2022","Wikipedia pages needing cleanup from October 2022",
+"Articles with unsourced statements from December 2011","Articles containing potentially dated statements from 2011","All articles containing potentially dated statements","Articles with unsourced statements from March 2012","Articles with unsourced statements from October 2022","Electronic circuit verification","Formal methods","Logic in computer science","Theoretical computer science"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Formal_verification","wgRelevantArticleId":270054,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{
+"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q173326","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":
+"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Formal verification - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Formal_verification" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Formal_verification&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Formal_verification" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Formal_verification"/>
+  <meta eecs485_docid="44033758"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Formal_verification rootpage-Formal_verification skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Formal+verification" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Formal+verification" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Formal+verification" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Formal+verification" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Approaches">
+           <a class="vector-toc-link" href="#Approaches">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Approaches
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Approaches-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Approaches subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Approaches-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Software">
+             <a class="vector-toc-link" href="#Software">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.1
+               </span>
+               <span>
+                Software
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Software-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Verification_and_validation">
+           <a class="vector-toc-link" href="#Verification_and_validation">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Verification and validation
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Verification_and_validation-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Automated_program_repair">
+           <a class="vector-toc-link" href="#Automated_program_repair">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Automated program repair
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Automated_program_repair-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Industry_use">
+           <a class="vector-toc-link" href="#Industry_use">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Industry use
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Industry_use-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Formal verification
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 20 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-20" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          20 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="التحقق الشكلي" href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AA%D8%AD%D9%82%D9%82_%D8%A7%D9%84%D8%B4%D9%83%D9%84%D9%8A" hreflang="ar" lang="ar" title="التحقق الشكلي – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-cs mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Čeština" data-language-local-name="Czech" data-title="Formální verifikace" href="https://cs.wikipedia.org/wiki/Form%C3%A1ln%C3%AD_verifikace" hreflang="cs" lang="cs" title="Formální verifikace – Czech">
+             <span>
+              Čeština
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-el mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Ελληνικά" data-language-local-name="Greek" data-title="Τυπική επαλήθευση" href="https://el.wikipedia.org/wiki/%CE%A4%CF%85%CF%80%CE%B9%CE%BA%CE%AE_%CE%B5%CF%80%CE%B1%CE%BB%CE%AE%CE%B8%CE%B5%CF%85%CF%83%CE%B7" hreflang="el" lang="el" title="Τυπική επαλήθευση – Greek">
+             <span>
+              Ελληνικά
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Verificación formal" href="https://es.wikipedia.org/wiki/Verificaci%C3%B3n_formal" hreflang="es" lang="es" title="Verificación formal – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-eu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Euskara" data-language-local-name="Basque" data-title="Egiaztapen formala (informatika)" href="https://eu.wikipedia.org/wiki/Egiaztapen_formala_(informatika)" hreflang="eu" lang="eu" title="Egiaztapen formala (informatika) – Basque">
+             <span>
+              Euskara
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="درستی‌یابی صوری" href="https://fa.wikipedia.org/wiki/%D8%AF%D8%B1%D8%B3%D8%AA%DB%8C%E2%80%8C%DB%8C%D8%A7%D8%A8%DB%8C_%D8%B5%D9%88%D8%B1%DB%8C" hreflang="fa" lang="fa" title="درستی‌یابی صوری – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Vérification formelle" href="https://fr.wikipedia.org/wiki/V%C3%A9rification_formelle" hreflang="fr" lang="fr" title="Vérification formelle – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="형식 검증" href="https://ko.wikipedia.org/wiki/%ED%98%95%EC%8B%9D_%EA%B2%80%EC%A6%9D" hreflang="ko" lang="ko" title="형식 검증 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Verifica formale" href="https://it.wikipedia.org/wiki/Verifica_formale" hreflang="it" lang="it" title="Verifica formale – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="אימות תוכנה" href="https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%9E%D7%95%D7%AA_%D7%AA%D7%95%D7%9B%D7%A0%D7%94" hreflang="he" lang="he" title="אימות תוכנה – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="形式的検証" href="https://ja.wikipedia.org/wiki/%E5%BD%A2%E5%BC%8F%E7%9A%84%E6%A4%9C%E8%A8%BC" hreflang="ja" lang="ja" title="形式的検証 – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Weryfikacja formalna" href="https://pl.wikipedia.org/wiki/Weryfikacja_formalna" hreflang="pl" lang="pl" title="Weryfikacja formalna – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Verificação formal" href="https://pt.wikipedia.org/wiki/Verifica%C3%A7%C3%A3o_formal" hreflang="pt" lang="pt" title="Verificação formal – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Формальная верификация" href="https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B2%D0%B5%D1%80%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F" hreflang="ru" lang="ru" title="Формальная верификация – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-simple mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Simple English" data-language-local-name="Simple English" data-title="Formal verification" href="https://simple.wikipedia.org/wiki/Formal_verification" hreflang="en-simple" lang="en-simple" title="Formal verification – Simple English">
+             <span>
+              Simple English
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" data-title="Формална верификација" href="https://sr.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%BD%D0%B0_%D0%B2%D0%B5%D1%80%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%98%D0%B0" hreflang="sr" lang="sr" title="Формална верификација – Serbian">
+             <span>
+              Српски / srpski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sv mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Svenska" data-language-local-name="Swedish" data-title="Formell verifiering" href="https://sv.wikipedia.org/wiki/Formell_verifiering" hreflang="sv" lang="sv" title="Formell verifiering – Swedish">
+             <span>
+              Svenska
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Türkçe" data-language-local-name="Turkish" data-title="Program doğrulama" href="https://tr.wikipedia.org/wiki/Program_do%C4%9Frulama" hreflang="tr" lang="tr" title="Program doğrulama – Turkish">
+             <span>
+              Türkçe
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Формальна верифікація" href="https://uk.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%B2%D0%B5%D1%80%D0%B8%D1%84%D1%96%D0%BA%D0%B0%D1%86%D1%96%D1%8F" hreflang="uk" lang="uk" title="Формальна верифікація – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="形式验证" href="https://zh.wikipedia.org/wiki/%E5%BD%A2%E5%BC%8F%E9%AA%8C%E8%AF%81" hreflang="zh" lang="zh" title="形式验证 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q173326#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Formal_verification" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Formal_verification" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Formal_verification">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Formal_verification&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Formal_verification&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Formal_verification">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Formal_verification&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Formal_verification&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Formal_verification" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Formal_verification" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Formal_verification&amp;oldid=1243999563" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Formal_verification&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Formal_verification&amp;id=1243999563&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFormal_verification">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFormal_verification">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q173326" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Formal_verification&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Formal_verification&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Proving or disproving the correctness of certain intended algorithms
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          <span>
+           Not to be confused with
+           <a href="/wiki/Verificationism" title="Verificationism">
+            Verificationism
+           </a>
+           .
+          </span>
+          <span class="selfref">
+           For the Wikipedia policy, see
+           <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+            Wikipedia:Verifiability
+           </a>
+           .
+          </span>
+         </div>
+         <p class="mw-empty-elt">
+         </p>
+         <p>
+          In the context of
+          <a href="/wiki/Computer_hardware" title="Computer hardware">
+           hardware
+          </a>
+          and
+          <a href="/wiki/Software" title="Software">
+           software
+          </a>
+          <a class="mw-disambig" href="/wiki/System_(disambiguation)" title="System (disambiguation)">
+           systems
+          </a>
+          ,
+          <b>
+           formal verification
+          </b>
+          is the act of
+          <a href="/wiki/Mathematical_proof" title="Mathematical proof">
+           proving
+          </a>
+          or disproving the
+          <a href="/wiki/Correctness_(computer_science)" title="Correctness (computer science)">
+           correctness
+          </a>
+          of a system with respect to a certain
+          <a href="/wiki/Formal_specification" title="Formal specification">
+           formal specification
+          </a>
+          or property, using
+          <a href="/wiki/Formal_methods" title="Formal methods">
+           formal methods
+          </a>
+          of
+          <a href="/wiki/Mathematics" title="Mathematics">
+           mathematics
+          </a>
+          .
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          Formal verification is a key incentive for
+          <a href="/wiki/Formal_specification" title="Formal specification">
+           formal specification
+          </a>
+          of systems, and is at the core of
+          <a href="/wiki/Formal_methods" title="Formal methods">
+           formal methods
+          </a>
+          .
+It represents an important dimension of
+          <a href="/wiki/Electronic_design_automation#Analysis_and_verification" title="Electronic design automation">
+           analysis and verification
+          </a>
+          in
+          <a href="/wiki/Electronic_design_automation" title="Electronic design automation">
+           electronic design automation
+          </a>
+          and is one approach to
+          <a href="/wiki/Software_verification" title="Software verification">
+           software verification
+          </a>
+          . The use of formal verification enables the highest
+          <a href="/wiki/Evaluation_Assurance_Level" title="Evaluation Assurance Level">
+           Evaluation Assurance Level
+          </a>
+          (
+          <a href="/wiki/Evaluation_Assurance_Level#EAL7:_Formally_Verified_Design_and_Tested" title="Evaluation Assurance Level">
+           EAL7
+          </a>
+          ) in the framework of
+          <a class="mw-redirect" href="/wiki/Common_criteria" title="Common criteria">
+           common criteria
+          </a>
+          for
+          <a href="/wiki/Computer_security" title="Computer security">
+           computer security
+          </a>
+          certification.
+         </p>
+         <p>
+          Formal verification can be helpful in proving the correctness of systems such as:
+          <a href="/wiki/Cryptographic_protocol" title="Cryptographic protocol">
+           cryptographic protocols
+          </a>
+          ,
+          <a href="/wiki/Combinational_logic" title="Combinational logic">
+           combinational circuits
+          </a>
+          ,
+          <a class="mw-redirect" href="/wiki/Digital_circuit" title="Digital circuit">
+           digital circuits
+          </a>
+          with internal memory, and software expressed as
+          <a href="/wiki/Source_code" title="Source code">
+           source code
+          </a>
+          in a
+          <a href="/wiki/Programming_language" title="Programming language">
+           programming language
+          </a>
+          . Prominent examples of verified software systems include the
+          <a href="/wiki/CompCert" title="CompCert">
+           CompCert
+          </a>
+          verified
+          <a class="mw-redirect" href="/wiki/C_programming_language" title="C programming language">
+           C
+          </a>
+          <a href="/wiki/Compiler" title="Compiler">
+           compiler
+          </a>
+          and the
+          <a href="/wiki/L4_microkernel_family#High_assurance:_seL4" title="L4 microkernel family">
+           seL4
+          </a>
+          high-assurance
+          <a href="/wiki/Kernel_(operating_system)" title="Kernel (operating system)">
+           operating system kernel
+          </a>
+          .
+         </p>
+         <p>
+          The verification of these systems is done by ensuring the existence of a
+          <a href="/wiki/Formal_proof" title="Formal proof">
+           formal proof
+          </a>
+          of a
+          <a href="/wiki/Mathematical_model" title="Mathematical model">
+           mathematical model
+          </a>
+          of the system.
+          <sup class="reference" id="cite_ref-2">
+           <a href="#cite_note-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          Examples of mathematical objects used to model systems are:
+          <a href="/wiki/Finite-state_machine" title="Finite-state machine">
+           finite-state machines
+          </a>
+          ,
+          <a class="mw-redirect" href="/wiki/Labelled_transition_system" title="Labelled transition system">
+           labelled transition systems
+          </a>
+          ,
+          <a href="/wiki/Horn_clause" title="Horn clause">
+           Horn clauses
+          </a>
+          ,
+          <a href="/wiki/Petri_net" title="Petri net">
+           Petri nets
+          </a>
+          ,
+          <a href="/wiki/Vector_addition_system" title="Vector addition system">
+           vector addition systems
+          </a>
+          ,
+          <a href="/wiki/Timed_automaton" title="Timed automaton">
+           timed automata
+          </a>
+          ,
+          <a class="mw-redirect" href="/wiki/Hybrid_automata" title="Hybrid automata">
+           hybrid automata
+          </a>
+          ,
+          <a class="mw-redirect" href="/wiki/Process_algebra" title="Process algebra">
+           process algebra
+          </a>
+          , formal semantics of programming languages such as
+          <a href="/wiki/Operational_semantics" title="Operational semantics">
+           operational semantics
+          </a>
+          ,
+          <a href="/wiki/Denotational_semantics" title="Denotational semantics">
+           denotational semantics
+          </a>
+          ,
+          <a href="/wiki/Axiomatic_semantics" title="Axiomatic semantics">
+           axiomatic semantics
+          </a>
+          and
+          <a href="/wiki/Hoare_logic" title="Hoare logic">
+           Hoare logic
+          </a>
+          .
+          <sup class="reference" id="cite_ref-3">
+           <a href="#cite_note-3">
+            <span class="cite-bracket">
+             [
+            </span>
+            3
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Approaches">
+            Approaches
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Formal_verification&amp;action=edit&amp;section=1" title="Edit section: Approaches">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           One approach and formation is
+           <a href="/wiki/Model_checking" title="Model checking">
+            model checking
+           </a>
+           , which consists of a systematically exhaustive exploration of the mathematical model (this is possible for
+           <a href="/wiki/Finite_model_theory" title="Finite model theory">
+            finite models
+           </a>
+           , but also for some infinite models where infinite sets of states can be effectively represented finitely by using abstraction or taking advantage of symmetry). Usually, this consists of exploring all states and transitions in the model, by using smart and domain-specific abstraction techniques to consider whole groups of states in a single operation and reduce computing time. Implementation techniques include
+           <a href="/wiki/State_space_enumeration" title="State space enumeration">
+            state space enumeration
+           </a>
+           , symbolic state space enumeration,
+           <a href="/wiki/Abstract_interpretation" title="Abstract interpretation">
+            abstract interpretation
+           </a>
+           ,
+           <a href="/wiki/Symbolic_simulation" title="Symbolic simulation">
+            symbolic simulation
+           </a>
+           , abstraction refinement.
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (December 2014)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           The properties to be verified are often described in
+           <a href="/wiki/Temporal_logic" title="Temporal logic">
+            temporal logics
+           </a>
+           , such as
+           <a href="/wiki/Linear_temporal_logic" title="Linear temporal logic">
+            linear temporal logic
+           </a>
+           (LTL),
+           <a href="/wiki/Property_Specification_Language" title="Property Specification Language">
+            Property Specification Language
+           </a>
+           (PSL),
+           <a href="/wiki/SystemVerilog" title="SystemVerilog">
+            SystemVerilog
+           </a>
+           Assertions (SVA),
+           <sup class="reference" id="cite_ref-4">
+            <a href="#cite_note-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           or
+           <a class="mw-redirect" href="/wiki/Computational_tree_logic" title="Computational tree logic">
+            computational tree logic
+           </a>
+           (CTL). The great advantage of model checking is that it is often fully automatic; its primary disadvantage is that it does not in general scale to large systems; symbolic models are typically limited to a few hundred bits of state, while explicit state enumeration requires the state space being explored to be relatively small.
+          </p>
+          <p>
+           Another approach is deductive verification. It consists of generating from the system and its specifications (and possibly other annotations) a collection of mathematical
+           <i>
+            proof obligations
+           </i>
+           , the truth of which imply conformance of the system to its specification, and discharging these obligations using either
+           <a href="/wiki/Proof_assistant" title="Proof assistant">
+            proof assistants
+           </a>
+           (interactive theorem provers) (such as
+           <a class="mw-redirect" href="/wiki/HOL_theorem_prover" title="HOL theorem prover">
+            HOL
+           </a>
+           ,
+           <a href="/wiki/ACL2" title="ACL2">
+            ACL2
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Isabelle_(theorem_prover)" title="Isabelle (theorem prover)">
+            Isabelle
+           </a>
+           ,
+           <a href="/wiki/Coq_(software)" title="Coq (software)">
+            Coq
+           </a>
+           or
+           <a href="/wiki/Prototype_Verification_System" title="Prototype Verification System">
+            PVS
+           </a>
+           ), or
+           <a href="/wiki/Automated_theorem_proving" title="Automated theorem proving">
+            automatic theorem provers
+           </a>
+           , including in particular
+           <a href="/wiki/Satisfiability_modulo_theories" title="Satisfiability modulo theories">
+            satisfiability modulo theories
+           </a>
+           (SMT) solvers. This approach has the disadvantage that it may require the user to understand in detail why the system works correctly, and to convey this information to the verification system, either in the form of a sequence of theorems to be proved or in the form of specifications (invariants, preconditions, postconditions) of system components (e.g. functions or procedures) and perhaps subcomponents (such as loops or data structures).
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Software">
+            Software
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Formal_verification&amp;action=edit&amp;section=2" title="Edit section: Software">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Formal verification of software programs involves proving that a program satisfies a formal specification of its behavior. Subareas of formal verification include deductive verification (see above),
+           <a href="/wiki/Abstract_interpretation" title="Abstract interpretation">
+            abstract interpretation
+           </a>
+           ,
+           <a href="/wiki/Automated_theorem_proving" title="Automated theorem proving">
+            automated theorem proving
+           </a>
+           ,
+           <a href="/wiki/Type_system" title="Type system">
+            type systems
+           </a>
+           , and
+           <a href="/wiki/Formal_methods#Lightweight_formal_methods" title="Formal methods">
+            lightweight formal methods
+           </a>
+           . A promising type-based verification approach is
+           <a class="mw-redirect" href="/wiki/Dependent_types" title="Dependent types">
+            dependently typed programming
+           </a>
+           , in which the types of functions include (at least part of) those functions' specifications, and type-checking the code establishes its correctness against those specifications. Fully featured dependently typed languages support deductive verification as a special case.
+          </p>
+          <p>
+           Another complementary approach is
+           <a href="/wiki/Program_derivation" title="Program derivation">
+            program derivation
+           </a>
+           , in which efficient code is produced from
+           <a href="/wiki/Functional_programming" title="Functional programming">
+            functional
+           </a>
+           specifications by a series of correctness-preserving steps. An example of this approach is the
+           <a href="/wiki/Bird%E2%80%93Meertens_formalism" title="Bird–Meertens formalism">
+            Bird–Meertens formalism
+           </a>
+           , and this approach can be seen as another form of
+           <a class="new" href="/w/index.php?title=Correct_by_construction&amp;action=edit&amp;redlink=1" title="Correct by construction (page does not exist)">
+            correctness by construction
+           </a>
+           .
+          </p>
+          <p>
+           These techniques can be
+           <i>
+            <a href="/wiki/Soundness" title="Soundness">
+             sound
+            </a>
+           </i>
+           , meaning that the verified properties can be logically deduced from the semantics, or
+           <i>
+            unsound
+           </i>
+           , meaning that there is no such guarantee. A sound technique yields a result only once it has covered the entire space of possibilities. An example of an unsound technique is one that covers only a subset of the possibilities, for instance only integers up to a certain number, and give a "good-enough" result. Techniques can also be
+           <i>
+            <a href="/wiki/Decidability_(logic)" title="Decidability (logic)">
+             decidable
+            </a>
+           </i>
+           , meaning that their algorithmic implementations are
+           <a href="/wiki/Termination_analysis" title="Termination analysis">
+            guaranteed to terminate
+           </a>
+           with an answer, or undecidable, meaning that they may never terminate. By bounding the scope of possibilities, unsound techniques that are decidable might be able to be constructed when no decidable sound techniques are available.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Verification_and_validation">
+            Verification and validation
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Formal_verification&amp;action=edit&amp;section=3" title="Edit section: Verification and validation">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Verification_and_validation" title="Verification and validation">
+            Verification and validation
+           </a>
+          </div>
+          <p>
+           Verification is one aspect of testing a product's fitness for purpose. Validation is the complementary aspect. Often one refers to the overall checking process as V &amp; V.
+          </p>
+          <ul>
+           <li>
+            <b>
+             Validation
+            </b>
+            : "Are we trying to make the right thing?", i.e., is the product specified to the user's actual needs?
+           </li>
+           <li>
+            <b>
+             Verification
+            </b>
+            : "Have we made what we were trying to make?", i.e., does the product conform to the specifications?
+           </li>
+          </ul>
+          <p>
+           The verification process consists of static/structural and dynamic/behavioral aspects. E.g., for a software product one can inspect the source code (static) and run against specific test cases (dynamic). Validation usually can be done only dynamically, i.e., the product is tested by putting it through typical and atypical usages ("Does it satisfactorily meet all
+           <a href="/wiki/Use_case" title="Use case">
+            use cases
+           </a>
+           ?").
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Automated_program_repair">
+            Automated program repair
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Formal_verification&amp;action=edit&amp;section=4" title="Edit section: Automated program repair">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Automatic_bug_fixing" title="Automatic bug fixing">
+            Automatic bug fixing
+           </a>
+          </div>
+          <p>
+           Program repair is performed with respect to an
+           <a class="mw-redirect" href="/wiki/Oracle_(computability)" title="Oracle (computability)">
+            oracle
+           </a>
+           , encompassing the desired functionality of the program which is used for validation of the generated fix. A simple example is a test-suite—the input/output pairs specify the functionality of the program. A variety of techniques are employed, most notably using
+           <a href="/wiki/Satisfiability_modulo_theories" title="Satisfiability modulo theories">
+            satisfiability modulo theories
+           </a>
+           (SMT) solvers, and
+           <a href="/wiki/Genetic_programming" title="Genetic programming">
+            genetic programming
+           </a>
+           ,
+           <sup class="reference" id="cite_ref-5">
+            <a href="#cite_note-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           using evolutionary computing to generate and evaluate possible candidates for fixes. The former method is deterministic, while the latter is randomized.
+          </p>
+          <p>
+           Program repair combines techniques from formal verification and
+           <a href="/wiki/Program_synthesis" title="Program synthesis">
+            program synthesis
+           </a>
+           . Fault-localization techniques in formal verification are used to compute program points which might be possible bug-locations, which can be targeted by the synthesis modules. Repair systems often focus on a small pre-defined class of bugs in order to reduce the search space. Industrial use is limited owing to the computational cost of existing techniques.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Industry_use">
+            Industry use
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Formal_verification&amp;action=edit&amp;section=5" title="Edit section: Industry use">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1236091366">
+           .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+          </style>
+          <table class="box-Cleanup plainlinks metadata ambox ambox-style ambox-Cleanup" role="presentation">
+           <tbody>
+            <tr>
+             <td class="mbox-image">
+              <div class="mbox-image-div">
+               <span typeof="mw:File">
+                <span>
+                 <img alt="" class="mw-file-element" data-file-height="48" data-file-width="48" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" width="40"/>
+                </span>
+               </span>
+              </div>
+             </td>
+             <td class="mbox-text">
+              <div class="mbox-text-span">
+               This section may
+               <b>
+                require
+                <a href="/wiki/Wikipedia:Cleanup" title="Wikipedia:Cleanup">
+                 cleanup
+                </a>
+               </b>
+               to meet Wikipedia's
+               <a href="/wiki/Wikipedia:Manual_of_Style" title="Wikipedia:Manual of Style">
+                quality standards
+               </a>
+               . The specific problem is:
+               <b>
+                needs a more well-rounded overview of the subject; filter for what is actually used in industry; only mention notable papers.
+               </b>
+               <span class="hide-when-compact">
+                Please help
+                <a href="/wiki/Special:EditPage/Formal_verification" title="Special:EditPage/Formal verification">
+                 improve this section
+                </a>
+                if you can.
+               </span>
+               <span class="date-container">
+                <i>
+                 (
+                 <span class="date">
+                  October 2022
+                 </span>
+                 )
+                </i>
+               </span>
+               <span class="hide-when-compact">
+                <i>
+                 (
+                 <small>
+                  <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                   Learn how and when to remove this message
+                  </a>
+                 </small>
+                 )
+                </i>
+               </span>
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <p>
+           The growth in complexity of designs increases the importance of formal verification techniques in the
+           <a href="/wiki/Electronics_industry" title="Electronics industry">
+            hardware industry
+           </a>
+           .
+           <sup class="reference" id="cite_ref-6">
+            <a href="#cite_note-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           At present, formal verification is used by most or all leading hardware companies,
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           but its use in the
+           <a href="/wiki/Software_industry" title="Software industry">
+            software industry
+           </a>
+           is still languishing.
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (December 2011)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           This could be attributed to the greater need in the hardware industry, where errors have greater commercial significance.
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (December 2011)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           Because of the potential subtle interactions between components, it is increasingly difficult to exercise a realistic set of possibilities by simulation. Important aspects of hardware design are amenable to automated proof methods, making formal verification easier to introduce and more productive.
+           <sup class="reference" id="cite_ref-9">
+            <a href="#cite_note-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           As of 2011
+           <sup class="plainlinks noexcerpt noprint asof-tag update" style="display:none;">
+            <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Formal_verification&amp;action=edit">
+             [update]
+            </a>
+           </sup>
+           , several operating systems have been formally verified:
+NICTA's Secure
+           <a href="/wiki/L4_microkernel_family#University_of_New_South_Wales_and_NICTA" title="L4 microkernel family">
+            Embedded L4 microkernel
+           </a>
+           , sold commercially as
+           <a class="mw-redirect" href="/wiki/SeL4" title="SeL4">
+            seL4
+           </a>
+           by OK Labs;
+           <sup class="reference" id="cite_ref-10">
+            <a href="#cite_note-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           OSEK/VDX based real-time operating system ORIENTAIS by
+           <a href="/wiki/East_China_Normal_University" title="East China Normal University">
+            East China Normal University
+           </a>
+           ;
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (March 2012)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           Green Hills Software's
+           <a href="/wiki/Integrity_(operating_system)" title="Integrity (operating system)">
+            Integrity operating system
+           </a>
+           ;
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (March 2012)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           and
+           <a href="/wiki/SYSGO" title="SYSGO">
+            SYSGO
+           </a>
+           's
+           <a href="/wiki/PikeOS" title="PikeOS">
+            PikeOS
+           </a>
+           .
+           <sup class="reference" id="cite_ref-11">
+            <a href="#cite_note-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-12">
+            <a href="#cite_note-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           In 2016, a team led by Zhong Shao at Yale developed a formally verified operating system kernel called CertiKOS.
+           <sup class="reference" id="cite_ref-13">
+            <a href="#cite_note-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-14">
+            <a href="#cite_note-14">
+             <span class="cite-bracket">
+              [
+             </span>
+             14
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           As of 2017, formal verification has been applied to the design of large computer networks through a mathematical model of the network,
+           <sup class="reference" id="cite_ref-15">
+            <a href="#cite_note-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           and as part of a new network technology category, intent-based networking.
+           <sup class="reference" id="cite_ref-16">
+            <a href="#cite_note-16">
+             <span class="cite-bracket">
+              [
+             </span>
+             16
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Network software vendors that offer formal verification solutions include
+           <a href="/wiki/Cisco" title="Cisco">
+            Cisco
+           </a>
+           <sup class="reference" id="cite_ref-17">
+            <a href="#cite_note-17">
+             <span class="cite-bracket">
+              [
+             </span>
+             17
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Forward Networks
+           <sup class="reference" id="cite_ref-18">
+            <a href="#cite_note-18">
+             <span class="cite-bracket">
+              [
+             </span>
+             18
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-19">
+            <a href="#cite_note-19">
+             <span class="cite-bracket">
+              [
+             </span>
+             19
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           and Veriflow Systems.
+           <sup class="reference" id="cite_ref-20">
+            <a href="#cite_note-20">
+             <span class="cite-bracket">
+              [
+             </span>
+             20
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The
+           <a href="/wiki/SPARK_(programming_language)" title="SPARK (programming language)">
+            SPARK programming language
+           </a>
+           provides a toolset which enables software development with formal verification and is
+           <a href="/wiki/SPARK_(programming_language)#Industrial_applications" title="SPARK (programming language)">
+            used in several high-integrity systems
+           </a>
+           .
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (October 2022)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+          </p>
+          <p>
+           The
+           <a href="/wiki/CompCert" title="CompCert">
+            CompCert C compiler
+           </a>
+           is a formally verified C compiler implementing the majority of ISO C.
+           <sup class="reference" id="cite_ref-21">
+            <a href="#cite_note-21">
+             <span class="cite-bracket">
+              [
+             </span>
+             21
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-22">
+            <a href="#cite_note-22">
+             <span class="cite-bracket">
+              [
+             </span>
+             22
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Formal_verification&amp;action=edit&amp;section=6" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1235681985">
+           .mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:var(--background-color-interactive-subtle,#f8f9fa);display:flow-root}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}
+          </style>
+          <style data-mw-deduplicate="TemplateStyles:r1237033735">
+           @media print{body.ns-0 .mw-parser-output .sistersitebox{display:none!important}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}
+          </style>
+          <div class="side-box side-box-right plainlinks sistersitebox">
+           <style data-mw-deduplicate="TemplateStyles:r1126788409">
+            .mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}
+           </style>
+           <div class="side-box-flex">
+            <div class="side-box-image">
+             <span class="noviewer" typeof="mw:File">
+              <span>
+               <img alt="" class="mw-file-element" data-file-height="512" data-file-width="512" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/40px-Wiktionary-logo-en-v2.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/60px-Wiktionary-logo-en-v2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/80px-Wiktionary-logo-en-v2.svg.png 2x" width="40"/>
+              </span>
+             </span>
+            </div>
+            <div class="side-box-text plainlist">
+             Look up
+             <i>
+              <b>
+               <a class="extiw" href="https://en.wiktionary.org/wiki/verifiability" title="wiktionary:verifiability">
+                verifiability
+               </a>
+              </b>
+             </i>
+             in Wiktionary, the free dictionary.
+            </div>
+           </div>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Automated_theorem_proving" title="Automated theorem proving">
+             Automated theorem proving
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Model_checking" title="Model checking">
+             Model checking
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/List_of_model_checking_tools" title="List of model checking tools">
+             List of model checking tools
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Formal_equivalence_checking" title="Formal equivalence checking">
+             Formal equivalence checking
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Proof_checker" title="Proof checker">
+             Proof checker
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Property_Specification_Language" title="Property Specification Language">
+             Property Specification Language
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Static_code_analysis" title="Static code analysis">
+             Static code analysis
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Temporal_logic_in_finite-state_verification" title="Temporal logic in finite-state verification">
+             Temporal logic in finite-state verification
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Post-silicon_validation" title="Post-silicon validation">
+             Post-silicon validation
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Intelligent_verification" title="Intelligent verification">
+             Intelligent verification
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Runtime_verification" title="Runtime verification">
+             Runtime verification
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Formal_verification&amp;action=edit&amp;section=7" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation journal cs1" id="CITEREFSanghavi2010">
+                Sanghavi, Alok (May 21, 2010). "What is formal verification?".
+                <i>
+                 EE Times Asia
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=EE+Times+Asia&amp;rft.atitle=What+is+formal+verification%3F&amp;rft.date=2010-05-21&amp;rft.aulast=Sanghavi&amp;rft.aufirst=Alok&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFSanjit_A._SeshiaNatasha_SharyginaStavros_Tripakis2018">
+                Sanjit A. Seshia; Natasha Sharygina; Stavros Tripakis (2018). "Chapter 3: Modeling for Verification". In Clarke, Edmund M.; Henzinger, Thomas A.; Veith, Helmut; Bloem, Roderick (eds.).
+                <a class="external text" href="https://doi.org/10.1007/978-3-319-10575-8" rel="nofollow">
+                 <i>
+                  Handbook of Model Checking
+                 </i>
+                </a>
+                . Springer. pp. 75–105.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1007%2F978-3-319-10575-8" rel="nofollow">
+                 10.1007/978-3-319-10575-8
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-3-319-10574-1" title="Special:BookSources/978-3-319-10574-1">
+                 <bdi>
+                  978-3-319-10574-1
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Chapter+3%3A+Modeling+for+Verification&amp;rft.btitle=Handbook+of+Model+Checking&amp;rft.pages=75-105&amp;rft.pub=Springer&amp;rft.date=2018&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-319-10575-8&amp;rft.isbn=978-3-319-10574-1&amp;rft.au=Sanjit+A.+Seshia&amp;rft.au=Natasha+Sharygina&amp;rft.au=Stavros+Tripakis&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1007%2F978-3-319-10575-8&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="external text" href="http://embedded.eecs.berkeley.edu/research/vis/doc/VisUser/vis_user/node4.html" rel="nofollow">
+                Introduction to Formal Verification
+               </a>
+               , Berkeley University of California, Retrieved November 6, 2013
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFCohenVenkataramananKumariPiper2015">
+                Cohen, Ben; Venkataramanan, Srinivasan; Kumari, Ajeetha; Piper, Lisa (2015).
+                <i>
+                 SystemVerilog Assertions Handbook
+                </i>
+                (4th ed.). CreateSpace Independent Publishing Platform.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-1518681448" title="Special:BookSources/978-1518681448">
+                 <bdi>
+                  978-1518681448
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=SystemVerilog+Assertions+Handbook&amp;rft.edition=4th&amp;rft.pub=CreateSpace+Independent+Publishing+Platform&amp;rft.date=2015&amp;rft.isbn=978-1518681448&amp;rft.aulast=Cohen&amp;rft.aufirst=Ben&amp;rft.au=Venkataramanan%2C+Srinivasan&amp;rft.au=Kumari%2C+Ajeetha&amp;rft.au=Piper%2C+Lisa&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFLe_GouesNguyenForrestWeimer2012">
+                Le Goues, Claire; Nguyen, ThanhVu; Forrest, Stephanie; Weimer, Westley (January 2012).
+                <a class="external text" href="https://www.proquest.com/openview/f837f11066e9c9552df9e497064d6d80/1?pq-origsite=gscholar&amp;cbl=21418&amp;casa_token=X2fQSRNgLNwAAAAA:CBjvmrcBLZRqV7kjC-MY74s0wF68lhBvLF6rV4DWZkalzo2KdlUUzuMU38YgSmXGbwEL2NAr4w" rel="nofollow">
+                 "GenProg: A Generic Method for Automatic Software Repair"
+                </a>
+                .
+                <i>
+                 IEEE Transactions on Software Engineering
+                </i>
+                .
+                <b>
+                 38
+                </b>
+                (1): 54–72.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2FTSE.2011.104" rel="nofollow">
+                 10.1109/TSE.2011.104
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:4111307" rel="nofollow">
+                 4111307
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Software+Engineering&amp;rft.atitle=GenProg%3A+A+Generic+Method+for+Automatic+Software+Repair&amp;rft.volume=38&amp;rft.issue=1&amp;rft.pages=54-72&amp;rft.date=2012-01&amp;rft_id=info%3Adoi%2F10.1109%2FTSE.2011.104&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A4111307%23id-name%3DS2CID&amp;rft.aulast=Le+Goues&amp;rft.aufirst=Claire&amp;rft.au=Nguyen%2C+ThanhVu&amp;rft.au=Forrest%2C+Stephanie&amp;rft.au=Weimer%2C+Westley&amp;rft_id=https%3A%2F%2Fwww.proquest.com%2Fopenview%2Ff837f11066e9c9552df9e497064d6d80%2F1%3Fpq-origsite%3Dgscholar%26cbl%3D21418%26casa_token%3DX2fQSRNgLNwAAAAA%3ACBjvmrcBLZRqV7kjC-MY74s0wF68lhBvLF6rV4DWZkalzo2KdlUUzuMU38YgSmXGbwEL2NAr4w&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFHarrison2003">
+                Harrison, J. (2003). "Formal verification at Intel".
+                <i>
+                 18th Annual IEEE Symposium of Logic in Computer Science, 2003. Proceedings
+                </i>
+                . pp. 45–54.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2FLICS.2003.1210044" rel="nofollow">
+                 10.1109/LICS.2003.1210044
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-7695-1884-8" title="Special:BookSources/978-0-7695-1884-8">
+                 <bdi>
+                  978-0-7695-1884-8
+                 </bdi>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:44585546" rel="nofollow">
+                 44585546
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Formal+verification+at+Intel&amp;rft.btitle=18th+Annual+IEEE+Symposium+of+Logic+in+Computer+Science%2C+2003.+Proceedings&amp;rft.pages=45-54&amp;rft.date=2003&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A44585546%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FLICS.2003.1210044&amp;rft.isbn=978-0-7695-1884-8&amp;rft.aulast=Harrison&amp;rft.aufirst=J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="external text" href="http://portal.acm.org/citation.cfm?id=800667" rel="nofollow">
+                Formal verification of a real-time hardware design
+               </a>
+               . Portal.acm.org (June 27, 1983). Retrieved on April 30, 2011.
+              </span>
+             </li>
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://formalverificationbook.com" rel="nofollow">
+                 "Formal Verification: An Essential Tool for Modern VLSI Design by Erik Seligman, Tom Schubert, and M V Achutha Kirankumar"
+                </a>
+                . 2015.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Formal+Verification%3A+An+Essential+Tool+for+Modern+VLSI+Design+by+Erik+Seligman%2C+Tom+Schubert%2C+and+M+V+Achutha+Kirankumar&amp;rft.date=2015&amp;rft_id=http%3A%2F%2Fformalverificationbook.com&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-9">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://www.cl.cam.ac.uk/~jrh13/slides/types-04sep99/slides1.pdf" rel="nofollow">
+                 "Formal Verification in Industry"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  September 20,
+                 </span>
+                 2012
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Formal+Verification+in+Industry&amp;rft_id=http%3A%2F%2Fwww.cl.cam.ac.uk%2F~jrh13%2Fslides%2Ftypes-04sep99%2Fslides1.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://web.archive.org/web/20150521171234/https://sel4.systems/Docs/seL4-spec.pdf" rel="nofollow">
+                 "Abstract Formal Specification of the seL4/ARMv6 API"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                . Archived from
+                <a class="external text" href="https://sel4.systems/Docs/seL4-spec.pdf" rel="nofollow">
+                 the original
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                on May 21, 2015
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  May 19,
+                 </span>
+                 2015
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Abstract+Formal+Specification+of+the+seL4%2FARMv6+API&amp;rft_id=https%3A%2F%2Fsel4.systems%2FDocs%2FseL4-spec.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-11">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               Christoph Baumann, Bernhard Beckert, Holger Blasum, and Thorsten Bormer
+               <a class="external text" href="http://www-wjp.cs.uni-saarland.de/publikationen/Ba10EW.pdf" rel="nofollow">
+                Ingredients of Operating System Correctness? Lessons Learned in the Formal Verification of PikeOS
+               </a>
+               <a class="external text" href="https://web.archive.org/web/20110719110932/http://www-wjp.cs.uni-saarland.de/publikationen/Ba10EW.pdf" rel="nofollow">
+                Archived
+               </a>
+               July 19, 2011, at the
+               <a href="/wiki/Wayback_Machine" title="Wayback Machine">
+                Wayback Machine
+               </a>
+              </span>
+             </li>
+             <li id="cite_note-12">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-12">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="external text" href="http://www.ganssle.com/rants/gettingitright.htm" rel="nofollow">
+                "Getting it Right"
+               </a>
+               by Jack Ganssle
+              </span>
+             </li>
+             <li id="cite_note-13">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-13">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFHarris">
+                Harris, Robin.
+                <a class="external text" href="https://www.zdnet.com/article/certikos-a-hacker-proof-os/" rel="nofollow">
+                 "Unhackable OS? CertiKOS enables creation of secure system kernels"
+                </a>
+                .
+                <i>
+                 ZDNet
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 10,
+                 </span>
+                 2019
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=ZDNet&amp;rft.atitle=Unhackable+OS%3F+CertiKOS+enables+creation+of+secure+system+kernels&amp;rft.aulast=Harris&amp;rft.aufirst=Robin&amp;rft_id=https%3A%2F%2Fwww.zdnet.com%2Farticle%2Fcertikos-a-hacker-proof-os%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-14">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-14">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.ibtimes.co.uk/certikos-yale-develops-worlds-first-hacker-resistant-operating-system-1591712" rel="nofollow">
+                 "CertiKOS: Yale develops world's first hacker-resistant operating system"
+                </a>
+                .
+                <i>
+                 International Business Times UK
+                </i>
+                . November 15, 2016
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 10,
+                 </span>
+                 2019
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=International+Business+Times+UK&amp;rft.atitle=CertiKOS%3A+Yale+develops+world%27s+first+hacker-resistant+operating+system&amp;rft.date=2016-11-15&amp;rft_id=https%3A%2F%2Fwww.ibtimes.co.uk%2Fcertikos-yale-develops-worlds-first-hacker-resistant-operating-system-1591712&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-15">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-15">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFScroxton">
+                Scroxton, Alex.
+                <a class="external text" href="http://www.computerweekly.com/news/252434028/For-Cisco-intent-based-networking-heralds-future-tech-demands" rel="nofollow">
+                 "For Cisco, intent-based networking heralds future tech demands"
+                </a>
+                . Computer Weekly
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  February 12,
+                 </span>
+                 2018
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=For+Cisco%2C+intent-based+networking+heralds+future+tech+demands&amp;rft.pub=Computer+Weekly&amp;rft.aulast=Scroxton&amp;rft.aufirst=Alex&amp;rft_id=http%3A%2F%2Fwww.computerweekly.com%2Fnews%2F252434028%2FFor-Cisco-intent-based-networking-heralds-future-tech-demands&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-16">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-16">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFLerner">
+                Lerner, Andrew.
+                <a class="external text" href="https://blogs.gartner.com/andrew-lerner/2017/02/07/intent-based-networking/" rel="nofollow">
+                 "Intent-based networking"
+                </a>
+                . Gartner
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  February 12,
+                 </span>
+                 2018
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Intent-based+networking&amp;rft.pub=Gartner&amp;rft.aulast=Lerner&amp;rft.aufirst=Andrew&amp;rft_id=https%3A%2F%2Fblogs.gartner.com%2Fandrew-lerner%2F2017%2F02%2F07%2Fintent-based-networking%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-17">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-17">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFKerravala">
+                Kerravala, Zeus.
+                <a class="external text" href="https://www.networkworld.com/article/965142/cisco-brings-intent-based-networks-to-the-data-center.html" rel="nofollow">
+                 "Cisco brings intent based networks to the data center"
+                </a>
+                . NetworkWorld.
+                <a class="external text" href="https://web.archive.org/web/20231211215137/https://www.networkworld.com/article/965142/cisco-brings-intent-based-networks-to-the-data-center.html" rel="nofollow">
+                 Archived
+                </a>
+                from the original on December 11, 2023
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  February 12,
+                 </span>
+                 2018
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Cisco+brings+intent+based+networks+to+the+data+center&amp;rft.pub=NetworkWorld&amp;rft.aulast=Kerravala&amp;rft.aufirst=Zeus&amp;rft_id=https%3A%2F%2Fwww.networkworld.com%2Farticle%2F965142%2Fcisco-brings-intent-based-networks-to-the-data-center.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-18">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-18">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://www.insightssuccess.com/forward-networks-accelerating-de-risking-network-operations/" rel="nofollow">
+                 "Forward Networks: Accelerating and De-risking Network Operations"
+                </a>
+                . Insights Success. January 16, 2018
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  February 12,
+                 </span>
+                 2018
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Forward+Networks%3A+Accelerating+and+De-risking+Network+Operations&amp;rft.pub=Insights+Success&amp;rft.date=2018-01-16&amp;rft_id=http%3A%2F%2Fwww.insightssuccess.com%2Fforward-networks-accelerating-de-risking-network-operations%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-19">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-19">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://images.idgesg.net/assets/2018/01/idg_2018_intent-based_networking.pdf" rel="nofollow">
+                 "Getting Grounded in Intent=based Networking"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                . NetworkWorld
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  February 12,
+                 </span>
+                 2018
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Getting+Grounded+in+Intent%3Dbased+Networking&amp;rft.pub=NetworkWorld&amp;rft_id=https%3A%2F%2Fimages.idgesg.net%2Fassets%2F2018%2F01%2Fidg_2018_intent-based_networking.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-20">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-20">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapid=274750862" rel="nofollow">
+                 "Veriflow Systems"
+                </a>
+                . Bloomberg
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  February 12,
+                 </span>
+                 2018
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Veriflow+Systems&amp;rft.pub=Bloomberg&amp;rft_id=https%3A%2F%2Fwww.bloomberg.com%2Fresearch%2Fstocks%2Fprivate%2Fsnapshot.asp%3Fprivcapid%3D274750862&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-21">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-21">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://compcert.org/compcert-C.html" rel="nofollow">
+                 "CompCert - The CompCert C compiler"
+                </a>
+                .
+                <i>
+                 compcert.org
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  February 22,
+                 </span>
+                 2023
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=compcert.org&amp;rft.atitle=CompCert+-+The+CompCert+C+compiler&amp;rft_id=https%3A%2F%2Fcompcert.org%2Fcompcert-C.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-22">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-22">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFBarrièreBlazyPichardie2023">
+                Barrière, Aurèle;
+                <a href="/wiki/Sandrine_Blazy" title="Sandrine Blazy">
+                 Blazy, Sandrine
+                </a>
+                ; Pichardie, David (January 9, 2023).
+                <a class="external text" href="https://doi.org/10.1145%2F3571202" rel="nofollow">
+                 "Formally Verified Native Code Generation in an Effectful JIT: Turning the CompCert Backend into a Formally Verified JIT Compiler"
+                </a>
+                .
+                <i>
+                 Proceedings of the ACM on Programming Languages
+                </i>
+                .
+                <b>
+                 7
+                </b>
+                (POPL): 249–277.
+                <a class="mw-redirect" href="/wiki/ArXiv_(identifier)" title="ArXiv (identifier)">
+                 arXiv
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://arxiv.org/abs/2212.03129" rel="nofollow">
+                  2212.03129
+                 </a>
+                </span>
+                .
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://doi.org/10.1145%2F3571202" rel="nofollow">
+                  10.1145/3571202
+                 </a>
+                </span>
+                .
+                <a class="mw-redirect" href="/wiki/ISSN_(identifier)" title="ISSN (identifier)">
+                 ISSN
+                </a>
+                <a class="external text" href="https://search.worldcat.org/issn/2475-1421" rel="nofollow">
+                 2475-1421
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:253736486" rel="nofollow">
+                 253736486
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+ACM+on+Programming+Languages&amp;rft.atitle=Formally+Verified+Native+Code+Generation+in+an+Effectful+JIT%3A+Turning+the+CompCert+Backend+into+a+Formally+Verified+JIT+Compiler&amp;rft.volume=7&amp;rft.issue=POPL&amp;rft.pages=249-277&amp;rft.date=2023-01-09&amp;rft_id=info%3Aarxiv%2F2212.03129&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A253736486%23id-name%3DS2CID&amp;rft.issn=2475-1421&amp;rft_id=info%3Adoi%2F10.1145%2F3571202&amp;rft.aulast=Barri%C3%A8re&amp;rft.aufirst=Aur%C3%A8le&amp;rft.au=Blazy%2C+Sandrine&amp;rft.au=Pichardie%2C+David&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1145%252F3571202&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFormal+verification">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐d2jx5
+Cached time: 20240926232716
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.611 seconds
+Real time usage: 0.776 seconds
+Preprocessor visited node count: 2972/1000000
+Post‐expand include size: 62602/2097152 bytes
+Template argument size: 7435/2097152 bytes
+Highest expansion depth: 15/100
+Expensive parser function count: 15/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 70516/5000000 bytes
+Lua time usage: 0.373/10.000 seconds
+Lua memory usage: 7085510/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  714.137      1 -total
+ 40.79%  291.274      1 Template:Reflist
+ 17.80%  127.095      3 Template:Cite_journal
+ 17.04%  121.657      1 Template:Short_description
+ 13.47%   96.224      6 Template:Citation_needed
+ 12.85%   91.754     12 Template:Main_other
+ 12.02%   85.831     12 Template:Cite_web
+ 11.28%   80.546      6 Template:Fix
+  8.83%   63.033      1 Template:Cleanup
+  8.06%   57.554      2 Template:Pagetype
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:270054-0!canonical and timestamp 20240926232716 and revision id 1243999563. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Formal_verification&amp;oldid=1243999563">
+          https://en.wikipedia.org/w/index.php?title=Formal_verification&amp;oldid=1243999563
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Electronic_circuit_verification" title="Category:Electronic circuit verification">
+            Electronic circuit verification
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Formal_methods" title="Category:Formal methods">
+            Formal methods
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Logic_in_computer_science" title="Category:Logic in computer science">
+            Logic in computer science
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Theoretical_computer_science" title="Category:Theoretical computer science">
+            Theoretical computer science
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">
+            Webarchive template wayback links
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Use_mdy_dates_from_June_2019" title="Category:Use mdy dates from June 2019">
+            Use mdy dates from June 2019
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">
+            All articles with unsourced statements
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_December_2014" title="Category:Articles with unsourced statements from December 2014">
+            Articles with unsourced statements from December 2014
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_cleanup_from_October_2022" title="Category:Articles needing cleanup from October 2022">
+            Articles needing cleanup from October 2022
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_pages_needing_cleanup" title="Category:All pages needing cleanup">
+            All pages needing cleanup
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Cleanup_tagged_articles_with_a_reason_field_from_October_2022" title="Category:Cleanup tagged articles with a reason field from October 2022">
+            Cleanup tagged articles with a reason field from October 2022
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_pages_needing_cleanup_from_October_2022" title="Category:Wikipedia pages needing cleanup from October 2022">
+            Wikipedia pages needing cleanup from October 2022
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_December_2011" title="Category:Articles with unsourced statements from December 2011">
+            Articles with unsourced statements from December 2011
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_2011" title="Category:Articles containing potentially dated statements from 2011">
+            Articles containing potentially dated statements from 2011
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">
+            All articles containing potentially dated statements
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_March_2012" title="Category:Articles with unsourced statements from March 2012">
+            Articles with unsourced statements from March 2012
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_October_2022" title="Category:Articles with unsourced statements from October 2022">
+            Articles with unsourced statements from October 2022
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 4 September 2024, at 14:30
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Formal_verification&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-bxlzc","wgBackendResponseTime":150,"wgPageParseReport":{"limitreport":{"cputime":"0.611","walltime":"0.776","ppvisitednodes":{"value":2972,"limit":1000000},"postexpandincludesize":{"value":62602,"limit":2097152},"templateargumentsize":{"value":7435,"limit":2097152},"expansiondepth":{"value":15,"limit":100},"expensivefunctioncount":{"value":15,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":70516,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  714.137      1 -total"," 40.79%  291.274      1 Template:Reflist"," 17.80%  127.095      3 Template:Cite_journal"," 17.04%  121.657      1 Template:Short_description"," 13.47%   96.224      6 Template:Citation_needed"," 12.85%   91.754     12 Template:Main_other"," 12.02%   85.831     12 Template:Cite_web"," 11.28%   80.546      6 Template:Fix","  8.83%   63.033      1 Template:Cleanup","  8.06%   57.554      2 Template:Pagetype"]},"scribunto":{"limitreport-timeusage":{"value":"0.373","limit":"10.000"},"limitreport-memusage":{"value":7085510,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-d2jx5","timestamp":"20240926232716","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Formal verification","url":"https:\/\/en.wikipedia.org\/wiki\/Formal_verification","sameAs":"http:\/\/www.wikidata.org\/entity\/Q173326","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q173326","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-07-17T07:06:30Z","dateModified":"2024-09-04T14:30:17Z","headline":"act of proving or disproving the correctness of intended algorithms"}
+  </script>
+ </body>
+</html>

@@ -1,0 +1,3114 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Control-flow integrity - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d92d6c2a-2a9b-47f2-9e1e-d29f82c4b442","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Control-flow_integrity","wgTitle":"Control-flow integrity","wgCurRevisionId":1239413265,"wgRevisionId":1239413265,"wgArticleId":50695372,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 German-language sources (de)","Articles with short description","Short description matches Wikidata","Articles to be expanded from September 2020","All articles to be expanded","Articles to be expanded from January 2021","Computer security","Control flow integrity"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Control-flow_integrity","wgRelevantArticleId":50695372,"wgIsProbablyEditable":true,
+"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q27627868","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],
+"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups",
+"ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Control-flow integrity - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Control-flow_integrity" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Control-flow_integrity&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Control-flow_integrity" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Control-flow_integrity"/>
+  <meta eecs485_docid="39287498"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Control-flow_integrity rootpage-Control-flow_integrity skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Control-flow+integrity" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Control-flow+integrity" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Control-flow+integrity" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Control-flow+integrity" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Background">
+           <a class="vector-toc-link" href="#Background">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Background
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Background-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Techniques">
+           <a class="vector-toc-link" href="#Techniques">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Techniques
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Techniques-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Implementations">
+           <a class="vector-toc-link" href="#Implementations">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Implementations
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Implementations-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Implementations subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Implementations-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-LLVM/Clang">
+             <a class="vector-toc-link" href="#LLVM/Clang">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.1
+               </span>
+               <span>
+                LLVM/Clang
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-LLVM/Clang-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Intel_Control-flow_Enforcement_Technology">
+             <a class="vector-toc-link" href="#Intel_Control-flow_Enforcement_Technology">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.2
+               </span>
+               <span>
+                Intel Control-flow Enforcement Technology
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Intel_Control-flow_Enforcement_Technology-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Microsoft_Control_Flow_Guard">
+             <a class="vector-toc-link" href="#Microsoft_Control_Flow_Guard">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.3
+               </span>
+               <span>
+                Microsoft Control Flow Guard
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Microsoft_Control_Flow_Guard-sublist">
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Implementation_details">
+               <a class="vector-toc-link" href="#Implementation_details">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  3.3.1
+                 </span>
+                 <span>
+                  Implementation details
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Implementation_details-sublist">
+               </ul>
+              </li>
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Bypass_techniques">
+               <a class="vector-toc-link" href="#Bypass_techniques">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  3.3.2
+                 </span>
+                 <span>
+                  Bypass techniques
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Bypass_techniques-sublist">
+               </ul>
+              </li>
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Microsoft_eXtended_Flow_Guard">
+             <a class="vector-toc-link" href="#Microsoft_eXtended_Flow_Guard">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.4
+               </span>
+               <span>
+                Microsoft eXtended Flow Guard
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Microsoft_eXtended_Flow_Guard-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Control-flow integrity
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 1 language" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-1" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          1 language
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Control-flow integrity" href="https://ru.wikipedia.org/wiki/Control-flow_integrity" hreflang="ru" lang="ru" title="Control-flow integrity – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q27627868#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Control-flow_integrity" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Control-flow_integrity" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Control-flow_integrity">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Control-flow_integrity&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Control-flow_integrity&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Control-flow_integrity">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Control-flow_integrity&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Control-flow_integrity&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Control-flow_integrity" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Control-flow_integrity" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Control-flow_integrity&amp;oldid=1239413265" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Control-flow_integrity&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Control-flow_integrity&amp;id=1239413265&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FControl-flow_integrity">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FControl-flow_integrity">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q27627868" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Control-flow_integrity&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Control-flow_integrity&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          Not to be confused with
+          <a class="mw-redirect" href="/wiki/Common_Flash_Interface" title="Common Flash Interface">
+           Common Flash Interface
+          </a>
+          , the flash memory device identification standard.
+         </div>
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Term in computer security
+         </div>
+         <p>
+          <b>
+           Control-flow integrity
+          </b>
+          (
+          <b>
+           CFI
+          </b>
+          ) is a general term for
+          <a href="/wiki/Computer_security" title="Computer security">
+           computer security
+          </a>
+          techniques that prevent a wide variety of
+          <a href="/wiki/Malware" title="Malware">
+           malware
+          </a>
+          attacks from redirecting the flow of execution (the
+          <a href="/wiki/Control_flow" title="Control flow">
+           control flow
+          </a>
+          ) of a program.
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Background">
+            Background
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=1" title="Edit section: Background">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           A computer program commonly changes its control flow to make decisions and use different parts of the code. Such transfers may be
+           <i>
+            direct
+           </i>
+           , in that the target address is written in the code itself, or
+           <i>
+            indirect
+           </i>
+           , in that the target address itself is a variable in memory or a CPU register. In a typical function call, the program performs a direct call, but returns to the caller function using the stack – an indirect
+           <i>
+            backward-edge
+           </i>
+           transfer. When a
+           <a href="/wiki/Function_pointer" title="Function pointer">
+            function pointer
+           </a>
+           is called, such as from a
+           <a class="mw-redirect" href="/wiki/Virtual_table" title="Virtual table">
+            virtual table
+           </a>
+           , we say there is an indirect
+           <i>
+            forward-edge
+           </i>
+           transfer.
+           <sup class="reference" id="cite_ref-Payer_1-0">
+            <a href="#cite_note-Payer-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-2">
+            <a href="#cite_note-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Attackers seek to inject code into a program to make use of its privileges or to extract data from its memory space. Before executable code was commonly made read-only, an attacker could arbitrarily change the code as it is run, targeting direct transfers or even do with no transfers at all. After
+           <a href="/wiki/W%5EX" title="W^X">
+            W^X
+           </a>
+           became widespread, an attacker wants to instead redirect execution to a separate, unprotected area containing the code to be run, making use of indirect transfers: one could overwrite the virtual table for a forward-edge attack or change the call stack for a backward-edge attack (
+           <a href="/wiki/Return-oriented_programming" title="Return-oriented programming">
+            return-oriented programming
+           </a>
+           ). CFI is designed to protect indirect transfers from going to unintended locations.
+           <sup class="reference" id="cite_ref-Payer_1-1">
+            <a href="#cite_note-Payer-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Techniques">
+            Techniques
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=2" title="Edit section: Techniques">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Associated techniques include code-pointer separation (CPS), code-pointer integrity (CPI),
+           <a class="mw-redirect" href="/wiki/Stack_canary" title="Stack canary">
+            stack canaries
+           </a>
+           ,
+           <a href="/wiki/Shadow_stack" title="Shadow stack">
+            shadow stacks
+           </a>
+           , and
+           <a href="/wiki/Virtual_method_table" title="Virtual method table">
+            vtable
+           </a>
+           pointer verification.
+           <sup class="reference" id="cite_ref-cfi_vs_vps_vs_cpi_3-0">
+            <a href="#cite_note-cfi_vs_vps_vs_cpi-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-adobe_darkreading_4-0">
+            <a href="#cite_note-adobe_darkreading-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-endgame_blackhat_5-0">
+            <a href="#cite_note-endgame_blackhat-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Implementations">
+            Implementations
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=3" title="Edit section: Implementations">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Related implementations are available in
+           <a href="/wiki/Clang" title="Clang">
+            Clang
+           </a>
+           (LLVM in general),
+           <sup class="reference" id="cite_ref-clang_cfi_6-0">
+            <a href="#cite_note-clang_cfi-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Microsoft's Control Flow Guard
+           <sup class="reference" id="cite_ref-theregister_windows_cfg_7-0">
+            <a href="#cite_note-theregister_windows_cfg-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-threatpost_cfg_8-0">
+            <a href="#cite_note-threatpost_cfg-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-derbycon_bluehat_9-0">
+            <a href="#cite_note-derbycon_bluehat-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           and Return Flow Guard,
+           <sup class="reference" id="cite_ref-Tencent_-_Return_Flow_Guard_10-0">
+            <a href="#cite_note-Tencent_-_Return_Flow_Guard-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Google's Indirect Function-Call Checks
+           <sup class="reference" id="cite_ref-gcc_cfi_usenix14_11-0">
+            <a href="#cite_note-gcc_cfi_usenix14-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           and Reuse Attack Protector (RAP).
+           <sup class="reference" id="cite_ref-pax_rap_de_12-0">
+            <a href="#cite_note-pax_rap_de-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-grsecurity_rap_13-0">
+            <a href="#cite_note-grsecurity_rap-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="LLVM/Clang">
+            <span id="LLVM.2FClang">
+            </span>
+            LLVM/Clang
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=4" title="Edit section: LLVM/Clang">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1236091366">
+           .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+          </style>
+          <table class="box-Expand_section plainlinks metadata ambox mbox-small-left ambox-content" role="presentation">
+           <tbody>
+            <tr>
+             <td class="mbox-image">
+              <span typeof="mw:File">
+               <a class="mw-file-description" href="/wiki/File:Wiki_letter_w_cropped.svg">
+                <img alt="[icon]" class="mw-file-element" data-file-height="31" data-file-width="44" decoding="async" height="14" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/30px-Wiki_letter_w_cropped.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/40px-Wiki_letter_w_cropped.svg.png 2x" width="20"/>
+               </a>
+              </span>
+             </td>
+             <td class="mbox-text">
+              <div class="mbox-text-span">
+               This section
+               <b>
+                needs expansion
+               </b>
+               . You can help by
+               <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=">
+                adding to it
+               </a>
+               .
+               <span class="date-container">
+                <i>
+                 (
+                 <span class="date">
+                  September 2020
+                 </span>
+                 )
+                </i>
+               </span>
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <p>
+           LLVM/Clang provides a "CFI" option that works in the forward edge by checking for errors in
+           <a class="mw-redirect" href="/wiki/Virtual_table" title="Virtual table">
+            virtual tables
+           </a>
+           and type casts. It depends on
+           <a class="mw-redirect" href="/wiki/Link-time_optimization" title="Link-time optimization">
+            link-time optimization
+           </a>
+           (LTO) to know what functions are supposed to be called in normal cases.
+           <sup class="reference" id="cite_ref-14">
+            <a href="#cite_note-14">
+             <span class="cite-bracket">
+              [
+             </span>
+             14
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           There is a separate "
+           <a class="mw-redirect" href="/wiki/Shadow_call_stack" title="Shadow call stack">
+            shadow call stack
+           </a>
+           " scheme that defends on the backward edge by checking for call stack modifications, available only for aarch64.
+           <sup class="reference" id="cite_ref-15">
+            <a href="#cite_note-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Google has shipped
+           <a class="mw-redirect" href="/wiki/Android_(OS)" title="Android (OS)">
+            Android
+           </a>
+           with the
+           <a href="/wiki/Linux_kernel" title="Linux kernel">
+            Linux kernel
+           </a>
+           compiled by Clang with
+           <a class="mw-redirect" href="/wiki/Link-time_optimization" title="Link-time optimization">
+            link-time optimization
+           </a>
+           (LTO) and CFI since 2018.
+           <sup class="reference" id="cite_ref-16">
+            <a href="#cite_note-16">
+             <span class="cite-bracket">
+              [
+             </span>
+             16
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           SCS is available for Linux kernel as an option, including on Android.
+           <sup class="reference" id="cite_ref-17">
+            <a href="#cite_note-17">
+             <span class="cite-bracket">
+              [
+             </span>
+             17
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Intel_Control-flow_Enforcement_Technology">
+            Intel Control-flow Enforcement Technology
+            <span class="anchor" id="CET">
+            </span>
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=5" title="Edit section: Intel Control-flow Enforcement Technology">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+          <table class="box-Expand_section plainlinks metadata ambox mbox-small-left ambox-content" role="presentation">
+           <tbody>
+            <tr>
+             <td class="mbox-image">
+              <span typeof="mw:File">
+               <a class="mw-file-description" href="/wiki/File:Wiki_letter_w_cropped.svg">
+                <img alt="[icon]" class="mw-file-element" data-file-height="31" data-file-width="44" decoding="async" height="14" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/30px-Wiki_letter_w_cropped.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/40px-Wiki_letter_w_cropped.svg.png 2x" width="20"/>
+               </a>
+              </span>
+             </td>
+             <td class="mbox-text">
+              <div class="mbox-text-span">
+               This section
+               <b>
+                needs expansion
+               </b>
+               . You can help by
+               <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=">
+                adding to it
+               </a>
+               .
+               <span class="date-container">
+                <i>
+                 (
+                 <span class="date">
+                  January 2021
+                 </span>
+                 )
+                </i>
+               </span>
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <p>
+           Intel Control-flow Enforcement Technology (CET) detects compromises to control flow integrity with a
+           <a href="/wiki/Shadow_stack" title="Shadow stack">
+            shadow stack
+           </a>
+           (SS) and
+           <a href="/wiki/Indirect_branch_tracking" title="Indirect branch tracking">
+            indirect branch tracking
+           </a>
+           (IBT).
+           <sup class="reference" id="cite_ref-Control-flow_Enforcement_Technology_Specification_18-0">
+            <a href="#cite_note-Control-flow_Enforcement_Technology_Specification-18">
+             <span class="cite-bracket">
+              [
+             </span>
+             18
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-R.I.P_ROP:_CET_Internals_in_Windows_20H1_19-0">
+            <a href="#cite_note-R.I.P_ROP:_CET_Internals_in_Windows_20H1-19">
+             <span class="cite-bracket">
+              [
+             </span>
+             19
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The shadow stack stores a copy of the return address of each CALL in a specially-protected shadow stack. On a RET, the processor checks if the return address stored in the normal stack and shadow stack are equal. If the addresses are not equal, the processor generates an INT #21 (Control Flow Protection Fault).
+          </p>
+          <p>
+           Indirect branch tracking detects indirect JMP or CALL instructions with unauthorized targets. It is implemented by adding a new internal state machine in the processor. The behavior of indirect JMP and CALL instructions is changed so that they switch the state machine from IDLE to WAIT_FOR_ENDBRANCH. In the WAIT_FOR_ENDBRANCH state, the next instruction to be executed is required to be the new ENDBRANCH instruction (ENDBR32 in 32-bit mode or ENDBR64 in 64-bit mode), which changes the internal state machine from WAIT_FOR_ENDBRANCH back to IDLE. Thus every authorized target of an indirect JMP or CALL must begin with ENDBRANCH. If the processor is in a WAIT_FOR_ENDBRANCH state (meaning, the previous instruction was an indirect JMP or CALL), and the next instruction is not an ENDBRANCH instruction, the processor generates an INT #21 (Control Flow Protection Fault). On processors not supporting CET indirect branch tracking, ENDBRANCH instructions are interpreted as NOPs and have no effect.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Microsoft_Control_Flow_Guard">
+            Microsoft Control Flow Guard
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=6" title="Edit section: Microsoft Control Flow Guard">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Control Flow Guard (CFG) was first released for
+           <a href="/wiki/Windows_8.1" title="Windows 8.1">
+            Windows 8.1
+           </a>
+           Update 3 (KB3000850) in November 2014. Developers can add CFG to their programs by adding the
+           <code>
+            /guard:cf
+           </code>
+           linker flag before program linking in Visual Studio 2015 or newer.
+           <sup class="reference" id="cite_ref-MSDN_-_Control_Flow_Guard_20-0">
+            <a href="#cite_note-MSDN_-_Control_Flow_Guard-20">
+             <span class="cite-bracket">
+              [
+             </span>
+             20
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           As of
+           <a class="mw-redirect" href="/wiki/Windows_10_Creators_Update" title="Windows 10 Creators Update">
+            Windows 10 Creators Update
+           </a>
+           (Windows 10 version 1703), the Windows kernel is compiled with CFG.
+           <sup class="reference" id="cite_ref-TechNet_-_Shadow_Brokers_21-0">
+            <a href="#cite_note-TechNet_-_Shadow_Brokers-21">
+             <span class="cite-bracket">
+              [
+             </span>
+             21
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The Windows kernel uses
+           <a href="/wiki/Hyper-V" title="Hyper-V">
+            Hyper-V
+           </a>
+           to prevent malicious kernel code from overwriting the CFG bitmap.
+           <sup class="reference" id="cite_ref-Ionescu_-_Universally_Bypassing_CFG_Through_Mutability_Abuse_22-0">
+            <a href="#cite_note-Ionescu_-_Universally_Bypassing_CFG_Through_Mutability_Abuse-22">
+             <span class="cite-bracket">
+              [
+             </span>
+             22
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           CFG operates by creating a per-process
+           <a href="/wiki/Bitmap" title="Bitmap">
+            bitmap
+           </a>
+           , where a set bit indicates that the address is a valid destination. Before performing each indirect function call, the application checks if the destination address is in the bitmap. If the destination address is not in the bitmap, the program terminates.
+           <sup class="reference" id="cite_ref-MSDN_-_Control_Flow_Guard_20-1">
+            <a href="#cite_note-MSDN_-_Control_Flow_Guard-20">
+             <span class="cite-bracket">
+              [
+             </span>
+             20
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           This makes it more difficult for an attacker to exploit a
+           <a class="mw-redirect" href="/wiki/Use-after-free" title="Use-after-free">
+            use-after-free
+           </a>
+           by replacing an object's contents and then using an indirect function call to execute a payload.
+           <sup class="reference" id="cite_ref-Exploiting_CVE-2015-0311,_Part_II_23-0">
+            <a href="#cite_note-Exploiting_CVE-2015-0311,_Part_II-23">
+             <span class="cite-bracket">
+              [
+             </span>
+             23
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Implementation_details">
+            Implementation details
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=7" title="Edit section: Implementation details">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           For all protected indirect function calls, the
+           <code>
+            _guard_check_icall
+           </code>
+           function is called, which performs the following steps:
+           <sup class="reference" id="cite_ref-Exploring_Control_Flow_Guard_in_Windows_10_24-0">
+            <a href="#cite_note-Exploring_Control_Flow_Guard_in_Windows_10-24">
+             <span class="cite-bracket">
+              [
+             </span>
+             24
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <ol>
+           <li>
+            Convert the target address to an offset and bit number in the bitmap.
+            <ol>
+             <li>
+              The highest 3 bytes are the byte offset in the bitmap
+             </li>
+             <li>
+              The bit offset is a 5-bit value. The first four bits are the 4th through 8th low-order bits of the address.
+             </li>
+             <li>
+              The 5th bit of the bit offset is set to 0 if the destination address is aligned with 0x10 (last four bits are 0), and 1 if it is not.
+             </li>
+            </ol>
+           </li>
+           <li>
+            Examine the target's address value in the bitmap
+            <ol>
+             <li>
+              If the target address is in the bitmap, return without an error.
+             </li>
+             <li>
+              If the target address is not in the bitmap, terminate the program.
+             </li>
+            </ol>
+           </li>
+          </ol>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Bypass_techniques">
+            Bypass techniques
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=8" title="Edit section: Bypass techniques">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           There are several generic techniques for bypassing CFG:
+          </p>
+          <ul>
+           <li>
+            Set the destination to code located in a non-CFG module loaded in the same process.
+            <sup class="reference" id="cite_ref-Exploiting_CVE-2015-0311,_Part_II_23-1">
+             <a href="#cite_note-Exploiting_CVE-2015-0311,_Part_II-23">
+              <span class="cite-bracket">
+               [
+              </span>
+              23
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="reference" id="cite_ref-Windows_10_Control_Flow_Guard_Internals_25-0">
+             <a href="#cite_note-Windows_10_Control_Flow_Guard_Internals-25">
+              <span class="cite-bracket">
+               [
+              </span>
+              25
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Find an indirect call that was not protected by CFG (either CALL or JMP).
+            <sup class="reference" id="cite_ref-Exploiting_CVE-2015-0311,_Part_II_23-2">
+             <a href="#cite_note-Exploiting_CVE-2015-0311,_Part_II-23">
+              <span class="cite-bracket">
+               [
+              </span>
+              23
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="reference" id="cite_ref-Windows_10_Control_Flow_Guard_Internals_25-1">
+             <a href="#cite_note-Windows_10_Control_Flow_Guard_Internals-25">
+              <span class="cite-bracket">
+               [
+              </span>
+              25
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="reference" id="cite_ref-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY_26-0">
+             <a href="#cite_note-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY-26">
+              <span class="cite-bracket">
+               [
+              </span>
+              26
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Use a function call with a different number of arguments than the call is designed for, causing a stack misalignment, and code execution after the function returns (patched in Windows 10).
+            <sup class="reference" id="cite_ref-Bromium_CFG_stack_desync_27-0">
+             <a href="#cite_note-Bromium_CFG_stack_desync-27">
+              <span class="cite-bracket">
+               [
+              </span>
+              27
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Use a function call with the same number of arguments, but one of pointers passed is treated as an object and writes to a pointer-based offset, allowing overwriting a return address.
+            <sup class="reference" id="cite_ref-Object_Oriented_Exploitation:_New_techniques_in_Windows_mitigation_bypass_28-0">
+             <a href="#cite_note-Object_Oriented_Exploitation:_New_techniques_in_Windows_mitigation_bypass-28">
+              <span class="cite-bracket">
+               [
+              </span>
+              28
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Overwrite the function call used by the CFG to validate the address (patched in March 2015)
+            <sup class="reference" id="cite_ref-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY_26-1">
+             <a href="#cite_note-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY-26">
+              <span class="cite-bracket">
+               [
+              </span>
+              26
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Set the CFG bitmap to all 1's, allowing all indirect function calls
+            <sup class="reference" id="cite_ref-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY_26-2">
+             <a href="#cite_note-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY-26">
+              <span class="cite-bracket">
+               [
+              </span>
+              26
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Use a controlled-write primitive to overwrite an address on the stack (since the stack is not protected by CFG)
+            <sup class="reference" id="cite_ref-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY_26-3">
+             <a href="#cite_note-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY-26">
+              <span class="cite-bracket">
+               [
+              </span>
+              26
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Microsoft_eXtended_Flow_Guard">
+            Microsoft eXtended Flow Guard
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=9" title="Edit section: Microsoft eXtended Flow Guard">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           eXtended Flow Guard (XFG) has not been officially released yet, but is available in the Windows Insider preview and was publicly presented at Bluehat Shanghai in 2019.
+           <sup class="reference" id="cite_ref-Advancing_Windows_Security_Bluehat_Shanghai_2019_29-0">
+            <a href="#cite_note-Advancing_Windows_Security_Bluehat_Shanghai_2019-29">
+             <span class="cite-bracket">
+              [
+             </span>
+             29
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           XFG extends CFG by validating function call signatures to ensure that indirect function calls are only to the subset of functions with the same signature. Function call signature validation is implemented by adding instructions to store the target function's hash in register r10 immediately prior to the indirect call and storing the calculated function hash in the memory immediately preceding the target address's code. When the indirect call is made, the XFG validation function compares the value in r10 to the target function's stored hash.
+           <sup class="reference" id="cite_ref-EXTENDED_FLOW_GUARD_UNDER_THE_MICROSCOPE_30-0">
+            <a href="#cite_note-EXTENDED_FLOW_GUARD_UNDER_THE_MICROSCOPE-30">
+             <span class="cite-bracket">
+              [
+             </span>
+             30
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-Exploit_Development:_Between_a_Rock_and_a_(Xtended_Flow)_Guard_Place:_Examining_XFG_31-0">
+            <a href="#cite_note-Exploit_Development:_Between_a_Rock_and_a_(Xtended_Flow)_Guard_Place:_Examining_XFG-31">
+             <span class="cite-bracket">
+              [
+             </span>
+             31
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=10" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Buffer_overflow_protection" title="Buffer overflow protection">
+             Buffer overflow protection
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Control-flow_integrity&amp;action=edit&amp;section=11" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-Payer-1">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-Payer_1-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Payer_1-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation web cs1" id="CITEREFPayer">
+                Payer, Mattias.
+                <a class="external text" href="https://nebelwelt.net/blog/20160913-ControlFlowIntegrity.html" rel="nofollow">
+                 "Control-Flow Integrity: An Introduction"
+                </a>
+                .
+                <i>
+                 nebelwelt.net
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=nebelwelt.net&amp;rft.atitle=Control-Flow+Integrity%3A+An+Introduction&amp;rft.aulast=Payer&amp;rft.aufirst=Mattias&amp;rft_id=https%3A%2F%2Fnebelwelt.net%2Fblog%2F20160913-ControlFlowIntegrity.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFBurowCarrNashLarsen2018">
+                Burow, Nathan; Carr, Scott A.; Nash, Joseph; Larsen, Per; Franz, Michael; Brunthaler, Stefan; Payer, Mathias (31 January 2018).
+                <a class="external text" href="https://doi.org/10.1145%2F3054924" rel="nofollow">
+                 "Control-Flow Integrity: Precision, Security, and Performance"
+                </a>
+                .
+                <i>
+                 ACM Computing Surveys
+                </i>
+                .
+                <b>
+                 50
+                </b>
+                (1): 1–33.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://doi.org/10.1145%2F3054924" rel="nofollow">
+                  10.1145/3054924
+                 </a>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+Computing+Surveys&amp;rft.atitle=Control-Flow+Integrity%3A+Precision%2C+Security%2C+and+Performance&amp;rft.volume=50&amp;rft.issue=1&amp;rft.pages=1-33&amp;rft.date=2018-01-31&amp;rft_id=info%3Adoi%2F10.1145%2F3054924&amp;rft.aulast=Burow&amp;rft.aufirst=Nathan&amp;rft.au=Carr%2C+Scott+A.&amp;rft.au=Nash%2C+Joseph&amp;rft.au=Larsen%2C+Per&amp;rft.au=Franz%2C+Michael&amp;rft.au=Brunthaler%2C+Stefan&amp;rft.au=Payer%2C+Mathias&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1145%252F3054924&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-cfi_vs_vps_vs_cpi-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-cfi_vs_vps_vs_cpi_3-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFPayerKuznetsov">
+                <a href="/wiki/Mathias_Payer" title="Mathias Payer">
+                 Payer, Mathias
+                </a>
+                ; Kuznetsov, Volodymyr.
+                <a class="external text" href="https://nebelwelt.net/blog/20141007-CFICPSCPIdiffs.html" rel="nofollow">
+                 "On differences between the CFI, CPS, and CPI properties"
+                </a>
+                .
+                <i>
+                 nebelwelt.net
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2016-06-01
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=nebelwelt.net&amp;rft.atitle=On+differences+between+the+CFI%2C+CPS%2C+and+CPI+properties&amp;rft.aulast=Payer&amp;rft.aufirst=Mathias&amp;rft.au=Kuznetsov%2C+Volodymyr&amp;rft_id=https%3A%2F%2Fnebelwelt.net%2Fblog%2F20141007-CFICPSCPIdiffs.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-adobe_darkreading-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-adobe_darkreading_4-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://www.darkreading.com/vulnerabilities---threats/adobe-flash-bug-discovery-leads-to-new-attack-mitigation-method/d/d-id/1323092" rel="nofollow">
+                 "Adobe Flash Bug Discovery Leads To New Attack Mitigation Method"
+                </a>
+                .
+                <i>
+                 Dark Reading
+                </i>
+                . 10 November 2015
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2016-06-01
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Dark+Reading&amp;rft.atitle=Adobe+Flash+Bug+Discovery+Leads+To+New+Attack+Mitigation+Method&amp;rft.date=2015-11-10&amp;rft_id=http%3A%2F%2Fwww.darkreading.com%2Fvulnerabilities---threats%2Fadobe-flash-bug-discovery-leads-to-new-attack-mitigation-method%2Fd%2Fd-id%2F1323092&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-endgame_blackhat-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-endgame_blackhat_5-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation pressrelease cs1" id="CITEREFEndgame">
+                Endgame.
+                <a class="external text" href="http://www.prnewswire.com/news-releases/endgame-to-present-at-black-hat-usa-2016-300267060.html" rel="nofollow">
+                 "Endgame to Present at Black Hat USA 2016"
+                </a>
+                .
+                <i>
+                 www.prnewswire.com
+                </i>
+                (Press release)
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2016-06-01
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Endgame+to+Present+at+Black+Hat+USA+2016&amp;rft.au=Endgame&amp;rft_id=http%3A%2F%2Fwww.prnewswire.com%2Fnews-releases%2Fendgame-to-present-at-black-hat-usa-2016-300267060.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-clang_cfi-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-clang_cfi_6-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://clang.llvm.org/docs/ControlFlowIntegrity.html" rel="nofollow">
+                 "Control Flow Integrity — Clang 3.9 documentation"
+                </a>
+                .
+                <i>
+                 clang.llvm.org
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2016-06-01
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=clang.llvm.org&amp;rft.atitle=Control+Flow+Integrity+%E2%80%94+Clang+3.9+documentation&amp;rft_id=http%3A%2F%2Fclang.llvm.org%2Fdocs%2FControlFlowIntegrity.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-theregister_windows_cfg-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-theregister_windows_cfg_7-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFPauli">
+                Pauli, Darren.
+                <a class="external text" href="https://www.theregister.co.uk/2016/02/04/emets_win_10_revival_could_be_its_last_as_os_bakes_into_infosec/" rel="nofollow">
+                 "Microsoft's malware mitigator refreshed, but even Redmond says it's no longer needed"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/The_Register" title="The Register">
+                  The Register
+                 </a>
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2016-06-01
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=The+Register&amp;rft.atitle=Microsoft%27s+malware+mitigator+refreshed%2C+but+even+Redmond+says+it%27s+no+longer+needed&amp;rft.aulast=Pauli&amp;rft.aufirst=Darren&amp;rft_id=https%3A%2F%2Fwww.theregister.co.uk%2F2016%2F02%2F04%2Femets_win_10_revival_could_be_its_last_as_os_bakes_into_infosec%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-threatpost_cfg-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-threatpost_cfg_8-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFMimoso2015">
+                Mimoso, Michael (2015-09-22).
+                <a class="external text" href="https://threatpost.com/bypass-developed-for-microsoft-memory-protection-control-flow-guard/114768/" rel="nofollow">
+                 "Bypass Developed for Microsoft Memory Protection, Control Flow Guard"
+                </a>
+                .
+                <i>
+                 Threatpost | The first stop for security news
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2016-06-01
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Threatpost+%7C+The+first+stop+for+security+news&amp;rft.atitle=Bypass+Developed+for+Microsoft+Memory+Protection%2C+Control+Flow+Guard&amp;rft.date=2015-09-22&amp;rft.aulast=Mimoso&amp;rft.aufirst=Michael&amp;rft_id=https%3A%2F%2Fthreatpost.com%2Fbypass-developed-for-microsoft-memory-protection-control-flow-guard%2F114768%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-derbycon_bluehat-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-derbycon_bluehat_9-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFSmith2015">
+                Smith, Ms. (23 September 2015).
+                <a class="external text" href="https://web.archive.org/web/20150927052810/http://www.networkworld.com/article/2985686/microsoft-subnet/derbycon-former-bluehat-prize-winner-will-bypass-control-flow-guard-in-windows-10.html" rel="nofollow">
+                 "DerbyCon: Former BlueHat prize winner will bypass Control Flow Guard in Windows 10"
+                </a>
+                .
+                <i>
+                 Network World
+                </i>
+                . Archived from
+                <a class="external text" href="http://www.networkworld.com/article/2985686/microsoft-subnet/derbycon-former-bluehat-prize-winner-will-bypass-control-flow-guard-in-windows-10.html" rel="nofollow">
+                 the original
+                </a>
+                on September 27, 2015
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2016-06-01
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Network+World&amp;rft.atitle=DerbyCon%3A+Former+BlueHat+prize+winner+will+bypass+Control+Flow+Guard+in+Windows+10&amp;rft.date=2015-09-23&amp;rft.aulast=Smith&amp;rft.aufirst=Ms.&amp;rft_id=http%3A%2F%2Fwww.networkworld.com%2Farticle%2F2985686%2Fmicrosoft-subnet%2Fderbycon-former-bluehat-prize-winner-will-bypass-control-flow-guard-in-windows-10.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Tencent_-_Return_Flow_Guard-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Tencent_-_Return_Flow_Guard_10-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://xlab.tencent.com/en/2016/11/02/return-flow-guard/" rel="nofollow">
+                 "Return Flow Guard"
+                </a>
+                .
+                <i>
+                 Tencent
+                </i>
+                . 2 November 2016
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2017-01-19
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Tencent&amp;rft.atitle=Return+Flow+Guard&amp;rft.date=2016-11-02&amp;rft_id=http%3A%2F%2Fxlab.tencent.com%2Fen%2F2016%2F11%2F02%2Freturn-flow-guard%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-gcc_cfi_usenix14-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-gcc_cfi_usenix14_11-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFTiceRoederCollingbourneCheckoway2014">
+                Tice, Caroline; Roeder, Tom; Collingbourne, Peter; Checkoway, Stephen; Erlingsson, Úlfar; Lozano, Luis; Pike, Geoff (2014-01-01).
+                <a class="external text" href="https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/tice" rel="nofollow">
+                 <i>
+                  Enforcing Forward-Edge Control-Flow Integrity in GCC &amp; LLVM
+                 </i>
+                </a>
+                . pp. 941–955.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9781931971157" title="Special:BookSources/9781931971157">
+                 <bdi>
+                  9781931971157
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Enforcing+Forward-Edge+Control-Flow+Integrity+in+GCC+%26+LLVM&amp;rft.pages=941-955&amp;rft.date=2014-01-01&amp;rft.isbn=9781931971157&amp;rft.aulast=Tice&amp;rft.aufirst=Caroline&amp;rft.au=Roeder%2C+Tom&amp;rft.au=Collingbourne%2C+Peter&amp;rft.au=Checkoway%2C+Stephen&amp;rft.au=Erlingsson%2C+%C3%9Alfar&amp;rft.au=Lozano%2C+Luis&amp;rft.au=Pike%2C+Geoff&amp;rft_id=https%3A%2F%2Fwww.usenix.org%2Fconference%2Fusenixsecurity14%2Ftechnical-sessions%2Fpresentation%2Ftice&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-pax_rap_de-12">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-pax_rap_de_12-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1 cs1-prop-foreign-lang-source" id="CITEREFSecurity2016">
+                Security, heise (4 May 2016).
+                <a class="external text" href="http://www.heise.de/security/meldung/PaX-Team-stellt-Schutz-vor-Code-Reuse-Exploits-vor-3197262.html" rel="nofollow">
+                 "PaX Team stellt Schutz vor Code Reuse Exploits vor"
+                </a>
+                .
+                <i>
+                 Security
+                </i>
+                (in German)
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2016-06-01
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Security&amp;rft.atitle=PaX+Team+stellt+Schutz+vor+Code+Reuse+Exploits+vor&amp;rft.date=2016-05-04&amp;rft.aulast=Security&amp;rft.aufirst=heise&amp;rft_id=http%3A%2F%2Fwww.heise.de%2Fsecurity%2Fmeldung%2FPaX-Team-stellt-Schutz-vor-Code-Reuse-Exploits-vor-3197262.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-grsecurity_rap-13">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-grsecurity_rap_13-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation news cs1">
+                <a class="external text" href="https://grsecurity.net/rap_faq.php" rel="nofollow">
+                 "Frequently Asked Questions About RAP"
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2016-06-01
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Frequently+Asked+Questions+About+RAP&amp;rft_id=https%3A%2F%2Fgrsecurity.net%2Frap_faq.php&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-14">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-14">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://clang.llvm.org/docs/ControlFlowIntegrity.html" rel="nofollow">
+                 "Control Flow Integrity — Clang 17.0.0git documentation"
+                </a>
+                .
+                <i>
+                 clang.llvm.org
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=clang.llvm.org&amp;rft.atitle=Control+Flow+Integrity+%E2%80%94+Clang+17.0.0git+documentation&amp;rft_id=https%3A%2F%2Fclang.llvm.org%2Fdocs%2FControlFlowIntegrity.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-15">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-15">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://clang.llvm.org/docs/ShadowCallStack.html" rel="nofollow">
+                 "ShadowCallStack — Clang 17.0.0git documentation"
+                </a>
+                .
+                <i>
+                 clang.llvm.org
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=clang.llvm.org&amp;rft.atitle=ShadowCallStack+%E2%80%94+Clang+17.0.0git+documentation&amp;rft_id=https%3A%2F%2Fclang.llvm.org%2Fdocs%2FShadowCallStack.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-16">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-16">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Clang-LTO-Linux-Kernel-V2" rel="nofollow">
+                 "Clang LTO Patches Updated for the Linux Kernel - Phoronix"
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Clang+LTO+Patches+Updated+for+the+Linux+Kernel+-+Phoronix&amp;rft_id=https%3A%2F%2Fwww.phoronix.com%2Fscan.php%3Fpage%3Dnews_item%26px%3DClang-LTO-Linux-Kernel-V2&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-17">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-17">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://source.android.com/docs/security/test/shadow-call-stack" rel="nofollow">
+                 "ShadowCallStack"
+                </a>
+                .
+                <i>
+                 Android Open Source Project
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Android+Open+Source+Project&amp;rft.atitle=ShadowCallStack&amp;rft_id=https%3A%2F%2Fsource.android.com%2Fdocs%2Fsecurity%2Ftest%2Fshadow-call-stack&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Control-flow_Enforcement_Technology_Specification-18">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Control-flow_Enforcement_Technology_Specification_18-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://web.archive.org/web/20170814120442/https://software.intel.com/sites/default/files/managed/4d/2a/control-flow-enforcement-technology-preview.pdf" rel="nofollow">
+                 "Control-flow Enforcement Technology Specification"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 Intel Developer Zone
+                </i>
+                . Archived from
+                <a class="external text" href="https://software.intel.com/sites/default/files/managed/4d/2a/control-flow-enforcement-technology-preview.pdf" rel="nofollow">
+                 the original
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                on 2017-08-14
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2021-01-05
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Intel+Developer+Zone&amp;rft.atitle=Control-flow+Enforcement+Technology+Specification&amp;rft_id=https%3A%2F%2Fsoftware.intel.com%2Fsites%2Fdefault%2Ffiles%2Fmanaged%2F4d%2F2a%2Fcontrol-flow-enforcement-technology-preview.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-R.I.P_ROP:_CET_Internals_in_Windows_20H1-19">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-R.I.P_ROP:_CET_Internals_in_Windows_20H1_19-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://windows-internals.com/cet-on-windows/" rel="nofollow">
+                 "R.I.P ROP: CET Internals in Windows 20H1"
+                </a>
+                .
+                <i>
+                 Winsider Seminars &amp; Solutions Inc
+                </i>
+                . 5 January 2020
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2021-01-05
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Winsider+Seminars+%26+Solutions+Inc.&amp;rft.atitle=R.I.P+ROP%3A+CET+Internals+in+Windows+20H1&amp;rft.date=2020-01-05&amp;rft_id=https%3A%2F%2Fwindows-internals.com%2Fcet-on-windows%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-MSDN_-_Control_Flow_Guard-20">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-MSDN_-_Control_Flow_Guard_20-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-MSDN_-_Control_Flow_Guard_20-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://msdn.microsoft.com/en-us/library/windows/desktop/mt637065(v=vs.85).aspx" rel="nofollow">
+                 "Control Flow Guard"
+                </a>
+                .
+                <i>
+                 MSDN
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2017-01-19
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MSDN&amp;rft.atitle=Control+Flow+Guard&amp;rft_id=https%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fwindows%2Fdesktop%2Fmt637065%28v%3Dvs.85%29.aspx&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-TechNet_-_Shadow_Brokers-21">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-TechNet_-_Shadow_Brokers_21-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://blogs.technet.microsoft.com/mmpc/2017/06/16/analysis-of-the-shadow-brokers-release-and-mitigation-with-windows-10-virtualization-based-security/" rel="nofollow">
+                 "Analysis of the Shadow Brokers release and mitigation with Windows 10 virtualization-based security"
+                </a>
+                .
+                <i>
+                 Microsoft Technet
+                </i>
+                . 16 June 2017
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2017-06-20
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Microsoft+Technet&amp;rft.atitle=Analysis+of+the+Shadow+Brokers+release+and+mitigation+with+Windows+10+virtualization-based+security&amp;rft.date=2017-06-16&amp;rft_id=https%3A%2F%2Fblogs.technet.microsoft.com%2Fmmpc%2F2017%2F06%2F16%2Fanalysis-of-the-shadow-brokers-release-and-mitigation-with-windows-10-virtualization-based-security%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Ionescu_-_Universally_Bypassing_CFG_Through_Mutability_Abuse-22">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Ionescu_-_Universally_Bypassing_CFG_Through_Mutability_Abuse_22-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://alex-ionescu.com/publications/euskalhack/euskalhack2017-cfg.pdf" rel="nofollow">
+                 "Universally Bypassing CFG Through Mutability Abuse"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 Alex Ionescu's Blog
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2017-07-07
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Alex+Ionescu%27s+Blog&amp;rft.atitle=Universally+Bypassing+CFG+Through+Mutability+Abuse&amp;rft_id=http%3A%2F%2Falex-ionescu.com%2Fpublications%2Feuskalhack%2Feuskalhack2017-cfg.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Exploiting_CVE-2015-0311,_Part_II-23">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-Exploiting_CVE-2015-0311,_Part_II_23-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Exploiting_CVE-2015-0311,_Part_II_23-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Exploiting_CVE-2015-0311,_Part_II_23-2">
+                <sup>
+                 <i>
+                  <b>
+                   c
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFFalcón2015">
+                Falcón, Francisco (2015-03-25).
+                <a class="external text" href="https://www.coresecurity.com/blog/exploiting-cve-2015-0311-part-ii-bypassing-control-flow-guard-on-windows-8-1-update-3" rel="nofollow">
+                 "Exploiting CVE-2015-0311, Part II: Bypassing Control Flow Guard on Windows 8.1 Update 3"
+                </a>
+                .
+                <i>
+                 Core Security
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2017-01-19
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Core+Security&amp;rft.atitle=Exploiting+CVE-2015-0311%2C+Part+II%3A+Bypassing+Control+Flow+Guard+on+Windows+8.1+Update+3&amp;rft.date=2015-03-25&amp;rft.aulast=Falc%C3%B3n&amp;rft.aufirst=Francisco&amp;rft_id=https%3A%2F%2Fwww.coresecurity.com%2Fblog%2Fexploiting-cve-2015-0311-part-ii-bypassing-control-flow-guard-on-windows-8-1-update-3&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Exploring_Control_Flow_Guard_in_Windows_10-24">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Exploring_Control_Flow_Guard_in_Windows_10_24-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://documents.trendmicro.com/assets/wp/exploring-control-flow-guard-in-windows10.pdf" rel="nofollow">
+                 "Control Flow Guard"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 Trend Micro
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2017-01-19
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Trend+Micro&amp;rft.atitle=Control+Flow+Guard&amp;rft_id=https%3A%2F%2Fdocuments.trendmicro.com%2Fassets%2Fwp%2Fexploring-control-flow-guard-in-windows10.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Windows_10_Control_Flow_Guard_Internals-25">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-Windows_10_Control_Flow_Guard_Internals_25-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Windows_10_Control_Flow_Guard_Internals_25-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://www.powerofcommunity.net/poc2014/mj0011.pdf" rel="nofollow">
+                 "Windows 10 Control Flow Guard Internals"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 Power of Community
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2017-01-19
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Power+of+Community&amp;rft.atitle=Windows+10+Control+Flow+Guard+Internals&amp;rft_id=http%3A%2F%2Fwww.powerofcommunity.net%2Fpoc2014%2Fmj0011.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY-26">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY_26-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY_26-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY_26-2">
+                <sup>
+                 <i>
+                  <b>
+                   c
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-BYPASS_CONTROL_FLOW_GUARD_COMPREHENSIVELY_26-3">
+                <sup>
+                 <i>
+                  <b>
+                   d
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.blackhat.com/docs/us-15/materials/us-15-Zhang-Bypass-Control-Flow-Guard-Comprehensively-wp.pdf" rel="nofollow">
+                 "Bypass Control Flow Guard Comprehensively"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 BlackHat
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2017-01-19
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=BlackHat&amp;rft.atitle=Bypass+Control+Flow+Guard+Comprehensively&amp;rft_id=https%3A%2F%2Fwww.blackhat.com%2Fdocs%2Fus-15%2Fmaterials%2Fus-15-Zhang-Bypass-Control-Flow-Guard-Comprehensively-wp.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Bromium_CFG_stack_desync-27">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Bromium_CFG_stack_desync_27-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://labs.bromium.com/2015/09/28/an-interesting-detail-about-control-flow-guard/" rel="nofollow">
+                 "An interesting detail about Control Flow Guard"
+                </a>
+                .
+                <i>
+                 Bromium
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2017-01-19
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Bromium&amp;rft.atitle=An+interesting+detail+about+Control+Flow+Guard&amp;rft_id=https%3A%2F%2Flabs.bromium.com%2F2015%2F09%2F28%2Fan-interesting-detail-about-control-flow-guard%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Object_Oriented_Exploitation:_New_techniques_in_Windows_mitigation_bypass-28">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Object_Oriented_Exploitation:_New_techniques_in_Windows_mitigation_bypass_28-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFThomas2016">
+                Thomas, Sam (18 August 2016).
+                <a class="external text" href="https://www.slideshare.net/_s_n_t/object-oriented-exploitation-new-techniques-in-windows-mitigation-bypass" rel="nofollow">
+                 "Object Oriented Exploitation: New techniques in Windows mitigation bypass"
+                </a>
+                .
+                <i>
+                 Slideshare
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2017-01-19
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Slideshare&amp;rft.atitle=Object+Oriented+Exploitation%3A+New+techniques+in+Windows+mitigation+bypass&amp;rft.date=2016-08-18&amp;rft.aulast=Thomas&amp;rft.aufirst=Sam&amp;rft_id=http%3A%2F%2Fwww.slideshare.net%2F_s_n_t%2Fobject-oriented-exploitation-new-techniques-in-windows-mitigation-bypass&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Advancing_Windows_Security_Bluehat_Shanghai_2019-29">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Advancing_Windows_Security_Bluehat_Shanghai_2019_29-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE37dMC" rel="nofollow">
+                 "Advancing Windows Security"
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2021-05-19
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Advancing+Windows+Security&amp;rft_id=https%3A%2F%2Fquery.prod.cms.rt.microsoft.com%2Fcms%2Fapi%2Fam%2Fbinary%2FRE37dMC&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-EXTENDED_FLOW_GUARD_UNDER_THE_MICROSCOPE-30">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-EXTENDED_FLOW_GUARD_UNDER_THE_MICROSCOPE_30-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.offensive-security.com/offsec/extended-flow-guard/" rel="nofollow">
+                 "EXTENDED FLOW GUARD UNDER THE MICROSCOPE"
+                </a>
+                . 18 May 2021
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2021-05-19
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=EXTENDED+FLOW+GUARD+UNDER+THE+MICROSCOPE&amp;rft.date=2021-05-18&amp;rft_id=https%3A%2F%2Fwww.offensive-security.com%2Foffsec%2Fextended-flow-guard%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Exploit_Development:_Between_a_Rock_and_a_(Xtended_Flow)_Guard_Place:_Examining_XFG-31">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Exploit_Development:_Between_a_Rock_and_a_(Xtended_Flow)_Guard_Place:_Examining_XFG_31-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://connormcgarr.github.io/examining-xfg/" rel="nofollow">
+                 "Exploit Development: Between a Rock and a (Xtended Flow) Guard Place: Examining XFG"
+                </a>
+                . 23 August 2020
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2021-05-19
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Exploit+Development%3A+Between+a+Rock+and+a+%28Xtended+Flow%29+Guard+Place%3A+Examining+XFG&amp;rft.date=2020-08-23&amp;rft_id=https%3A%2F%2Fconnormcgarr.github.io%2Fexamining-xfg%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AControl-flow+integrity">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐7fcd56b4df‐zjrwq
+Cached time: 20240903223555
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.395 seconds
+Real time usage: 0.465 seconds
+Preprocessor visited node count: 1822/1000000
+Post‐expand include size: 55273/2097152 bytes
+Template argument size: 1287/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 114899/5000000 bytes
+Lua time usage: 0.255/10.000 seconds
+Lua memory usage: 5683988/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  426.419      1 -total
+ 63.76%  271.899      1 Template:Reflist
+ 45.58%  194.369     27 Template:Cite_web
+ 12.05%   51.374      2 Template:Expand_section
+ 11.79%   50.292      1 Template:Short_description
+ 10.87%   46.369      2 Template:Ambox
+  7.66%   32.663      1 Template:Distinguish
+  6.04%   25.762      2 Template:Pagetype
+  3.32%   14.154      3 Template:Main_other
+  3.11%   13.271      1 Template:Cite_journal
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:50695372-0!canonical and timestamp 20240903223555 and revision id 1239413265. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Control-flow_integrity&amp;oldid=1239413265">
+          https://en.wikipedia.org/w/index.php?title=Control-flow_integrity&amp;oldid=1239413265
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Computer_security" title="Category:Computer security">
+            Computer security
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Control_flow_integrity" title="Category:Control flow integrity">
+            Control flow integrity
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:CS1_German-language_sources_(de)" title="Category:CS1 German-language sources (de)">
+            CS1 German-language sources (de)
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">
+            Short description matches Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_to_be_expanded_from_September_2020" title="Category:Articles to be expanded from September 2020">
+            Articles to be expanded from September 2020
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_to_be_expanded" title="Category:All articles to be expanded">
+            All articles to be expanded
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_to_be_expanded_from_January_2021" title="Category:Articles to be expanded from January 2021">
+            Articles to be expanded from January 2021
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 9 August 2024, at 04:01
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Control-flow_integrity&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-nzf82","wgBackendResponseTime":161,"wgPageParseReport":{"limitreport":{"cputime":"0.395","walltime":"0.465","ppvisitednodes":{"value":1822,"limit":1000000},"postexpandincludesize":{"value":55273,"limit":2097152},"templateargumentsize":{"value":1287,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":114899,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  426.419      1 -total"," 63.76%  271.899      1 Template:Reflist"," 45.58%  194.369     27 Template:Cite_web"," 12.05%   51.374      2 Template:Expand_section"," 11.79%   50.292      1 Template:Short_description"," 10.87%   46.369      2 Template:Ambox","  7.66%   32.663      1 Template:Distinguish","  6.04%   25.762      2 Template:Pagetype","  3.32%   14.154      3 Template:Main_other","  3.11%   13.271      1 Template:Cite_journal"]},"scribunto":{"limitreport-timeusage":{"value":"0.255","limit":"10.000"},"limitreport-memusage":{"value":5683988,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-7fcd56b4df-zjrwq","timestamp":"20240903223555","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Control-flow integrity","url":"https:\/\/en.wikipedia.org\/wiki\/Control-flow_integrity","sameAs":"http:\/\/www.wikidata.org\/entity\/Q27627868","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q27627868","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2016-06-01T14:32:35Z","dateModified":"2024-08-09T04:01:25Z","headline":"term in computer security"}
+  </script>
+ </body>
+</html>

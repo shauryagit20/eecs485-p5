@@ -1,0 +1,4038 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Algebraic data type - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"cd6e52c3-39a1-4353-96b6-46f0fca7ce18","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Algebraic_data_type","wgTitle":"Algebraic data type","wgCurRevisionId":1243060277,"wgRevisionId":1243060277,"wgArticleId":283867,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Webarchive template wayback links","Articles with short description","Short description is different from Wikidata","Articles needing additional references from October 2015","All articles needing additional references","Wikipedia articles that are too technical from September 2017","All articles that are too technical","Articles with multiple maintenance issues","Articles with example Haskell code","Functional programming","Type theory","Data types","Composite data types"
+],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Algebraic_data_type","wgRelevantArticleId":283867,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Algebraic_data_types","wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgInternalRedirectTargetUrl":"/wiki/Algebraic_data_type","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":
+"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1322511","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready","ext.math.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":
+"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.cite.ux-enhancements","ext.pygments.view","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Algebraic data type - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Algebraic_data_type" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Algebraic_data_type&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Algebraic_data_type" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Algebraic_data_types"/>
+  <meta eecs485_docid="27540836"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Algebraic_data_type rootpage-Algebraic_data_type skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Algebraic+data+type" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Algebraic+data+type" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Algebraic+data+type" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Algebraic+data+type" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-History">
+           <a class="vector-toc-link" href="#History">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              History
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-History-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Examples">
+           <a class="vector-toc-link" href="#Examples">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Examples
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Examples-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Examples subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Examples-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Singly_Linked_List">
+             <a class="vector-toc-link" href="#Singly_Linked_List">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.1
+               </span>
+               <span>
+                Singly Linked List
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Singly_Linked_List-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Binary_Tree">
+             <a class="vector-toc-link" href="#Binary_Tree">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.2
+               </span>
+               <span>
+                Binary Tree
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Binary_Tree-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Abstract_Syntax">
+             <a class="vector-toc-link" href="#Abstract_Syntax">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.3
+               </span>
+               <span>
+                Abstract Syntax
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Abstract_Syntax-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Pattern_matching">
+           <a class="vector-toc-link" href="#Pattern_matching">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Pattern matching
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Pattern_matching-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Theory">
+           <a class="vector-toc-link" href="#Theory">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Theory
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Theory-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Programming_languages_with_algebraic_data_types">
+           <a class="vector-toc-link" href="#Programming_languages_with_algebraic_data_types">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              Programming languages with algebraic data types
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Programming_languages_with_algebraic_data_types-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              7
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Algebraic data type
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 11 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-11" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          11 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Tipus de dades algebraic" href="https://ca.wikipedia.org/wiki/Tipus_de_dades_algebraic" hreflang="ca" lang="ca" title="Tipus de dades algebraic – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Algebraischer Datentyp" href="https://de.wikipedia.org/wiki/Algebraischer_Datentyp" hreflang="de" lang="de" title="Algebraischer Datentyp – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-el mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Ελληνικά" data-language-local-name="Greek" data-title="Αλγεβρικός τύπος δεδομένων" href="https://el.wikipedia.org/wiki/%CE%91%CE%BB%CE%B3%CE%B5%CE%B2%CF%81%CE%B9%CE%BA%CF%8C%CF%82_%CF%84%CF%8D%CF%80%CE%BF%CF%82_%CE%B4%CE%B5%CE%B4%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD" hreflang="el" lang="el" title="Αλγεβρικός τύπος δεδομένων – Greek">
+             <span>
+              Ελληνικά
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Tipo de dato algebraico" href="https://es.wikipedia.org/wiki/Tipo_de_dato_algebraico" hreflang="es" lang="es" title="Tipo de dato algebraico – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Type algébrique de données" href="https://fr.wikipedia.org/wiki/Type_alg%C3%A9brique_de_donn%C3%A9es" hreflang="fr" lang="fr" title="Type algébrique de données – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="대수적 자료형" href="https://ko.wikipedia.org/wiki/%EB%8C%80%EC%88%98%EC%A0%81_%EC%9E%90%EB%A3%8C%ED%98%95" hreflang="ko" lang="ko" title="대수적 자료형 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="Algebraïsch datatype" href="https://nl.wikipedia.org/wiki/Algebra%C3%AFsch_datatype" hreflang="nl" lang="nl" title="Algebraïsch datatype – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="代数的データ型" href="https://ja.wikipedia.org/wiki/%E4%BB%A3%E6%95%B0%E7%9A%84%E3%83%87%E3%83%BC%E3%82%BF%E5%9E%8B" hreflang="ja" lang="ja" title="代数的データ型 – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Алгебраический тип данных" href="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D0%B8%D0%BF_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" hreflang="ru" lang="ru" title="Алгебраический тип данных – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Алгебричний тип даних" href="https://uk.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B8%D1%87%D0%BD%D0%B8%D0%B9_%D1%82%D0%B8%D0%BF_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85" hreflang="uk" lang="uk" title="Алгебричний тип даних – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="代数数据类型" href="https://zh.wikipedia.org/wiki/%E4%BB%A3%E6%95%B0%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B" hreflang="zh" lang="zh" title="代数数据类型 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1322511#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Algebraic_data_type" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Algebraic_data_type" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Algebraic_data_type">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Algebraic_data_type&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Algebraic_data_type&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Algebraic_data_type">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Algebraic_data_type&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Algebraic_data_type&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Algebraic_data_type" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Algebraic_data_type" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Algebraic_data_type&amp;oldid=1243060277" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Algebraic_data_type&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Algebraic_data_type&amp;id=1243060277&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlgebraic_data_type">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlgebraic_data_type">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1322511" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Algebraic_data_type&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Algebraic_data_type&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+         <span class="mw-redirectedfrom">
+          (Redirected from
+          <a class="mw-redirect" href="/w/index.php?title=Algebraic_data_types&amp;redirect=no" title="Algebraic data types">
+           Algebraic data types
+          </a>
+          )
+         </span>
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Kind of composite data type
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          Not to be confused with
+          <a href="/wiki/Abstract_data_type" title="Abstract data type">
+           Abstract data type
+          </a>
+          .
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <style data-mw-deduplicate="TemplateStyles:r1211361296">
+          .mw-parser-output .multiple-issues-text{width:95%;margin:0.2em 0}.mw-parser-output .multiple-issues-text>.mw-collapsible-content{margin-top:0.3em}.mw-parser-output .compact-ambox .ambox{border:none;border-collapse:collapse;background-color:transparent;margin:0 0 0 1.6em!important;padding:0!important;width:auto;display:block}body.mediawiki .mw-parser-output .compact-ambox .ambox.mbox-small-left{font-size:100%;width:auto;margin:0}.mw-parser-output .compact-ambox .ambox .mbox-text{padding:0!important;margin:0!important}.mw-parser-output .compact-ambox .ambox .mbox-text-span{display:list-item;line-height:1.5em;list-style-type:disc}body.skin-minerva .mw-parser-output .multiple-issues-text>.mw-collapsible-toggle{display:none}.mw-parser-output .compact-ambox .ambox .mbox-image,.mw-parser-output .compact-ambox .ambox .mbox-imageright,.mw-parser-output .compact-ambox .ambox .mbox-empty-cell,.mw-parser-output .compact-ambox .hide-when-compact{display:none}
+         </style>
+         <table class="box-Multiple_issues plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <span>
+                <img alt="" class="mw-file-element" data-file-height="40" data-file-width="40" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" width="40"/>
+               </span>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              <div class="multiple-issues-text mw-collapsible">
+               <b>
+                This article has multiple issues.
+               </b>
+               Please help
+               <b>
+                <a href="/wiki/Special:EditPage/Algebraic_data_type" title="Special:EditPage/Algebraic data type">
+                 improve it
+                </a>
+               </b>
+               or discuss these issues on the
+               <b>
+                <a href="/wiki/Talk:Algebraic_data_type" title="Talk:Algebraic data type">
+                 talk page
+                </a>
+               </b>
+               .
+               <small>
+                <i>
+                 (
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove these messages
+                 </a>
+                 )
+                </i>
+               </small>
+               <div class="mw-collapsible-content">
+                <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+                <table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+                 <tbody>
+                  <tr>
+                   <td class="mbox-image">
+                    <div class="mbox-image-div">
+                     <span typeof="mw:File">
+                      <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                       <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="mbox-text">
+                    <div class="mbox-text-span">
+                     This article
+                     <b>
+                      needs additional citations for
+                      <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                       verification
+                      </a>
+                     </b>
+                     .
+                     <span class="hide-when-compact">
+                      Please help
+                      <a href="/wiki/Special:EditPage/Algebraic_data_type" title="Special:EditPage/Algebraic data type">
+                       improve this article
+                      </a>
+                      by
+                      <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                       adding citations to reliable sources
+                      </a>
+                      . Unsourced material may be challenged and removed.
+                      <br/>
+                      <small>
+                       <span class="plainlinks">
+                        <i>
+                         Find sources:
+                        </i>
+                        <a class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Algebraic+data+type%22" rel="nofollow">
+                         "Algebraic data type"
+                        </a>
+                        –
+                        <a class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Algebraic+data+type%22+-wikipedia&amp;tbs=ar:1" rel="nofollow">
+                         news
+                        </a>
+                        <b>
+                         ·
+                        </b>
+                        <a class="external text" href="https://www.google.com/search?&amp;q=%22Algebraic+data+type%22&amp;tbs=bkt:s&amp;tbm=bks" rel="nofollow">
+                         newspapers
+                        </a>
+                        <b>
+                         ·
+                        </b>
+                        <a class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Algebraic+data+type%22+-wikipedia" rel="nofollow">
+                         books
+                        </a>
+                        <b>
+                         ·
+                        </b>
+                        <a class="external text" href="https://scholar.google.com/scholar?q=%22Algebraic+data+type%22" rel="nofollow">
+                         scholar
+                        </a>
+                        <b>
+                         ·
+                        </b>
+                        <a class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Algebraic+data+type%22&amp;acc=on&amp;wc=on" rel="nofollow">
+                         JSTOR
+                        </a>
+                       </span>
+                      </small>
+                     </span>
+                     <span class="date-container">
+                      <i>
+                       (
+                       <span class="date">
+                        October 2015
+                       </span>
+                       )
+                      </i>
+                     </span>
+                     <span class="hide-when-compact">
+                      <i>
+                       (
+                       <small>
+                        <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                         Learn how and when to remove this message
+                        </a>
+                       </small>
+                       )
+                      </i>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+                <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+                <table class="box-Technical plainlinks metadata ambox ambox-style ambox-technical" role="presentation">
+                 <tbody>
+                  <tr>
+                   <td class="mbox-image">
+                    <div class="mbox-image-div">
+                     <span typeof="mw:File">
+                      <span>
+                       <img alt="" class="mw-file-element" data-file-height="48" data-file-width="48" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" width="40"/>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="mbox-text">
+                    <div class="mbox-text-span">
+                     This article
+                     <b>
+                      may be too technical for most readers to understand
+                     </b>
+                     .
+                     <span class="hide-when-compact">
+                      Please
+                      <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Algebraic_data_type&amp;action=edit">
+                       help improve it
+                      </a>
+                      to
+                      <a href="/wiki/Wikipedia:Make_technical_articles_understandable" title="Wikipedia:Make technical articles understandable">
+                       make it understandable to non-experts
+                      </a>
+                      , without removing the technical details.
+                     </span>
+                     <span class="date-container">
+                      <i>
+                       (
+                       <span class="date">
+                        September 2017
+                       </span>
+                       )
+                      </i>
+                     </span>
+                     <span class="hide-when-compact">
+                      <i>
+                       (
+                       <small>
+                        <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                         Learn how and when to remove this message
+                        </a>
+                       </small>
+                       )
+                      </i>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </div>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          In
+          <a href="/wiki/Computer_programming" title="Computer programming">
+           computer programming
+          </a>
+          , especially
+          <a href="/wiki/Functional_programming" title="Functional programming">
+           functional programming
+          </a>
+          and
+          <a href="/wiki/Type_theory" title="Type theory">
+           type theory
+          </a>
+          , an
+          <b>
+           algebraic data type
+          </b>
+          (ADT) is a kind of
+          <a href="/wiki/Data_type#Composite_types" title="Data type">
+           composite type
+          </a>
+          , i.e., a type formed by combining other types.
+         </p>
+         <p>
+          Two common classes of algebraic types are
+          <a href="/wiki/Product_type" title="Product type">
+           product types
+          </a>
+          (i.e.,
+          <a href="/wiki/Tuple" title="Tuple">
+           tuples
+          </a>
+          and
+          <a href="/wiki/Record_(computer_science)" title="Record (computer science)">
+           records
+          </a>
+          ) and
+          <a class="mw-redirect" href="/wiki/Sum_type" title="Sum type">
+           sum types
+          </a>
+          (i.e.,
+          <a href="/wiki/Tagged_union" title="Tagged union">
+           tagged
+          </a>
+          or
+          <a href="/wiki/Disjoint_union" title="Disjoint union">
+           disjoint unions
+          </a>
+          ,
+          <a href="/wiki/Coproduct" title="Coproduct">
+           coproduct
+          </a>
+          types or
+          <i>
+           variant types
+          </i>
+          ).
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          The
+          <a href="/wiki/Value_(computer_science)" title="Value (computer science)">
+           values
+          </a>
+          of a product type typically contain several values, called
+          <i>
+           fields
+          </i>
+          .  All values of that type have the same combination of field types.  The set of all possible values of a product type is the set-theoretic product, i.e., the
+          <a href="/wiki/Cartesian_product" title="Cartesian product">
+           Cartesian product
+          </a>
+          , of the sets of all possible values of its field types.
+         </p>
+         <p>
+          The values of a sum type are typically grouped into several classes, called
+          <i>
+           variants
+          </i>
+          .  A value of a variant type is usually created with a quasi-functional entity called a
+          <i>
+           constructor
+          </i>
+          .  Each variant has its own constructor, which takes a specified number of arguments with specified types.  The set of all possible values of a sum type is the set-theoretic sum, i.e., the
+          <a href="/wiki/Disjoint_union" title="Disjoint union">
+           disjoint union
+          </a>
+          , of the sets of all possible values of its variants.
+          <a href="/wiki/Enumerated_type" title="Enumerated type">
+           Enumerated types
+          </a>
+          are a special case of sum types in which the constructors take no arguments, as exactly one value is defined for each constructor.
+         </p>
+         <p>
+          Values of algebraic types are analyzed with
+          <a href="/wiki/Pattern_matching" title="Pattern matching">
+           pattern matching
+          </a>
+          , which identifies a value by its constructor or field names and extracts the data it contains.
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="History">
+            History
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algebraic_data_type&amp;action=edit&amp;section=1" title="Edit section: History">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Algebraic data types were introduced in
+           <a href="/wiki/Hope_(programming_language)" title="Hope (programming language)">
+            Hope
+           </a>
+           , a small
+           <a class="mw-redirect" href="/wiki/Functional_programming_language" title="Functional programming language">
+            functional programming language
+           </a>
+           developed in the 1970s at the
+           <a href="/wiki/University_of_Edinburgh" title="University of Edinburgh">
+            University of Edinburgh
+           </a>
+           .
+           <sup class="reference" id="cite_ref-2">
+            <a href="#cite_note-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Examples">
+            Examples
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algebraic_data_type&amp;action=edit&amp;section=2" title="Edit section: Examples">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Singly_Linked_List">
+            Singly Linked List
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algebraic_data_type&amp;action=edit&amp;section=3" title="Edit section: Singly Linked List">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           One of the most common examples of  an algebraic data type is the
+           <a class="mw-redirect" href="/wiki/Singly_linked_list" title="Singly linked list">
+            singly linked list
+           </a>
+           . A list type is a sum type with two variants,
+           <code>
+            Nil
+           </code>
+           for an empty list and
+           <code>
+            <a href="/wiki/Cons" title="Cons">
+             Cons
+            </a>
+            <i>
+             x
+            </i>
+            <i>
+             xs
+            </i>
+           </code>
+           for the combination of a new element
+           <i>
+            x
+           </i>
+           with a list
+           <i>
+            xs
+           </i>
+           to create a new list. Here is an example of how a singly linked list would be declared in
+           <a class="mw-redirect" href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">
+            Haskell
+           </a>
+           :
+          </p>
+          <div class="mw-highlight mw-highlight-lang-haskell mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kr">data</span><span class="w"> </span><span class="kt">List</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">Nil</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kt">Cons</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="p">(</span><span class="kt">List</span><span class="w"> </span><span class="n">a</span><span class="p">)</span>
+</pre>
+          </div>
+          <p>
+           or
+          </p>
+          <div class="mw-highlight mw-highlight-lang-haskell mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kr">data</span><span class="w"> </span><span class="kt">[]</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">[]</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="kt">:</span><span class="w"> </span><span class="p">[</span><span class="n">a</span><span class="p">]</span>
+</pre>
+          </div>
+          <p>
+           <code>
+            Cons
+           </code>
+           is an abbreviation of
+           <i>
+            cons
+           </i>
+           truct. Many languages have special syntax for lists defined in this way. For example, Haskell and
+           <a href="/wiki/ML_(programming_language)" title="ML (programming language)">
+            ML
+           </a>
+           use
+           <code>
+            []
+           </code>
+           for
+           <code>
+            Nil
+           </code>
+           ,
+           <code>
+            :
+           </code>
+           or
+           <code>
+            ::
+           </code>
+           for
+           <code>
+            Cons
+           </code>
+           , respectively, and square brackets for entire lists. So
+           <code>
+            Cons 1 (Cons 2 (Cons 3 Nil))
+           </code>
+           would normally be written as
+           <code>
+            1:2:3:[]
+           </code>
+           or
+           <code>
+            [1,2,3]
+           </code>
+           in Haskell, or as
+           <code>
+            1::2::3::[]
+           </code>
+           or
+           <code>
+            [1,2,3]
+           </code>
+           in ML.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Binary_Tree">
+            Binary Tree
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algebraic_data_type&amp;action=edit&amp;section=4" title="Edit section: Binary Tree">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           For a slightly more complex example,
+           <a href="/wiki/Binary_tree" title="Binary tree">
+            binary trees
+           </a>
+           may be implemented in Haskell as follows:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-haskell mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kr">data</span><span class="w"> </span><span class="kt">Tree</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">Empty</span>
+<span class="w">          </span><span class="o">|</span><span class="w"> </span><span class="kt">Leaf</span><span class="w"> </span><span class="kt">Int</span>
+<span class="w">          </span><span class="o">|</span><span class="w"> </span><span class="kt">Node</span><span class="w"> </span><span class="kt">Int</span><span class="w"> </span><span class="kt">Tree</span><span class="w"> </span><span class="kt">Tree</span>
+</pre>
+          </div>
+          <p>
+           or
+          </p>
+          <div class="mw-highlight mw-highlight-lang-haskell mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kr">data</span><span class="w"> </span><span class="kt">BinaryTree</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">BTNil</span>
+<span class="w">                  </span><span class="o">|</span><span class="w"> </span><span class="kt">BTNode</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="p">(</span><span class="kt">BinaryTree</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="kt">BinaryTree</span><span class="w"> </span><span class="n">a</span><span class="p">)</span>
+</pre>
+          </div>
+          <p>
+           Here,
+           <code>
+            Empty
+           </code>
+           represents an empty tree,
+           <code>
+            Leaf
+           </code>
+           represents a leaf node, and
+           <code>
+            Node
+           </code>
+           organizes the data into branches.
+          </p>
+          <p>
+           In most languages that support algebraic data types, it is possible to define
+           <a href="/wiki/Parametric_polymorphism" title="Parametric polymorphism">
+            parametric
+           </a>
+           types. Examples are given later in this article.
+          </p>
+          <p>
+           Somewhat similar to a function, a data constructor is applied to arguments of an appropriate type, yielding an instance of the data type to which the type constructor belongs. For example, the data constructor
+           <code>
+            Leaf
+           </code>
+           is logically a function
+           <code>
+            Int -&gt; Tree
+           </code>
+           , meaning that giving an integer as an argument to
+           <code>
+            Leaf
+           </code>
+           produces a value of the type
+           <code>
+            Tree
+           </code>
+           . As
+           <code>
+            Node
+           </code>
+           takes two arguments of the type
+           <code>
+            Tree
+           </code>
+           itself, the datatype is
+           <a class="mw-redirect" href="/wiki/Recursive_type" title="Recursive type">
+            recursive
+           </a>
+           .
+          </p>
+          <p>
+           Operations on algebraic data types can be defined by using
+           <a href="/wiki/Pattern_matching" title="Pattern matching">
+            pattern matching
+           </a>
+           to retrieve the arguments. For example, consider a function to find the depth of a
+           <code>
+            Tree
+           </code>
+           , given here in Haskell:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-haskell mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="w"> </span><span class="n">depth</span><span class="w"> </span><span class="ow">::</span><span class="w"> </span><span class="kt">Tree</span><span class="w"> </span><span class="ow">-&gt;</span><span class="w"> </span><span class="kt">Int</span>
+<span class="w"> </span><span class="n">depth</span><span class="w"> </span><span class="kt">Empty</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w"> </span><span class="n">depth</span><span class="w"> </span><span class="p">(</span><span class="kt">Leaf</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w"> </span><span class="n">depth</span><span class="w"> </span><span class="p">(</span><span class="kt">Node</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="p">(</span><span class="n">depth</span><span class="w"> </span><span class="n">l</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">depth</span><span class="w"> </span><span class="n">r</span><span class="p">)</span>
+</pre>
+          </div>
+          <p>
+           Thus, a
+           <code>
+            Tree
+           </code>
+           given to
+           <code>
+            depth
+           </code>
+           can be constructed using any of
+           <code>
+            Empty
+           </code>
+           ,
+           <code>
+            Leaf
+           </code>
+           , or
+           <code>
+            Node
+           </code>
+           and must be matched for any of them respectively to deal with all cases. In case of
+           <code>
+            Node
+           </code>
+           , the pattern extracts the subtrees
+           <code>
+            l
+           </code>
+           and
+           <code>
+            r
+           </code>
+           for further processing.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Abstract_Syntax">
+            Abstract Syntax
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algebraic_data_type&amp;action=edit&amp;section=5" title="Edit section: Abstract Syntax">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Algebraic data types are highly suited to implementing
+           <a href="/wiki/Abstract_syntax" title="Abstract syntax">
+            abstract syntax
+           </a>
+           .  For example, the following algebraic data type describes a simple language representing numerical expressions:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-haskell mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kr">data</span><span class="w"> </span><span class="kt">Expression</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">Number</span><span class="w"> </span><span class="kt">Int</span>
+<span class="w">                </span><span class="o">|</span><span class="w"> </span><span class="kt">Add</span><span class="w"> </span><span class="kt">Expression</span><span class="w"> </span><span class="kt">Expression</span>
+<span class="w">                </span><span class="o">|</span><span class="w"> </span><span class="kt">Minus</span><span class="w"> </span><span class="kt">Expression</span><span class="w"> </span><span class="kt">Expression</span>
+<span class="w">                </span><span class="o">|</span><span class="w"> </span><span class="kt">Mult</span><span class="w"> </span><span class="kt">Expression</span><span class="w"> </span><span class="kt">Expression</span>
+<span class="w">                </span><span class="o">|</span><span class="w"> </span><span class="kt">Divide</span><span class="w"> </span><span class="kt">Expression</span><span class="w"> </span><span class="kt">Expression</span>
+</pre>
+          </div>
+          <p>
+           An element of such a data type would have a form such as
+           <code>
+            Mult (Add (Number 4) (Minus (Number 0) (Number 1))) (Number 2)
+           </code>
+           .
+          </p>
+          <p>
+           Writing an evaluation function for this language is a simple exercise; however, more complex transformations also become feasible.  For example, an optimization pass in a compiler might be written as a function taking an abstract expression as input and returning an optimized form.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Pattern_matching">
+            Pattern matching
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algebraic_data_type&amp;action=edit&amp;section=6" title="Edit section: Pattern matching">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a class="mw-redirect" href="/wiki/Pattern_Matching" title="Pattern Matching">
+            Pattern Matching
+           </a>
+          </div>
+          <p>
+           Algebraic data types are used to represent values that can be one of several
+           <i>
+            types of things
+           </i>
+           . Each type of thing is associated with an identifier called a
+           <i>
+            constructor
+           </i>
+           , which can be considered a tag for that kind of data. Each constructor can carry with it a different type of data.
+          </p>
+          <p>
+           For example, considering the binary
+           <code>
+            Tree
+           </code>
+           example shown above, a constructor could carry no data (e.g.,
+           <code>
+            Empty
+           </code>
+           ), or one piece of data (e.g.,
+           <code>
+            Leaf
+           </code>
+           has one Int value), or multiple pieces of data (e.g.,
+           <code>
+            Node
+           </code>
+           has two
+           <code>
+            Tree
+           </code>
+           values).
+          </p>
+          <p>
+           To do something with a value of this
+           <code>
+            Tree
+           </code>
+           algebraic data type, it is
+           <i>
+            deconstructed
+           </i>
+           using a process called
+           <a href="/wiki/Pattern_matching" title="Pattern matching">
+            pattern matching
+           </a>
+           . This involves matching the data with a series of
+           <i>
+            patterns
+           </i>
+           . The example function
+           <code>
+            depth
+           </code>
+           above pattern-matches its argument with three patterns. When the function is called, it finds the first pattern that matches its argument, performs any variable bindings that are found in the pattern, and evaluates the expression corresponding to the pattern.
+          </p>
+          <p>
+           Each pattern above has a form that resembles the structure of some possible value of this datatype. The first pattern simply matches values of the constructor
+           <code>
+            Empty
+           </code>
+           . The second pattern matches values of the constructor
+           <code>
+            Leaf
+           </code>
+           . Patterns are recursive, so then the data that is associated with that constructor is matched with the pattern "n". In this case, a lowercase identifier represents a pattern that matches any value, which then is bound to a variable of that name — in this case, a variable “
+           <code>
+            n
+           </code>
+           ” is bound to the integer value stored in the data type — to be used in the expression to evaluate.
+          </p>
+          <p>
+           The recursion in patterns in this example are trivial, but a possible more complex recursive pattern would be something like:
+          </p>
+          <p>
+           <code>
+            <code class="mw-highlight mw-highlight-lang-lisp mw-content-ltr" dir="ltr">
+             <span class="nv">
+              Node
+             </span>
+             <span class="w">
+             </span>
+             <span class="p">
+              (
+             </span>
+             <span class="nv">
+              Node
+             </span>
+             <span class="w">
+             </span>
+             <span class="p">
+              (
+             </span>
+             <span class="nv">
+              Leaf
+             </span>
+             <span class="w">
+             </span>
+             <span class="mi">
+              4
+             </span>
+             <span class="p">
+              )
+             </span>
+             <span class="w">
+             </span>
+             <span class="nv">
+              x
+             </span>
+             <span class="p">
+              )
+             </span>
+             <span class="w">
+             </span>
+             <span class="p">
+              (
+             </span>
+             <span class="nv">
+              Node
+             </span>
+             <span class="w">
+             </span>
+             <span class="nv">
+              y
+             </span>
+             <span class="w">
+             </span>
+             <span class="p">
+              (
+             </span>
+             <span class="nv">
+              Node
+             </span>
+             <span class="w">
+             </span>
+             <span class="nv">
+              Empty
+             </span>
+             <span class="w">
+             </span>
+             <span class="nv">
+              z
+             </span>
+             <span class="p">
+              ))
+             </span>
+            </code>
+           </code>
+          </p>
+          <p>
+           Recursive patterns several layers deep are used for example in balancing
+           <a href="/wiki/Red%E2%80%93black_tree" title="Red–black tree">
+            red–black trees
+           </a>
+           , which involve cases that require looking at colors several layers deep.
+          </p>
+          <p>
+           The example above is operationally equivalent to the following
+           <a href="/wiki/Pseudocode" title="Pseudocode">
+            pseudocode
+           </a>
+           :
+          </p>
+          <div class="mw-highlight mw-highlight-lang-swift mw-content-ltr" dir="ltr">
+           <pre><span></span> <span class="k">switch</span> <span class="n">on</span> <span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">constructor</span><span class="p">)</span>
+   <span class="k">case</span> <span class="n">Empty</span><span class="p">:</span>
+     <span class="k">return</span> <span class="mi">0</span>
+   <span class="k">case</span> <span class="n">Leaf</span><span class="p">:</span>
+     <span class="kd">let</span> <span class="nv">n</span> <span class="p">=</span> <span class="n">data</span><span class="p">.</span><span class="n">field1</span>
+     <span class="k">return</span> <span class="mi">1</span>
+   <span class="k">case</span> <span class="n">Node</span><span class="p">:</span>
+     <span class="kd">let</span> <span class="nv">l</span> <span class="p">=</span> <span class="n">data</span><span class="p">.</span><span class="n">field1</span>
+     <span class="kd">let</span> <span class="nv">r</span> <span class="p">=</span> <span class="n">data</span><span class="p">.</span><span class="n">field2</span>
+     <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="bp">max</span> <span class="p">(</span><span class="n">depth</span> <span class="n">l</span><span class="p">)</span> <span class="p">(</span><span class="n">depth</span> <span class="n">r</span><span class="p">)</span>
+</pre>
+          </div>
+          <p>
+           The advantages of algebraic data types can be highlighted by comparison of the above pseudocode with a pattern matching equivalent.
+          </p>
+          <p>
+           Firstly, there is
+           <a href="/wiki/Type_safety" title="Type safety">
+            type safety
+           </a>
+           . In the pseudocode example above, programmer diligence is required to not access
+           <samp style="padding-left:0.4em; padding-right:0.4em; color:var( --color-subtle, #666666);">
+            field2
+           </samp>
+           when the constructor is a
+           <code>
+            Leaf
+           </code>
+           . Also, the type of
+           <samp style="padding-left:0.4em; padding-right:0.4em; color:var( --color-subtle, #666666);">
+            field1
+           </samp>
+           is different for
+           <code>
+            Leaf
+           </code>
+           and
+           <code>
+            Node
+           </code>
+           . For Leaf it is
+           <samp style="padding-left:0.4em; padding-right:0.4em; color:var( --color-subtle, #666666);">
+            Int
+           </samp>
+           but for Node it is
+           <samp style="padding-left:0.4em; padding-right:0.4em; color:var( --color-subtle, #666666);">
+            Tree
+           </samp>
+           . The type system would have difficulties assigning a static type in a safe way for traditional
+           <a href="/wiki/Record_(computer_science)" title="Record (computer science)">
+            record
+           </a>
+           data structures. However, in pattern matching such problems are not faced. The type of each extracted value is based on the types declared by the relevant constructor. The number of values that can be extracted is known based on the constructor.
+          </p>
+          <p>
+           Secondly, in pattern matching, the compiler performs exhaustiveness checking to ensure all cases are handled. If one of the cases of the
+           <i>
+            depth
+           </i>
+           function above were missing, the compiler would issue a warning. Exhaustiveness checking may seem easy for simple patterns, but with many complex recursive patterns, the task soon becomes difficult for the average human (or compiler, if it must check arbitrary nested if-else constructs). Similarly, there may be patterns which never match (i.e., are already covered by prior patterns). The compiler can also check and issue warnings for these, as they may indicate an error in reasoning.
+          </p>
+          <p>
+           Algebraic data type pattern matching should not be confused with
+           <a href="/wiki/Regular_expression" title="Regular expression">
+            regular expression
+           </a>
+           string pattern matching. The purpose of both is similar (to extract parts from a piece of data matching certain constraints) however, the implementation is very different. Pattern matching on algebraic data types matches on the structural properties of an object rather than on the character sequence of strings.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Theory">
+            Theory
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algebraic_data_type&amp;action=edit&amp;section=7" title="Edit section: Theory">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Recursive_data_type" title="Recursive data type">
+            Recursive data type
+           </a>
+          </div>
+          <p>
+           A general algebraic data type is a possibly recursive
+           <a class="mw-redirect" href="/wiki/Sum_type" title="Sum type">
+            sum type
+           </a>
+           of
+           <a href="/wiki/Product_type" title="Product type">
+            product types
+           </a>
+           . Each constructor tags a product type to separate it from others, or if there is only one constructor, the data type is a product type. Further, the parameter types of a constructor are the factors of the product type. A parameterless constructor corresponds to the
+           <a href="/wiki/Empty_product" title="Empty product">
+            empty product
+           </a>
+           . If a datatype is recursive, the entire sum of products is wrapped in a
+           <a class="mw-redirect" href="/wiki/Recursive_type" title="Recursive type">
+            recursive type
+           </a>
+           , and each constructor also rolls the datatype into the recursive type.
+          </p>
+          <p>
+           For example, the Haskell datatype:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-haskell mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="w"> </span><span class="kr">data</span><span class="w"> </span><span class="kt">List</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ow">=</span><span class="w"> </span><span class="kt">Nil</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kt">Cons</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="p">(</span><span class="kt">List</span><span class="w"> </span><span class="n">a</span><span class="p">)</span>
+</pre>
+          </div>
+          <p>
+           is represented in
+           <a href="/wiki/Type_theory" title="Type theory">
+            type theory
+           </a>
+           as
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle \lambda \alpha .\mu \beta .1+\alpha \times \beta }" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  λ
+                  <!-- λ -->
+                 </mi>
+                 <mi>
+                  α
+                  <!-- α -->
+                 </mi>
+                 <mo>
+                  .
+                 </mo>
+                 <mi>
+                  μ
+                  <!-- μ -->
+                 </mi>
+                 <mi>
+                  β
+                  <!-- β -->
+                 </mi>
+                 <mn>
+                  .1
+                 </mn>
+                 <mo>
+                  +
+                 </mo>
+                 <mi>
+                  α
+                  <!-- α -->
+                 </mi>
+                 <mo>
+                  ×
+                  <!-- × -->
+                 </mo>
+                 <mi>
+                  β
+                  <!-- β -->
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle \lambda \alpha .\mu \beta .1+\alpha \times \beta }
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle \lambda \alpha .\mu \beta .1+\alpha \times \beta }" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/02c3a98c3c7f2fa166ca0199c9853170dd062cfe" style="vertical-align: -0.838ex; width:16.92ex; height:2.676ex;"/>
+           </span>
+           with constructors
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle \mathrm {nil} _{\alpha }=\mathrm {roll} \ (\mathrm {inl} \ \langle \rangle )}" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                   <mi mathvariant="normal">
+                    n
+                   </mi>
+                   <mi mathvariant="normal">
+                    i
+                   </mi>
+                   <mi mathvariant="normal">
+                    l
+                   </mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                   <mi>
+                    α
+                    <!-- α -->
+                   </mi>
+                  </mrow>
+                 </msub>
+                 <mo>
+                  =
+                 </mo>
+                 <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">
+                   r
+                  </mi>
+                  <mi mathvariant="normal">
+                   o
+                  </mi>
+                  <mi mathvariant="normal">
+                   l
+                  </mi>
+                  <mi mathvariant="normal">
+                   l
+                  </mi>
+                 </mrow>
+                 <mtext>
+                 </mtext>
+                 <mo stretchy="false">
+                  (
+                 </mo>
+                 <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">
+                   i
+                  </mi>
+                  <mi mathvariant="normal">
+                   n
+                  </mi>
+                  <mi mathvariant="normal">
+                   l
+                  </mi>
+                 </mrow>
+                 <mtext>
+                 </mtext>
+                 <mo fence="false" stretchy="false">
+                  ⟨
+                  <!-- ⟨ -->
+                 </mo>
+                 <mo fence="false" stretchy="false">
+                  ⟩
+                  <!-- ⟩ -->
+                 </mo>
+                 <mo stretchy="false">
+                  )
+                 </mo>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle \mathrm {nil} _{\alpha }=\mathrm {roll} \ (\mathrm {inl} \ \langle \rangle )}
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle \mathrm {nil} _{\alpha }=\mathrm {roll} \ (\mathrm {inl} \ \langle \rangle )}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9d085e71ca56b915464b95b1a9fdfbee8469453b" style="vertical-align: -0.838ex; width:17.703ex; height:2.843ex;"/>
+           </span>
+           and
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle \mathrm {cons} _{\alpha }\ x\ l=\mathrm {roll} \ (\mathrm {inr} \ \langle x,l\rangle )}" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                   <mi mathvariant="normal">
+                    c
+                   </mi>
+                   <mi mathvariant="normal">
+                    o
+                   </mi>
+                   <mi mathvariant="normal">
+                    n
+                   </mi>
+                   <mi mathvariant="normal">
+                    s
+                   </mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                   <mi>
+                    α
+                    <!-- α -->
+                   </mi>
+                  </mrow>
+                 </msub>
+                 <mtext>
+                 </mtext>
+                 <mi>
+                  x
+                 </mi>
+                 <mtext>
+                 </mtext>
+                 <mi>
+                  l
+                 </mi>
+                 <mo>
+                  =
+                 </mo>
+                 <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">
+                   r
+                  </mi>
+                  <mi mathvariant="normal">
+                   o
+                  </mi>
+                  <mi mathvariant="normal">
+                   l
+                  </mi>
+                  <mi mathvariant="normal">
+                   l
+                  </mi>
+                 </mrow>
+                 <mtext>
+                 </mtext>
+                 <mo stretchy="false">
+                  (
+                 </mo>
+                 <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">
+                   i
+                  </mi>
+                  <mi mathvariant="normal">
+                   n
+                  </mi>
+                  <mi mathvariant="normal">
+                   r
+                  </mi>
+                 </mrow>
+                 <mtext>
+                 </mtext>
+                 <mo fence="false" stretchy="false">
+                  ⟨
+                  <!-- ⟨ -->
+                 </mo>
+                 <mi>
+                  x
+                 </mi>
+                 <mo>
+                  ,
+                 </mo>
+                 <mi>
+                  l
+                 </mi>
+                 <mo fence="false" stretchy="false">
+                  ⟩
+                  <!-- ⟩ -->
+                 </mo>
+                 <mo stretchy="false">
+                  )
+                 </mo>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle \mathrm {cons} _{\alpha }\ x\ l=\mathrm {roll} \ (\mathrm {inr} \ \langle x,l\rangle )}
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle \mathrm {cons} _{\alpha }\ x\ l=\mathrm {roll} \ (\mathrm {inr} \ \langle x,l\rangle )}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/04d5a6833c6548ae9df512367299c103660e5ae6" style="vertical-align: -0.838ex; width:26.026ex; height:2.843ex;"/>
+           </span>
+           .
+          </p>
+          <p>
+           The Haskell List datatype can also be represented in type theory in a slightly different form, thus:
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle \mu \phi .\lambda \alpha .1+\alpha \times \phi \ \alpha }" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  μ
+                  <!-- μ -->
+                 </mi>
+                 <mi>
+                  ϕ
+                  <!-- ϕ -->
+                 </mi>
+                 <mo>
+                  .
+                 </mo>
+                 <mi>
+                  λ
+                  <!-- λ -->
+                 </mi>
+                 <mi>
+                  α
+                  <!-- α -->
+                 </mi>
+                 <mn>
+                  .1
+                 </mn>
+                 <mo>
+                  +
+                 </mo>
+                 <mi>
+                  α
+                  <!-- α -->
+                 </mi>
+                 <mo>
+                  ×
+                  <!-- × -->
+                 </mo>
+                 <mi>
+                  ϕ
+                  <!-- ϕ -->
+                 </mi>
+                 <mtext>
+                 </mtext>
+                 <mi>
+                  α
+                  <!-- α -->
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle \mu \phi .\lambda \alpha .1+\alpha \times \phi \ \alpha }
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle \mu \phi .\lambda \alpha .1+\alpha \times \phi \ \alpha }" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3ffbf46fe37f06828822167ecb461692c6493ea4" style="vertical-align: -0.838ex; width:19.095ex; height:2.676ex;"/>
+           </span>
+           .
+(Note how the
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle \mu }" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  μ
+                  <!-- μ -->
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle \mu }
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle \mu }" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9fd47b2a39f7a7856952afec1f1db72c67af6161" style="vertical-align: -0.838ex; width:1.402ex; height:2.176ex;"/>
+           </span>
+           and
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle \lambda }" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  λ
+                  <!-- λ -->
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle \lambda }
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle \lambda }" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b43d0ea3c9c025af1be9128e62a18fa74bedda2a" style="vertical-align: -0.338ex; width:1.355ex; height:2.176ex;"/>
+           </span>
+           constructs are reversed relative to the original.) The original formation specified a type function whose body was a recursive type. The revised version specifies a recursive function on types. (The type variable
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle \phi }" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  ϕ
+                  <!-- ϕ -->
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle \phi }
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle \phi }" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72b1f30316670aee6270a28334bdf4f5072cdde4" style="vertical-align: -0.671ex; width:1.385ex; height:2.509ex;"/>
+           </span>
+           is used to suggest a function rather than a
+           <i>
+            base type
+           </i>
+           like
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle \beta }" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  β
+                  <!-- β -->
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle \beta }
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle \beta }" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7ed48a5e36207156fb792fa79d29925d2f7901e8" style="vertical-align: -0.671ex; width:1.332ex; height:2.509ex;"/>
+           </span>
+           , since
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle \phi }" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  ϕ
+                  <!-- ϕ -->
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle \phi }
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle \phi }" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72b1f30316670aee6270a28334bdf4f5072cdde4" style="vertical-align: -0.671ex; width:1.385ex; height:2.509ex;"/>
+           </span>
+           is like a Greek
+           <i>
+            f
+           </i>
+           .) The function must also now be applied
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle \phi }" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  ϕ
+                  <!-- ϕ -->
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle \phi }
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle \phi }" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72b1f30316670aee6270a28334bdf4f5072cdde4" style="vertical-align: -0.671ex; width:1.385ex; height:2.509ex;"/>
+           </span>
+           to its argument type
+           <span class="mwe-math-element">
+            <span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;">
+             <math alttext="{\displaystyle \alpha }" xmlns="http://www.w3.org/1998/Math/MathML">
+              <semantics>
+               <mrow class="MJX-TeXAtom-ORD">
+                <mstyle displaystyle="true" scriptlevel="0">
+                 <mi>
+                  α
+                  <!-- α -->
+                 </mi>
+                </mstyle>
+               </mrow>
+               <annotation encoding="application/x-tex">
+                {\displaystyle \alpha }
+               </annotation>
+              </semantics>
+             </math>
+            </span>
+            <img alt="{\displaystyle \alpha }" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b79333175c8b3f0840bfb4ec41b8072c83ea88d3" style="vertical-align: -0.338ex; width:1.488ex; height:1.676ex;"/>
+           </span>
+           in the body of the type.
+          </p>
+          <p>
+           For the purposes of the List example, these two formulations are not significantly different; but the second form allows expressing so-called
+           <a class="new" href="/w/index.php?title=Nested_data_type&amp;action=edit&amp;redlink=1" title="Nested data type (page does not exist)">
+            nested data types
+           </a>
+           , i.e., those where the recursive type differs parametrically from the original. (For more information on nested data types, see the works of
+           <a href="/wiki/Richard_Bird_(computer_scientist)" title="Richard Bird (computer scientist)">
+            Richard Bird
+           </a>
+           ,
+           <a href="/wiki/Lambert_Meertens" title="Lambert Meertens">
+            Lambert Meertens
+           </a>
+           , and Ross Paterson.)
+          </p>
+          <p>
+           In
+           <a href="/wiki/Set_theory" title="Set theory">
+            set theory
+           </a>
+           the equivalent of a sum type is a
+           <a href="/wiki/Disjoint_union" title="Disjoint union">
+            disjoint union
+           </a>
+           , a set whose elements are pairs consisting of a tag (equivalent to a constructor) and an object of a type corresponding to the tag (equivalent to the constructor arguments).
+           <sup class="reference" id="cite_ref-3">
+            <a href="#cite_note-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Programming_languages_with_algebraic_data_types">
+            Programming languages with algebraic data types
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algebraic_data_type&amp;action=edit&amp;section=8" title="Edit section: Programming languages with algebraic data types">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Comparison_of_programming_languages_(algebraic_data_type)" title="Comparison of programming languages (algebraic data type)">
+            Comparison of programming languages (algebraic data type)
+           </a>
+          </div>
+          <p>
+           Many programming languages incorporate algebraic data types as a first class notion, including:
+          </p>
+          <style data-mw-deduplicate="TemplateStyles:r1184024115">
+           .mw-parser-output .div-col{margin-top:0.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:1px solid #aaa}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column}
+          </style>
+          <div class="div-col" style="column-width: 30em;">
+           <ul>
+            <li>
+             <a href="/wiki/ATS_(programming_language)" title="ATS (programming language)">
+              ATS
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Ceylon_(programming_language)" title="Ceylon (programming language)">
+              Ceylon
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Clean_(programming_language)" title="Clean (programming language)">
+              Clean
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Coq_(software)" title="Coq (software)">
+              Coq
+             </a>
+             <sup class="reference" id="cite_ref-4">
+              <a href="#cite_note-4">
+               <span class="cite-bracket">
+                [
+               </span>
+               4
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+            </li>
+            <li>
+             <a href="/wiki/C%2B%2B" title="C++">
+              C++
+             </a>
+             <sup class="reference" id="cite_ref-5">
+              <a href="#cite_note-5">
+               <span class="cite-bracket">
+                [
+               </span>
+               5
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+            </li>
+            <li>
+             <a href="/wiki/Elm_(programming_language)" title="Elm (programming language)">
+              Elm
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Dart_(programming_language)" title="Dart (programming language)">
+              Dart
+             </a>
+             <sup class="reference" id="cite_ref-6">
+              <a href="#cite_note-6">
+               <span class="cite-bracket">
+                [
+               </span>
+               6
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+            </li>
+            <li>
+             <a class="external text" href="https://flow.org/" rel="nofollow">
+              Flow
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">
+              F#
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/F*_(programming_language)" title="F* (programming language)">
+              F*
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Free_Pascal" title="Free Pascal">
+              Free Pascal
+             </a>
+            </li>
+            <li>
+             <a class="mw-redirect" href="/wiki/Haskell_(programming_language)" title="Haskell (programming language)">
+              Haskell
+             </a>
+             <sup class="reference" id="cite_ref-7">
+              <a href="#cite_note-7">
+               <span class="cite-bracket">
+                [
+               </span>
+               7
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+            </li>
+            <li>
+             <a href="/wiki/Haxe" title="Haxe">
+              Haxe
+             </a>
+             <sup class="reference" id="cite_ref-8">
+              <a href="#cite_note-8">
+               <span class="cite-bracket">
+                [
+               </span>
+               8
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+            </li>
+            <li>
+             <a href="/wiki/Hope_(programming_language)" title="Hope (programming language)">
+              Hope
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Idris_(programming_language)" title="Idris (programming language)">
+              Idris
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Java_(programming_language)" title="Java (programming language)">
+              Java
+             </a>
+             (16 for product types,
+             <sup class="reference" id="cite_ref-9">
+              <a href="#cite_note-9">
+               <span class="cite-bracket">
+                [
+               </span>
+               9
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+             17 for sum types
+             <sup class="reference" id="cite_ref-10">
+              <a href="#cite_note-10">
+               <span class="cite-bracket">
+                [
+               </span>
+               10
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+             )
+            </li>
+            <li>
+             <a href="/wiki/Kotlin_(programming_language)" title="Kotlin (programming language)">
+              Kotlin
+             </a>
+             <sup class="reference" id="cite_ref-11">
+              <a href="#cite_note-11">
+               <span class="cite-bracket">
+                [
+               </span>
+               11
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+            </li>
+            <li>
+             <a href="/wiki/Limbo_(programming_language)" title="Limbo (programming language)">
+              Limbo
+             </a>
+            </li>
+            <li>
+             <a class="mw-redirect" href="/wiki/Language_Of_Temporal_Ordering_Specification" title="Language Of Temporal Ordering Specification">
+              Language Of Temporal Ordering Specification
+             </a>
+             (LOTOS)
+            </li>
+            <li>
+             <a href="/wiki/Mercury_(programming_language)" title="Mercury (programming language)">
+              Mercury
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Miranda_(programming_language)" title="Miranda (programming language)">
+              Miranda
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Nemerle" title="Nemerle">
+              Nemerle
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Nim_(programming_language)" title="Nim (programming language)">
+              Nim
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/OCaml" title="OCaml">
+              OCaml
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Opa_(programming_language)" title="Opa (programming language)">
+              Opa
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/OpenCog" title="OpenCog">
+              OpenCog
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Perl" title="Perl">
+              Perl
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/PureScript" title="PureScript">
+              PureScript
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Python_(programming_language)" title="Python (programming language)">
+              Python
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Racket_(programming_language)" title="Racket (programming language)">
+              Racket
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Reason_(programming_language)" title="Reason (programming language)">
+              Reason
+             </a>
+             <sup class="reference" id="cite_ref-12">
+              <a href="#cite_note-12">
+               <span class="cite-bracket">
+                [
+               </span>
+               12
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+            </li>
+            <li>
+             <a href="/wiki/Rust_(programming_language)" title="Rust (programming language)">
+              Rust
+             </a>
+             <sup class="reference" id="cite_ref-13">
+              <a href="#cite_note-13">
+               <span class="cite-bracket">
+                [
+               </span>
+               13
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+            </li>
+            <li>
+             <a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">
+              Scala
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Standard_ML" title="Standard ML">
+              Standard ML
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">
+              Swift
+             </a>
+            </li>
+            <li>
+             <a class="mw-redirect" href="/wiki/Tom_(pattern_matching_language)" title="Tom (pattern matching language)">
+              Tom
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/TypeScript" title="TypeScript">
+              TypeScript
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Visual_Prolog" title="Visual Prolog">
+              Visual Prolog
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algebraic_data_type&amp;action=edit&amp;section=9" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Disjoint_union" title="Disjoint union">
+             Disjoint union
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Generalized_algebraic_data_type" title="Generalized algebraic data type">
+             Generalized algebraic data type
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Initial_algebra" title="Initial algebra">
+             Initial algebra
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Quotient_type" title="Quotient type">
+             Quotient type
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Tagged_union" title="Tagged union">
+             Tagged union
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Type_theory" title="Type theory">
+             Type theory
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Visitor_pattern" title="Visitor pattern">
+             Visitor pattern
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Algebraic_data_type&amp;action=edit&amp;section=10" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="external text" href="http://caml.inria.fr/pub/docs/manual-ocaml/coreexamples.html#s%3Atut-recvariants" rel="nofollow">
+                Records and variants
+               </a>
+               - OCaml manual section 1.4
+               <a class="external text" href="https://web.archive.org/web/20200428214640/http://caml.inria.fr/pub/docs/manual-ocaml/coreexamples.html" rel="nofollow">
+                Archived
+               </a>
+               2020-04-28 at the
+               <a href="/wiki/Wayback_Machine" title="Wayback Machine">
+                Wayback Machine
+               </a>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation conference cs1" id="CITEREFPaul_HudakJohn_HughesSimon_Peyton_JonesPhilip_Wadler">
+                Paul Hudak; John Hughes; Simon Peyton Jones; Philip Wadler.
+                <a class="external text" href="http://dl.acm.org/citation.cfm?id=1238856" rel="nofollow">
+                 "A history of Haskell: being lazy with class"
+                </a>
+                .
+                <i>
+                 Proceedings of the third ACM SIGPLAN conference on History of programming languages
+                </i>
+                .
+                <q>
+                 Presentations included Rod Burstall, Dave MacQueen, and Don Sannella on Hope, the language that introduced algebraic data types
+                </q>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=A+history+of+Haskell%3A+being+lazy+with+class&amp;rft.btitle=Proceedings+of+the+third+ACM+SIGPLAN+conference+on+History+of+programming+languages&amp;rft.au=Paul+Hudak&amp;rft.au=John+Hughes&amp;rft.au=Simon+Peyton+Jones&amp;rft.au=Philip+Wadler&amp;rft_id=http%3A%2F%2Fdl.acm.org%2Fcitation.cfm%3Fid%3D1238856&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgebraic+data+type">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1041539562">
+                .mw-parser-output .citation{word-wrap:break-word}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}
+               </style>
+               <span class="citation foldoc">
+                This article is based on material taken from
+                <a class="external text" href="https://foldoc.org/Algebraic+data+type" rel="nofollow">
+                 Algebraic+data+type
+                </a>
+                at the
+                <i>
+                 <a href="/wiki/Free_On-line_Dictionary_of_Computing" title="Free On-line Dictionary of Computing">
+                  Free On-line Dictionary of Computing
+                 </a>
+                </i>
+                prior to 1 November 2008 and incorporated under the "relicensing" terms of the
+                <a href="/wiki/GNU_Free_Documentation_License" title="GNU Free Documentation License">
+                 GFDL
+                </a>
+                , version 1.3 or later.
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="external text" href="https://coq.inria.fr/distrib/current/refman/language/cic.html" rel="nofollow">
+                Calculus of Inductive Constructions
+               </a>
+               , and basic standard libraries :
+               <a class="external text" href="https://coq.inria.fr/distrib/current/stdlib/Coq.Init.Datatypes.html" rel="nofollow">
+                <code>
+                 Datatypes
+                </code>
+               </a>
+               and
+               <a class="external text" href="https://coq.inria.fr/distrib/current/stdlib/Coq.Init.Logic.html" rel="nofollow">
+                <code>
+                 Logic
+                </code>
+               </a>
+               .
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.youtube.com/watch?v=ojZbFIQSdl8" rel="nofollow">
+                 "CppCon 2016: Ben Deane "Using Types Effectively"
+                 <span class="cs1-kern-right">
+                 </span>
+                 "
+                </a>
+                .
+                <a class="external text" href="https://ghostarchive.org/varchive/youtube/20211212/ojZbFIQSdl8" rel="nofollow">
+                 Archived
+                </a>
+                from the original on 2021-12-12 – via www.youtube.com.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=CppCon+2016%3A+Ben+Deane+%22Using+Types+Effectively%22&amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DojZbFIQSdl8&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgebraic+data+type">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://dart.dev/language/class-modifiers#sealed" rel="nofollow">
+                 "Sealed class modifier"
+                </a>
+                .
+                <i>
+                 Dart
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Dart&amp;rft.atitle=Sealed+class+modifier&amp;rft_id=https%3A%2F%2Fdart.dev%2Flanguage%2Fclass-modifiers%23sealed&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgebraic+data+type">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://serokell.io/blog/algebraic-data-types-in-haskell" rel="nofollow">
+                 "Algebraic Data Types in Haskell"
+                </a>
+                .
+                <i>
+                 Serokell
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Serokell&amp;rft.atitle=Algebraic+Data+Types+in+Haskell&amp;rft_id=https%3A%2F%2Fserokell.io%2Fblog%2Falgebraic-data-types-in-haskell&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgebraic+data+type">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://haxe.org/manual/types-enum-instance.html" rel="nofollow">
+                 "Enum Instance"
+                </a>
+                .
+                <i>
+                 Haxe - The Cross-platform Toolkit
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Haxe+-+The+Cross-platform+Toolkit&amp;rft.atitle=Enum+Instance&amp;rft_id=https%3A%2F%2Fhaxe.org%2Fmanual%2Ftypes-enum-instance.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgebraic+data+type">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-9">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://openjdk.org/jeps/395" rel="nofollow">
+                 "JEP 395: Records"
+                </a>
+                .
+                <i>
+                 OpenJDK
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=OpenJDK&amp;rft.atitle=JEP+395%3A+Records&amp;rft_id=https%3A%2F%2Fopenjdk.org%2Fjeps%2F395&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgebraic+data+type">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://openjdk.org/jeps/409" rel="nofollow">
+                 "JEP 409: Sealed Classes"
+                </a>
+                .
+                <i>
+                 OpenJDK
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=OpenJDK&amp;rft.atitle=JEP+409%3A+Sealed+Classes&amp;rft_id=https%3A%2F%2Fopenjdk.org%2Fjeps%2F409&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgebraic+data+type">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-11">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://kotlinlang.org/docs/reference/sealed-classes.html" rel="nofollow">
+                 "Sealed Classes - Kotlin Programming Language"
+                </a>
+                .
+                <i>
+                 Kotlin
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Kotlin&amp;rft.atitle=Sealed+Classes+-+Kotlin+Programming+Language&amp;rft_id=https%3A%2F%2Fkotlinlang.org%2Fdocs%2Freference%2Fsealed-classes.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgebraic+data+type">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-12">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-12">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://reasonml.github.io/" rel="nofollow">
+                 "Reason · Reason lets you write simple, fast and quality type safe code while leveraging both the JavaScript &amp; OCaml ecosystems"
+                </a>
+                .
+                <i>
+                 reasonml.github.io
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=reasonml.github.io&amp;rft.atitle=Reason+%C2%B7+Reason+lets+you+write+simple%2C+fast+and+quality+type+safe+code+while+leveraging+both+the+JavaScript+%26+OCaml+ecosystems.&amp;rft_id=https%3A%2F%2Freasonml.github.io%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgebraic+data+type">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-13">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-13">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://doc.rust-lang.org/book/ch06-00-enums.html" rel="nofollow">
+                 "Enums and Pattern Matching - The Rust Programming Language"
+                </a>
+                .
+                <i>
+                 doc.rust-lang.org
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  31 August
+                 </span>
+                 2021
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=doc.rust-lang.org&amp;rft.atitle=Enums+and+Pattern+Matching+-+The+Rust+Programming+Language&amp;rft_id=https%3A%2F%2Fdoc.rust-lang.org%2Fbook%2Fch06-00-enums.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgebraic+data+type">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Data_types" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Data_types" title="Template:Data types">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Data_types" title="Template talk:Data types">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Data_types" title="Special:EditPage/Template:Data types">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Data_types" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Data_type" title="Data type">
+                 Data types
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Units_of_information" title="Units of information">
+                Uninterpreted
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Bit" title="Bit">
+                   Bit
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Byte" title="Byte">
+                   Byte
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Ternary_numeral_system" title="Ternary numeral system">
+                   Trit
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Ternary_numeral_system#Tryte" title="Ternary numeral system">
+                   Tryte
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Word_(computer_architecture)" title="Word (computer architecture)">
+                   Word
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Bit_array" title="Bit array">
+                   Bit array
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Numeric
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">
+                   Arbitrary-precision or bignum
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Complex_data_type" title="Complex data type">
+                   Complex
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Decimal_data_type" title="Decimal data type">
+                   Decimal
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Fixed-point_arithmetic" title="Fixed-point arithmetic">
+                   Fixed point
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Floating-point_arithmetic" title="Floating-point arithmetic">
+                   Floating point
+                  </a>
+                  <ul>
+                   <li>
+                    Reduced precision
+                    <ul>
+                     <li>
+                      <a href="/wiki/Minifloat" title="Minifloat">
+                       Minifloat
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Half-precision_floating-point_format" title="Half-precision floating-point format">
+                       Half precision
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Bfloat16_floating-point_format" title="Bfloat16 floating-point format">
+                       bfloat16
+                      </a>
+                     </li>
+                    </ul>
+                   </li>
+                   <li>
+                    <a href="/wiki/Single-precision_floating-point_format" title="Single-precision floating-point format">
+                     Single precision
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Double-precision_floating-point_format" title="Double-precision floating-point format">
+                     Double precision
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Quadruple-precision_floating-point_format" title="Quadruple-precision floating-point format">
+                     Quadruple precision
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Octuple-precision_floating-point_format" title="Octuple-precision floating-point format">
+                     Octuple precision
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Extended_precision" title="Extended precision">
+                     Extended precision
+                    </a>
+                    <ul>
+                     <li>
+                      <a href="/wiki/Long_double" title="Long double">
+                       Long double
+                      </a>
+                     </li>
+                    </ul>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Integer_(computer_science)" title="Integer (computer science)">
+                   Integer
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Signedness" title="Signedness">
+                     signedness
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Interval_arithmetic#Implementations" title="Interval arithmetic">
+                   Interval
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Rational_data_type" title="Rational data type">
+                   Rational
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Pointer_(computer_programming)" title="Pointer (computer programming)">
+                Pointer
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Memory_address" title="Memory address">
+                   Address
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Physical_address" title="Physical address">
+                     physical
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Virtual_address_space" title="Virtual address space">
+                     virtual
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Reference_(computer_science)" title="Reference (computer science)">
+                   Reference
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Plain_text" title="Plain text">
+                Text
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Character_(computing)" title="Character (computing)">
+                   Character
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/String_(computer_science)" title="String (computer science)">
+                   String
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Null-terminated_string" title="Null-terminated string">
+                     null-terminated
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Composite_data_type" title="Composite data type">
+                Composite
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Algebraic data type
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Generalized_algebraic_data_type" title="Generalized algebraic data type">
+                     generalized
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Array_data_type" title="Array data type">
+                   Array
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Associative_array" title="Associative array">
+                   Associative array
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Class_(computer_programming)" title="Class (computer programming)">
+                   Class
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Dependent_type" title="Dependent type">
+                   Dependent
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Intuitionistic_type_theory#Equality_type" title="Intuitionistic type theory">
+                   Equality
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Inductive_type" title="Inductive type">
+                   Inductive
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Intersection_type" title="Intersection type">
+                   Intersection
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/List_(abstract_data_type)" title="List (abstract data type)">
+                   List
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Object_(computer_science)" title="Object (computer science)">
+                   Object
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Metaobject" title="Metaobject">
+                     metaobject
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Option_type" title="Option type">
+                   Option type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Product_type" title="Product type">
+                   Product
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Record_(computer_science)" title="Record (computer science)">
+                   Record or Struct
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Refinement_type" title="Refinement type">
+                   Refinement
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Set_(abstract_data_type)" title="Set (abstract data type)">
+                   Set
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Union_type" title="Union type">
+                   Union
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Tagged_union" title="Tagged union">
+                     tagged
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Other
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Boolean_data_type" title="Boolean data type">
+                   Boolean
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Bottom_type" title="Bottom type">
+                   Bottom type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Container_(abstract_data_type)" title="Container (abstract data type)">
+                   Collection
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Enumerated_type" title="Enumerated type">
+                   Enumerated type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Exception_handling" title="Exception handling">
+                   Exception
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Function_type" title="Function type">
+                   Function type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Opaque_data_type" title="Opaque data type">
+                   Opaque data type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Recursive_data_type" title="Recursive data type">
+                   Recursive data type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Semaphore_(programming)" title="Semaphore (programming)">
+                   Semaphore
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Stream_(computing)" title="Stream (computing)">
+                   Stream
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Strongly_typed_identifier" title="Strongly typed identifier">
+                   Strongly typed identifier
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Top_type" title="Top type">
+                   Top type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Type_class" title="Type class">
+                   Type class
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Empty_type" title="Empty type">
+                   Empty type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Unit_type" title="Unit type">
+                   Unit type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Void_type" title="Void type">
+                   Void
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Related
+               <br/>
+               topics
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Abstract_data_type" title="Abstract data type">
+                   Abstract data type
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Boxing_(computer_science)" title="Boxing (computer science)">
+                   Boxing
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Data_structure" title="Data structure">
+                   Data structure
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Generic_programming" title="Generic programming">
+                   Generic
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Kind_(type_theory)" title="Kind (type theory)">
+                   Kind
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Metaclass" title="Metaclass">
+                     metaclass
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Parametric_polymorphism" title="Parametric polymorphism">
+                   Parametric polymorphism
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Primitive_data_type" title="Primitive data type">
+                   Primitive data type
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Interface_(object-oriented_programming)" title="Interface (object-oriented programming)">
+                   Interface
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Subtyping" title="Subtyping">
+                   Subtyping
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Type_constructor" title="Type constructor">
+                   Type constructor
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Type_conversion" title="Type conversion">
+                   Type conversion
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Type_system" title="Type system">
+                   Type system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Type_theory" title="Type theory">
+                   Type theory
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Variable_(computer_science)" title="Variable (computer science)">
+                   Variable
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐p4zlz
+Cached time: 20240926232821
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.637 seconds
+Real time usage: 1.535 seconds
+Preprocessor visited node count: 1349/1000000
+Post‐expand include size: 69464/2097152 bytes
+Template argument size: 14160/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 16/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 60860/5000000 bytes
+Lua time usage: 0.403/10.000 seconds
+Lua memory usage: 5819293/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1376.933      1 -total
+ 15.99%  220.203      1 Template:Reflist
+  9.61%  132.305      1 Template:Data_types
+  9.41%  129.515      1 Template:Navbox
+  8.71%  119.987      1 Template:Multiple_issues
+  8.50%  117.028      1 Template:Cite_conference
+  7.42%  102.109      1 Template:Short_description
+  5.52%   76.060      1 Template:Refimprove
+  5.49%   75.559      2 Template:Ambox
+  4.65%   64.027      2 Template:Pagetype
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:283867-0!canonical and timestamp 20240926232821 and revision id 1243060277. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Algebraic_data_type&amp;oldid=1243060277">
+          https://en.wikipedia.org/w/index.php?title=Algebraic_data_type&amp;oldid=1243060277
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Functional_programming" title="Category:Functional programming">
+            Functional programming
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Type_theory" title="Category:Type theory">
+            Type theory
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Data_types" title="Category:Data types">
+            Data types
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Composite_data_types" title="Category:Composite data types">
+            Composite data types
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">
+            Webarchive template wayback links
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_October_2015" title="Category:Articles needing additional references from October 2015">
+            Articles needing additional references from October 2015
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_articles_that_are_too_technical_from_September_2017" title="Category:Wikipedia articles that are too technical from September 2017">
+            Wikipedia articles that are too technical from September 2017
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_that_are_too_technical" title="Category:All articles that are too technical">
+            All articles that are too technical
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_multiple_maintenance_issues" title="Category:Articles with multiple maintenance issues">
+            Articles with multiple maintenance issues
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_example_Haskell_code" title="Category:Articles with example Haskell code">
+            Articles with example Haskell code
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 30 August 2024, at 07:57
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Algebraic_data_type&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.canary-69469c98b8-4njxz","wgBackendResponseTime":153,"wgPageParseReport":{"limitreport":{"cputime":"0.637","walltime":"1.535","ppvisitednodes":{"value":1349,"limit":1000000},"postexpandincludesize":{"value":69464,"limit":2097152},"templateargumentsize":{"value":14160,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":16,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":60860,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00% 1376.933      1 -total"," 15.99%  220.203      1 Template:Reflist","  9.61%  132.305      1 Template:Data_types","  9.41%  129.515      1 Template:Navbox","  8.71%  119.987      1 Template:Multiple_issues","  8.50%  117.028      1 Template:Cite_conference","  7.42%  102.109      1 Template:Short_description","  5.52%   76.060      1 Template:Refimprove","  5.49%   75.559      2 Template:Ambox","  4.65%   64.027      2 Template:Pagetype"]},"scribunto":{"limitreport-timeusage":{"value":"0.403","limit":"10.000"},"limitreport-memusage":{"value":5819293,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-p4zlz","timestamp":"20240926232821","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Algebraic data type","url":"https:\/\/en.wikipedia.org\/wiki\/Algebraic_data_type","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1322511","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1322511","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-07-29T06:02:57Z","dateModified":"2024-08-30T07:57:54Z","headline":"in computer programming, a type formed by combining other types"}
+  </script>
+ </body>
+</html>

@@ -1,0 +1,2315 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Security through obscurity - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"79a78f9f-bb72-4743-bba9-b91401529d72","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Security_through_obscurity","wgTitle":"Security through obscurity","wgCurRevisionId":1247256073,"wgRevisionId":1247256073,"wgArticleId":29087,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Wikipedia articles needing clarification from September 2022","Webarchive template wayback links","Computer security procedures","Cryptography","Secrecy"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Security_through_obscurity","wgRelevantArticleId":29087,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":
+true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Security_by_obscurity","wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgULSCurrentAutonym":"English","wgInternalRedirectTargetUrl":"/wiki/Security_through_obscurity","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q133735","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands",
+"fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher",
+"ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/f/f1/Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="1426" property="og:image:height"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg/800px-Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg" property="og:image"/>
+  <meta content="800" property="og:image:width"/>
+  <meta content="951" property="og:image:height"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg/640px-Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg" property="og:image"/>
+  <meta content="640" property="og:image:width"/>
+  <meta content="761" property="og:image:height"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Security through obscurity - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Security_through_obscurity" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Security_through_obscurity&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Security_through_obscurity" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Security_by_obscurity"/>
+  <meta eecs485_docid="38684623"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Security_through_obscurity rootpage-Security_through_obscurity skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Security+through+obscurity" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Security+through+obscurity" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Security+through+obscurity" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Security+through+obscurity" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-History">
+           <a class="vector-toc-link" href="#History">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              History
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-History-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Criticism">
+           <a class="vector-toc-link" href="#Criticism">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Criticism
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Criticism-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Obscurity_in_architecture_vs._technique">
+           <a class="vector-toc-link" href="#Obscurity_in_architecture_vs._technique">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Obscurity in architecture vs. technique
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Obscurity_in_architecture_vs._technique-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Security through obscurity
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 17 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-17" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          17 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="الأمن من خلال الغموض" href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A3%D9%85%D9%86_%D9%85%D9%86_%D8%AE%D9%84%D8%A7%D9%84_%D8%A7%D9%84%D8%BA%D9%85%D9%88%D8%B6" hreflang="ar" lang="ar" title="الأمن من خلال الغموض – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Seguretat per la foscor" href="https://ca.wikipedia.org/wiki/Seguretat_per_la_foscor" hreflang="ca" lang="ca" title="Seguretat per la foscor – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-cs mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Čeština" data-language-local-name="Czech" data-title="Security through obscurity" href="https://cs.wikipedia.org/wiki/Security_through_obscurity" hreflang="cs" lang="cs" title="Security through obscurity – Czech">
+             <span>
+              Čeština
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Security through obscurity" href="https://de.wikipedia.org/wiki/Security_through_obscurity" hreflang="de" lang="de" title="Security through obscurity – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-el mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Ελληνικά" data-language-local-name="Greek" data-title="Ασφάλεια μέσω αφάνειας" href="https://el.wikipedia.org/wiki/%CE%91%CF%83%CF%86%CE%AC%CE%BB%CE%B5%CE%B9%CE%B1_%CE%BC%CE%AD%CF%83%CF%89_%CE%B1%CF%86%CE%AC%CE%BD%CE%B5%CE%B9%CE%B1%CF%82" hreflang="el" lang="el" title="Ασφάλεια μέσω αφάνειας – Greek">
+             <span>
+              Ελληνικά
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Seguridad por oscuridad" href="https://es.wikipedia.org/wiki/Seguridad_por_oscuridad" hreflang="es" lang="es" title="Seguridad por oscuridad – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Sécurité par l'obscurité" href="https://fr.wikipedia.org/wiki/S%C3%A9curit%C3%A9_par_l%27obscurit%C3%A9" hreflang="fr" lang="fr" title="Sécurité par l'obscurité – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Sicurezza tramite segretezza" href="https://it.wikipedia.org/wiki/Sicurezza_tramite_segretezza" hreflang="it" lang="it" title="Sicurezza tramite segretezza – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="אבטחה באמצעות עמימות" href="https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%98%D7%97%D7%94_%D7%91%D7%90%D7%9E%D7%A6%D7%A2%D7%95%D7%AA_%D7%A2%D7%9E%D7%99%D7%9E%D7%95%D7%AA" hreflang="he" lang="he" title="אבטחה באמצעות עמימות – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Magyar" data-language-local-name="Hungarian" data-title="Bizonytalanságon alapuló biztonság" href="https://hu.wikipedia.org/wiki/Bizonytalans%C3%A1gon_alapul%C3%B3_biztons%C3%A1g" hreflang="hu" lang="hu" title="Bizonytalanságon alapuló biztonság – Hungarian">
+             <span>
+              Magyar
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="Security through obscurity" href="https://nl.wikipedia.org/wiki/Security_through_obscurity" hreflang="nl" lang="nl" title="Security through obscurity – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-no mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" data-title="Sikkerhet gjennom uklarhet" href="https://no.wikipedia.org/wiki/Sikkerhet_gjennom_uklarhet" hreflang="nb" lang="nb" title="Sikkerhet gjennom uklarhet – Norwegian Bokmål">
+             <span>
+              Norsk bokmål
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Security through obscurity" href="https://pl.wikipedia.org/wiki/Security_through_obscurity" hreflang="pl" lang="pl" title="Security through obscurity – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Segurança por obscurantismo" href="https://pt.wikipedia.org/wiki/Seguran%C3%A7a_por_obscurantismo" hreflang="pt" lang="pt" title="Segurança por obscurantismo – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Безопасность через неясность" href="https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D0%BD%D0%B5%D1%8F%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C" hreflang="ru" lang="ru" title="Безопасность через неясность – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Безпека через неясність" href="https://uk.wikipedia.org/wiki/%D0%91%D0%B5%D0%B7%D0%BF%D0%B5%D0%BA%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D0%BD%D0%B5%D1%8F%D1%81%D0%BD%D1%96%D1%81%D1%82%D1%8C" hreflang="uk" lang="uk" title="Безпека через неясність – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="隱晦式安全" href="https://zh.wikipedia.org/wiki/%E9%9A%B1%E6%99%A6%E5%BC%8F%E5%AE%89%E5%85%A8" hreflang="zh" lang="zh" title="隱晦式安全 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q133735#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Security_through_obscurity" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Security_through_obscurity" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Security_through_obscurity">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Security_through_obscurity&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Security_through_obscurity&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Security_through_obscurity">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Security_through_obscurity&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Security_through_obscurity&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Security_through_obscurity" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Security_through_obscurity" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Security_through_obscurity&amp;oldid=1247256073" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Security_through_obscurity&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Security_through_obscurity&amp;id=1247256073&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSecurity_through_obscurity">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSecurity_through_obscurity">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q133735" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Security_through_obscurity&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Security_through_obscurity&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+         <span class="mw-redirectedfrom">
+          (Redirected from
+          <a class="mw-redirect" href="/w/index.php?title=Security_by_obscurity&amp;redirect=no" title="Security by obscurity">
+           Security by obscurity
+          </a>
+          )
+         </span>
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Reliance on design or implementation secrecy for security
+         </div>
+         <figure class="mw-default-size" typeof="mw:File/Thumb">
+          <a class="mw-file-description" href="/wiki/File:Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg">
+           <img class="mw-file-element" data-file-height="959" data-file-width="807" decoding="async" height="261" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg/220px-Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg/330px-Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg/440px-Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg 2x" width="220"/>
+          </a>
+          <figcaption>
+           Security through obscurity should not be used as the only security feature of a system
+          </figcaption>
+         </figure>
+         <p>
+          In
+          <a href="/wiki/Security_engineering" title="Security engineering">
+           security engineering
+          </a>
+          ,
+          <b>
+           security through obscurity
+          </b>
+          is the practice of concealing the details or mechanisms of a system to enhance its security. This approach relies on the principle of
+          <a href="/wiki/Cypherpunk#Hiding_the_act_of_hiding" title="Cypherpunk">
+           hiding something in plain sight
+          </a>
+          , akin to a magician's
+          <a href="/wiki/Sleight_of_hand" title="Sleight of hand">
+           sleight of hand
+          </a>
+          or the use of
+          <a href="/wiki/Camouflage" title="Camouflage">
+           camouflage
+          </a>
+          . It diverges from traditional security methods, such as physical locks, and is more about obscuring information or characteristics to deter potential threats. Examples of this practice include disguising sensitive information within commonplace items, like a piece of paper in a book, or altering digital footprints, such as
+          <a class="mw-redirect" href="/wiki/User_agent_spoofing" title="User agent spoofing">
+           spoofing a web browser's version number
+          </a>
+          . While not a standalone solution, security through obscurity can complement other
+          <a href="/wiki/Operations_security" title="Operations security">
+           security measures
+          </a>
+          in certain scenarios.
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          Obscurity in the context of security engineering is the notion that information can be protected, to a certain extent, when it is difficult to access or comprehend. This concept hinges on the principle of making the details or workings of a system less visible or understandable, thereby reducing the likelihood of unauthorized access or manipulation.
+          <sup class="reference" id="cite_ref-2">
+           <a href="#cite_note-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="History">
+            History
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Security_through_obscurity&amp;action=edit&amp;section=1" title="Edit section: History">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           An early opponent of security through obscurity was the locksmith
+           <a href="/wiki/Alfred_Charles_Hobbs" title="Alfred Charles Hobbs">
+            Alfred Charles Hobbs
+           </a>
+           , who in 1851 demonstrated to the public how state-of-the-art locks could be picked. In response to concerns that exposing security flaws in the design of locks could make them more vulnerable to criminals, he said: "Rogues are very keen in their profession, and know already much more than we can teach them."
+           <sup class="reference" id="cite_ref-3">
+            <a href="#cite_note-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           There is scant formal literature on the issue of security through obscurity. Books on
+           <a href="/wiki/Security_engineering" title="Security engineering">
+            security engineering
+           </a>
+           cite
+           <a href="/wiki/Kerckhoffs%27s_principle" title="Kerckhoffs's principle">
+            Kerckhoffs' doctrine
+           </a>
+           from 1883, if they cite anything at all. For example, in a discussion about secrecy and openness in
+           <a href="/wiki/Nuclear_command_and_control" title="Nuclear command and control">
+            nuclear command and control
+           </a>
+           :
+          </p>
+          <blockquote>
+           <p>
+            [T]he benefits of reducing the likelihood of an accidental war were considered to outweigh the possible benefits of secrecy. This is a modern reincarnation of Kerckhoffs' doctrine, first put forward in the nineteenth century, that the security of a system should depend on its key, not on its design remaining obscure.
+            <sup class="reference" id="cite_ref-4">
+             <a href="#cite_note-4">
+              <span class="cite-bracket">
+               [
+              </span>
+              4
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </p>
+          </blockquote>
+          <p>
+           <a href="/wiki/Peter_Swire" title="Peter Swire">
+            Peter Swire
+           </a>
+           has written about the trade-off between the notion that "security through obscurity is an illusion" and the military notion that "
+           <a href="/wiki/Loose_lips_sink_ships" title="Loose lips sink ships">
+            loose lips sink ships
+           </a>
+           ",
+           <sup class="reference" id="cite_ref-5">
+            <a href="#cite_note-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           as well as on how competition affects the incentives to disclose.
+           <sup class="reference" id="cite_ref-6">
+            <a href="#cite_note-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="noprint Inline-Template" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify">
+              <span title="The text near this tag needs further explanation. (September 2022)">
+               further explanation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+          </p>
+          <p>
+           There are conflicting stories about the origin of this term. Fans of
+           <a class="mw-redirect" href="/wiki/MIT" title="MIT">
+            MIT
+           </a>
+           's
+           <a href="/wiki/Incompatible_Timesharing_System" title="Incompatible Timesharing System">
+            Incompatible Timesharing System
+           </a>
+           (ITS) say it was coined in opposition to
+           <a href="/wiki/Multics" title="Multics">
+            Multics
+           </a>
+           users down the hall, for whom security was far more an issue than on ITS. Within the ITS culture the term referred, self-mockingly, to the poor coverage of the documentation and obscurity of many commands, and to the attitude that by the time a tourist figured out how to make trouble he'd generally got over the urge to make it, because he felt part of the community. One instance of deliberate security through obscurity on ITS has been noted: the command to allow patching the running ITS system (altmode altmode control-R) echoed as
+           <code>
+            $$^D
+           </code>
+           . Typing Alt Alt Control-D set a flag that would prevent patching the system even if the user later got it right.
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           In January 2020,
+           <a href="/wiki/NPR" title="NPR">
+            NPR
+           </a>
+           reported that
+           <a href="/wiki/Iowa_Democratic_Party" title="Iowa Democratic Party">
+            Democratic Party officials in Iowa
+           </a>
+           declined to share information regarding the security of
+           <a class="mw-redirect" href="/wiki/Shadow_Inc.#IowaReporterApp" title="Shadow Inc.">
+            its caucus app
+           </a>
+           , to "make sure we are not relaying information that could be used against us." Cybersecurity experts replied that "to withhold the technical details of its app doesn't do much to protect the system."
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Criticism">
+            Criticism
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Security_through_obscurity&amp;action=edit&amp;section=2" title="Edit section: Criticism">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Security by obscurity alone is discouraged and not recommended by standards bodies. The
+           <a href="/wiki/National_Institute_of_Standards_and_Technology" title="National Institute of Standards and Technology">
+            National Institute of Standards and Technology
+           </a>
+           (NIST) in the
+           <a href="/wiki/United_States" title="United States">
+            United States
+           </a>
+           recommends against this practice: "System security should not depend on the secrecy of the implementation or its components."
+           <sup class="reference" id="cite_ref-9">
+            <a href="#cite_note-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The Common Weakness Enumeration project lists "Reliance on Security Through Obscurity" as CWE-656.
+           <sup class="reference" id="cite_ref-10">
+            <a href="#cite_note-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           A large number of telecommunication and
+           <a href="/wiki/Digital_rights_management" title="Digital rights management">
+            digital rights management
+           </a>
+           cryptosystems use security through obscurity, but have ultimately been broken. These include components of
+           <a href="/wiki/GSM" title="GSM">
+            GSM
+           </a>
+           ,
+           <a href="/wiki/GEO-Mobile_Radio_Interface" title="GEO-Mobile Radio Interface">
+            GMR
+           </a>
+           encryption,
+           <a class="mw-redirect" href="/wiki/GPRS" title="GPRS">
+            GPRS
+           </a>
+           encryption, a number of RFID encryption schemes, and most recently
+           <a class="mw-redirect" href="/wiki/Terrestrial_Trunked_Radio" title="Terrestrial Trunked Radio">
+            Terrestrial Trunked Radio
+           </a>
+           (TETRA).
+           <sup class="reference" id="cite_ref-11">
+            <a href="#cite_note-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           One of the largest proponents of security through obscurity commonly seen today is anti-malware software. What typically occurs with this
+           <a href="/wiki/Single_point_of_failure" title="Single point of failure">
+            single point of failure
+           </a>
+           , however, is an
+           <a href="/wiki/Arms_race" title="Arms race">
+            arms race
+           </a>
+           of attackers finding novel ways to avoid detection and defenders coming up with increasingly contrived but secret signatures to flag on.
+           <sup class="reference" id="cite_ref-12">
+            <a href="#cite_note-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The technique stands in contrast with
+           <a class="mw-redirect" href="/wiki/Security_by_design" title="Security by design">
+            security by design
+           </a>
+           and
+           <a href="/wiki/Open_security" title="Open security">
+            open security
+           </a>
+           , although many real-world projects include elements of all strategies.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Obscurity_in_architecture_vs._technique">
+            Obscurity in architecture vs. technique
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Security_through_obscurity&amp;action=edit&amp;section=3" title="Edit section: Obscurity in architecture vs. technique">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Knowledge of how the system is built differs from concealment and
+           <a href="/wiki/Camouflage" title="Camouflage">
+            camouflage
+           </a>
+           . The effectiveness of obscurity in
+           <a href="/wiki/Operations_security" title="Operations security">
+            operations security
+           </a>
+           depends on whether the obscurity lives on top of other good security practices, or if it is being used alone.
+           <sup class="reference" id="cite_ref-13">
+            <a href="#cite_note-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           When used as an independent layer, obscurity is considered a valid security tool.
+           <sup class="reference" id="cite_ref-14">
+            <a href="#cite_note-14">
+             <span class="cite-bracket">
+              [
+             </span>
+             14
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           In recent years, more advanced versions of "security through obscurity" have gained support as a methodology in
+           <a class="mw-redirect" href="/wiki/Cybersecurity" title="Cybersecurity">
+            cybersecurity
+           </a>
+           through Moving Target Defense and
+           <a href="/wiki/Deception_technology" title="Deception technology">
+            cyber deception
+           </a>
+           .
+           <sup class="reference" id="cite_ref-15">
+            <a href="#cite_note-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           NIST's cyber resiliency framework, 800-160 Volume 2, recommends the usage of security through obscurity as a complementary part of a resilient and secure computing environment.
+           <sup class="reference" id="cite_ref-16">
+            <a href="#cite_note-16">
+             <span class="cite-bracket">
+              [
+             </span>
+             16
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Security_through_obscurity&amp;action=edit&amp;section=4" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1184024115">
+           .mw-parser-output .div-col{margin-top:0.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:1px solid #aaa}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column}
+          </style>
+          <div class="div-col" style="column-width: 25em;">
+           <ul>
+            <li>
+             <a href="/wiki/Steganography" title="Steganography">
+              Steganography
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Code_morphing" title="Code morphing">
+              Code morphing
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Need_to_know" title="Need to know">
+              Need to know
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Obfuscation_(software)" title="Obfuscation (software)">
+              Obfuscation (software)
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Presumed_security" title="Presumed security">
+              Presumed security
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Secure_by_design" title="Secure by design">
+              Secure by design
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/AACS_encryption_key_controversy" title="AACS encryption key controversy">
+              AACS encryption key controversy
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Full_disclosure_(computer_security)" title="Full disclosure (computer security)">
+              Full disclosure (computer security)
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Code_talker" title="Code talker">
+              Code talker
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Obfuscation" title="Obfuscation">
+              Obfuscation
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Concealment_device" title="Concealment device">
+              Concealment device
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Security_through_obscurity&amp;action=edit&amp;section=5" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist reflist-columns references-column-width" style="column-width: 30em;">
+           <ol class="references">
+            <li id="cite_note-1">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-1">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <style data-mw-deduplicate="TemplateStyles:r1238218222">
+               .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+              </style>
+              <cite class="citation book cs1" id="CITEREFZwickyCooperChapman2000">
+               Zwicky, Elizabeth D.; Cooper, Simon; Chapman, D. Brent (2000-06-26).
+               <a class="external text" href="https://books.google.com/books?id=Q0ErhHGxNWcC" rel="nofollow">
+                <i>
+                 Building Internet Firewalls: Internet and Web Security
+                </i>
+               </a>
+               . "O'Reilly Media, Inc.".
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-0-596-55188-9" title="Special:BookSources/978-0-596-55188-9">
+                <bdi>
+                 978-0-596-55188-9
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Building+Internet+Firewalls%3A+Internet+and+Web+Security&amp;rft.pub=%22O%27Reilly+Media%2C+Inc.%22&amp;rft.date=2000-06-26&amp;rft.isbn=978-0-596-55188-9&amp;rft.aulast=Zwicky&amp;rft.aufirst=Elizabeth+D.&amp;rft.au=Cooper%2C+Simon&amp;rft.au=Chapman%2C+D.+Brent&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DQ0ErhHGxNWcC&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-2">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-2">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              Selinger,  Evan and Hartzog,  Woodrow, Obscurity and Privacy (May 21, 2014). Routledge Companion to Philosophy of Technology (Joseph Pitt &amp; Ashley Shew, eds., 2014 Forthcoming),  Available at SSRN: https://ssrn.com/abstract=2439866
+             </span>
+            </li>
+            <li id="cite_note-3">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-3">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1" id="CITEREFStross2006">
+               Stross, Randall (17 December 2006).
+               <a class="external text" href="https://www.nytimes.com/2006/12/17/business/yourmoney/17digi.html" rel="nofollow">
+                "Theater of the Absurd at the T.S.A."
+               </a>
+               <i>
+                The New York Times
+               </i>
+               .
+               <a class="external text" href="https://web.archive.org/web/20221208063347/https://www.nytimes.com/2006/12/17/business/yourmoney/17digi.html" rel="nofollow">
+                Archived
+               </a>
+               from the original on 8 December 2022
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 5 May
+                </span>
+                2015
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+New+York+Times&amp;rft.atitle=Theater+of+the+Absurd+at+the+T.S.A.&amp;rft.date=2006-12-17&amp;rft.aulast=Stross&amp;rft.aufirst=Randall&amp;rft_id=https%3A%2F%2Fwww.nytimes.com%2F2006%2F12%2F17%2Fbusiness%2Fyourmoney%2F17digi.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-4">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-4">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation book cs1" id="CITEREFAnderson2001">
+               Anderson, Ross (2001).
+               <span class="id-lock-registration" title="Free registration required">
+                <a class="external text" href="https://archive.org/details/securityengineer00ande/page/240" rel="nofollow">
+                 <i>
+                  Security Engineering: A Guide to Building Dependable Distributed Systems
+                 </i>
+                </a>
+               </span>
+               . New York, NY: John Wiley &amp; Sons, Inc. p.
+               <a class="external text" href="https://archive.org/details/securityengineer00ande/page/240" rel="nofollow">
+                240
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/0-471-38922-6" title="Special:BookSources/0-471-38922-6">
+                <bdi>
+                 0-471-38922-6
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Security+Engineering%3A+A+Guide+to+Building+Dependable+Distributed+Systems&amp;rft.place=New+York%2C+NY&amp;rft.pages=240&amp;rft.pub=John+Wiley+%26+Sons%2C+Inc.&amp;rft.date=2001&amp;rft.isbn=0-471-38922-6&amp;rft.aulast=Anderson&amp;rft.aufirst=Ross&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fsecurityengineer00ande%2Fpage%2F240&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-5">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-5">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFSwire2004">
+               Swire, Peter P. (2004). "A Model for When Disclosure Helps Security: What is Different About Computer and Network Security?".
+               <i>
+                Journal on Telecommunications and High Technology Law
+               </i>
+               .
+               <b>
+                2
+               </b>
+               .
+               <a class="mw-redirect" href="/wiki/SSRN_(identifier)" title="SSRN (identifier)">
+                SSRN
+               </a>
+               <a class="external text" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=531782" rel="nofollow">
+                531782
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+on+Telecommunications+and+High+Technology+Law&amp;rft.atitle=A+Model+for+When+Disclosure+Helps+Security%3A+What+is+Different+About+Computer+and+Network+Security%3F&amp;rft.volume=2&amp;rft.date=2004&amp;rft_id=https%3A%2F%2Fpapers.ssrn.com%2Fsol3%2Fpapers.cfm%3Fabstract_id%3D531782%23id-name%3DSSRN&amp;rft.aulast=Swire&amp;rft.aufirst=Peter+P.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-6">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-6">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFSwire2006">
+               Swire, Peter P. (January 2006). "A Theory of Disclosure for Security and Competitive Reasons: Open Source, Proprietary Software, and Government Agencies".
+               <i>
+                Houston Law Review
+               </i>
+               .
+               <b>
+                42
+               </b>
+               .
+               <a class="mw-redirect" href="/wiki/SSRN_(identifier)" title="SSRN (identifier)">
+                SSRN
+               </a>
+               <a class="external text" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=842228" rel="nofollow">
+                842228
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Houston+Law+Review&amp;rft.atitle=A+Theory+of+Disclosure+for+Security+and+Competitive+Reasons%3A+Open+Source%2C+Proprietary+Software%2C+and+Government+Agencies&amp;rft.volume=42&amp;rft.date=2006-01&amp;rft_id=https%3A%2F%2Fpapers.ssrn.com%2Fsol3%2Fpapers.cfm%3Fabstract_id%3D842228%23id-name%3DSSRN&amp;rft.aulast=Swire&amp;rft.aufirst=Peter+P.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-7">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-7">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="http://catb.org/jargon/html/S/security-through-obscurity.html" rel="nofollow">
+                "security through obscurity"
+               </a>
+               .
+               <i>
+                The Jargon File
+               </i>
+               .
+               <a class="external text" href="https://web.archive.org/web/20100329153340/http://catb.org/jargon/html/S/security-through-obscurity.html" rel="nofollow">
+                Archived
+               </a>
+               from the original on 2010-03-29
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2010-01-29
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=The+Jargon+File&amp;rft.atitle=security+through+obscurity&amp;rft_id=http%3A%2F%2Fcatb.org%2Fjargon%2Fhtml%2FS%2Fsecurity-through-obscurity.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-8">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-8">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1">
+               <a class="external text" href="https://www.npr.org/2020/01/14/795906732/despite-election-security-fears-iowa-caucuses-will-use-new-smartphone-app" rel="nofollow">
+                "Despite Election Security Fears, Iowa Caucuses Will Use New Smartphone App"
+               </a>
+               .
+               <i>
+                NPR.org
+               </i>
+               .
+               <a class="external text" href="https://web.archive.org/web/20221223193433/https://www.npr.org/2020/01/14/795906732/despite-election-security-fears-iowa-caucuses-will-use-new-smartphone-app" rel="nofollow">
+                Archived
+               </a>
+               from the original on 2022-12-23
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2020-02-06
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=NPR.org&amp;rft.atitle=Despite+Election+Security+Fears%2C+Iowa+Caucuses+Will+Use+New+Smartphone+App&amp;rft_id=https%3A%2F%2Fwww.npr.org%2F2020%2F01%2F14%2F795906732%2Fdespite-election-security-fears-iowa-caucuses-will-use-new-smartphone-app&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-9">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-9">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="http://csrc.nist.gov/publications/nistpubs/800-123/SP800-123.pdf" rel="nofollow">
+                "Guide to General Server Security"
+               </a>
+               <span class="cs1-format">
+                (PDF; 258 kB)
+               </span>
+               .
+               <a href="/wiki/National_Institute_of_Standards_and_Technology" title="National Institute of Standards and Technology">
+                National Institute of Standards and Technology
+               </a>
+               . 2008-07-01.
+               <a class="external text" href="https://web.archive.org/web/20170809023939/http://csrc.nist.gov/publications/nistpubs/800-123/SP800-123.pdf" rel="nofollow">
+                Archived
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               from the original on 2017-08-09.
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Guide+to+General+Server+Security&amp;rft.pub=National+Institute+of+Standards+and+Technology&amp;rft.date=2008-07-01&amp;rft_id=http%3A%2F%2Fcsrc.nist.gov%2Fpublications%2Fnistpubs%2F800-123%2FSP800-123.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-10">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-10">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://cwe.mitre.org/data/definitions/656.html" rel="nofollow">
+                "CWE-656: Reliance on Security Through Obscurity"
+               </a>
+               . The MITRE Corporation. 2008-01-18.
+               <a class="external text" href="https://web.archive.org/web/20230928051914/https://cwe.mitre.org/data/definitions/656.html" rel="nofollow">
+                Archived
+               </a>
+               from the original on 2023-09-28
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2023-09-28
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=CWE-656%3A+Reliance+on+Security+Through+Obscurity&amp;rft.pub=The+MITRE+Corporation&amp;rft.date=2008-01-18&amp;rft_id=https%3A%2F%2Fcwe.mitre.org%2Fdata%2Fdefinitions%2F656.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-11">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-11">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation conference cs1" id="CITEREFMidnight_Blue2023">
+               Midnight Blue (August 2023).
+               <a class="external text" href="https://i.blackhat.com/BH-US-23/Presentations/US-23-Meijer-All-Cops-Are-Broadcasting.pdf" rel="nofollow">
+                <i>
+                 ALL COPS ARE BROADCASTING: Breaking TETRA after decades in the shadows (slideshow)
+                </i>
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               . Blackhat USA 2023.
+               <a class="external text" href="https://web.archive.org/web/20230811121629/https://i.blackhat.com/BH-US-23/Presentations/US-23-Meijer-All-Cops-Are-Broadcasting.pdf" rel="nofollow">
+                Archived
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               from the original on 2023-08-11
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2023-08-11
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=ALL+COPS+ARE+BROADCASTING%3A+Breaking+TETRA+after+decades+in+the+shadows+%28slideshow%29&amp;rft.date=2023-08&amp;rft.au=Midnight+Blue&amp;rft_id=https%3A%2F%2Fi.blackhat.com%2FBH-US-23%2FPresentations%2FUS-23-Meijer-All-Cops-Are-Broadcasting.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+              <br/>
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation conference cs1" id="CITEREFCarlo_MeijerWouter_BokslagJos_Wetzels2023">
+               Carlo Meijer; Wouter Bokslag; Jos Wetzels (August 2023).
+               <a class="external text" href="https://uploads-ssl.webflow.com/64a2900ed5e9bb672af9b2ed/64d42fcc2e3fdcf3d323f3d9_All_cops_are_broadcasting_TETRA_under_scrutiny.pdf" rel="nofollow">
+                <i>
+                 All cops are broadcasting: TETRA under scrutiny (paper)
+                </i>
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               . Usenix Security 2023.
+               <a class="external text" href="https://web.archive.org/web/20230811143013/https://uploads-ssl.webflow.com/64a2900ed5e9bb672af9b2ed/64d42fcc2e3fdcf3d323f3d9_All_cops_are_broadcasting_TETRA_under_scrutiny.pdf" rel="nofollow">
+                Archived
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               from the original on 2023-08-11
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2023-08-11
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=All+cops+are+broadcasting%3A+TETRA+under+scrutiny+%28paper%29&amp;rft.date=2023-08&amp;rft.au=Carlo+Meijer&amp;rft.au=Wouter+Bokslag&amp;rft.au=Jos+Wetzels&amp;rft_id=https%3A%2F%2Fuploads-ssl.webflow.com%2F64a2900ed5e9bb672af9b2ed%2F64d42fcc2e3fdcf3d323f3d9_All_cops_are_broadcasting_TETRA_under_scrutiny.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-12">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-12">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFKPMG2022">
+               KPMG (May 2022).
+               <a class="external text" href="https://kpmg.com/nl/en/home/insights/2022/05/the-cat-and-mouse-game-of-antivirus-evasion.html" rel="nofollow">
+                "The cat and mouse game of antivirus evasion"
+               </a>
+               .
+               <a class="external text" href="https://web.archive.org/web/20230828004504/https://kpmg.com/nl/en/home/insights/2022/05/the-cat-and-mouse-game-of-antivirus-evasion.html" rel="nofollow">
+                Archived
+               </a>
+               from the original on 2023-08-28
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2023-08-28
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=The+cat+and+mouse+game+of+antivirus+evasion&amp;rft.date=2022-05&amp;rft.au=KPMG&amp;rft_id=https%3A%2F%2Fkpmg.com%2Fnl%2Fen%2Fhome%2Finsights%2F2022%2F05%2Fthe-cat-and-mouse-game-of-antivirus-evasion.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-13">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-13">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1">
+               <a class="external text" href="https://danielmiessler.com/study/security-by-obscurity/" rel="nofollow">
+                "Obscurity is a Valid Security Layer - Daniel Miessler"
+               </a>
+               .
+               <i>
+                Daniel Miessler
+               </i>
+               .
+               <a class="external text" href="https://web.archive.org/web/20221208063348/https://danielmiessler.com/study/security-by-obscurity/" rel="nofollow">
+                Archived
+               </a>
+               from the original on 2022-12-08
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2018-06-20
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Daniel+Miessler&amp;rft.atitle=Obscurity+is+a+Valid+Security+Layer+-+Daniel+Miessler&amp;rft_id=https%3A%2F%2Fdanielmiessler.com%2Fstudy%2Fsecurity-by-obscurity%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-14">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-14">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.csiac.org/journal-article/cyber-deception/" rel="nofollow">
+                "Cyber Deception | CSIAC"
+               </a>
+               .
+               <i>
+                www.csiac.org
+               </i>
+               .
+               <a class="external text" href="https://web.archive.org/web/20210420102103/https://www.csiac.org/journal-article/cyber-deception/" rel="nofollow">
+                Archived
+               </a>
+               from the original on 2021-04-20
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2018-06-20
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.csiac.org&amp;rft.atitle=Cyber+Deception+%7C+CSIAC&amp;rft_id=https%3A%2F%2Fwww.csiac.org%2Fjournal-article%2Fcyber-deception%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-15">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-15">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1">
+               <a class="external text" href="https://www.dhs.gov/science-and-technology/csd-mtd" rel="nofollow">
+                "CSD-MTD"
+               </a>
+               .
+               <i>
+                Department of Homeland Security
+               </i>
+               . 2013-06-25.
+               <a class="external text" href="https://web.archive.org/web/20221208063349/https://www.dhs.gov/science-and-technology/csd-mtd" rel="nofollow">
+                Archived
+               </a>
+               from the original on 2022-12-08
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2018-06-20
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Department+of+Homeland+Security&amp;rft.atitle=CSD-MTD&amp;rft.date=2013-06-25&amp;rft_id=https%3A%2F%2Fwww.dhs.gov%2Fscience-and-technology%2Fcsd-mtd&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-16">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-16">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation report cs1" id="CITEREFRossGraubartBodeauMcQuaid2018">
+               Ross, Ron; Graubart, Richard; Bodeau, Deborah; McQuaid, Rosalie (2018-03-21).
+               <a class="external text" href="https://csrc.nist.gov/pubs/sp/800/160/v2/ipd" rel="nofollow">
+                Systems Security Engineering: Cyber Resiliency Considerations for the Engineering of Trustworthy Secure Systems
+               </a>
+               (Report). National Institute of Standards and Technology.
+               <a class="external text" href="https://web.archive.org/web/20231206132437/https://csrc.nist.gov/pubs/sp/800/160/v2/ipd" rel="nofollow">
+                Archived
+               </a>
+               from the original on 2023-12-06
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2024-04-05
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=Systems+Security+Engineering%3A+Cyber+Resiliency+Considerations+for+the+Engineering+of+Trustworthy+Secure+Systems&amp;rft.pub=National+Institute+of+Standards+and+Technology&amp;rft.date=2018-03-21&amp;rft.aulast=Ross&amp;rft.aufirst=Ron&amp;rft.au=Graubart%2C+Richard&amp;rft.au=Bodeau%2C+Deborah&amp;rft.au=McQuaid%2C+Rosalie&amp;rft_id=https%3A%2F%2Fcsrc.nist.gov%2Fpubs%2Fsp%2F800%2F160%2Fv2%2Fipd&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASecurity+through+obscurity">
+              </span>
+             </span>
+            </li>
+           </ol>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Security_through_obscurity&amp;action=edit&amp;section=6" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="https://lwn.net/Articles/85958/" rel="nofollow">
+             Eric Raymond on Cisco's IOS source code 'release' v Open Source
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="https://web.archive.org/web/20050306155631/http://www.eplaw.us/data/ComputerSecurityPublications.pdf" rel="nofollow">
+             Computer Security Publications: Information Economics, Shifting Liability and the First Amendment
+            </a>
+            by Ethan M. Preston and John Lofton
+           </li>
+           <li>
+            <a class="external text" href="https://web.archive.org/web/20070202151534/http://www.bastille-linux.org/jay/obscurity-revisited.html" rel="nofollow">
+             "Security Through Obscurity" Ain't What They Think It Is
+            </a>
+            at the
+            <a href="/wiki/Wayback_Machine" title="Wayback Machine">
+             Wayback Machine
+            </a>
+            (archived February 2, 2007) by Jay Beale
+           </li>
+           <li>
+            <a class="external text" href="http://www.schneier.com/crypto-gram-0205.html#1" rel="nofollow">
+             Secrecy, Security and Obscurity
+            </a>
+            &amp;
+            <a class="external text" href="http://www.schneier.com/essay-056.html" rel="nofollow">
+             The Non-Security of Secrecy
+            </a>
+            by
+            <a href="/wiki/Bruce_Schneier" title="Bruce Schneier">
+             Bruce Schneier
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://www.linux.com/articles/23313" rel="nofollow">
+             "Security through obsolescence", Robin Miller,
+             <i>
+              linux.com
+             </i>
+             , June 6, 2002
+            </a>
+           </li>
+          </ul>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐xggzl
+Cached time: 20240926232147
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.264 seconds
+Real time usage: 0.334 seconds
+Preprocessor visited node count: 1256/1000000
+Post‐expand include size: 34638/2097152 bytes
+Template argument size: 1304/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 58732/5000000 bytes
+Lua time usage: 0.156/10.000 seconds
+Lua memory usage: 5586021/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  290.943      1 -total
+ 58.29%  169.587      1 Template:Reflist
+ 30.14%   87.691      2 Template:Cite_book
+ 21.10%   61.375      1 Template:Short_description
+ 12.75%   37.092      2 Template:Pagetype
+ 11.04%   32.122      1 Template:Explain
+  9.72%   28.270      1 Template:Fix
+  5.99%   17.430      5 Template:Cite_web
+  5.67%   16.507      1 Template:Category_handler
+  5.07%   14.763      4 Template:Cite_news
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:29087-0!canonical and timestamp 20240926232147 and revision id 1247256073. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Security_through_obscurity&amp;oldid=1247256073">
+          https://en.wikipedia.org/w/index.php?title=Security_through_obscurity&amp;oldid=1247256073
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Computer_security_procedures" title="Category:Computer security procedures">
+            Computer security procedures
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Cryptography" title="Category:Cryptography">
+            Cryptography
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Secrecy" title="Category:Secrecy">
+            Secrecy
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_September_2022" title="Category:Wikipedia articles needing clarification from September 2022">
+            Wikipedia articles needing clarification from September 2022
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">
+            Webarchive template wayback links
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 23 September 2024, at 14:20
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Security_through_obscurity&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-28d29","wgBackendResponseTime":161,"wgPageParseReport":{"limitreport":{"cputime":"0.264","walltime":"0.334","ppvisitednodes":{"value":1256,"limit":1000000},"postexpandincludesize":{"value":34638,"limit":2097152},"templateargumentsize":{"value":1304,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":58732,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  290.943      1 -total"," 58.29%  169.587      1 Template:Reflist"," 30.14%   87.691      2 Template:Cite_book"," 21.10%   61.375      1 Template:Short_description"," 12.75%   37.092      2 Template:Pagetype"," 11.04%   32.122      1 Template:Explain","  9.72%   28.270      1 Template:Fix","  5.99%   17.430      5 Template:Cite_web","  5.67%   16.507      1 Template:Category_handler","  5.07%   14.763      4 Template:Cite_news"]},"scribunto":{"limitreport-timeusage":{"value":"0.156","limit":"10.000"},"limitreport-memusage":{"value":5586021,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-xggzl","timestamp":"20240926232147","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Security through obscurity","url":"https:\/\/en.wikipedia.org\/wiki\/Security_through_obscurity","sameAs":"http:\/\/www.wikidata.org\/entity\/Q133735","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q133735","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-12-05T11:30:46Z","dateModified":"2024-09-23T14:20:38Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/f1\/Security_through_obscurity_hiding_a_key_on_a_car_tyre.jpg","headline":"secrecy of the design or implementation as the main method of providing security"}
+  </script>
+ </body>
+</html>

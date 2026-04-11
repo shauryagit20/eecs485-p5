@@ -1,0 +1,2903 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Technical debt - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b44958ba-efc9-4d11-a75f-9ba72fe6a7c0","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Technical_debt","wgTitle":"Technical debt","wgCurRevisionId":1238030627,"wgRevisionId":1238030627,"wgArticleId":11885652,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Wikipedia articles needing rewrite from July 2024","All articles needing rewrite","Wikipedia articles needing reorganization from July 2024","Articles with multiple maintenance issues","Articles needing additional references from October 2022","All articles needing additional references","Wikipedia articles needing clarification from October 2013","All articles with unsourced statements",
+"Articles with unsourced statements from May 2018","Articles with unsourced statements from April 2013","Metaphors","Software architecture","Software engineering terminology","Software maintenance"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Technical_debt","wgRelevantArticleId":11885652,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],
+"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1532172","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready",
+"ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Technical debt - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Technical_debt" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Technical_debt&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Technical_debt" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Technical_debt"/>
+  <meta eecs485_docid="78761498"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Technical_debt rootpage-Technical_debt skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Technical+debt" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Technical+debt" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Technical+debt" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Technical+debt" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Assumptions">
+           <a class="vector-toc-link" href="#Assumptions">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Assumptions
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Assumptions-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Causes">
+           <a class="vector-toc-link" href="#Causes">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Causes
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Causes-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Service_or_repay_the_technical_debt">
+           <a class="vector-toc-link" href="#Service_or_repay_the_technical_debt">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Service or repay the technical debt
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Service_or_repay_the_technical_debt-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Consequences">
+           <a class="vector-toc-link" href="#Consequences">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Consequences
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Consequences-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              7
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Technical debt
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 17 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-17" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          17 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="دين تقني" href="https://ar.wikipedia.org/wiki/%D8%AF%D9%8A%D9%86_%D8%AA%D9%82%D9%86%D9%8A" hreflang="ar" lang="ar" title="دين تقني – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Deute tècnic" href="https://ca.wikipedia.org/wiki/Deute_t%C3%A8cnic" hreflang="ca" lang="ca" title="Deute tècnic – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Technische Schulden" href="https://de.wikipedia.org/wiki/Technische_Schulden" hreflang="de" lang="de" title="Technische Schulden – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Deuda técnica" href="https://es.wikipedia.org/wiki/Deuda_t%C3%A9cnica" hreflang="es" lang="es" title="Deuda técnica – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="بدهی فنی" href="https://fa.wikipedia.org/wiki/%D8%A8%D8%AF%D9%87%DB%8C_%D9%81%D9%86%DB%8C" hreflang="fa" lang="fa" title="بدهی فنی – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Dette technique" href="https://fr.wikipedia.org/wiki/Dette_technique" hreflang="fr" lang="fr" title="Dette technique – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="기술 부채" href="https://ko.wikipedia.org/wiki/%EA%B8%B0%EC%88%A0_%EB%B6%80%EC%B1%84" hreflang="ko" lang="ko" title="기술 부채 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="हिन्दी" data-language-local-name="Hindi" data-title="तकनीकी ऋण" href="https://hi.wikipedia.org/wiki/%E0%A4%A4%E0%A4%95%E0%A4%A8%E0%A5%80%E0%A4%95%E0%A5%80_%E0%A4%8B%E0%A4%A3" hreflang="hi" lang="hi" title="तकनीकी ऋण – Hindi">
+             <span>
+              हिन्दी
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Debito tecnico" href="https://it.wikipedia.org/wiki/Debito_tecnico" hreflang="it" lang="it" title="Debito tecnico – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="חוב טכני" href="https://he.wikipedia.org/wiki/%D7%97%D7%95%D7%91_%D7%98%D7%9B%D7%A0%D7%99" hreflang="he" lang="he" title="חוב טכני – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="技術的負債" href="https://ja.wikipedia.org/wiki/%E6%8A%80%E8%A1%93%E7%9A%84%E8%B2%A0%E5%82%B5" hreflang="ja" lang="ja" title="技術的負債 – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-no mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" data-title="Teknisk gjeld" href="https://no.wikipedia.org/wiki/Teknisk_gjeld" hreflang="nb" lang="nb" title="Teknisk gjeld – Norwegian Bokmål">
+             <span>
+              Norsk bokmål
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Dívida tecnológica" href="https://pt.wikipedia.org/wiki/D%C3%ADvida_tecnol%C3%B3gica" hreflang="pt" lang="pt" title="Dívida tecnológica – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Технический долг" href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%BE%D0%BB%D0%B3" hreflang="ru" lang="ru" title="Технический долг – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="Finnish" data-title="Tekninen velka" href="https://fi.wikipedia.org/wiki/Tekninen_velka" hreflang="fi" lang="fi" title="Tekninen velka – Finnish">
+             <span>
+              Suomi
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Технічний борг" href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D1%85%D0%BD%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D0%B1%D0%BE%D1%80%D0%B3" hreflang="uk" lang="uk" title="Технічний борг – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="技术负债" href="https://zh.wikipedia.org/wiki/%E6%8A%80%E6%9C%AF%E8%B4%9F%E5%80%BA" hreflang="zh" lang="zh" title="技术负债 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1532172#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Technical_debt" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Technical_debt" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Technical_debt">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Technical_debt&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Technical_debt&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Technical_debt">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Technical_debt&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Technical_debt&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Technical_debt" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Technical_debt" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Technical_debt&amp;oldid=1238030627" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Technical_debt&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Technical_debt&amp;id=1238030627&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTechnical_debt">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTechnical_debt">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1532172" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Technical_debt&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Technical_debt&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Software development concept
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <style data-mw-deduplicate="TemplateStyles:r1211361296">
+          .mw-parser-output .multiple-issues-text{width:95%;margin:0.2em 0}.mw-parser-output .multiple-issues-text>.mw-collapsible-content{margin-top:0.3em}.mw-parser-output .compact-ambox .ambox{border:none;border-collapse:collapse;background-color:transparent;margin:0 0 0 1.6em!important;padding:0!important;width:auto;display:block}body.mediawiki .mw-parser-output .compact-ambox .ambox.mbox-small-left{font-size:100%;width:auto;margin:0}.mw-parser-output .compact-ambox .ambox .mbox-text{padding:0!important;margin:0!important}.mw-parser-output .compact-ambox .ambox .mbox-text-span{display:list-item;line-height:1.5em;list-style-type:disc}body.skin-minerva .mw-parser-output .multiple-issues-text>.mw-collapsible-toggle{display:none}.mw-parser-output .compact-ambox .ambox .mbox-image,.mw-parser-output .compact-ambox .ambox .mbox-imageright,.mw-parser-output .compact-ambox .ambox .mbox-empty-cell,.mw-parser-output .compact-ambox .hide-when-compact{display:none}
+         </style>
+         <table class="box-Multiple_issues plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <span>
+                <img alt="" class="mw-file-element" data-file-height="40" data-file-width="40" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" width="40"/>
+               </span>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              <div class="multiple-issues-text mw-collapsible">
+               <b>
+                This article has multiple issues.
+               </b>
+               Please help
+               <b>
+                <a href="/wiki/Special:EditPage/Technical_debt" title="Special:EditPage/Technical debt">
+                 improve it
+                </a>
+               </b>
+               or discuss these issues on the
+               <b>
+                <a href="/wiki/Talk:Technical_debt" title="Talk:Technical debt">
+                 talk page
+                </a>
+               </b>
+               .
+               <small>
+                <i>
+                 (
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove these messages
+                 </a>
+                 )
+                </i>
+               </small>
+               <div class="mw-collapsible-content">
+                <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+                <table class="box-Cleanup_rewrite plainlinks metadata ambox ambox-content" role="presentation">
+                 <tbody>
+                  <tr>
+                   <td class="mbox-image">
+                    <div class="mbox-image-div">
+                     <span typeof="mw:File">
+                      <a class="mw-file-description" href="/wiki/File:Crystal_Clear_app_kedit.svg">
+                       <img class="mw-file-element" data-file-height="128" data-file-width="128" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Crystal_Clear_app_kedit.svg/40px-Crystal_Clear_app_kedit.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Crystal_Clear_app_kedit.svg/60px-Crystal_Clear_app_kedit.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Crystal_Clear_app_kedit.svg/80px-Crystal_Clear_app_kedit.svg.png 2x" width="40"/>
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="mbox-text">
+                    <div class="mbox-text-span">
+                     This article
+                     <b>
+                      may need to be rewritten
+                     </b>
+                     to comply with Wikipedia's
+                     <a href="/wiki/Wikipedia:Manual_of_Style" title="Wikipedia:Manual of Style">
+                      quality standards
+                     </a>
+                     .
+                     <span class="hide-when-compact">
+                      <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Technical_debt&amp;action=edit">
+                       You can help
+                      </a>
+                      . The
+                      <a href="/wiki/Talk:Technical_debt" title="Talk:Technical debt">
+                       talk page
+                      </a>
+                      may contain suggestions.
+                     </span>
+                     <span class="date-container">
+                      <i>
+                       (
+                       <span class="date">
+                        July 2024
+                       </span>
+                       )
+                      </i>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+                <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+                <table class="box-Cleanup_reorganize plainlinks metadata ambox ambox-style" role="presentation">
+                 <tbody>
+                  <tr>
+                   <td class="mbox-image">
+                    <div class="mbox-image-div">
+                     <span typeof="mw:File">
+                      <span>
+                       <img class="mw-file-element" data-file-height="620" data-file-width="620" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Ambox_rewrite.svg/40px-Ambox_rewrite.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Ambox_rewrite.svg/60px-Ambox_rewrite.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Ambox_rewrite.svg/80px-Ambox_rewrite.svg.png 2x" width="40"/>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="mbox-text">
+                    <div class="mbox-text-span">
+                     This article
+                     <b>
+                      may be in need of reorganization to comply with Wikipedia's
+                      <a href="/wiki/Wikipedia:Manual_of_Style/Layout" title="Wikipedia:Manual of Style/Layout">
+                       layout guidelines
+                      </a>
+                     </b>
+                     .
+                     <span class="hide-when-compact">
+                      Please help by
+                      <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Technical_debt&amp;action=edit">
+                       editing the article
+                      </a>
+                      to make improvements to the overall structure.
+                     </span>
+                     <span class="date-container">
+                      <i>
+                       (
+                       <span class="date">
+                        July 2024
+                       </span>
+                       )
+                      </i>
+                     </span>
+                     <span class="hide-when-compact">
+                      <i>
+                       (
+                       <small>
+                        <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                         Learn how and when to remove this message
+                        </a>
+                       </small>
+                       )
+                      </i>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </div>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          In
+          <a href="/wiki/Software_development" title="Software development">
+           software development
+          </a>
+          and other
+          <a href="/wiki/Information_technology" title="Information technology">
+           information technology
+          </a>
+          fields,
+          <b>
+           technical debt
+          </b>
+          (also known as
+          <b>
+           design debt
+          </b>
+          <sup class="reference" id="cite_ref-Girish_2014_1-0">
+           <a href="#cite_note-Girish_2014-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          or
+          <b>
+           code debt
+          </b>
+          ) is the implied cost of future reworking because a solution prioritizes expedience over long-term design.
+          <sup class="reference" id="cite_ref-2">
+           <a href="#cite_note-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          Analogous with monetary
+          <a href="/wiki/Debt" title="Debt">
+           debt
+          </a>
+          ,
+          <sup class="reference" id="cite_ref-Managing_Technical_Debt_3-0">
+           <a href="#cite_note-Managing_Technical_Debt-3">
+            <span class="cite-bracket">
+             [
+            </span>
+            3
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          if technical debt is not repaid, it can accumulate "interest", making it harder to implement changes. Unaddressed technical debt increases
+          <a class="mw-redirect" href="/wiki/Software_entropy" title="Software entropy">
+           software entropy
+          </a>
+          and cost of further rework. Similarly to monetary debt, technical debt is not necessarily a bad thing, and sometimes (e.g. as a
+          <a href="/wiki/Proof_of_concept" title="Proof of concept">
+           proof-of-concept
+          </a>
+          ) is required to move projects forward. On the other hand, some experts claim that the "technical debt" metaphor tends to minimize the ramifications, which results in insufficient prioritization of the necessary work to correct it.
+          <sup class="reference" id="cite_ref-Jeffries_2015_4-0">
+           <a href="#cite_note-Jeffries_2015-4">
+            <span class="cite-bracket">
+             [
+            </span>
+            4
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-Knesek_2016_5-0">
+           <a href="#cite_note-Knesek_2016-5">
+            <span class="cite-bracket">
+             [
+            </span>
+            5
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          As a change is started on a codebase, there is often the need to make other coordinated changes in other parts of the codebase or documentation. Changes required that are not completed are considered debt, and until paid, will incur interest on top of interest, making it cumbersome to build a project. Although the term is primarily used in software development, it can also be applied to other professions.
+         </p>
+         <p>
+          In a
+          <a href="/wiki/Dagstuhl#Seminar_series" title="Dagstuhl">
+           Dagstuhl seminar
+          </a>
+          held in 2016, technical debt was defined by academic and industrial experts of the topic as follows: "In software-intensive systems, technical debt is a collection of design or implementation constructs that are expedient in the short term, but set up a technical context that can make future changes more costly or impossible. Technical debt presents an actual or contingent liability whose impact is limited to internal system qualities, primarily maintainability and evolvability."
+          <sup class="reference" id="cite_ref-6">
+           <a href="#cite_note-6">
+            <span class="cite-bracket">
+             [
+            </span>
+            6
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Assumptions">
+            Assumptions
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Technical_debt&amp;action=edit&amp;section=1" title="Edit section: Assumptions">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Technical debt posits that an expedient design essentially reduces expense in the present, but causes extra expense in the future.  This premise makes assumptions about the future:
+          </p>
+          <ul>
+           <li>
+            That the product survives long enough to actually incur the future costs
+           </li>
+           <li>
+            That future events do not make the "long-term" design obsolete just as soon as the expedient design
+           </li>
+           <li>
+            That future advancements do not make reworking less expensive than present assumptions
+           </li>
+          </ul>
+          <p>
+           Since the future is uncertain, it is possible that a perceived technical debt today may in fact look like a savings in the future.  Although the debt scenario is considered more likely, the uncertainty further complicates design decisions.
+          </p>
+          <p>
+           Also, the calculation of technical debt typically considers the cost of employee work time, but a complete assessment should include other costs incurred or deferred by the design decision, such as training, licensing, tools, services, hardware, opportunity cost, etc.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Causes">
+            Causes
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Technical_debt&amp;action=edit&amp;section=2" title="Edit section: Causes">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+          <table class="box-More_citations_needed_section plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+           <tbody>
+            <tr>
+             <td class="mbox-image">
+              <div class="mbox-image-div">
+               <span typeof="mw:File">
+                <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                 <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+                </a>
+               </span>
+              </div>
+             </td>
+             <td class="mbox-text">
+              <div class="mbox-text-span">
+               This section
+               <b>
+                needs additional citations for
+                <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                 verification
+                </a>
+               </b>
+               .
+               <span class="hide-when-compact">
+                Please help
+                <a href="/wiki/Special:EditPage/Technical_debt" title="Special:EditPage/Technical debt">
+                 improve this article
+                </a>
+                by
+                <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                 adding citations to reliable sources
+                </a>
+                in this section. Unsourced material may be challenged and removed.
+               </span>
+               <span class="date-container">
+                <i>
+                 (
+                 <span class="date">
+                  October 2022
+                 </span>
+                 )
+                </i>
+               </span>
+               <span class="hide-when-compact">
+                <i>
+                 (
+                 <small>
+                  <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                   Learn how and when to remove this message
+                  </a>
+                 </small>
+                 )
+                </i>
+               </span>
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <p>
+           Common causes of technical debt include:
+          </p>
+          <ul>
+           <li>
+            Ongoing development, long series of project enhancements over time renders old solutions sub-optimal.
+           </li>
+           <li>
+            Insufficient up-front definition, where
+            <a href="/wiki/Requirements_analysis" title="Requirements analysis">
+             requirements
+            </a>
+            are still being defined during development, development starts before any design takes place. This is done to save time but often has to be reworked later.
+            <sup class="reference" id="cite_ref-:0_7-0">
+             <a href="#cite_note-:0-7">
+              <span class="cite-bracket">
+               [
+              </span>
+              7
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Business pressures, where the business considers getting something released sooner before the necessary changes are completed, hence builds up technical debt involving those uncompleted changes.
+            <sup class="reference" id="cite_ref-SuryanarayanaSamarthyam2014_8-0">
+             <a href="#cite_note-SuryanarayanaSamarthyam2014-8">
+              <span class="cite-bracket">
+               [
+              </span>
+              8
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="reference nowrap">
+             <span title="Page: 4">
+              : 4
+             </span>
+            </sup>
+            <sup class="reference" id="cite_ref-Sterling2010_9-0">
+             <a href="#cite_note-Sterling2010-9">
+              <span class="cite-bracket">
+               [
+              </span>
+              9
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="reference nowrap">
+             <span title="Page: 22">
+              : 22
+             </span>
+            </sup>
+           </li>
+           <li>
+            Lack of process or understanding, where businesses are blind to the concept of technical debt, and make decisions without considering the implications.
+           </li>
+           <li>
+            <a href="/wiki/Coupling_(computer_programming)" title="Coupling (computer programming)">
+             Tightly coupled components
+            </a>
+            , where functions are not
+            <a href="/wiki/Modular_programming" title="Modular programming">
+             modular
+            </a>
+            , the software is not flexible enough to adapt to changes in business needs.
+           </li>
+           <li>
+            Lack of a
+            <a href="/wiki/Test_suite" title="Test suite">
+             test suite
+            </a>
+            , which encourages quick and risky
+            <a class="mw-redirect" href="/wiki/Band-aid_(Computing)" title="Band-aid (Computing)">
+             band-aid
+            </a>
+            bug fixes.
+           </li>
+           <li>
+            Lack of
+            <a href="/wiki/Software_documentation" title="Software documentation">
+             software documentation
+            </a>
+            , where code is created without supporting documentation. The work to create documentation represents debt.
+            <sup class="reference" id="cite_ref-SuryanarayanaSamarthyam2014_8-1">
+             <a href="#cite_note-SuryanarayanaSamarthyam2014-8">
+              <span class="cite-bracket">
+               [
+              </span>
+              8
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Lack of collaboration, where knowledge isn't shared around the organization and business efficiency suffers, or junior developers are not properly mentored.
+           </li>
+           <li>
+            Parallel development on multiple branches accrues technical debt because of the work required to merge the changes into a single source base. The more changes done in isolation, the more debt.
+           </li>
+           <li>
+            Deferred
+            <a href="/wiki/Code_refactoring" title="Code refactoring">
+             refactoring
+            </a>
+            ; As the requirements for a project evolve, it may become clear that parts of the code have become inefficient or difficult to edit and must be refactored in order to support future requirements. The longer refactoring is delayed, and the more code is added, the bigger the debt.
+            <sup class="reference" id="cite_ref-Sterling2010_9-1">
+             <a href="#cite_note-Sterling2010-9">
+              <span class="cite-bracket">
+               [
+              </span>
+              9
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="reference nowrap">
+             <span title="Page: 29">
+              : 29
+             </span>
+            </sup>
+           </li>
+           <li>
+            Lack of alignment to standards, where industry standard features,
+            <a href="/wiki/Software_framework" title="Software framework">
+             frameworks
+            </a>
+            , and technologies are ignored. Eventually integration with standards will come and doing so sooner will cost less (similar to "delayed refactoring").
+            <sup class="reference" id="cite_ref-SuryanarayanaSamarthyam2014_8-2">
+             <a href="#cite_note-SuryanarayanaSamarthyam2014-8">
+              <span class="cite-bracket">
+               [
+              </span>
+              8
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="reference nowrap">
+             <span title="Page: 7">
+              : 7
+             </span>
+            </sup>
+           </li>
+           <li>
+            Lack of knowledge, when the developer doesn't know how to write elegant code.
+            <sup class="reference" id="cite_ref-Sterling2010_9-2">
+             <a href="#cite_note-Sterling2010-9">
+              <span class="cite-bracket">
+               [
+              </span>
+              9
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Lack of ownership, when outsourced software efforts result in in-house engineering being required to
+            <a href="/wiki/Code_refactoring" title="Code refactoring">
+             refactor
+            </a>
+            or
+            <a class="mw-redirect" href="/wiki/Code_rewriting" title="Code rewriting">
+             rewrite
+            </a>
+            outsourced code.
+           </li>
+           <li>
+            Poor technological leadership, where poorly thought out commands are handed down the chain of command.
+           </li>
+           <li>
+            Last minute specification changes. These have potential to percolate throughout a project, but there is insufficient time or budget to document and test the changes.
+            <sup class="reference" id="cite_ref-:0_7-1">
+             <a href="#cite_note-:0-7">
+              <span class="cite-bracket">
+               [
+              </span>
+              7
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Lazyness, where employees might not be willing or incentivized to put extra effort into code readabiliy and documentation.
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Service_or_repay_the_technical_debt">
+            Service or repay the technical debt
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Technical_debt&amp;action=edit&amp;section=3" title="Edit section: Service or repay the technical debt">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Kenny Rubin uses the following status categories:
+           <sup class="reference" id="cite_ref-Essential_Scrum:_Velocity_10-0">
+            <a href="#cite_note-Essential_Scrum:_Velocity-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <ul>
+           <li>
+            Happened-upon technical debt—debt that the development team was unaware existed until it was exposed during the normal course of performing work on the product. For example, the team is adding a new feature to the product and in doing so it realizes that a work-around had been built into the code years before by someone who has long since departed.
+           </li>
+           <li>
+            Known technical debt—debt that is known to the development team and has been made visible using one of many approaches.
+           </li>
+           <li>
+            Targeted technical debt—debt that is known and has been targeted for servicing by the development team.
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Consequences">
+            Consequences
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Technical_debt&amp;action=edit&amp;section=4" title="Edit section: Consequences">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           "Interest payments" are caused by both the necessary local maintenance and the absence of maintenance by other users of the project. Ongoing development in the
+           <a href="/wiki/Upstream_(software_development)" title="Upstream (software development)">
+            upstream
+           </a>
+           project can increase the cost of "paying off the debt" in the future.
+           <sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify">
+              <span title="The text near this tag may need clarification or removal of jargon. (October 2013)">
+               clarification needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           One pays off the debt by simply completing the uncompleted work.
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (May 2018)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+          </p>
+          <p>
+           The buildup of technical debt is a major cause for projects to miss deadlines.
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (April 2013)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           It is difficult to
+           <a href="/wiki/Estimation_(project_management)" title="Estimation (project management)">
+            estimate
+           </a>
+           exactly how much work is necessary to pay off the debt. For each change that is initiated, an uncertain amount of uncompleted work is committed to the project. The deadline is missed when the project realizes that there is more uncompleted work (debt) than there is time to complete it in. To have predictable release schedules, a development team should limit the amount of work in progress in order to keep the amount of uncompleted work (or debt) small at all times.
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (May 2018)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+          </p>
+          <p>
+           If enough work is completed on a project to not present a barrier to submission, then a project will be released which still carries a substantial amount of technical debt. If this software reaches production, then the risks of implementing any future refactors which might address the technical debt increase dramatically. Modifying production code carries the risk of outages, actual financial losses and possibly legal repercussions if contracts involve
+           <a class="mw-redirect" href="/wiki/Service-level_agreements" title="Service-level agreements">
+            service-level agreements
+           </a>
+           (SLA). For this reason we can view the carrying of technical debt to production almost as if it were an
+           <i>
+            increase in interest rate
+           </i>
+           and the only time this decreases is when deployments are turned down and retired.
+          </p>
+          <style data-mw-deduplicate="TemplateStyles:r1244412712">
+           .mw-parser-output .templatequote{overflow:hidden;margin:1em 0;padding:0 32px}.mw-parser-output .templatequotecite{line-height:1.5em;text-align:left;margin-top:0}@media(min-width:500px){.mw-parser-output .templatequotecite{padding-left:1.6em}}
+          </style>
+          <blockquote class="templatequote">
+           <p>
+            "As an evolving program is continually changed, its complexity, reflecting deteriorating structure, increases unless work is done to maintain or reduce it."
+            <sup class="reference" id="cite_ref-11">
+             <a href="#cite_note-11">
+              <span class="cite-bracket">
+               [
+              </span>
+              11
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </p>
+           <div class="templatequotecite">
+            —
+            <cite>
+             <a class="mw-redirect" href="/wiki/Meir_Manny_Lehman" title="Meir Manny Lehman">
+              Meir Manny Lehman
+             </a>
+             , 1980
+            </cite>
+           </div>
+          </blockquote>
+          <p>
+           While
+           <a class="mw-redirect" href="/wiki/Meir_Manny_Lehman" title="Meir Manny Lehman">
+            Manny Lehman
+           </a>
+           's Law already indicated that evolving programs continually add to their complexity and deteriorating structure unless work is done to maintain them,
+           <a href="/wiki/Ward_Cunningham" title="Ward Cunningham">
+            Ward Cunningham
+           </a>
+           first drew the comparison between technical complexity and
+           <a href="/wiki/Debt" title="Debt">
+            debt
+           </a>
+           in a 1992 experience report:
+          </p>
+          <link href="mw-data:TemplateStyles:r1244412712" rel="mw-deduplicated-inline-style"/>
+          <blockquote class="templatequote">
+           <p>
+            "Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite... The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as
+            <a href="/wiki/Interest" title="Interest">
+             interest
+            </a>
+            on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation,
+            <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">
+             object-oriented
+            </a>
+            or otherwise."
+            <sup class="reference" id="cite_ref-oopsla92_12-0">
+             <a href="#cite_note-oopsla92-12">
+              <span class="cite-bracket">
+               [
+              </span>
+              12
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </p>
+           <div class="templatequotecite">
+            —
+            <cite>
+             <a href="/wiki/Ward_Cunningham" title="Ward Cunningham">
+              Ward Cunningham
+             </a>
+             , 1992
+            </cite>
+           </div>
+          </blockquote>
+          <p>
+           In his 2004 text,
+           <i>
+            Refactoring to Patterns
+           </i>
+           ,
+           <a class="new" href="/w/index.php?title=Joshua_Kerievsky&amp;action=edit&amp;redlink=1" title="Joshua Kerievsky (page does not exist)">
+            Joshua Kerievsky
+           </a>
+           presents a comparable argument concerning the costs associated with architectural negligence, which he describes as "design debt".
+           <sup class="reference" id="cite_ref-rtp_13-0">
+            <a href="#cite_note-rtp-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Activities that might be postponed include
+           <a href="/wiki/Documentation" title="Documentation">
+            documentation
+           </a>
+           , writing
+           <a href="/wiki/Test_automation" title="Test automation">
+            tests
+           </a>
+           , attending to
+           <a href="/wiki/Comment_(computer_programming)#Tags" title="Comment (computer programming)">
+            TODO comments
+           </a>
+           and tackling compiler and
+           <a class="mw-redirect" href="/wiki/Static_code_analysis" title="Static code analysis">
+            static code analysis
+           </a>
+           warnings. Other instances of technical debt include knowledge that isn't shared around the organization and code that is too confusing to be modified easily.
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (May 2018)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+          </p>
+          <p>
+           Writing about PHP development in 2014, Junade Ali said:
+          </p>
+          <link href="mw-data:TemplateStyles:r1244412712" rel="mw-deduplicated-inline-style"/>
+          <blockquote class="templatequote">
+           <p>
+            The cost of never paying down this technical debt is clear; eventually the cost to deliver functionality will become so slow that it is easy for a well-designed competitive software product to overtake the badly-designed software in terms of features. In my experience, badly designed software can also lead to a more stressed engineering workforce, in turn leading higher staff churn (which in turn affects costs and productivity when delivering features). Additionally, due to the complexity in a given codebase, the ability to accurately estimate work will also disappear. In cases where development agencies charge on a feature-to-feature basis, the profit margin for delivering code will eventually deteriorate.
+           </p>
+           <div class="templatequotecite">
+            —
+            <cite>
+             Junade Ali writes in
+             <i>
+              Mastering PHP Design Patterns
+             </i>
+             <sup class="reference" id="cite_ref-14">
+              <a href="#cite_note-14">
+               <span class="cite-bracket">
+                [
+               </span>
+               14
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+            </cite>
+           </div>
+          </blockquote>
+          <p>
+           <a href="/wiki/Grady_Booch" title="Grady Booch">
+            Grady Booch
+           </a>
+           compares how evolving cities is similar to evolving software-intensive systems and how lack of refactoring can lead to technical debt.
+          </p>
+          <link href="mw-data:TemplateStyles:r1244412712" rel="mw-deduplicated-inline-style"/>
+          <blockquote class="templatequote">
+           <p>
+            "The concept of technical debt is central to understanding the forces that weigh upon systems, for it often explains where, how, and why a system is stressed. In cities, repairs on infrastructure are often delayed and incremental changes are made rather than bold ones. So it is again in software-intensive systems. Users suffer the consequences of capricious complexity, delayed improvements, and insufficient incremental change; the developers who evolve such systems suffer the slings and arrows of never being able to write quality code because they are always trying to catch up."
+            <sup class="reference" id="cite_ref-Girish_2014_1-1">
+             <a href="#cite_note-Girish_2014-1">
+              <span class="cite-bracket">
+               [
+              </span>
+              1
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </p>
+           <div class="templatequotecite">
+            —
+            <cite>
+             <a href="/wiki/Grady_Booch" title="Grady Booch">
+              Grady Booch
+             </a>
+             , 2014
+            </cite>
+           </div>
+          </blockquote>
+          <p>
+           In
+           <a class="mw-redirect" href="/wiki/Open_source_software" title="Open source software">
+            open source software
+           </a>
+           , postponing sending local changes to the upstream project is a form of technical debt.
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (May 2018)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Technical_debt&amp;action=edit&amp;section=5" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Code_smell" title="Code smell">
+             Code smell
+            </a>
+            (symptoms of inferior code quality that can contribute to technical debt)
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Big_ball_of_mud" title="Big ball of mud">
+             Big ball of mud
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Bus_factor" title="Bus factor">
+             Bus factor
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Escalation_of_commitment" title="Escalation of commitment">
+             Escalation of commitment
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Manumation" title="Manumation">
+             Manumation
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Overengineering" title="Overengineering">
+             Overengineering
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Shotgun_surgery" title="Shotgun surgery">
+             Shotgun surgery
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Software_entropy" title="Software entropy">
+             Software entropy
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Software_rot" title="Software rot">
+             Software rot
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Spaghetti_code" title="Spaghetti code">
+             Spaghetti code
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/SQALE" title="SQALE">
+             SQALE
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Sunk_cost" title="Sunk cost">
+             Sunk cost
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Comment_(computer_programming)#Tags" title="Comment (computer programming)">
+             TODO, FIXME, XXX
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Technical_debt&amp;action=edit&amp;section=6" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-references-wrap mw-references-columns">
+           <ol class="references">
+            <li id="cite_note-Girish_2014-1">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-Girish_2014_1-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-Girish_2014_1-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <style data-mw-deduplicate="TemplateStyles:r1238218222">
+               .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+              </style>
+              <cite class="citation book cs1" id="CITEREFSuryanarayana2014">
+               Suryanarayana, Girish (November 2014).
+               <i>
+                Refactoring for Software Design Smells
+               </i>
+               (1st ed.). Morgan Kaufmann. p. 258.
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-0128013977" title="Special:BookSources/978-0128013977">
+                <bdi>
+                 978-0128013977
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Refactoring+for+Software+Design+Smells&amp;rft.pages=258&amp;rft.edition=1st&amp;rft.pub=Morgan+Kaufmann&amp;rft.date=2014-11&amp;rft.isbn=978-0128013977&amp;rft.aulast=Suryanarayana&amp;rft.aufirst=Girish&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-2">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-2">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.techopedia.com/definition/27913/technical-debt" rel="nofollow">
+                "Definition of the term "Technical Debt" (plus, some background information and an "explanation")"
+               </a>
+               .
+               <i>
+                Techopedia
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 August 11,
+                </span>
+                2016
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Techopedia&amp;rft.atitle=Definition+of+the+term+%22Technical+Debt%22+%28plus%2C+some+background+information+and+an+%22explanation%22%29&amp;rft_id=https%3A%2F%2Fwww.techopedia.com%2Fdefinition%2F27913%2Ftechnical-debt&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-Managing_Technical_Debt-3">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-Managing_Technical_Debt_3-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFAllman2012">
+               Allman, Eric (May 2012). "Managing Technical Debt".
+               <i>
+                Communications of the ACM
+               </i>
+               .
+               <b>
+                55
+               </b>
+               (5): 50–55.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1145%2F2160718.2160733" rel="nofollow">
+                10.1145/2160718.2160733
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                S2CID
+               </a>
+               <a class="external text" href="https://api.semanticscholar.org/CorpusID:53246391" rel="nofollow">
+                53246391
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.atitle=Managing+Technical+Debt&amp;rft.volume=55&amp;rft.issue=5&amp;rft.pages=50-55&amp;rft.date=2012-05&amp;rft_id=info%3Adoi%2F10.1145%2F2160718.2160733&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A53246391%23id-name%3DS2CID&amp;rft.aulast=Allman&amp;rft.aufirst=Eric&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-Jeffries_2015-4">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-Jeffries_2015_4-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFJeffries">
+               Jeffries, Ron.
+               <a class="external text" href="https://web.archive.org/web/20151111011323/http://ronjeffries.com/articles/015-11/tech-debt/" rel="nofollow">
+                "Technical Debt – Bad metaphor or worst metaphor?"
+               </a>
+               . Archived from
+               <a class="external text" href="http://ronjeffries.com/articles/015-11/tech-debt/" rel="nofollow">
+                the original
+               </a>
+               on November 11, 2015
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 November 10,
+                </span>
+                2015
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Technical+Debt+%E2%80%93+Bad+metaphor+or+worst+metaphor%3F&amp;rft.aulast=Jeffries&amp;rft.aufirst=Ron&amp;rft_id=http%3A%2F%2Fronjeffries.com%2Farticles%2F015-11%2Ftech-debt%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-Knesek_2016-5">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-Knesek_2016_5-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFKnesek">
+               Knesek, Doug.
+               <a class="external text" href="https://www.linkedin.com/pulse/averting-technical-debt-crisis-part-1-doug-knesek" rel="nofollow">
+                "Averting a 'Technical Debt' Crisis"
+               </a>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 April 7,
+                </span>
+                2016
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Averting+a+%27Technical+Debt%27+Crisis&amp;rft.aulast=Knesek&amp;rft.aufirst=Doug&amp;rft_id=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Faverting-technical-debt-crisis-part-1-doug-knesek&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-6">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-6">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFAvgeriouKruchtenOzkayaCarolyn2016">
+               Avgeriou, Paris; Kruchten, Philippe; Ozkaya, Ipek; Carolyn, Seaman (2016).
+               <a class="external text" href="https://drops.dagstuhl.de/opus/volltexte/2016/6693/pdf/dagrep_v006_i004_p110_s16162.pdf#page=3" rel="nofollow">
+                "Managing technical debt in software engineering (dagstuhl seminar 16162)"
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               .
+               <i>
+                Dagstuhl Reports
+               </i>
+               .
+               <b>
+                6
+               </b>
+               (4).
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Dagstuhl+Reports&amp;rft.atitle=Managing+technical+debt+in+software+engineering+%28dagstuhl+seminar+16162%29&amp;rft.volume=6&amp;rft.issue=4&amp;rft.date=2016&amp;rft.aulast=Avgeriou&amp;rft.aufirst=Paris&amp;rft.au=Kruchten%2C+Philippe&amp;rft.au=Ozkaya%2C+Ipek&amp;rft.au=Carolyn%2C+Seaman&amp;rft_id=https%3A%2F%2Fdrops.dagstuhl.de%2Fopus%2Fvolltexte%2F2016%2F6693%2Fpdf%2Fdagrep_v006_i004_p110_s16162.pdf%23page%3D3&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-:0-7">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-:0_7-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-:0_7-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation book cs1" id="CITEREFRiosSpínolaMendonçaSeaman2018">
+               Rios, Nicolli; Spínola, Rodrigo Oliveira; Mendonça, Manoel; Seaman, Carolyn (2018-10-11).
+               <a class="external text" href="https://doi.org/10.1145/3239235.3268917" rel="nofollow">
+                "The most common causes and effects of technical debt: First results from a global family of industrial surveys"
+               </a>
+               .
+               <i>
+                Proceedings of the 12th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement
+               </i>
+               . ESEM '18. New York, NY, USA: Association for Computing Machinery. pp. 1–10.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1145%2F3239235.3268917" rel="nofollow">
+                10.1145/3239235.3268917
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-1-4503-5823-1" title="Special:BookSources/978-1-4503-5823-1">
+                <bdi>
+                 978-1-4503-5823-1
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=The+most+common+causes+and+effects+of+technical+debt%3A+First+results+from+a+global+family+of+industrial+surveys&amp;rft.btitle=Proceedings+of+the+12th+ACM%2FIEEE+International+Symposium+on+Empirical+Software+Engineering+and+Measurement&amp;rft.place=New+York%2C+NY%2C+USA&amp;rft.series=ESEM+%2718&amp;rft.pages=1-10&amp;rft.pub=Association+for+Computing+Machinery&amp;rft.date=2018-10-11&amp;rft_id=info%3Adoi%2F10.1145%2F3239235.3268917&amp;rft.isbn=978-1-4503-5823-1&amp;rft.aulast=Rios&amp;rft.aufirst=Nicolli&amp;rft.au=Sp%C3%ADnola%2C+Rodrigo+Oliveira&amp;rft.au=Mendon%C3%A7a%2C+Manoel&amp;rft.au=Seaman%2C+Carolyn&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1145%2F3239235.3268917&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-SuryanarayanaSamarthyam2014-8">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-SuryanarayanaSamarthyam2014_8-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-SuryanarayanaSamarthyam2014_8-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-SuryanarayanaSamarthyam2014_8-2">
+               <sup>
+                <i>
+                 <b>
+                  c
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation book cs1" id="CITEREFGirish_SuryanarayanaGanesh_SamarthyamTushar_Sharma2014">
+               Girish Suryanarayana; Ganesh Samarthyam; Tushar Sharma (11 November 2014).
+               <a class="external text" href="https://books.google.com/books?id=1SaOAwAAQBAJ&amp;pg=PA3" rel="nofollow">
+                <i>
+                 Refactoring for Software Design Smells: Managing Technical Debt
+                </i>
+               </a>
+               . Elsevier Science. p. 3.
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-0-12-801646-6" title="Special:BookSources/978-0-12-801646-6">
+                <bdi>
+                 978-0-12-801646-6
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Refactoring+for+Software+Design+Smells%3A+Managing+Technical+Debt&amp;rft.pages=3&amp;rft.pub=Elsevier+Science&amp;rft.date=2014-11-11&amp;rft.isbn=978-0-12-801646-6&amp;rft.au=Girish+Suryanarayana&amp;rft.au=Ganesh+Samarthyam&amp;rft.au=Tushar+Sharma&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D1SaOAwAAQBAJ%26pg%3DPA3&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-Sterling2010-9">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-Sterling2010_9-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-Sterling2010_9-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-Sterling2010_9-2">
+               <sup>
+                <i>
+                 <b>
+                  c
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation book cs1" id="CITEREFChris_Sterling2010">
+               Chris Sterling (10 December 2010).
+               <a class="external text" href="https://books.google.com/books?id=LYQlOaRwpnEC&amp;pg=PA17" rel="nofollow">
+                <i>
+                 Managing Software Debt: Building for Inevitable Change (Adobe Reader)
+                </i>
+               </a>
+               . Addison-Wesley Professional. p. 17.
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-0-321-70055-1" title="Special:BookSources/978-0-321-70055-1">
+                <bdi>
+                 978-0-321-70055-1
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Managing+Software+Debt%3A+Building+for+Inevitable+Change+%28Adobe+Reader%29&amp;rft.pages=17&amp;rft.pub=Addison-Wesley+Professional&amp;rft.date=2010-12-10&amp;rft.isbn=978-0-321-70055-1&amp;rft.au=Chris+Sterling&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DLYQlOaRwpnEC%26pg%3DPA17&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-Essential_Scrum:_Velocity-10">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-Essential_Scrum:_Velocity_10-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation cs2" id="CITEREFRubin2013">
+               Rubin, Kenneth (2013),
+               <i>
+                Essential Scrum. A Practical Guide to the Most Popular Agile Process
+               </i>
+               , Addison-Wesley, p. 155,
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-0-13-704329-3" title="Special:BookSources/978-0-13-704329-3">
+                <bdi>
+                 978-0-13-704329-3
+                </bdi>
+               </a>
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Essential+Scrum.+A+Practical+Guide+to+the+Most+Popular+Agile+Process&amp;rft.pages=155&amp;rft.pub=Addison-Wesley&amp;rft.date=2013&amp;rft.isbn=978-0-13-704329-3&amp;rft.aulast=Rubin&amp;rft.aufirst=Kenneth&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-11">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-11">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFLehman1996">
+               Lehman, MM (1996).
+               <a class="external text" href="http://dl.acm.org/citation.cfm?id=681473" rel="nofollow">
+                "Laws of Software Evolution Revisited"
+               </a>
+               .
+               <i>
+                EWSPT '96 Proceedings of the 5th European Workshop on Software Process Technology
+               </i>
+               : 108–124.
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/9783540617716" title="Special:BookSources/9783540617716">
+                <bdi>
+                 9783540617716
+                </bdi>
+               </a>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 19 November
+                </span>
+                2014
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=EWSPT+%2796+Proceedings+of+the+5th+European+Workshop+on+Software+Process+Technology&amp;rft.atitle=Laws+of+Software+Evolution+Revisited&amp;rft.pages=108-124&amp;rft.date=1996&amp;rft.isbn=9783540617716&amp;rft.aulast=Lehman&amp;rft.aufirst=MM&amp;rft_id=http%3A%2F%2Fdl.acm.org%2Fcitation.cfm%3Fid%3D681473&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-oopsla92-12">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-oopsla92_12-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFWard_Cunningham1992">
+               <a href="/wiki/Ward_Cunningham" title="Ward Cunningham">
+                Ward Cunningham
+               </a>
+               (1992-03-26).
+               <a class="external text" href="http://c2.com/doc/oopsla92.html" rel="nofollow">
+                "The WyCash Portfolio Management System"
+               </a>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2008-09-26
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=The+WyCash+Portfolio+Management+System&amp;rft.date=1992-03-26&amp;rft.au=Ward+Cunningham&amp;rft_id=http%3A%2F%2Fc2.com%2Fdoc%2Foopsla92.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-rtp-13">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-rtp_13-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation book cs1" id="CITEREFKerievsky2004">
+               Kerievsky, Joshua (2004).
+               <i>
+                Refactoring to Patterns
+               </i>
+               . Addison-Wesley.
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-0-321-21335-8" title="Special:BookSources/978-0-321-21335-8">
+                <bdi>
+                 978-0-321-21335-8
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Refactoring+to+Patterns&amp;rft.pub=Addison-Wesley&amp;rft.date=2004&amp;rft.isbn=978-0-321-21335-8&amp;rft.aulast=Kerievsky&amp;rft.aufirst=Joshua&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-14">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-14">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation book cs1" id="CITEREFAli2016">
+               Ali, Junade (September 2016).
+               <a class="external text" href="https://www.packtpub.com/application-development/mastering-php-design-patterns" rel="nofollow">
+                <i>
+                 Mastering PHP Design Patterns | PACKT Books
+                </i>
+               </a>
+               (1 ed.). Birmingham, England, UK: Packt Publishing Limited. p. 11.
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-1-78588-713-0" title="Special:BookSources/978-1-78588-713-0">
+                <bdi>
+                 978-1-78588-713-0
+                </bdi>
+               </a>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 11 December
+                </span>
+                2017
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mastering+PHP+Design+Patterns+%7C+PACKT+Books&amp;rft.place=Birmingham%2C+England%2C+UK&amp;rft.pages=11&amp;rft.edition=1&amp;rft.pub=Packt+Publishing+Limited&amp;rft.date=2016-09&amp;rft.isbn=978-1-78588-713-0&amp;rft.aulast=Ali&amp;rft.aufirst=Junade&amp;rft_id=https%3A%2F%2Fwww.packtpub.com%2Fapplication-development%2Fmastering-php-design-patterns&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATechnical+debt">
+              </span>
+             </span>
+            </li>
+           </ol>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Technical_debt&amp;action=edit&amp;section=7" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="http://c2.com/cgi/wiki?WardExplainsDebtMetaphor" rel="nofollow">
+             <i>
+              Ward Explains Debt Metaphor
+             </i>
+            </a>
+            , video from Ward Cunningham
+           </li>
+           <li>
+            <a class="external text" href="http://www.ontechnicaldebt.com" rel="nofollow">
+             OnTechnicalDebt
+            </a>
+            The online community for discussing technical debt
+           </li>
+           <li>
+            Experts interviews on Technical Debt:
+            <a class="external text" href="https://web.archive.org/web/20120621171342/http://blog.techdebt.org/resources-links/67/ward-cunningham-interview-about-technical-debt-sqale-agile" rel="nofollow">
+             Ward Cunningham
+            </a>
+            ,
+            <a class="external text" href="https://web.archive.org/web/20120717083235/http://blog.techdebt.org/interviews/156/interview-with-philippe-kruchten-on-technical-debt-rup-ubc-decision-process-architecture" rel="nofollow">
+             Philippe KRUCHTEN
+            </a>
+            ,
+            <a class="external text" href="https://web.archive.org/web/20121129073247/http://blog.techdebt.org/interviews/189/technical-debt-interview-with-ipek-ozkaya-on-technical-debt-sei-ieee-software-architecture-agile" rel="nofollow">
+             Ipek OZKAYA
+            </a>
+            ,
+            <a class="external text" href="https://web.archive.org/web/20120714053317/http://blog.techdebt.org/interviews/118/interview-with-jean-louis-letouzey-on-technical-debt-and-sqale" rel="nofollow">
+             Jean-Louis LETOUZEY
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://www.construx.com/10x_Software_Development/Technical_Debt/" rel="nofollow">
+             Steve McConnell discusses technical debt
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://www.martinfowler.com/bliki/TechnicalDebt.html" rel="nofollow">
+             TechnicalDebt
+            </a>
+            from Martin Fowler Bliki
+           </li>
+           <li>
+            <a class="external text" href="https://www.linkedin.com/pulse/averting-technical-debt-crisis-part-1-doug-knesek" rel="nofollow">
+             Averting a "Technical Debt" Crisis
+            </a>
+            by Doug Knesek
+           </li>
+           <li>
+            <a class="external text" href="http://www.media-landscape.com/yapc/2006-06-26.AndyLester/" rel="nofollow">
+             "Get out of Technical Debt Now!"
+            </a>
+            , a talk by Andy Lester
+           </li>
+           <li>
+            <a class="external text" href="http://www.inf.ed.ac.uk/teaching/courses/rtse/Lectures/lehmanslaws.pdf" rel="nofollow">
+             Lehman's Law
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="https://www.youtube.com/watch?v=lEKvzEyNtbk" rel="nofollow">
+             Managing Technical Debt Webinar by Steve McConnell
+            </a>
+           </li>
+           <li>
+            <a class="new" href="/w/index.php?title=David_E._Boundy&amp;action=edit&amp;redlink=1" title="David E. Boundy (page does not exist)">
+             Boundy, David
+            </a>
+            ,
+            <a class="external text" href="http://dl.acm.org/citation.cfm?id=156632" rel="nofollow">
+             Software cancer: the seven early warning signs
+            </a>
+            or
+            <a class="external text" href="https://www.academia.edu/2303865/Software_cancer_the_seven_early_warning_signs" rel="nofollow">
+             here
+            </a>
+            , ACM SIGSOFT Software Engineering Notes, Vol. 18 No. 2 (April 1993), Association for Computing Machinery, New York, New York, US
+           </li>
+           <li>
+            <a class="external text" href="http://www.emerce.nl/opinie/hoge-ontwikkelkosten-eigen-schuld" rel="nofollow">
+             Technical debt: investeer en voorkom faillissement
+            </a>
+            by Colin Spoel
+           </li>
+           <li>
+            <a class="external text" href="https://gauravtiwari.org/2016/12/10/technical-debts-basics/" rel="nofollow">
+             Technical debts: Everything you need to know
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="https://deepsource.io/blog/what-is-technical-debt/" rel="nofollow">
+             What is technical debt?
+            </a>
+            from DeepSource blog
+           </li>
+          </ul>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐nd47m
+Cached time: 20240927002649
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.604 seconds
+Real time usage: 0.723 seconds
+Preprocessor visited node count: 4316/1000000
+Post‐expand include size: 70152/2097152 bytes
+Template argument size: 11990/2097152 bytes
+Highest expansion depth: 15/100
+Expensive parser function count: 7/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 60451/5000000 bytes
+Lua time usage: 0.352/10.000 seconds
+Lua memory usage: 6578216/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  648.354      1 -total
+ 23.67%  153.474      6 Template:Cite_book
+ 16.08%  104.278      1 Template:Multiple_issues
+ 14.91%   96.698      1 Template:Short_description
+ 10.54%   68.315      3 Template:Ambox
+ 10.21%   66.207      4 Template:R
+  9.70%   62.861      5 Template:Citation_needed
+  9.51%   61.660      1 Template:Cleanup_rewrite
+  8.88%   57.544      4 Template:R/ref
+  8.37%   54.257      2 Template:Pagetype
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:11885652-0!canonical and timestamp 20240927002649 and revision id 1238030627. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Technical_debt&amp;oldid=1238030627">
+          https://en.wikipedia.org/w/index.php?title=Technical_debt&amp;oldid=1238030627
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Metaphors" title="Category:Metaphors">
+            Metaphors
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Software_architecture" title="Category:Software architecture">
+            Software architecture
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Software_engineering_terminology" title="Category:Software engineering terminology">
+            Software engineering terminology
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Software_maintenance" title="Category:Software maintenance">
+            Software maintenance
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_articles_needing_rewrite_from_July_2024" title="Category:Wikipedia articles needing rewrite from July 2024">
+            Wikipedia articles needing rewrite from July 2024
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_rewrite" title="Category:All articles needing rewrite">
+            All articles needing rewrite
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_articles_needing_reorganization_from_July_2024" title="Category:Wikipedia articles needing reorganization from July 2024">
+            Wikipedia articles needing reorganization from July 2024
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_multiple_maintenance_issues" title="Category:Articles with multiple maintenance issues">
+            Articles with multiple maintenance issues
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_October_2022" title="Category:Articles needing additional references from October 2022">
+            Articles needing additional references from October 2022
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_October_2013" title="Category:Wikipedia articles needing clarification from October 2013">
+            Wikipedia articles needing clarification from October 2013
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">
+            All articles with unsourced statements
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_May_2018" title="Category:Articles with unsourced statements from May 2018">
+            Articles with unsourced statements from May 2018
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_April_2013" title="Category:Articles with unsourced statements from April 2013">
+            Articles with unsourced statements from April 2013
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 1 August 2024, at 19:01
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Technical_debt&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-nd47m","wgBackendResponseTime":923,"wgPageParseReport":{"limitreport":{"cputime":"0.604","walltime":"0.723","ppvisitednodes":{"value":4316,"limit":1000000},"postexpandincludesize":{"value":70152,"limit":2097152},"templateargumentsize":{"value":11990,"limit":2097152},"expansiondepth":{"value":15,"limit":100},"expensivefunctioncount":{"value":7,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":60451,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  648.354      1 -total"," 23.67%  153.474      6 Template:Cite_book"," 16.08%  104.278      1 Template:Multiple_issues"," 14.91%   96.698      1 Template:Short_description"," 10.54%   68.315      3 Template:Ambox"," 10.21%   66.207      4 Template:R","  9.70%   62.861      5 Template:Citation_needed","  9.51%   61.660      1 Template:Cleanup_rewrite","  8.88%   57.544      4 Template:R/ref","  8.37%   54.257      2 Template:Pagetype"]},"scribunto":{"limitreport-timeusage":{"value":"0.352","limit":"10.000"},"limitreport-memusage":{"value":6578216,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-nd47m","timestamp":"20240927002649","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Technical debt","url":"https:\/\/en.wikipedia.org\/wiki\/Technical_debt","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1532172","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1532172","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2007-06-21T17:18:18Z","dateModified":"2024-08-01T19:01:56Z","headline":"the implied cost of additional rework caused by picking a fast and easy solution now instead of a better and harder-to-implement but more suitable approach"}
+  </script>
+ </body>
+</html>

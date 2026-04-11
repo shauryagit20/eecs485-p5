@@ -1,0 +1,3769 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Inter-process communication - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"2cc85eaf-9928-45cb-9213-4c2ea4fcc861","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Inter-process_communication","wgTitle":"Inter-process communication","wgCurRevisionId":1237651895,"wgRevisionId":1237651895,"wgArticleId":152106,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Articles lacking in-text citations from August 2015","All articles lacking in-text citations","Articles needing cleanup from November 2016","All pages needing cleanup","Articles with sections that need to be turned into prose from November 2016","Inter-process communication"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext",
+"wgRelevantPageName":"Inter-process_communication","wgRelevantArticleId":152106,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q751436","wgCheckUserClientHintsHeadersJsApi":
+["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP",
+"ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/e/ef/ArchitectureCloudLinksSameSite.png" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="900" property="og:image:height"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/e/ef/ArchitectureCloudLinksSameSite.png" property="og:image"/>
+  <meta content="800" property="og:image:width"/>
+  <meta content="600" property="og:image:height"/>
+  <meta content="640" property="og:image:width"/>
+  <meta content="480" property="og:image:height"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Inter-process communication - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Inter-process_communication" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Inter-process_communication&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Inter-process_communication" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Inter-process_communication"/>
+  <meta eecs485_docid="60304548"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Inter-process_communication rootpage-Inter-process_communication skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Inter-process+communication" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Inter-process+communication" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Inter-process+communication" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Inter-process+communication" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Approaches">
+           <a class="vector-toc-link" href="#Approaches">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Approaches
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Approaches-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Applications">
+           <a class="vector-toc-link" href="#Applications">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Applications
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Applications-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Applications subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Applications-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Remote_procedure_call_interfaces">
+             <a class="vector-toc-link" href="#Remote_procedure_call_interfaces">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.1
+               </span>
+               <span>
+                Remote procedure call interfaces
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Remote_procedure_call_interfaces-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Platform_communication_stack">
+             <a class="vector-toc-link" href="#Platform_communication_stack">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.2
+               </span>
+               <span>
+                Platform communication stack
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Platform_communication_stack-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Operating_system_communication_stack">
+             <a class="vector-toc-link" href="#Operating_system_communication_stack">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.3
+               </span>
+               <span>
+                Operating system communication stack
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Operating_system_communication_stack-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Distributed_object_models">
+             <a class="vector-toc-link" href="#Distributed_object_models">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.4
+               </span>
+               <span>
+                Distributed object models
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Distributed_object_models-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Inter-process communication
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 29 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-29" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          29 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="التواصل بين العمليات" href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84_%D8%A8%D9%8A%D9%86_%D8%A7%D9%84%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA" hreflang="ar" lang="ar" title="التواصل بين العمليات – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-az mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Azərbaycanca" data-language-local-name="Azerbaijani" data-title="Proseslərarası rabitə" href="https://az.wikipedia.org/wiki/Prosesl%C9%99raras%C4%B1_rabit%C9%99" hreflang="az" lang="az" title="Proseslərarası rabitə – Azerbaijani">
+             <span>
+              Azərbaycanca
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Comunicació entre processos" href="https://ca.wikipedia.org/wiki/Comunicaci%C3%B3_entre_processos" hreflang="ca" lang="ca" title="Comunicació entre processos – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-cs mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Čeština" data-language-local-name="Czech" data-title="Meziprocesová komunikace" href="https://cs.wikipedia.org/wiki/Meziprocesov%C3%A1_komunikace" hreflang="cs" lang="cs" title="Meziprocesová komunikace – Czech">
+             <span>
+              Čeština
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Interprozesskommunikation" href="https://de.wikipedia.org/wiki/Interprozesskommunikation" hreflang="de" lang="de" title="Interprozesskommunikation – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-el mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Ελληνικά" data-language-local-name="Greek" data-title="Διαδιεργασιακή επικοινωνία" href="https://el.wikipedia.org/wiki/%CE%94%CE%B9%CE%B1%CE%B4%CE%B9%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%B9%CE%B1%CE%BA%CE%AE_%CE%B5%CF%80%CE%B9%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%AF%CE%B1" hreflang="el" lang="el" title="Διαδιεργασιακή επικοινωνία – Greek">
+             <span>
+              Ελληνικά
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Comunicación entre procesos" href="https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_entre_procesos" hreflang="es" lang="es" title="Comunicación entre procesos – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="ارتباط بین پردازشی" href="https://fa.wikipedia.org/wiki/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7_%D8%A8%DB%8C%D9%86_%D9%BE%D8%B1%D8%AF%D8%A7%D8%B2%D8%B4%DB%8C" hreflang="fa" lang="fa" title="ارتباط بین پردازشی – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Communication inter-processus" href="https://fr.wikipedia.org/wiki/Communication_inter-processus" hreflang="fr" lang="fr" title="Communication inter-processus – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="프로세스 간 통신" href="https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EA%B0%84_%ED%86%B5%EC%8B%A0" hreflang="ko" lang="ko" title="프로세스 간 통신 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-id mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Bahasa Indonesia" data-language-local-name="Indonesian" data-title="Komunikasi antar proses" href="https://id.wikipedia.org/wiki/Komunikasi_antar_proses" hreflang="id" lang="id" title="Komunikasi antar proses – Indonesian">
+             <span>
+              Bahasa Indonesia
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Comunicazione tra processi" href="https://it.wikipedia.org/wiki/Comunicazione_tra_processi" hreflang="it" lang="it" title="Comunicazione tra processi – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="תקשורת בין תהליכים" href="https://he.wikipedia.org/wiki/%D7%AA%D7%A7%D7%A9%D7%95%D7%A8%D7%AA_%D7%91%D7%99%D7%9F_%D7%AA%D7%94%D7%9C%D7%99%D7%9B%D7%99%D7%9D" hreflang="he" lang="he" title="תקשורת בין תהליכים – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-kk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Қазақша" data-language-local-name="Kazakh" data-title="Процессораралық әрекеттестік" href="https://kk.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%B0%D1%80%D0%B0%D0%BB%D1%8B%D2%9B_%D3%99%D1%80%D0%B5%D0%BA%D0%B5%D1%82%D1%82%D0%B5%D1%81%D1%82%D1%96%D0%BA" hreflang="kk" lang="kk" title="Процессораралық әрекеттестік – Kazakh">
+             <span>
+              Қазақша
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="Interprocescommunicatie" href="https://nl.wikipedia.org/wiki/Interprocescommunicatie" hreflang="nl" lang="nl" title="Interprocescommunicatie – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="プロセス間通信" href="https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E9%96%93%E9%80%9A%E4%BF%A1" hreflang="ja" lang="ja" title="プロセス間通信 – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-no mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" data-title="Interprosesskommunikasjon" href="https://no.wikipedia.org/wiki/Interprosesskommunikasjon" hreflang="nb" lang="nb" title="Interprosesskommunikasjon – Norwegian Bokmål">
+             <span>
+              Norsk bokmål
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Komunikacja międzyprocesowa" href="https://pl.wikipedia.org/wiki/Komunikacja_mi%C4%99dzyprocesowa" hreflang="pl" lang="pl" title="Komunikacja międzyprocesowa – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Comunicação entre processos" href="https://pt.wikipedia.org/wiki/Comunica%C3%A7%C3%A3o_entre_processos" hreflang="pt" lang="pt" title="Comunicação entre processos – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Межпроцессное взаимодействие" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B6%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BD%D0%BE%D0%B5_%D0%B2%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B5" hreflang="ru" lang="ru" title="Межпроцессное взаимодействие – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Slovenčina" data-language-local-name="Slovak" data-title="Komunikácia medzi procesmi" href="https://sk.wikipedia.org/wiki/Komunik%C3%A1cia_medzi_procesmi" hreflang="sk" lang="sk" title="Komunikácia medzi procesmi – Slovak">
+             <span>
+              Slovenčina
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" data-title="Међупроцесна комуникација" href="https://sr.wikipedia.org/wiki/%D0%9C%D0%B5%D1%92%D1%83%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D0%BD%D0%B0_%D0%BA%D0%BE%D0%BC%D1%83%D0%BD%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%98%D0%B0" hreflang="sr" lang="sr" title="Међупроцесна комуникација – Serbian">
+             <span>
+              Српски / srpski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Srpskohrvatski / српскохрватски" data-language-local-name="Serbo-Croatian" data-title="Međuprocesna komunikacija" href="https://sh.wikipedia.org/wiki/Me%C4%91uprocesna_komunikacija" hreflang="sh" lang="sh" title="Međuprocesna komunikacija – Serbo-Croatian">
+             <span>
+              Srpskohrvatski / српскохрватски
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="Finnish" data-title="Prosessien välinen kommunikaatio" href="https://fi.wikipedia.org/wiki/Prosessien_v%C3%A4linen_kommunikaatio" hreflang="fi" lang="fi" title="Prosessien välinen kommunikaatio – Finnish">
+             <span>
+              Suomi
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sv mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Svenska" data-language-local-name="Swedish" data-title="Interprocesskommunikation" href="https://sv.wikipedia.org/wiki/Interprocesskommunikation" hreflang="sv" lang="sv" title="Interprocesskommunikation – Swedish">
+             <span>
+              Svenska
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Türkçe" data-language-local-name="Turkish" data-title="Mesajlaşma sistemi" href="https://tr.wikipedia.org/wiki/Mesajla%C5%9Fma_sistemi" hreflang="tr" lang="tr" title="Mesajlaşma sistemi – Turkish">
+             <span>
+              Türkçe
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Взаємодія між процесами" href="https://uk.wikipedia.org/wiki/%D0%92%D0%B7%D0%B0%D1%94%D0%BC%D0%BE%D0%B4%D1%96%D1%8F_%D0%BC%D1%96%D0%B6_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D0%B0%D0%BC%D0%B8" hreflang="uk" lang="uk" title="Взаємодія між процесами – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-vi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" data-title="Giao tiếp liên tiến trình" href="https://vi.wikipedia.org/wiki/Giao_ti%E1%BA%BFp_li%C3%AAn_ti%E1%BA%BFn_tr%C3%ACnh" hreflang="vi" lang="vi" title="Giao tiếp liên tiến trình – Vietnamese">
+             <span>
+              Tiếng Việt
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="行程間通訊" href="https://zh.wikipedia.org/wiki/%E8%A1%8C%E7%A8%8B%E9%96%93%E9%80%9A%E8%A8%8A" hreflang="zh" lang="zh" title="行程間通訊 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q751436#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Inter-process_communication" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Inter-process_communication" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Inter-process_communication">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Inter-process_communication&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Inter-process_communication&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Inter-process_communication">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Inter-process_communication&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Inter-process_communication&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Inter-process_communication" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Inter-process_communication" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Inter-process_communication&amp;oldid=1237651895" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Inter-process_communication&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Inter-process_communication&amp;id=1237651895&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FInter-process_communication">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FInter-process_communication">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q751436" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Inter-process_communication&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Inter-process_communication&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="wb-otherproject-link wb-otherproject-commons mw-list-item">
+                  <a href="https://commons.wikimedia.org/wiki/Category:Inter-process_communication" hreflang="en">
+                   <span>
+                    Wikimedia Commons
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          How computer operating systems enable data sharing
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <table class="box-More_footnotes_needed plainlinks metadata ambox ambox-style ambox-More_footnotes_needed" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <span>
+                <img alt="" class="mw-file-element" data-file-height="48" data-file-width="48" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" width="40"/>
+               </span>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              This article includes a list of general
+              <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">
+               references
+              </a>
+              , but
+              <b>
+               it lacks sufficient corresponding
+               <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">
+                inline citations
+               </a>
+              </b>
+              .
+              <span class="hide-when-compact">
+               Please help to
+               <a href="/wiki/Wikipedia:WikiProject_Reliability" title="Wikipedia:WikiProject Reliability">
+                improve
+               </a>
+               this article by
+               <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">
+                introducing
+               </a>
+               more precise citations.
+              </span>
+              <span class="date-container">
+               <i>
+                (
+                <span class="date">
+                 August 2015
+                </span>
+                )
+               </i>
+              </span>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <figure class="mw-default-size" typeof="mw:File/Thumb">
+          <a class="mw-file-description" href="/wiki/File:ArchitectureCloudLinksSameSite.png">
+           <img class="mw-file-element" data-file-height="225" data-file-width="300" decoding="async" height="195" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ArchitectureCloudLinksSameSite.png/260px-ArchitectureCloudLinksSameSite.png" srcset="//upload.wikimedia.org/wikipedia/commons/e/ef/ArchitectureCloudLinksSameSite.png 1.5x" width="260"/>
+          </a>
+          <figcaption>
+           A
+           <a href="/wiki/Grid_computing" title="Grid computing">
+            grid computing
+           </a>
+           system that connects many personal computers over the Internet via inter-process network communication
+          </figcaption>
+         </figure>
+         <p>
+          In
+          <a href="/wiki/Computer_science" title="Computer science">
+           computer science
+          </a>
+          ,
+          <b>
+           inter-process communication
+          </b>
+          (
+          <b>
+           IPC
+          </b>
+          ), also spelled
+          <b>
+           interprocess communication
+          </b>
+          , are the mechanisms provided by an
+          <a href="/wiki/Operating_system" title="Operating system">
+           operating system
+          </a>
+          for
+          <a href="/wiki/Process_(computing)" title="Process (computing)">
+           processes
+          </a>
+          to manage shared data. Typically, applications can use IPC, categorized as
+          <a href="/wiki/Client%E2%80%93server_model" title="Client–server model">
+           clients and servers
+          </a>
+          , where the client requests data and the server responds to client requests.
+          <sup class="reference" id="cite_ref-microsoft.com_1-0">
+           <a href="#cite_note-microsoft.com-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          Many applications are both clients and servers, as commonly seen in
+          <a href="/wiki/Distributed_computing" title="Distributed computing">
+           distributed computing
+          </a>
+          .
+         </p>
+         <p>
+          IPC is very important to the design process for
+          <a href="/wiki/Microkernel" title="Microkernel">
+           microkernels
+          </a>
+          and
+          <a class="mw-redirect" href="/wiki/Nanokernel" title="Nanokernel">
+           nanokernels
+          </a>
+          , which reduce the number of functionalities provided by the kernel. Those functionalities are then obtained by communicating with servers via IPC, leading to a large increase in communication when compared to a regular monolithic kernel. IPC interfaces generally encompass variable analytic framework structures. These processes ensure compatibility between the multi-vector protocols upon which IPC models rely.
+          <sup class="reference" id="cite_ref-2">
+           <a href="#cite_note-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          An IPC mechanism is either
+          <a href="/wiki/Synchronization_(computer_science)" title="Synchronization (computer science)">
+           synchronous
+          </a>
+          or asynchronous.
+          <a href="/wiki/Synchronization_(computer_science)#Implementation" title="Synchronization (computer science)">
+           Synchronization primitives
+          </a>
+          may be used to have synchronous behavior with an asynchronous IPC mechanism.
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Approaches">
+            Approaches
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Inter-process_communication&amp;action=edit&amp;section=1" title="Edit section: Approaches">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Different approaches to IPC have been tailored to different
+           <a href="/wiki/Software_requirements" title="Software requirements">
+            software requirements
+           </a>
+           , such as
+           <a href="/wiki/Algorithmic_efficiency" title="Algorithmic efficiency">
+            performance
+           </a>
+           ,
+           <a href="/wiki/Software_design" title="Software design">
+            modularity
+           </a>
+           , and system circumstances such as
+           <a href="/wiki/Bandwidth_(computing)" title="Bandwidth (computing)">
+            network bandwidth
+           </a>
+           and
+           <a href="/wiki/Latency_(engineering)" title="Latency (engineering)">
+            latency
+           </a>
+           .
+           <sup class="reference" id="cite_ref-microsoft.com_1-1">
+            <a href="#cite_note-microsoft.com-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <table class="wikitable">
+           <tbody>
+            <tr>
+             <th>
+              Method
+             </th>
+             <th>
+              Short Description
+             </th>
+             <th>
+              Provided by (
+              <a href="/wiki/Operating_system" title="Operating system">
+               operating systems
+              </a>
+              or other environments)
+             </th>
+            </tr>
+            <tr>
+             <td>
+              <a href="/wiki/Computer_file" title="Computer file">
+               File
+              </a>
+             </td>
+             <td>
+              A record stored on disk, or a record synthesized on demand by a file server, which can be accessed by multiple processes.
+             </td>
+             <td>
+              Most operating systems
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Communications file
+             </td>
+             <td>
+              A unique form of IPC in the late-1960s that most closely resembles
+              <a href="/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">
+               Plan 9
+              </a>
+              's
+              <a href="/wiki/9P_(protocol)" title="9P (protocol)">
+               9P protocol
+              </a>
+             </td>
+             <td>
+              <a class="mw-redirect" href="/wiki/Dartmouth_Time-Sharing_System" title="Dartmouth Time-Sharing System">
+               Dartmouth Time-Sharing System
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <a class="mw-redirect" href="/wiki/Signal_(computing)" title="Signal (computing)">
+               Signal
+              </a>
+              ; also
+              <a href="/wiki/Asynchronous_System_Trap" title="Asynchronous System Trap">
+               Asynchronous System Trap
+              </a>
+             </td>
+             <td>
+              A system message sent from one process to another, not usually used to transfer data but instead used to remotely command the partnered process.
+             </td>
+             <td>
+              Most operating systems
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <a href="/wiki/Network_socket" title="Network socket">
+               Socket
+              </a>
+             </td>
+             <td>
+              Data sent over a network interface, either to a different process on the same computer or to another computer on the network. Stream-oriented (
+              <a href="/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">
+               TCP
+              </a>
+              ; data written through a socket requires formatting to preserve message boundaries) or more rarely message-oriented (
+              <a href="/wiki/User_Datagram_Protocol" title="User Datagram Protocol">
+               UDP
+              </a>
+              ,
+              <a class="mw-redirect" href="/wiki/SCTP" title="SCTP">
+               SCTP
+              </a>
+              ).
+             </td>
+             <td>
+              Most operating systems
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <a href="/wiki/Unix_domain_socket" title="Unix domain socket">
+               Unix domain socket
+              </a>
+             </td>
+             <td>
+              Similar to an internet socket, but all communication occurs within the kernel. Domain sockets use the file system as their address space. Processes reference a domain socket as an
+              <a href="/wiki/Inode" title="Inode">
+               inode
+              </a>
+              , and multiple processes can communicate with one socket
+             </td>
+             <td>
+              All POSIX operating systems and Windows 10
+              <sup class="reference" id="cite_ref-3">
+               <a href="#cite_note-3">
+                <span class="cite-bracket">
+                 [
+                </span>
+                3
+                <span class="cite-bracket">
+                 ]
+                </span>
+               </a>
+              </sup>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <a href="/wiki/Message_queue" title="Message queue">
+               Message queue
+              </a>
+             </td>
+             <td>
+              A data stream similar to a socket, but which usually preserves message boundaries. Typically implemented by the operating system, they allow multiple processes to read and write to the
+              <a href="/wiki/Message_queue" title="Message queue">
+               message queue
+              </a>
+              without being directly connected to each other.
+             </td>
+             <td>
+              Most operating systems
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <a href="/wiki/Anonymous_pipe" title="Anonymous pipe">
+               Anonymous pipe
+              </a>
+             </td>
+             <td>
+              A unidirectional data channel using
+              <a class="mw-redirect" href="/wiki/Stdin" title="Stdin">
+               standard input and output
+              </a>
+              . Data written to the write-end of the pipe is buffered by the operating system until it is read from the read-end of the pipe. Two-way communication between processes can be achieved by using two pipes in opposite "directions".
+             </td>
+             <td>
+              All
+              <a href="/wiki/POSIX" title="POSIX">
+               POSIX
+              </a>
+              systems, Windows
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <a href="/wiki/Named_pipe" title="Named pipe">
+               Named pipe
+              </a>
+             </td>
+             <td>
+              A pipe that is treated like a file. Instead of using standard input and output as with an anonymous pipe, processes write to and read from a named pipe, as if it were a regular file.
+             </td>
+             <td>
+              All POSIX systems, Windows, AmigaOS 2.0+
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <a class="mw-redirect" href="/wiki/Shared_memory_(interprocess_communication)" title="Shared memory (interprocess communication)">
+               Shared memory
+              </a>
+             </td>
+             <td>
+              Multiple processes are given access to the same block of
+              <a class="mw-redirect" href="/wiki/Memory_(computing)" title="Memory (computing)">
+               memory
+              </a>
+              , which creates a shared buffer for the processes to communicate with each other.
+             </td>
+             <td>
+              All POSIX systems, Windows
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <a href="/wiki/Message_passing" title="Message passing">
+               Message passing
+              </a>
+             </td>
+             <td>
+              Allows multiple programs to communicate using message queues and/or non-OS managed channels. Commonly used in concurrency models.
+             </td>
+             <td>
+              Used in
+              <a href="/wiki/Local_Inter-Process_Communication" title="Local Inter-Process Communication">
+               LPC
+              </a>
+              ,
+              <a href="/wiki/Remote_procedure_call" title="Remote procedure call">
+               RPC
+              </a>
+              ,
+              <a class="mw-redirect" href="/wiki/Remote_method_invocation" title="Remote method invocation">
+               RMI
+              </a>
+              , and
+              <a href="/wiki/Message_Passing_Interface" title="Message Passing Interface">
+               MPI
+              </a>
+              paradigms,
+              <a class="mw-redirect" href="/wiki/Java_RMI" title="Java RMI">
+               Java RMI
+              </a>
+              ,
+              <a class="mw-redirect" href="/wiki/CORBA" title="CORBA">
+               CORBA
+              </a>
+              ,
+              <a href="/wiki/Component_Object_Model" title="Component Object Model">
+               COM
+              </a>
+              ,
+              <a href="/wiki/Data_Distribution_Service" title="Data Distribution Service">
+               DDS
+              </a>
+              ,
+              <a href="/wiki/Microsoft_Message_Queuing" title="Microsoft Message Queuing">
+               MSMQ
+              </a>
+              ,
+              <a href="/wiki/MailSlot" title="MailSlot">
+               MailSlots
+              </a>
+              ,
+              <a href="/wiki/QNX" title="QNX">
+               QNX
+              </a>
+              , others
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <a href="/wiki/Memory-mapped_file" title="Memory-mapped file">
+               Memory-mapped file
+              </a>
+             </td>
+             <td>
+              A file mapped to
+              <a class="mw-redirect" href="/wiki/RAM" title="RAM">
+               RAM
+              </a>
+              and can be modified by changing memory addresses directly instead of outputting to a stream. This shares the same benefits as a standard
+              <a class="mw-redirect" href="/wiki/File_(computing)" title="File (computing)">
+               file
+              </a>
+              .
+             </td>
+             <td>
+              All POSIX systems, Windows
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Applications">
+            Applications
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Inter-process_communication&amp;action=edit&amp;section=2" title="Edit section: Applications">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+          <table class="box-Prose plainlinks metadata ambox ambox-style ambox-Prose" role="presentation">
+           <tbody>
+            <tr>
+             <td class="mbox-image">
+              <div class="mbox-image-div">
+               <span typeof="mw:File">
+                <span>
+                 <img alt="" class="mw-file-element" data-file-height="48" data-file-width="48" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" width="40"/>
+                </span>
+               </span>
+              </div>
+             </td>
+             <td class="mbox-text">
+              <div class="mbox-text-span">
+               This article
+               <b>
+                is in
+                <a class="mw-redirect" href="/wiki/MOS:LIST" title="MOS:LIST">
+                 list
+                </a>
+                format but may read better as
+                <a class="mw-redirect" href="/wiki/MOS:PROSE" title="MOS:PROSE">
+                 prose
+                </a>
+               </b>
+               .
+               <span class="hide-when-compact">
+                You can help by
+                <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Inter-process_communication&amp;action=edit">
+                 converting this article
+                </a>
+                , if appropriate.
+                <a href="/wiki/Help:Editing" title="Help:Editing">
+                 Editing help
+                </a>
+                is available.
+               </span>
+               <span class="date-container">
+                <i>
+                 (
+                 <span class="date">
+                  November 2016
+                 </span>
+                 )
+                </i>
+               </span>
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Remote_procedure_call_interfaces">
+            Remote procedure call interfaces
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Inter-process_communication&amp;action=edit&amp;section=3" title="Edit section: Remote procedure call interfaces">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1236090951">
+           .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+          </style>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Remote_procedure_call" title="Remote procedure call">
+            remote procedure call
+           </a>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Java_(programming_language)" title="Java (programming language)">
+             Java
+            </a>
+            's
+            <a href="/wiki/Java_remote_method_invocation" title="Java remote method invocation">
+             Remote Method Invocation
+            </a>
+            (RMI)
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/ONC_RPC" title="ONC RPC">
+             ONC RPC
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/XML-RPC" title="XML-RPC">
+             XML-RPC
+            </a>
+            or
+            <a class="mw-redirect" href="/wiki/SOAP_(protocol)" title="SOAP (protocol)">
+             SOAP
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/JSON-RPC" title="JSON-RPC">
+             JSON-RPC
+            </a>
+           </li>
+           <li>
+            <span class="anchor" id="RFC_3259">
+            </span>
+            Message Bus (Mbus) (specified in RFC 3259) (not to be confused with
+            <a class="mw-redirect" href="/wiki/M-Bus_(EN_13757)" title="M-Bus (EN 13757)">
+             M-Bus
+            </a>
+            )
+           </li>
+           <li>
+            <a href="/wiki/.NET_Remoting" title=".NET Remoting">
+             .NET Remoting
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/GRPC" title="GRPC">
+             gRPC
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Platform_communication_stack">
+            Platform communication stack
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Inter-process_communication&amp;action=edit&amp;section=4" title="Edit section: Platform communication stack">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The following are messaging, and information systems that utilize IPC mechanisms but don't implement IPC themselves:
+          </p>
+          <style data-mw-deduplicate="TemplateStyles:r1184024115">
+           .mw-parser-output .div-col{margin-top:0.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:1px solid #aaa}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column}
+          </style>
+          <div class="div-col" style="column-width: 30em;">
+           <ul>
+            <li>
+             <a href="/wiki/KDE" title="KDE">
+              KDE
+             </a>
+             's
+             <a href="/wiki/Desktop_communication_protocol" title="Desktop communication protocol">
+              Desktop Communications Protocol
+             </a>
+             (DCOP) –  deprecated by D-Bus
+            </li>
+            <li>
+             <a href="/wiki/D-Bus" title="D-Bus">
+              D-Bus
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/OpenWrt" title="OpenWrt">
+              OpenWrt
+             </a>
+             uses
+             <a class="external text" href="https://openwrt.org/docs/techref/ubus" rel="nofollow">
+              ubus
+             </a>
+             micro bus architecture
+            </li>
+            <li>
+             <a href="/wiki/MCAPI" title="MCAPI">
+              MCAPI
+             </a>
+             Multicore Communications API
+            </li>
+            <li>
+             <a href="/wiki/SIMPL" title="SIMPL">
+              SIMPL
+             </a>
+             The Synchronous Interprocess Messaging Project for
+             <a href="/wiki/Linux" title="Linux">
+              Linux
+             </a>
+             (SIMPL)
+            </li>
+            <li>
+             <a href="/wiki/9P_(protocol)" title="9P (protocol)">
+              9P
+             </a>
+             (Plan 9 Filesystem Protocol)
+            </li>
+            <li>
+             <a href="/wiki/Distributed_Computing_Environment" title="Distributed Computing Environment">
+              Distributed Computing Environment
+             </a>
+             (DCE)
+            </li>
+            <li>
+             <a class="mw-redirect" href="/wiki/Thrift_(protocol)" title="Thrift (protocol)">
+              Thrift
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/ZeroC" title="ZeroC">
+              ZeroC
+             </a>
+             's
+             <a href="/wiki/Internet_Communications_Engine" title="Internet Communications Engine">
+              Internet Communications Engine
+             </a>
+             (ICE)
+            </li>
+            <li>
+             <a class="mw-redirect" href="/wiki/%C3%98MQ" title="ØMQ">
+              ØMQ
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Enduro/X" title="Enduro/X">
+              Enduro/X
+             </a>
+             Middleware
+            </li>
+            <li>
+             <a class="external text" href="http://www.inspirel.com/yami4" rel="nofollow">
+              YAMI4
+             </a>
+            </li>
+            <li>
+             <a class="mw-redirect" href="/wiki/Enlightenment_(software)" title="Enlightenment (software)">
+              Enlightenment_(software)
+             </a>
+             E16 uses eesh as an IPC
+            </li>
+           </ul>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Operating_system_communication_stack">
+            Operating system communication stack
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Inter-process_communication&amp;action=edit&amp;section=5" title="Edit section: Operating system communication stack">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The following are platform or programming language-specific APIs:
+          </p>
+          <link href="mw-data:TemplateStyles:r1184024115" rel="mw-deduplicated-inline-style"/>
+          <div class="div-col" style="column-width: 30em;">
+           <ul>
+            <li>
+             <a class="mw-redirect" href="/wiki/Apple_Computer" title="Apple Computer">
+              Apple Computer
+             </a>
+             's
+             <a class="mw-redirect" href="/wiki/Apple_events" title="Apple events">
+              Apple events
+             </a>
+             , previously known as Interapplication Communications (IAC)
+            </li>
+            <li>
+             <a href="/wiki/ARexx" title="ARexx">
+              ARexx
+             </a>
+             ports
+            </li>
+            <li>
+             <a href="/wiki/ENEA_AB" title="ENEA AB">
+              Enea's
+             </a>
+             <a class="mw-redirect" href="/wiki/LINX_(IPC)" title="LINX (IPC)">
+              LINX
+             </a>
+             for Linux (open source) and various DSP and general-purpose processors under
+             <a class="mw-redirect" href="/wiki/Operating_System_Embedded" title="Operating System Embedded">
+              OSE
+             </a>
+            </li>
+            <li>
+             The
+             <a class="mw-redirect" href="/wiki/Mach_kernel" title="Mach kernel">
+              Mach kernel
+             </a>
+             's Mach Ports
+            </li>
+            <li>
+             <a href="/wiki/Microsoft" title="Microsoft">
+              Microsoft
+             </a>
+             's
+             <a href="/wiki/ActiveX" title="ActiveX">
+              ActiveX
+             </a>
+             ,
+             <a href="/wiki/Component_Object_Model" title="Component Object Model">
+              Component Object Model
+             </a>
+             (COM),
+             <a href="/wiki/Microsoft_Transaction_Server" title="Microsoft Transaction Server">
+              Microsoft Transaction Server
+             </a>
+             (
+             <a class="mw-redirect" href="/wiki/COM%2B" title="COM+">
+              COM+
+             </a>
+             ),
+             <a href="/wiki/Distributed_Component_Object_Model" title="Distributed Component Object Model">
+              Distributed Component Object Model
+             </a>
+             (DCOM),
+             <a href="/wiki/Dynamic_Data_Exchange" title="Dynamic Data Exchange">
+              Dynamic Data Exchange
+             </a>
+             (DDE),
+             <a href="/wiki/Object_Linking_and_Embedding" title="Object Linking and Embedding">
+              Object Linking and Embedding
+             </a>
+             (OLE),
+             <a href="/wiki/Anonymous_pipe#Microsoft_Windows" title="Anonymous pipe">
+              anonymous pipes
+             </a>
+             ,
+             <a href="/wiki/Named_pipe#Named_pipes_in_Windows" title="Named pipe">
+              named pipes
+             </a>
+             ,
+             <a class="mw-redirect" href="/wiki/Local_Procedure_Call" title="Local Procedure Call">
+              Local Procedure Call
+             </a>
+             ,
+             <a href="/wiki/MailSlot" title="MailSlot">
+              MailSlots
+             </a>
+             ,
+             <a href="/wiki/Message_loop_in_Microsoft_Windows" title="Message loop in Microsoft Windows">
+              Message loop
+             </a>
+             ,
+             <a class="mw-redirect" href="/wiki/MSRPC" title="MSRPC">
+              MSRPC
+             </a>
+             ,
+             <a href="/wiki/.NET_Remoting" title=".NET Remoting">
+              .NET Remoting
+             </a>
+             , and
+             <a href="/wiki/Windows_Communication_Foundation" title="Windows Communication Foundation">
+              Windows Communication Foundation
+             </a>
+             (WCF)
+            </li>
+            <li>
+             <a href="/wiki/Novell" title="Novell">
+              Novell
+             </a>
+             's
+             <a href="/wiki/IPX/SPX" title="IPX/SPX">
+              SPX
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/POSIX" title="POSIX">
+              POSIX
+             </a>
+             <a href="/wiki/Mmap" title="Mmap">
+              mmap
+             </a>
+             ,
+             <a href="/wiki/Message_queue" title="Message queue">
+              message queues
+             </a>
+             ,
+             <a href="/wiki/Semaphore_(programming)" title="Semaphore (programming)">
+              semaphores
+             </a>
+             ,
+             <sup class="reference" id="cite_ref-4">
+              <a href="#cite_note-4">
+               <span class="cite-bracket">
+                [
+               </span>
+               4
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+             and
+             <a class="mw-redirect" href="/wiki/Shared_memory_(interprocess_communication)" title="Shared memory (interprocess communication)">
+              shared memory
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/RISC_OS" title="RISC OS">
+              RISC OS
+             </a>
+             's messages
+            </li>
+            <li>
+             <a class="mw-redirect" href="/wiki/Solaris_(operating_system)" title="Solaris (operating system)">
+              Solaris
+             </a>
+             <a href="/wiki/Doors_(computing)" title="Doors (computing)">
+              Doors
+             </a>
+            </li>
+            <li>
+             <a class="mw-redirect" href="/wiki/System_V" title="System V">
+              System V
+             </a>
+             's message queues, semaphores, and shared memory
+            </li>
+            <li>
+             <a href="/wiki/Transparent_Inter-process_Communication" title="Transparent Inter-process Communication">
+              Linux Transparent Inter Process Communication (TIPC)
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/OpenBinder" title="OpenBinder">
+              OpenBinder
+             </a>
+             Open binder
+            </li>
+            <li>
+             <a href="/wiki/QNX" title="QNX">
+              QNX
+             </a>
+             's PPS (Persistent Publish/Subscribe) service
+            </li>
+           </ul>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Distributed_object_models">
+            Distributed object models
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Inter-process_communication&amp;action=edit&amp;section=6" title="Edit section: Distributed object models">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The following are platform or programming language specific-APIs that use IPC, but do not themselves implement it:
+          </p>
+          <link href="mw-data:TemplateStyles:r1184024115" rel="mw-deduplicated-inline-style"/>
+          <div class="div-col" style="column-width: 30em;">
+           <ul>
+            <li>
+             <a href="/wiki/Libt2n" title="Libt2n">
+              Libt2n
+             </a>
+             for
+             <a href="/wiki/C%2B%2B" title="C++">
+              C++
+             </a>
+             under Linux only, handles complex objects and exceptions
+            </li>
+            <li>
+             <a href="/wiki/PHP" title="PHP">
+              PHP
+             </a>
+             's sessions
+            </li>
+            <li>
+             <a href="/wiki/Distributed_Ruby" title="Distributed Ruby">
+              Distributed Ruby
+             </a>
+            </li>
+            <li>
+             <a href="/wiki/Common_Object_Request_Broker_Architecture" title="Common Object Request Broker Architecture">
+              Common Object Request Broker Architecture
+             </a>
+             (CORBA)
+            </li>
+            <li>
+             <a href="/wiki/Electron_(software_framework)" title="Electron (software framework)">
+              Electron
+             </a>
+             's asynchronous IPC, shares
+             <a href="/wiki/JSON" title="JSON">
+              JSON
+             </a>
+             objects between a main and a renderer process
+             <sup class="reference" id="cite_ref-5">
+              <a href="#cite_note-5">
+               <span class="cite-bracket">
+                [
+               </span>
+               5
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+            </li>
+           </ul>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Inter-process_communication&amp;action=edit&amp;section=7" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239009302">
+           .mw-parser-output .portalbox{padding:0;margin:0.5em 0;display:table;box-sizing:border-box;max-width:175px;list-style:none}.mw-parser-output .portalborder{border:1px solid var(--border-color-base,#a2a9b1);padding:0.1em;background:var(--background-color-neutral-subtle,#f8f9fa)}.mw-parser-output .portalbox-entry{display:table-row;font-size:85%;line-height:110%;height:1.9em;font-style:italic;font-weight:bold}.mw-parser-output .portalbox-image{display:table-cell;padding:0.2em;vertical-align:middle;text-align:center}.mw-parser-output .portalbox-link{display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle}@media(min-width:720px){.mw-parser-output .portalleft{clear:left;float:left;margin:0.5em 1em 0.5em 0}.mw-parser-output .portalright{clear:right;float:right;margin:0.5em 0 0.5em 1em}}
+          </style>
+          <ul aria-label="Portals" class="noprint portalbox portalborder portalright" role="navigation">
+           <li class="portalbox-entry">
+            <span class="portalbox-image">
+             <span class="noviewer" typeof="mw:File">
+              <a class="mw-file-description" href="/wiki/File:Octicons-terminal.svg">
+               <img alt="icon" class="mw-file-element" data-file-height="1024" data-file-width="896" decoding="async" height="28" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Octicons-terminal.svg/24px-Octicons-terminal.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Octicons-terminal.svg/37px-Octicons-terminal.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Octicons-terminal.svg/49px-Octicons-terminal.svg.png 2x" width="24"/>
+              </a>
+             </span>
+            </span>
+            <span class="portalbox-link">
+             <a href="/wiki/Portal:Computer_programming" title="Portal:Computer programming">
+              Computer programming portal
+             </a>
+            </span>
+           </li>
+          </ul>
+          <ul>
+           <li>
+            <a href="/wiki/Berkeley_sockets" title="Berkeley sockets">
+             Berkeley sockets
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Computer_network_programming" title="Computer network programming">
+             Computer network programming
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Communicating_Sequential_Processes" title="Communicating Sequential Processes">
+             Communicating Sequential Processes
+            </a>
+            (CSP paradigm)
+           </li>
+           <li>
+            <a href="/wiki/Data_Distribution_Service" title="Data Distribution Service">
+             Data Distribution Service
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Database-as-IPC" title="Database-as-IPC">
+             Database-as-IPC
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Protected_procedure_call" title="Protected procedure call">
+             Protected procedure call
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Inter-process_communication&amp;action=edit&amp;section=8" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239549316">
+           .mw-parser-output .refbegin{margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li{margin-left:0;padding-left:3.2em;text-indent:-3.2em}.mw-parser-output .refbegin-hanging-indents ul,.mw-parser-output .refbegin-hanging-indents ul li{list-style:none}@media(max-width:720px){.mw-parser-output .refbegin-hanging-indents>ul>li{padding-left:1.6em;text-indent:-1.6em}}.mw-parser-output .refbegin-columns{margin-top:0.3em}.mw-parser-output .refbegin-columns ul{margin-top:0}.mw-parser-output .refbegin-columns li{page-break-inside:avoid;break-inside:avoid-column}@media screen{.mw-parser-output .refbegin{font-size:90%}}
+          </style>
+          <div class="refbegin" style="">
+           <ul>
+            <li>
+             <a href="/wiki/W._Richard_Stevens" title="W. Richard Stevens">
+              Stevens, Richard
+             </a>
+             .
+             <i>
+              UNIX Network Programming, Volume 2, Second Edition: Interprocess Communications.
+             </i>
+             Prentice Hall, 1999.
+             <style data-mw-deduplicate="TemplateStyles:r1238218222">
+              .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+             </style>
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/0-13-081081-9" title="Special:BookSources/0-13-081081-9">
+              0-13-081081-9
+             </a>
+            </li>
+            <li>
+             U. Ramachandran, M. Solomon, M. Vernon
+             <i>
+              <a class="external text" href="http://portal.acm.org/citation.cfm?id=30371&amp;coll=portal&amp;dl=ACM" rel="nofollow">
+               Hardware support for interprocess communication
+              </a>
+             </i>
+             Proceedings of the 14th annual international symposium on Computer architecture. Pittsburgh, Pennsylvania, United States. Pages: 178 - 188. Year of Publication: 1987
+             <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/0-8186-0776-9" title="Special:BookSources/0-8186-0776-9">
+              0-8186-0776-9
+             </a>
+            </li>
+            <li>
+             Crovella, M. Bianchini, R. LeBlanc, T. Markatos, E. Wisniewski, R.
+             <i>
+              <a class="external text" href="https://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=242738" rel="nofollow">
+               Using communication-to-computation ratio in parallel program designand performance prediction
+              </a>
+             </i>
+             1–4 December 1992. pp. 238–245
+             <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/0-8186-3200-3" title="Special:BookSources/0-8186-3200-3">
+              0-8186-3200-3
+             </a>
+            </li>
+           </ul>
+           <style data-mw-deduplicate="TemplateStyles:r1239543626">
+            .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+           </style>
+           <div class="reflist">
+            <div class="mw-references-wrap">
+             <ol class="references">
+              <li id="cite_note-microsoft.com-1">
+               <span class="mw-cite-backlink">
+                ^
+                <a href="#cite_ref-microsoft.com_1-0">
+                 <sup>
+                  <i>
+                   <b>
+                    a
+                   </b>
+                  </i>
+                 </sup>
+                </a>
+                <a href="#cite_ref-microsoft.com_1-1">
+                 <sup>
+                  <i>
+                   <b>
+                    b
+                   </b>
+                  </i>
+                 </sup>
+                </a>
+               </span>
+               <span class="reference-text">
+                <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+                <cite class="citation web cs1">
+                 <a class="external text" href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa365574(v=vs.85).aspx" rel="nofollow">
+                  "Interprocess Communications"
+                 </a>
+                 . Microsoft.
+                </cite>
+                <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Interprocess+Communications&amp;rft.pub=Microsoft&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fwindows%2Fdesktop%2Faa365574%28v%3Dvs.85%29.aspx&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInter-process+communication">
+                </span>
+               </span>
+              </li>
+              <li id="cite_note-2">
+               <span class="mw-cite-backlink">
+                <b>
+                 <a href="#cite_ref-2">
+                  ^
+                 </a>
+                </b>
+               </span>
+               <span class="reference-text">
+                <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+                <cite class="citation journal cs1" id="CITEREFCamurati1993">
+                 Camurati, P (1993). "Inter-process communications for system-level design".
+                 <i>
+                  International Workshop on Hardware/Software Codesign
+                 </i>
+                 .
+                </cite>
+                <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=International+Workshop+on+Hardware%2FSoftware+Codesign&amp;rft.atitle=Inter-process+communications+for+system-level+design&amp;rft.date=1993&amp;rft.aulast=Camurati&amp;rft.aufirst=P&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInter-process+communication">
+                </span>
+               </span>
+              </li>
+              <li id="cite_note-3">
+               <span class="mw-cite-backlink">
+                <b>
+                 <a href="#cite_ref-3">
+                  ^
+                 </a>
+                </b>
+               </span>
+               <span class="reference-text">
+                <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+                <cite class="citation web cs1">
+                 <a class="external text" href="https://blogs.msdn.microsoft.com/commandline/2018/02/07/windowswsl-interop-with-af_unix" rel="nofollow">
+                  "Windows/WSL Interop with AF_UNIX"
+                 </a>
+                 . Microsoft. 7 February 2018
+                 <span class="reference-accessdate">
+                  . Retrieved
+                  <span class="nowrap">
+                   25 May
+                  </span>
+                  2018
+                 </span>
+                 .
+                </cite>
+                <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Windows%2FWSL+Interop+with+AF_UNIX&amp;rft.pub=Microsoft&amp;rft.date=2018-02-07&amp;rft_id=https%3A%2F%2Fblogs.msdn.microsoft.com%2Fcommandline%2F2018%2F02%2F07%2Fwindowswsl-interop-with-af_unix&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInter-process+communication">
+                </span>
+               </span>
+              </li>
+              <li id="cite_note-4">
+               <span class="mw-cite-backlink">
+                <b>
+                 <a href="#cite_ref-4">
+                  ^
+                 </a>
+                </b>
+               </span>
+               <span class="reference-text">
+                "
+                <a class="external text" href="http://www.tldp.org/pub/Linux/docs/ldp-archived/linuxfocus/English/Archives/lf-2003_01-0281.pdf" rel="nofollow">
+                 Concurrent programming - communication between processes
+                </a>
+                "
+               </span>
+              </li>
+              <li id="cite_note-5">
+               <span class="mw-cite-backlink">
+                <b>
+                 <a href="#cite_ref-5">
+                  ^
+                 </a>
+                </b>
+               </span>
+               <span class="reference-text">
+                <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+                <cite class="citation web cs1">
+                 <a class="external text" href="https://www.electronjs.org/docs/api/ipc-main#ipcmain" rel="nofollow">
+                  "IpcMain | Electron"
+                 </a>
+                 .
+                </cite>
+                <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=IpcMain+%26%23124%3B+Electron&amp;rft_id=https%3A%2F%2Fwww.electronjs.org%2Fdocs%2Fapi%2Fipc-main%23ipcmain&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInter-process+communication">
+                </span>
+               </span>
+              </li>
+             </ol>
+            </div>
+           </div>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Inter-process_communication&amp;action=edit&amp;section=9" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="http://linux.die.net/man/5/ipc" rel="nofollow">
+             Linux ipc(5) man page
+            </a>
+            describing System V IPC
+           </li>
+           <li>
+            <a class="external text" href="http://msdn.microsoft.com/en-us/library/aa365574(VS.85).aspx" rel="nofollow">
+             Windows IPC
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="https://doc.qt.io/qt-5/ipc.html" rel="nofollow">
+             IPC available using Qt
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://www.yendor.com/programming/unix/unp/unp.html" rel="nofollow">
+             Unix Network Programming (Vol 2: Interprocess Communications)
+            </a>
+            by W. Richard Stevens
+           </li>
+           <li>
+            <a class="external text" href="http://technotif.com/basic-guide-interprocess-communication-pipes/" rel="nofollow">
+             Interprocess Communication and Pipes in C
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://dipc-2.sourceforge.net/" rel="nofollow">
+             DIPC, Distributed System V IPC
+            </a>
+           </li>
+          </ul>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Inter-process_communication" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Inter-process_communication" title="Template:Inter-process communication">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Inter-process_communication" title="Template talk:Inter-process communication">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Inter-process_communication" title="Special:EditPage/Template:Inter-process communication">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Inter-process_communication" style="font-size:114%;margin:0 4em">
+                <a class="mw-selflink selflink">
+                 Inter-process communication
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <td class="navbox-abovebelow" colspan="2">
+               <div>
+                <a href="/wiki/Data" title="Data">
+                 Data
+                </a>
+                exchange among
+                <a href="/wiki/Thread_(computing)" title="Thread (computing)">
+                 threads
+                </a>
+                in
+                <a href="/wiki/Computer_program" title="Computer program">
+                 computer programs
+                </a>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Methods
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Computer_file" title="Computer file">
+                   File
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Mmap" title="Mmap">
+                   Memory-mapped file
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Message_passing" title="Message passing">
+                   Message passing
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Message_queue" title="Message queue">
+                   Message queue and mailbox
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Named_pipe" title="Named pipe">
+                   Named pipe
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Anonymous_pipe" title="Anonymous pipe">
+                   Anonymous pipe
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Pipeline_(Unix)" title="Pipeline (Unix)">
+                   Pipe
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Semaphore_(programming)" title="Semaphore (programming)">
+                   Semaphore
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Shared_memory" title="Shared memory">
+                   Shared memory
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Signal_(IPC)" title="Signal (IPC)">
+                   Signal
+                  </a>
+                 </li>
+                 <li>
+                  Sockets
+                  <ul>
+                   <li>
+                    <a href="/wiki/Network_socket" title="Network socket">
+                     Network
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Unix_domain_socket" title="Unix domain socket">
+                     Unix
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Communication_protocol" title="Communication protocol">
+                Protocols
+               </a>
+               <br/>
+               and
+               <a href="/wiki/Technical_standard" title="Technical standard">
+                standards
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Apple_event" title="Apple event">
+                   Apple events
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Component_Object_Model#COM.2B" title="Component Object Model">
+                   COM+
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Common_Object_Request_Broker_Architecture" title="Common Object Request Broker Architecture">
+                   CORBA
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/D-Bus" title="D-Bus">
+                   D-Bus
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Data_Distribution_Service" title="Data Distribution Service">
+                   DDS
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Distributed_Computing_Environment" title="Distributed Computing Environment">
+                   DCE
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Internet_Communications_Engine" title="Internet Communications Engine">
+                   ICE
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/OpenBinder" title="OpenBinder">
+                   OpenBinder
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Sun_RPC" title="Sun RPC">
+                   Sun RPC
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/POSIX" title="POSIX">
+                   POSIX
+                  </a>
+                  (various methods)
+                 </li>
+                 <li>
+                  <a href="/wiki/SOAP" title="SOAP">
+                   SOAP
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/REST" title="REST">
+                   REST
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Apache_Thrift" title="Apache Thrift">
+                   Thrift
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Transparent_Inter-process_Communication" title="Transparent Inter-process Communication">
+                   TIPC
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/XML-RPC" title="XML-RPC">
+                   XML-RPC
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Library_(computing)" title="Library (computing)">
+                Software libraries
+               </a>
+               <br/>
+               and
+               <a href="/wiki/Software_framework" title="Software framework">
+                frameworks
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/D-Bus" title="D-Bus">
+                   D-Bus
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Libevent" title="Libevent">
+                   libevent
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/SIMPL" title="SIMPL">
+                   SIMPL
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/LINX_(IPC)" title="LINX (IPC)">
+                   LINX
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div class="navbox-styles">
+           <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+           <link href="mw-data:TemplateStyles:r1236075235" rel="mw-deduplicated-inline-style"/>
+          </div>
+          <div aria-labelledby="Web_syndication" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist mw-collapsible mw-collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <link href="mw-data:TemplateStyles:r1239400231" rel="mw-deduplicated-inline-style"/>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Web_syndication" title="Template:Web syndication">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Web_syndication" title="Template talk:Web syndication">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Web_syndication" title="Special:EditPage/Template:Web syndication">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Web_syndication" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Web_syndication" title="Web syndication">
+                 Web syndication
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <td class="navbox-abovebelow" colspan="2">
+               <div>
+                <dl>
+                 <dt>
+                  History
+                 </dt>
+                 <dd>
+                  <a href="/wiki/History_of_blogging" title="History of blogging">
+                   Blogging
+                  </a>
+                 </dd>
+                 <dd>
+                  <a href="/wiki/History_of_podcasting" title="History of podcasting">
+                   Podcasting
+                  </a>
+                 </dd>
+                 <dd>
+                  <a href="/wiki/Vlog#History" title="Vlog">
+                   Vlogging
+                  </a>
+                 </dd>
+                 <dd>
+                  <a href="/wiki/History_of_web_syndication_technology" title="History of web syndication technology">
+                   Web syndication technology
+                  </a>
+                 </dd>
+                </dl>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Niche_blogging" title="Niche blogging">
+                Types
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <td class="navbox-list navbox-odd" colspan="2" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Art_blog" title="Art blog">
+                       Art
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Mormon_blogosphere" title="Mormon blogosphere">
+                       Bloggernacle
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Classical_music_blog" title="Classical music blog">
+                       Classical music
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Corporate_blog" title="Corporate blog">
+                       Corporate
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Dream_diary" title="Dream diary">
+                       Dream diary
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Edublog" title="Edublog">
+                       Edublog
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Electronic_journal" title="Electronic journal">
+                       Electronic journal
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Astroturfing" title="Astroturfing">
+                       Fake
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/List_of_family-and-homemaking_blogs" title="List of family-and-homemaking blogs">
+                       Family
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Fashion_blog" title="Fashion blog">
+                       Fashion
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Food_blogging" title="Food blogging">
+                       Food
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Health_blog" title="Health blog">
+                       Health
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Blawg" title="Blawg">
+                       Law
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Lifelog" title="Lifelog">
+                       Lifelog
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/MP3_blog" title="MP3 blog">
+                       MP3
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Citizen_journalism" title="Citizen journalism">
+                       News
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Photoblog" title="Photoblog">
+                       Photoblog
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Police_blog" title="Police blog">
+                       Police
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Blog#Political_impact" title="Blog">
+                       Political
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Project_diary" title="Project diary">
+                       Project
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Reverse_blog" title="Reverse blog">
+                       Reverse
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Travel_blog" title="Travel blog">
+                       Travel
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Warblog" title="Warblog">
+                       Warblog
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Technology
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   General
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/BitTorrent" title="BitTorrent">
+                       BitTorrent
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Feed_URI_scheme" title="Feed URI scheme">
+                       Feed URI scheme
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   Features
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Linkback" title="Linkback">
+                       Linkback
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Permalink" title="Permalink">
+                       Permalink
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Ping_(blogging)" title="Ping (blogging)">
+                       Ping
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Pingback" title="Pingback">
+                       Pingback
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Reblogging" title="Reblogging">
+                       Reblogging
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Refback" title="Refback">
+                       Refback
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Rollback_(data_management)" title="Rollback (data management)">
+                       Rollback
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Trackback" title="Trackback">
+                       Trackback
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   Mechanism
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Thread_(Internet)" title="Thread (Internet)">
+                       Thread
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Geotagging" title="Geotagging">
+                       Geotagging
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/RSS_enclosure" title="RSS enclosure">
+                       RSS enclosure
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/FeedSync#Examples" title="FeedSync">
+                       Synchronization
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Memetics" title="Memetics">
+                    Memetics
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Atom_(Web_standard)" title="Atom (Web standard)">
+                       Atom feed
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Data_feed" title="Data feed">
+                       Data feed
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Photofeed" title="Photofeed">
+                       Photofeed
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Product_feed" title="Product feed">
+                       Product feed
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Resource_Description_Framework" title="Resource Description Framework">
+                       RDF feed
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Web_feed" title="Web feed">
+                       Web feed
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/RSS" title="RSS">
+                    RSS
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/GeoRSS" title="GeoRSS">
+                       GeoRSS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Media_RSS" title="Media RSS">
+                       MRSS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/RSS_TV" title="RSS TV">
+                       RSS TV
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   Social
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a class="mw-selflink selflink">
+                       Inter-process communication
+                      </a>
+                     </li>
+                     <li>
+                      <a class="new" href="/w/index.php?title=Livemark&amp;action=edit&amp;redlink=1" title="Livemark (page does not exist)">
+                       Livemark
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Mashup_(web_application_hybrid)" title="Mashup (web application hybrid)">
+                       Mashup
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Reference_(computer_science)" title="Reference (computer science)">
+                       Referencing
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/RSS_editor" title="RSS editor">
+                       RSS editor
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/RSS_tracking" title="RSS tracking">
+                       RSS tracking
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Streaming_media" title="Streaming media">
+                       Streaming media
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   Standard
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/OPML" title="OPML">
+                       OPML
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/RSS_Advisory_Board" title="RSS Advisory Board">
+                       RSS Advisory Board
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Usenet" title="Usenet">
+                       Usenet
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/World_Wide_Web" title="World Wide Web">
+                       World Wide Web
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/XBEL" title="XBEL">
+                       XBEL
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/XOXO_(microformat)" title="XOXO (microformat)">
+                       XOXO
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Form
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <td class="navbox-list navbox-odd" colspan="2" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Category:Audio_podcasts" title="Category:Audio podcasts">
+                       Audio podcast
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Enhanced_podcast" title="Enhanced podcast">
+                       Enhanced podcast
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Mobilecast" title="Mobilecast">
+                       Mobilecast
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Narrowcasting" title="Narrowcasting">
+                       Narrowcasting
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Peercasting" title="Peercasting">
+                       Peercasting
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Screencast" title="Screencast">
+                       Screencast
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Slidecasting" title="Slidecasting">
+                       Slidecasting
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Videocast" title="Videocast">
+                       Videocast
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Webcomic" title="Webcomic">
+                       Webcomic
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Webtoon" title="Webtoon">
+                       Webtoon
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Web_series" title="Web series">
+                       Web series
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="navbox-list navbox-even" colspan="2" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Anonymous_blog" title="Anonymous blog">
+                       Anonymous blogging
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Blog#Types" title="Blog">
+                       Collaborative blog
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Columnist" title="Columnist">
+                       Columnist
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Instant_messaging" title="Instant messaging">
+                       Instant messaging
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Liveblogging" title="Liveblogging">
+                       Liveblogging
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Microblogging" title="Microblogging">
+                       Microblog
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Mobile_blogging" title="Mobile blogging">
+                       Mobile blogging
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Spam_blog" title="Spam blog">
+                       Spam blog
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Video_blog" title="Video blog">
+                       Video blogging
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Motovlog" title="Motovlog">
+                       Motovlogging
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Media
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Alternative_media" title="Alternative media">
+                    Alternative media
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Blog_carnival" title="Blog carnival">
+                       Carnivals
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Blog_fiction" title="Blog fiction">
+                       Fiction
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Journalism" title="Journalism">
+                       Journalism
+                      </a>
+                      <ul>
+                       <li>
+                        <a href="/wiki/Citizen_journalism" title="Citizen journalism">
+                         Citizen
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Database_journalism" title="Database journalism">
+                         Database
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Online_diary" title="Online diary">
+                       Online diary
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/List_of_search_engines#Blog" title="List of search engines">
+                       Search engines
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Sideblog" title="Sideblog">
+                       Sideblog
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Blog" title="Blog">
+                       Software
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Web_directory" title="Web directory">
+                       Web directory
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   Micromedia
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Comparison_of_feed_aggregators" title="Comparison of feed aggregators">
+                       Aggregation
+                      </a>
+                      <ul>
+                       <li>
+                        <a href="/wiki/News_aggregator" title="News aggregator">
+                         News
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Poll_aggregator" title="Poll aggregator">
+                         Poll
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Review_aggregator" title="Review aggregator">
+                         Review
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Search_aggregator" title="Search aggregator">
+                         Search
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Video_aggregator" title="Video aggregator">
+                         Video
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Atom_(Web_standard)" title="Atom (Web standard)">
+                       Atom
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Atom_(Web_standard)" title="Atom (Web standard)">
+                       AtomPub
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Broadcatching" title="Broadcatching">
+                       Broadcatching
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Hashtag" title="Hashtag">
+                       Hashtag
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/NewsML" title="NewsML">
+                       NewsML
+                      </a>
+                      <ul>
+                       <li>
+                        <a class="mw-redirect" href="/wiki/NewsML_1" title="NewsML 1">
+                         1
+                        </a>
+                       </li>
+                       <li>
+                        <a class="mw-redirect" href="/wiki/NewsML-G2" title="NewsML-G2">
+                         G2
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Communication" title="Communication">
+                       Social communication
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Social_software" title="Social software">
+                       Social software
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Web_Slice" title="Web Slice">
+                       Web Slice
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   Related
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Blogosphere" title="Blogosphere">
+                       Blogosphere
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Escribitionist" title="Escribitionist">
+                       Escribitionist
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Glossary_of_blogging" title="Glossary of blogging">
+                       Glossary of blogging
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Pay-per-click" title="Pay-per-click">
+                       Pay per click
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Posting_style" title="Posting style">
+                       Posting style
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Slashdot_effect" title="Slashdot effect">
+                       Slashdot effect
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Spam_in_blogs" title="Spam in blogs">
+                       Spam in blogs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Uses_of_podcasting" title="Uses of podcasting">
+                       Uses of podcasting
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐cb75l
+Cached time: 20240926232527
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.521 seconds
+Real time usage: 1.104 seconds
+Preprocessor visited node count: 1840/1000000
+Post‐expand include size: 61790/2097152 bytes
+Template argument size: 1527/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 6/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 44517/5000000 bytes
+Lua time usage: 0.295/10.000 seconds
+Lua memory usage: 5496116/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  936.958      1 -total
+ 30.37%  284.514      3 Template:ISBN
+ 21.38%  200.308      6 Template:Navbox
+ 18.22%  170.751      1 Template:Inter-process_communication
+ 13.85%  129.805      1 Template:Short_description
+  9.66%   90.492      1 Template:Reflist
+  8.50%   79.622      1 Template:More_footnotes
+  7.76%   72.739      2 Template:Pagetype
+  7.57%   70.952      2 Template:Ambox
+  7.44%   69.703      3 Template:Cite_web
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:152106-0!canonical and timestamp 20240926232527 and revision id 1237651895. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Inter-process_communication&amp;oldid=1237651895">
+          https://en.wikipedia.org/w/index.php?title=Inter-process_communication&amp;oldid=1237651895
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Category
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Inter-process_communication" title="Category:Inter-process communication">
+            Inter-process communication
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_lacking_in-text_citations_from_August_2015" title="Category:Articles lacking in-text citations from August 2015">
+            Articles lacking in-text citations from August 2015
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">
+            All articles lacking in-text citations
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_cleanup_from_November_2016" title="Category:Articles needing cleanup from November 2016">
+            Articles needing cleanup from November 2016
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_pages_needing_cleanup" title="Category:All pages needing cleanup">
+            All pages needing cleanup
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_sections_that_need_to_be_turned_into_prose_from_November_2016" title="Category:Articles with sections that need to be turned into prose from November 2016">
+            Articles with sections that need to be turned into prose from November 2016
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 30 July 2024, at 20:45
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Inter-process_communication&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-88skw","wgBackendResponseTime":216,"wgPageParseReport":{"limitreport":{"cputime":"0.521","walltime":"1.104","ppvisitednodes":{"value":1840,"limit":1000000},"postexpandincludesize":{"value":61790,"limit":2097152},"templateargumentsize":{"value":1527,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":6,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":44517,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  936.958      1 -total"," 30.37%  284.514      3 Template:ISBN"," 21.38%  200.308      6 Template:Navbox"," 18.22%  170.751      1 Template:Inter-process_communication"," 13.85%  129.805      1 Template:Short_description","  9.66%   90.492      1 Template:Reflist","  8.50%   79.622      1 Template:More_footnotes","  7.76%   72.739      2 Template:Pagetype","  7.57%   70.952      2 Template:Ambox","  7.44%   69.703      3 Template:Cite_web"]},"scribunto":{"limitreport-timeusage":{"value":"0.295","limit":"10.000"},"limitreport-memusage":{"value":5496116,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-cb75l","timestamp":"20240926232527","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Inter-process communication","url":"https:\/\/en.wikipedia.org\/wiki\/Inter-process_communication","sameAs":"http:\/\/www.wikidata.org\/entity\/Q751436","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q751436","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-11-26T22:42:09Z","dateModified":"2024-07-30T20:45:55Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/ef\/ArchitectureCloudLinksSameSite.png","headline":"mechanisms an operating system provides to allow the processes to manage shared data"}
+  </script>
+ </body>
+</html>

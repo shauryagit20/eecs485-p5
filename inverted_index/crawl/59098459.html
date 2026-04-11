@@ -1,0 +1,3052 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Memory management (operating systems) - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"23565ce0-e847-4fdb-a7c6-ea986eecfc56","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Memory_management_(operating_systems)","wgTitle":"Memory management (operating systems)","wgCurRevisionId":1244974961,"wgRevisionId":1244974961,"wgArticleId":35757487,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Memory management","Operating systems"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Memory_management_(operating_systems)","wgRelevantArticleId":35757487,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":
+"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q6815739","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,
+"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups",
+"ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Memory management (operating systems) - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Memory_management_(operating_systems)" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Memory_management_(operating_systems)" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Memory_management_(operating_systems)"/>
+  <meta eecs485_docid="59098459"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Memory_management_operating_systems rootpage-Memory_management_operating_systems skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Memory+management+%28operating+systems%29" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Memory+management+%28operating+systems%29" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Memory+management+%28operating+systems%29" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Memory+management+%28operating+systems%29" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Memory_management_techniques">
+           <a class="vector-toc-link" href="#Memory_management_techniques">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Memory management techniques
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Memory_management_techniques-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Memory management techniques subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Memory_management_techniques-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Single_contiguous_allocation">
+             <a class="vector-toc-link" href="#Single_contiguous_allocation">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.1
+               </span>
+               <span>
+                Single contiguous allocation
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Single_contiguous_allocation-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Partitioned_allocation">
+             <a class="vector-toc-link" href="#Partitioned_allocation">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.2
+               </span>
+               <span>
+                Partitioned allocation
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Partitioned_allocation-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Paged_memory_management">
+             <a class="vector-toc-link" href="#Paged_memory_management">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.3
+               </span>
+               <span>
+                Paged memory management
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Paged_memory_management-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Segmented_memory_management">
+             <a class="vector-toc-link" href="#Segmented_memory_management">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.4
+               </span>
+               <span>
+                Segmented memory management
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Segmented_memory_management-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Rollout/rollin">
+           <a class="vector-toc-link" href="#Rollout/rollin">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Rollout/rollin
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Rollout/rollin-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Notes">
+           <a class="vector-toc-link" href="#Notes">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Notes
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Notes-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Memory management (operating systems)
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 3 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-3" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          3 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="مخطط التخصيص أحادي المستخدم" href="https://ar.wikipedia.org/wiki/%D9%85%D8%AE%D8%B7%D8%B7_%D8%A7%D9%84%D8%AA%D8%AE%D8%B5%D9%8A%D8%B5_%D8%A3%D8%AD%D8%A7%D8%AF%D9%8A_%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85" hreflang="ar" lang="ar" title="مخطط التخصيص أحادي المستخدم – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-bg mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Български" data-language-local-name="Bulgarian" data-title="Управление на паметта" href="https://bg.wikipedia.org/wiki/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0_%D0%BF%D0%B0%D0%BC%D0%B5%D1%82%D1%82%D0%B0" hreflang="bg" lang="bg" title="Управление на паметта – Bulgarian">
+             <span>
+              Български
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Менеджер виртуальной памяти" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80_%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8" hreflang="ru" lang="ru" title="Менеджер виртуальной памяти – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q6815739#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Memory_management_(operating_systems)" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Memory_management_(operating_systems)" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Memory_management_(operating_systems)">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Memory_management_(operating_systems)">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Memory_management_(operating_systems)" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Memory_management_(operating_systems)" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Memory_management_(operating_systems)&amp;oldid=1244974961" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Memory_management_%28operating_systems%29&amp;id=1244974961&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMemory_management_%28operating_systems%29">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMemory_management_%28operating_systems%29">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q6815739" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Memory_management_%28operating_systems%29&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Memory_management_(operating_systems)&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Function of computer operating systems
+         </div>
+         <p>
+          In
+          <a href="/wiki/Operating_system" title="Operating system">
+           operating systems
+          </a>
+          ,
+          <b>
+           memory management
+          </b>
+          is the function responsible for managing the computer's
+          <a class="mw-redirect" href="/wiki/Primary_memory" title="Primary memory">
+           primary memory
+          </a>
+          .
+          <sup class="reference" id="cite_ref-Madnick_1-0">
+           <a href="#cite_note-Madnick-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference nowrap">
+           <span title="Pages: 105–208">
+            : 105–208
+           </span>
+          </sup>
+         </p>
+         <p>
+          The memory management function keeps track of the status of each memory location, either
+          <i>
+           allocated
+          </i>
+          or
+          <i>
+           free
+          </i>
+          .  It determines how memory is allocated among competing processes, deciding which gets memory, when they receive it, and how much they are allowed.  When memory is allocated it determines which memory locations will be assigned.   It tracks when memory is freed or
+          <i>
+           unallocated
+          </i>
+          and updates the status.
+         </p>
+         <p>
+          This is distinct from
+          <a href="/wiki/Memory_management" title="Memory management">
+           application memory management
+          </a>
+          , which is how a process manages the memory assigned to it by the operating system.
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Memory_management_techniques">
+            Memory management techniques
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=edit&amp;section=1" title="Edit section: Memory management techniques">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Single_contiguous_allocation">
+            Single contiguous allocation
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=edit&amp;section=2" title="Edit section: Single contiguous allocation">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           <i>
+            Single allocation
+           </i>
+           is the simplest memory management technique. All the computer's memory, usually with the exception of a small portion reserved for the operating system, is available to a single application.
+           <a href="/wiki/MS-DOS" title="MS-DOS">
+            MS-DOS
+           </a>
+           is an example of a system that allocates memory in this way. An
+           <a href="/wiki/Embedded_system" title="Embedded system">
+            embedded system
+           </a>
+           running a single application might also use this technique.
+          </p>
+          <p>
+           A system using single contiguous allocation may still
+           <a href="/wiki/Computer_multitasking" title="Computer multitasking">
+            multitask
+           </a>
+           by
+           <a class="mw-redirect" href="/wiki/Paging#Terminology" title="Paging">
+            swapping
+           </a>
+           the contents of memory to switch among users. Early versions of the
+           <a href="/wiki/MUSIC/SP" title="MUSIC/SP">
+            MUSIC
+           </a>
+           operating system used this technique.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Partitioned_allocation">
+            Partitioned allocation
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=edit&amp;section=3" title="Edit section: Partitioned allocation">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           <i>
+            Partitioned allocation
+           </i>
+           divides primary memory into multiple
+           <i>
+            memory partitions
+           </i>
+           , usually contiguous areas of memory.  Each partition might contain all the information for a specific
+           <a href="/wiki/Batch_processing" title="Batch processing">
+            job
+           </a>
+           or
+           <a href="/wiki/Task_(computing)" title="Task (computing)">
+            task
+           </a>
+           .  Memory management consists of allocating a partition to a job when it starts and unallocating it when the job ends.
+          </p>
+          <p>
+           Partitioned allocation usually requires some hardware support to prevent the jobs from interfering with one another or with the operating system.  The
+           <a href="/wiki/IBM_System/360" title="IBM System/360">
+            IBM System/360
+           </a>
+           uses a
+           <a class="mw-redirect" href="/wiki/Storage_protection#Protection_keys" title="Storage protection">
+            <i>
+             lock-and-key
+            </i>
+           </a>
+           technique.  The
+           <a class="mw-redirect" href="/wiki/UNIVAC_1108" title="UNIVAC 1108">
+            UNIVAC 1108
+           </a>
+           ,
+           <a href="/wiki/PDP-6" title="PDP-6">
+            PDP-6
+           </a>
+           and
+           <a href="/wiki/PDP-10" title="PDP-10">
+            PDP-10
+           </a>
+           , and
+           <a href="/wiki/GE-600_series" title="GE-600 series">
+            GE-600 series
+           </a>
+           use
+           <a href="/wiki/Base_and_bounds" title="Base and bounds">
+            base and bounds
+           </a>
+           registers to indicate the ranges of accessible memory.
+          </p>
+          <p>
+           Partitions may be either
+           <i>
+            static
+           </i>
+           , that is defined at
+           <a class="mw-redirect" href="/wiki/Initial_Program_Load#IBM_System/360_and_successors" title="Initial Program Load">
+            Initial Program Load
+           </a>
+           (IPL) or
+           <a href="/wiki/Booting" title="Booting">
+            <i>
+             boot time
+            </i>
+           </a>
+           , or by the
+           <a href="/wiki/Computer_operator" title="Computer operator">
+            computer operator
+           </a>
+           , or
+           <i>
+            dynamic
+           </i>
+           , that is, automatically created for a specific job.
+           <a href="/wiki/OS/360_and_successors" title="OS/360 and successors">
+            IBM System/360 Operating System
+           </a>
+           <i>
+            Multiprogramming with a Fixed Number of Tasks
+           </i>
+           (MFT) is an example of static partitioning, and
+           <i>
+            Multiprogramming with a Variable Number of Tasks
+           </i>
+           (MVT) is an example of dynamic. MVT and successors use the term
+           <i>
+            region
+           </i>
+           to distinguish dynamic partitions from static ones in other systems.
+           <sup class="reference" id="cite_ref-2">
+            <a href="#cite_note-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Partitions may be relocatable with base registers, as in the UNIVAC 1108, PDP-6 and PDP-10, and GE-600 series.  Relocatable partitions are able to be
+           <i>
+            <a href="/wiki/Coalescing_(computer_science)" title="Coalescing (computer science)">
+             compacted
+            </a>
+           </i>
+           to provide larger chunks of contiguous physical memory.  Compaction moves "in-use" areas of memory to eliminate "holes" or unused areas of memory caused by process termination in order to create larger contiguous free areas.
+           <sup class="reference" id="cite_ref-3">
+            <a href="#cite_note-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Some systems allow partitions to be
+           <i>
+            swapped out
+           </i>
+           to
+           <a href="/wiki/Computer_data_storage#Secondary_storage" title="Computer data storage">
+            secondary storage
+           </a>
+           to free additional memory. Early versions of IBM's
+           <i>
+            <a href="/wiki/Time_Sharing_Option" title="Time Sharing Option">
+             Time Sharing Option
+            </a>
+           </i>
+           (TSO) swapped users in and out of
+           <a href="/wiki/Time-sharing" title="Time-sharing">
+            time-sharing
+           </a>
+           partitions.
+           <sup class="reference" id="cite_ref-4">
+            <a href="#cite_note-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-5">
+            <a href="#cite_note-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             a
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Paged_memory_management">
+            Paged memory management
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=edit&amp;section=4" title="Edit section: Paged memory management">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1236090951">
+           .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+          </style>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Virtual_memory" title="Virtual memory">
+            Virtual memory
+           </a>
+          </div>
+          <p>
+           <i>
+            Paged allocation
+           </i>
+           divides the computer's primary memory into fixed-size units called
+           <i>
+            page frames
+           </i>
+           , and the program's virtual
+           <i>
+            <a href="/wiki/Address_space" title="Address space">
+             address space
+            </a>
+           </i>
+           into
+           <i>
+            <a href="/wiki/Page_(computer_memory)" title="Page (computer memory)">
+             pages
+            </a>
+           </i>
+           of the same size.  The hardware
+           <a href="/wiki/Memory_management_unit" title="Memory management unit">
+            memory management unit
+           </a>
+           maps pages to frames.  The physical memory can be allocated on a page basis while the address space appears contiguous.
+          </p>
+          <p>
+           Usually, with paged memory management, each job runs in its own address space. However, there are some
+           <a href="/wiki/Single_address_space_operating_system" title="Single address space operating system">
+            single address space operating systems
+           </a>
+           that run all processes within a single address space, such as
+           <a href="/wiki/IBM_i" title="IBM i">
+            IBM i
+           </a>
+           , which runs all processes within a large address space, and IBM
+           <a href="/wiki/OS/VS1" title="OS/VS1">
+            OS/VS1
+           </a>
+           and
+           <a href="/wiki/OS/VS2_(SVS)" title="OS/VS2 (SVS)">
+            OS/VS2 (SVS)
+           </a>
+           , which ran all jobs in a single 16MiB virtual address space.
+          </p>
+          <p>
+           Paged memory can be
+           <i>
+            <a href="/wiki/Demand_paging" title="Demand paging">
+             demand-paged
+            </a>
+           </i>
+           when the system can move pages as required between primary and secondary memory.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Segmented_memory_management">
+            Segmented memory management
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=edit&amp;section=5" title="Edit section: Segmented memory management">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Memory_segmentation" title="Memory segmentation">
+            Memory segmentation
+           </a>
+          </div>
+          <p>
+           <i>
+            Segmented memory
+           </i>
+           is the only memory management technique that does not provide the user's program with a "linear and contiguous address space."
+           <sup class="reference" id="cite_ref-Madnick_1-1">
+            <a href="#cite_note-Madnick-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference nowrap">
+            <span title="Page / location: 165">
+             : 165
+            </span>
+           </sup>
+           <i>
+            Segments
+           </i>
+           are areas of memory that usually correspond to a logical grouping of information such as a code procedure or a data array.  Segments require hardware support in the form of a
+           <i>
+            segment table
+           </i>
+           which usually contains the physical address of the segment in memory, its size, and other data such as access protection bits and status (swapped in, swapped out, etc.)
+          </p>
+          <p>
+           Segmentation allows better access protection than other schemes because memory references are relative to a specific segment and the hardware will not permit the application to reference memory not defined for that segment.
+          </p>
+          <p>
+           It is possible to implement segmentation with or without paging.  Without paging support the segment is the physical unit swapped in and out of memory if required.  With paging support the pages are usually the unit of swapping and segmentation only adds an additional level of security.
+          </p>
+          <p>
+           Addresses in a segmented system usually consist of the segment id and an offset relative to the segment base address, defined to be offset zero.
+          </p>
+          <p>
+           The Intel
+           <a href="/wiki/IA-32" title="IA-32">
+            IA-32
+           </a>
+           (x86) architecture allows a process to have up to 16,383 segments of up to 4GiB each.  IA-32 segments are subdivisions of the computer's
+           <i>
+            linear address space
+           </i>
+           , the virtual address space provided by the paging hardware.
+           <sup class="reference" id="cite_ref-6">
+            <a href="#cite_note-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The
+           <a href="/wiki/Multics" title="Multics">
+            Multics
+           </a>
+           operating system is probably the best known system implementing segmented memory.  Multics segments are subdivisions of the computer's
+           <i>
+            physical memory
+           </i>
+           of up to 256 pages, each page being 1K 36-bit words in size, resulting in a maximum segment size of 1MiB (with 9-bit bytes, as used in Multics).  A process could have up to 4046 segments.
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Rollout/rollin">
+            <span id="Rollout.2Frollin">
+            </span>
+            Rollout/rollin
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=edit&amp;section=6" title="Edit section: Rollout/rollin">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Not to be confused with
+           <a href="/wiki/Roll-on/roll-off" title="Roll-on/roll-off">
+            Roll-on/roll-off
+           </a>
+           .
+          </div>
+          <p>
+           Rollout/rollin (RO/RI) is a computer operating system memory management technique where the entire non-
+           <a href="/wiki/Shared_memory" title="Shared memory">
+            shared
+           </a>
+           code and data of a running program is swapped out to
+           <a class="mw-redirect" href="/wiki/Auxiliary_memory" title="Auxiliary memory">
+            auxiliary memory
+           </a>
+           (disk or drum) to free
+           <a href="/wiki/Computer_data_storage#Primary_storage" title="Computer data storage">
+            main storage
+           </a>
+           for another task. Programs may be rolled out "by demand end or...when waiting for some long event."
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Rollout/rollin was commonly used in
+           <a href="/wiki/Time-sharing" title="Time-sharing">
+            time-sharing
+           </a>
+           systems,
+           <sup class="reference" id="cite_ref-9">
+            <a href="#cite_note-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           where the user's "think time" was relatively long compared to the time to do the swap.
+          </p>
+          <p>
+           Unlike
+           <a href="/wiki/Virtual_memory" title="Virtual memory">
+            virtual storage
+           </a>
+           —paging or segmentation, rollout/rollin does not require any special memory management hardware; however, unless the system has relocation hardware such as a
+           <a href="/wiki/Memory_map" title="Memory map">
+            memory map
+           </a>
+           or
+           <a href="/wiki/Base_and_bounds" title="Base and bounds">
+            base and bounds
+           </a>
+           registers, the program must be rolled back in to its original memory locations. Rollout/rollin has been largely superseded by virtual memory.
+          </p>
+          <p>
+           Rollout/rollin was an optional feature of
+           <a href="/wiki/OS/360_and_successors#MVT" title="OS/360 and successors">
+            OS/360 Multiprogramming with a Variable number of Tasks (MVT)
+           </a>
+          </p>
+          <blockquote>
+           <p>
+            Rollout/rollin allows the temporary, dynamic expansion of a particular job beyond its originally specified region. When a job needs more space, rollout/rollin attempts to obtain unassigned storage for the job's use. If there is no such unassigned storage, another job is rolled out—i.e., is transferred to auxiliary storage—so that its region may be used by the first job. When released by the first job, this additional storage is again available, either (1) as unassigned storage, if that was its source, or (2) to receive the job to be transferred back into main storage (rolled in).
+            <sup class="reference" id="cite_ref-10">
+             <a href="#cite_note-10">
+              <span class="cite-bracket">
+               [
+              </span>
+              9
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </p>
+          </blockquote>
+          <p>
+           In OS/360, rollout/rollin was used only for batch jobs, and rollin does not occur until the jobstep borrowing the region terminates.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=edit&amp;section=7" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Memory_overcommitment" title="Memory overcommitment">
+             Memory overcommitment
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Memory_protection" title="Memory protection">
+             Memory protection
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/X86_memory_segmentation" title="X86 memory segmentation">
+             x86 memory segmentation
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Notes">
+            Notes
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=edit&amp;section=8" title="Edit section: Notes">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist reflist-lower-alpha">
+           <div class="mw-references-wrap">
+            <ol class="references">
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               Known as TSO regions
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memory_management_(operating_systems)&amp;action=edit&amp;section=9" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1239543626" rel="mw-deduplicated-inline-style"/>
+          <div class="reflist">
+           <div class="mw-references-wrap">
+            <ol class="references">
+             <li id="cite_note-Madnick-1">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-Madnick_1-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Madnick_1-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation book cs1" id="CITEREFMadnickDonovan1974">
+                Madnick, Stuart; Donovan, John (1974).
+                <a class="external text" href="https://books.google.com/books?id=74ZQAAAAMAAJ" rel="nofollow">
+                 <i>
+                  Operating Systems
+                 </i>
+                </a>
+                . McGraw-Hill Book Company.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/0-07-039455-5" title="Special:BookSources/0-07-039455-5">
+                 <bdi>
+                  0-07-039455-5
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Operating+Systems&amp;rft.pub=McGraw-Hill+Book+Company&amp;rft.date=1974&amp;rft.isbn=0-07-039455-5&amp;rft.aulast=Madnick&amp;rft.aufirst=Stuart&amp;rft.au=Donovan%2C+John&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D74ZQAAAAMAAJ&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+management+%28operating+systems%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFIBM_Corporation1970">
+                IBM Corporation (1970).
+                <a class="external text" href="http://bitsavers.informatik.uni-stuttgart.de/pdf/ibm/360/os/R19_Jun70/GC28-6535-7_OS_Concepts_and_Facilities_Rel_19_Jun70.pdf" rel="nofollow">
+                 <i>
+                  IBM System/360 Operating System: Concepts and Facilities
+                 </i>
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                . p. 73.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=IBM+System%2F360+Operating+System%3A+Concepts+and+Facilities&amp;rft.pages=73&amp;rft.date=1970&amp;rft.au=IBM+Corporation&amp;rft_id=http%3A%2F%2Fbitsavers.informatik.uni-stuttgart.de%2Fpdf%2Fibm%2F360%2Fos%2FR19_Jun70%2FGC28-6535-7_OS_Concepts_and_Facilities_Rel_19_Jun70.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+management+%28operating+systems%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFSamanta2004">
+                Samanta, D. (2004).
+                <a class="external text" href="https://books.google.com/books?id=_lDjLlasQycC&amp;q=memory+compaction&amp;pg=PA94" rel="nofollow">
+                 <i>
+                  Classic Data Structures
+                 </i>
+                </a>
+                . PHI Learning Pvt. Ltd. p. 94.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/8120318749" title="Special:BookSources/8120318749">
+                 <bdi>
+                  8120318749
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Classic+Data+Structures&amp;rft.pages=94&amp;rft.pub=PHI+Learning+Pvt.+Ltd.&amp;rft.date=2004&amp;rft.isbn=8120318749&amp;rft.aulast=Samanta&amp;rft.aufirst=D.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D_lDjLlasQycC%26q%3Dmemory%2Bcompaction%26pg%3DPA94&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+management+%28operating+systems%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFIBM_Corporation1972">
+                IBM Corporation (1972).
+                <a class="external text" href="http://www.bitsavers.org/pdf/ibm/360/os/tso/GC28-6698-5_Time_Sharing_Option_Guide_Jul72.pdf" rel="nofollow">
+                 <i>
+                  IBM System/360 Operating System Time Sharing Option Guide
+                 </i>
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                . p. 10.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=IBM+System%2F360+Operating+System+Time+Sharing+Option+Guide&amp;rft.pages=10&amp;rft.date=1972&amp;rft.au=IBM+Corporation&amp;rft_id=http%3A%2F%2Fwww.bitsavers.org%2Fpdf%2Fibm%2F360%2Fos%2Ftso%2FGC28-6698-5_Time_Sharing_Option_Guide_Jul72.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+management+%28operating+systems%29">
+               </span>
+               (GC28-6698-5)
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFIntel_Corporation">
+                Intel Corporation.
+                <i>
+                 IA-32 Intel Architecture Software Developer's Manual Volume 1: Basic Architecture
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=IA-32+Intel+Architecture+Software+Developer%27s+Manual+Volume+1%3A+Basic+Architecture&amp;rft.au=Intel+Corporation&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+management+%28operating+systems%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFGreen">
+                Green, Paul.
+                <a class="external text" href="https://web.archive.org/web/20010305133541/http://ftp.stratus.com:80/pub/vos/multics/pg/mvm.html" rel="nofollow">
+                 "Multics Virtual Memory – Tutorial and Reflections"
+                </a>
+                . Archived from
+                <a class="external text" href="http://ftp.stratus.com:80/pub/vos/multics/pg/mvm.html" rel="nofollow">
+                 the original
+                </a>
+                on 2001-03-05
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  May 9,
+                 </span>
+                 2012
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Multics+Virtual+Memory+%E2%80%93+Tutorial+and+Reflections&amp;rft.aulast=Green&amp;rft.aufirst=Paul&amp;rft_id=http%3A%2F%2Fftp.stratus.com%3A80%2Fpub%2Fvos%2Fmultics%2Fpg%2Fmvm.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+management+%28operating+systems%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFWalraet2014">
+                Walraet, Bob (2014).
+                <a class="external text" href="https://books.google.com/books?id=WLGjBQAAQBAJ&amp;pg=PA124" rel="nofollow">
+                 <i>
+                  Programming, The Impossible Challenge
+                 </i>
+                </a>
+                . Elsevier. p. 124.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-444-87128-2" title="Special:BookSources/978-0-444-87128-2">
+                 <bdi>
+                  978-0-444-87128-2
+                 </bdi>
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  Aug 24,
+                 </span>
+                 2018
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Programming%2C+The+Impossible+Challenge&amp;rft.pages=124&amp;rft.pub=Elsevier&amp;rft.date=2014&amp;rft.isbn=978-0-444-87128-2&amp;rft.aulast=Walraet&amp;rft.aufirst=Bob&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DWLGjBQAAQBAJ%26pg%3DPA124&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+management+%28operating+systems%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-9">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1">
+                <a class="external text" href="https://books.google.com/books?id=XNhWAAAAMAAJ&amp;q=" rel="nofollow">
+                 "rollin/rollout"
+                 <i>
+                  International Symposium on Computer Performance Modeling, Measurement, and Evaluation
+                 </i>
+                </a>
+                . Association for Computing Machinery. March 29–31, 1976. p. 137
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  Aug 24,
+                 </span>
+                 2018
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=International+Symposium+on+Computer+Performance+Modeling%2C+Measurement%2C+and+Evaluation&amp;rft.pages=137&amp;rft.pub=Association+for+Computing+Machinery&amp;rft.date=1976-03-29%2F1976-03-31&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DXNhWAAAAMAAJ%26q%3D%22rollin%2Frollout%22&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+management+%28operating+systems%29">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFIBM_Corporation1970">
+                IBM Corporation (June 1970).
+                <a class="external text" href="http://bitsavers.org/pdf/ibm/360/os/R19_Jun70/GC28-6535-7_OS_Concepts_and_Facilities_Rel_19_Jun70.pdf" rel="nofollow">
+                 <i>
+                  IBM System/360 Operating System: .Concepts and Facilities
+                 </i>
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                . p. 55
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  Aug 24,
+                 </span>
+                 2018
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=IBM+System%2F360+Operating+System%3A+.Concepts+and+Facilities&amp;rft.pages=55&amp;rft.date=1970-06&amp;rft.au=IBM+Corporation&amp;rft_id=http%3A%2F%2Fbitsavers.org%2Fpdf%2Fibm%2F360%2Fos%2FR19_Jun70%2FGC28-6535-7_OS_Concepts_and_Facilities_Rel_19_Jun70.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemory+management+%28operating+systems%29">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Memory_management" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Memory_management" title="Template:Memory management">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Memory_management" title="Template talk:Memory management">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Memory_management" title="Special:EditPage/Template:Memory management">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Memory_management" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Memory_management" title="Memory management">
+                 Memory management
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <td class="navbox-abovebelow" colspan="2">
+               <div>
+                <ul>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Memory management as a function of an operating system
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Hardware
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Memory_management_unit" title="Memory management unit">
+                   Memory management unit
+                  </a>
+                  (MMU)
+                 </li>
+                 <li>
+                  <a href="/wiki/Translation_lookaside_buffer" title="Translation lookaside buffer">
+                   Translation lookaside buffer
+                  </a>
+                  (TLB)
+                 </li>
+                 <li>
+                  <a href="/wiki/Input%E2%80%93output_memory_management_unit" title="Input–output memory management unit">
+                   Input–output memory management unit
+                  </a>
+                  (IOMMU)
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Virtual_memory" title="Virtual memory">
+                Virtual memory
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Demand_paging" title="Demand paging">
+                   Demand paging
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Memory_paging" title="Memory paging">
+                   Memory paging
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Page_table" title="Page table">
+                   Page table
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Virtual_memory_compression" title="Virtual memory compression">
+                   Virtual memory compression
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Memory_segmentation" title="Memory segmentation">
+                Memory segmentation
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Protected_mode" title="Protected mode">
+                   Protected mode
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Real_mode" title="Real mode">
+                   Real mode
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Virtual_8086_mode" title="Virtual 8086 mode">
+                   Virtual 8086 mode
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/X86_memory_segmentation" title="X86 memory segmentation">
+                   x86 memory segmentation
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a class="mw-redirect" href="/wiki/Memory_allocator" title="Memory allocator">
+                Memory allocator
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Dlmalloc" title="Dlmalloc">
+                   dlmalloc
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Hoard_memory_allocator" title="Hoard memory allocator">
+                   Hoard
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Jemalloc" title="Jemalloc">
+                   jemalloc
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Libumem" title="Libumem">
+                   libumem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Mimalloc" title="Mimalloc">
+                   mimalloc
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Ptmalloc" title="Ptmalloc">
+                   ptmalloc
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Manual_memory_management" title="Manual memory management">
+                Manual memory management
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Static_variable" title="Static variable">
+                   Static memory allocation
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/C_dynamic_memory_allocation" title="C dynamic memory allocation">
+                   C dynamic memory allocation
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/New_and_delete_(C%2B%2B)" title="New and delete (C++)">
+                   new and delete (C++)
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">
+                Garbage collection
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Automatic_Reference_Counting" title="Automatic Reference Counting">
+                   Automatic Reference Counting
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Boehm_garbage_collector" title="Boehm garbage collector">
+                   Boehm garbage collector
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Cheney%27s_algorithm" title="Cheney's algorithm">
+                   Cheney's algorithm
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Concurrent_mark_sweep_collector" title="Concurrent mark sweep collector">
+                   Concurrent mark sweep collector
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Finalizer" title="Finalizer">
+                   Finalizer
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Garbage_(computer_science)" title="Garbage (computer science)">
+                   Garbage
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Garbage-first_collector" title="Garbage-first collector">
+                   Garbage-first collector
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Mark%E2%80%93compact_algorithm" title="Mark–compact algorithm">
+                   Mark–compact algorithm
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Reference_counting" title="Reference counting">
+                   Reference counting
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Tracing_garbage_collection" title="Tracing garbage collection">
+                   Tracing garbage collection
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Weak_reference" title="Weak reference">
+                   Strong reference
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Weak_reference" title="Weak reference">
+                   Weak reference
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Memory_safety" title="Memory safety">
+                Memory safety
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Buffer_overflow" title="Buffer overflow">
+                   Buffer overflow
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Buffer_over-read" title="Buffer over-read">
+                   Buffer over-read
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Dangling_pointer" title="Dangling pointer">
+                   Dangling pointer
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Stack_overflow" title="Stack overflow">
+                   Stack overflow
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Issues
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Fragmentation_(computing)" title="Fragmentation (computing)">
+                   Fragmentation
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Memory_leak" title="Memory leak">
+                   Memory leak
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Unreachable_memory" title="Unreachable memory">
+                   Unreachable memory
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Other
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Automatic_variable" title="Automatic variable">
+                   Automatic variable
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/International_Symposium_on_Memory_Management" title="International Symposium on Memory Management">
+                   International Symposium on Memory Management
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Region-based_memory_management" title="Region-based memory management">
+                   Region-based memory management
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <td class="navbox-abovebelow" colspan="2">
+               <div>
+                <ul>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Category">
+                    <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Category:Memory_management" title="Category:Memory management">
+                   Memory management
+                  </a>
+                 </li>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Category">
+                    <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Category:Virtual_memory" title="Category:Virtual memory">
+                   Virtual memory
+                  </a>
+                 </li>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Category">
+                    <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Category:Automatic_memory_management" title="Category:Automatic memory management">
+                   Automatic memory management
+                  </a>
+                 </li>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Category">
+                    <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Category:Memory_management_algorithms" title="Category:Memory management algorithms">
+                   Memory management algorithms
+                  </a>
+                 </li>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Category">
+                    <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Category:Memory_management_software" title="Category:Memory management software">
+                   Memory management software
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div class="navbox-styles">
+           <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+           <link href="mw-data:TemplateStyles:r1236075235" rel="mw-deduplicated-inline-style"/>
+          </div>
+          <div aria-labelledby="Operating_systems" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <link href="mw-data:TemplateStyles:r1239400231" rel="mw-deduplicated-inline-style"/>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Operating_systems" title="Template:Operating systems">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Operating_systems" title="Template talk:Operating systems">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Operating_systems" title="Special:EditPage/Template:Operating systems">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Operating_systems" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Operating_system" title="Operating system">
+                 Operating systems
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               General
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Comparison_of_operating_systems" title="Comparison of operating systems">
+                   Comparison
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Forensic_software_engineering" title="Forensic software engineering">
+                   Forensic engineering
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/History_of_operating_systems" title="History of operating systems">
+                   History
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/List_of_operating_systems" title="List of operating systems">
+                   List
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Timeline_of_operating_systems" title="Timeline of operating systems">
+                   Timeline
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Usage_share_of_operating_systems" title="Usage share of operating systems">
+                   Usage share
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Comparison_of_user_features_of_operating_systems" title="Comparison of user features of operating systems">
+                   User features comparison
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Variants
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Disk_operating_system" title="Disk operating system">
+                   Disk operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Distributed_operating_system" title="Distributed operating system">
+                   Distributed operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Embedded_operating_system" title="Embedded operating system">
+                   Embedded operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Hobbyist_operating_system" title="Hobbyist operating system">
+                   Hobbyist operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Just_enough_operating_system" title="Just enough operating system">
+                   Just enough operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Mobile_operating_system" title="Mobile operating system">
+                   Mobile operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Network_operating_system" title="Network operating system">
+                   Network operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Object-oriented_operating_system" title="Object-oriented operating system">
+                   Object-oriented operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Real-time_operating_system" title="Real-time operating system">
+                   Real-time operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Supercomputer_operating_system" title="Supercomputer operating system">
+                   Supercomputer operating system
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Kernel_(operating_system)" title="Kernel (operating system)">
+                Kernel
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:6em">
+                   <a href="/wiki/Computer_architecture" title="Computer architecture">
+                    Architectures
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Exokernel" title="Exokernel">
+                       Exokernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Hybrid_kernel" title="Hybrid kernel">
+                       Hybrid
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Microkernel" title="Microkernel">
+                       Microkernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Monolithic_kernel" title="Monolithic kernel">
+                       Monolithic
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Multikernel" title="Multikernel">
+                       Multikernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Vkernel" title="Vkernel">
+                       vkernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Rump_kernel" title="Rump kernel">
+                       Rump kernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Unikernel" title="Unikernel">
+                       Unikernel
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:6em">
+                   Components
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Device_driver" title="Device driver">
+                       Device driver
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Loadable_kernel_module" title="Loadable kernel module">
+                       Loadable kernel module
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/User_space_and_kernel_space" title="User space and kernel space">
+                       User space and kernel space
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Process_management_(computing)" title="Process management (computing)">
+                Process management
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:6em">
+                   Concepts
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Computer_multitasking" title="Computer multitasking">
+                       Computer multitasking
+                      </a>
+                      (
+                      <a href="/wiki/Cooperative_multitasking" title="Cooperative multitasking">
+                       Cooperative
+                      </a>
+                      ,
+                      <a href="/wiki/Preemption_(computing)" title="Preemption (computing)">
+                       Preemptive
+                      </a>
+                      )
+                     </li>
+                     <li>
+                      <a href="/wiki/Context_switch" title="Context switch">
+                       Context switch
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Interrupt" title="Interrupt">
+                       Interrupt
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Inter-process_communication" title="Inter-process communication">
+                       IPC
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Process_(computing)" title="Process (computing)">
+                       Process
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Process_control_block" title="Process control block">
+                       Process control block
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Real-time_operating_system" title="Real-time operating system">
+                       Real-time
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Thread_(computing)" title="Thread (computing)">
+                       Thread
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Time-sharing" title="Time-sharing">
+                       Time-sharing
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:6em">
+                   <a href="/wiki/Scheduling_(computing)" title="Scheduling (computing)">
+                    Scheduling
+                    <br/>
+                    algorithms
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Fixed-priority_pre-emptive_scheduling" title="Fixed-priority pre-emptive scheduling">
+                       Fixed-priority preemptive
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Multilevel_feedback_queue" title="Multilevel feedback queue">
+                       Multilevel feedback queue
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Round-robin_scheduling" title="Round-robin scheduling">
+                       Round-robin
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Shortest_job_next" title="Shortest job next">
+                       Shortest job next
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a class="mw-selflink selflink">
+                Memory management
+               </a>
+               ,
+               <br/>
+               <a href="/wiki/System_resource" title="System resource">
+                resource
+               </a>
+               protection
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Bus_error" title="Bus error">
+                   Bus error
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/General_protection_fault" title="General protection fault">
+                   General protection fault
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Memory_paging" title="Memory paging">
+                   Memory paging
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Memory_protection" title="Memory protection">
+                   Memory protection
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Protection_ring" title="Protection ring">
+                   Protection ring
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Segmentation_fault" title="Segmentation fault">
+                   Segmentation fault
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Virtual_memory" title="Virtual memory">
+                   Virtual memory
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Non-volatile_memory" title="Non-volatile memory">
+                Storage
+               </a>
+               access,
+               <br/>
+               <a href="/wiki/File_system" title="File system">
+                file systems
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Booting#BOOT-LOADER" title="Booting">
+                   Boot loader
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Defragmentation" title="Defragmentation">
+                   Defragmentation
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Device_file" title="Device file">
+                   Device file
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/File_attribute" title="File attribute">
+                   File attribute
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Inode" title="Inode">
+                   Inode
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Journaling_file_system" title="Journaling file system">
+                   Journal
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Disk_partitioning" title="Disk partitioning">
+                   Partition
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Virtual_file_system" title="Virtual file system">
+                   Virtual file system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Virtual_tape_library" title="Virtual tape library">
+                   Virtual tape library
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Supporting concepts
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/API" title="API">
+                   API
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Computer_network" title="Computer network">
+                   Computer network
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Hardware_abstraction" title="Hardware abstraction">
+                   HAL
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Live_CD" title="Live CD">
+                   Live CD
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Live_USB" title="Live USB">
+                   Live USB
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Shell_(computing)" title="Shell (computing)">
+                   Shell
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Command-line_interface" title="Command-line interface">
+                     CLI
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/User_interface" title="User interface">
+                     User interface
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Preboot_Execution_Environment" title="Preboot Execution Environment">
+                   PXE
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐8tknb
+Cached time: 20240927014854
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.386 seconds
+Real time usage: 0.519 seconds
+Preprocessor visited node count: 1611/1000000
+Post‐expand include size: 56431/2097152 bytes
+Template argument size: 1238/2097152 bytes
+Highest expansion depth: 16/100
+Expensive parser function count: 4/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 50958/5000000 bytes
+Lua time usage: 0.230/10.000 seconds
+Lua memory usage: 5641600/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  445.954      1 -total
+ 35.70%  159.197      2 Template:Reflist
+ 29.19%  130.170      8 Template:Cite_book
+ 25.90%  115.523      4 Template:Navbox
+ 24.53%  109.412      1 Template:Memory_management
+ 18.31%   81.656      1 Template:Short_description
+  9.78%   43.632      2 Template:Pagetype
+  7.77%   34.671      2 Template:Rp
+  6.43%   28.692      2 Template:R/superscript
+  6.24%   27.844      2 Template:Main
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:35757487-0!canonical and timestamp 20240927014854 and revision id 1244974961. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Memory_management_(operating_systems)&amp;oldid=1244974961">
+          https://en.wikipedia.org/w/index.php?title=Memory_management_(operating_systems)&amp;oldid=1244974961
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Memory_management" title="Category:Memory management">
+            Memory management
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Operating_systems" title="Category:Operating systems">
+            Operating systems
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 10 September 2024, at 08:23
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Memory_management_(operating_systems)&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-smsg2","wgBackendResponseTime":177,"wgPageParseReport":{"limitreport":{"cputime":"0.386","walltime":"0.519","ppvisitednodes":{"value":1611,"limit":1000000},"postexpandincludesize":{"value":56431,"limit":2097152},"templateargumentsize":{"value":1238,"limit":2097152},"expansiondepth":{"value":16,"limit":100},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":50958,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  445.954      1 -total"," 35.70%  159.197      2 Template:Reflist"," 29.19%  130.170      8 Template:Cite_book"," 25.90%  115.523      4 Template:Navbox"," 24.53%  109.412      1 Template:Memory_management"," 18.31%   81.656      1 Template:Short_description","  9.78%   43.632      2 Template:Pagetype","  7.77%   34.671      2 Template:Rp","  6.43%   28.692      2 Template:R/superscript","  6.24%   27.844      2 Template:Main"]},"scribunto":{"limitreport-timeusage":{"value":"0.230","limit":"10.000"},"limitreport-memusage":{"value":5641600,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-8tknb","timestamp":"20240927014854","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Memory management (operating systems)","url":"https:\/\/en.wikipedia.org\/wiki\/Memory_management_(operating_systems)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q6815739","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q6815739","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2012-05-08T16:33:22Z","dateModified":"2024-09-10T08:23:24Z","headline":"function of a computer operating system responsible for managing the computer's primary memory"}
+  </script>
+ </body>
+</html>

@@ -1,0 +1,2648 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Non-blocking algorithm - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"249aabb8-842d-43e5-b09e-11b6d87f8785","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Non-blocking_algorithm","wgTitle":"Non-blocking algorithm","wgCurRevisionId":1247420382,"wgRevisionId":1247420382,"wgArticleId":554867,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","All articles with unsourced statements","Articles with unsourced statements from June 2014","Synchronization","Concurrency control","Concurrency control algorithms"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Non-blocking_algorithm","wgRelevantArticleId":554867,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable"
+:true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1985141","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":
+true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader",
+"ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Non-blocking algorithm - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//en.m.wikipedia.org/wiki/Non-blocking_algorithm" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Non-blocking_algorithm&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Non-blocking_algorithm" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Non-blocking_algorithm"/>
+  <meta eecs485_docid="46980034"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Non-blocking_algorithm rootpage-Non-blocking_algorithm skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Non-blocking+algorithm" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Non-blocking+algorithm" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Non-blocking+algorithm" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Non-blocking+algorithm" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Motivation">
+           <a class="vector-toc-link" href="#Motivation">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Motivation
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Motivation-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Implementation">
+           <a class="vector-toc-link" href="#Implementation">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Implementation
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Implementation-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Wait-freedom">
+           <a class="vector-toc-link" href="#Wait-freedom">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Wait-freedom
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Wait-freedom-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Lock-freedom">
+           <a class="vector-toc-link" href="#Lock-freedom">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Lock-freedom
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Lock-freedom-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Obstruction-freedom">
+           <a class="vector-toc-link" href="#Obstruction-freedom">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              Obstruction-freedom
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Obstruction-freedom-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              7
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              8
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Non-blocking algorithm
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 9 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-9" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          9 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="خوارزمية غير مسدودة" href="https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D8%BA%D9%8A%D8%B1_%D9%85%D8%B3%D8%AF%D9%88%D8%AF%D8%A9" hreflang="ar" lang="ar" title="خوارزمية غير مسدودة – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Algorisme sense bloqueig" href="https://ca.wikipedia.org/wiki/Algorisme_sense_bloqueig" hreflang="ca" lang="ca" title="Algorisme sense bloqueig – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Nicht-blockierende Synchronisation" href="https://de.wikipedia.org/wiki/Nicht-blockierende_Synchronisation" hreflang="de" lang="de" title="Nicht-blockierende Synchronisation – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="الگوریتم‌های غیرمسدودکننده" href="https://fa.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85%E2%80%8C%D9%87%D8%A7%DB%8C_%D8%BA%DB%8C%D8%B1%D9%85%D8%B3%D8%AF%D9%88%D8%AF%DA%A9%D9%86%D9%86%D8%AF%D9%87" hreflang="fa" lang="fa" title="الگوریتم‌های غیرمسدودکننده – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="אלגוריתם חסר נעילות" href="https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D_%D7%97%D7%A1%D7%A8_%D7%A0%D7%A2%D7%99%D7%9C%D7%95%D7%AA" hreflang="he" lang="he" title="אלגוריתם חסר נעילות – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="Lock-freeとWait-freeアルゴリズム" href="https://ja.wikipedia.org/wiki/Lock-free%E3%81%A8Wait-free%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" hreflang="ja" lang="ja" title="Lock-freeとWait-freeアルゴリズム – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Synchronizacja nieblokująca" href="https://pl.wikipedia.org/wiki/Synchronizacja_nieblokuj%C4%85ca" hreflang="pl" lang="pl" title="Synchronizacja nieblokująca – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Неблокирующая синхронизация" href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D1%83%D1%8E%D1%89%D0%B0%D1%8F_%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F" hreflang="ru" lang="ru" title="Неблокирующая синхронизация – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Неблокуючий алгоритм" href="https://uk.wikipedia.org/wiki/%D0%9D%D0%B5%D0%B1%D0%BB%D0%BE%D0%BA%D1%83%D1%8E%D1%87%D0%B8%D0%B9_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" hreflang="uk" lang="uk" title="Неблокуючий алгоритм – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1985141#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Non-blocking_algorithm" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Non-blocking_algorithm" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Non-blocking_algorithm">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Non-blocking_algorithm&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Non-blocking_algorithm&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Non-blocking_algorithm">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Non-blocking_algorithm&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Non-blocking_algorithm&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Non-blocking_algorithm" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Non-blocking_algorithm" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Non-blocking_algorithm&amp;oldid=1247420382" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Non-blocking_algorithm&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Non-blocking_algorithm&amp;id=1247420382&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNon-blocking_algorithm">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNon-blocking_algorithm">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1985141" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Non-blocking_algorithm&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Non-blocking_algorithm&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Algorithm in a thread whose failure cannot cause another thread to fail
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          Not to be confused with
+          <a class="mw-redirect" href="/wiki/Non-blocking_I/O" title="Non-blocking I/O">
+           non-blocking I/O
+          </a>
+          .
+         </div>
+         <p>
+          In
+          <a href="/wiki/Computer_science" title="Computer science">
+           computer science
+          </a>
+          , an
+          <a href="/wiki/Algorithm" title="Algorithm">
+           algorithm
+          </a>
+          is called
+          <b>
+           non-blocking
+          </b>
+          if failure or
+          <a href="/wiki/Scheduling_(computing)" title="Scheduling (computing)">
+           suspension
+          </a>
+          of any
+          <a href="/wiki/Thread_(computing)" title="Thread (computing)">
+           thread
+          </a>
+          cannot cause failure or suspension of another thread;
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          for some operations, these algorithms provide a useful alternative to traditional
+          <a href="/wiki/Lock_(computer_science)" title="Lock (computer science)">
+           blocking implementations
+          </a>
+          . A non-blocking algorithm is
+          <b>
+           lock-free
+          </b>
+          if there is guaranteed system-wide
+          <a class="mw-redirect" href="/wiki/Resource_starvation" title="Resource starvation">
+           progress
+          </a>
+          , and
+          <b>
+           wait-free
+          </b>
+          if there is also guaranteed per-thread progress. "Non-blocking" was used as a synonym for "lock-free" in the literature until the introduction of obstruction-freedom in 2003.
+          <sup class="reference" id="cite_ref-obs-free_2-0">
+           <a href="#cite_note-obs-free-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          The word "non-blocking" was traditionally used to describe
+          <a href="/wiki/Telecommunications_network" title="Telecommunications network">
+           telecommunications networks
+          </a>
+          that could route a connection through a set of relays "without having to re-arrange existing calls" (see
+          <a href="/wiki/Clos_network" title="Clos network">
+           Clos network
+          </a>
+          ). Also, if the telephone exchange "is not defective, it can always make the connection" (see
+          <a href="/wiki/Nonblocking_minimal_spanning_switch" title="Nonblocking minimal spanning switch">
+           nonblocking minimal spanning switch
+          </a>
+          ).
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Motivation">
+            Motivation
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Non-blocking_algorithm&amp;action=edit&amp;section=1" title="Edit section: Motivation">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Lock_(computer_science)#Disadvantages" title="Lock (computer science)">
+            Disadvantages of locks
+           </a>
+          </div>
+          <p>
+           The traditional approach to multi-threaded programming is to use
+           <a href="/wiki/Lock_(computer_science)" title="Lock (computer science)">
+            locks
+           </a>
+           to synchronize access to shared
+           <a class="mw-redirect" href="/wiki/Resource_(computer_science)" title="Resource (computer science)">
+            resources
+           </a>
+           . Synchronization primitives such as
+           <a href="/wiki/Mutual_exclusion" title="Mutual exclusion">
+            mutexes
+           </a>
+           ,
+           <a href="/wiki/Semaphore_(programming)" title="Semaphore (programming)">
+            semaphores
+           </a>
+           , and
+           <a href="/wiki/Critical_section" title="Critical section">
+            critical sections
+           </a>
+           are all mechanisms by which a programmer can ensure that certain sections of code do not execute concurrently, if doing so would corrupt shared memory structures. If one thread attempts to acquire a lock that is already held by another thread, the thread will block until the lock is free.
+          </p>
+          <p>
+           Blocking a thread can be undesirable for many reasons.  An obvious reason is that while the thread is blocked, it cannot accomplish anything: if the blocked thread had been performing a high-priority or
+           <a href="/wiki/Real-time_computing" title="Real-time computing">
+            real-time
+           </a>
+           task, it would be highly undesirable to halt its progress.
+          </p>
+          <p>
+           Other problems are less obvious.  For example, certain interactions between locks can lead to error conditions such as
+           <a href="/wiki/Deadlock_(computer_science)" title="Deadlock (computer science)">
+            deadlock
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Livelock" title="Livelock">
+            livelock
+           </a>
+           , and
+           <a href="/wiki/Priority_inversion" title="Priority inversion">
+            priority inversion
+           </a>
+           .  Using locks also involves a trade-off between coarse-grained locking, which can significantly reduce opportunities for
+           <a href="/wiki/Parallel_computing" title="Parallel computing">
+            parallelism
+           </a>
+           , and fine-grained locking, which requires more careful design, increases locking overhead and is more prone to bugs.
+          </p>
+          <p>
+           Unlike blocking algorithms, non-blocking algorithms do not suffer from these downsides, and in addition are safe for use in
+           <a href="/wiki/Interrupt_handler" title="Interrupt handler">
+            interrupt handlers
+           </a>
+           : even though the
+           <a class="mw-redirect" href="/wiki/Pre-emptive_multitasking" title="Pre-emptive multitasking">
+            preempted
+           </a>
+           thread cannot be resumed, progress is still possible without it. In contrast, global data structures protected by mutual exclusion cannot safely be accessed in an interrupt handler, as the preempted thread may be the one holding the lock. While this can be rectified by masking interrupt requests during the critical section, this requires the code in the critical section to have bounded (and preferably short) running time, or excessive interrupt latency may be observed.
+           <sup class="reference" id="cite_ref-monit_3-0">
+            <a href="#cite_note-monit-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           A lock-free data structure can be used to improve performance.
+A lock-free data structure increases the amount of time spent in parallel execution rather than serial execution, improving performance on a
+           <a href="/wiki/Multi-core_processor" title="Multi-core processor">
+            multi-core processor
+           </a>
+           , because access to the shared data structure does not need to be serialized to stay coherent.
+           <sup class="reference" id="cite_ref-4">
+            <a href="#cite_note-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Implementation">
+            Implementation
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Non-blocking_algorithm&amp;action=edit&amp;section=2" title="Edit section: Implementation">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           With few exceptions, non-blocking algorithms use
+           <a href="/wiki/Linearizability" title="Linearizability">
+            atomic
+           </a>
+           <a class="mw-redirect" href="/wiki/Read-modify-write" title="Read-modify-write">
+            read-modify-write
+           </a>
+           primitives that the hardware must provide, the most notable of which is
+           <a href="/wiki/Compare-and-swap" title="Compare-and-swap">
+            compare and swap (CAS)
+           </a>
+           .
+           <a href="/wiki/Critical_section" title="Critical section">
+            Critical sections
+           </a>
+           are almost always implemented using standard interfaces over these primitives (in the general case, critical sections will be blocking, even when implemented with these primitives). In the 1990s all non-blocking algorithms had to be written "natively" with the underlying primitives to achieve acceptable performance. However, the emerging field of
+           <a href="/wiki/Software_transactional_memory" title="Software transactional memory">
+            software transactional memory
+           </a>
+           promises standard abstractions for writing efficient non-blocking code.
+           <sup class="reference" id="cite_ref-lightweight-transactions_5-0">
+            <a href="#cite_note-lightweight-transactions-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-composable-memory-transactions_6-0">
+            <a href="#cite_note-composable-memory-transactions-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Much research has also been done in providing basic
+           <a href="/wiki/Data_structure" title="Data structure">
+            data structures
+           </a>
+           such as
+           <a class="mw-redirect" href="/wiki/Stack_(data_structure)" title="Stack (data structure)">
+            stacks
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Queue_(data_structure)" title="Queue (data structure)">
+            queues
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Set_(computer_science)" title="Set (computer science)">
+            sets
+           </a>
+           , and
+           <a href="/wiki/Hash_table" title="Hash table">
+            hash tables
+           </a>
+           .  These allow programs to easily exchange data between threads asynchronously.
+          </p>
+          <p>
+           Additionally, some non-blocking data structures are weak enough to be implemented without special atomic primitives. These exceptions include:
+          </p>
+          <ul>
+           <li>
+            a single-reader single-writer
+            <a href="/wiki/Circular_buffer" title="Circular buffer">
+             ring buffer
+            </a>
+            <a href="/wiki/FIFO_(computing_and_electronics)" title="FIFO (computing and electronics)">
+             FIFO
+            </a>
+            , with a size which evenly divides the overflow of one of the available unsigned integer types, can unconditionally be
+            <a href="/wiki/Producer%E2%80%93consumer_problem#Without_semaphores_or_monitors" title="Producer–consumer problem">
+             implemented safely
+            </a>
+            using only a
+            <a href="/wiki/Memory_barrier" title="Memory barrier">
+             memory barrier
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Read-copy-update" title="Read-copy-update">
+             Read-copy-update
+            </a>
+            with a single writer and any number of readers. (The readers are wait-free; the writer is usually lock-free, until it needs to reclaim memory).
+           </li>
+           <li>
+            Read-copy-update with multiple writers and any number of readers. (The readers are wait-free; multiple writers generally serialize with a lock and are not obstruction-free).
+           </li>
+          </ul>
+          <p>
+           Several libraries internally use lock-free techniques,
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-9">
+            <a href="#cite_note-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           but it is difficult to write lock-free code that is correct.
+           <sup class="reference" id="cite_ref-A_FALSE_SENSE_OF_SECURITY_10-0">
+            <a href="#cite_note-A_FALSE_SENSE_OF_SECURITY-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-A_CORRECTED_QUEUE_11-0">
+            <a href="#cite_note-A_CORRECTED_QUEUE-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-12">
+            <a href="#cite_note-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-13">
+            <a href="#cite_note-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Non-blocking algorithms generally involve a series of read, read-modify-write, and write instructions in a carefully designed order.
+Optimizing compilers can aggressively re-arrange operations.
+Even when they don't, many modern CPUs often re-arrange such operations (they have a "weak
+           <a href="/wiki/Consistency_model" title="Consistency model">
+            consistency model
+           </a>
+           "),
+unless a
+           <a href="/wiki/Memory_barrier" title="Memory barrier">
+            memory barrier
+           </a>
+           is used to tell the CPU not to reorder.
+           <a href="/wiki/C%2B%2B11" title="C++11">
+            C++11
+           </a>
+           programmers can use
+           <code>
+            std::atomic
+           </code>
+           in
+           <code>
+            &lt;atomic&gt;
+           </code>
+           ,
+and
+           <a href="/wiki/C11_(C_standard_revision)" title="C11 (C standard revision)">
+            C11
+           </a>
+           programmers can use
+           <code>
+            &lt;stdatomic.h&gt;
+           </code>
+           ,
+both of which supply types and functions that tell the compiler not to re-arrange such instructions, and to insert the appropriate memory barriers.
+           <sup class="reference" id="cite_ref-14">
+            <a href="#cite_note-14">
+             <span class="cite-bracket">
+              [
+             </span>
+             14
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Wait-freedom">
+            Wait-freedom
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Non-blocking_algorithm&amp;action=edit&amp;section=3" title="Edit section: Wait-freedom">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Wait-freedom is the strongest non-blocking guarantee of progress, combining guaranteed system-wide throughput with
+           <a class="mw-redirect" href="/wiki/Resource_starvation" title="Resource starvation">
+            starvation
+           </a>
+           -freedom. An algorithm is wait-free if every operation has a bound on the number of steps the algorithm will take before the operation completes.
+           <sup class="reference" id="cite_ref-awilliams_15-0">
+            <a href="#cite_note-awilliams-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           This property is critical for real-time systems and is always nice to have as long as the performance cost is not too high.
+          </p>
+          <p>
+           It was shown in the 1980s
+           <sup class="reference" id="cite_ref-imp_16-0">
+            <a href="#cite_note-imp-16">
+             <span class="cite-bracket">
+              [
+             </span>
+             16
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           that all algorithms can be implemented wait-free, and many transformations from serial code, called
+           <i>
+            universal constructions
+           </i>
+           , have been demonstrated. However, the resulting performance does not in general match even naïve blocking designs. Several papers have since improved the performance of universal constructions, but still, their performance is far below blocking designs.
+          </p>
+          <p>
+           Several papers have investigated the difficulty of creating wait-free algorithms. For example, it has been shown
+           <sup class="reference" id="cite_ref-cond-sync_17-0">
+            <a href="#cite_note-cond-sync-17">
+             <span class="cite-bracket">
+              [
+             </span>
+             17
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           that the widely available atomic
+           <i>
+            conditional
+           </i>
+           primitives,
+           <a href="/wiki/Compare-and-swap" title="Compare-and-swap">
+            CAS
+           </a>
+           and
+           <a href="/wiki/Load-link/store-conditional" title="Load-link/store-conditional">
+            LL/SC
+           </a>
+           , cannot provide starvation-free implementations of many common data structures without memory costs growing linearly in the number of threads.
+          </p>
+          <p>
+           But in practice these lower bounds do not present a real barrier as spending a cache line or exclusive reservation granule (up to 2 KB on ARM) of store per thread in the shared memory is not considered too costly for practical systems (typically the amount of store logically required is a word, but physically CAS operations on the same cache line will collide, and LL/SC operations in the same exclusive reservation granule will collide, so the amount of store physically required
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (June 2014)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           is greater).
+          </p>
+          <p>
+           Wait-free algorithms were rare until 2011, both in research and in practice. However, in 2011 Kogan and
+           <a href="/wiki/Erez_Petrank" title="Erez Petrank">
+            Petrank
+           </a>
+           <sup class="reference" id="cite_ref-wf-queue_18-0">
+            <a href="#cite_note-wf-queue-18">
+             <span class="cite-bracket">
+              [
+             </span>
+             18
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           presented a wait-free queue building on the
+           <a href="/wiki/Compare-and-swap" title="Compare-and-swap">
+            CAS
+           </a>
+           primitive, generally available on common hardware. Their construction expanded the lock-free queue of Michael and Scott,
+           <sup class="reference" id="cite_ref-lf-queue_19-0">
+            <a href="#cite_note-lf-queue-19">
+             <span class="cite-bracket">
+              [
+             </span>
+             19
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           which is an efficient queue often used in practice. A follow-up paper by Kogan and Petrank
+           <sup class="reference" id="cite_ref-wf-fpsp_20-0">
+            <a href="#cite_note-wf-fpsp-20">
+             <span class="cite-bracket">
+              [
+             </span>
+             20
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           provided a method for making wait-free algorithms fast and used this method to make the wait-free queue practically as fast as its lock-free counterpart. A subsequent paper by Timnat and Petrank
+           <sup class="reference" id="cite_ref-wf-simulation_21-0">
+            <a href="#cite_note-wf-simulation-21">
+             <span class="cite-bracket">
+              [
+             </span>
+             21
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           provided an automatic mechanism for generating wait-free data structures from lock-free ones. Thus, wait-free implementations are now available for many data-structures.
+          </p>
+          <p>
+           Under reasonable assumptions, Alistarh, Censor-Hillel, and Shavit showed that lock-free algorithms are practically wait-free.
+           <sup class="reference" id="cite_ref-lf-wf_22-0">
+            <a href="#cite_note-lf-wf-22">
+             <span class="cite-bracket">
+              [
+             </span>
+             22
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           So the added algorithmic complexity of a wait-free algorithm might not be worth the effort, if there are not hard deadlines to be met.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Lock-freedom">
+            Lock-freedom
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Non-blocking_algorithm&amp;action=edit&amp;section=4" title="Edit section: Lock-freedom">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Lock-freedom allows individual threads to starve but guarantees system-wide throughput. An algorithm is lock-free if, when the program threads are run for a sufficiently long time, at least one of the threads makes
+progress (for some sensible definition of progress).
+All wait-free algorithms are lock-free.
+          </p>
+          <p>
+           In particular, if one thread is suspended, then a lock-free algorithm guarantees that the remaining threads can still make progress.  Hence, if two threads can contend for the same mutex lock or spinlock, then the algorithm is
+           <i>
+            not
+           </i>
+           lock-free. (If we suspend one thread that holds the lock, then the second thread will block.)
+          </p>
+          <p>
+           An algorithm is lock-free if infinitely often operation by some processors will succeed in a finite number of steps. For instance, if
+           <var style="padding-right: 1px;">
+            N
+           </var>
+           processors are trying to execute an operation, some of the
+           <var style="padding-right: 1px;">
+            N
+           </var>
+           processes will succeed in finishing the operation in a finite number of steps and others might fail and retry on failure. The difference between wait-free and lock-free is that wait-free operation by each process is guaranteed to succeed in a finite number of steps, regardless of the other processors.
+          </p>
+          <p>
+           In general, a lock-free algorithm can run in four phases: completing one's own operation, assisting an obstructing operation, aborting an obstructing operation, and waiting. Completing one's own operation is complicated by the possibility of concurrent assistance and abortion, but is invariably the fastest path to completion.
+          </p>
+          <p>
+           The decision about when to assist, abort or wait when an obstruction is met is the responsibility of a
+           <i>
+            contention manager
+           </i>
+           . This may be very simple (assist higher priority operations, abort lower priority ones), or may be more optimized to achieve better throughput, or lower the latency of prioritized operations.
+          </p>
+          <p>
+           Correct concurrent assistance is typically the most complex part of a lock-free algorithm, and often very costly to execute: not only does the assisting thread slow down, but thanks to the mechanics of shared memory, the thread being assisted will be slowed, too, if it is still running.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Obstruction-freedom">
+            Obstruction-freedom
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Non-blocking_algorithm&amp;action=edit&amp;section=5" title="Edit section: Obstruction-freedom">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Obstruction-freedom is the weakest natural non-blocking progress guarantee. An algorithm is obstruction-free if at any point, a single thread executed in isolation (i.e., with all obstructing threads suspended) for a bounded number of steps will complete its operation.
+           <sup class="reference" id="cite_ref-awilliams_15-1">
+            <a href="#cite_note-awilliams-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           All lock-free algorithms are obstruction-free.
+          </p>
+          <p>
+           Obstruction-freedom demands only that any partially completed operation can be aborted and the changes made rolled back. Dropping concurrent assistance can often result in much simpler algorithms that are easier to validate. Preventing the system from continually
+           <a class="mw-redirect" href="/wiki/Livelock" title="Livelock">
+            live-locking
+           </a>
+           is the task of a contention manager.
+          </p>
+          <p>
+           Some obstruction-free algorithms use a pair of "consistency markers" in the data structure.  Processes reading the data structure first read one consistency marker, then read the relevant data into an internal buffer, then read the other marker, and then compare the markers.  The data is consistent if the two markers are identical.  Markers may be non-identical when the read is interrupted by another process updating the data structure.  In such a case, the process discards the data in the internal buffer and tries again.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Non-blocking_algorithm&amp;action=edit&amp;section=6" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Deadlock_(computer_science)" title="Deadlock (computer science)">
+             Deadlock
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Java_ConcurrentMap#Lock-free_atomicity" title="Java ConcurrentMap">
+             Java ConcurrentMap#Lock-free atomicity
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Liveness" title="Liveness">
+             Liveness
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Lock_(computer_science)" title="Lock (computer science)">
+             Lock (computer science)
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Mutual_exclusion" title="Mutual exclusion">
+             Mutual exclusion
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Priority_inversion" title="Priority inversion">
+             Priority inversion
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Resource_starvation" title="Resource starvation">
+             Resource starvation
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Non-blocking_algorithm&amp;action=edit&amp;section=7" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist reflist-columns references-column-width" style="column-width: 30em;">
+           <ol class="references">
+            <li id="cite_note-1">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-1">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <style data-mw-deduplicate="TemplateStyles:r1238218222">
+               .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+              </style>
+              <cite class="citation book cs1" id="CITEREFGöetzPeierlsBlochBowbeer2006">
+               Göetz, Brian; Peierls, Tim; Bloch, Joshua; Bowbeer, Joseph; Holmes, David; Lea, Doug (2006).
+               <span class="id-lock-registration" title="Free registration required">
+                <a class="external text" href="https://archive.org/details/javaconcurrencyi00goet/page/41" rel="nofollow">
+                 <i>
+                  Java concurrency in practice
+                 </i>
+                </a>
+               </span>
+               . Upper Saddle River, NJ: Addison-Wesley. p.
+               <a class="external text" href="https://archive.org/details/javaconcurrencyi00goet/page/41" rel="nofollow">
+                41
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/9780321349606" title="Special:BookSources/9780321349606">
+                <bdi>
+                 9780321349606
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Java+concurrency+in+practice&amp;rft.place=Upper+Saddle+River%2C+NJ&amp;rft.pages=41&amp;rft.pub=Addison-Wesley&amp;rft.date=2006&amp;rft.isbn=9780321349606&amp;rft.aulast=G%C3%B6etz&amp;rft.aufirst=Brian&amp;rft.au=Peierls%2C+Tim&amp;rft.au=Bloch%2C+Joshua&amp;rft.au=Bowbeer%2C+Joseph&amp;rft.au=Holmes%2C+David&amp;rft.au=Lea%2C+Doug&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fjavaconcurrencyi00goet%2Fpage%2F41&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-obs-free-2">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-obs-free_2-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation conference cs1" id="CITEREFHerlihyLuchangcoMoir2003">
+               Herlihy, M.; Luchangco, V.; Moir, M. (2003).
+               <a class="external text" href="http://www.cs.brown.edu/people/mph/HerlihyLM03/main.pdf" rel="nofollow">
+                <i>
+                 Obstruction-Free Synchronization: Double-Ended Queues as an Example
+                </i>
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               . 23rd
+               <a href="/wiki/International_Conference_on_Distributed_Computing_Systems" title="International Conference on Distributed Computing Systems">
+                International Conference on Distributed Computing Systems
+               </a>
+               . p. 522.
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Obstruction-Free+Synchronization%3A+Double-Ended+Queues+as+an+Example&amp;rft.pages=522&amp;rft.date=2003&amp;rft.aulast=Herlihy&amp;rft.aufirst=M.&amp;rft.au=Luchangco%2C+V.&amp;rft.au=Moir%2C+M.&amp;rft_id=http%3A%2F%2Fwww.cs.brown.edu%2Fpeople%2Fmph%2FHerlihyLM03%2Fmain.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-monit-3">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-monit_3-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFButler_W._LampsonDavid_D._Redell1980">
+               <a class="mw-redirect" href="/wiki/Butler_W._Lampson" title="Butler W. Lampson">
+                Butler W. Lampson
+               </a>
+               ;
+               <a class="new" href="/w/index.php?title=David_D._Redell&amp;action=edit&amp;redlink=1" title="David D. Redell (page does not exist)">
+                David D. Redell
+               </a>
+               (February 1980).
+               <a class="external text" href="http://research.microsoft.com/lampson/23-ProcessesInMesa/Abstract.html" rel="nofollow">
+                "Experience with Processes and Monitors in Mesa"
+               </a>
+               .
+               <i>
+                Communications of the ACM
+               </i>
+               .
+               <b>
+                23
+               </b>
+               (2): 105–117.
+               <a class="mw-redirect" href="/wiki/CiteSeerX_(identifier)" title="CiteSeerX (identifier)">
+                CiteSeerX
+               </a>
+               <span class="id-lock-free" title="Freely accessible">
+                <a class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.142.5765" rel="nofollow">
+                 10.1.1.142.5765
+                </a>
+               </span>
+               .
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1145%2F358818.358824" rel="nofollow">
+                10.1145/358818.358824
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                S2CID
+               </a>
+               <a class="external text" href="https://api.semanticscholar.org/CorpusID:1594544" rel="nofollow">
+                1594544
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.atitle=Experience+with+Processes+and+Monitors+in+Mesa&amp;rft.volume=23&amp;rft.issue=2&amp;rft.pages=105-117&amp;rft.date=1980-02&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.142.5765%23id-name%3DCiteSeerX&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A1594544%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F358818.358824&amp;rft.au=Butler+W.+Lampson&amp;rft.au=David+D.+Redell&amp;rft_id=http%3A%2F%2Fresearch.microsoft.com%2Flampson%2F23-ProcessesInMesa%2FAbstract.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-4">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-4">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              Guillaume Marçais, and Carl Kingsford.
+              <a class="external text" href="https://web.archive.org/web/20140518060917/http://bioinformatics.oxfordjournals.org/content/27/6/764.abstract" rel="nofollow">
+               "A fast, lock-free approach for efficient parallel counting of occurrences of k-mers"
+              </a>
+              .
+Bioinformatics (2011) 27(6): 764-770.
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+               doi
+              </a>
+              :
+              <a class="external text" href="https://doi.org/10.1093%2Fbioinformatics%2Fbtr011" rel="nofollow">
+               10.1093/bioinformatics/btr011
+              </a>
+              <a class="external text" href="http://www.genome.umd.edu/jellyfish.html" rel="nofollow">
+               "Jellyfish mer counter"
+              </a>
+              .
+             </span>
+            </li>
+            <li id="cite_note-lightweight-transactions-5">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-lightweight-transactions_5-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFHarrisFraser2003">
+               Harris, Tim; Fraser, Keir (26 November 2003).
+               <a class="external text" href="http://research.microsoft.com/en-us/um/people/tharris/papers/2003-oopsla.pdf" rel="nofollow">
+                "Language support for lightweight transactions"
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               .
+               <i>
+                ACM SIGPLAN Notices
+               </i>
+               .
+               <b>
+                38
+               </b>
+               (11): 388.
+               <a class="mw-redirect" href="/wiki/CiteSeerX_(identifier)" title="CiteSeerX (identifier)">
+                CiteSeerX
+               </a>
+               <span class="id-lock-free" title="Freely accessible">
+                <a class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.58.8466" rel="nofollow">
+                 10.1.1.58.8466
+                </a>
+               </span>
+               .
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1145%2F949343.949340" rel="nofollow">
+                10.1145/949343.949340
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+SIGPLAN+Notices&amp;rft.atitle=Language+support+for+lightweight+transactions&amp;rft.volume=38&amp;rft.issue=11&amp;rft.pages=388&amp;rft.date=2003-11-26&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.58.8466%23id-name%3DCiteSeerX&amp;rft_id=info%3Adoi%2F10.1145%2F949343.949340&amp;rft.aulast=Harris&amp;rft.aufirst=Tim&amp;rft.au=Fraser%2C+Keir&amp;rft_id=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Ftharris%2Fpapers%2F2003-oopsla.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-composable-memory-transactions-6">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-composable-memory-transactions_6-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation book cs1" id="CITEREFHarrisMarlowPeyton-JonesHerlihy2005">
+               Harris, Tim; Marlow, S.; Peyton-Jones, S.; Herlihy, M. (June 15–17, 2005). "Composable memory transactions".
+               <i>
+                Proceedings of the 2005 ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, PPoPP '05 : Chicago, Illinois
+               </i>
+               . New York, NY: ACM Press. pp. 48–60.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1145%2F1065944.1065952" rel="nofollow">
+                10.1145/1065944.1065952
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-1-59593-080-4" title="Special:BookSources/978-1-59593-080-4">
+                <bdi>
+                 978-1-59593-080-4
+                </bdi>
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                S2CID
+               </a>
+               <a class="external text" href="https://api.semanticscholar.org/CorpusID:53245159" rel="nofollow">
+                53245159
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Composable+memory+transactions&amp;rft.btitle=Proceedings+of+the+2005+ACM+SIGPLAN+Symposium+on+Principles+and+Practice+of+Parallel+Programming%2C+PPoPP+%2705+%3A+Chicago%2C+Illinois&amp;rft.place=New+York%2C+NY&amp;rft.pages=48-60&amp;rft.pub=ACM+Press&amp;rft.date=2005-06-15%2F2005-06-17&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A53245159%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F1065944.1065952&amp;rft.isbn=978-1-59593-080-4&amp;rft.aulast=Harris&amp;rft.aufirst=Tim&amp;rft.au=Marlow%2C+S.&amp;rft.au=Peyton-Jones%2C+S.&amp;rft.au=Herlihy%2C+M.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-7">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-7">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a class="external text" href="http://libcds.sourceforge.net/" rel="nofollow">
+               libcds
+              </a>
+              - C++ library of lock-free containers and safe memory reclamation schema
+             </span>
+            </li>
+            <li id="cite_note-8">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-8">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a class="external text" href="https://www.liblfds.org/" rel="nofollow">
+               liblfds
+              </a>
+              - A library of lock-free data structures, written in C
+             </span>
+            </li>
+            <li id="cite_note-9">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-9">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a class="external text" href="http://concurrencykit.org" rel="nofollow">
+               Concurrency Kit
+              </a>
+              - A C library for non-blocking system design and implementation
+             </span>
+            </li>
+            <li id="cite_note-A_FALSE_SENSE_OF_SECURITY-10">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-A_FALSE_SENSE_OF_SECURITY_10-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              Herb Sutter.
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://web.archive.org/web/20150901211737/http://www.drdobbs.com/article/print?articleId=210600279&amp;siteSectionName=cpp" rel="nofollow">
+                "Lock-Free Code: A False Sense of Security"
+               </a>
+               . Archived from
+               <a class="external text" href="http://www.drdobbs.com/article/print?articleId=210600279&amp;siteSectionName=cpp" rel="nofollow">
+                the original
+               </a>
+               on 2015-09-01.
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Lock-Free+Code%3A+A+False+Sense+of+Security&amp;rft_id=http%3A%2F%2Fwww.drdobbs.com%2Farticle%2Fprint%3FarticleId%3D210600279%26siteSectionName%3Dcpp&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-A_CORRECTED_QUEUE-11">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-A_CORRECTED_QUEUE_11-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              Herb Sutter.
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://web.archive.org/web/20081205072023/http://www.ddj.com/cpp/210604448" rel="nofollow">
+                "Writing Lock-Free Code: A Corrected Queue"
+               </a>
+               . Archived from
+               <a class="external text" href="http://www.ddj.com/cpp/210604448" rel="nofollow">
+                the original
+               </a>
+               on 2008-12-05.
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Writing+Lock-Free+Code%3A+A+Corrected+Queue&amp;rft_id=http%3A%2F%2Fwww.ddj.com%2Fcpp%2F210604448&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-12">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-12">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              Herb Sutter.
+              <a class="external text" href="http://www.ddj.com/cpp/211601363" rel="nofollow">
+               "Writing a Generalized Concurrent Queue"
+              </a>
+              .
+             </span>
+            </li>
+            <li id="cite_note-13">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-13">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              Herb Sutter.
+              <a class="external text" href="http://www.ddj.com/cpp/184401930" rel="nofollow">
+               "The Trouble With Locks"
+              </a>
+              .
+             </span>
+            </li>
+            <li id="cite_note-14">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-14">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              Bruce Dawson.
+              <a class="external text" href="https://randomascii.wordpress.com/2020/11/29/arm-and-lock-free-programming/" rel="nofollow">
+               "ARM and Lock-Free Programming"
+              </a>
+              .
+             </span>
+            </li>
+            <li id="cite_note-awilliams-15">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-awilliams_15-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-awilliams_15-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              Anthony Williams.
+              <a class="external text" href="https://www.justsoftwaresolutions.co.uk//files/safety_off.pdf" rel="nofollow">
+               "Safety: off: How not to shoot yourself in the foot with C++ atomics"
+              </a>
+              .
+2015.
+p. 20.
+             </span>
+            </li>
+            <li id="cite_note-imp-16">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-imp_16-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation conference cs1" id="CITEREFHerlihy1988">
+               Herlihy, Maurice P. (1988).
+               <i>
+                Impossibility and universality results for wait-free synchronization
+               </i>
+               . Proc. 7th Annual ACM Symp. on Principles of Distributed Computing. pp. 276–290.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <span class="id-lock-free" title="Freely accessible">
+                <a class="external text" href="https://doi.org/10.1145%2F62546.62593" rel="nofollow">
+                 10.1145/62546.62593
+                </a>
+               </span>
+               .
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/0-89791-277-2" title="Special:BookSources/0-89791-277-2">
+                <bdi>
+                 0-89791-277-2
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Impossibility+and+universality+results+for+wait-free+synchronization&amp;rft.pages=276-290&amp;rft.date=1988&amp;rft_id=info%3Adoi%2F10.1145%2F62546.62593&amp;rft.isbn=0-89791-277-2&amp;rft.aulast=Herlihy&amp;rft.aufirst=Maurice+P.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-cond-sync-17">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-cond-sync_17-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation conference cs1" id="CITEREFFichHendlerShavit2004">
+               <a href="/wiki/Faith_Ellen" title="Faith Ellen">
+                Fich, Faith
+               </a>
+               ; Hendler, Danny; Shavit, Nir (2004).
+               <i>
+                On the inherent weakness of conditional synchronization primitives
+               </i>
+               . Proc. 23rd Annual ACM Symp.on Principles of Distributed Computing (PODC). pp. 80–87.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1145%2F1011767.1011780" rel="nofollow">
+                10.1145/1011767.1011780
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/1-58113-802-4" title="Special:BookSources/1-58113-802-4">
+                <bdi>
+                 1-58113-802-4
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=On+the+inherent+weakness+of+conditional+synchronization+primitives&amp;rft.pages=80-87&amp;rft.date=2004&amp;rft_id=info%3Adoi%2F10.1145%2F1011767.1011780&amp;rft.isbn=1-58113-802-4&amp;rft.aulast=Fich&amp;rft.aufirst=Faith&amp;rft.au=Hendler%2C+Danny&amp;rft.au=Shavit%2C+Nir&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-wf-queue-18">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-wf-queue_18-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation conference cs1" id="CITEREFKoganPetrank2011">
+               Kogan, Alex; Petrank, Erez (2011).
+               <a class="external text" href="http://www.cs.technion.ac.il/~erez/Papers/wfquque-ppopp.pdf" rel="nofollow">
+                <i>
+                 Wait-free queues with multiple enqueuers and dequeuers
+                </i>
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               . Proc. 16th ACM SIGPLAN Symp. on Principles and Practice of Parallel Programming (PPOPP). pp. 223–234.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1145%2F1941553.1941585" rel="nofollow">
+                10.1145/1941553.1941585
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-1-4503-0119-0" title="Special:BookSources/978-1-4503-0119-0">
+                <bdi>
+                 978-1-4503-0119-0
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Wait-free+queues+with+multiple+enqueuers+and+dequeuers&amp;rft.pages=223-234&amp;rft.date=2011&amp;rft_id=info%3Adoi%2F10.1145%2F1941553.1941585&amp;rft.isbn=978-1-4503-0119-0&amp;rft.aulast=Kogan&amp;rft.aufirst=Alex&amp;rft.au=Petrank%2C+Erez&amp;rft_id=http%3A%2F%2Fwww.cs.technion.ac.il%2F~erez%2FPapers%2Fwfquque-ppopp.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-lf-queue-19">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-lf-queue_19-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation conference cs1" id="CITEREFMichaelScott1996">
+               Michael, Maged; Scott, Michael (1996).
+               <i>
+                Simple, Fast, and Practical Non-Blocking and Blocking Concurrent Queue Algorithms
+               </i>
+               . Proc. 15th Annual ACM Symp. on Principles of Distributed Computing (PODC). pp. 267–275.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <span class="id-lock-free" title="Freely accessible">
+                <a class="external text" href="https://doi.org/10.1145%2F248052.248106" rel="nofollow">
+                 10.1145/248052.248106
+                </a>
+               </span>
+               .
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/0-89791-800-2" title="Special:BookSources/0-89791-800-2">
+                <bdi>
+                 0-89791-800-2
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Simple%2C+Fast%2C+and+Practical+Non-Blocking+and+Blocking+Concurrent+Queue+Algorithms&amp;rft.pages=267-275&amp;rft.date=1996&amp;rft_id=info%3Adoi%2F10.1145%2F248052.248106&amp;rft.isbn=0-89791-800-2&amp;rft.aulast=Michael&amp;rft.aufirst=Maged&amp;rft.au=Scott%2C+Michael&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-wf-fpsp-20">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-wf-fpsp_20-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation conference cs1" id="CITEREFKoganPetrank2012">
+               Kogan, Alex; Petrank, Erez (2012).
+               <i>
+                A method for creating fast wait-free data structures
+               </i>
+               . Proc. 17th ACM SIGPLAN Symp. on Principles and Practice of Parallel Programming (PPOPP). pp. 141–150.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1145%2F2145816.2145835" rel="nofollow">
+                10.1145/2145816.2145835
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-1-4503-1160-1" title="Special:BookSources/978-1-4503-1160-1">
+                <bdi>
+                 978-1-4503-1160-1
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=A+method+for+creating+fast+wait-free+data+structures&amp;rft.pages=141-150&amp;rft.date=2012&amp;rft_id=info%3Adoi%2F10.1145%2F2145816.2145835&amp;rft.isbn=978-1-4503-1160-1&amp;rft.aulast=Kogan&amp;rft.aufirst=Alex&amp;rft.au=Petrank%2C+Erez&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-wf-simulation-21">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-wf-simulation_21-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation conference cs1" id="CITEREFTimnatPetrank2014">
+               Timnat, Shahar; Petrank, Erez (2014).
+               <i>
+                A Practical Wait-Free Simulation for Lock-Free Data Structures
+               </i>
+               . Proc. 17th ACM SIGPLAN Symp. on Principles and Practice of Parallel Programming (PPOPP). pp. 357–368.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1145%2F2692916.2555261" rel="nofollow">
+                10.1145/2692916.2555261
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-1-4503-2656-8" title="Special:BookSources/978-1-4503-2656-8">
+                <bdi>
+                 978-1-4503-2656-8
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=A+Practical+Wait-Free+Simulation+for+Lock-Free+Data+Structures&amp;rft.pages=357-368&amp;rft.date=2014&amp;rft_id=info%3Adoi%2F10.1145%2F2692916.2555261&amp;rft.isbn=978-1-4503-2656-8&amp;rft.aulast=Timnat&amp;rft.aufirst=Shahar&amp;rft.au=Petrank%2C+Erez&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-lf-wf-22">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-lf-wf_22-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation conference cs1" id="CITEREFAlistarhCensor-HillelShavit2014">
+               Alistarh, Dan; Censor-Hillel, Keren; Shavit, Nir (2014).
+               <i>
+                Are Lock-Free Concurrent Algorithms Practically Wait-Free?
+               </i>
+               . Proc. 46th Annual ACM Symposium on Theory of Computing (STOC’14). pp. 714–723.
+               <a class="mw-redirect" href="/wiki/ArXiv_(identifier)" title="ArXiv (identifier)">
+                arXiv
+               </a>
+               :
+               <span class="id-lock-free" title="Freely accessible">
+                <a class="external text" href="https://arxiv.org/abs/1311.3200" rel="nofollow">
+                 1311.3200
+                </a>
+               </span>
+               .
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1145%2F2591796.2591836" rel="nofollow">
+                10.1145/2591796.2591836
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/978-1-4503-2710-7" title="Special:BookSources/978-1-4503-2710-7">
+                <bdi>
+                 978-1-4503-2710-7
+                </bdi>
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Are+Lock-Free+Concurrent+Algorithms+Practically+Wait-Free%3F&amp;rft.pages=714-723&amp;rft.date=2014&amp;rft_id=info%3Aarxiv%2F1311.3200&amp;rft_id=info%3Adoi%2F10.1145%2F2591796.2591836&amp;rft.isbn=978-1-4503-2710-7&amp;rft.aulast=Alistarh&amp;rft.aufirst=Dan&amp;rft.au=Censor-Hillel%2C+Keren&amp;rft.au=Shavit%2C+Nir&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-blocking+algorithm">
+              </span>
+             </span>
+            </li>
+           </ol>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Non-blocking_algorithm&amp;action=edit&amp;section=8" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="http://preshing.com/20120612/an-introduction-to-lock-free-programming/" rel="nofollow">
+             An Introduction to Lock-Free Programming
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://tutorials.jenkov.com/java-concurrency/non-blocking-algorithms.html" rel="nofollow">
+             Non-blocking Algorithms
+            </a>
+           </li>
+          </ul>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐wdm4b
+Cached time: 20240926232928
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.428 seconds
+Real time usage: 0.554 seconds
+Preprocessor visited node count: 1356/1000000
+Post‐expand include size: 34522/2097152 bytes
+Template argument size: 1470/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 4/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 60808/5000000 bytes
+Lua time usage: 0.264/10.000 seconds
+Lua memory usage: 6175541/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  496.407      1 -total
+ 56.46%  280.261      1 Template:Reflist
+ 26.76%  132.826      2 Template:Cite_book
+ 20.00%   99.284      1 Template:Short_description
+ 13.58%   67.390      8 Template:Cite_conference
+ 12.58%   62.469      2 Template:Pagetype
+ 10.48%   52.021      1 Template:Citation_needed
+  8.82%   43.787      1 Template:Fix
+  6.37%   31.634      1 Template:Distinguish
+  6.07%   30.124      2 Template:Category_handler
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:554867-0!canonical and timestamp 20240926232928 and revision id 1247420382. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&amp;oldid=1247420382">
+          https://en.wikipedia.org/w/index.php?title=Non-blocking_algorithm&amp;oldid=1247420382
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Synchronization" title="Category:Synchronization">
+            Synchronization
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Concurrency_control" title="Category:Concurrency control">
+            Concurrency control
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Concurrency_control_algorithms" title="Category:Concurrency control algorithms">
+            Concurrency control algorithms
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">
+            All articles with unsourced statements
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_June_2014" title="Category:Articles with unsourced statements from June 2014">
+            Articles with unsourced statements from June 2014
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 24 September 2024, at 06:07
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Non-blocking_algorithm&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-kcb2x","wgBackendResponseTime":159,"wgPageParseReport":{"limitreport":{"cputime":"0.428","walltime":"0.554","ppvisitednodes":{"value":1356,"limit":1000000},"postexpandincludesize":{"value":34522,"limit":2097152},"templateargumentsize":{"value":1470,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":60808,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  496.407      1 -total"," 56.46%  280.261      1 Template:Reflist"," 26.76%  132.826      2 Template:Cite_book"," 20.00%   99.284      1 Template:Short_description"," 13.58%   67.390      8 Template:Cite_conference"," 12.58%   62.469      2 Template:Pagetype"," 10.48%   52.021      1 Template:Citation_needed","  8.82%   43.787      1 Template:Fix","  6.37%   31.634      1 Template:Distinguish","  6.07%   30.124      2 Template:Category_handler"]},"scribunto":{"limitreport-timeusage":{"value":"0.264","limit":"10.000"},"limitreport-memusage":{"value":6175541,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-wdm4b","timestamp":"20240926232928","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Non-blocking algorithm","url":"https:\/\/en.wikipedia.org\/wiki\/Non-blocking_algorithm","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1985141","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1985141","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-03-26T18:53:46Z","dateModified":"2024-09-24T06:07:34Z","headline":"Class of algorithms"}
+  </script>
+ </body>
+</html>

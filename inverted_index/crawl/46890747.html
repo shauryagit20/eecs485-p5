@@ -1,0 +1,3804 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Man-in-the-middle attack - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"e85e4980-ab04-4e01-88c9-e58ac197b49d","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Man-in-the-middle_attack","wgTitle":"Man-in-the-middle attack","wgCurRevisionId":1247114705,"wgRevisionId":1247114705,"wgArticleId":144676,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Use mdy dates from August 2023","Webarchive template wayback links","Cryptographic attacks","Computer network security","Transport Layer Security"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Man-in-the-middle_attack","wgRelevantArticleId":144676,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,
+"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q554830","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,
+"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head",
+"mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Man-in-the-middle attack - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Man-in-the-middle_attack" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Man-in-the-middle_attack"/>
+  <meta eecs485_docid="46890747"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Man-in-the-middle_attack rootpage-Man-in-the-middle_attack skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Man-in-the-middle+attack" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Man-in-the-middle+attack" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Man-in-the-middle+attack" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Man-in-the-middle+attack" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Example">
+           <a class="vector-toc-link" href="#Example">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Example
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Example-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Defense_and_detection">
+           <a class="vector-toc-link" href="#Defense_and_detection">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Defense and detection
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Defense_and_detection-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Defense and detection subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Defense_and_detection-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Authentication">
+             <a class="vector-toc-link" href="#Authentication">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.1
+               </span>
+               <span>
+                Authentication
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Authentication-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Tamper_detection">
+             <a class="vector-toc-link" href="#Tamper_detection">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.2
+               </span>
+               <span>
+                Tamper detection
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Tamper_detection-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Forensic_analysis">
+             <a class="vector-toc-link" href="#Forensic_analysis">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.3
+               </span>
+               <span>
+                Forensic analysis
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Forensic_analysis-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Notable_instances">
+           <a class="vector-toc-link" href="#Notable_instances">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Notable instances
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Notable_instances-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Notes">
+           <a class="vector-toc-link" href="#Notes">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              Notes
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Notes-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              7
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Man-in-the-middle attack
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 33 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-33" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          33 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="هجوم الرجل في المنتصف" href="https://ar.wikipedia.org/wiki/%D9%87%D8%AC%D9%88%D9%85_%D8%A7%D9%84%D8%B1%D8%AC%D9%84_%D9%81%D9%8A_%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%B5%D9%81" hreflang="ar" lang="ar" title="هجوم الرجل في المنتصف – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-az mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Azərbaycanca" data-language-local-name="Azerbaijani" data-title="Ortada adam hücumu" href="https://az.wikipedia.org/wiki/Ortada_adam_h%C3%BCcumu" hreflang="az" lang="az" title="Ortada adam hücumu – Azerbaijani">
+             <span>
+              Azərbaycanca
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-be mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Беларуская" data-language-local-name="Belarusian" data-title="Чалавек пасярэдзіне" href="https://be.wikipedia.org/wiki/%D0%A7%D0%B0%D0%BB%D0%B0%D0%B2%D0%B5%D0%BA_%D0%BF%D0%B0%D1%81%D1%8F%D1%80%D1%8D%D0%B4%D0%B7%D1%96%D0%BD%D0%B5" hreflang="be" lang="be" title="Чалавек пасярэдзіне – Belarusian">
+             <span>
+              Беларуская
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Intercepció" href="https://ca.wikipedia.org/wiki/Intercepci%C3%B3" hreflang="ca" lang="ca" title="Intercepció – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-cs mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Čeština" data-language-local-name="Czech" data-title="Man in the middle" href="https://cs.wikipedia.org/wiki/Man_in_the_middle" hreflang="cs" lang="cs" title="Man in the middle – Czech">
+             <span>
+              Čeština
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Man-in-the-Middle-Angriff" href="https://de.wikipedia.org/wiki/Man-in-the-Middle-Angriff" hreflang="de" lang="de" title="Man-in-the-Middle-Angriff – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-et mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Eesti" data-language-local-name="Estonian" data-title="Vahendajarünne" href="https://et.wikipedia.org/wiki/Vahendajar%C3%BCnne" hreflang="et" lang="et" title="Vahendajarünne – Estonian">
+             <span>
+              Eesti
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-el mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Ελληνικά" data-language-local-name="Greek" data-title="Επίθεση man-in-the-middle" href="https://el.wikipedia.org/wiki/%CE%95%CF%80%CE%AF%CE%B8%CE%B5%CF%83%CE%B7_man-in-the-middle" hreflang="el" lang="el" title="Επίθεση man-in-the-middle – Greek">
+             <span>
+              Ελληνικά
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Ataque de intermediario" href="https://es.wikipedia.org/wiki/Ataque_de_intermediario" hreflang="es" lang="es" title="Ataque de intermediario – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="حمله مرد میانی" href="https://fa.wikipedia.org/wiki/%D8%AD%D9%85%D9%84%D9%87_%D9%85%D8%B1%D8%AF_%D9%85%DB%8C%D8%A7%D9%86%DB%8C" hreflang="fa" lang="fa" title="حمله مرد میانی – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Attaque de l'homme du milieu" href="https://fr.wikipedia.org/wiki/Attaque_de_l%27homme_du_milieu" hreflang="fr" lang="fr" title="Attaque de l'homme du milieu – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-gl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Galego" data-language-local-name="Galician" data-title="Man-in-the-middle attack" href="https://gl.wikipedia.org/wiki/Man-in-the-middle_attack" hreflang="gl" lang="gl" title="Man-in-the-middle attack – Galician">
+             <span>
+              Galego
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="중간자 공격" href="https://ko.wikipedia.org/wiki/%EC%A4%91%EA%B0%84%EC%9E%90_%EA%B3%B5%EA%B2%A9" hreflang="ko" lang="ko" title="중간자 공격 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hy mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Հայերեն" data-language-local-name="Armenian" data-title="Մարդը միջանկյալ օղակում կիբեռհարձակում" href="https://hy.wikipedia.org/wiki/%D5%84%D5%A1%D6%80%D5%A4%D5%A8_%D5%B4%D5%AB%D5%BB%D5%A1%D5%B6%D5%AF%D5%B5%D5%A1%D5%AC_%D6%85%D5%B2%D5%A1%D5%AF%D5%B8%D6%82%D5%B4_%D5%AF%D5%AB%D5%A2%D5%A5%D5%BC%D5%B0%D5%A1%D6%80%D5%B1%D5%A1%D5%AF%D5%B8%D6%82%D5%B4" hreflang="hy" lang="hy" title="Մարդը միջանկյալ օղակում կիբեռհարձակում – Armenian">
+             <span>
+              Հայերեն
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Attacco man in the middle" href="https://it.wikipedia.org/wiki/Attacco_man_in_the_middle" hreflang="it" lang="it" title="Attacco man in the middle – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="התקפת אדם בתווך" href="https://he.wikipedia.org/wiki/%D7%94%D7%AA%D7%A7%D7%A4%D7%AA_%D7%90%D7%93%D7%9D_%D7%91%D7%AA%D7%95%D7%95%D7%9A" hreflang="he" lang="he" title="התקפת אדם בתווך – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-lmo mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Lombard" data-language-local-name="Lombard" data-title="Attacch Man in the middle" href="https://lmo.wikipedia.org/wiki/Attacch_Man_in_the_middle" hreflang="lmo" lang="lmo" title="Attacch Man in the middle – Lombard">
+             <span>
+              Lombard
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Magyar" data-language-local-name="Hungarian" data-title="Közbeékelődéses támadás" href="https://hu.wikipedia.org/wiki/K%C3%B6zbe%C3%A9kel%C5%91d%C3%A9ses_t%C3%A1mad%C3%A1s" hreflang="hu" lang="hu" title="Közbeékelődéses támadás – Hungarian">
+             <span>
+              Magyar
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-my mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="မြန်မာဘာသာ" data-language-local-name="Burmese" data-title="ကြားမှနေ၍တိုက်ခိုက်သူ" href="https://my.wikipedia.org/wiki/%E1%80%80%E1%80%BC%E1%80%AC%E1%80%B8%E1%80%99%E1%80%BE%E1%80%94%E1%80%B1%E1%81%8D%E1%80%90%E1%80%AD%E1%80%AF%E1%80%80%E1%80%BA%E1%80%81%E1%80%AD%E1%80%AF%E1%80%80%E1%80%BA%E1%80%9E%E1%80%B0" hreflang="my" lang="my" title="ကြားမှနေ၍တိုက်ခိုက်သူ – Burmese">
+             <span>
+              မြန်မာဘာသာ
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="Man-in-the-middle-aanval" href="https://nl.wikipedia.org/wiki/Man-in-the-middle-aanval" hreflang="nl" lang="nl" title="Man-in-the-middle-aanval – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="中間者攻撃" href="https://ja.wikipedia.org/wiki/%E4%B8%AD%E9%96%93%E8%80%85%E6%94%BB%E6%92%83" hreflang="ja" lang="ja" title="中間者攻撃 – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-no mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" data-title="Man in the middle-angrep" href="https://no.wikipedia.org/wiki/Man_in_the_middle-angrep" hreflang="nb" lang="nb" title="Man in the middle-angrep – Norwegian Bokmål">
+             <span>
+              Norsk bokmål
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Atak man in the middle" href="https://pl.wikipedia.org/wiki/Atak_man_in_the_middle" hreflang="pl" lang="pl" title="Atak man in the middle – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Ataque man-in-the-middle" href="https://pt.wikipedia.org/wiki/Ataque_man-in-the-middle" hreflang="pt" lang="pt" title="Ataque man-in-the-middle – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Атака посредника" href="https://ru.wikipedia.org/wiki/%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0" hreflang="ru" lang="ru" title="Атака посредника – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sq mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Shqip" data-language-local-name="Albanian" data-title="Sulmi Man-in-the-middle" href="https://sq.wikipedia.org/wiki/Sulmi_Man-in-the-middle" hreflang="sq" lang="sq" title="Sulmi Man-in-the-middle – Albanian">
+             <span>
+              Shqip
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-simple mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Simple English" data-language-local-name="Simple English" data-title="Man-in-the-middle attack" href="https://simple.wikipedia.org/wiki/Man-in-the-middle_attack" hreflang="en-simple" lang="en-simple" title="Man-in-the-middle attack – Simple English">
+             <span>
+              Simple English
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="Finnish" data-title="Väliintulohyökkäys" href="https://fi.wikipedia.org/wiki/V%C3%A4liintulohy%C3%B6kk%C3%A4ys" hreflang="fi" lang="fi" title="Väliintulohyökkäys – Finnish">
+             <span>
+              Suomi
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Tagalog" data-language-local-name="Tagalog" data-title="Pag-atakeng man-in-the-middle" href="https://tl.wikipedia.org/wiki/Pag-atakeng_man-in-the-middle" hreflang="tl" lang="tl" title="Pag-atakeng man-in-the-middle – Tagalog">
+             <span>
+              Tagalog
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Türkçe" data-language-local-name="Turkish" data-title="Aradaki adam saldırısı" href="https://tr.wikipedia.org/wiki/Aradaki_adam_sald%C4%B1r%C4%B1s%C4%B1" hreflang="tr" lang="tr" title="Aradaki adam saldırısı – Turkish">
+             <span>
+              Türkçe
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Атака «людина посередині»" href="https://uk.wikipedia.org/wiki/%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%C2%AB%D0%BB%D1%8E%D0%B4%D0%B8%D0%BD%D0%B0_%D0%BF%D0%BE%D1%81%D0%B5%D1%80%D0%B5%D0%B4%D0%B8%D0%BD%D1%96%C2%BB" hreflang="uk" lang="uk" title="Атака «людина посередині» – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-vi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" data-title="Tấn công xen giữa" href="https://vi.wikipedia.org/wiki/T%E1%BA%A5n_c%C3%B4ng_xen_gi%E1%BB%AFa" hreflang="vi" lang="vi" title="Tấn công xen giữa – Vietnamese">
+             <span>
+              Tiếng Việt
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="中间人攻击" href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB" hreflang="zh" lang="zh" title="中间人攻击 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q554830#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Man-in-the-middle_attack" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Man-in-the-middle_attack" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Man-in-the-middle_attack">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Man-in-the-middle_attack&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Man-in-the-middle_attack">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Man-in-the-middle_attack&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Man-in-the-middle_attack" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Man-in-the-middle_attack" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Man-in-the-middle_attack&amp;oldid=1247114705" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Man-in-the-middle_attack&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Man-in-the-middle_attack&amp;id=1247114705&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMan-in-the-middle_attack">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMan-in-the-middle_attack">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q554830" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Man-in-the-middle_attack&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Man-in-the-middle_attack&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          Not to be confused with
+          <a class="mw-redirect" href="/wiki/Man-in-the-Mobile" title="Man-in-the-Mobile">
+           Man-in-the-Mobile
+          </a>
+          or
+          <a href="/wiki/Meet-in-the-middle_attack" title="Meet-in-the-middle attack">
+           Meet-in-the-middle attack
+          </a>
+          .
+         </div>
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Form of message tampering
+         </div>
+         <p>
+          In
+          <a href="/wiki/Cryptography" title="Cryptography">
+           cryptography
+          </a>
+          and
+          <a href="/wiki/Computer_security" title="Computer security">
+           computer security
+          </a>
+          , a
+          <b>
+           man-in-the-middle
+          </b>
+          <sup class="reference" id="cite_ref-9">
+           <a href="#cite_note-9">
+            <span class="cite-bracket">
+             [
+            </span>
+            a
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          (
+          <b>
+           MITM
+          </b>
+          )
+          <b>
+           attack
+          </b>
+          , or
+          <b>
+           on-path attack
+          </b>
+          , is a
+          <a href="/wiki/Cyberattack" title="Cyberattack">
+           cyberattack
+          </a>
+          where the attacker secretly relays and possibly alters the
+          <a href="/wiki/Data_communication" title="Data communication">
+           communications
+          </a>
+          between two parties who believe that they are directly communicating with each other, as the attacker has inserted themselves between the two user parties.
+          <sup class="reference" id="cite_ref-10">
+           <a href="#cite_note-10">
+            <span class="cite-bracket">
+             [
+            </span>
+            9
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          One example of a MITM attack is active
+          <a href="/wiki/Network_eavesdropping" title="Network eavesdropping">
+           eavesdropping
+          </a>
+          , in which the attacker makes independent connections with the victims and relays messages between them to make them believe they are talking directly to each other over a private connection, when in fact the entire conversation is controlled by the attacker.
+          <sup class="reference" id="cite_ref-11">
+           <a href="#cite_note-11">
+            <span class="cite-bracket">
+             [
+            </span>
+            10
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          In this scenario, the attacker must be able to intercept all relevant messages passing between the two victims and inject new ones. This is straightforward in many circumstances; for example, an attacker within range of a
+          <a href="/wiki/Wireless_access_point" title="Wireless access point">
+           Wi-Fi access point
+          </a>
+          hosting a network without encryption could insert themselves as a man in the middle.
+          <sup class="reference" id="cite_ref-:0_12-0">
+           <a href="#cite_note-:0-12">
+            <span class="cite-bracket">
+             [
+            </span>
+            11
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-:1_13-0">
+           <a href="#cite_note-:1-13">
+            <span class="cite-bracket">
+             [
+            </span>
+            12
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-14">
+           <a href="#cite_note-14">
+            <span class="cite-bracket">
+             [
+            </span>
+            13
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          As it aims to circumvent mutual authentication, a MITM attack can succeed only when the attacker impersonates each endpoint sufficiently well to satisfy their expectations. Most cryptographic protocols include some form of endpoint authentication specifically to prevent MITM attacks. For example,
+          <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">
+           TLS
+          </a>
+          can authenticate one or both parties using a mutually trusted
+          <a href="/wiki/Certificate_authority" title="Certificate authority">
+           certificate authority
+          </a>
+          .
+          <sup class="reference" id="cite_ref-:2_15-0">
+           <a href="#cite_note-:2-15">
+            <span class="cite-bracket">
+             [
+            </span>
+            14
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-:1_13-1">
+           <a href="#cite_note-:1-13">
+            <span class="cite-bracket">
+             [
+            </span>
+            12
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Example">
+            Example
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit&amp;section=1" title="Edit section: Example">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <figure typeof="mw:File/Thumb">
+           <a class="mw-file-description" href="/wiki/File:Man_in_the_middle_attack.svg">
+            <img class="mw-file-element" data-file-height="747" data-file-width="1052" decoding="async" height="156" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Man_in_the_middle_attack.svg/220px-Man_in_the_middle_attack.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Man_in_the_middle_attack.svg/330px-Man_in_the_middle_attack.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Man_in_the_middle_attack.svg/440px-Man_in_the_middle_attack.svg.png 2x" width="220"/>
+           </a>
+           <figcaption>
+            An illustration of the man-in-the-middle attack
+           </figcaption>
+          </figure>
+          <p>
+           Suppose
+           <a href="/wiki/Alice_and_Bob" title="Alice and Bob">
+            Alice
+           </a>
+           wishes to communicate with
+           <a href="/wiki/Alice_and_Bob" title="Alice and Bob">
+            Bob
+           </a>
+           . Meanwhile,
+           <a href="/wiki/Alice_and_Bob#Mallory" title="Alice and Bob">
+            Mallory
+           </a>
+           wishes to intercept the conversation to eavesdrop (breaking confidentiality) with the option to deliver a false message to Bob under the guise of Alice (breaking non-repudiation). Mallory would perform a man-in-the-middle attack as described in the following sequence of events.
+          </p>
+          <ol>
+           <li>
+            Alice sends a message to Bob, which is intercepted by Mallory:
+            <dl>
+             <dd>
+              <span style="color:green;">
+               Alice
+              </span>
+              <i>
+               "Hi Bob, it's Alice. Give me your key."
+              </i>
+              →
+              <span style="color:red;">
+               Mallory
+              </span>
+              <span style="color:green;">
+               Bob
+              </span>
+             </dd>
+            </dl>
+           </li>
+           <li>
+            Mallory relays this message to Bob; Bob cannot tell it is not really from Alice:
+            <dl>
+             <dd>
+              <span style="color:green;">
+               Alice
+              </span>
+              <span style="color:red;">
+               Mallory
+              </span>
+              <i>
+               "Hi Bob, it's Alice. Give me your key."
+              </i>
+              →
+              <span style="color:green;">
+               Bob
+              </span>
+             </dd>
+            </dl>
+           </li>
+           <li>
+            Bob responds with his encryption key:
+            <dl>
+             <dd>
+              <span style="color:green;">
+               Alice
+              </span>
+              <span style="color:red;">
+               Mallory
+              </span>
+              ←
+              <i>
+               [Bob's key]
+              </i>
+              <span style="color:green;">
+               Bob
+              </span>
+             </dd>
+            </dl>
+           </li>
+           <li>
+            Mallory replaces Bob's key with her own, and relays this to Alice, claiming that it is Bob's key:
+            <dl>
+             <dd>
+              <span style="color:green;">
+               Alice
+              </span>
+              ←
+              <i>
+               [Mallory's key]
+              </i>
+              <span style="color:red;">
+               Mallory
+              </span>
+              <span style="color:green;">
+               Bob
+              </span>
+             </dd>
+            </dl>
+           </li>
+           <li>
+            Alice encrypts a message with what she believes to be Bob's key, thinking that only Bob can read it:
+            <dl>
+             <dd>
+              <span style="color:green;">
+               Alice
+              </span>
+              <i>
+               "Meet me at the bus stop!" [encrypted with Mallory's key]
+              </i>
+              →
+              <span style="color:red;">
+               Mallory
+              </span>
+              <span style="color:green;">
+               Bob
+              </span>
+             </dd>
+            </dl>
+           </li>
+           <li>
+            However, because it was actually encrypted with Mallory's key, Mallory can decrypt it, read it, modify it (if desired), re-encrypt with Bob's key, and forward it to Bob:
+            <dl>
+             <dd>
+              <span style="color:green;">
+               Alice
+              </span>
+              <span style="color:red;">
+               Mallory
+              </span>
+              <i>
+               "Meet me at the park!" [encrypted with Bob's key]
+              </i>
+              →
+              <span style="color:green;">
+               Bob
+              </span>
+             </dd>
+            </dl>
+           </li>
+           <li>
+            Bob thinks that this message is a secure communication from Alice.
+           </li>
+          </ol>
+          <p>
+           This example shows the need for Alice and Bob to have a means to ensure that they are truly each using each other's public keys, and not the public key of an attacker.
+           <sup class="reference" id="cite_ref-16">
+            <a href="#cite_note-16">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Otherwise, such attacks are generally possible, in principle, against any message sent using public-key technology.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Defense_and_detection">
+            Defense and detection
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit&amp;section=2" title="Edit section: Defense and detection">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           MITM attacks can be prevented or detected by two means: authentication and tamper detection. Authentication provides some degree of certainty that a given message has come from a legitimate source.
+           <a href="/wiki/Tamper-evident_technology#Computer_systems" title="Tamper-evident technology">
+            Tamper detection
+           </a>
+           merely shows evidence that a message may have been altered.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Authentication">
+            Authentication
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit&amp;section=3" title="Edit section: Authentication">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           All cryptographic systems that are secure against MITM attacks provide some method of authentication for messages. Most require an exchange of information (such as public keys) in addition to the message over a
+           <a href="/wiki/Secure_channel" title="Secure channel">
+            secure channel
+           </a>
+           . Such protocols, often using
+           <a href="/wiki/Key-agreement_protocol" title="Key-agreement protocol">
+            key-agreement protocols
+           </a>
+           , have been developed with different security requirements for the secure channel, though some have attempted to remove the requirement for any secure channel at all.
+           <sup class="reference" id="cite_ref-Merkle_1978_17-0">
+            <a href="#cite_note-Merkle_1978-17">
+             <span class="cite-bracket">
+              [
+             </span>
+             16
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           A
+           <a href="/wiki/Public_key_infrastructure" title="Public key infrastructure">
+            public key infrastructure
+           </a>
+           , such as
+           <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">
+            Transport Layer Security
+           </a>
+           , may harden
+           <a href="/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">
+            Transmission Control Protocol
+           </a>
+           against MITM attacks. In such structures, clients and servers exchange certificates which are issued and verified by a trusted third party called a
+           <a href="/wiki/Certificate_authority" title="Certificate authority">
+            certificate authority
+           </a>
+           (CA). If the original key to authenticate this CA has not been itself the subject of a MITM attack, then the certificates issued by the CA may be used to authenticate the messages sent by the owner of that certificate. Use of
+           <a href="/wiki/Mutual_authentication" title="Mutual authentication">
+            mutual authentication
+           </a>
+           , in which both the server and the client validate the other's communication, covers both ends of a MITM attack. If the server or client's identity is not verified or deemed as invalid, the session will end.
+           <sup class="reference" id="cite_ref-18">
+            <a href="#cite_note-18">
+             <span class="cite-bracket">
+              [
+             </span>
+             17
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           However, the default behavior of most connections is to only authenticate the server, which means mutual authentication is not always employed and MITM attacks can still occur.
+          </p>
+          <p>
+           Attestments, such as verbal communications of a shared value (as in
+           <a href="/wiki/ZRTP" title="ZRTP">
+            ZRTP
+           </a>
+           ), or recorded attestments such as audio/visual recordings of a public key hash
+           <sup class="reference" id="cite_ref-19">
+            <a href="#cite_note-19">
+             <span class="cite-bracket">
+              [
+             </span>
+             18
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           are used to ward off MITM attacks, as visual media is much more difficult and time-consuming to imitate than simple data packet communication. However, these methods require a human in the loop in order to successfully initiate the transaction.
+          </p>
+          <p>
+           <a href="/wiki/HTTP_Public_Key_Pinning" title="HTTP Public Key Pinning">
+            HTTP Public Key Pinning
+           </a>
+           (HPKP), sometimes called "certificate pinning", helps prevent a MITM attack in which the certificate authority itself is compromised, by having the server provide a list of "pinned" public key hashes during the first transaction. Subsequent transactions then require one or more of the keys in the list must be used by the server in order to authenticate that transaction.
+          </p>
+          <p>
+           <a href="/wiki/Domain_Name_System_Security_Extensions" title="Domain Name System Security Extensions">
+            DNSSEC
+           </a>
+           extends the DNS protocol to use signatures to authenticate DNS records, preventing simple MITM attacks from directing a client to a malicious
+           <a href="/wiki/IP_address" title="IP address">
+            IP address
+           </a>
+           .
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Tamper_detection">
+            Tamper detection
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit&amp;section=4" title="Edit section: Tamper detection">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Latency examination can potentially detect the attack in certain situations,
+           <sup class="reference" id="cite_ref-20">
+            <a href="#cite_note-20">
+             <span class="cite-bracket">
+              [
+             </span>
+             19
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           such as with long calculations that lead into tens of seconds like
+           <a href="/wiki/Cryptographic_hash_function" title="Cryptographic hash function">
+            hash functions
+           </a>
+           . To detect potential attacks, parties check for discrepancies in response times. For example: Say that two parties normally take a certain amount of time to perform a particular transaction. If one transaction, however, were to take an abnormal length of time to reach the other party, this could be indicative of a third party's interference inserting additional latency in the transaction.
+          </p>
+          <p>
+           <a href="/wiki/Quantum_cryptography" title="Quantum cryptography">
+            Quantum cryptography
+           </a>
+           , in theory, provides tamper-evidence for transactions through the
+           <a href="/wiki/No-cloning_theorem" title="No-cloning theorem">
+            no-cloning theorem
+           </a>
+           . Protocols based on quantum cryptography typically authenticate part or all of their classical communication with an unconditionally secure authentication scheme. As an example
+           <a class="new" href="/w/index.php?title=Wegman-Carter_authentication&amp;action=edit&amp;redlink=1" title="Wegman-Carter authentication (page does not exist)">
+            Wegman-Carter authentication
+           </a>
+           .
+           <sup class="reference" id="cite_ref-21">
+            <a href="#cite_note-21">
+             <span class="cite-bracket">
+              [
+             </span>
+             20
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Forensic_analysis">
+            Forensic analysis
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit&amp;section=5" title="Edit section: Forensic analysis">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           <a class="mw-redirect" href="/wiki/Packet_capture" title="Packet capture">
+            Captured network traffic
+           </a>
+           from what is suspected to be an attack can be analyzed in order to determine whether there was an attack and, if so, determine the source of the attack. Important evidence to analyze when performing
+           <a href="/wiki/Network_forensics" title="Network forensics">
+            network forensics
+           </a>
+           on a suspected attack includes:
+           <sup class="reference" id="cite_ref-22">
+            <a href="#cite_note-22">
+             <span class="cite-bracket">
+              [
+             </span>
+             21
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <ul>
+           <li>
+            IP address of the server
+           </li>
+           <li>
+            DNS name of the server
+           </li>
+           <li>
+            <a href="/wiki/X.509" title="X.509">
+             X.509
+            </a>
+            certificate of the server
+            <ul>
+             <li>
+              Whether the certificate has been self signed
+             </li>
+             <li>
+              Whether the  certificate has been signed by a trusted
+              <a href="/wiki/Certificate_authority" title="Certificate authority">
+               certificate authority
+              </a>
+             </li>
+             <li>
+              Whether the certificate has been
+              <a href="/wiki/Certificate_revocation" title="Certificate revocation">
+               revoked
+              </a>
+             </li>
+             <li>
+              Whether the certificate has been changed recently
+             </li>
+             <li>
+              Whether other clients, elsewhere on the Internet, received the same certificate
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Notable_instances">
+            Notable instances
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit&amp;section=6" title="Edit section: Notable instances">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           A
+           <a href="/wiki/Stingray_phone_tracker" title="Stingray phone tracker">
+            Stingray phone tracker
+           </a>
+           is a
+           <a class="mw-redirect" href="/wiki/Cellular_phone" title="Cellular phone">
+            cellular phone
+           </a>
+           surveillance device that mimics a wireless carrier cell tower in order to force all nearby mobile phones and other cellular data devices to connect to it. The tracker relays all communications back and forth between cellular phones and cell towers.
+           <sup class="reference" id="cite_ref-wired-sting_23-0">
+            <a href="#cite_note-wired-sting-23">
+             <span class="cite-bracket">
+              [
+             </span>
+             22
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           In 2011, a security breach of the Dutch certificate authority
+           <a href="/wiki/DigiNotar" title="DigiNotar">
+            DigiNotar
+           </a>
+           resulted in the fraudulent issuing of
+           <a href="/wiki/Public_key_certificate" title="Public key certificate">
+            certificates
+           </a>
+           . Subsequently, the fraudulent certificates were used to perform MITM attacks.
+           <sup class="reference" id="cite_ref-24">
+            <a href="#cite_note-24">
+             <span class="cite-bracket">
+              [
+             </span>
+             23
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           In 2013,
+           <a href="/wiki/Nokia" title="Nokia">
+            Nokia
+           </a>
+           's
+           <a class="mw-redirect" href="/wiki/Xpress_Browser" title="Xpress Browser">
+            Xpress Browser
+           </a>
+           was revealed to be decrypting HTTPS traffic on Nokia's
+           <a href="/wiki/Proxy_server" title="Proxy server">
+            proxy servers
+           </a>
+           , giving the company
+           <a class="mw-redirect" href="/wiki/Clear_text" title="Clear text">
+            clear text
+           </a>
+           access to its customers' encrypted browser traffic. Nokia responded by saying that the content was not stored permanently, and that the company had organizational and technical measures to prevent access to private information.
+           <sup class="reference" id="cite_ref-25">
+            <a href="#cite_note-25">
+             <span class="cite-bracket">
+              [
+             </span>
+             24
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           In 2017,
+           <a href="/wiki/Equifax#2017_withdrawal_of_vulnerable_mobile_apps" title="Equifax">
+            Equifax
+           </a>
+           withdrew its mobile phone apps following concern about MITM vulnerabilities.
+           <sup class="reference" id="cite_ref-26">
+            <a href="#cite_note-26">
+             <span class="cite-bracket">
+              [
+             </span>
+             25
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           <a href="/wiki/Bluetooth" title="Bluetooth">
+            Bluetooth
+           </a>
+           , a wireless communication protocol, has also been susceptible to man-in-the-middle attacks due to its wireless transmission of data.
+           <sup class="reference" id="cite_ref-27">
+            <a href="#cite_note-27">
+             <span class="cite-bracket">
+              [
+             </span>
+             26
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Other notable real-life implementations include the following:
+          </p>
+          <ul>
+           <li>
+            <a href="/wiki/DSniff" title="DSniff">
+             DSniff
+            </a>
+            –  the first public implementation of MITM attacks against SSL and SSHv1
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Fiddler_(software)" title="Fiddler (software)">
+             Fiddler2
+            </a>
+            HTTP(S) diagnostic tool
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/NSA" title="NSA">
+             NSA
+            </a>
+            impersonation of
+            <a href="/wiki/Google" title="Google">
+             Google
+            </a>
+            <sup class="reference" id="cite_ref-28">
+             <a href="#cite_note-28">
+              <span class="cite-bracket">
+               [
+              </span>
+              27
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            <a href="/wiki/Superfish" title="Superfish">
+             Superfish
+            </a>
+            malware
+           </li>
+           <li>
+            <a href="/wiki/Forcepoint" title="Forcepoint">
+             Forcepoint
+            </a>
+            Content Gateway –  used to perform inspection of SSL traffic at the
+            <a href="/wiki/Proxy_server" title="Proxy server">
+             proxy
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Comcast" title="Comcast">
+             Comcast
+            </a>
+            uses MITM attacks to inject JavaScript code to 3rd party web pages, showing their own ads and messages on top of the pages
+            <sup class="reference" id="cite_ref-29">
+             <a href="#cite_note-29">
+              <span class="cite-bracket">
+               [
+              </span>
+              28
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="reference" id="cite_ref-:2_15-1">
+             <a href="#cite_note-:2-15">
+              <span class="cite-bracket">
+               [
+              </span>
+              14
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="reference" id="cite_ref-:0_12-1">
+             <a href="#cite_note-:0-12">
+              <span class="cite-bracket">
+               [
+              </span>
+              11
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            2015
+            <a href="/wiki/Kazakhstan_man-in-the-middle_attack" title="Kazakhstan man-in-the-middle attack">
+             Kazakhstan man-in-the-middle attack
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit&amp;section=7" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1184024115">
+           .mw-parser-output .div-col{margin-top:0.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:1px solid #aaa}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column}
+          </style>
+          <div class="div-col" style="column-width: 30em;">
+           <ul>
+            <li>
+             <a href="/wiki/ARP_spoofing" title="ARP spoofing">
+              ARP spoofing
+             </a>
+             – a technique by which an attacker sends Address Resolution Protocol messages onto a local area network
+            </li>
+            <li>
+             <a href="/wiki/Aspidistra_(transmitter)" title="Aspidistra (transmitter)">
+              Aspidistra transmitter
+             </a>
+             –  a British radio transmitter used for World War II "intrusion" operations, an early MITM attack.
+            </li>
+            <li>
+             <a href="/wiki/Babington_Plot" title="Babington Plot">
+              Babington Plot
+             </a>
+             –  the plot against Elizabeth I of England, where Francis Walsingham intercepted the correspondence.
+            </li>
+            <li>
+             <a href="/wiki/Computer_security" title="Computer security">
+              Computer security
+             </a>
+             –  the design of secure computer systems.
+            </li>
+            <li>
+             <a class="mw-redirect" href="/wiki/Cookiemonster_attack" title="Cookiemonster attack">
+              Cookiemonster attack
+             </a>
+             –  a man-in-the-middle exploit.
+            </li>
+            <li>
+             <a href="/wiki/Cryptanalysis" title="Cryptanalysis">
+              Cryptanalysis
+             </a>
+             –  the art of deciphering encrypted messages with incomplete knowledge of how they were encrypted.
+            </li>
+            <li>
+             <a href="/wiki/Digital_signature" title="Digital signature">
+              Digital signature
+             </a>
+             –  a cryptographic guarantee of the authenticity of a text, usually the result of a calculation only the author is expected to be able to perform.
+            </li>
+            <li>
+             <a href="/wiki/Evil_maid_attack" title="Evil maid attack">
+              Evil maid attack
+             </a>
+             –  attack used against full disk encryption systems
+            </li>
+            <li>
+             <a href="/wiki/Interlock_protocol" title="Interlock protocol">
+              Interlock protocol
+             </a>
+             –  a specific protocol to circumvent a MITM attack when the keys may have been compromised.
+            </li>
+            <li>
+             <a href="/wiki/Key_management" title="Key management">
+              Key management
+             </a>
+             –  how to manage cryptographic keys, including generation, exchange and storage.
+            </li>
+            <li>
+             <a href="/wiki/Key-agreement_protocol" title="Key-agreement protocol">
+              Key-agreement protocol
+             </a>
+             –  a cryptographic protocol for establishing a key in which both parties can have confidence.
+            </li>
+            <li>
+             <a href="/wiki/Man-in-the-browser" title="Man-in-the-browser">
+              Man-in-the-browser
+             </a>
+             –  a type of web browser MITM
+            </li>
+            <li>
+             <a href="/wiki/Man-on-the-side_attack" title="Man-on-the-side attack">
+              Man-on-the-side attack
+             </a>
+             –  a similar attack, giving only regular access to a communication channel.
+            </li>
+            <li>
+             <a href="/wiki/Mutual_authentication" title="Mutual authentication">
+              Mutual authentication
+             </a>
+             –  how communicating parties establish confidence in one another's identities.
+            </li>
+            <li>
+             <a href="/wiki/Password-authenticated_key_agreement" title="Password-authenticated key agreement">
+              Password-authenticated key agreement
+             </a>
+             –  a protocol for establishing a key using a password.
+            </li>
+            <li>
+             <a href="/wiki/Quantum_cryptography" title="Quantum cryptography">
+              Quantum cryptography
+             </a>
+             –  the use of quantum mechanics to provide security in cryptography.
+            </li>
+            <li>
+             <a href="/wiki/Secure_channel" title="Secure channel">
+              Secure channel
+             </a>
+             –  a way of communicating resistant to interception and tampering.
+            </li>
+            <li>
+             <a href="/wiki/Spoofing_attack" title="Spoofing attack">
+              Spoofing attack
+             </a>
+             – Cyber attack in which a person or program successfully masquerades as another by falsifying data
+            </li>
+            <li>
+             <a href="/wiki/Terrapin_attack" title="Terrapin attack">
+              Terrapin attack
+             </a>
+             –  a downgrade attack on the
+             <a class="mw-redirect" href="/wiki/Ssh" title="Ssh">
+              ssh
+             </a>
+             protocol that requires an adversary with a man-in-the-middle position.
+            </li>
+           </ul>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Notes">
+            Notes
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit&amp;section=8" title="Edit section: Notes">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist reflist-lower-alpha">
+           <div class="mw-references-wrap">
+            <ol class="references">
+             <li id="cite_note-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-9">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               Also known as a
+               <i>
+                monster-in-the-middle
+               </i>
+               ,
+               <sup class="reference" id="cite_ref-cloudflare_1-0">
+                <a href="#cite_note-cloudflare-1">
+                 <span class="cite-bracket">
+                  [
+                 </span>
+                 1
+                 <span class="cite-bracket">
+                  ]
+                 </span>
+                </a>
+               </sup>
+               <sup class="reference" id="cite_ref-ifs_2-0">
+                <a href="#cite_note-ifs-2">
+                 <span class="cite-bracket">
+                  [
+                 </span>
+                 2
+                 <span class="cite-bracket">
+                  ]
+                 </span>
+                </a>
+               </sup>
+               <i>
+                machine-in-the-middle
+               </i>
+               ,
+               <sup class="reference" id="cite_ref-3">
+                <a href="#cite_note-3">
+                 <span class="cite-bracket">
+                  [
+                 </span>
+                 3
+                 <span class="cite-bracket">
+                  ]
+                 </span>
+                </a>
+               </sup>
+               <i>
+                meddler-in-the-middle
+               </i>
+               ,
+               <sup class="reference" id="cite_ref-4">
+                <a href="#cite_note-4">
+                 <span class="cite-bracket">
+                  [
+                 </span>
+                 4
+                 <span class="cite-bracket">
+                  ]
+                 </span>
+                </a>
+               </sup>
+               <i>
+                manipulator-in-the-middle
+               </i>
+               ,
+               <sup class="reference" id="cite_ref-5">
+                <a href="#cite_note-5">
+                 <span class="cite-bracket">
+                  [
+                 </span>
+                 5
+                 <span class="cite-bracket">
+                  ]
+                 </span>
+                </a>
+               </sup>
+               <sup class="reference" id="cite_ref-6">
+                <a href="#cite_note-6">
+                 <span class="cite-bracket">
+                  [
+                 </span>
+                 6
+                 <span class="cite-bracket">
+                  ]
+                 </span>
+                </a>
+               </sup>
+               <i>
+                person-in-the-middle
+               </i>
+               <sup class="reference" id="cite_ref-7">
+                <a href="#cite_note-7">
+                 <span class="cite-bracket">
+                  [
+                 </span>
+                 7
+                 <span class="cite-bracket">
+                  ]
+                 </span>
+                </a>
+               </sup>
+               (
+               <i>
+                PITM
+               </i>
+               ), or
+               <i>
+                adversary-in-the-middle
+               </i>
+               <sup class="reference" id="cite_ref-8">
+                <a href="#cite_note-8">
+                 <span class="cite-bracket">
+                  [
+                 </span>
+                 8
+                 <span class="cite-bracket">
+                  ]
+                 </span>
+                </a>
+               </sup>
+               (
+               <i>
+                AITM
+               </i>
+               ) attack.
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit&amp;section=9" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1239543626" rel="mw-deduplicated-inline-style"/>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-cloudflare-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-cloudflare_1-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation web cs1" id="CITEREFGabbi_FisherLuke_Valenta2019">
+                Gabbi Fisher; Luke Valenta (March 18, 2019).
+                <a class="external text" href="https://blog.cloudflare.com/monsters-in-the-middleboxes/" rel="nofollow">
+                 "Monsters in the Middleboxes: Introducing Two New Tools for Detecting HTTPS Interception"
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Monsters+in+the+Middleboxes%3A+Introducing+Two+New+Tools+for+Detecting+HTTPS+Interception&amp;rft.date=2019-03-18&amp;rft.au=Gabbi+Fisher&amp;rft.au=Luke+Valenta&amp;rft_id=https%3A%2F%2Fblog.cloudflare.com%2Fmonsters-in-the-middleboxes%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-ifs-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-ifs_2-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation thesis cs1" id="CITEREFFassl2018">
+                Fassl, Matthias (April 23, 2018).
+                <a class="external text" href="https://sec.cs.univie.ac.at/fileadmin/user_upload/i_sec/docs/teaching/thesis/mfassl_usable_authentication_ceremonies.pdf" rel="nofollow">
+                 <i>
+                  Usable Authentication Ceremonies in Secure Instant Messaging
+                 </i>
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                (Dipl.-Ing.). Technische Universität Wien.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adissertation&amp;rft.title=Usable+Authentication+Ceremonies+in+Secure+Instant+Messaging&amp;rft.inst=Technische+Universit%C3%A4t+Wien&amp;rft.date=2018-04-23&amp;rft.aulast=Fassl&amp;rft.aufirst=Matthias&amp;rft_id=https%3A%2F%2Fsec.cs.univie.ac.at%2Ffileadmin%2Fuser_upload%2Fi_sec%2Fdocs%2Fteaching%2Fthesis%2Fmfassl_usable_authentication_ceremonies.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.internetsociety.org/resources/doc/2020/fact-sheet-machine-in-the-middle-attacks/" rel="nofollow">
+                 "Fact Sheet: Machine-in-the-Middle Attacks"
+                </a>
+                .
+                <a href="/wiki/Internet_Society" title="Internet Society">
+                 Internet Society
+                </a>
+                . March 24, 2020.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Fact+Sheet%3A+Machine-in-the-Middle+Attacks&amp;rft.pub=Internet+Society&amp;rft.date=2020-03-24&amp;rft_id=https%3A%2F%2Fwww.internetsociety.org%2Fresources%2Fdoc%2F2020%2Ffact-sheet-machine-in-the-middle-attacks%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation conference cs1" id="CITEREFPoddebniakIsingBöckSchinzel2021">
+                Poddebniak, Damian; Ising, Fabian; Böck, Hanno; Schinzel, Sebastian (August 13, 2021).
+                <a class="external text" href="https://www.usenix.org/system/files/sec21-poddebniak.pdf" rel="nofollow">
+                 <i>
+                  Why TLS Is Better Without STARTTLS: A Security Analysis of STARTTLS in the Email Context
+                 </i>
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <a class="external text" href="https://www.usenix.org/conference/usenixsecurity21/technical-sessions" rel="nofollow">
+                 30th USENIX Security Symposium
+                </a>
+                . p. 4366.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-1-939133-24-3" title="Special:BookSources/978-1-939133-24-3">
+                 <bdi>
+                  978-1-939133-24-3
+                 </bdi>
+                </a>
+                .
+                <q>
+                 When a
+                 <i>
+                  Meddler-in-the-Middle (MitM)
+                 </i>
+                 attacker removes the
+                 <a class="mw-redirect" href="/wiki/STARTTLS" title="STARTTLS">
+                  STARTTLS
+                 </a>
+                 capability from the server response, they can easily downgrade the connection to plaintext.
+                </q>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Why+TLS+Is+Better+Without+STARTTLS%3A+A+Security+Analysis+of+STARTTLS+in+the+Email+Context&amp;rft.pages=4366&amp;rft.date=2021-08-13&amp;rft.isbn=978-1-939133-24-3&amp;rft.aulast=Poddebniak&amp;rft.aufirst=Damian&amp;rft.au=Ising%2C+Fabian&amp;rft.au=B%C3%B6ck%2C+Hanno&amp;rft.au=Schinzel%2C+Sebastian&amp;rft_id=https%3A%2F%2Fwww.usenix.org%2Fsystem%2Ffiles%2Fsec21-poddebniak.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://owasp.org/www-community/attacks/Manipulator-in-the-middle_attack" rel="nofollow">
+                 "Manipulator-in-the-middle attack"
+                </a>
+                .
+                <i>
+                 OWASP Community Pages
+                </i>
+                . OWASP Foundation
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  August 1,
+                 </span>
+                 2022
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=OWASP+Community+Pages&amp;rft.atitle=Manipulator-in-the-middle+attack&amp;rft_id=https%3A%2F%2Fowasp.org%2Fwww-community%2Fattacks%2FManipulator-in-the-middle_attack&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://developer.mozilla.org/en-US/docs/Glossary/MitM" rel="nofollow">
+                 "MitM"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/MDN_Web_Docs" title="MDN Web Docs">
+                  MDN Web Docs
+                 </a>
+                </i>
+                . Mozilla. July 13, 2022
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  August 1,
+                 </span>
+                 2022
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MDN+Web+Docs&amp;rft.atitle=MitM&amp;rft.date=2022-07-13&amp;rft_id=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FGlossary%2FMitM&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.cyber.gov.au/learn-basics/view-resources/glossary" rel="nofollow">
+                 "Person-in-the-middle"
+                </a>
+                . October 11, 2020.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Person-in-the-middle&amp;rft.date=2020-10-11&amp;rft_id=https%3A%2F%2Fwww.cyber.gov.au%2Flearn-basics%2Fview-resources%2Fglossary&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.microsoft.com/security/blog/2022/07/12/from-cookie-theft-to-bec-attackers-use-aitm-phishing-sites-as-entry-point-to-further-financial-fraud/" rel="nofollow">
+                 "From cookie theft to BEC: Attackers use AiTM phishing sites as entry point to further financial fraud"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/Microsoft" title="Microsoft">
+                  Microsoft
+                 </a>
+                </i>
+                . July 12, 2022.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Microsoft&amp;rft.atitle=From+cookie+theft+to+BEC%3A+Attackers+use+AiTM+phishing+sites+as+entry+point+to+further+financial+fraud&amp;rft.date=2022-07-12&amp;rft_id=https%3A%2F%2Fwww.microsoft.com%2Fsecurity%2Fblog%2F2022%2F07%2F12%2Ffrom-cookie-theft-to-bec-attackers-use-aitm-phishing-sites-as-entry-point-to-further-financial-fraud%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFElakratJung2018">
+                Elakrat, Mohamed Abdallah; Jung, Jae Cheon (June 1, 2018).
+                <a class="external text" href="https://doi.org/10.1016%2Fj.net.2018.01.018" rel="nofollow">
+                 "Development of field programmable gate array–based encryption module to mitigate man-in-the-middle attack for nuclear power plant data communication network"
+                </a>
+                .
+                <i>
+                 Nuclear Engineering and Technology
+                </i>
+                .
+                <b>
+                 50
+                </b>
+                (5): 780–787.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://doi.org/10.1016%2Fj.net.2018.01.018" rel="nofollow">
+                  10.1016/j.net.2018.01.018
+                 </a>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Nuclear+Engineering+and+Technology&amp;rft.atitle=Development+of+field+programmable+gate+array%E2%80%93based+encryption+module+to+mitigate+man-in-the-middle+attack+for+nuclear+power+plant+data+communication+network&amp;rft.volume=50&amp;rft.issue=5&amp;rft.pages=780-787&amp;rft.date=2018-06-01&amp;rft_id=info%3Adoi%2F10.1016%2Fj.net.2018.01.018&amp;rft.aulast=Elakrat&amp;rft.aufirst=Mohamed+Abdallah&amp;rft.au=Jung%2C+Jae+Cheon&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1016%252Fj.net.2018.01.018&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-11">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFWangWyglinski2014">
+                Wang, Le; Wyglinski, Alexander M. (October 1, 2014).
+                <a class="external text" href="https://onlinelibrary.wiley.com/doi/10.1002/wcm.2527" rel="nofollow">
+                 "Detection of man-in-the-middle attacks using physical layer wireless security techniques: Man-in-the-middle attacks using physical layer security"
+                </a>
+                .
+                <i>
+                 Wireless Communications and Mobile Computing
+                </i>
+                .
+                <b>
+                 16
+                </b>
+                (4): 408–426.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1002%2Fwcm.2527" rel="nofollow">
+                 10.1002/wcm.2527
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Wireless+Communications+and+Mobile+Computing&amp;rft.atitle=Detection+of+man-in-the-middle+attacks+using+physical+layer+wireless+security+techniques%3A+Man-in-the-middle+attacks+using+physical+layer+security&amp;rft.volume=16&amp;rft.issue=4&amp;rft.pages=408-426&amp;rft.date=2014-10-01&amp;rft_id=info%3Adoi%2F10.1002%2Fwcm.2527&amp;rft.aulast=Wang&amp;rft.aufirst=Le&amp;rft.au=Wyglinski%2C+Alexander+M.&amp;rft_id=https%3A%2F%2Fonlinelibrary.wiley.com%2Fdoi%2F10.1002%2Fwcm.2527&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:0-12">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:0_12-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:0_12-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://thenextweb.com/insights/2017/12/11/comcast-continues-to-inject-its-own-code-into-websites-you-visit/" rel="nofollow">
+                 "Comcast continues to inject its own code into websites you visit"
+                </a>
+                . December 11, 2017.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Comcast+continues+to+inject+its+own+code+into+websites+you+visit&amp;rft.date=2017-12-11&amp;rft_id=https%3A%2F%2Fthenextweb.com%2Finsights%2F2017%2F12%2F11%2Fcomcast-continues-to-inject-its-own-code-into-websites-you-visit%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:1-13">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:1_13-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:1_13-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFCallegatiCerroniRamilli2009">
+                Callegati, Franco; Cerroni, Walter; Ramilli, Marco (2009). "Man-in-the-Middle Attack to the HTTPS Protocol".
+                <i>
+                 IEEE Security &amp; Privacy Magazine
+                </i>
+                .
+                <b>
+                 7
+                </b>
+                : 78–81.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2FMSP.2009.12" rel="nofollow">
+                 10.1109/MSP.2009.12
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:32996015" rel="nofollow">
+                 32996015
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Security+%26+Privacy+Magazine&amp;rft.atitle=Man-in-the-Middle+Attack+to+the+HTTPS+Protocol&amp;rft.volume=7&amp;rft.pages=78-81&amp;rft.date=2009&amp;rft_id=info%3Adoi%2F10.1109%2FMSP.2009.12&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A32996015%23id-name%3DS2CID&amp;rft.aulast=Callegati&amp;rft.aufirst=Franco&amp;rft.au=Cerroni%2C+Walter&amp;rft.au=Ramilli%2C+Marco&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-14">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-14">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFTanmay_Patange2013">
+                Tanmay Patange (November 10, 2013).
+                <a class="external text" href="https://web.archive.org/web/20131124235452/http://hackerspace.lifehacker.com/how-to-defend-yourself-against-mitm-or-man-in-the-middl-1461796382" rel="nofollow">
+                 "How to defend yourself against MITM or Man-in-the-middle attack"
+                </a>
+                . Archived from
+                <a class="external text" href="https://hackerspace.lifehacker.com/how-to-defend-yourself-against-mitm-or-man-in-the-middl-1461796382" rel="nofollow">
+                 the original
+                </a>
+                on November 24, 2013
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  November 25,
+                 </span>
+                 2014
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=How+to+defend+yourself+against+MITM+or+Man-in-the-middle+attack&amp;rft.date=2013-11-10&amp;rft.au=Tanmay+Patange&amp;rft_id=http%3A%2F%2Fhackerspace.lifehacker.com%2Fhow-to-defend-yourself-against-mitm-or-man-in-the-middl-1461796382&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:2-15">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:2_15-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:2_15-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.privateinternetaccess.com/blog/2016/12/comcast-still-uses-mitm-javascript-injection-serve-unwanted-ads-messages/" rel="nofollow">
+                 "Comcast still uses MITM javascript injection to serve unwanted ads and messages"
+                </a>
+                . December 28, 2016.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Comcast+still+uses+MITM+javascript+injection+to+serve+unwanted+ads+and+messages&amp;rft.date=2016-12-28&amp;rft_id=https%3A%2F%2Fwww.privateinternetaccess.com%2Fblog%2F2016%2F12%2Fcomcast-still-uses-mitm-javascript-injection-serve-unwanted-ads-messages%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-16">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-16">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://crypto.stackexchange.com/questions/31224/mitm-on-rsa-public-key-encryption" rel="nofollow">
+                 "diffie hellman - MiTM on RSA public key encryption"
+                </a>
+                .
+                <i>
+                 Cryptography Stack Exchange
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Cryptography+Stack+Exchange&amp;rft.atitle=diffie+hellman+-+MiTM+on+RSA+public+key+encryption&amp;rft_id=https%3A%2F%2Fcrypto.stackexchange.com%2Fquestions%2F31224%2Fmitm-on-rsa-public-key-encryption&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Merkle_1978-17">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Merkle_1978_17-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFMerkle1978">
+                Merkle, Ralph C (April 1978). "Secure Communications Over Insecure Channels".
+                <i>
+                 Communications of the ACM
+                </i>
+                .
+                <b>
+                 21
+                </b>
+                (4): 294–299.
+                <a class="mw-redirect" href="/wiki/CiteSeerX_(identifier)" title="CiteSeerX (identifier)">
+                 CiteSeerX
+                </a>
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.364.5157" rel="nofollow">
+                  10.1.1.364.5157
+                 </a>
+                </span>
+                .
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1145%2F359460.359473" rel="nofollow">
+                 10.1145/359460.359473
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:6967714" rel="nofollow">
+                 6967714
+                </a>
+                .
+                <q>
+                 Received August, 1975; revised September 1977
+                </q>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.atitle=Secure+Communications+Over+Insecure+Channels&amp;rft.volume=21&amp;rft.issue=4&amp;rft.pages=294-299&amp;rft.date=1978-04&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.364.5157%23id-name%3DCiteSeerX&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A6967714%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F359460.359473&amp;rft.aulast=Merkle&amp;rft.aufirst=Ralph+C&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-18">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-18">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               Sasikaladevi, N. and D. Malathi. 2019. “Energy Efficient Lightweight Mutual Authentication Protocol (REAP) for MBAN Based on Genus-2 Hyper-Elliptic Curve.” Wireless Personal Communications 109(4):2471–88.
+              </span>
+             </li>
+             <li id="cite_note-19">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-19">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation arxiv cs1" id="CITEREFHeinrich2013">
+                Heinrich, Stuart (November 28, 2013). "Public Key Infrastructure based on Authentication of Media Attestments".
+                <a class="mw-redirect" href="/wiki/ArXiv_(identifier)" title="ArXiv (identifier)">
+                 arXiv
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://arxiv.org/abs/1311.7182v1" rel="nofollow">
+                  1311.7182v1
+                 </a>
+                </span>
+                [
+                <a class="external text" href="https://arxiv.org/archive/cs.CR" rel="nofollow">
+                 cs.CR
+                </a>
+                ].
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=Public+Key+Infrastructure+based+on+Authentication+of+Media+Attestments&amp;rft.date=2013-11-28&amp;rft_id=info%3Aarxiv%2F1311.7182v1&amp;rft.aulast=Heinrich&amp;rft.aufirst=Stuart&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-20">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-20">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFAzizHamilton2009">
+                Aziz, Benjamin; Hamilton, Geoff (2009).
+                <a class="external text" href="https://researchportal.port.ac.uk/portal/files/107556/Detecting_Man-in-the-Middle_Attacks_by_Precise_Timing.pdf" rel="nofollow">
+                 "Detecting Man-in-the-Middle Attacks by Precise Timing"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 2009 Third International Conference on Emerging Security Information, Systems and Technologies
+                </i>
+                . pp. 81–86.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2FSECURWARE.2009.20" rel="nofollow">
+                 10.1109/SECURWARE.2009.20
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-7695-3668-2" title="Special:BookSources/978-0-7695-3668-2">
+                 <bdi>
+                  978-0-7695-3668-2
+                 </bdi>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:18489395" rel="nofollow">
+                 18489395
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Detecting+Man-in-the-Middle+Attacks+by+Precise+Timing&amp;rft.btitle=2009+Third+International+Conference+on+Emerging+Security+Information%2C+Systems+and+Technologies&amp;rft.pages=81-86&amp;rft.date=2009&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A18489395%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FSECURWARE.2009.20&amp;rft.isbn=978-0-7695-3668-2&amp;rft.aulast=Aziz&amp;rft.aufirst=Benjamin&amp;rft.au=Hamilton%2C+Geoff&amp;rft_id=https%3A%2F%2Fresearchportal.port.ac.uk%2Fportal%2Ffiles%2F107556%2FDetecting_Man-in-the-Middle_Attacks_by_Precise_Timing.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-21">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-21">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFCederlöf">
+                Cederlöf, Jörgen.
+                <a class="external text" href="http://www.lysator.liu.se/~jc/mthesis/5_Unconditionally_secure_au.html" rel="nofollow">
+                 "5. Unconditionally secure authentication"
+                </a>
+                .
+                <i>
+                 liu.se
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=liu.se&amp;rft.atitle=5.+Unconditionally+secure+authentication&amp;rft.aulast=Cederl%C3%B6f&amp;rft.aufirst=J%C3%B6rgen&amp;rft_id=http%3A%2F%2Fwww.lysator.liu.se%2F~jc%2Fmthesis%2F5_Unconditionally_secure_au.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-22">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-22">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.netresec.com/?page=Blog&amp;month=2011-03&amp;post=Network-Forensic-Analysis-of-SSL-MITM-Attacks" rel="nofollow">
+                 "Network Forensic Analysis of SSL MITM Attacks"
+                </a>
+                .
+                <i>
+                 NETRESEC Network Security Blog
+                </i>
+                . March 27, 2011
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  March 27,
+                 </span>
+                 2011
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=NETRESEC+Network+Security+Blog&amp;rft.atitle=Network+Forensic+Analysis+of+SSL+MITM+Attacks&amp;rft.date=2011-03-27&amp;rft_id=http%3A%2F%2Fwww.netresec.com%2F%3Fpage%3DBlog%26month%3D2011-03%26post%3DNetwork-Forensic-Analysis-of-SSL-MITM-Attacks&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-wired-sting-23">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-wired-sting_23-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation magazine cs1" id="CITEREFZetter2014">
+                Zetter, Kim (March 3, 2014).
+                <a class="external text" href="https://www.wired.com/2014/03/stingray/" rel="nofollow">
+                 "Florida Cops' Secret Weapon: Warrantless Cellphone Tracking"
+                </a>
+                .
+                <i>
+                 <a class="mw-redirect" href="/wiki/Wired.com" title="Wired.com">
+                  Wired.com
+                 </a>
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 23,
+                 </span>
+                 2014
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Wired.com&amp;rft.atitle=Florida+Cops%27+Secret+Weapon%3A+Warrantless+Cellphone+Tracking&amp;rft.date=2014-03-03&amp;rft.aulast=Zetter&amp;rft.aufirst=Kim&amp;rft_id=https%3A%2F%2Fwww.wired.com%2F2014%2F03%2Fstingray%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-24">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-24">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation magazine cs1" id="CITEREFZetter2011">
+                Zetter, Kim (September 20, 2011).
+                <a class="external text" href="https://www.wired.com/2011/09/diginotar-bankruptcy/" rel="nofollow">
+                 "DigiNotar Files for Bankruptcy in Wake of Devastating Hack"
+                </a>
+                .
+                <i>
+                 Wired
+                </i>
+                .
+                <a class="mw-redirect" href="/wiki/ISSN_(identifier)" title="ISSN (identifier)">
+                 ISSN
+                </a>
+                <a class="external text" href="https://search.worldcat.org/issn/1059-1028" rel="nofollow">
+                 1059-1028
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  March 22,
+                 </span>
+                 2019
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Wired&amp;rft.atitle=DigiNotar+Files+for+Bankruptcy+in+Wake+of+Devastating+Hack&amp;rft.date=2011-09-20&amp;rft.issn=1059-1028&amp;rft.aulast=Zetter&amp;rft.aufirst=Kim&amp;rft_id=https%3A%2F%2Fwww.wired.com%2F2011%2F09%2Fdiginotar-bankruptcy%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-25">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-25">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFMeyer2013">
+                Meyer, David (January 10, 2013).
+                <a class="external text" href="https://web.archive.org/web/20190408102924/https://gigaom.com/2013/01/10/nokia-yes-we-decrypt-your-https-data-but-dont-worry-about-it/" rel="nofollow">
+                 "Nokia: Yes, we decrypt your HTTPS data, but don't worry about it"
+                </a>
+                . Gigaom, Inc. Archived from
+                <a class="external text" href="http://gigaom.com/2013/01/10/nokia-yes-we-decrypt-your-https-data-but-dont-worry-about-it/" rel="nofollow">
+                 the original
+                </a>
+                on April 8, 2019
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  June 13,
+                 </span>
+                 2014
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Nokia%3A+Yes%2C+we+decrypt+your+HTTPS+data%2C+but+don%27t+worry+about+it&amp;rft.pub=Gigaom%2C+Inc.&amp;rft.date=2013-01-10&amp;rft.aulast=Meyer&amp;rft.aufirst=David&amp;rft_id=http%3A%2F%2Fgigaom.com%2F2013%2F01%2F10%2Fnokia-yes-we-decrypt-your-https-data-but-dont-worry-about-it%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-26">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-26">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFWeissman2017">
+                Weissman, Cale Guthrie (September 15, 2017).
+                <a class="external text" href="https://www.fastcompany.com/40468811/heres-why-equifax-yanked-its-apps-from-apple-and-google-last-week" rel="nofollow">
+                 "Here's Why Equifax Yanked Its Apps From Apple And Google Last Week"
+                </a>
+                .
+                <i>
+                 Fast Company
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Fast+Company&amp;rft.atitle=Here%27s+Why+Equifax+Yanked+Its+Apps+From+Apple+And+Google+Last+Week&amp;rft.date=2017-09-15&amp;rft.aulast=Weissman&amp;rft.aufirst=Cale+Guthrie&amp;rft_id=https%3A%2F%2Fwww.fastcompany.com%2F40468811%2Fheres-why-equifax-yanked-its-apps-from-apple-and-google-last-week&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-27">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-27">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFSandhyaDevi2012">
+                Sandhya, S; Devi, K A Sumithra (February 2012).
+                <a class="external text" href="https://dx.doi.org/10.1109/iccca.2012.6179149" rel="nofollow">
+                 "Analysis of Bluetooth threats and v4.0 security features"
+                </a>
+                .
+                <i>
+                 2012 International Conference on Computing, Communication and Applications
+                </i>
+                . IEEE. pp. 1–4.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2Ficcca.2012.6179149" rel="nofollow">
+                 10.1109/iccca.2012.6179149
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-1-4673-0273-9" title="Special:BookSources/978-1-4673-0273-9">
+                 <bdi>
+                  978-1-4673-0273-9
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Analysis+of+Bluetooth+threats+and+v4.0+security+features&amp;rft.btitle=2012+International+Conference+on+Computing%2C+Communication+and+Applications&amp;rft.pages=1-4&amp;rft.pub=IEEE&amp;rft.date=2012-02&amp;rft_id=info%3Adoi%2F10.1109%2Ficcca.2012.6179149&amp;rft.isbn=978-1-4673-0273-9&amp;rft.aulast=Sandhya&amp;rft.aufirst=S&amp;rft.au=Devi%2C+K+A+Sumithra&amp;rft_id=http%3A%2F%2Fdx.doi.org%2F10.1109%2Ficcca.2012.6179149&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-28">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-28">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFMoyer2013">
+                Moyer, Edward (September 12, 2013).
+                <a class="external text" href="https://www.cnet.com/tech/tech-industry/nsa-disguised-itself-as-google-to-spy-say-reports/" rel="nofollow">
+                 "NSA disguised itself as Google to spy, say reports"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/CNET" title="CNET">
+                  CNET
+                 </a>
+                </i>
+                .
+                <a class="external text" href="https://web.archive.org/web/20130915043654/http://news.cnet.com/8301-13578_3-57602701-38/nsa-disguised-itself-as-google-to-spy-say-reports/" rel="nofollow">
+                 Archived
+                </a>
+                from the original on September 15, 2013
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  May 8,
+                 </span>
+                 2024
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=CNET&amp;rft.atitle=NSA+disguised+itself+as+Google+to+spy%2C+say+reports&amp;rft.date=2013-09-12&amp;rft.aulast=Moyer&amp;rft.aufirst=Edward&amp;rft_id=https%3A%2F%2Fwww.cnet.com%2Ftech%2Ftech-industry%2Fnsa-disguised-itself-as-google-to-spy-say-reports%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-29">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-29">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.techspot.com/news/62887-comcast-using-man-middle-attack-warn-subscribers-potential.html" rel="nofollow">
+                 "Comcast using man-in-the-middle attack to warn subscribers of potential copyright infringement"
+                </a>
+                .
+                <i>
+                 TechSpot
+                </i>
+                . November 23, 2015.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=TechSpot&amp;rft.atitle=Comcast+using+man-in-the-middle+attack+to+warn+subscribers+of+potential+copyright+infringement&amp;rft.date=2015-11-23&amp;rft_id=https%3A%2F%2Fwww.techspot.com%2Fnews%2F62887-comcast-using-man-middle-attack-warn-subscribers-potential.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMan-in-the-middle+attack">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Man-in-the-middle_attack&amp;action=edit&amp;section=10" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="http://www.sans.org/reading-room/whitepapers/analyst/finding-hidden-threats-decrypting-ssl-34840" rel="nofollow">
+             Finding Hidden Threats by Decrypting SSL
+            </a>
+            <a class="external text" href="https://web.archive.org/web/20171018111232/https://www.sans.org/reading-room/whitepapers/analyst/finding-hidden-threats-decrypting-ssl-34840" rel="nofollow">
+             Archived
+            </a>
+            October 18, 2017, at the
+            <a href="/wiki/Wayback_Machine" title="Wayback Machine">
+             Wayback Machine
+            </a>
+            (PDF). SANS Institute.
+           </li>
+          </ul>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Malware_topics" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Malware" title="Template:Malware">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Malware" title="Template talk:Malware">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Malware" title="Special:EditPage/Template:Malware">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Malware_topics" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Malware" title="Malware">
+                 Malware
+                </a>
+                topics
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Infectious malware
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Comparison_of_computer_viruses" title="Comparison of computer viruses">
+                   Comparison of computer viruses
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Computer_virus" title="Computer virus">
+                   Computer virus
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Computer_worm" title="Computer worm">
+                   Computer worm
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/List_of_computer_worms" title="List of computer worms">
+                   List of computer worms
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Timeline_of_computer_viruses_and_worms" title="Timeline of computer viruses and worms">
+                   Timeline of computer viruses and worms
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Concealment
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Backdoor_(computing)" title="Backdoor (computing)">
+                   Backdoor
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Clickjacking" title="Clickjacking">
+                   Clickjacking
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Man-in-the-browser" title="Man-in-the-browser">
+                   Man-in-the-browser
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Man-in-the-middle
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Rootkit" title="Rootkit">
+                   Rootkit
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Trojan_horse_(computing)" title="Trojan horse (computing)">
+                   Trojan horse
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Zombie_(computing)" title="Zombie (computing)">
+                   Zombie computer
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Malware for profit
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Adware" title="Adware">
+                   Adware
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Botnet" title="Botnet">
+                   Botnet
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Crimeware" title="Crimeware">
+                   Crimeware
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Fleeceware" title="Fleeceware">
+                   Fleeceware
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Form_grabbing" title="Form grabbing">
+                   Form grabbing
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Dialer#Fraudulent_dialer" title="Dialer">
+                   Fraudulent dialer
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Infostealer" title="Infostealer">
+                   Infostealer
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Keystroke_logging" title="Keystroke logging">
+                   Keystroke logging
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Internet_bot#Malicious_purposes" title="Internet bot">
+                   Malbot
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Privacy-invasive_software" title="Privacy-invasive software">
+                   Privacy-invasive software
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Ransomware" title="Ransomware">
+                   Ransomware
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Rogue_security_software" title="Rogue security software">
+                   Rogue security software
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Scareware" title="Scareware">
+                   Scareware
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Spyware" title="Spyware">
+                   Spyware
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Web_threat" title="Web threat">
+                   Web threats
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               By operating system
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Category:Android_(operating_system)_malware" title="Category:Android (operating system) malware">
+                   Android malware
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Category:Classic_Mac_OS_viruses" title="Category:Classic Mac OS viruses">
+                   Classic Mac OS viruses
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Category:IOS_malware" title="Category:IOS malware">
+                   iOS malware
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Linux_malware" title="Linux malware">
+                   Linux malware
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Category:MacOS_malware" title="Category:MacOS malware">
+                   MacOS malware
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Macro_virus" title="Macro virus">
+                   Macro virus
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Mobile_malware" title="Mobile malware">
+                   Mobile malware
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Palm_OS_viruses" title="Palm OS viruses">
+                   Palm OS viruses
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/HyperCard_viruses" title="HyperCard viruses">
+                   HyperCard viruses
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Protection
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Anti-keylogger" title="Anti-keylogger">
+                   Anti-keylogger
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Antivirus_software" title="Antivirus software">
+                   Antivirus software
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Browser_security" title="Browser security">
+                   Browser security
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Data_loss_prevention_software" title="Data loss prevention software">
+                   Data loss prevention software
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Defensive_computing" title="Defensive computing">
+                   Defensive computing
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Firewall_(computing)" title="Firewall (computing)">
+                   Firewall
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Internet_security" title="Internet security">
+                   Internet security
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Intrusion_detection_system" title="Intrusion detection system">
+                   Intrusion detection system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Mobile_security" title="Mobile security">
+                   Mobile security
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Network_security" title="Network security">
+                   Network security
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Countermeasures
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Computer_and_network_surveillance" title="Computer and network surveillance">
+                   Computer and network surveillance
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Honeypot_(computing)" title="Honeypot (computing)">
+                   Honeypot
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Operation:_Bot_Roast" title="Operation: Bot Roast">
+                   Operation: Bot Roast
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐f22pr
+Cached time: 20240926232703
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.596 seconds
+Real time usage: 0.692 seconds
+Preprocessor visited node count: 2091/1000000
+Post‐expand include size: 65404/2097152 bytes
+Template argument size: 1512/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 4/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 108231/5000000 bytes
+Lua time usage: 0.418/10.000 seconds
+Lua memory usage: 14910554/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  634.124      1 -total
+ 43.61%  276.563      2 Template:Reflist
+ 23.68%  150.191     16 Template:Cite_web
+ 20.21%  128.174      1 Template:Anl
+ 12.90%   81.822      1 Template:Malware
+ 12.59%   79.842      1 Template:Navbox
+  8.12%   51.501      1 Template:Short_description
+  5.92%   37.558      1 Template:Distinguish
+  4.97%   31.544      4 Template:Cite_journal
+  4.15%   26.342      2 Template:Pagetype
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:144676-0!canonical and timestamp 20240926232703 and revision id 1247114705. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Man-in-the-middle_attack&amp;oldid=1247114705">
+          https://en.wikipedia.org/w/index.php?title=Man-in-the-middle_attack&amp;oldid=1247114705
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Cryptographic_attacks" title="Category:Cryptographic attacks">
+            Cryptographic attacks
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Computer_network_security" title="Category:Computer network security">
+            Computer network security
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Transport_Layer_Security" title="Category:Transport Layer Security">
+            Transport Layer Security
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Use_mdy_dates_from_August_2023" title="Category:Use mdy dates from August 2023">
+            Use mdy dates from August 2023
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">
+            Webarchive template wayback links
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 22 September 2024, at 22:01
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Man-in-the-middle_attack&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-hxxcg","wgBackendResponseTime":146,"wgPageParseReport":{"limitreport":{"cputime":"0.596","walltime":"0.692","ppvisitednodes":{"value":2091,"limit":1000000},"postexpandincludesize":{"value":65404,"limit":2097152},"templateargumentsize":{"value":1512,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":108231,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  634.124      1 -total"," 43.61%  276.563      2 Template:Reflist"," 23.68%  150.191     16 Template:Cite_web"," 20.21%  128.174      1 Template:Anl"," 12.90%   81.822      1 Template:Malware"," 12.59%   79.842      1 Template:Navbox","  8.12%   51.501      1 Template:Short_description","  5.92%   37.558      1 Template:Distinguish","  4.97%   31.544      4 Template:Cite_journal","  4.15%   26.342      2 Template:Pagetype"]},"scribunto":{"limitreport-timeusage":{"value":"0.418","limit":"10.000"},"limitreport-memusage":{"value":14910554,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-f22pr","timestamp":"20240926232703","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Man-in-the-middle attack","url":"https:\/\/en.wikipedia.org\/wiki\/Man-in-the-middle_attack","sameAs":"http:\/\/www.wikidata.org\/entity\/Q554830","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q554830","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-11-06T16:50:14Z","dateModified":"2024-09-22T22:01:43Z","headline":"form of active eavesdropping in which the attacker makes connections with the victims and relays messages between them"}
+  </script>
+ </body>
+</html>
