@@ -1,0 +1,172 @@
+:root {
+  --base-color: #FF60AC;
+  --secondary-color: #E72A90;
+  --doc-title-color: #831349;
+  --link-color: var(--base-color);
+  --text-input-color: #F8F8F8;
+
+  --range-input-background-color: #383838;
+  --range-input-track-height: 4px;
+  --range-input-thumb-size: 16px;
+
+  color: #313131;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.feed {
+  padding: 40px 70px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search_bar {
+  margin: 10px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.ask485 {
+  font-family: Montserrat;
+  font-size: 40px;
+  color: var(--base-color);
+}
+
+.pagerank_weight {
+  font-size: 18px;
+}
+
+.docs {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.doc_title {
+  font-size: 26px;
+  color: var(--doc-title-color);
+  margin: 10px 0;
+}
+
+.doc_url {
+  font-size: 12px;
+  color: var(--link-color);
+}
+
+.doc_summary {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.no_results {
+  padding: 50px;
+  font-size: 26px;
+}
+
+input[type=text] {
+  height: 5vh;
+  width: 70vw;
+  max-width: 800px;
+  margin: 10px 0;
+  padding: 0 10px;
+
+  background: var(--text-input-color);
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  outline-color: var(--base-color);
+
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+
+input[type=submit] {
+  width: 30vw;
+  max-width: 200px;
+  padding: 5px;
+  color: #FFFFFF;
+  background: var(--secondary-color);
+  border-radius: 50px;
+  border-color: transparent;
+
+  font-size: 18px;
+}
+
+/* Range input styling
+   https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/
+ */
+input[type="range"] {
+  width: 200px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* For Chrome, Safari, Opera, and Edge Chromium */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: var(--range-input-background-color);
+  height: var(--range-input-track-height);
+  border-radius: 5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  appearance: none;
+  background-color: var(--secondary-color);
+  border: transparent;
+  height: var(--range-input-thumb-size);
+  width: var(--range-input-thumb-size);
+
+  /* Centers thumb on the track */
+  margin-top: calc(var(--range-input-track-height) / 2 - var(--range-input-thumb-size) / 2);
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+  background: var(--range-input-background-color);
+  height: var(--range-input-track-height);
+  border-radius: 5px;
+}
+
+input[type=range]::-moz-range-thumb {
+  appearance: none;
+  background-color: var(--secondary-color);
+  border: transparent;
+  height: var(--range-input-thumb-size);
+  width: var(--range-input-thumb-size);
+
+  /* Centers thumb on the track */
+  margin-top: calc(var(--range-input-track-height) / 2 - var(--range-input-thumb-size) / 2);
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/* Chrome, Safari, Opera, and Edge Chromium */
+input[type="range"]:focus::-webkit-slider-thumb {
+  border: 1px solid var(--base-color);
+  outline: 3px solid var(--base-color);
+  outline-offset: 0.125rem;
+}
+
+/* Firefox */
+input[type="range"]:focus::-moz-range-thumb {
+  border: 1px solid var(--base-color);
+  outline: 3px solid var(--base-color);
+  outline-offset: 0.125rem;
+}

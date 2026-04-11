@@ -1,0 +1,4 @@
+# Pylint config for the inverted index.
+
+[SIMILARITIES]
+min-similarity-lines=10
