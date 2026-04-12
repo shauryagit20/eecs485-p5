@@ -1,0 +1,61 @@
+#!/bin/bash
+set -Eeuo pipefail
+
+if [ $# -ne 1 ]; then
+  exit 1
+fi
+
+case $1 in
+  "start")
+    echo "starting search server..."
+    if [ ! -f var/search.sqlite3 ]; then
+      echo "Error: can't find search database var/search.sqlite3"
+      echo "Try ./bin/searchdb"
+      exit 1
+    fi
+
+    #check index server
+    if ! ./bin/index status; then
+      echo "Error: index server is not running"
+      echo "Try ./bin/index start"
+      exit 1
+    fi
+
+    if pgrep -f "flask --app search run --host 0.0.0.0 --port 8000" > /dev/null; then
+      echo "Error: search server is already running"
+      exit 1
+    fi
+
+    mkdir -p var/log
+    echo "+ mkdir -p var/log"
+    rm -f var/log/search.log
+    echo "+ rm -f var/log/search.log"
+    flask --app search run --host 0.0.0.0 --port 8000 &> var/log/search.log &
+    echo "+ flask --app search run --host 0.0.0.0 --port 8000 &> var/log/search.log &"
+    exit 0
+    ;;
+
+  "stop")
+    echo "stopping search server..."
+    pkill -f "flask --app search run --host 0.0.0.0 --port 8000" || true
+    echo 'pkill -f "flask --app search run - --host 0.0.0.0 --port 8000" || true'
+    exit 0
+    ;;
+
+  "restart")
+    ./bin/search stop
+    ./bin/search start
+    exit 0
+    ;;
+
+  "status")
+    if pgrep -f "flask --app search run --host 0.0.0.0 --port 8000" > /dev/null; then
+      echo "search server running"
+      exit 0
+    fi
+
+    echo "search server stopped"
+    exit 1
+    ;;
+esac
+
