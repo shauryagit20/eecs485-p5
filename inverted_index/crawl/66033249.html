@@ -1,0 +1,2778 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Porting - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"6a1a4b34-d37d-428c-9c36-c69c484f4e05","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Porting","wgTitle":"Porting","wgCurRevisionId":1236444044,"wgRevisionId":1236444044,"wgArticleId":214804,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Interoperability","Source code"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Porting","wgRelevantArticleId":214804,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Ported","wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":
+{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgInternalRedirectTargetUrl":"/wiki/Porting","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q851989","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,
+"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.cite.ux-enhancements","ext.scribunto.logs","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents"
+,"ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Porting - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//en.m.wikipedia.org/wiki/Porting" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Porting&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Porting" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Ported"/>
+  <meta eecs485_docid="66033249"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Porting rootpage-Porting skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Porting" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Porting" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Porting" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Porting" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Etymology">
+           <a class="vector-toc-link" href="#Etymology">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Etymology
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Etymology-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-History">
+           <a class="vector-toc-link" href="#History">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              History
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-History-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Porting_compilers">
+           <a class="vector-toc-link" href="#Porting_compilers">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Porting compilers
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Porting_compilers-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Porting_of_video_games">
+           <a class="vector-toc-link" href="#Porting_of_video_games">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Porting of video games
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Porting_of_video_games-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Porting
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 26 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-26" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          26 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="إحمال (هندسة برمجيات)" href="https://ar.wikipedia.org/wiki/%D8%A5%D8%AD%D9%85%D8%A7%D9%84_(%D9%87%D9%86%D8%AF%D8%B3%D8%A9_%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA)" hreflang="ar" lang="ar" title="إحمال (هندسة برمجيات) – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Portierung" href="https://de.wikipedia.org/wiki/Portierung" hreflang="de" lang="de" title="Portierung – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-et mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Eesti" data-language-local-name="Estonian" data-title="Portimine" href="https://et.wikipedia.org/wiki/Portimine" hreflang="et" lang="et" title="Portimine – Estonian">
+             <span>
+              Eesti
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Port (informática)" href="https://es.wikipedia.org/wiki/Port_(inform%C3%A1tica)" hreflang="es" lang="es" title="Port (informática) – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="انتقال نرم‌افزار" href="https://fa.wikipedia.org/wiki/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84_%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1" hreflang="fa" lang="fa" title="انتقال نرم‌افزار – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Portage informatique" href="https://fr.wikipedia.org/wiki/Portage_informatique" hreflang="fr" lang="fr" title="Portage informatique – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="이식 (컴퓨팅)" href="https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%8B%9D_(%EC%BB%B4%ED%93%A8%ED%8C%85)" hreflang="ko" lang="ko" title="이식 (컴퓨팅) – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-id mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Bahasa Indonesia" data-language-local-name="Indonesian" data-title="Porting" href="https://id.wikipedia.org/wiki/Porting" hreflang="id" lang="id" title="Porting – Indonesian">
+             <span>
+              Bahasa Indonesia
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Porting" href="https://it.wikipedia.org/wiki/Porting" hreflang="it" lang="it" title="Porting – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="היסב" href="https://he.wikipedia.org/wiki/%D7%94%D7%99%D7%A1%D7%91" hreflang="he" lang="he" title="היסב – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ms mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Bahasa Melayu" data-language-local-name="Malay" data-title="Pengalihan (perisian)" href="https://ms.wikipedia.org/wiki/Pengalihan_(perisian)" hreflang="ms" lang="ms" title="Pengalihan (perisian) – Malay">
+             <span>
+              Bahasa Melayu
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="Porteren" href="https://nl.wikipedia.org/wiki/Porteren" hreflang="nl" lang="nl" title="Porteren – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="移植 (ソフトウェア)" href="https://ja.wikipedia.org/wiki/%E7%A7%BB%E6%A4%8D_(%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2)" hreflang="ja" lang="ja" title="移植 (ソフトウェア) – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-no mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" data-title="Portering" href="https://no.wikipedia.org/wiki/Portering" hreflang="nb" lang="nb" title="Portering – Norwegian Bokmål">
+             <span>
+              Norsk bokmål
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Port (oprogramowanie)" href="https://pl.wikipedia.org/wiki/Port_(oprogramowanie)" hreflang="pl" lang="pl" title="Port (oprogramowanie) – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Portabilidade (informática)" href="https://pt.wikipedia.org/wiki/Portabilidade_(inform%C3%A1tica)" hreflang="pt" lang="pt" title="Portabilidade (informática) – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Портирование программного обеспечения" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F" hreflang="ru" lang="ru" title="Портирование программного обеспечения – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Slovenčina" data-language-local-name="Slovak" data-title="Portovanie" href="https://sk.wikipedia.org/wiki/Portovanie" hreflang="sk" lang="sk" title="Portovanie – Slovak">
+             <span>
+              Slovenčina
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" data-title="Портовање" href="https://sr.wikipedia.org/wiki/%D0%9F%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D0%B0%D1%9A%D0%B5" hreflang="sr" lang="sr" title="Портовање – Serbian">
+             <span>
+              Српски / srpski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="Finnish" data-title="Siirtäminen (ohjelmointi)" href="https://fi.wikipedia.org/wiki/Siirt%C3%A4minen_(ohjelmointi)" hreflang="fi" lang="fi" title="Siirtäminen (ohjelmointi) – Finnish">
+             <span>
+              Suomi
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sv mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Svenska" data-language-local-name="Swedish" data-title="Portering (datorteknik)" href="https://sv.wikipedia.org/wiki/Portering_(datorteknik)" hreflang="sv" lang="sv" title="Portering (datorteknik) – Swedish">
+             <span>
+              Svenska
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Türkçe" data-language-local-name="Turkish" data-title="Uyarlama (yazılım)" href="https://tr.wikipedia.org/wiki/Uyarlama_(yaz%C4%B1l%C4%B1m)" hreflang="tr" lang="tr" title="Uyarlama (yazılım) – Turkish">
+             <span>
+              Türkçe
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Портування" href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" hreflang="uk" lang="uk" title="Портування – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-vi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" data-title="Porting" href="https://vi.wikipedia.org/wiki/Porting" hreflang="vi" lang="vi" title="Porting – Vietnamese">
+             <span>
+              Tiếng Việt
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh-yue mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="粵語" data-language-local-name="Cantonese" data-title="軟件移植" href="https://zh-yue.wikipedia.org/wiki/%E8%BB%9F%E4%BB%B6%E7%A7%BB%E6%A4%8D" hreflang="yue" lang="yue" title="軟件移植 – Cantonese">
+             <span>
+              粵語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="移植 (軟體)" href="https://zh.wikipedia.org/wiki/%E7%A7%BB%E6%A4%8D_(%E8%BB%9F%E9%AB%94)" hreflang="zh" lang="zh" title="移植 (軟體) – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q851989#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Porting" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Porting" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Porting">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Porting&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Porting&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Porting">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Porting&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Porting&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Porting" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Porting" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Porting&amp;oldid=1236444044" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Porting&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Porting&amp;id=1236444044&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPorting">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPorting">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q851989" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Porting&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Porting&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+         <span class="mw-redirectedfrom">
+          (Redirected from
+          <a class="mw-redirect" href="/w/index.php?title=Ported&amp;redirect=no" title="Ported">
+           Ported
+          </a>
+          )
+         </span>
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Process of adapting software to run in other computing environments
+         </div>
+         <p>
+          In
+          <a href="/wiki/Software_engineering" title="Software engineering">
+           software engineering
+          </a>
+          ,
+          <b>
+           porting
+          </b>
+          is the process of adapting
+          <a href="/wiki/Software" title="Software">
+           software
+          </a>
+          for the purpose of achieving some form of execution in a
+          <a href="/wiki/Computing_platform" title="Computing platform">
+           computing environment
+          </a>
+          that is different from the one that a given program (meant for such execution) was originally designed for (e.g., different
+          <a href="/wiki/Central_processing_unit" title="Central processing unit">
+           CPU
+          </a>
+          , operating system, or third party
+          <a class="mw-redirect" href="/wiki/Library_(computer_science)" title="Library (computer science)">
+           library
+          </a>
+          ). The term is also used when software/hardware is changed to make them usable in different environments.
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-2">
+           <a href="#cite_note-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          Software is
+          <a href="/wiki/Software_portability" title="Software portability">
+           <i>
+            portable
+           </i>
+          </a>
+          when the cost of porting it to a new platform is significantly less than the cost of writing it from scratch. The lower the cost of porting software relative to its implementation cost, the more portable it is said to be.
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Etymology">
+            Etymology
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Porting&amp;action=edit&amp;section=1" title="Edit section: Etymology">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The term "port" is derived from the Latin
+           <i>
+            <a class="extiw" href="https://en.wiktionary.org/wiki/port#Etymology_3" title="wikt:port">
+             portāre
+            </a>
+           </i>
+           , meaning "to carry".
+           <sup class="reference" id="cite_ref-3">
+            <a href="#cite_note-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           When code is not compatible with a particular
+           <a href="/wiki/Operating_system" title="Operating system">
+            operating system
+           </a>
+           or
+           <a href="/wiki/Computer_architecture" title="Computer architecture">
+            architecture
+           </a>
+           , the code must be "carried" to the new system.
+          </p>
+          <p>
+           The term is not generally applied to the process of adapting software to run with less memory on the same CPU and operating system.
+          </p>
+          <p>
+           Software developers often claim that the software they write is
+           <i>
+            <a class="mw-redirect" href="/wiki/Portability_(software)" title="Portability (software)">
+             portable
+            </a>
+           </i>
+           , meaning that little effort is needed to adapt it to a new environment. The amount of effort actually needed depends on several factors, including the extent to which the original environment (the
+           <i>
+            source platform
+           </i>
+           ) differs from the new environment (the
+           <i>
+            target platform
+           </i>
+           ), the experience of the original authors in knowing which
+           <a href="/wiki/Programming_language" title="Programming language">
+            programming language
+           </a>
+           constructs and third party library calls are unlikely to be portable, and the amount of effort invested by the original authors in only using portable constructs (platform specific constructs often provide a cheaper solution).
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="History">
+            History
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Porting&amp;action=edit&amp;section=2" title="Edit section: History">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The number of significantly different CPUs and operating systems used on the desktop today is much smaller than in the past. The dominance of the
+           <a href="/wiki/X86" title="X86">
+            x86
+           </a>
+           <a class="mw-redirect" href="/wiki/Instruction_set" title="Instruction set">
+            architecture
+           </a>
+           means that most desktop software is never ported to a different CPU. In that same market, the choice of operating systems has effectively been reduced to three:
+           <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">
+            Microsoft Windows
+           </a>
+           ,
+           <a href="/wiki/MacOS" title="MacOS">
+            macOS
+           </a>
+           , and
+           <a href="/wiki/Linux" title="Linux">
+            Linux
+           </a>
+           . However, in the
+           <a class="mw-redirect" href="/wiki/Embedded_systems" title="Embedded systems">
+            embedded systems
+           </a>
+           and
+           <a href="/wiki/Mobile_computing" title="Mobile computing">
+            mobile
+           </a>
+           markets,
+           <a class="mw-redirect" href="/wiki/Portability_(software)" title="Portability (software)">
+            portability
+           </a>
+           remains a significant issue, with the
+           <a class="mw-redirect" href="/wiki/ARM_architecture" title="ARM architecture">
+            ARM
+           </a>
+           being a widely used alternative.
+          </p>
+          <p>
+           International standards, such as those promulgated by the
+           <a href="/wiki/International_Organization_for_Standardization" title="International Organization for Standardization">
+            ISO
+           </a>
+           , greatly facilitate porting by specifying details of the computing environment in a way that helps reduce differences between different standards-conforming
+           <a class="mw-redirect" href="/wiki/Platform_(computing)" title="Platform (computing)">
+            platforms
+           </a>
+           . Writing software that stays within the bounds specified by these standards represents a practical although nontrivial effort. Porting such a program between two standards-compliant platforms (such as
+           <a href="/wiki/POSIX" title="POSIX">
+            POSIX.1
+           </a>
+           ) can be just a matter of loading the source code and
+           <a class="mw-redirect" href="/wiki/Compiling" title="Compiling">
+            recompiling
+           </a>
+           it on the new platform, but practitioners often find that various minor corrections are required, due to subtle platform differences. Most standards suffer from "gray areas" where differences in interpretation of standards lead to small variations from platform to platform.
+          </p>
+          <p>
+           There also exists an ever-increasing number of tools to facilitate porting, such as the
+           <a href="/wiki/GNU_Compiler_Collection" title="GNU Compiler Collection">
+            GNU Compiler Collection
+           </a>
+           , which provides consistent programming languages on different platforms, and
+           <a class="mw-redirect" href="/wiki/Autotools" title="Autotools">
+            Autotools
+           </a>
+           , which automates the detection of minor variations in the environment and adapts the software accordingly before compilation.
+          </p>
+          <p>
+           The compilers for some
+           <a href="/wiki/High-level_programming_language" title="High-level programming language">
+            high-level programming languages
+           </a>
+           (e.g.
+           <a href="/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">
+            Eiffel
+           </a>
+           ,
+           <a href="/wiki/Esterel" title="Esterel">
+            Esterel
+           </a>
+           ) gain portability by outputting source code in another high level
+           <a class="mw-redirect" href="/wiki/Intermediate_language" title="Intermediate language">
+            intermediate language
+           </a>
+           (such as
+           <a href="/wiki/C_(programming_language)" title="C (programming language)">
+            C
+           </a>
+           ) for which compilers for many platforms are generally available.
+          </p>
+          <p>
+           Two activities related to (but distinct from) porting are
+           <a href="/wiki/Emulator" title="Emulator">
+            emulating
+           </a>
+           and
+           <a class="mw-redirect" href="/wiki/Cross-compiling" title="Cross-compiling">
+            cross-compiling
+           </a>
+           .
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Porting_compilers">
+            Porting compilers
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Porting&amp;action=edit&amp;section=3" title="Edit section: Porting compilers">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Instead of translating directly into
+           <a href="/wiki/Machine_code" title="Machine code">
+            machine code
+           </a>
+           , modern
+           <a class="mw-redirect" href="/wiki/Compilers" title="Compilers">
+            compilers
+           </a>
+           translate to a machine independent
+           <a class="mw-redirect" href="/wiki/Intermediate_code" title="Intermediate code">
+            intermediate code
+           </a>
+           in order to enhance portability of the compiler and minimize design efforts. The intermediate language defines a
+           <i>
+            <a href="/wiki/Virtual_machine" title="Virtual machine">
+             virtual machine
+            </a>
+           </i>
+           that can execute all programs written in the
+           <a class="mw-redirect" href="/wiki/Intermediate_language" title="Intermediate language">
+            intermediate language
+           </a>
+           (a machine is defined by its language and vice versa).
+           <sup class="reference" id="cite_ref-Machinelanguage_4-0">
+            <a href="#cite_note-Machinelanguage-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The intermediate code instructions are translated into equivalent machine code sequences by a
+           <i>
+            code generator
+           </i>
+           to create
+           <a class="mw-redirect" href="/wiki/Executable_code" title="Executable code">
+            executable code
+           </a>
+           . It is also possible to skip the generation of machine code by actually implementing an
+           <a href="/wiki/Interpreter_(computing)" title="Interpreter (computing)">
+            interpreter
+           </a>
+           or
+           <a class="mw-redirect" href="/wiki/Just_in_time_compiler" title="Just in time compiler">
+            JIT
+           </a>
+           for the virtual machine.
+           <sup class="reference" id="cite_ref-5">
+            <a href="#cite_note-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The use of intermediate code enhances portability of the compiler, because only the machine dependent code (the interpreter or the code generator) of the compiler itself needs to be ported to the target machine. The remainder of the compiler can be imported as intermediate code and then further processed by the ported code generator or interpreter, thus producing the compiler software or directly executing the intermediate code on the interpreter. The machine independent part can be developed and
+           <a href="/wiki/Software_testing" title="Software testing">
+            tested
+           </a>
+           on another machine (the
+           <i>
+            host machine
+           </i>
+           ). This greatly reduces design efforts, because the machine independent part needs to be developed only once to create portable intermediate code.
+           <sup class="reference" id="cite_ref-6">
+            <a href="#cite_note-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           An interpreter is less complex and therefore easier to port than a code generator, because it is not able to do code optimizations due to its limited view of the program code (it only sees one instruction at a time, and users need a sequence to do optimization). Some interpreters are extremely easy to port, because they only make minimal assumptions about the instruction set of the underlying hardware. As a result, the virtual machine is even simpler than the target CPU.
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Writing the compiler sources entirely in the programming language the compiler is supposed to translate, makes the following approach, better known as
+           <i>
+            <a href="/wiki/Bootstrapping_(compilers)" title="Bootstrapping (compilers)">
+             compiler bootstrapping
+            </a>
+           </i>
+           , feasible on the target machine:
+          </p>
+          <ol>
+           <li>
+            Port the interpreter. This needs to be coded in
+            <a class="mw-redirect" href="/wiki/Assembly_code" title="Assembly code">
+             assembly code
+            </a>
+            , using an already present
+            <a href="/wiki/Assembly_language" title="Assembly language">
+             assembler
+            </a>
+            on the target.
+           </li>
+           <li>
+            Adapt the source of the code generator to the new machine.
+           </li>
+           <li>
+            Execute the adapted source using the interpreter with the code generator source as input. This will generate the machine code for the code generator.
+           </li>
+          </ol>
+          <p>
+           The difficult part of coding the optimization routines is done using the high-level language instead of the assembly language of the target.
+          </p>
+          <p>
+           According to the designers of the
+           <a href="/wiki/BCPL" title="BCPL">
+            BCPL
+           </a>
+           language, interpreted code (in the BCPL case) is more compact than machine code, typically by a factor of two to one. Interpreted code however runs about ten times slower than compiled code on the same machine.
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The designers of the
+           <a href="/wiki/Java_(programming_language)" title="Java (programming language)">
+            Java programming language
+           </a>
+           try to take advantage of the compactness of interpreted code, because a Java program may need to be transmitted over the Internet before execution can start on the target's
+           <a href="/wiki/Java_virtual_machine" title="Java virtual machine">
+            Java virtual machine
+           </a>
+           (JVM).
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Porting_of_video_games">
+            <span class="anchor" id="Porting_in_gaming">
+            </span>
+            <span class="anchor" id="conversion">
+            </span>
+            Porting of video games
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Porting&amp;action=edit&amp;section=4" title="Edit section: Porting of video games">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1236090951">
+           .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+          </style>
+          <div class="hatnote navigation-not-searchable" role="note">
+           "Video game port" redirects here. For the hardware connector, see
+           <a href="/wiki/Game_port" title="Game port">
+            Game port
+           </a>
+           .
+          </div>
+          <p>
+           Porting is also the term used when a
+           <a href="/wiki/Video_game" title="Video game">
+            video game
+           </a>
+           designed to run on one platform, be it an
+           <a href="/wiki/Arcade_game" title="Arcade game">
+            arcade
+           </a>
+           ,
+           <a href="/wiki/Video_game_console" title="Video game console">
+            video game console
+           </a>
+           , or
+           <a href="/wiki/Personal_computer" title="Personal computer">
+            personal computer
+           </a>
+           , is converted to run on a different platform, perhaps with some minor differences.
+           <sup class="reference" id="cite_ref-Wolf2008_9-0">
+            <a href="#cite_note-Wolf2008-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           From the beginning of video games through to the 1990s, "ports", at the time often known as "conversions", were often not true ports, but rather reworked versions of the games due to the limitations of different systems. For example, the 1982 game
+           <i>
+            <a href="/wiki/The_Hobbit_(1982_video_game)" title="The Hobbit (1982 video game)">
+             The Hobbit
+            </a>
+           </i>
+           , a text adventure augmented with graphic images, has significantly different graphic styles across the range of personal computers that its ports were developed for.
+           <sup class="reference" id="cite_ref-port_vs_conversion_10-0">
+            <a href="#cite_note-port_vs_conversion-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           However, many 21st century video games are developed using software (often in
+           <a href="/wiki/C%2B%2B" title="C++">
+            C++
+           </a>
+           ) that can output code for one or more consoles as well as for a PC without the need for actual porting (instead relying on the common porting of individual component
+           <a class="mw-redirect" href="/wiki/Library_(software)" title="Library (software)">
+            libraries
+           </a>
+           ).
+           <sup class="reference" id="cite_ref-port_vs_conversion_10-1">
+            <a href="#cite_note-port_vs_conversion-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Porting arcade games to home systems with inferior hardware was difficult. The ported version of
+           <i>
+            <a href="/wiki/Pac-Man" title="Pac-Man">
+             Pac-Man
+            </a>
+           </i>
+           for the
+           <a href="/wiki/Atari_2600" title="Atari 2600">
+            Atari 2600
+           </a>
+           omitted many of the visual features of the original game to compensate for the lack of
+           <a class="mw-redirect" href="/wiki/ROM" title="ROM">
+            ROM
+           </a>
+           space and the hardware struggled when multiple ghosts appeared on the screen creating a flickering effect. The poor performance of the
+           <a class="mw-redirect" href="/wiki/Pac-Man_(Atari_2600)" title="Pac-Man (Atari 2600)">
+            Atari 2600
+            <i>
+             Pac-Man
+            </i>
+           </a>
+           is cited by some scholars as a cause of the
+           <a href="/wiki/Video_game_crash_of_1983" title="Video game crash of 1983">
+            video game crash of 1983
+           </a>
+           .
+           <sup class="reference" id="cite_ref-11">
+            <a href="#cite_note-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Many early ports suffered significant gameplay quality issues because computers greatly differed.
+           <sup class="reference" id="cite_ref-bunten198412_12-0">
+            <a href="#cite_note-bunten198412-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <a href="/wiki/Richard_Garriott" title="Richard Garriott">
+            Richard Garriott
+           </a>
+           stated in 1984 at
+           <a href="/wiki/Origins_Game_Fair" title="Origins Game Fair">
+            Origins Game Fair
+           </a>
+           that
+           <a href="/wiki/Origin_Systems" title="Origin Systems">
+            Origin Systems
+           </a>
+           developed video games for the
+           <a href="/wiki/Apple_II" title="Apple II">
+            Apple II
+           </a>
+           first then ported them to
+           <a href="/wiki/Commodore_64" title="Commodore 64">
+            Commodore 64
+           </a>
+           and
+           <a href="/wiki/Atari_8-bit_computers" title="Atari 8-bit computers">
+            Atari 8-bit computers
+           </a>
+           , because the latter machines'
+           <a href="/wiki/Sprite_(computer_graphics)" title="Sprite (computer graphics)">
+            sprites
+           </a>
+           and other sophisticated features made porting from them to Apple "far more difficult, perhaps even impossible".
+           <sup class="reference" id="cite_ref-cgw198410_13-0">
+            <a href="#cite_note-cgw198410-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Reviews complained of ports that suffered from "Apple conversionitis",
+           <sup class="reference" id="cite_ref-info198701c64_14-0">
+            <a href="#cite_note-info198701c64-14">
+             <span class="cite-bracket">
+              [
+             </span>
+             14
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           retaining the Apple's "lousy sound and black-white-green-purple graphics";
+           <sup class="reference" id="cite_ref-aw1984_15-0">
+            <a href="#cite_note-aw1984-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-bernstein198505_16-0">
+            <a href="#cite_note-bernstein198505-16">
+             <span class="cite-bracket">
+              [
+             </span>
+             16
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           after Garriott's statement, when
+           <a class="mw-redirect" href="/wiki/Dan_Bunten" title="Dan Bunten">
+            Dan Bunten
+           </a>
+           asked "Atari and Commodore people in the audience, are you happy with the Apple rewrites?" the audience shouted "No!" Garriott responded, "[otherwise] the Apple version will never get done. From a publisher's point of view that's not money wise".
+           <sup class="reference" id="cite_ref-cgw198410_13-1">
+            <a href="#cite_note-cgw198410-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Others worked differently.
+           <a class="mw-redirect" href="/wiki/Ozark_Softscape" title="Ozark Softscape">
+            Ozark Softscape
+           </a>
+           , for example, wrote
+           <i>
+            <a href="/wiki/M.U.L.E." title="M.U.L.E.">
+             M.U.L.E.
+            </a>
+           </i>
+           for the Atari first because it preferred to develop for the most advanced computers, removing or altering features as necessary during porting. Such a policy was not always feasible; Bunten stated that "M.U.L.E. can't be done for an Apple",
+           <sup class="reference" id="cite_ref-bunten198412_12-1">
+            <a href="#cite_note-bunten198412-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           and that the non-Atari versions of
+           <i>
+            <a href="/wiki/The_Seven_Cities_of_Gold_(video_game)" title="The Seven Cities of Gold (video game)">
+             The Seven Cities of Gold
+            </a>
+           </i>
+           were inferior.
+           <sup class="reference" id="cite_ref-buntengamedesignmemoir_17-0">
+            <a href="#cite_note-buntengamedesignmemoir-17">
+             <span class="cite-bracket">
+              [
+             </span>
+             17
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <i>
+            <a href="/wiki/Compute!%27s_Gazette" title="Compute!'s Gazette">
+             Compute!'s Gazette
+            </a>
+           </i>
+           wrote in 1986 that when porting from Atari to Commodore the original was usually superior. The latter's games' quality improved when developers began creating new software for it in late 1983, the magazine stated.
+           <sup class="reference" id="cite_ref-Yakal198606_18-0">
+            <a href="#cite_note-Yakal198606-18">
+             <span class="cite-bracket">
+              [
+             </span>
+             18
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           In porting
+           <a href="/wiki/Arcade_game" title="Arcade game">
+            arcade games
+           </a>
+           , the terms "arcade perfect" or "arcade accurate" were often used to describe how closely the gameplay, graphics, and other assets on the ported version matched the arcade version. Many arcade ports in the early 1980s were far from arcade perfect as home consoles and computers lacked the sophisticated hardware in arcade games, but games could still approximate the gameplay. Notably,
+           <i>
+            <a href="/wiki/Space_Invaders" title="Space Invaders">
+             Space Invaders
+            </a>
+           </i>
+           on the
+           <a class="mw-redirect" href="/wiki/Atari_VCS" title="Atari VCS">
+            Atari VCS
+           </a>
+           became the console's
+           <a class="mw-redirect" href="/wiki/Killer_app" title="Killer app">
+            killer app
+           </a>
+           despite its differences,
+           <sup class="reference" id="cite_ref-19">
+            <a href="#cite_note-19">
+             <span class="cite-bracket">
+              [
+             </span>
+             19
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           while the later
+           <a class="mw-redirect" href="/wiki/Pac-Man_(Atari_2600)" title="Pac-Man (Atari 2600)">
+            <i>
+             Pac-Man
+            </i>
+            port
+           </a>
+           was notorious for its deviations from the arcade version.
+           <sup class="reference" id="cite_ref-20">
+            <a href="#cite_note-20">
+             <span class="cite-bracket">
+              [
+             </span>
+             20
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Arcade-accurate games became more prevalent starting in the 1990s as home consoles caught up to the power of arcade systems. Notably, the
+           <a href="/wiki/Neo_Geo_(system)" title="Neo Geo (system)">
+            Neo Geo
+           </a>
+           system from
+           <a href="/wiki/SNK" title="SNK">
+            SNK
+           </a>
+           , which was introduced as a multi-game arcade system, would also be offered as a home console with the same specifications. This allowed arcade perfect games to be played at home.
+           <sup class="reference" id="cite_ref-port_vs_conversion_10-2">
+            <a href="#cite_note-port_vs_conversion-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           A "console port" is a game that was originally made for a console before an identical version is created which can be played on a
+           <a href="/wiki/Personal_computer" title="Personal computer">
+            personal computer
+           </a>
+           . This term has been widely used by the gaming community. The process of porting a game from a console to a PC is often regarded negatively due to the higher levels of performance that computers generally have being underutilized, partially due to console hardware being fixed throughout their run (with games being developed for console specs), while PCs become more powerful as hardware evolves, but also due to ported games sometimes being poorly optimized for PCs, or lazily ported. While broadly similar, architectural differences may exist such as the use of
+           <a class="mw-redirect" href="/wiki/Unified_memory" title="Unified memory">
+            unified memory
+           </a>
+           on a console.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Porting&amp;action=edit&amp;section=5" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="mw-redirect" href="/wiki/Console_emulator" title="Console emulator">
+             Console emulator
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Cross-platform" title="Cross-platform">
+             Cross-platform
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Language_binding" title="Language binding">
+             Language binding
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/List_of_system_quality_attributes" title="List of system quality attributes">
+             List of system quality attributes
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Poshlib" title="Poshlib">
+             Poshlib
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Program_transformation" title="Program transformation">
+             Program transformation
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Software_portability" title="Software portability">
+             Software portability
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Source-to-source_compiler" title="Source-to-source compiler">
+             Source-to-source compiler
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Source_port" title="Source port">
+             Source port
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Write_once,_compile_anywhere" title="Write once, compile anywhere">
+             Write once, compile anywhere
+            </a>
+           </li>
+           <li>
+            <a class="extiw" href="https://en.wiktionary.org/wiki/unported" title="wikt:unported">
+             Meaning of
+             <i>
+              unported
+             </i>
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Porting&amp;action=edit&amp;section=6" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation journal cs1" id="CITEREFWhittenDemaine1975">
+                Whitten, D.E.; Demaine, P.A.D. (March 1975). "A machine and configuration independent Fortran: Portable Fortran".
+                <i>
+                 IEEE Transactions on Software Engineering
+                </i>
+                .
+                <b>
+                 SE-1
+                </b>
+                (1): 111–124.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2FTSE.1975.6312825" rel="nofollow">
+                 10.1109/TSE.1975.6312825
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:16485156" rel="nofollow">
+                 16485156
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Software+Engineering&amp;rft.atitle=A+machine+and+configuration+independent+Fortran%3A+Portable+Fortran&amp;rft.volume=SE-1&amp;rft.issue=1&amp;rft.pages=111-124&amp;rft.date=1975-03&amp;rft_id=info%3Adoi%2F10.1109%2FTSE.1975.6312825&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A16485156%23id-name%3DS2CID&amp;rft.aulast=Whitten&amp;rft.aufirst=D.E.&amp;rft.au=Demaine%2C+P.A.D.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.gnu.org/software/sather/docs-1.2/tutorial/fortran-portability.html" rel="nofollow">
+                 "Portability Issues"
+                </a>
+                .
+                <q>
+                 .. discusses .. portability of .. Fortran
+                </q>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Portability+Issues&amp;rft_id=https%3A%2F%2Fwww.gnu.org%2Fsoftware%2Fsather%2Fdocs-1.2%2Ftutorial%2Ffortran-portability.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <span class="id-lock-subscription" title="Paid subscription required">
+                 <a class="external text" href="http://www.oed.com/view/Entry/148098" rel="nofollow">
+                  "port, v.2"
+                 </a>
+                </span>
+                .
+                <i>
+                 Oxford English Dictionary (OED Online)
+                </i>
+                . Oxford University Press
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  December 21,
+                 </span>
+                 2017
+                </span>
+                .
+                <q>
+                 Origin: Of multiple origins. Partly a borrowing from French. Partly a borrowing from Latin. Etymons: French
+                 <i>
+                  porter
+                 </i>
+                 ; Latin
+                 <i>
+                  portāre
+                 </i>
+                 . ...  1.
+                 <i>
+                  trans.
+                 </i>
+                 To carry, bear, or convey; to bring.
+                </q>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Oxford+English+Dictionary+%28OED+Online%29&amp;rft.atitle=port%2C+v.2&amp;rft_id=http%3A%2F%2Fwww.oed.com%2Fview%2FEntry%2F148098&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Machinelanguage-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Machinelanguage_4-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a href="#CITEREFTanenbaum1984">
+                Tanenbaum 1984
+               </a>
+               , p. 3, § 1.1 Languages, Levels, and Virtual Machines describes the terms and their relations.
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a href="#CITEREFTanenbaum1984">
+                Tanenbaum 1984
+               </a>
+               , p. 2. Ch. 1 Introduction explains translation and interpretation.
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a href="#CITEREFRichardsWhitby-Strevens1984">
+                Richards &amp; Whitby-Strevens 1984
+               </a>
+               , p. 124, § 7.1 Introduction explains compiler portability using intermediate code.
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a href="#CITEREFRichardsWhitby-Strevens1984">
+                Richards &amp; Whitby-Strevens 1984
+               </a>
+               , p. 133, § 7.4 The bootstrapping process and INTCODE explains the role of the INTCODE interpreter.
+              </span>
+             </li>
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a href="#CITEREFRichardsWhitby-Strevens1984">
+                Richards &amp; Whitby-Strevens 1984
+               </a>
+               , p. 136, § 7.4.3 Example gives an example translation of a BCPL program into INTCODE for the interpreter.
+              </span>
+             </li>
+             <li id="cite_note-Wolf2008-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Wolf2008_9-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFWolf2008">
+                Wolf, Mark J. P. (2008).
+                <a class="external text" href="https://books.google.com/books?id=XiM0ntMybNwC&amp;pg=PA315" rel="nofollow">
+                 "Glossary"
+                </a>
+                .
+                <i>
+                 The Video Game Explosion: A History from PONG to Playstation and Beyond
+                </i>
+                . Bloomsbury Academic. p. 315.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-313-33868-7" title="Special:BookSources/978-0-313-33868-7">
+                 <bdi>
+                  978-0-313-33868-7
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Glossary&amp;rft.btitle=The+Video+Game+Explosion%3A+A+History+from+PONG+to+Playstation+and+Beyond&amp;rft.pages=315&amp;rft.pub=Bloomsbury+Academic&amp;rft.date=2008&amp;rft.isbn=978-0-313-33868-7&amp;rft.aulast=Wolf&amp;rft.aufirst=Mark+J.+P.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DXiM0ntMybNwC%26pg%3DPA315&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-port_vs_conversion-10">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-port_vs_conversion_10-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-port_vs_conversion_10-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-port_vs_conversion_10-2">
+                <sup>
+                 <i>
+                  <b>
+                   c
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation cs2" id="CITEREFGrabarczykAarseth2019">
+                Grabarczyk, Pawel; Aarseth, Espen (2019),
+                <i>
+                 Port or conversion? An ontological framework for classifying game versions | DiGRA Conference 2019
+                </i>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Port+or+conversion%3F+An+ontological+framework+for+classifying+game+versions+%7C+DiGRA+Conference+2019&amp;rft.date=2019&amp;rft.aulast=Grabarczyk&amp;rft.aufirst=Pawel&amp;rft.au=Aarseth%2C+Espen&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-11">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFNicoll2015">
+                Nicoll, Benjamin (2015). "Bridging the Gap: The Neo Geo, the Media Imaginary, and the Domestication of Arcade Games".
+                <i>
+                 Games and Culture
+                </i>
+                .
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1177%2F1555412015590048" rel="nofollow">
+                 10.1177/1555412015590048
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:147981978" rel="nofollow">
+                 147981978
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Games+and+Culture&amp;rft.atitle=Bridging+the+Gap%3A+The+Neo+Geo%2C+the+Media+Imaginary%2C+and+the+Domestication+of+Arcade+Games&amp;rft.date=2015&amp;rft_id=info%3Adoi%2F10.1177%2F1555412015590048&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A147981978%23id-name%3DS2CID&amp;rft.aulast=Nicoll&amp;rft.aufirst=Benjamin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-bunten198412-12">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-bunten198412_12-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-bunten198412_12-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation magazine cs1" id="CITEREFBunten,_Dan1984">
+                Bunten, Dan (December 1984).
+                <a class="external text" href="http://www.cgwmuseum.org/galleries/index.php?year=1984&amp;pub=2&amp;id=19" rel="nofollow">
+                 "Dispatches / Insights From the Strategy Game Design Front"
+                </a>
+                .
+                <i>
+                 Computer Gaming World
+                </i>
+                . p. 40
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  31 October
+                 </span>
+                 2013
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computer+Gaming+World&amp;rft.atitle=Dispatches+%2F+Insights+From+the+Strategy+Game+Design+Front&amp;rft.pages=40&amp;rft.date=1984-12&amp;rft.au=Bunten%2C+Dan&amp;rft_id=http%3A%2F%2Fwww.cgwmuseum.org%2Fgalleries%2Findex.php%3Fyear%3D1984%26pub%3D2%26id%3D19&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-cgw198410-13">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-cgw198410_13-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-cgw198410_13-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation magazine cs1">
+                <a class="external text" href="http://www.cgwmuseum.org/galleries/index.php?year=1984&amp;pub=2&amp;id=18" rel="nofollow">
+                 "The CGW Computer Game Conference"
+                </a>
+                .
+                <i>
+                 Computer Gaming World
+                </i>
+                (panel discussion). October 1984. p. 30
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  31 October
+                 </span>
+                 2013
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computer+Gaming+World&amp;rft.atitle=The+CGW+Computer+Game+Conference&amp;rft.pages=30&amp;rft.date=1984-10&amp;rft_id=http%3A%2F%2Fwww.cgwmuseum.org%2Fgalleries%2Findex.php%3Fyear%3D1984%26pub%3D2%26id%3D18&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-info198701c64-14">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-info198701c64_14-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation magazine cs1" id="CITEREFDunningtonBrownMalcolm1987">
+                Dunnington, Benn; Brown, Mark R.; Malcolm, Tom (January–February 1987).
+                <a class="external text" href="https://archive.org/stream/info-magazine-13/Info_Issue_13_1987_Jan-Feb#page/n13/mode/2up" rel="nofollow">
+                 "64/128 Gallery"
+                </a>
+                .
+                <i>
+                 Info
+                </i>
+                . pp. 14–21.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Info&amp;rft.atitle=64%2F128+Gallery&amp;rft.pages=14-21&amp;rft.date=1987-01%2F1987-02&amp;rft.aulast=Dunnington&amp;rft.aufirst=Benn&amp;rft.au=Brown%2C+Mark+R.&amp;rft.au=Malcolm%2C+Tom&amp;rft_id=https%3A%2F%2Farchive.org%2Fstream%2Finfo-magazine-13%2FInfo_Issue_13_1987_Jan-Feb%23page%2Fn13%2Fmode%2F2up&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-aw1984-15">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-aw1984_15-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFStanton,_JeffreyWells,_Robert_P.Rochowansky,_SandraMellid,_Michael1984">
+                Stanton, Jeffrey; Wells, Robert P.; Rochowansky, Sandra; Mellid, Michael, eds. (1984).
+                <a class="external text" href="https://archive.org/stream/Atari_Software_1984#page/n21/mode/2up" rel="nofollow">
+                 <i>
+                  The Addison-Wesley Book of Atari Software
+                 </i>
+                </a>
+                . Addison-Wesley. pp. 12, 21, 44, 126.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/0-201-16454-X" title="Special:BookSources/0-201-16454-X">
+                 <bdi>
+                  0-201-16454-X
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Addison-Wesley+Book+of+Atari+Software&amp;rft.pages=12%2C+21%2C+44%2C+126&amp;rft.pub=Addison-Wesley&amp;rft.date=1984&amp;rft.isbn=0-201-16454-X&amp;rft_id=https%3A%2F%2Farchive.org%2Fstream%2FAtari_Software_1984%23page%2Fn21%2Fmode%2F2up&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-bernstein198505-16">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-bernstein198505_16-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation news cs1" id="CITEREFBernstein,_Harvey1985">
+                Bernstein, Harvey (May 1985).
+                <a class="external text" href="https://archive.org/stream/1985-05-anticmagazine/Antic_Vol_4-01_1985-05_New_Super_Ataris#page/n81/mode/2up" rel="nofollow">
+                 "Beyond Castle Wolfenstein"
+                </a>
+                .
+                <i>
+                 Antic
+                </i>
+                . p. 83
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  8 January
+                 </span>
+                 2015
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Antic&amp;rft.atitle=Beyond+Castle+Wolfenstein&amp;rft.pages=83&amp;rft.date=1985-05&amp;rft.au=Bernstein%2C+Harvey&amp;rft_id=https%3A%2F%2Farchive.org%2Fstream%2F1985-05-anticmagazine%2FAntic_Vol_4-01_1985-05_New_Super_Ataris%23page%2Fn81%2Fmode%2F2up&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-buntengamedesignmemoir-17">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-buntengamedesignmemoir_17-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFBunten">
+                Bunten, Dan.
+                <a class="external text" href="http://www.ozarksoftscape.com/the-game-collection.html" rel="nofollow">
+                 "The Game Collection"
+                </a>
+                .
+                <i>
+                 Ozark Softscape M.U.L.E
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2017-10-04
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Ozark+Softscape+M.U.L.E.&amp;rft.atitle=The+Game+Collection&amp;rft.aulast=Bunten&amp;rft.aufirst=Dan&amp;rft_id=http%3A%2F%2Fwww.ozarksoftscape.com%2Fthe-game-collection.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Yakal198606-18">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Yakal198606_18-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation magazine cs1" id="CITEREFYakal1986">
+                Yakal, Kathy (June 1986).
+                <a class="external text" href="https://archive.org/details/1986-06-computegazette/page/n35" rel="nofollow">
+                 "The Evolution of Commodore Graphics"
+                </a>
+                .
+                <i>
+                 Compute!'s Gazette
+                </i>
+                . pp. 34–42
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2019-06-18
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Compute%21%27s+Gazette&amp;rft.atitle=The+Evolution+of+Commodore+Graphics&amp;rft.pages=34-42&amp;rft.date=1986-06&amp;rft.aulast=Yakal&amp;rft.aufirst=Kathy&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2F1986-06-computegazette%2Fpage%2Fn35&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-19">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-19">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFKent2001">
+                <a href="/wiki/Steven_L._Kent" title="Steven L. Kent">
+                 Kent, Steven
+                </a>
+                (2001).
+                <i>
+                 <a class="mw-redirect" href="/wiki/Ultimate_History_of_Video_Games" title="Ultimate History of Video Games">
+                  Ultimate History of Video Games
+                 </a>
+                </i>
+                .
+                <a href="/wiki/Three_Rivers_Press" title="Three Rivers Press">
+                 Three Rivers Press
+                </a>
+                . p. 190.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/0-7615-3643-4" title="Special:BookSources/0-7615-3643-4">
+                 <bdi>
+                  0-7615-3643-4
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Ultimate+History+of+Video+Games&amp;rft.pages=190&amp;rft.pub=Three+Rivers+Press&amp;rft.date=2001&amp;rft.isbn=0-7615-3643-4&amp;rft.aulast=Kent&amp;rft.aufirst=Steven&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-20">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-20">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFKent2001">
+                Kent, Steven (2001). "The Fall".
+                <i>
+                 The Ultimate History of Video Games
+                </i>
+                .
+                <a href="/wiki/Three_Rivers_Press" title="Three Rivers Press">
+                 Three Rivers Press
+                </a>
+                . pp. 237–239.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-7615-3643-7" title="Special:BookSources/978-0-7615-3643-7">
+                 <bdi>
+                  978-0-7615-3643-7
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=The+Fall&amp;rft.btitle=The+Ultimate+History+of+Video+Games&amp;rft.pages=237-239&amp;rft.pub=Three+Rivers+Press&amp;rft.date=2001&amp;rft.isbn=978-0-7615-3643-7&amp;rft.aulast=Kent&amp;rft.aufirst=Steven&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <ul>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFRichardsWhitby-Strevens1984">
+             <a href="/wiki/Martin_Richards_(computer_scientist)" title="Martin Richards (computer scientist)">
+              Richards, Martin
+             </a>
+             ; Whitby-Strevens, Colin (1984).
+             <i>
+              BCPL, the language and its compiler
+             </i>
+             . Cambridge University Press.
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/0-521-28681-6" title="Special:BookSources/0-521-28681-6">
+              <bdi>
+               0-521-28681-6
+              </bdi>
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=BCPL%2C+the+language+and+its+compiler&amp;rft.pub=Cambridge+University+Press&amp;rft.date=1984&amp;rft.isbn=0-521-28681-6&amp;rft.aulast=Richards&amp;rft.aufirst=Martin&amp;rft.au=Whitby-Strevens%2C+Colin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation book cs1" id="CITEREFTanenbaum1984">
+             <a href="/wiki/Andrew_S._Tanenbaum" title="Andrew S. Tanenbaum">
+              Tanenbaum, Andrew S.
+             </a>
+             (1984).
+             <i>
+              Structured computer organization
+             </i>
+             . Prentice-Hall.
+             <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+              ISBN
+             </a>
+             <a href="/wiki/Special:BookSources/0-13-854605-3" title="Special:BookSources/0-13-854605-3">
+              <bdi>
+               0-13-854605-3
+              </bdi>
+             </a>
+             .
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Structured+computer+organization&amp;rft.pub=Prentice-Hall&amp;rft.date=1984&amp;rft.isbn=0-13-854605-3&amp;rft.aulast=Tanenbaum&amp;rft.aufirst=Andrew+S.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APorting">
+            </span>
+           </li>
+          </ul>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐w7bf4
+Cached time: 20240926232437
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.459 seconds
+Real time usage: 0.552 seconds
+Preprocessor visited node count: 1614/1000000
+Post‐expand include size: 29457/2097152 bytes
+Template argument size: 788/2097152 bytes
+Highest expansion depth: 11/100
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 60366/5000000 bytes
+Lua time usage: 0.286/10.000 seconds
+Lua memory usage: 6846127/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  498.594      1 -total
+ 60.08%  299.543      1 Template:Reflist
+ 21.78%  108.617      2 Template:Cite_journal
+ 17.58%   87.671      1 Template:Short_description
+ 11.50%   57.332      5 Template:Harvnb
+ 10.36%   51.642      2 Template:Pagetype
+  9.41%   46.937      6 Template:Cite_book
+  7.77%   38.718      1 Template:Redirect
+  7.10%   35.409      2 Template:R
+  6.33%   31.565      4 Template:Cite_magazine
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:214804-0!canonical and timestamp 20240926232437 and revision id 1236444044. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Porting&amp;oldid=1236444044">
+          https://en.wikipedia.org/w/index.php?title=Porting&amp;oldid=1236444044
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Interoperability" title="Category:Interoperability">
+            Interoperability
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Source_code" title="Category:Source code">
+            Source code
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 24 July 2024, at 18:57
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Porting&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-8tknb","wgBackendResponseTime":142,"wgPageParseReport":{"limitreport":{"cputime":"0.459","walltime":"0.552","ppvisitednodes":{"value":1614,"limit":1000000},"postexpandincludesize":{"value":29457,"limit":2097152},"templateargumentsize":{"value":788,"limit":2097152},"expansiondepth":{"value":11,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":60366,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  498.594      1 -total"," 60.08%  299.543      1 Template:Reflist"," 21.78%  108.617      2 Template:Cite_journal"," 17.58%   87.671      1 Template:Short_description"," 11.50%   57.332      5 Template:Harvnb"," 10.36%   51.642      2 Template:Pagetype","  9.41%   46.937      6 Template:Cite_book","  7.77%   38.718      1 Template:Redirect","  7.10%   35.409      2 Template:R","  6.33%   31.565      4 Template:Cite_magazine"]},"scribunto":{"limitreport-timeusage":{"value":"0.286","limit":"10.000"},"limitreport-memusage":{"value":6846127,"limit":52428800},"limitreport-logs":"anchor_id_list = table#1 {\n    [\"CITEREFBernstein,_Harvey1985\"] = 1,\n    [\"CITEREFBunten\"] = 1,\n    [\"CITEREFBunten,_Dan1984\"] = 1,\n    [\"CITEREFDunningtonBrownMalcolm1987\"] = 1,\n    [\"CITEREFGrabarczykAarseth2019\"] = 1,\n    [\"CITEREFKent2001\"] = 2,\n    [\"CITEREFNicoll2015\"] = 1,\n    [\"CITEREFRichardsWhitby-Strevens1984\"] = 1,\n    [\"CITEREFStanton,_JeffreyWells,_Robert_P.Rochowansky,_SandraMellid,_Michael1984\"] = 1,\n    [\"CITEREFTanenbaum1984\"] = 1,\n    [\"CITEREFWhittenDemaine1975\"] = 1,\n    [\"CITEREFWolf2008\"] = 1,\n    [\"CITEREFYakal1986\"] = 1,\n    [\"Porting_in_gaming\"] = 1,\n    [\"conversion\"] = 1,\n}\ntemplate_list = table#1 {\n    [\"!\"] = 1,\n    [\"Anchor\"] = 1,\n    [\"Citation\"] = 1,\n    [\"Cite book\"] = 6,\n    [\"Cite journal\"] = 2,\n    [\"Cite magazine\"] = 4,\n    [\"Cite news\"] = 1,\n    [\"Cite web\"] = 3,\n    [\"Harvnb\"] = 5,\n    [\"R\"] = 2,\n    [\"Redirect\"] = 1,\n    [\"Reflist\"] = 1,\n    [\"Short description\"] = 1,\n}\narticle_whitelist = table#1 {\n}\n"},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-w7bf4","timestamp":"20240926232437","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Porting","url":"https:\/\/en.wikipedia.org\/wiki\/Porting","sameAs":"http:\/\/www.wikidata.org\/entity\/Q851989","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q851989","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-04-23T01:23:48Z","dateModified":"2024-07-24T18:57:56Z","headline":"process of adapting software to run on other computing systems"}
+  </script>
+ </body>
+</html>

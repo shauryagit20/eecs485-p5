@@ -1,0 +1,2595 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Systems architecture - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b9076cca-1daf-46bf-98df-8cd2ff7f66d8","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Systems_architecture","wgTitle":"Systems architecture","wgCurRevisionId":1246151025,"wgRevisionId":1246151025,"wgArticleId":3403318,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Webarchive template wayback links","Articles with short description","Short description is different from Wikidata","Wikipedia articles needing clarification from May 2014","Articles with specifically marked weasel-worded phrases from May 2014","Articles to be expanded from July 2012","All articles to be expanded","Commons category link from Wikidata","Systems architecture","Systems engineering","Software architecture"],"wgPageViewLanguage":"en","wgPageContentLanguage":
+"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Systems_architecture","wgRelevantArticleId":3403318,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q477538",
+"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp",
+"ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Computer_system_architecture.svg/1200px-Computer_system_architecture.svg.png" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="849" property="og:image:height"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Computer_system_architecture.svg/800px-Computer_system_architecture.svg.png" property="og:image"/>
+  <meta content="800" property="og:image:width"/>
+  <meta content="566" property="og:image:height"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Computer_system_architecture.svg/640px-Computer_system_architecture.svg.png" property="og:image"/>
+  <meta content="640" property="og:image:width"/>
+  <meta content="453" property="og:image:height"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Systems architecture - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Systems_architecture" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Systems_architecture&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Systems_architecture" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Systems_architecture"/>
+  <meta eecs485_docid="36889293"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Systems_architecture rootpage-Systems_architecture skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Systems+architecture" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Systems+architecture" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Systems+architecture" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Systems+architecture" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Overview">
+           <a class="vector-toc-link" href="#Overview">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Overview
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Overview-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-History">
+           <a class="vector-toc-link" href="#History">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              History
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-History-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Types">
+           <a class="vector-toc-link" href="#Types">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Types
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Types-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Systems architecture
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 11 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-11" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          11 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Systemarchitektur" href="https://de.wikipedia.org/wiki/Systemarchitektur" hreflang="de" lang="de" title="Systemarchitektur – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="معماری سیستم" href="https://fa.wikipedia.org/wiki/%D9%85%D8%B9%D9%85%D8%A7%D8%B1%DB%8C_%D8%B3%DB%8C%D8%B3%D8%AA%D9%85" hreflang="fa" lang="fa" title="معماری سیستم – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Architecture d'un système" href="https://fr.wikipedia.org/wiki/Architecture_d%27un_syst%C3%A8me" hreflang="fr" lang="fr" title="Architecture d'un système – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="시스템 아키텍처" href="https://ko.wikipedia.org/wiki/%EC%8B%9C%EC%8A%A4%ED%85%9C_%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98" hreflang="ko" lang="ko" title="시스템 아키텍처 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="システムアーキテクチャ" href="https://ja.wikipedia.org/wiki/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3" hreflang="ja" lang="ja" title="システムアーキテクチャ – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-no mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" data-title="Systemarkitektur" href="https://no.wikipedia.org/wiki/Systemarkitektur" hreflang="nb" lang="nb" title="Systemarkitektur – Norwegian Bokmål">
+             <span>
+              Norsk bokmål
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Архитектура системы" href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B" hreflang="ru" lang="ru" title="Архитектура системы – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="Finnish" data-title="Järjestelmäarkkitehtuuri" href="https://fi.wikipedia.org/wiki/J%C3%A4rjestelm%C3%A4arkkitehtuuri" hreflang="fi" lang="fi" title="Järjestelmäarkkitehtuuri – Finnish">
+             <span>
+              Suomi
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Türkçe" data-language-local-name="Turkish" data-title="Sistem mimarisi" href="https://tr.wikipedia.org/wiki/Sistem_mimarisi" hreflang="tr" lang="tr" title="Sistem mimarisi – Turkish">
+             <span>
+              Türkçe
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Системна архітектура" href="https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%B0_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0" hreflang="uk" lang="uk" title="Системна архітектура – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="系统架构" href="https://zh.wikipedia.org/wiki/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84" hreflang="zh" lang="zh" title="系统架构 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q477538#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Systems_architecture" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Systems_architecture" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Systems_architecture">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Systems_architecture&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Systems_architecture&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Systems_architecture">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Systems_architecture&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Systems_architecture&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Systems_architecture" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Systems_architecture" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Systems_architecture&amp;oldid=1246151025" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Systems_architecture&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Systems_architecture&amp;id=1246151025&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSystems_architecture">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSystems_architecture">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q477538" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Systems_architecture&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Systems_architecture&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="wb-otherproject-link wb-otherproject-commons mw-list-item">
+                  <a href="https://commons.wikimedia.org/wiki/Category:Systems_architecture" hreflang="en">
+                   <span>
+                    Wikimedia Commons
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Conceptual model of a system
+         </div>
+         <figure class="mw-default-size mw-halign-right" typeof="mw:File/Thumb">
+          <a class="mw-file-description" href="/wiki/File:Computer_system_architecture.svg">
+           <img class="mw-file-element" data-file-height="744" data-file-width="1052" decoding="async" height="156" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Computer_system_architecture.svg/220px-Computer_system_architecture.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Computer_system_architecture.svg/330px-Computer_system_architecture.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Computer_system_architecture.svg/440px-Computer_system_architecture.svg.png 2x" width="220"/>
+          </a>
+          <figcaption>
+           Example of a high-level systems architecture for a computer
+          </figcaption>
+         </figure>
+         <p>
+          A
+          <b>
+           system architecture
+          </b>
+          is the
+          <a href="/wiki/Conceptual_model" title="Conceptual model">
+           conceptual model
+          </a>
+          that defines the
+          <a href="/wiki/Structure" title="Structure">
+           structure
+          </a>
+          ,
+          <a href="/wiki/Behavior" title="Behavior">
+           behavior
+          </a>
+          , and more
+          <a href="/wiki/View_model" title="View model">
+           views
+          </a>
+          of a
+          <a href="/wiki/System" title="System">
+           system
+          </a>
+          .
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          An architecture description is a formal description and representation of a system, organized in a way that supports reasoning about the
+          <a href="/wiki/Structure" title="Structure">
+           structures
+          </a>
+          and
+          <a href="/wiki/Behavior" title="Behavior">
+           behaviors
+          </a>
+          of the system.
+         </p>
+         <p>
+          A system architecture can consist of system
+          <a href="/wiki/System" title="System">
+           components
+          </a>
+          and the sub-systems developed, that will work together to implement the overall system. There have been efforts to formalize languages to describe system architecture, collectively these are called
+          <a class="mw-redirect" href="/wiki/Architecture_description_languages" title="Architecture description languages">
+           architecture description languages
+          </a>
+          (ADLs).
+          <sup class="reference" id="cite_ref-2">
+           <a href="#cite_note-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-3">
+           <a href="#cite_note-3">
+            <span class="cite-bracket">
+             [
+            </span>
+            3
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-4">
+           <a href="#cite_note-4">
+            <span class="cite-bracket">
+             [
+            </span>
+            4
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Overview">
+            Overview
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Systems_architecture&amp;action=edit&amp;section=1" title="Edit section: Overview">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Various organizations can define systems architecture in different ways, including:
+          </p>
+          <ul>
+           <li>
+            The fundamental organization of a system, embodied in its components, their relationships to each other and to the environment, and the principles governing its design and evolution.
+            <sup class="reference" id="cite_ref-5">
+             <a href="#cite_note-5">
+              <span class="cite-bracket">
+               [
+              </span>
+              5
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            A representation of a system, including a mapping of functionality onto hardware and
+            <a href="/wiki/Software_component" title="Software component">
+             software components
+            </a>
+            , a mapping of the
+            <a href="/wiki/Software_architecture" title="Software architecture">
+             software architecture
+            </a>
+            onto the
+            <a href="/wiki/Hardware_architecture" title="Hardware architecture">
+             hardware architecture
+            </a>
+            , and human interaction with these components.
+            <sup class="reference" id="cite_ref-6">
+             <a href="#cite_note-6">
+              <span class="cite-bracket">
+               [
+              </span>
+              6
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            An allocated arrangement of physical elements which provides the design solution for a consumer product or life-cycle process intended to satisfy the requirements of the functional architecture and the requirements baseline.
+            <sup class="reference" id="cite_ref-7">
+             <a href="#cite_note-7">
+              <span class="cite-bracket">
+               [
+              </span>
+              7
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            An architecture consists of the most important, pervasive, top-level, strategic inventions, decisions, and their associated rationales about the overall structure (i.e., essential elements and their relationships) and associated characteristics and behavior.
+            <sup class="reference" id="cite_ref-8">
+             <a href="#cite_note-8">
+              <span class="cite-bracket">
+               [
+              </span>
+              8
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            A description of the design and contents of a
+            <a class="mw-redirect" href="/wiki/Computer_system" title="Computer system">
+             computer system
+            </a>
+            . If documented, it may include information such as a detailed inventory of current hardware, software and networking capabilities; a description of long-range plans and priorities for future purchases, and a plan for upgrading and/or replacing dated equipment and software.
+            <sup class="reference" id="cite_ref-9">
+             <a href="#cite_note-9">
+              <span class="cite-bracket">
+               [
+              </span>
+              9
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            A formal description of a system, or a detailed plan of the system at component level to guide its implementation.
+            <sup class="reference" id="cite_ref-10">
+             <a href="#cite_note-10">
+              <span class="cite-bracket">
+               [
+              </span>
+              10
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            The composite of the design architectures for products and their life-cycle processes.
+            <sup class="reference" id="cite_ref-11">
+             <a href="#cite_note-11">
+              <span class="cite-bracket">
+               [
+              </span>
+              11
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            The structure of components, their interrelationships, and the principles and guidelines governing their design and evolution over time.
+            <sup class="reference" id="cite_ref-12">
+             <a href="#cite_note-12">
+              <span class="cite-bracket">
+               [
+              </span>
+              12
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+          </ul>
+          <p>
+           One can think of system architecture as a set of representations of an existing (or future) system. These representations initially describe a general, high-level functional organization, and are progressively refined to more detailed and concrete descriptions.
+          </p>
+          <p>
+           System architecture conveys the informational content of the
+           <a class="extiw" href="https://en.wiktionary.org/wiki/element" title="wiktionary:element">
+            elements
+           </a>
+           consisting of a system, the relationships among those elements, and the
+           <a class="extiw" href="https://en.wiktionary.org/wiki/rule" title="wiktionary:rule">
+            rules
+           </a>
+           governing those relationships. The architectural components and set of relationships between these components that an architecture description may consist of hardware,
+           <a href="/wiki/Software" title="Software">
+            software
+           </a>
+           , documentation, facilities, manual procedures, or roles played by organizations or people.
+           <sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify">
+              <span title="The text near this tag may need clarification or removal of jargon. (May 2014)">
+               clarification needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+          </p>
+          <p>
+           A system architecture primarily concentrates on the internal
+           <a class="mw-redirect" href="/wiki/Interface_(computer_science)" title="Interface (computer science)">
+            interfaces
+           </a>
+           among the system's
+           <a class="extiw" href="https://en.wiktionary.org/wiki/component" title="wikt:component">
+            components
+           </a>
+           or
+           <a href="/wiki/System" title="System">
+            subsystems
+           </a>
+           , and on the interface(s)  between the system and its external environment, especially the
+           <a href="/wiki/User_(computing)" title="User (computing)">
+            user
+           </a>
+           .  (In the specific case of computer systems, this latter, special, interface is known as the
+           <a class="mw-redirect" href="/wiki/Computer_human_interface" title="Computer human interface">
+            computer human interface
+           </a>
+           ,
+           <i>
+            AKA
+           </i>
+           human computer interface, or
+           <a class="mw-redirect" href="/wiki/Human-computer_interaction" title="Human-computer interaction">
+            HCI
+           </a>
+           ; formerly called the man-machine interface.)
+          </p>
+          <p>
+           One can contrast a system architecture with
+           <a class="new" href="/w/index.php?title=System_architecture_engineering&amp;action=edit&amp;redlink=1" title="System architecture engineering (page does not exist)">
+            system architecture engineering
+           </a>
+           (SAE) - the method and discipline for effectively implementing the architecture of a system:
+           <sup class="reference" id="cite_ref-13">
+            <a href="#cite_note-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <ul>
+           <li>
+            SAE is a
+            <i>
+             method
+            </i>
+            because a sequence of steps is prescribed
+            <sup class="noprint Inline-Template" style="white-space:nowrap;">
+             [
+             <i>
+              <a href="/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Unsupported_attributions" title="Wikipedia:Manual of Style/Words to watch">
+               <span title="The material near this tag may use weasel words or too-vague attribution. (May 2014)">
+                by whom?
+               </span>
+              </a>
+             </i>
+             ]
+            </sup>
+            to produce or to change the architecture of a system within a
+            <a href="/wiki/Set_(mathematics)" title="Set (mathematics)">
+             set
+            </a>
+            of
+            <a href="/wiki/Constraint_(mathematics)" title="Constraint (mathematics)">
+             constraints
+            </a>
+            .
+           </li>
+           <li>
+            SAE is a
+            <i>
+             discipline
+            </i>
+            because a body of
+            <a href="/wiki/Knowledge" title="Knowledge">
+             knowledge
+            </a>
+            is used to inform
+            <a class="extiw" href="https://en.wiktionary.org/wiki/practitioner" title="wikt:practitioner">
+             practitioners
+            </a>
+            as to the most effective way to design the system within a set of constraints.
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="History">
+            History
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Systems_architecture&amp;action=edit&amp;section=2" title="Edit section: History">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Systems architecture depends heavily on practices and techniques which were developed over thousands of years in many other fields, perhaps the most important being civil architecture.
+          </p>
+          <ul>
+           <li>
+            Prior to the advent of digital computers, the electronics and other engineering disciplines used the term "system" as it is still commonly used today.  However, with the arrival of
+            <a class="mw-redirect" href="/wiki/Digital_computers" title="Digital computers">
+             digital computers
+            </a>
+            and the development of
+            <a class="mw-redirect" href="/wiki/Software_engineer" title="Software engineer">
+             software engineering
+            </a>
+            as a separate discipline, it was often necessary to distinguish among engineered hardware artifacts, software artifacts, and the combined artifacts.  A
+            <a href="/wiki/Computer_program" title="Computer program">
+             programmable
+            </a>
+            hardware artifact, or
+            <a href="/wiki/Computer" title="Computer">
+             computing machine
+            </a>
+            , that lacks its
+            <a href="/wiki/Computer_program" title="Computer program">
+             computer program
+            </a>
+            is impotent; even as a software artifact, or program, is equally impotent unless it can be used to alter the sequential states of a suitable (hardware) machine.  However, a hardware machine and its programming can be designed to perform an almost illimitable number of abstract and physical tasks.  Within the computer and software engineering disciplines (and, often, other engineering disciplines, such as communications), then, the term system came to be defined as containing all of the elements necessary (which generally includes both hardware and software) to perform a useful function.
+           </li>
+           <li class="mw-empty-elt">
+           </li>
+           <li>
+            Consequently, within these engineering disciplines, a system generally refers to a programmable hardware machine and its included program. And a
+            <a class="mw-redirect" href="/wiki/Systems_engineer" title="Systems engineer">
+             systems engineer
+            </a>
+            is defined as one concerned with the complete device, both hardware and software and, more particularly, all of the interfaces of the device, including that between hardware and software, and especially between the complete device and its user (the CHI).  The
+            <a class="new" href="/w/index.php?title=Hardware_designer&amp;action=edit&amp;redlink=1" title="Hardware designer (page does not exist)">
+             hardware engineer
+            </a>
+            deals (more or less) exclusively with the hardware device; the
+            <a class="mw-redirect" href="/wiki/Software_engineer" title="Software engineer">
+             software engineer
+            </a>
+            deals (more or less) exclusively with the computer program; and the systems engineer is responsible for seeing that the program is capable of properly running within the hardware device, and that the system composed of the two entities is capable of properly interacting with its external environment, especially the user, and performing its intended function.
+           </li>
+           <li class="mw-empty-elt">
+           </li>
+           <li>
+            A systems architecture makes use of elements of both software and hardware and is used to enable the design of such a composite system.  A good architecture may be viewed as a 'partitioning
+            <a href="/wiki/Scheme_(mathematics)" title="Scheme (mathematics)">
+             scheme
+            </a>
+            ,' or
+            <a href="/wiki/Algorithm" title="Algorithm">
+             algorithm
+            </a>
+            , which partitions all of the system's present and foreseeable requirements into a
+            <a class="extiw" href="https://en.wiktionary.org/wiki/workable" title="wikt:workable">
+             workable
+            </a>
+            set of cleanly
+            <a href="/wiki/Bounded_set" title="Bounded set">
+             bounded
+            </a>
+            <a class="mw-redirect" href="/wiki/Subsystem" title="Subsystem">
+             subsystems
+            </a>
+            with nothing left over.  That is, it is a partitioning scheme which is
+            <a class="extiw" href="https://en.wiktionary.org/wiki/exclusive" title="wikt:exclusive">
+             exclusive
+            </a>
+            ,
+            <a href="/wiki/Interval_(mathematics)" title="Interval (mathematics)">
+             inclusive
+            </a>
+            , and
+            <a href="/wiki/Collectively_exhaustive_events" title="Collectively exhaustive events">
+             exhaustive
+            </a>
+            .  A major purpose of the partitioning is to arrange the elements in the sub systems so that there is a minimum of interdependencies needed among them.  In both software and hardware, a good sub system tends to be seen to be a meaningful "object".  Moreover, a good architecture provides for an easy mapping to the user's requirements and the
+            <a class="mw-redirect" href="/wiki/Verification_and_Validation" title="Verification and Validation">
+             validation tests
+            </a>
+            of the user's requirements.  Ideally, a mapping also exists from every least element to every requirement and test.
+           </li>
+           <li class="mw-empty-elt">
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Types">
+            Types
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Systems_architecture&amp;action=edit&amp;section=3" title="Edit section: Types">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1236091366">
+           .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+          </style>
+          <table class="box-Expand_section plainlinks metadata ambox mbox-small-left ambox-content" role="presentation">
+           <tbody>
+            <tr>
+             <td class="mbox-image">
+              <span typeof="mw:File">
+               <a class="mw-file-description" href="/wiki/File:Wiki_letter_w_cropped.svg">
+                <img alt="[icon]" class="mw-file-element" data-file-height="31" data-file-width="44" decoding="async" height="14" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/30px-Wiki_letter_w_cropped.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/40px-Wiki_letter_w_cropped.svg.png 2x" width="20"/>
+               </a>
+              </span>
+             </td>
+             <td class="mbox-text">
+              <div class="mbox-text-span">
+               This section
+               <b>
+                needs expansion
+               </b>
+               . You can help by
+               <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Systems_architecture&amp;action=edit&amp;section=">
+                adding to it
+               </a>
+               .
+               <span class="date-container">
+                <i>
+                 (
+                 <span class="date">
+                  July 2012
+                 </span>
+                 )
+                </i>
+               </span>
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <p>
+           Several types of systems architectures (underlain by the same fundamental principles
+           <sup class="reference" id="cite_ref-14">
+            <a href="#cite_note-14">
+             <span class="cite-bracket">
+              [
+             </span>
+             14
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           ) have been identified as follows:
+           <sup class="reference" id="cite_ref-15">
+            <a href="#cite_note-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <ul>
+           <li>
+            <a href="/wiki/Hardware_architecture" title="Hardware architecture">
+             Hardware architecture
+            </a>
+            <sup class="reference" id="cite_ref-16">
+             <a href="#cite_note-16">
+              <span class="cite-bracket">
+               [
+              </span>
+              16
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            <a href="/wiki/Software_architecture" title="Software architecture">
+             Software architecture
+            </a>
+            <sup class="reference" id="cite_ref-17">
+             <a href="#cite_note-17">
+              <span class="cite-bracket">
+               [
+              </span>
+              17
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="reference" id="cite_ref-18">
+             <a href="#cite_note-18">
+              <span class="cite-bracket">
+               [
+              </span>
+              18
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            <a href="/wiki/Enterprise_architecture" title="Enterprise architecture">
+             Enterprise architecture
+            </a>
+            <sup class="reference" id="cite_ref-19">
+             <a href="#cite_note-19">
+              <span class="cite-bracket">
+               [
+              </span>
+              19
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="reference" id="cite_ref-20">
+             <a href="#cite_note-20">
+              <span class="cite-bracket">
+               [
+              </span>
+              20
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Collaborative systems architectures (such as the Internet,
+            <a class="mw-redirect" href="/wiki/Intelligent_transportation_systems" title="Intelligent transportation systems">
+             intelligent transportation systems
+            </a>
+            , and joint air defense systems)
+           </li>
+           <li>
+            Manufacturing systems architectures
+            <sup class="reference" id="cite_ref-21">
+             <a href="#cite_note-21">
+              <span class="cite-bracket">
+               [
+              </span>
+              21
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            Strategic systems architecture
+            <sup class="reference" id="cite_ref-22">
+             <a href="#cite_note-22">
+              <span class="cite-bracket">
+               [
+              </span>
+              22
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Systems_architecture&amp;action=edit&amp;section=4" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Arcadia_(engineering)" title="Arcadia (engineering)">
+             Arcadia (engineering)
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Architectural_pattern_(computer_science)" title="Architectural pattern (computer science)">
+             Architectural pattern (computer science)
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Department_of_Defense_Architecture_Framework" title="Department of Defense Architecture Framework">
+             Department of Defense Architecture Framework
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Enterprise_architecture_framework" title="Enterprise architecture framework">
+             Enterprise architecture framework
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Enterprise_information_security_architecture" title="Enterprise information security architecture">
+             Enterprise information security architecture
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Process_architecture" title="Process architecture">
+             Process architecture
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Requirements_analysis" title="Requirements analysis">
+             Requirements analysis
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Software_architecture" title="Software architecture">
+             Software architecture
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Software_engineering" title="Software engineering">
+             Software engineering
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Systems_architect" title="Systems architect">
+             Systems architect
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Systems_analysis" title="Systems analysis">
+             Systems analysis
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Systems_design" title="Systems design">
+             Systems design
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Systems_engineering" title="Systems engineering">
+             Systems engineering
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Systems_architecture&amp;action=edit&amp;section=5" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               Hannu Jaakkoррмшлинla and Bernhard Thalheim. (2011) "Architecture-driven modelling methodologies." In:
+               <i>
+                Proceedings of the 2011 conference on Information Modelling and Knowledge Bases XXII
+               </i>
+               . Anneli Heimbürger et al. (eds). IOS Press. p. 98
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               Paul C. Clements (1996)  "
+               <a class="external text" href="http://www.sei.cmu.edu/library/assets/Survey_of_ADLs.pdf" rel="nofollow">
+                A survey of architecture description languages
+               </a>
+               ." Proceedings of the 8th international workshop on software specification and design. IEEE Computer Society, 1996.
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               Nenad Medvidovic and Richard N. Taylor (2000). "
+               <a class="external text" href="ftp://ftp.ics.uci.edu/pub/arch/papers/TR-UCI-ICS-97-02.pdf" rel="nofollow">
+                A classification and comparison framework for software architecture description languages.
+               </a>
+               " Software Engineering, IEEE Transactions on 26.1 (2000): 70-93.
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation cs2" id="CITEREFNejad2023">
+                Nejad, Bobby (2023), Nejad, Bobby (ed.),
+                <a class="external text" href="https://doi.org/10.1007/978-3-031-15900-8_13" rel="nofollow">
+                 "The Physical Architecture"
+                </a>
+                ,
+                <i>
+                 Introduction to Satellite Ground Segment Systems Engineering: Principles and Operational Aspects
+                </i>
+                , Space Technology Library, vol. 41, Cham: Springer International Publishing, pp. 187–197,
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1007%2F978-3-031-15900-8_13" rel="nofollow">
+                 10.1007/978-3-031-15900-8_13
+                </a>
+                ,
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-3-031-15900-8" title="Special:BookSources/978-3-031-15900-8">
+                 <bdi>
+                  978-3-031-15900-8
+                 </bdi>
+                </a>
+                <span class="reference-accessdate">
+                 , retrieved
+                 <span class="nowrap">
+                  2022-12-07
+                 </span>
+                </span>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Introduction+to+Satellite+Ground+Segment+Systems+Engineering%3A+Principles+and+Operational+Aspects&amp;rft.atitle=The+Physical+Architecture&amp;rft.volume=41&amp;rft.pages=187-197&amp;rft.date=2023&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-031-15900-8_13&amp;rft.isbn=978-3-031-15900-8&amp;rft.aulast=Nejad&amp;rft.aufirst=Bobby&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1007%2F978-3-031-15900-8_13&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystems+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               From
+               <a class="mw-redirect" href="/wiki/ANSI" title="ANSI">
+                ANSI
+               </a>
+               /
+               <a class="mw-redirect" href="/wiki/IEEE" title="IEEE">
+                IEEE
+               </a>
+               <a href="/wiki/IEEE_1471" title="IEEE 1471">
+                1471-2000
+               </a>
+               .
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               From the
+               <a class="external text" href="http://www.cmu.edu" rel="nofollow">
+                Carnegie Mellon University
+               </a>
+               's
+               <a class="external text" href="http://www.sei.cmu.edu" rel="nofollow">
+                Software Engineering Institute
+               </a>
+               .
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               From
+               <a class="external text" href="http://www.manningaffordability.com/s&amp;tweb/HEResource/Other/Definitions.htm" rel="nofollow">
+                The Human Engineering Home Page's Glossary
+               </a>
+               .
+               <a class="external text" href="https://web.archive.org/web/20150213071022/http://www.manningaffordability.com/s%26tweb/HEResource/Other/Definitions.htm" rel="nofollow">
+                Archived
+               </a>
+               2015-02-13 at the
+               <a href="/wiki/Wayback_Machine" title="Wayback Machine">
+                Wayback Machine
+               </a>
+              </span>
+             </li>
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               From
+               <a class="external text" href="http://www.opfro.org/Components/WorkProducts/ArchitectureSet/Architectures/Architectures.html" rel="nofollow">
+                OPEN Process Framework (OPF) Repository
+               </a>
+               <a class="external text" href="https://web.archive.org/web/20060305173824/http://www.opfro.org/Components/WorkProducts/ArchitectureSet/Architectures/Architectures.html" rel="nofollow">
+                Archived
+               </a>
+               2006-03-05 at the
+               <a href="/wiki/Wayback_Machine" title="Wayback Machine">
+                Wayback Machine
+               </a>
+               .
+              </span>
+             </li>
+             <li id="cite_note-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-9">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               From
+               <a class="external text" href="http://nces.ed.gov/pubs98/tech/glossary.asp" rel="nofollow">
+                The National Center for Education Statistics glossary
+               </a>
+               .
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="mw-redirect" href="/wiki/TOGAF" title="TOGAF">
+                TOGAF
+               </a>
+              </span>
+             </li>
+             <li id="cite_note-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-11">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               From
+               <a class="mw-redirect" href="/wiki/IEEE" title="IEEE">
+                IEEE
+               </a>
+               1220-1998 as found at
+               <a class="external text" href="http://www.acq.osd.mil/osjtf/termsdef.html" rel="nofollow">
+                their glossary
+               </a>
+               <a class="external text" href="https://web.archive.org/web/20060517130043/http://www.acq.osd.mil/osjtf/termsdef.html" rel="nofollow">
+                Archived
+               </a>
+               2006-05-17 at the
+               <a href="/wiki/Wayback_Machine" title="Wayback Machine">
+                Wayback Machine
+               </a>
+               .
+              </span>
+             </li>
+             <li id="cite_note-12">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-12">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="mw-redirect" href="/wiki/TOGAF" title="TOGAF">
+                TOGAF
+               </a>
+              </span>
+             </li>
+             <li id="cite_note-13">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-13">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               The Method Framework for Engineering System Architectures,
+               <a href="/wiki/Donald_Firesmith" title="Donald Firesmith">
+                Donald Firesmith
+               </a>
+               et al., 2008
+              </span>
+             </li>
+             <li id="cite_note-14">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-14">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="external text" href="http://borisgolden.com/systems_architecture.html#principles" rel="nofollow">
+                <i>
+                 The fundamental principles of Systems Architecture
+                </i>
+               </a>
+               , by Boris Golden
+              </span>
+             </li>
+             <li id="cite_note-15">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-15">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               The Art of Systems Architecture,
+               <a class="new" href="/w/index.php?title=Mark_Maier&amp;action=edit&amp;redlink=1" title="Mark Maier (page does not exist)">
+                Mark Maier
+               </a>
+               and
+               <a href="/wiki/Eberhardt_Rechtin" title="Eberhardt Rechtin">
+                Eberhardt Rechtin
+               </a>
+               , 2nd ed 2002
+              </span>
+             </li>
+             <li id="cite_note-16">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-16">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFAbbas2023">
+                Abbas, Karim (2023).
+                <a class="external text" href="https://link.springer.com/book/10.1007/978-3-031-08693-9" rel="nofollow">
+                 <i>
+                  From Algorithms to Hardware Architectures
+                 </i>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1007%2F978-3-031-08693-9" rel="nofollow">
+                 10.1007/978-3-031-08693-9
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-3-031-08692-2" title="Special:BookSources/978-3-031-08692-2">
+                 <bdi>
+                  978-3-031-08692-2
+                 </bdi>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:251371033" rel="nofollow">
+                 251371033
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=From+Algorithms+to+Hardware+Architectures&amp;rft.date=2023&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A251371033%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-031-08693-9&amp;rft.isbn=978-3-031-08692-2&amp;rft.aulast=Abbas&amp;rft.aufirst=Karim&amp;rft_id=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-3-031-08693-9&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystems+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-17">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-17">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFMichaels2022">
+                Michaels, Paul (2022).
+                <a class="external text" href="https://link.springer.com/book/10.1007/978-1-4842-7990-8" rel="nofollow">
+                 <i>
+                  Software Architecture by Example
+                 </i>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1007%2F978-1-4842-7990-8" rel="nofollow">
+                 10.1007/978-1-4842-7990-8
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-1-4842-7989-2" title="Special:BookSources/978-1-4842-7989-2">
+                 <bdi>
+                  978-1-4842-7989-2
+                 </bdi>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:248408249" rel="nofollow">
+                 248408249
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Software+Architecture+by+Example&amp;rft.date=2022&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A248408249%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1007%2F978-1-4842-7990-8&amp;rft.isbn=978-1-4842-7989-2&amp;rft.aulast=Michaels&amp;rft.aufirst=Paul&amp;rft_id=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-1-4842-7990-8&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystems+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-18">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-18">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFZengNiuZhaoPeng2022">
+                Zeng, Ruiqi; Niu, Yiru; Zhao, Yue; Peng, Haiyang (2022).
+                <a class="external text" href="https://link.springer.com/chapter/10.1007/978-3-030-94551-0_54" rel="nofollow">
+                 "Software Architecture Evolution and Technology Research"
+                </a>
+                . In Liu, Shuai; Ma, Xuefei (eds.).
+                <i>
+                 Advanced Hybrid Information Processing
+                </i>
+                . Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering. Vol. 416. Cham: Springer International Publishing. pp. 708–720.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1007%2F978-3-030-94551-0_54" rel="nofollow">
+                 10.1007/978-3-030-94551-0_54
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-3-030-94551-0" title="Special:BookSources/978-3-030-94551-0">
+                 <bdi>
+                  978-3-030-94551-0
+                 </bdi>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:246051702" rel="nofollow">
+                 246051702
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Software+Architecture+Evolution+and+Technology+Research&amp;rft.btitle=Advanced+Hybrid+Information+Processing&amp;rft.place=Cham&amp;rft.series=Lecture+Notes+of+the+Institute+for+Computer+Sciences%2C+Social+Informatics+and+Telecommunications+Engineering&amp;rft.pages=708-720&amp;rft.pub=Springer+International+Publishing&amp;rft.date=2022&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A246051702%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-030-94551-0_54&amp;rft.isbn=978-3-030-94551-0&amp;rft.aulast=Zeng&amp;rft.aufirst=Ruiqi&amp;rft.au=Niu%2C+Yiru&amp;rft.au=Zhao%2C+Yue&amp;rft.au=Peng%2C+Haiyang&amp;rft_id=https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-030-94551-0_54&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystems+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-19">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-19">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation cs2" id="CITEREFZiemann2022">
+                Ziemann, Jörg (2022), Ziemann, Jörg (ed.),
+                <a class="external text" href="https://doi.org/10.1007/978-3-030-96734-5_2" rel="nofollow">
+                 "Enterprise Architecture in a Nutshell"
+                </a>
+                ,
+                <i>
+                 Fundamentals of Enterprise Architecture Management: Foundations for Steering the Enterprise-Wide Digital System
+                </i>
+                , The Enterprise Engineering Series, Cham: Springer International Publishing, pp. 23–60,
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1007%2F978-3-030-96734-5_2" rel="nofollow">
+                 10.1007/978-3-030-96734-5_2
+                </a>
+                ,
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-3-030-96734-5" title="Special:BookSources/978-3-030-96734-5">
+                 <bdi>
+                  978-3-030-96734-5
+                 </bdi>
+                </a>
+                <span class="reference-accessdate">
+                 , retrieved
+                 <span class="nowrap">
+                  2022-12-07
+                 </span>
+                </span>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Fundamentals+of+Enterprise+Architecture+Management%3A+Foundations+for+Steering+the+Enterprise-Wide+Digital+System&amp;rft.atitle=Enterprise+Architecture+in+a+Nutshell&amp;rft.pages=23-60&amp;rft.date=2022&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-030-96734-5_2&amp;rft.isbn=978-3-030-96734-5&amp;rft.aulast=Ziemann&amp;rft.aufirst=J%C3%B6rg&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1007%2F978-3-030-96734-5_2&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystems+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-20">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-20">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation cs2" id="CITEREFMusukutwa2022">
+                Musukutwa, Sheunopa Chalmers (2022), Musukutwa, Sheunopa Chalmers (ed.),
+                <a class="external text" href="https://doi.org/10.1007/978-1-4842-8575-6_3" rel="nofollow">
+                 "Developing an Enterprise Architecture"
+                </a>
+                ,
+                <i>
+                 SAP Enterprise Architecture: A Blueprint for Executing Digital Transformation
+                </i>
+                , Berkeley, CA: Apress, pp. 51–92,
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1007%2F978-1-4842-8575-6_3" rel="nofollow">
+                 10.1007/978-1-4842-8575-6_3
+                </a>
+                ,
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-1-4842-8575-6" title="Special:BookSources/978-1-4842-8575-6">
+                 <bdi>
+                  978-1-4842-8575-6
+                 </bdi>
+                </a>
+                <span class="reference-accessdate">
+                 , retrieved
+                 <span class="nowrap">
+                  2022-12-07
+                 </span>
+                </span>
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=SAP+Enterprise+Architecture%3A+A+Blueprint+for+Executing+Digital+Transformation&amp;rft.atitle=Developing+an+Enterprise+Architecture&amp;rft.pages=51-92&amp;rft.date=2022&amp;rft_id=info%3Adoi%2F10.1007%2F978-1-4842-8575-6_3&amp;rft.isbn=978-1-4842-8575-6&amp;rft.aulast=Musukutwa&amp;rft.aufirst=Sheunopa+Chalmers&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1007%2F978-1-4842-8575-6_3&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystems+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-21">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-21">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFMarkusheskaSrinivasanWaltherGindorf2022">
+                Markusheska, Nastasija; Srinivasan, Venkatachalam; Walther, Jan-Niclas; Gindorf, Alex; Biedermann, Jörn; Meller, Frank; Nagel, Björn (2022-07-01).
+                <a class="external text" href="https://doi.org/10.1007/s13272-022-00582-6" rel="nofollow">
+                 "Implementing a system architecture model for automated aircraft cabin assembly processes"
+                </a>
+                .
+                <i>
+                 CEAS Aeronautical Journal
+                </i>
+                .
+                <b>
+                 13
+                </b>
+                (3): 689–703.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://doi.org/10.1007%2Fs13272-022-00582-6" rel="nofollow">
+                  10.1007/s13272-022-00582-6
+                 </a>
+                </span>
+                .
+                <a class="mw-redirect" href="/wiki/ISSN_(identifier)" title="ISSN (identifier)">
+                 ISSN
+                </a>
+                <a class="external text" href="https://search.worldcat.org/issn/1869-5590" rel="nofollow">
+                 1869-5590
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:248972956" rel="nofollow">
+                 248972956
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=CEAS+Aeronautical+Journal&amp;rft.atitle=Implementing+a+system+architecture+model+for+automated+aircraft+cabin+assembly+processes&amp;rft.volume=13&amp;rft.issue=3&amp;rft.pages=689-703&amp;rft.date=2022-07-01&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A248972956%23id-name%3DS2CID&amp;rft.issn=1869-5590&amp;rft_id=info%3Adoi%2F10.1007%2Fs13272-022-00582-6&amp;rft.aulast=Markusheska&amp;rft.aufirst=Nastasija&amp;rft.au=Srinivasan%2C+Venkatachalam&amp;rft.au=Walther%2C+Jan-Niclas&amp;rft.au=Gindorf%2C+Alex&amp;rft.au=Biedermann%2C+J%C3%B6rn&amp;rft.au=Meller%2C+Frank&amp;rft.au=Nagel%2C+Bj%C3%B6rn&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1007%2Fs13272-022-00582-6&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASystems+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-22">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-22">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="external text" href="http://www.alacrastore.com/research/forrester-Choosing_A_Strategic_Systems_Architecture-39702" rel="nofollow">
+                <i>
+                 Choosing A Strategic Systems Architecture
+                </i>
+               </a>
+               , by Brad Day
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Systems_architecture&amp;action=edit&amp;section=6" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1235681985">
+           .mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:var(--background-color-interactive-subtle,#f8f9fa);display:flow-root}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}
+          </style>
+          <style data-mw-deduplicate="TemplateStyles:r1237033735">
+           @media print{body.ns-0 .mw-parser-output .sistersitebox{display:none!important}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}
+          </style>
+          <div class="side-box side-box-right plainlinks sistersitebox">
+           <style data-mw-deduplicate="TemplateStyles:r1126788409">
+            .mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}
+           </style>
+           <div class="side-box-flex">
+            <div class="side-box-image">
+             <span class="noviewer" typeof="mw:File">
+              <span>
+               <img alt="" class="mw-file-element" data-file-height="1376" data-file-width="1024" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" width="30"/>
+              </span>
+             </span>
+            </div>
+            <div class="side-box-text plainlist">
+             Wikimedia Commons has media related to
+             <span style="font-weight: bold; font-style: italic;">
+              <a class="extiw" href="https://commons.wikimedia.org/wiki/Category:Systems_architecture" title="commons:Category:Systems architecture">
+               Systems architecture
+              </a>
+             </span>
+             .
+            </div>
+           </div>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="http://sysarch.pbwiki.com" rel="nofollow">
+             Principles of system architecture
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://borisgolden.com/systems_architecture.html" rel="nofollow">
+             What is Systems Architecture ?
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://www.incose.org/practice/techactivities/wg/sysarch/" rel="nofollow">
+             INCOSE Systems Architecture Working Group
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://www.elsevier.com/wps/find/journaldescription.cws_home/505616/description#description" rel="nofollow">
+             Journal of Systems Architecture
+            </a>
+           </li>
+          </ul>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐45jtp
+Cached time: 20240926234950
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.423 seconds
+Real time usage: 0.550 seconds
+Preprocessor visited node count: 1426/1000000
+Post‐expand include size: 30490/2097152 bytes
+Template argument size: 1743/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 4/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 40131/5000000 bytes
+Lua time usage: 0.253/10.000 seconds
+Lua memory usage: 6288320/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  490.107      1 -total
+ 39.34%  192.797      1 Template:Reflist
+ 21.98%  107.713      3 Template:Citation
+ 18.56%   90.950      1 Template:Short_description
+ 13.74%   67.361      1 Template:Commonscat
+ 13.09%   64.135      1 Template:Sister_project
+ 12.72%   62.358      1 Template:Side_box
+ 10.98%   53.820      1 Template:Expand_section
+ 10.41%   51.002      1 Template:Ambox
+  9.92%   48.643      1 Template:Huh?
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:3403318-0!canonical and timestamp 20240926234950 and revision id 1246151025. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Systems_architecture&amp;oldid=1246151025">
+          https://en.wikipedia.org/w/index.php?title=Systems_architecture&amp;oldid=1246151025
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Systems_architecture" title="Category:Systems architecture">
+            Systems architecture
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Systems_engineering" title="Category:Systems engineering">
+            Systems engineering
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Software_architecture" title="Category:Software architecture">
+            Software architecture
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">
+            Webarchive template wayback links
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_May_2014" title="Category:Wikipedia articles needing clarification from May 2014">
+            Wikipedia articles needing clarification from May 2014
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_specifically_marked_weasel-worded_phrases_from_May_2014" title="Category:Articles with specifically marked weasel-worded phrases from May 2014">
+            Articles with specifically marked weasel-worded phrases from May 2014
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_to_be_expanded_from_July_2012" title="Category:Articles to be expanded from July 2012">
+            Articles to be expanded from July 2012
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_to_be_expanded" title="Category:All articles to be expanded">
+            All articles to be expanded
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Commons_category_link_from_Wikidata" title="Category:Commons category link from Wikidata">
+            Commons category link from Wikidata
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 17 September 2024, at 06:19
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Systems_architecture&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-z7skb","wgBackendResponseTime":141,"wgPageParseReport":{"limitreport":{"cputime":"0.423","walltime":"0.550","ppvisitednodes":{"value":1426,"limit":1000000},"postexpandincludesize":{"value":30490,"limit":2097152},"templateargumentsize":{"value":1743,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":40131,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  490.107      1 -total"," 39.34%  192.797      1 Template:Reflist"," 21.98%  107.713      3 Template:Citation"," 18.56%   90.950      1 Template:Short_description"," 13.74%   67.361      1 Template:Commonscat"," 13.09%   64.135      1 Template:Sister_project"," 12.72%   62.358      1 Template:Side_box"," 10.98%   53.820      1 Template:Expand_section"," 10.41%   51.002      1 Template:Ambox","  9.92%   48.643      1 Template:Huh?"]},"scribunto":{"limitreport-timeusage":{"value":"0.253","limit":"10.000"},"limitreport-memusage":{"value":6288320,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-45jtp","timestamp":"20240926234950","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Systems architecture","url":"https:\/\/en.wikipedia.org\/wiki\/Systems_architecture","sameAs":"http:\/\/www.wikidata.org\/entity\/Q477538","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q477538","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2005-12-13T03:50:00Z","dateModified":"2024-09-17T06:19:41Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/f0\/Computer_system_architecture.svg","headline":"conceptual model that defines the structure, behavior, and views of a system"}
+  </script>
+ </body>
+</html>

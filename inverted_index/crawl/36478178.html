@@ -1,0 +1,3200 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Memcached - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"38689ed2-dbe1-4d3d-a6bd-569f310f816f","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Memcached","wgTitle":"Memcached","wgCurRevisionId":1245408190,"wgRevisionId":1245408190,"wgArticleId":437720,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Articles needing additional references from June 2013","All articles needing additional references","2003 software","Cross-platform software","Database caching","Free memory management software","Key-value databases","Software using the BSD license","Structured storage"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Memcached","wgRelevantArticleId":437720,
+"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q306661","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform"
+,"platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.pygments.view","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin",
+"mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Memcached - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Memcached" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Memcached&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Memcached" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Memcached"/>
+  <meta eecs485_docid="36478178"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Memcached rootpage-Memcached skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Memcached" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Memcached" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Memcached" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Memcached" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Software_architecture">
+           <a class="vector-toc-link" href="#Software_architecture">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Software architecture
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Software_architecture-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Software architecture subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Software_architecture-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Security">
+             <a class="vector-toc-link" href="#Security">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.1
+               </span>
+               <span>
+                Security
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Security-sublist">
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Used_as_a_DDoS_attack_vector">
+               <a class="vector-toc-link" href="#Used_as_a_DDoS_attack_vector">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  1.1.1
+                 </span>
+                 <span>
+                  Used as a DDoS attack vector
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Used_as_a_DDoS_attack_vector-sublist">
+               </ul>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Example_code">
+           <a class="vector-toc-link" href="#Example_code">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Example code
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Example_code-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Usage">
+           <a class="vector-toc-link" href="#Usage">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Usage
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Usage-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Memcached
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 18 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-18" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          18 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-bg mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Български" data-language-local-name="Bulgarian" data-title="Memcached" href="https://bg.wikipedia.org/wiki/Memcached" hreflang="bg" lang="bg" title="Memcached – Bulgarian">
+             <span>
+              Български
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Memcached" href="https://ca.wikipedia.org/wiki/Memcached" hreflang="ca" lang="ca" title="Memcached – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-cs mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Čeština" data-language-local-name="Czech" data-title="Memcached" href="https://cs.wikipedia.org/wiki/Memcached" hreflang="cs" lang="cs" title="Memcached – Czech">
+             <span>
+              Čeština
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Memcached" href="https://de.wikipedia.org/wiki/Memcached" hreflang="de" lang="de" title="Memcached – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Memcached" href="https://es.wikipedia.org/wiki/Memcached" hreflang="es" lang="es" title="Memcached – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="مم‌کشد" href="https://fa.wikipedia.org/wiki/%D9%85%D9%85%E2%80%8C%DA%A9%D8%B4%D8%AF" hreflang="fa" lang="fa" title="مم‌کشد – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Memcached" href="https://fr.wikipedia.org/wiki/Memcached" hreflang="fr" lang="fr" title="Memcached – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="Memcached" href="https://ko.wikipedia.org/wiki/Memcached" hreflang="ko" lang="ko" title="Memcached – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hy mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Հայերեն" data-language-local-name="Armenian" data-title="Memcached" href="https://hy.wikipedia.org/wiki/Memcached" hreflang="hy" lang="hy" title="Memcached – Armenian">
+             <span>
+              Հայերեն
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Memcached" href="https://it.wikipedia.org/wiki/Memcached" hreflang="it" lang="it" title="Memcached – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-mn mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Монгол" data-language-local-name="Mongolian" data-title="Memcached" href="https://mn.wikipedia.org/wiki/Memcached" hreflang="mn" lang="mn" title="Memcached – Mongolian">
+             <span>
+              Монгол
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="Memcached" href="https://ja.wikipedia.org/wiki/Memcached" hreflang="ja" lang="ja" title="Memcached – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Memcached" href="https://pl.wikipedia.org/wiki/Memcached" hreflang="pl" lang="pl" title="Memcached – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Memcached" href="https://pt.wikipedia.org/wiki/Memcached" hreflang="pt" lang="pt" title="Memcached – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Memcached" href="https://ru.wikipedia.org/wiki/Memcached" hreflang="ru" lang="ru" title="Memcached – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Memcached" href="https://uk.wikipedia.org/wiki/Memcached" hreflang="uk" lang="uk" title="Memcached – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-vi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" data-title="Memcached" href="https://vi.wikipedia.org/wiki/Memcached" hreflang="vi" lang="vi" title="Memcached – Vietnamese">
+             <span>
+              Tiếng Việt
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="Memcached" href="https://zh.wikipedia.org/wiki/Memcached" hreflang="zh" lang="zh" title="Memcached – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q306661#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Memcached" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Memcached" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Memcached">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Memcached&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Memcached&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Memcached">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Memcached&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Memcached&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Memcached" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Memcached" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Memcached&amp;oldid=1245408190" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Memcached&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Memcached&amp;id=1245408190&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMemcached">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMemcached">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q306661" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Memcached&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Memcached&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Software that caches strings in computer memory, often used for web sites
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1237879389">
+          .mw-parser-output .infobox-subbox{padding:0;border:none;margin:-3px;width:auto;min-width:100%;font-size:100%;clear:none;float:none;background-color:transparent}.mw-parser-output .infobox-3cols-child{margin:auto}.mw-parser-output .infobox .navbar{font-size:100%}body.skin-minerva .mw-parser-output .infobox-header,body.skin-minerva .mw-parser-output .infobox-subheader,body.skin-minerva .mw-parser-output .infobox-above,body.skin-minerva .mw-parser-output .infobox-title,body.skin-minerva .mw-parser-output .infobox-image,body.skin-minerva .mw-parser-output .infobox-full-data,body.skin-minerva .mw-parser-output .infobox-below{text-align:center}@media screen{html.skin-theme-clientpref-night .mw-parser-output .infobox-full-data:not(.notheme)>div:not(.notheme)[style]{background:#1f1f23!important;color:#f8f9fa}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .infobox-full-data:not(.notheme) div:not(.notheme){background:#1f1f23!important;color:#f8f9fa}}@media(min-width:640px){body.skin--responsive .mw-parser-output .infobox-table{display:table!important}body.skin--responsive .mw-parser-output .infobox-table>caption{display:table-caption!important}body.skin--responsive .mw-parser-output .infobox-table>tbody{display:table-row-group}body.skin--responsive .mw-parser-output .infobox-table tr{display:table-row!important}body.skin--responsive .mw-parser-output .infobox-table th,body.skin--responsive .mw-parser-output .infobox-table td{padding-left:inherit;padding-right:inherit}}
+         </style>
+         <table class="infobox vevent">
+          <caption class="infobox-title summary">
+           Memcached
+          </caption>
+          <tbody>
+           <tr>
+            <td class="infobox-image logo" colspan="2">
+             <span typeof="mw:File">
+              <a class="mw-file-description" href="/wiki/File:Memcached.svg">
+               <img class="mw-file-element" data-file-height="254" data-file-width="254" decoding="async" height="100" src="//upload.wikimedia.org/wikipedia/en/thumb/2/27/Memcached.svg/100px-Memcached.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/2/27/Memcached.svg/150px-Memcached.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/2/27/Memcached.svg/200px-Memcached.svg.png 2x" width="100"/>
+              </a>
+             </span>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             <a href="/wiki/Programmer" title="Programmer">
+              Developer(s)
+             </a>
+            </th>
+            <td class="infobox-data">
+             Danga Interactive
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             Initial release
+            </th>
+            <td class="infobox-data">
+             May 22, 2003
+             <span style="display:none">
+              (
+              <span class="bday dtstart published updated itvstart">
+               2003-05-22
+              </span>
+              )
+             </span>
+            </td>
+           </tr>
+           <tr style="display: none;">
+            <td class="infobox-full-data" colspan="2">
+             <link href="mw-data:TemplateStyles:r1237879389" rel="mw-deduplicated-inline-style"/>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             <a href="/wiki/Software_release_life_cycle" title="Software release life cycle">
+              Stable release
+             </a>
+            </th>
+            <td class="infobox-data">
+             <div style="margin:0px;">
+              1.6.31
+              <sup class="reference" id="cite_ref-wikidata-76cadc3bd5cd5bca8f0f1ff628c94468d4838270-v18_1-0">
+               <a href="#cite_note-wikidata-76cadc3bd5cd5bca8f0f1ff628c94468d4838270-v18-1">
+                <span class="cite-bracket">
+                 [
+                </span>
+                1
+                <span class="cite-bracket">
+                 ]
+                </span>
+               </a>
+              </sup>
+              <span class="mw-valign-text-top" typeof="mw:File/Frameless">
+               <a href="https://www.wikidata.org/wiki/Q306661?uselang=en#P348" title="Edit this on Wikidata">
+                <img alt="Edit this on Wikidata" class="mw-file-element" data-file-height="20" data-file-width="20" decoding="async" height="10" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" width="10"/>
+               </a>
+              </span>
+              / 7 September 2024
+              <span class="noprint">
+               ; 19 days ago
+              </span>
+              <span style="display:none">
+               (
+               <span class="bday dtstart published updated">
+                7 September 2024
+               </span>
+               )
+              </span>
+             </div>
+            </td>
+           </tr>
+           <tr style="display:none">
+            <td colspan="2">
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             <a href="/wiki/Repository_(version_control)" title="Repository (version control)">
+              Repository
+             </a>
+            </th>
+            <td class="infobox-data">
+             <style data-mw-deduplicate="TemplateStyles:r1126788409">
+              .mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}
+             </style>
+             <div class="plainlist">
+              <ul>
+               <li>
+                <span class="url">
+                 <a class="external text" href="https://github.com/memcached/memcached" rel="nofollow">
+                  github
+                  <wbr/>
+                  .com
+                  <wbr/>
+                  /memcached
+                  <wbr/>
+                  /memcached
+                 </a>
+                </span>
+                <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless">
+                 <a href="https://www.wikidata.org/wiki/Q306661#P1324" title="Edit this at Wikidata">
+                  <img alt="Edit this at Wikidata" class="mw-file-element" data-file-height="20" data-file-width="20" decoding="async" height="10" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" width="10"/>
+                 </a>
+                </span>
+               </li>
+              </ul>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             Written in
+            </th>
+            <td class="infobox-data">
+             <a href="/wiki/C_(programming_language)" title="C (programming language)">
+              C
+             </a>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             <a href="/wiki/Operating_system" title="Operating system">
+              Operating system
+             </a>
+            </th>
+            <td class="infobox-data">
+             <a class="mw-redirect" href="/wiki/Cross-platform" title="Cross-platform">
+              Cross-platform
+             </a>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             <a href="/wiki/Software_categories#Categorization_approaches" title="Software categories">
+              Type
+             </a>
+            </th>
+            <td class="infobox-data">
+             distributed memory caching system
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             <a href="/wiki/Software_license" title="Software license">
+              License
+             </a>
+            </th>
+            <td class="infobox-data">
+             <a class="mw-redirect" href="/wiki/Revised_BSD_license" title="Revised BSD license">
+              Revised BSD license
+             </a>
+             <sup class="reference" id="cite_ref-Memcached_license_2-0">
+              <a href="#cite_note-Memcached_license-2">
+               <span class="cite-bracket">
+                [
+               </span>
+               2
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             Website
+            </th>
+            <td class="infobox-data">
+             <span class="url">
+              <a class="external text" href="https://memcached.org" rel="nofollow">
+               memcached
+               <wbr/>
+               .org
+              </a>
+             </span>
+             <span class="penicon autoconfirmed-show">
+              <span class="mw-valign-text-top" typeof="mw:File/Frameless">
+               <a href="https://www.wikidata.org/wiki/Q306661?uselang=en#P856" title="Edit this on Wikidata">
+                <img alt="Edit this on Wikidata" class="mw-file-element" data-file-height="20" data-file-width="20" decoding="async" height="10" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" width="10"/>
+               </a>
+              </span>
+             </span>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          <b>
+           Memcached
+          </b>
+          (pronounced variously
+          <i>
+           mem-cash-dee
+          </i>
+          or
+          <i>
+           mem-cashed
+          </i>
+          ) is a general-purpose distributed
+          <a class="mw-redirect" href="/wiki/Memory_caching" title="Memory caching">
+           memory-caching
+          </a>
+          system. It is often used to speed up dynamic
+          <a href="/wiki/Database" title="Database">
+           database
+          </a>
+          -driven websites by caching data and
+          <a href="/wiki/Object_(computer_science)" title="Object (computer science)">
+           objects
+          </a>
+          in
+          <a href="/wiki/Random-access_memory" title="Random-access memory">
+           RAM
+          </a>
+          to reduce the number of times an external data source (such as a database or API) must be read. Memcached is
+          <a href="/wiki/Free_and_open-source_software" title="Free and open-source software">
+           free and open-source software
+          </a>
+          , licensed under the
+          <a class="mw-redirect" href="/wiki/Revised_BSD_license" title="Revised BSD license">
+           Revised BSD license
+          </a>
+          .
+          <sup class="reference" id="cite_ref-Memcached_license_2-1">
+           <a href="#cite_note-Memcached_license-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          Memcached runs on
+          <a href="/wiki/Unix-like" title="Unix-like">
+           Unix-like
+          </a>
+          operating systems (
+          <a href="/wiki/Linux" title="Linux">
+           Linux
+          </a>
+          and
+          <a href="/wiki/MacOS" title="MacOS">
+           macOS
+          </a>
+          ) and on
+          <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">
+           Microsoft Windows
+          </a>
+          . It depends on the
+          <a href="/wiki/Libevent" title="Libevent">
+           libevent
+          </a>
+          library.
+         </p>
+         <p>
+          Memcached's
+          <a class="mw-redirect" href="/wiki/Application_Programming_Interface" title="Application Programming Interface">
+           APIs
+          </a>
+          provide a very large
+          <a href="/wiki/Hash_table" title="Hash table">
+           hash table
+          </a>
+          distributed across multiple machines. When the table is full, subsequent inserts cause older data to be purged in
+          <a class="mw-redirect" href="/wiki/Least_recently_used" title="Least recently used">
+           least recently used
+          </a>
+          (LRU) order.
+          <sup class="reference" id="cite_ref-3">
+           <a href="#cite_note-3">
+            <span class="cite-bracket">
+             [
+            </span>
+            3
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-4">
+           <a href="#cite_note-4">
+            <span class="cite-bracket">
+             [
+            </span>
+            4
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          Applications using Memcached typically layer requests and additions into RAM before falling back on a slower backing store, such as a database.
+         </p>
+         <p>
+          Memcached has no internal mechanism to track misses which may happen. However, some third party utilities provide this functionality.
+         </p>
+         <p>
+          Memcached was first developed by
+          <a href="/wiki/Brad_Fitzpatrick" title="Brad Fitzpatrick">
+           Brad Fitzpatrick
+          </a>
+          for his website
+          <a href="/wiki/LiveJournal" title="LiveJournal">
+           LiveJournal
+          </a>
+          , on May 22, 2003.
+          <sup class="reference" id="cite_ref-5">
+           <a href="#cite_note-5">
+            <span class="cite-bracket">
+             [
+            </span>
+            5
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-6">
+           <a href="#cite_note-6">
+            <span class="cite-bracket">
+             [
+            </span>
+            6
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          It was originally written in
+          <a href="/wiki/Perl" title="Perl">
+           Perl
+          </a>
+          , then later rewritten in
+          <a href="/wiki/C_(programming_language)" title="C (programming language)">
+           C
+          </a>
+          by Anatoly Vorobey, then employed by LiveJournal.
+          <sup class="reference" id="cite_ref-7">
+           <a href="#cite_note-7">
+            <span class="cite-bracket">
+             [
+            </span>
+            7
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          Memcached is now used by many other systems, including
+          <a href="/wiki/YouTube" title="YouTube">
+           YouTube
+          </a>
+          ,
+          <sup class="reference" id="cite_ref-8">
+           <a href="#cite_note-8">
+            <span class="cite-bracket">
+             [
+            </span>
+            8
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <a href="/wiki/Reddit" title="Reddit">
+           Reddit
+          </a>
+          ,
+          <sup class="reference" id="cite_ref-9">
+           <a href="#cite_note-9">
+            <span class="cite-bracket">
+             [
+            </span>
+            9
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <a href="/wiki/Facebook" title="Facebook">
+           Facebook
+          </a>
+          ,
+          <sup class="reference" id="cite_ref-10">
+           <a href="#cite_note-10">
+            <span class="cite-bracket">
+             [
+            </span>
+            10
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-11">
+           <a href="#cite_note-11">
+            <span class="cite-bracket">
+             [
+            </span>
+            11
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <a href="/wiki/Pinterest" title="Pinterest">
+           Pinterest
+          </a>
+          ,
+          <sup class="reference" id="cite_ref-12">
+           <a href="#cite_note-12">
+            <span class="cite-bracket">
+             [
+            </span>
+            12
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-13">
+           <a href="#cite_note-13">
+            <span class="cite-bracket">
+             [
+            </span>
+            13
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <a href="/wiki/Twitter" title="Twitter">
+           Twitter
+          </a>
+          ,
+          <sup class="reference" id="cite_ref-14">
+           <a href="#cite_note-14">
+            <span class="cite-bracket">
+             [
+            </span>
+            14
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <a href="/wiki/Wikipedia" title="Wikipedia">
+           Wikipedia
+          </a>
+          ,
+          <sup class="reference" id="cite_ref-15">
+           <a href="#cite_note-15">
+            <span class="cite-bracket">
+             [
+            </span>
+            15
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          and
+          <a href="/wiki/Method_Studios" title="Method Studios">
+           Method Studios
+          </a>
+          .
+          <sup class="reference" id="cite_ref-16">
+           <a href="#cite_note-16">
+            <span class="cite-bracket">
+             [
+            </span>
+            16
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <a href="/wiki/Google_App_Engine" title="Google App Engine">
+           Google App Engine
+          </a>
+          ,
+          <a href="/wiki/Google_Cloud_Platform" title="Google Cloud Platform">
+           Google Cloud Platform
+          </a>
+          ,
+          <a href="/wiki/Microsoft_Azure" title="Microsoft Azure">
+           Microsoft Azure
+          </a>
+          ,
+          <a class="mw-redirect" href="/wiki/IBM_Bluemix" title="IBM Bluemix">
+           IBM Bluemix
+          </a>
+          and
+          <a href="/wiki/Amazon_Web_Services" title="Amazon Web Services">
+           Amazon Web Services
+          </a>
+          also offer a Memcached service through an API.
+          <sup class="reference" id="cite_ref-17">
+           <a href="#cite_note-17">
+            <span class="cite-bracket">
+             [
+            </span>
+            17
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-18">
+           <a href="#cite_note-18">
+            <span class="cite-bracket">
+             [
+            </span>
+            18
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-19">
+           <a href="#cite_note-19">
+            <span class="cite-bracket">
+             [
+            </span>
+            19
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-20">
+           <a href="#cite_note-20">
+            <span class="cite-bracket">
+             [
+            </span>
+            20
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Software_architecture">
+            Software architecture
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memcached&amp;action=edit&amp;section=1" title="Edit section: Software architecture">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1236091366">
+           .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+          </style>
+          <table class="box-Unreferenced_section plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation">
+           <tbody>
+            <tr>
+             <td class="mbox-image">
+              <div class="mbox-image-div">
+               <span typeof="mw:File">
+                <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                 <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+                </a>
+               </span>
+              </div>
+             </td>
+             <td class="mbox-text">
+              <div class="mbox-text-span">
+               This section
+               <b>
+                does not
+                <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">
+                 cite
+                </a>
+                any
+                <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                 sources
+                </a>
+               </b>
+               .
+               <span class="hide-when-compact">
+                Please help
+                <a href="/wiki/Special:EditPage/Memcached" title="Special:EditPage/Memcached">
+                 improve this section
+                </a>
+                by
+                <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                 adding citations to reliable sources
+                </a>
+                . Unsourced material may be challenged and
+                <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">
+                 removed
+                </a>
+                .
+               </span>
+               <span class="date-container">
+                <i>
+                 (
+                 <span class="date">
+                  June 2013
+                 </span>
+                 )
+                </i>
+               </span>
+               <span class="hide-when-compact">
+                <i>
+                 (
+                 <small>
+                  <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                   Learn how and when to remove this message
+                  </a>
+                 </small>
+                 )
+                </i>
+               </span>
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <p>
+           The system uses a
+           <a class="mw-redirect" href="/wiki/Client%E2%80%93server" title="Client–server">
+            client–server
+           </a>
+           architecture. The servers maintain a key–value
+           <a href="/wiki/Associative_array" title="Associative array">
+            associative array
+           </a>
+           ; the clients populate this array and query it by key. Keys are up to 250 bytes long and values can be at most 1
+           <a href="/wiki/Megabyte" title="Megabyte">
+            megabyte
+           </a>
+           in size.
+          </p>
+          <p>
+           Clients use client-side libraries to contact the servers which, by default, expose their service at
+           <a class="mw-redirect" href="/wiki/Computer_port_(software)" title="Computer port (software)">
+            port
+           </a>
+           11211. Both TCP and UDP are supported. Each client knows all servers; the servers do not communicate with each other. If a client wishes to set or read the value corresponding to a certain key, the client's library first computes a
+           <a href="/wiki/Hash_function" title="Hash function">
+            hash
+           </a>
+           of the key to determine which server to use. This gives a simple form of
+           <a href="/wiki/Shard_(database_architecture)" title="Shard (database architecture)">
+            sharding
+           </a>
+           and scalable
+           <a href="/wiki/Shared-nothing_architecture" title="Shared-nothing architecture">
+            shared-nothing architecture
+           </a>
+           across the servers. The server computes a second hash of the key to determine where to store or read the corresponding value. The servers keep the values in RAM; if a server runs out of RAM, it discards the oldest values. Therefore, clients must treat Memcached as a transitory cache; they cannot assume that data stored in Memcached is still there when they need it. Other databases, such as
+           <a href="/wiki/MemcacheDB" title="MemcacheDB">
+            MemcacheDB
+           </a>
+           ,
+           <a href="/wiki/Couchbase_Server" title="Couchbase Server">
+            Couchbase Server
+           </a>
+           , provide persistent storage while maintaining Memcached protocol compatibility.
+          </p>
+          <p>
+           If all client libraries use the same hashing algorithm to determine servers, then clients can read each other's cached data.
+          </p>
+          <p>
+           A typical deployment has several servers and many clients. However, it is possible to use Memcached on a single computer, acting simultaneously as client and server. The size of its hash table is often very large. It is limited to available memory across all the servers in the cluster of servers in a data center. Where high-volume, wide-audience Web publishing requires it, this may stretch to many gigabytes. Memcached can be equally valuable for situations where either the number of requests for content is high, or the cost of generating a particular piece of content is high.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Security">
+            Security
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memcached&amp;action=edit&amp;section=2" title="Edit section: Security">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Most deployments of Memcached are within trusted networks where clients may freely connect to any server. However, sometimes Memcached is deployed in untrusted networks or where administrators want to exercise control over the clients that are connecting. For this purpose Memcached can be compiled with optional
+           <a href="/wiki/Simple_Authentication_and_Security_Layer" title="Simple Authentication and Security Layer">
+            SASL
+           </a>
+           authentication support. The SASL support requires the binary protocol.
+          </p>
+          <p>
+           A presentation at
+           <a href="/wiki/Black_Hat_Briefings" title="Black Hat Briefings">
+            BlackHat USA 2010
+           </a>
+           revealed that a number of large public websites had left Memcached open to inspection, analysis, retrieval, and modification of data.
+           <sup class="reference" id="cite_ref-21">
+            <a href="#cite_note-21">
+             <span class="cite-bracket">
+              [
+             </span>
+             21
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Even within a trusted organisation, the flat trust model of memcached may have security implications. For efficient simplicity, all Memcached operations are treated equally. Clients with a valid need for access to low-security entries within the cache gain access to
+           <i>
+            all
+           </i>
+           entries within the cache, even when these are higher-security and that client has no justifiable need for them. If the cache key can be either predicted, guessed or found by exhaustive searching, its cache entry may be retrieved.
+          </p>
+          <p>
+           Some attempt to isolate setting and reading data may be made in situations such as high volume web publishing. A farm of outward-facing content servers have
+           <i>
+            read
+           </i>
+           access to memcached containing published pages or page components, but no write access. Where new content is published (and is not yet in memcached), a request is instead sent to content generation servers that are not publicly accessible to create the content unit and add it to memcached. The content server then retries to retrieve it and serve it outwards.
+          </p>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Used_as_a_DDoS_attack_vector">
+            Used as a DDoS attack vector
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memcached&amp;action=edit&amp;section=3" title="Edit section: Used as a DDoS attack vector">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           In February 2018,
+           <a class="mw-redirect" href="/wiki/CloudFlare" title="CloudFlare">
+            CloudFlare
+           </a>
+           reported that misconfigured memcached servers were used to launch
+           <a href="/wiki/Denial-of-service_attack" title="Denial-of-service attack">
+            DDoS attacks
+           </a>
+           in large scale.
+           <sup class="reference" id="cite_ref-22">
+            <a href="#cite_note-22">
+             <span class="cite-bracket">
+              [
+             </span>
+             22
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The memcached protocol over UDP has a huge
+           <a href="/wiki/Denial-of-service_attack#Amplification" title="Denial-of-service attack">
+            amplification factor
+           </a>
+           , of more than 51000.
+           <sup class="reference" id="cite_ref-23">
+            <a href="#cite_note-23">
+             <span class="cite-bracket">
+              [
+             </span>
+             23
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Victims of the DDoS attacks include
+           <a href="/wiki/GitHub" title="GitHub">
+            GitHub
+           </a>
+           , which was flooded with 1.35 Tbit/s peak incoming traffic.
+           <sup class="reference" id="cite_ref-24">
+            <a href="#cite_note-24">
+             <span class="cite-bracket">
+              [
+             </span>
+             24
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           This issue was mitigated in Memcached version 1.5.6, which disabled UDP protocol by default.
+           <sup class="reference" id="cite_ref-25">
+            <a href="#cite_note-25">
+             <span class="cite-bracket">
+              [
+             </span>
+             25
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Example_code">
+            Example code
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memcached&amp;action=edit&amp;section=4" title="Edit section: Example code">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           <i>
+            Note that all functions described on this page are
+            <a href="/wiki/Pseudocode" title="Pseudocode">
+             pseudocode
+            </a>
+            only. Memcached calls and programming languages may vary based on the API used.
+           </i>
+          </p>
+          <p>
+           Converting database or object creation queries to use Memcached is simple. Typically, when using straight database queries, example code would be as follows:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="w"> </span><span class="n">function</span><span class="w"> </span><span class="n">get_foo</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">userid</span><span class="p">)</span>
+<span class="w">     </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">db_select</span><span class="p">(</span><span class="s">"SELECT * FROM users WHERE userid = ?"</span><span class="p">,</span><span class="w"> </span><span class="n">userid</span><span class="p">)</span>
+<span class="w">     </span><span class="k">return</span><span class="w"> </span><span class="n">data</span>
+</pre>
+          </div>
+          <p>
+           After conversion to Memcached, the same call might look like the following
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="w"> </span><span class="n">function</span><span class="w"> </span><span class="n">get_foo</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">userid</span><span class="p">)</span>
+<span class="w">     </span><span class="cm">/* first try the cache */</span>
+<span class="w">     </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">memcached_fetch</span><span class="p">(</span><span class="s">"userrow:"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">userid</span><span class="p">)</span>
+<span class="w">     </span><span class="k">if</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">data</span>
+<span class="w">         </span><span class="cm">/* not found : request database */</span>
+<span class="w">         </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">db_select</span><span class="p">(</span><span class="s">"SELECT * FROM users WHERE userid = ?"</span><span class="p">,</span><span class="w"> </span><span class="n">userid</span><span class="p">)</span>
+<span class="w">         </span><span class="cm">/* then store in cache until next get */</span>
+<span class="w">         </span><span class="n">memcached_add</span><span class="p">(</span><span class="s">"userrow:"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">userid</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">)</span>
+<span class="w">     </span><span class="n">end</span>
+
+<span class="w">     </span><span class="k">return</span><span class="w"> </span><span class="n">data</span>
+</pre>
+          </div>
+          <p>
+           The client would first check whether a Memcached value with the unique key "userrow:userid" exists, where userid is some number. If the result does not exist, it would select from the database as usual, and set the unique key using the Memcached API add function call.
+          </p>
+          <p>
+           However, if only this API call were modified, the server would end up fetching incorrect data following any database update actions: the Memcached "view" of the data would become out of date. Therefore, in addition to creating an "add" call, an update call would also be needed using the Memcached set function.
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="w"> </span><span class="n">function</span><span class="w"> </span><span class="n">update_foo</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">userid</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">dbUpdateString</span><span class="p">)</span>
+<span class="w">     </span><span class="cm">/* first update database */</span>
+<span class="w">     </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">db_execute</span><span class="p">(</span><span class="n">dbUpdateString</span><span class="p">)</span>
+<span class="w">     </span><span class="k">if</span><span class="w"> </span><span class="n">result</span>
+<span class="w">         </span><span class="cm">/* database update successful : fetch data to be stored in cache */</span>
+<span class="w">         </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">db_select</span><span class="p">(</span><span class="s">"SELECT * FROM users WHERE userid = ?"</span><span class="p">,</span><span class="w"> </span><span class="n">userid</span><span class="p">)</span>
+<span class="w">         </span><span class="cm">/* the previous line could also look like data = createDataFromDBString(dbUpdateString) */</span>
+<span class="w">         </span><span class="cm">/* then store in cache until next get */</span>
+<span class="w">         </span><span class="n">memcached_set</span><span class="p">(</span><span class="s">"userrow:"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">userid</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">)</span>
+</pre>
+          </div>
+          <p>
+           This call would update the currently cached data to match the new data in the database, assuming the database query succeeds. An alternative approach would be to invalidate the cache with the Memcached delete function, so that subsequent fetches result in a cache miss. Similar action would need to be taken when database records were deleted, to maintain either a correct or incomplete cache.
+          </p>
+          <p>
+           An alternate cache-invalidation strategy is to store a random number in an agreed-upon cache entry and to incorporate this number into all keys that are used to store a particular kind of entry. To invalidate all such entries at once, change the random number. Existing entries (which were stored using the old number) will no longer be referenced and so will eventually expire or be recycled.
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="w">  </span><span class="n">function</span><span class="w"> </span><span class="n">store_xyz_entry</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">value</span><span class="p">)</span>
+<span class="w">      </span><span class="cm">/* Retrieve the random number - use zero if none exists yet.</span>
+<span class="cm">      *  The key-name used here is arbitrary. */</span><span class="w"> </span>
+<span class="w">      </span><span class="n">seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">memcached_fetch</span><span class="p">(</span><span class="s">":xyz_seed:"</span><span class="p">)</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">seed</span>
+<span class="w">          </span><span class="n">seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">      </span><span class="cm">/* Build the key used to store the entry and store it.</span>
+<span class="cm">      *  The key-name used here is also arbitrary. Notice that the "seed" and the user's "key"</span>
+<span class="cm">      *  are stored as separate parts of the constructed hashKey string: ":xyz_data:(seed):(key)." </span>
+<span class="cm">      *  This is not mandatory, but is recommended. */</span>
+<span class="w">      </span><span class="n">string</span><span class="w"> </span><span class="n">hashKey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sprintf</span><span class="p">(</span><span class="s">":xyz_data:%d:%d"</span><span class="p">,</span><span class="w"> </span><span class="n">seed</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="p">)</span>
+<span class="w">      </span><span class="n">memcached_set</span><span class="p">(</span><span class="n">hashKey</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">)</span>
+
+<span class="w">  </span><span class="cm">/* "fetch_entry," not shown, follows identical logic to the above. */</span>
+
+<span class="w">  </span><span class="n">function</span><span class="w"> </span><span class="n">invalidate_xyz_cache</span><span class="p">()</span>
+<span class="w">      </span><span class="n">existing_seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">memcached_fetch</span><span class="p">(</span><span class="s">":xyz_seed:"</span><span class="p">)</span>
+<span class="w">      </span><span class="cm">/* Coin a different random seed */</span>
+<span class="w">      </span><span class="k">do</span>
+<span class="w">          </span><span class="n">seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rand</span><span class="p">()</span>
+<span class="w">      </span><span class="n">until</span><span class="w"> </span><span class="n">seed</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">existing_seed</span>
+<span class="w">      </span><span class="cm">/* Now store it in the agreed-upon place. All future requests will use this number. </span>
+<span class="cm">      *  Therefore, all existing entries become un-referenced and will eventually expire. */</span>
+<span class="w">      </span><span class="n">memcached_set</span><span class="p">(</span><span class="s">":xyz_seed:"</span><span class="p">,</span><span class="w"> </span><span class="n">seed</span><span class="p">)</span>
+</pre>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Usage">
+            Usage
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memcached&amp;action=edit&amp;section=5" title="Edit section: Usage">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/MySQL" title="MySQL">
+             MySQL
+            </a>
+            - directly supports the Memcached API as of version 5.6.
+            <sup class="reference" id="cite_ref-26">
+             <a href="#cite_note-26">
+              <span class="cite-bracket">
+               [
+              </span>
+              26
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            <a href="/wiki/Oracle_Coherence" title="Oracle Coherence">
+             Oracle Coherence
+            </a>
+            - directly supports the Memcached API as of version 12.1.3.
+            <sup class="reference" id="cite_ref-27">
+             <a href="#cite_note-27">
+              <span class="cite-bracket">
+               [
+              </span>
+              27
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            <a href="/wiki/Infinispan" title="Infinispan">
+             Infinispan
+            </a>
+            - directly supports Memcached.
+            <sup class="reference" id="cite_ref-28">
+             <a href="#cite_note-28">
+              <span class="cite-bracket">
+               [
+              </span>
+              28
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memcached&amp;action=edit&amp;section=6" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239009302">
+           .mw-parser-output .portalbox{padding:0;margin:0.5em 0;display:table;box-sizing:border-box;max-width:175px;list-style:none}.mw-parser-output .portalborder{border:1px solid var(--border-color-base,#a2a9b1);padding:0.1em;background:var(--background-color-neutral-subtle,#f8f9fa)}.mw-parser-output .portalbox-entry{display:table-row;font-size:85%;line-height:110%;height:1.9em;font-style:italic;font-weight:bold}.mw-parser-output .portalbox-image{display:table-cell;padding:0.2em;vertical-align:middle;text-align:center}.mw-parser-output .portalbox-link{display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle}@media(min-width:720px){.mw-parser-output .portalleft{clear:left;float:left;margin:0.5em 1em 0.5em 0}.mw-parser-output .portalright{clear:right;float:right;margin:0.5em 0 0.5em 1em}}
+          </style>
+          <ul aria-label="Portals" class="noprint portalbox portalborder portalright" role="navigation">
+           <li class="portalbox-entry">
+            <span class="portalbox-image">
+             <span class="noviewer" typeof="mw:File">
+              <span>
+               <img alt="" class="mw-file-element" data-file-height="512" data-file-width="512" decoding="async" height="28" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" width="28"/>
+              </span>
+             </span>
+            </span>
+            <span class="portalbox-link">
+             <a href="/wiki/Portal:Free_and_open-source_software" title="Portal:Free and open-source software">
+              Free and open-source software portal
+             </a>
+            </span>
+           </li>
+          </ul>
+          <ul>
+           <li>
+            <a href="/wiki/Amazon_ElastiCache" title="Amazon ElastiCache">
+             Amazon ElastiCache
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Aerospike_(database)" title="Aerospike (database)">
+             Aerospike
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Couchbase_Server" title="Couchbase Server">
+             Couchbase Server
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Redis" title="Redis">
+             Redis
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Mnesia" title="Mnesia">
+             Mnesia
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/MemcacheDB" title="MemcacheDB">
+             MemcacheDB
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Hazelcast" title="Hazelcast">
+             Hazelcast
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Apache_Cassandra" title="Apache Cassandra">
+             Cassandra
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/ScyllaDB" title="ScyllaDB">
+             ScyllaDB
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Tarantool" title="Tarantool">
+             Tarantool
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Ehcache" title="Ehcache">
+             Ehcache
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Infinispan" title="Infinispan">
+             Infinispan
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memcached&amp;action=edit&amp;section=7" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist reflist-columns references-column-width" style="column-width: 30em;">
+           <ol class="references">
+            <li id="cite_note-wikidata-76cadc3bd5cd5bca8f0f1ff628c94468d4838270-v18-1">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-wikidata-76cadc3bd5cd5bca8f0f1ff628c94468d4838270-v18_1-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <style data-mw-deduplicate="TemplateStyles:r1238218222">
+               .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+              </style>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://github.com/memcached/memcached/releases/tag/1.6.31" rel="nofollow">
+                "Release 1.6.31"
+               </a>
+               . 7 September 2024
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 22 September
+                </span>
+                2024
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Release+1.6.31&amp;rft.date=2024-09-07&amp;rft_id=https%3A%2F%2Fgithub.com%2Fmemcached%2Fmemcached%2Freleases%2Ftag%2F1.6.31&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-Memcached_license-2">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-Memcached_license_2-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-Memcached_license_2-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://github.com/memcached/memcached/blob/master/COPYING" rel="nofollow">
+                "Memcached license"
+               </a>
+               .
+               <a href="/wiki/GitHub" title="GitHub">
+                GitHub
+               </a>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2014-06-27
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Memcached+license&amp;rft.pub=GitHub&amp;rft_id=https%3A%2F%2Fgithub.com%2Fmemcached%2Fmemcached%2Fblob%2Fmaster%2FCOPYING&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-3">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-3">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://code.google.com/p/memcached/wiki/NewOverview" rel="nofollow">
+                "Google Code Archive - Long-term storage for Google Code Project Hosting"
+               </a>
+               .
+               <i>
+                Code.google.com
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Code.google.com&amp;rft.atitle=Google+Code+Archive+-+Long-term+storage+for+Google+Code+Project+Hosting&amp;rft_id=http%3A%2F%2Fcode.google.com%2Fp%2Fmemcached%2Fwiki%2FNewOverview&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-4">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-4">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://code.google.com/p/memcached/wiki/NewUserInternals" rel="nofollow">
+                "Google Code Archive - Long-term storage for Google Code Project Hosting"
+               </a>
+               .
+               <i>
+                Code.google.com
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Code.google.com&amp;rft.atitle=Google+Code+Archive+-+Long-term+storage+for+Google+Code+Project+Hosting&amp;rft_id=http%3A%2F%2Fcode.google.com%2Fp%2Fmemcached%2Fwiki%2FNewUserInternals&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-5">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-5">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a class="external autonumber" href="http://community.livejournal.com/changelog/637455.html" rel="nofollow">
+               [1]
+              </a>
+              . Community.livejournal.com (2003-05-22). Retrieved on 2013-09-18.
+             </span>
+            </li>
+            <li id="cite_note-6">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-6">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a class="external autonumber" href="http://community.livejournal.com/lj_dev/539656.html" rel="nofollow">
+               [2]
+              </a>
+              . Community.livejournal.com (2003-05-27). Retrieved on 2013-09-18.
+             </span>
+            </li>
+            <li id="cite_note-7">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-7">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://web.archive.org/web/20130225020652/http://lj-dev.livejournal.com/539656.html" rel="nofollow">
+                "lj_dev: memcached"
+               </a>
+               . 2013-02-25. Archived from
+               <a class="external text" href="http://lj-dev.livejournal.com/539656.html" rel="nofollow">
+                the original
+               </a>
+               on 2013-02-25
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=lj_dev%3A+memcached&amp;rft.date=2013-02-25&amp;rft_id=http%3A%2F%2Flj-dev.livejournal.com%2F539656.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-8">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-8">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation audio-visual cs1">
+               Cuong Do Cuong (Engineering manager at YouTube/Google) (June 23, 2007).
+               <a class="external text" href="http://video.google.com/videoplay?docid=-6304964351441328559" rel="nofollow">
+                <i>
+                 Seattle Conference on Scalability: YouTube Scalability
+                </i>
+               </a>
+               (Online Video - 26th minute). Seattle: Google Tech Talks.
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Seattle+Conference+on+Scalability%3A+YouTube+Scalability&amp;rft.place=Seattle&amp;rft.pub=Google+Tech+Talks&amp;rft.date=2007-06-23&amp;rft_id=http%3A%2F%2Fvideo.google.com%2Fvideoplay%3Fdocid%3D-6304964351441328559&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-9">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-9">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFWhitaker2010">
+               Whitaker, Keir (2010-05-17).
+               <a class="external text" href="https://web.archive.org/web/20100517063632/http://carsonified.com/blog/dev/steve-huffman-on-lessons-learned-at-reddit/" rel="nofollow">
+                "Steve Huffman on Lessons Learned at Reddit | Carsonified"
+               </a>
+               . Archived from
+               <a class="external text" href="http://carsonified.com/blog/dev/steve-huffman-on-lessons-learned-at-reddit/" rel="nofollow">
+                the original
+               </a>
+               on 2010-05-17
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Steve+Huffman+on+Lessons+Learned+at+Reddit+%26%23124%3B+Carsonified&amp;rft.date=2010-05-17&amp;rft.aulast=Whitaker&amp;rft.aufirst=Keir&amp;rft_id=http%3A%2F%2Fcarsonified.com%2Fblog%2Fdev%2Fsteve-huffman-on-lessons-learned-at-reddit%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-10">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-10">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.facebook.com/note.php?note_id=39391378919&amp;ref=mf" rel="nofollow">
+                "Scaling memcached at Facebook"
+               </a>
+               .
+               <i>
+                Facebook.com
+               </i>
+               . 2008-12-12
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Facebook.com&amp;rft.atitle=Scaling+memcached+at+Facebook&amp;rft.date=2008-12-12&amp;rft_id=http%3A%2F%2Fwww.facebook.com%2Fnote.php%3Fnote_id%3D39391378919%26ref%3Dmf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-11">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-11">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation book cs1">
+               <a class="external text" href="https://www.usenix.org/conference/nsdi13/scaling-memcache-facebook" rel="nofollow">
+                <i>
+                 Scaling Memcache at Facebook
+                </i>
+               </a>
+               . USENIX. 2002.
+               <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                ISBN
+               </a>
+               <a href="/wiki/Special:BookSources/9781931971003" title="Special:BookSources/9781931971003">
+                <bdi>
+                 9781931971003
+                </bdi>
+               </a>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Scaling+Memcache+at+Facebook&amp;rft.pub=USENIX&amp;rft.date=2002&amp;rft.isbn=9781931971003&amp;rft_id=https%3A%2F%2Fwww.usenix.org%2Fconference%2Fnsdi13%2Fscaling-memcache-facebook&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-12">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-12">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1">
+               <a class="external text" href="https://engineering.pinterest.com/blog/building-pinterest-cloud" rel="nofollow">
+                "Building Pinterest in the cloud"
+               </a>
+               .
+               <i>
+                Pinterest Careers
+               </i>
+               . 2013-06-19
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2018-03-09
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Pinterest+Careers&amp;rft.atitle=Building+Pinterest+in+the+cloud&amp;rft.date=2013-06-19&amp;rft_id=https%3A%2F%2Fengineering.pinterest.com%2Fblog%2Fbuilding-pinterest-cloud&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-13">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-13">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://github.com/pinterest/pymemcache" rel="nofollow">
+                "A comprehensive, fast, pure-Python memcached client"
+               </a>
+               .
+               <i>
+                Github.com
+               </i>
+               . 2018-01-08
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2018-03-09
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Github.com&amp;rft.atitle=A+comprehensive%2C+fast%2C+pure-Python+memcached+client&amp;rft.date=2018-01-08&amp;rft_id=https%3A%2F%2Fgithub.com%2Fpinterest%2Fpymemcache&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-14">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-14">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="http://blog.twitter.com/2008/05/its-not-rocket-science-but-its-our-work.html" rel="nofollow">
+                "It's Not Rocket Science, But It's Our Work"
+               </a>
+               .
+               <i>
+                Blog.twitter.com
+               </i>
+               . 2008-06-01
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Blog.twitter.com&amp;rft.atitle=It%27s+Not+Rocket+Science%2C+But+It%27s+Our+Work&amp;rft.date=2008-06-01&amp;rft_id=http%3A%2F%2Fblog.twitter.com%2F2008%2F05%2Fits-not-rocket-science-but-its-our-work.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-15">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-15">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.mediawiki.org/wiki/Memcached">
+                "memcached"
+               </a>
+               . MediaWiki
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=memcached&amp;rft.pub=MediaWiki&amp;rft_id=https%3A%2F%2Fwww.mediawiki.org%2Fwiki%2FMemcached&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-16">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-16">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation cs2">
+               <a class="external text" href="https://www.youtube.com/watch?v=y5VSPeeqJbM" rel="nofollow">
+                <i>
+                 Rez BoF, SIGGRAPH 2019
+                </i>
+               </a>
+               ,
+               <a class="external text" href="https://ghostarchive.org/varchive/youtube/20211212/y5VSPeeqJbM" rel="nofollow">
+                archived
+               </a>
+               from the original on 2021-12-12
+               <span class="reference-accessdate">
+                , retrieved
+                <span class="nowrap">
+                 2019-08-09
+                </span>
+               </span>
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Rez+BoF%2C+SIGGRAPH+2019&amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5VSPeeqJbM&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-17">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-17">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://code.google.com/appengine/docs/python/memcache/usingmemcache.html" rel="nofollow">
+                "Memcache Examples | App Engine standard environment for Python | Google Cloud Platform"
+               </a>
+               .
+               <i>
+                Code.google.com
+               </i>
+               . 2017-03-22
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Code.google.com&amp;rft.atitle=Memcache+Examples+%26%23124%3B+App+Engine+standard+environment+for+Python+%26%23124%3B+Google+Cloud+Platform&amp;rft.date=2017-03-22&amp;rft_id=http%3A%2F%2Fcode.google.com%2Fappengine%2Fdocs%2Fpython%2Fmemcache%2Fusingmemcache.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-18">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-18">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="http://msdn.microsoft.com/en-us/library/windowsazure/hh914161.aspx" rel="nofollow">
+                "About In-Role Cache for Azure Cache"
+               </a>
+               .
+               <i>
+                Msdn.microsoft.com
+               </i>
+               . 2015-08-25
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Msdn.microsoft.com&amp;rft.atitle=About+In-Role+Cache+for+Azure+Cache&amp;rft.date=2015-08-25&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fwindowsazure%2Fhh914161.aspx&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-19">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-19">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFVerge2014">
+               Verge, Jason (2014-09-23).
+               <a class="external text" href="http://www.datacenterknowledge.com/archives/2014/09/23/redis-labs-3000-paying-cloud-memory-nosql-customers/" rel="nofollow">
+                "Redis Labs: We Have 3,000 Paying Cloud In-Memory NoSQL Customers"
+               </a>
+               .
+               <i>
+                Data Center Knowledge
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2016-09-10
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Data+Center+Knowledge&amp;rft.atitle=Redis+Labs%3A+We+Have+3%2C000+Paying+Cloud+In-Memory+NoSQL+Customers&amp;rft.date=2014-09-23&amp;rft.aulast=Verge&amp;rft.aufirst=Jason&amp;rft_id=http%3A%2F%2Fwww.datacenterknowledge.com%2Farchives%2F2014%2F09%2F23%2Fredis-labs-3000-paying-cloud-memory-nosql-customers%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-20">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-20">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="http://aws.amazon.com/elasticache/" rel="nofollow">
+                "AWS | Amazon ElastiCache – in-memory data store and cache"
+               </a>
+               .
+               <i>
+                Aws.amazon.com
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Aws.amazon.com&amp;rft.atitle=AWS+%26%23124%3B+Amazon+ElastiCache+%E2%80%93+in-memory+data+store+and+cache&amp;rft_id=http%3A%2F%2Faws.amazon.com%2Felasticache%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-21">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-21">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://web.archive.org/web/20181221184133/https://sensepost.com/blog/2010/blackhat-write-up-go-derper-and-mining-memcaches/" rel="nofollow">
+                "SensePost | Blackhat write-up: Go-derper and mining memcaches"
+               </a>
+               . Archived from
+               <a class="external text" href="https://www.sensepost.com/blog/2010/blackhat-write-up-go-derper-and-mining-memcaches/" rel="nofollow">
+                the original
+               </a>
+               on 2018-12-21
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2016-09-02
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=SensePost+%26%23124%3B+Blackhat+write-up%3A+Go-derper+and+mining+memcaches&amp;rft_id=https%3A%2F%2Fwww.sensepost.com%2Fblog%2F2010%2Fblackhat-write-up-go-derper-and-mining-memcaches%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-22">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-22">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://blog.cloudflare.com/memcrashed-major-amplification-attacks-from-port-11211/" rel="nofollow">
+                "Memcrashed - Major amplification attacks from UDP port 11211"
+               </a>
+               . CloudFlare. 27 Feb 2018
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 3 March
+                </span>
+                2018
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Memcrashed+-+Major+amplification+attacks+from+UDP+port+11211&amp;rft.pub=CloudFlare&amp;rft.date=2018-02-27&amp;rft_id=https%3A%2F%2Fblog.cloudflare.com%2Fmemcrashed-major-amplification-attacks-from-port-11211%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-23">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-23">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1" id="CITEREFJeffrey,_Cal2018">
+               Jeffrey, Cal (Mar 1, 2018).
+               <a class="external text" href="https://www.techspot.com/news/73522-github-hit-massive-ddos-attack.html" rel="nofollow">
+                "GitHub falls victim to largest DDoS attack ever recorded"
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=GitHub+falls+victim+to+largest+DDoS+attack+ever+recorded&amp;rft.date=2018-03-01&amp;rft.au=Jeffrey%2C+Cal&amp;rft_id=https%3A%2F%2Fwww.techspot.com%2Fnews%2F73522-github-hit-massive-ddos-attack.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-24">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-24">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://githubengineering.com/ddos-incident-report/" rel="nofollow">
+                "February 28th DDoS Incident Report"
+               </a>
+               . March 1, 2018
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 3 March
+                </span>
+                2018
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=February+28th+DDoS+Incident+Report&amp;rft.date=2018-03-01&amp;rft_id=https%3A%2F%2Fgithubengineering.com%2Fddos-incident-report%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-25">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-25">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://github.com/memcached/memcached/wiki/ReleaseNotes156" rel="nofollow">
+                "Memcached 1.5.6 Release Notes"
+               </a>
+               .
+               <i>
+                <a href="/wiki/GitHub" title="GitHub">
+                 GitHub
+                </a>
+               </i>
+               . 2018-02-27
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 3 March
+                </span>
+                2018
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GitHub&amp;rft.atitle=Memcached+1.5.6+Release+Notes&amp;rft.date=2018-02-27&amp;rft_id=https%3A%2F%2Fgithub.com%2Fmemcached%2Fmemcached%2Fwiki%2FReleaseNotes156&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-26">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-26">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.theregister.co.uk/2013/02/06/oracle_mysql_56_vs_mariadb/" rel="nofollow">
+                "Speedy MySQL 5.6 takes aim at NoSQL, MariaDB"
+               </a>
+               .
+               <i>
+                Theregister.co.uk
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Theregister.co.uk&amp;rft.atitle=Speedy+MySQL+5.6+takes+aim+at+NoSQL%2C+MariaDB&amp;rft_id=https%3A%2F%2Fwww.theregister.co.uk%2F2013%2F02%2F06%2Foracle_mysql_56_vs_mariadb%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-27">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-27">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFDavid_Felcey2014">
+               David Felcey (2014-08-13).
+               <a class="external text" href="https://web.archive.org/web/20170223093719/https://blogs.oracle.com/OracleCoherence/entry/getting_started_with_the_coherence" rel="nofollow">
+                "Getting Started With The Coherence Memcached Adaptor | Oracle Coherence Blog"
+               </a>
+               .
+               <i>
+                Blogs.oracle.com
+               </i>
+               . Archived from
+               <a class="external text" href="https://blogs.oracle.com/OracleCoherence/entry/getting_started_with_the_coherence" rel="nofollow">
+                the original
+               </a>
+               on 2017-02-23
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2017-06-25
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Blogs.oracle.com&amp;rft.atitle=Getting+Started+With+The+Coherence+Memcached+Adaptor+%26%23124%3B+Oracle+Coherence+Blog&amp;rft.date=2014-08-13&amp;rft.au=David+Felcey&amp;rft_id=https%3A%2F%2Fblogs.oracle.com%2FOracleCoherence%2Fentry%2Fgetting_started_with_the_coherence&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-28">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-28">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://infinispan.org/docs/stable/titles/memcached/memcached.html" rel="nofollow">
+                "Using the Memcached protocol endpoint with Infinispan"
+               </a>
+               .
+               <i>
+                infinispan.org
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2022-04-19
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=infinispan.org&amp;rft.atitle=Using+the+Memcached+protocol+endpoint+with+Infinispan&amp;rft_id=https%3A%2F%2Finfinispan.org%2Fdocs%2Fstable%2Ftitles%2Fmemcached%2Fmemcached.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemcached">
+              </span>
+             </span>
+            </li>
+           </ol>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Memcached&amp;action=edit&amp;section=8" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <span class="official-website">
+             <span class="url">
+              <a class="external text" href="https://memcached.org" rel="nofollow">
+               Official website
+              </a>
+             </span>
+            </span>
+            <span class="mw-valign-text-top" typeof="mw:File/Frameless">
+             <a href="https://www.wikidata.org/wiki/Q306661#P856" title="Edit this at Wikidata">
+              <img alt="Edit this at Wikidata" class="mw-file-element" data-file-height="20" data-file-width="20" decoding="async" height="10" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" width="10"/>
+             </a>
+            </span>
+           </li>
+          </ul>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐jtlhz
+Cached time: 20240926233303
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.754 seconds
+Real time usage: 1.231 seconds
+Preprocessor visited node count: 2331/1000000
+Post‐expand include size: 64465/2097152 bytes
+Template argument size: 4150/2097152 bytes
+Highest expansion depth: 21/100
+Expensive parser function count: 9/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 102896/5000000 bytes
+Lua time usage: 0.507/10.000 seconds
+Lua memory usage: 8650928/52428800 bytes
+Number of Wikibase entities loaded: 2/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1156.461      1 -total
+ 40.76%  471.362      2 Template:Infobox
+ 37.06%  428.576      1 Template:Infobox_software
+ 23.31%  269.532      1 Template:Infobox_software/simple
+ 21.27%  245.936      5 Template:Wikidata
+ 15.53%  179.545      1 Template:Reflist
+  9.19%  106.316     20 Template:Cite_web
+  8.06%   93.230      1 Template:Short_description
+  5.54%   64.118      1 Template:Unreferenced_section
+  5.09%   58.896      1 Template:Unreferenced
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:437720-0!canonical and timestamp 20240926233303 and revision id 1245408190. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Memcached&amp;oldid=1245408190">
+          https://en.wikipedia.org/w/index.php?title=Memcached&amp;oldid=1245408190
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:2003_software" title="Category:2003 software">
+            2003 software
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Cross-platform_software" title="Category:Cross-platform software">
+            Cross-platform software
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Database_caching" title="Category:Database caching">
+            Database caching
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Free_memory_management_software" title="Category:Free memory management software">
+            Free memory management software
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Key-value_databases" title="Category:Key-value databases">
+            Key-value databases
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Software_using_the_BSD_license" title="Category:Software using the BSD license">
+            Software using the BSD license
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Structured_storage" title="Category:Structured storage">
+            Structured storage
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">
+            Short description matches Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_June_2013" title="Category:Articles needing additional references from June 2013">
+            Articles needing additional references from June 2013
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 12 September 2024, at 20:57
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Memcached&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-lzw7d","wgBackendResponseTime":135,"wgPageParseReport":{"limitreport":{"cputime":"0.754","walltime":"1.231","ppvisitednodes":{"value":2331,"limit":1000000},"postexpandincludesize":{"value":64465,"limit":2097152},"templateargumentsize":{"value":4150,"limit":2097152},"expansiondepth":{"value":21,"limit":100},"expensivefunctioncount":{"value":9,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":102896,"limit":5000000},"entityaccesscount":{"value":2,"limit":400},"timingprofile":["100.00% 1156.461      1 -total"," 40.76%  471.362      2 Template:Infobox"," 37.06%  428.576      1 Template:Infobox_software"," 23.31%  269.532      1 Template:Infobox_software/simple"," 21.27%  245.936      5 Template:Wikidata"," 15.53%  179.545      1 Template:Reflist","  9.19%  106.316     20 Template:Cite_web","  8.06%   93.230      1 Template:Short_description","  5.54%   64.118      1 Template:Unreferenced_section","  5.09%   58.896      1 Template:Unreferenced"]},"scribunto":{"limitreport-timeusage":{"value":"0.507","limit":"10.000"},"limitreport-memusage":{"value":8650928,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-jtlhz","timestamp":"20240926233303","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Memcached","url":"https:\/\/en.wikipedia.org\/wiki\/Memcached","sameAs":"http:\/\/www.wikidata.org\/entity\/Q306661","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q306661","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-01-21T14:51:38Z","dateModified":"2024-09-12T20:57:57Z","headline":"software that caches strings in computer memory, often used for web sites"}
+  </script>
+ </body>
+</html>

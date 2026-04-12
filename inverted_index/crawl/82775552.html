@@ -1,0 +1,2383 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Readers–writers problem - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"a08bb8bd-4788-4d12-a867-6586c093e615","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Readers–writers_problem","wgTitle":"Readers–writers problem","wgCurRevisionId":1217916343,"wgRevisionId":1217916343,"wgArticleId":4189100,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Articles lacking in-text citations from April 2015","All articles lacking in-text citations","Wikipedia articles that are too technical from November 2016","All articles that are too technical","Articles with multiple maintenance issues","Use dmy dates from February 2021","Concurrency (computer science)"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext"
+,"wgRelevantPageName":"Readers–writers_problem","wgRelevantArticleId":4189100,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1146845","wgCheckUserClientHintsHeadersJsApi"
+:["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.pygments.view","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP",
+"ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Readers–writers problem - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Readers%E2%80%93writers_problem" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem"/>
+  <meta eecs485_docid="82775552"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Readers–writers_problem rootpage-Readers–writers_problem skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Readers%E2%80%93writers+problem" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Readers%E2%80%93writers+problem" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Readers%E2%80%93writers+problem" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Readers%E2%80%93writers+problem" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-First_readers–writers_problem">
+           <a class="vector-toc-link" href="#First_readers–writers_problem">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              First readers–writers problem
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-First_readers–writers_problem-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Second_readers–writers_problem">
+           <a class="vector-toc-link" href="#Second_readers–writers_problem">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Second readers–writers problem
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Second_readers–writers_problem-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Third_readers–writers_problem">
+           <a class="vector-toc-link" href="#Third_readers–writers_problem">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Third readers–writers problem
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Third_readers–writers_problem-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Third readers–writers problem subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Third_readers–writers_problem-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Simplest_reader_writer_problem">
+             <a class="vector-toc-link" href="#Simplest_reader_writer_problem">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.1
+               </span>
+               <span>
+                Simplest reader writer problem
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Simplest_reader_writer_problem-sublist">
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Reader">
+               <a class="vector-toc-link" href="#Reader">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  3.1.1
+                 </span>
+                 <span>
+                  Reader
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Reader-sublist">
+               </ul>
+              </li>
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Writer">
+               <a class="vector-toc-link" href="#Writer">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  3.1.2
+                 </span>
+                 <span>
+                  Writer
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Writer-sublist">
+               </ul>
+              </li>
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Algorithm">
+               <a class="vector-toc-link" href="#Algorithm">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  3.1.3
+                 </span>
+                 <span>
+                  Algorithm
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Algorithm-sublist">
+               </ul>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Readers–writers problem
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 9 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-9" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          9 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-cs mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Čeština" data-language-local-name="Czech" data-title="Problém čtenářů a písařů" href="https://cs.wikipedia.org/wiki/Probl%C3%A9m_%C4%8Dten%C3%A1%C5%99%C5%AF_a_p%C3%ADsa%C5%99%C5%AF" hreflang="cs" lang="cs" title="Problém čtenářů a písařů – Czech">
+             <span>
+              Čeština
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="مسئله خواننده-نویسنده" href="https://fa.wikipedia.org/wiki/%D9%85%D8%B3%D8%A6%D9%84%D9%87_%D8%AE%D9%88%D8%A7%D9%86%D9%86%D8%AF%D9%87-%D9%86%D9%88%DB%8C%D8%B3%D9%86%D8%AF%D9%87" hreflang="fa" lang="fa" title="مسئله خواننده-نویسنده – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Problème des lecteurs et des rédacteurs" href="https://fr.wikipedia.org/wiki/Probl%C3%A8me_des_lecteurs_et_des_r%C3%A9dacteurs" hreflang="fr" lang="fr" title="Problème des lecteurs et des rédacteurs – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="독자-저자 문제" href="https://ko.wikipedia.org/wiki/%EB%8F%85%EC%9E%90-%EC%A0%80%EC%9E%90_%EB%AC%B8%EC%A0%9C" hreflang="ko" lang="ko" title="독자-저자 문제 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Problem czytelników i pisarzy" href="https://pl.wikipedia.org/wiki/Problem_czytelnik%C3%B3w_i_pisarzy" hreflang="pl" lang="pl" title="Problem czytelników i pisarzy – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Задача о читателях-писателях" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%BE_%D1%87%D0%B8%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%D1%85-%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%D1%85" hreflang="ru" lang="ru" title="Задача о читателях-писателях – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Slovenčina" data-language-local-name="Slovak" data-title="Problém čitateľa-zapisovateľa" href="https://sk.wikipedia.org/wiki/Probl%C3%A9m_%C4%8Ditate%C4%BEa-zapisovate%C4%BEa" hreflang="sk" lang="sk" title="Problém čitateľa-zapisovateľa – Slovak">
+             <span>
+              Slovenčina
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" data-title="Проблем читалаца и писаца" href="https://sr.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC_%D1%87%D0%B8%D1%82%D0%B0%D0%BB%D0%B0%D1%86%D0%B0_%D0%B8_%D0%BF%D0%B8%D1%81%D0%B0%D1%86%D0%B0" hreflang="sr" lang="sr" title="Проблем читалаца и писаца – Serbian">
+             <span>
+              Српски / srpski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Задача читачів та записувачів" href="https://uk.wikipedia.org/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D1%87%D0%B8%D1%82%D0%B0%D1%87%D1%96%D0%B2_%D1%82%D0%B0_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%83%D0%B2%D0%B0%D1%87%D1%96%D0%B2" hreflang="uk" lang="uk" title="Задача читачів та записувачів – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1146845#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Readers%E2%80%93writers_problem" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Readers%E2%80%93writers_problem" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Readers%E2%80%93writers_problem">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Readers%E2%80%93writers_problem">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Readers%E2%80%93writers_problem" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Readers%E2%80%93writers_problem" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;oldid=1217916343" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Readers%E2%80%93writers_problem&amp;id=1217916343&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FReaders%25E2%2580%2593writers_problem">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FReaders%25E2%2580%2593writers_problem">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1146845" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Readers%E2%80%93writers_problem&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Computer science problem in concurrency
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <style data-mw-deduplicate="TemplateStyles:r1211361296">
+          .mw-parser-output .multiple-issues-text{width:95%;margin:0.2em 0}.mw-parser-output .multiple-issues-text>.mw-collapsible-content{margin-top:0.3em}.mw-parser-output .compact-ambox .ambox{border:none;border-collapse:collapse;background-color:transparent;margin:0 0 0 1.6em!important;padding:0!important;width:auto;display:block}body.mediawiki .mw-parser-output .compact-ambox .ambox.mbox-small-left{font-size:100%;width:auto;margin:0}.mw-parser-output .compact-ambox .ambox .mbox-text{padding:0!important;margin:0!important}.mw-parser-output .compact-ambox .ambox .mbox-text-span{display:list-item;line-height:1.5em;list-style-type:disc}body.skin-minerva .mw-parser-output .multiple-issues-text>.mw-collapsible-toggle{display:none}.mw-parser-output .compact-ambox .ambox .mbox-image,.mw-parser-output .compact-ambox .ambox .mbox-imageright,.mw-parser-output .compact-ambox .ambox .mbox-empty-cell,.mw-parser-output .compact-ambox .hide-when-compact{display:none}
+         </style>
+         <table class="box-Multiple_issues plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <span>
+                <img alt="" class="mw-file-element" data-file-height="40" data-file-width="40" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" width="40"/>
+               </span>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              <div class="multiple-issues-text mw-collapsible">
+               <b>
+                This article has multiple issues.
+               </b>
+               Please help
+               <b>
+                <a href="/wiki/Special:EditPage/Readers%E2%80%93writers_problem" title="Special:EditPage/Readers–writers problem">
+                 improve it
+                </a>
+               </b>
+               or discuss these issues on the
+               <b>
+                <a href="/wiki/Talk:Readers%E2%80%93writers_problem" title="Talk:Readers–writers problem">
+                 talk page
+                </a>
+               </b>
+               .
+               <small>
+                <i>
+                 (
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove these messages
+                 </a>
+                 )
+                </i>
+               </small>
+               <div class="mw-collapsible-content">
+                <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+                <table class="box-More_footnotes_needed plainlinks metadata ambox ambox-style ambox-More_footnotes_needed" role="presentation">
+                 <tbody>
+                  <tr>
+                   <td class="mbox-image">
+                    <div class="mbox-image-div">
+                     <span typeof="mw:File">
+                      <span>
+                       <img alt="" class="mw-file-element" data-file-height="48" data-file-width="48" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" width="40"/>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="mbox-text">
+                    <div class="mbox-text-span">
+                     This article includes a list of general
+                     <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">
+                      references
+                     </a>
+                     , but
+                     <b>
+                      it lacks sufficient corresponding
+                      <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">
+                       inline citations
+                      </a>
+                     </b>
+                     .
+                     <span class="hide-when-compact">
+                      Please help to
+                      <a href="/wiki/Wikipedia:WikiProject_Reliability" title="Wikipedia:WikiProject Reliability">
+                       improve
+                      </a>
+                      this article by
+                      <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">
+                       introducing
+                      </a>
+                      more precise citations.
+                     </span>
+                     <span class="date-container">
+                      <i>
+                       (
+                       <span class="date">
+                        April 2015
+                       </span>
+                       )
+                      </i>
+                     </span>
+                     <span class="hide-when-compact">
+                      <i>
+                       (
+                       <small>
+                        <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                         Learn how and when to remove this message
+                        </a>
+                       </small>
+                       )
+                      </i>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+                <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+                <table class="box-Technical plainlinks metadata ambox ambox-style ambox-technical" role="presentation">
+                 <tbody>
+                  <tr>
+                   <td class="mbox-image">
+                    <div class="mbox-image-div">
+                     <span typeof="mw:File">
+                      <span>
+                       <img alt="" class="mw-file-element" data-file-height="48" data-file-width="48" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" width="40"/>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="mbox-text">
+                    <div class="mbox-text-span">
+                     This article
+                     <b>
+                      may be too technical for most readers to understand
+                     </b>
+                     .
+                     <span class="hide-when-compact">
+                      Please
+                      <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit">
+                       help improve it
+                      </a>
+                      to
+                      <a href="/wiki/Wikipedia:Make_technical_articles_understandable" title="Wikipedia:Make technical articles understandable">
+                       make it understandable to non-experts
+                      </a>
+                      , without removing the technical details.
+                     </span>
+                     <span class="date-container">
+                      <i>
+                       (
+                       <span class="date">
+                        November 2016
+                       </span>
+                       )
+                      </i>
+                     </span>
+                     <span class="hide-when-compact">
+                      <i>
+                       (
+                       <small>
+                        <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                         Learn how and when to remove this message
+                        </a>
+                       </small>
+                       )
+                      </i>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </div>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          In
+          <a href="/wiki/Computer_science" title="Computer science">
+           computer science
+          </a>
+          , the
+          <b>
+           readers–writers problems
+          </b>
+          are examples of a common computing problem in
+          <a href="/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">
+           concurrency
+          </a>
+          .
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          There are at least three variations of the problems, which deal with situations in which many concurrent
+          <a class="mw-redirect" href="/wiki/Thread_(computer_science)" title="Thread (computer science)">
+           threads
+          </a>
+          of execution try to access the same shared resource at one time.
+         </p>
+         <p>
+          Some threads may read and some may write, with the constraint that no thread may access the shared resource for either reading or writing while another thread is in the act of writing to it. (In particular, we want to prevent more than one thread modifying the shared resource simultaneously and allow for two or more readers to access the shared resource at the same time). A
+          <a href="/wiki/Readers%E2%80%93writer_lock" title="Readers–writer lock">
+           readers–writer lock
+          </a>
+          is a
+          <a href="/wiki/Data_structure" title="Data structure">
+           data structure
+          </a>
+          that solves one or more of the readers–writers problems.
+         </p>
+         <p>
+          The basic reader–writers problem was first formulated and solved by Courtois
+          <i>
+           et al.
+          </i>
+          <sup class="reference" id="cite_ref-courtois_2-0">
+           <a href="#cite_note-courtois-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-3">
+           <a href="#cite_note-3">
+            <span class="cite-bracket">
+             [
+            </span>
+            3
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="First_readers–writers_problem">
+            <span id="First_readers.E2.80.93writers_problem">
+            </span>
+            First readers–writers problem
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit&amp;section=1" title="Edit section: First readers–writers problem">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Suppose we have a shared memory area (critical section) with the basic constraints detailed above. It is possible to protect the shared data behind a mutual exclusion
+           <a class="mw-redirect" href="/wiki/Mutex" title="Mutex">
+            mutex
+           </a>
+           , in which case no two threads can access the data at the same time. However, this solution is sub-optimal, because it is possible that a reader
+           <i>
+            R
+            <sub>
+             1
+            </sub>
+           </i>
+           might have the lock, and then another reader
+           <i>
+            R
+            <sub>
+             2
+            </sub>
+           </i>
+           requests access. It would be foolish for
+           <i>
+            R
+            <sub>
+             2
+            </sub>
+           </i>
+           to wait until
+           <i>
+            R
+            <sub>
+             1
+            </sub>
+           </i>
+           was done before starting its own read operation; instead,
+           <i>
+            R
+            <sub>
+             2
+            </sub>
+           </i>
+           should be allowed to read the resource alongside
+           <i>
+            R
+            <sub>
+             1
+            </sub>
+           </i>
+           because reads don't modify data, so concurrent reads are safe. This is the motivation for the
+           <b>
+            first readers–writers problem
+           </b>
+           , in which the constraint is added that
+           <i>
+            no reader shall be kept waiting if the share is currently opened for reading.
+           </i>
+           This is also called
+           <b>
+            readers-preference
+           </b>
+           , with its solution:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr mw-highlight-lines" dir="ltr">
+           <pre><span></span><span class="linenos" data-line="1"></span><span class="n">semaphore</span><span class="w"> </span><span class="n">resource</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="linenos" data-line="2"></span><span class="n">semaphore</span><span class="w"> </span><span class="n">rmutex</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="linenos" data-line="3"></span><span class="n">readcount</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos" data-line="4"></span>
+<span class="linenos" data-line="5"></span><span class="cm">/*</span>
+<span class="linenos" data-line="6"></span><span class="cm">   resource.P() is equivalent to wait(resource)</span>
+<span class="linenos" data-line="7"></span><span class="cm">   resource.V() is equivalent to signal(resource)</span>
+<span class="linenos" data-line="8"></span><span class="cm">   rmutex.P() is equivalent to wait(rmutex)</span>
+<span class="linenos" data-line="9"></span><span class="cm">   rmutex.V() is equivalent to signal(rmutex)</span>
+<span class="linenos" data-line="10"></span><span class="cm">*/</span>
+<span class="linenos" data-line="11"></span>
+<span class="linenos" data-line="12"></span><span class="n">writer</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos" data-line="13"></span><span class="w">    </span><span class="n">resource</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">          </span><span class="c1">//Lock the shared file for a writer</span>
+<span class="linenos" data-line="14"></span>
+<span class="linenos" data-line="15"></span><span class="w">    </span><span class="o">&lt;</span><span class="n">CRITICAL</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="16"></span><span class="w">    </span><span class="c1">// Writing is done</span>
+<span class="linenos" data-line="17"></span>
+<span class="linenos" data-line="18"></span><span class="w">    </span><span class="o">&lt;</span><span class="n">EXIT</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="19"></span><span class="w">    </span><span class="n">resource</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">          </span><span class="c1">//Release the shared file for use by other readers. Writers are allowed if there are no readers requesting it.</span>
+<span class="linenos" data-line="20"></span><span class="p">}</span>
+<span class="linenos" data-line="21"></span>
+<span class="linenos" data-line="22"></span><span class="n">reader</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos" data-line="23"></span><span class="w">    </span><span class="n">rmutex</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">           </span><span class="c1">//Ensure that no other reader can execute the &lt;Entry&gt; section while you are in it</span>
+<span class="linenos" data-line="24"></span><span class="w">    </span><span class="o">&lt;</span><span class="n">CRITICAL</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="25"></span><span class="w">    </span><span class="n">readcount</span><span class="o">++</span><span class="p">;</span><span class="w">          </span><span class="c1">//Indicate that you are a reader trying to enter the Critical Section</span>
+<span class="linenos" data-line="26"></span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">readcount</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w">   </span><span class="c1">//Checks if you are the first reader trying to enter CS</span>
+<span class="linenos" data-line="27"></span><span class="w">        </span><span class="n">resource</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">     </span><span class="c1">//If you are the first reader, lock the resource from writers. Resource stays reserved for subsequent readers</span>
+<span class="linenos" data-line="28"></span><span class="w">    </span><span class="o">&lt;</span><span class="n">EXIT</span><span class="w"> </span><span class="n">CRITICAL</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="29"></span><span class="w">    </span><span class="n">rmutex</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">           </span><span class="c1">//Release</span>
+<span class="linenos" data-line="30"></span>
+<span class="linenos" data-line="31"></span><span class="w">    </span><span class="c1">// Do the Reading</span>
+<span class="linenos" data-line="32"></span>
+<span class="linenos" data-line="33"></span><span class="w">    </span><span class="n">rmutex</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">           </span><span class="c1">//Ensure that no other reader can execute the &lt;Exit&gt; section while you are in it</span>
+<span class="linenos" data-line="34"></span><span class="w">    </span><span class="o">&lt;</span><span class="n">CRITICAL</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="35"></span><span class="w">    </span><span class="n">readcount</span><span class="o">--</span><span class="p">;</span><span class="w">          </span><span class="c1">//Indicate that you no longer need the shared resource. One fewer reader</span>
+<span class="linenos" data-line="36"></span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">readcount</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w">   </span><span class="c1">//Checks if you are the last (only) reader who is reading the shared file</span>
+<span class="linenos" data-line="37"></span><span class="w">        </span><span class="n">resource</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">     </span><span class="c1">//If you are last reader, then you can unlock the resource. This makes it available to writers.</span>
+<span class="linenos" data-line="38"></span><span class="w">    </span><span class="o">&lt;</span><span class="n">EXIT</span><span class="w"> </span><span class="n">CRITICAL</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="39"></span><span class="w">    </span><span class="n">rmutex</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">           </span><span class="c1">//Release</span>
+<span class="linenos" data-line="40"></span><span class="p">}</span>
+</pre>
+          </div>
+          <p>
+           In this solution of the readers/writers problem, the first reader must lock the resource (shared file) if such is available. Once the file is locked from writers, it may be used by many subsequent readers without having them to re-lock it again.
+          </p>
+          <p>
+           Before entering the
+           <a href="/wiki/Critical_section" title="Critical section">
+            critical section
+           </a>
+           , every new reader must go through the entry section. However, there may only be a single reader in the entry section at a time. This is done to avoid
+           <a href="/wiki/Race_condition" title="Race condition">
+            race conditions
+           </a>
+           on the readers (in this context, a race condition is a condition in which two or more threads are waking up simultaneously and trying to enter the critical section; without further constraint, the behavior is nondeterministic.  E.g. two readers increment the readcount at the same time, and both try to lock the resource, causing one reader to block).  To accomplish this, every reader which enters the &lt;ENTRY Section&gt; will lock the &lt;ENTRY Section&gt; for themselves until they are done with it. At this point the readers are not locking the resource. They are only locking the entry section so no other reader can enter it while they are in it. Once the reader is done executing the entry section, it will unlock it by signalling the mutex. Signalling it is equivalent to: mutex.V() in the above code. Same  is valid for the &lt;EXIT Section&gt;. There can be no more than a single reader in the exit section at a time, therefore, every reader must claim and lock the Exit section for themselves before using it.
+          </p>
+          <p>
+           Once the first reader is in the entry section, it will lock the resource. Doing this will prevent any writers from accessing it. Subsequent readers can just utilize the locked (from writers) resource. The reader to finish last (indicated by the readcount variable) must unlock the resource, thus making it available to writers.
+          </p>
+          <p>
+           In this solution, every writer must claim the resource individually. This means that a stream of readers can subsequently lock all potential writers out and starve them. This is so, because after the first reader locks the resource, no writer can lock it, before it gets released. And it will only be released by the last reader. Hence, this solution does not satisfy fairness.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Second_readers–writers_problem">
+            <span id="Second_readers.E2.80.93writers_problem">
+            </span>
+            Second readers–writers problem
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit&amp;section=2" title="Edit section: Second readers–writers problem">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The first solution is suboptimal, because it is possible that a reader
+           <i>
+            R
+            <sub>
+             1
+            </sub>
+           </i>
+           might have the lock, a writer
+           <i>
+            W
+           </i>
+           be waiting for the lock, and then a reader
+           <i>
+            R
+            <sub>
+             2
+            </sub>
+           </i>
+           requests access. It would be unfair for
+           <i>
+            R
+            <sub>
+             2
+            </sub>
+           </i>
+           to jump in immediately, ahead of
+           <i>
+            W
+           </i>
+           ; if that happened often enough,
+           <i>
+            W
+           </i>
+           would
+           <a class="mw-redirect" href="/wiki/Resource_starvation" title="Resource starvation">
+            starve
+           </a>
+           . Instead,
+           <i>
+            W
+           </i>
+           should start as soon as possible. This is the motivation for the
+           <b>
+            second readers–writers problem
+           </b>
+           , in which the constraint is added that
+           <i>
+            no writer, once added to the queue, shall be kept waiting longer than absolutely necessary
+           </i>
+           . This is also called
+           <b>
+            writers-preference
+           </b>
+           .
+          </p>
+          <p>
+           A solution to the writers-preference scenario is:
+           <sup class="reference" id="cite_ref-courtois_2-1">
+            <a href="#cite_note-courtois-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr mw-highlight-lines" dir="ltr">
+           <pre><span></span><span class="linenos" data-line="1"></span><span class="kt">int</span><span class="w"> </span><span class="n">readcount</span><span class="p">,</span><span class="w"> </span><span class="n">writecount</span><span class="p">;</span><span class="w">                   </span><span class="c1">//(initial value = 0)</span>
+<span class="linenos" data-line="2"></span><span class="n">semaphore</span><span class="w"> </span><span class="n">rmutex</span><span class="p">,</span><span class="w"> </span><span class="n">wmutex</span><span class="p">,</span><span class="w"> </span><span class="n">readTry</span><span class="p">,</span><span class="w"> </span><span class="n">resource</span><span class="p">;</span><span class="w"> </span><span class="c1">//(initial value = 1)</span>
+<span class="linenos" data-line="3"></span>
+<span class="linenos" data-line="4"></span><span class="c1">//READER</span>
+<span class="linenos" data-line="5"></span><span class="n">reader</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos" data-line="6"></span><span class="o">&lt;</span><span class="n">ENTRY</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="7"></span><span class="w">  </span><span class="n">readTry</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">                 </span><span class="c1">//Indicate a reader is trying to enter</span>
+<span class="linenos" data-line="8"></span><span class="w">  </span><span class="n">rmutex</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">                  </span><span class="c1">//lock entry section to avoid race condition with other readers</span>
+<span class="linenos" data-line="9"></span><span class="w">  </span><span class="n">readcount</span><span class="o">++</span><span class="p">;</span><span class="w">                 </span><span class="c1">//report yourself as a reader</span>
+<span class="linenos" data-line="10"></span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">readcount</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w">          </span><span class="c1">//checks if you are first reader</span>
+<span class="linenos" data-line="11"></span><span class="w">    </span><span class="n">resource</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">              </span><span class="c1">//if you are first reader, lock  the resource</span>
+<span class="linenos" data-line="12"></span><span class="w">  </span><span class="n">rmutex</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">                  </span><span class="c1">//release entry section for other readers</span>
+<span class="linenos" data-line="13"></span><span class="w">  </span><span class="n">readTry</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">                 </span><span class="c1">//indicate you are done trying to access the resource</span>
+<span class="linenos" data-line="14"></span>
+<span class="linenos" data-line="15"></span><span class="o">&lt;</span><span class="n">CRITICAL</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="16"></span><span class="c1">//reading is performed</span>
+<span class="linenos" data-line="17"></span>
+<span class="linenos" data-line="18"></span><span class="o">&lt;</span><span class="n">EXIT</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="19"></span><span class="w">  </span><span class="n">rmutex</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">                  </span><span class="c1">//reserve exit section - avoids race condition with readers</span>
+<span class="linenos" data-line="20"></span><span class="w">  </span><span class="n">readcount</span><span class="o">--</span><span class="p">;</span><span class="w">                 </span><span class="c1">//indicate you're leaving</span>
+<span class="linenos" data-line="21"></span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">readcount</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w">          </span><span class="c1">//checks if you are last reader leaving</span>
+<span class="linenos" data-line="22"></span><span class="w">    </span><span class="n">resource</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">              </span><span class="c1">//if last, you must release the locked resource</span>
+<span class="linenos" data-line="23"></span><span class="w">  </span><span class="n">rmutex</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">                  </span><span class="c1">//release exit section for other readers</span>
+<span class="linenos" data-line="24"></span><span class="p">}</span>
+<span class="linenos" data-line="25"></span>
+<span class="linenos" data-line="26"></span><span class="c1">//WRITER</span>
+<span class="linenos" data-line="27"></span><span class="n">writer</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos" data-line="28"></span><span class="o">&lt;</span><span class="n">ENTRY</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="29"></span><span class="w">  </span><span class="n">wmutex</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">                  </span><span class="c1">//reserve entry section for writers - avoids race conditions</span>
+<span class="linenos" data-line="30"></span><span class="w">  </span><span class="n">writecount</span><span class="o">++</span><span class="p">;</span><span class="w">                </span><span class="c1">//report yourself as a writer entering</span>
+<span class="linenos" data-line="31"></span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">writecount</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w">         </span><span class="c1">//checks if you're first writer</span>
+<span class="linenos" data-line="32"></span><span class="w">    </span><span class="n">readTry</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">               </span><span class="c1">//if you're first, then you must lock the readers out. Prevent them from trying to enter CS</span>
+<span class="linenos" data-line="33"></span><span class="w">  </span><span class="n">wmutex</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">                  </span><span class="c1">//release entry section</span>
+<span class="linenos" data-line="34"></span><span class="w">  </span><span class="n">resource</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">                </span><span class="c1">//reserve the resource for yourself - prevents other writers from simultaneously editing the shared resource</span>
+<span class="linenos" data-line="35"></span><span class="o">&lt;</span><span class="n">CRITICAL</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="36"></span><span class="w">  </span><span class="c1">//writing is performed</span>
+<span class="linenos" data-line="37"></span><span class="w">  </span><span class="n">resource</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">                </span><span class="c1">//release file</span>
+<span class="linenos" data-line="38"></span>
+<span class="linenos" data-line="39"></span><span class="o">&lt;</span><span class="n">EXIT</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="40"></span><span class="w">  </span><span class="n">wmutex</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">                  </span><span class="c1">//reserve exit section</span>
+<span class="linenos" data-line="41"></span><span class="w">  </span><span class="n">writecount</span><span class="o">--</span><span class="p">;</span><span class="w">                </span><span class="c1">//indicate you're leaving</span>
+<span class="linenos" data-line="42"></span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">writecount</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w">         </span><span class="c1">//checks if you're the last writer</span>
+<span class="linenos" data-line="43"></span><span class="w">    </span><span class="n">readTry</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">               </span><span class="c1">//if you're last writer, you must unlock the readers. Allows them to try enter CS for reading</span>
+<span class="linenos" data-line="44"></span><span class="w">  </span><span class="n">wmutex</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">                  </span><span class="c1">//release exit section</span>
+<span class="linenos" data-line="45"></span><span class="p">}</span>
+</pre>
+          </div>
+          <p>
+           In this solution, preference is given to the writers. This is accomplished by forcing every reader to lock and release the readtry semaphore individually. The writers on the other hand don't need to lock it individually. Only the first writer will lock the readtry and then all subsequent writers can simply use the resource as it gets freed by the previous writer. The very last writer must release the readtry semaphore, thus opening the gate for readers to try reading.
+          </p>
+          <p>
+           No reader can engage in the entry section if the readtry semaphore has been set by a writer previously. The reader must wait for the last writer to unlock the resource and readtry semaphores. On the other hand, if a particular reader has locked the readtry semaphore, this will indicate to any potential concurrent writer that there is a reader in the entry section. So the writer will wait for the reader to release the readtry and then the writer will immediately lock it for itself and all subsequent writers. However, the writer will not be able to access the resource until the current reader has released the resource, which only occurs after the reader is finished with the resource in the critical section.
+          </p>
+          <p>
+           The resource semaphore can be locked by both the writer and  the reader in their entry section. They are only able to do so after first locking the readtry semaphore, which can only be done by one of them at a time.
+          </p>
+          <p>
+           It will then take control over the resource as soon as the current reader is done reading and lock all future readers out. All subsequent readers will hang up at the readtry semaphore waiting for the writers to be finished with the resource and to open the gate by releasing readtry.
+          </p>
+          <p>
+           The rmutex and wmutex are used in exactly the same way as in the first solution. Their sole purpose is to avoid race conditions on the readers and writers while they are in their entry or exit sections.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Third_readers–writers_problem">
+            <span id="Third_readers.E2.80.93writers_problem">
+            </span>
+            Third readers–writers problem
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit&amp;section=3" title="Edit section: Third readers–writers problem">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           In fact, the solutions implied by both problem statements can result in starvation — the first one may starve writers in the queue, and the second one may starve readers. Therefore, the
+           <b>
+            third readers–writers problem
+           </b>
+           is sometimes proposed, which adds the constraint that
+           <i>
+            no thread shall be allowed to starve
+           </i>
+           ; that is, the operation of obtaining a lock on the shared data will always terminate in a bounded amount of time.
+A solution with fairness for both readers and writers might be as follows:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr mw-highlight-lines" dir="ltr">
+           <pre><span></span><span class="linenos" data-line="1"></span><span class="kt">int</span><span class="w"> </span><span class="n">readcount</span><span class="p">;</span><span class="w">                </span><span class="c1">// init to 0; number of readers currently accessing resource</span>
+<span class="linenos" data-line="2"></span>
+<span class="linenos" data-line="3"></span><span class="c1">// all semaphores initialised to 1</span>
+<span class="linenos" data-line="4"></span><span class="n">semaphore</span><span class="w"> </span><span class="n">resource</span><span class="p">;</span><span class="w">           </span><span class="c1">// controls access (read/write) to the resource. Binary semaphore.</span>
+<span class="linenos" data-line="5"></span><span class="n">semaphore</span><span class="w"> </span><span class="n">rmutex</span><span class="p">;</span><span class="w">             </span><span class="c1">// for syncing changes to shared variable readcount</span>
+<span class="linenos" data-line="6"></span><span class="n">semaphore</span><span class="w"> </span><span class="n">serviceQueue</span><span class="p">;</span><span class="w">       </span><span class="c1">// FAIRNESS: preserves ordering of requests (signaling must be FIFO)</span>
+<span class="linenos" data-line="7"></span>
+<span class="linenos" data-line="8"></span><span class="c1">//READER</span>
+<span class="linenos" data-line="9"></span><span class="n">reader</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos" data-line="10"></span><span class="o">&lt;</span><span class="n">ENTRY</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="11"></span><span class="w">  </span><span class="n">serviceQueue</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">           </span><span class="c1">// wait in line to be serviced</span>
+<span class="linenos" data-line="12"></span><span class="w">  </span><span class="n">rmutex</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">                 </span><span class="c1">// request exclusive access to readcount</span>
+<span class="linenos" data-line="13"></span><span class="w">  </span><span class="n">readcount</span><span class="o">++</span><span class="p">;</span><span class="w">                </span><span class="c1">// update count of active readers</span>
+<span class="linenos" data-line="14"></span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">readcount</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w">         </span><span class="c1">// if I am the first reader</span>
+<span class="linenos" data-line="15"></span><span class="w">    </span><span class="n">resource</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">             </span><span class="c1">// request resource access for readers (writers blocked)</span>
+<span class="linenos" data-line="16"></span><span class="w">  </span><span class="n">serviceQueue</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">           </span><span class="c1">// let next in line be serviced</span>
+<span class="linenos" data-line="17"></span><span class="w">  </span><span class="n">rmutex</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">                 </span><span class="c1">// release access to readcount</span>
+<span class="linenos" data-line="18"></span><span class="w">    </span>
+<span class="linenos" data-line="19"></span><span class="o">&lt;</span><span class="n">CRITICAL</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="20"></span><span class="c1">//reading is performed</span>
+<span class="linenos" data-line="21"></span><span class="w">    </span>
+<span class="linenos" data-line="22"></span><span class="o">&lt;</span><span class="n">EXIT</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="23"></span><span class="w">  </span><span class="n">rmutex</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">                 </span><span class="c1">// request exclusive access to readcount</span>
+<span class="linenos" data-line="24"></span><span class="w">  </span><span class="n">readcount</span><span class="o">--</span><span class="p">;</span><span class="w">                </span><span class="c1">// update count of active readers</span>
+<span class="linenos" data-line="25"></span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">readcount</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w">         </span><span class="c1">// if there are no readers left</span>
+<span class="linenos" data-line="26"></span><span class="w">    </span><span class="n">resource</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">             </span><span class="c1">// release resource access for all</span>
+<span class="linenos" data-line="27"></span><span class="w">  </span><span class="n">rmutex</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">                 </span><span class="c1">// release access to readcount</span>
+<span class="linenos" data-line="28"></span><span class="p">}</span>
+<span class="linenos" data-line="29"></span>
+<span class="linenos" data-line="30"></span><span class="c1">//WRITER</span>
+<span class="linenos" data-line="31"></span><span class="n">writer</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos" data-line="32"></span><span class="o">&lt;</span><span class="n">ENTRY</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="33"></span><span class="w">  </span><span class="n">serviceQueue</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">           </span><span class="c1">// wait in line to be serviced</span>
+<span class="linenos" data-line="34"></span><span class="w">  </span><span class="n">resource</span><span class="p">.</span><span class="n">P</span><span class="p">();</span><span class="w">               </span><span class="c1">// request exclusive access to resource</span>
+<span class="linenos" data-line="35"></span><span class="w">  </span><span class="n">serviceQueue</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">           </span><span class="c1">// let next in line be serviced</span>
+<span class="linenos" data-line="36"></span><span class="w">    </span>
+<span class="linenos" data-line="37"></span><span class="o">&lt;</span><span class="n">CRITICAL</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="38"></span><span class="c1">// writing is performed</span>
+<span class="linenos" data-line="39"></span><span class="w">    </span>
+<span class="linenos" data-line="40"></span><span class="o">&lt;</span><span class="n">EXIT</span><span class="w"> </span><span class="n">Section</span><span class="o">&gt;</span>
+<span class="linenos" data-line="41"></span><span class="w">  </span><span class="n">resource</span><span class="p">.</span><span class="n">V</span><span class="p">();</span><span class="w">               </span><span class="c1">// release resource access for next reader/writer</span>
+<span class="linenos" data-line="42"></span><span class="p">}</span>
+</pre>
+          </div>
+          <p>
+           This solution can only satisfy the condition that "no thread shall be allowed to starve" if and only if semaphores preserve first-in first-out ordering when blocking and releasing threads. Otherwise, a blocked writer, for example, may remain blocked indefinitely with a cycle of other writers decrementing the semaphore before it can.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Simplest_reader_writer_problem">
+            Simplest reader writer problem
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit&amp;section=4" title="Edit section: Simplest reader writer problem">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The simplest reader writer problem which uses only two semaphores and doesn't need an array of readers to read the data in buffer.
+          </p>
+          <p>
+           Please notice that this solution gets simpler than the general case because it is made equivalent to the
+           <a href="/wiki/Producer%E2%80%93consumer_problem" title="Producer–consumer problem">
+            Bounded buffer
+           </a>
+           problem, and therefore only
+           <var style="padding-right: 1px;">
+            N
+           </var>
+           readers are allowed to enter in parallel,
+           <var style="padding-right: 1px;">
+            N
+           </var>
+           being the size of the buffer.
+          </p>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Reader">
+            Reader
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit&amp;section=5" title="Edit section: Reader">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wait</span><span class="p">(</span><span class="n">read</span><span class="p">)</span>
+<span class="w">    </span><span class="p">............</span>
+<span class="w">    </span><span class="n">reading</span><span class="w"> </span><span class="n">data</span>
+<span class="w">    </span><span class="p">............</span>
+<span class="w">    </span><span class="n">signal</span><span class="p">(</span><span class="n">write</span><span class="p">)</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">TRUE</span><span class="p">);</span>
+</pre>
+          </div>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Writer">
+            Writer
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit&amp;section=6" title="Edit section: Writer">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">wait</span><span class="p">(</span><span class="n">write</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.............</span>
+<span class="w">    </span><span class="n">writing</span><span class="w"> </span><span class="n">data</span>
+<span class="w">    </span><span class="p">.............</span>
+<span class="w">    </span><span class="n">signal</span><span class="p">(</span><span class="n">read</span><span class="p">)</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">TRUE</span><span class="p">);</span>
+</pre>
+          </div>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Algorithm">
+            Algorithm
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit&amp;section=7" title="Edit section: Algorithm">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ol>
+           <li>
+            Reader will run after Writer because of read semaphore.
+           </li>
+           <li>
+            Writer will stop writing when the write semaphore has reached 0.
+           </li>
+           <li>
+            Reader will stop reading when the read semaphore has reached 0.
+           </li>
+          </ol>
+          <p>
+           In writer, the value of write semaphore is given to read semaphore and in reader, the value of read is given to write on completion of the loop.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit&amp;section=8" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/ABA_problem" title="ABA problem">
+             ABA problem
+            </a>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Producers-consumers_problem" title="Producers-consumers problem">
+             Producers-consumers problem
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Dining_philosophers_problem" title="Dining philosophers problem">
+             Dining philosophers problem
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Cigarette_smokers_problem" title="Cigarette smokers problem">
+             Cigarette smokers problem
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Sleeping_barber_problem" title="Sleeping barber problem">
+             Sleeping barber problem
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Readers%E2%80%93writer_lock" title="Readers–writer lock">
+             Readers–writer lock
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Seqlock" title="Seqlock">
+             seqlock
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Read-copy-update" title="Read-copy-update">
+             read-copy-update
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit&amp;section=9" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation cs2" id="CITEREFTanenbaum2006">
+                Tanenbaum, Andrew S. (2006),
+                <i>
+                 Operating Systems - Design and Implementation, 3rd edition [Chapter: 2.3.2 The Readers and Writers Problem]
+                </i>
+                , Pearson Education, Inc.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Operating+Systems+-+Design+and+Implementation%2C+3rd+edition+%5BChapter%3A+2.3.2+The+Readers+and+Writers+Problem%5D&amp;rft.pub=Pearson+Education%2C+Inc.&amp;rft.date=2006&amp;rft.aulast=Tanenbaum&amp;rft.aufirst=Andrew+S.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReaders%E2%80%93writers+problem">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-courtois-2">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-courtois_2-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-courtois_2-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFCourtoisHeymansParnas1971">
+                Courtois, P. J.; Heymans, F.; Parnas, D. L. (1971).
+                <a class="external text" href="http://cs.nyu.edu/~lerner/spring10/MCP-S10-Read04-ReadersWriters.pdf" rel="nofollow">
+                 "Concurrent Control with "Readers" and "Writers"
+                 <span class="cs1-kern-right">
+                 </span>
+                 "
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 Communications of the ACM
+                </i>
+                .
+                <b>
+                 14
+                </b>
+                (10): 667–668.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1145%2F362759.362813" rel="nofollow">
+                 10.1145/362759.362813
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:7540747" rel="nofollow">
+                 7540747
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.atitle=Concurrent+Control+with+%22Readers%22+and+%22Writers%22&amp;rft.volume=14&amp;rft.issue=10&amp;rft.pages=667-668&amp;rft.date=1971&amp;rft_id=info%3Adoi%2F10.1145%2F362759.362813&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A7540747%23id-name%3DS2CID&amp;rft.aulast=Courtois&amp;rft.aufirst=P.+J.&amp;rft.au=Heymans%2C+F.&amp;rft.au=Parnas%2C+D.+L.&amp;rft_id=http%3A%2F%2Fcs.nyu.edu%2F~lerner%2Fspring10%2FMCP-S10-Read04-ReadersWriters.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReaders%E2%80%93writers+problem">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFTaubenfeld2006">
+                Taubenfeld, Gadi (2006).
+                <i>
+                 Synchronization Algorithms and Concurrent Programming
+                </i>
+                . Pearson Education. p. 301.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Synchronization+Algorithms+and+Concurrent+Programming&amp;rft.pages=301&amp;rft.pub=Pearson+Education&amp;rft.date=2006&amp;rft.aulast=Taubenfeld&amp;rft.aufirst=Gadi&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReaders%E2%80%93writers+problem">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <ul>
+           <li>
+            Morris JM (1979). A starvation-free solution to the mutual exclusion problem. Inf Process Lett 8:76–80
+           </li>
+           <li>
+            Fair Solution to the Reader-Writer-Problem with Semaphores only. H. Ballhausen, 2003
+            <a class="mw-redirect" href="/wiki/ArXiv_(identifier)" title="ArXiv (identifier)">
+             arXiv
+            </a>
+            :
+            <a class="external text" href="https://arxiv.org/abs/cs/0303005" rel="nofollow">
+             cs/0303005
+            </a>
+           </li>
+           <li>
+            Faster Fair Solution for the Reader–Writer Problem. V. Popov, O. Mazonka 2013
+            <a class="mw-redirect" href="/wiki/ArXiv_(identifier)" title="ArXiv (identifier)">
+             arXiv
+            </a>
+            :
+            <a class="external text" href="https://arxiv.org/abs/1309.4507" rel="nofollow">
+             1309.4507
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Readers%E2%80%93writers_problem&amp;action=edit&amp;section=10" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="http://www.rfc1149.net/blog/2011/01/07/the-third-readers-writers-problem/" rel="nofollow">
+             Algorithmic description of the third readers–writers problem
+            </a>
+           </li>
+          </ul>
+          <p class="mw-empty-elt">
+          </p>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Concurrent_computing" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Concurrent_computing" title="Template:Concurrent computing">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Concurrent_computing" title="Template talk:Concurrent computing">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Concurrent_computing" title="Special:EditPage/Template:Concurrent computing">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Concurrent_computing" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Concurrent_computing" title="Concurrent computing">
+                 Concurrent computing
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               General
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">
+                   Concurrency
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Concurrency_control" title="Concurrency control">
+                   Concurrency control
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Concurrent_data_structure" title="Concurrent data structure">
+                   Concurrent data structures
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Concurrent_hash_table" title="Concurrent hash table">
+                     Concurrent hash tables
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Concurrent_user" title="Concurrent user">
+                   Concurrent users
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Indeterminacy_in_concurrent_computation" title="Indeterminacy in concurrent computation">
+                   Indeterminacy
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Linearizability" title="Linearizability">
+                   Linearizability
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Process_calculus" title="Process calculus">
+                Process calculi
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Communicating_sequential_processes" title="Communicating sequential processes">
+                   CSP
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Calculus_of_communicating_systems" title="Calculus of communicating systems">
+                   CCS
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Algebra_of_Communicating_Processes" title="Algebra of Communicating Processes">
+                   ACP
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Language_Of_Temporal_Ordering_Specification" title="Language Of Temporal Ordering Specification">
+                   LOTOS
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/%CE%A0-calculus" title="Π-calculus">
+                   π-calculus
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Ambient_calculus" title="Ambient calculus">
+                   Ambient calculus
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/API-Calculus" title="API-Calculus">
+                   API-Calculus
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/PEPA" title="PEPA">
+                   PEPA
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Join-calculus" title="Join-calculus">
+                   Join-calculus
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Classic problems
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/ABA_problem" title="ABA problem">
+                   ABA problem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Cigarette_smokers_problem" title="Cigarette smokers problem">
+                   Cigarette smokers problem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Deadlock_(computer_science)" title="Deadlock (computer science)">
+                   Deadlock
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Dining_philosophers_problem" title="Dining philosophers problem">
+                   Dining philosophers problem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Producer%E2%80%93consumer_problem" title="Producer–consumer problem">
+                   Producer–consumer problem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Race_condition" title="Race condition">
+                   Race condition
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Readers–writers problem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Sleeping_barber_problem" title="Sleeping barber problem">
+                   Sleeping barber problem
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <td class="navbox-abovebelow" colspan="2">
+               <div>
+                <ul>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Category">
+                    <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Category:Concurrent_computing" title="Category:Concurrent computing">
+                   Category: Concurrent computing
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐nkl2n
+Cached time: 20240927001439
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.398 seconds
+Real time usage: 0.614 seconds
+Preprocessor visited node count: 1198/1000000
+Post‐expand include size: 38572/2097152 bytes
+Template argument size: 7439/2097152 bytes
+Highest expansion depth: 18/100
+Expensive parser function count: 9/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 53721/5000000 bytes
+Lua time usage: 0.242/10.000 seconds
+Lua memory usage: 4866059/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  549.492      1 -total
+ 24.34%  133.763      1 Template:Reflist
+ 18.65%  102.490      1 Template:Citation
+ 18.11%   99.492      1 Template:Concurrent_computing
+ 17.77%   97.647      1 Template:Navbox
+ 16.66%   91.540      1 Template:Short_description
+ 15.68%   86.168      1 Template:Multiple_issues
+ 10.12%   55.601      2 Template:Pagetype
+  9.91%   54.431      1 Template:More_footnotes
+  9.59%   52.691      2 Template:Ambox
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:4189100-0!canonical and timestamp 20240927001439 and revision id 1217916343. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Readers–writers_problem&amp;oldid=1217916343">
+          https://en.wikipedia.org/w/index.php?title=Readers–writers_problem&amp;oldid=1217916343
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Category
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Concurrency_(computer_science)" title="Category:Concurrency (computer science)">
+            Concurrency (computer science)
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">
+            Short description matches Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_lacking_in-text_citations_from_April_2015" title="Category:Articles lacking in-text citations from April 2015">
+            Articles lacking in-text citations from April 2015
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">
+            All articles lacking in-text citations
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_articles_that_are_too_technical_from_November_2016" title="Category:Wikipedia articles that are too technical from November 2016">
+            Wikipedia articles that are too technical from November 2016
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_that_are_too_technical" title="Category:All articles that are too technical">
+            All articles that are too technical
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_multiple_maintenance_issues" title="Category:Articles with multiple maintenance issues">
+            Articles with multiple maintenance issues
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Use_dmy_dates_from_February_2021" title="Category:Use dmy dates from February 2021">
+            Use dmy dates from February 2021
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 8 April 2024, at 16:54
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Readers%E2%80%93writers_problem&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-g2q6j","wgBackendResponseTime":177,"wgPageParseReport":{"limitreport":{"cputime":"0.398","walltime":"0.614","ppvisitednodes":{"value":1198,"limit":1000000},"postexpandincludesize":{"value":38572,"limit":2097152},"templateargumentsize":{"value":7439,"limit":2097152},"expansiondepth":{"value":18,"limit":100},"expensivefunctioncount":{"value":9,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":53721,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  549.492      1 -total"," 24.34%  133.763      1 Template:Reflist"," 18.65%  102.490      1 Template:Citation"," 18.11%   99.492      1 Template:Concurrent_computing"," 17.77%   97.647      1 Template:Navbox"," 16.66%   91.540      1 Template:Short_description"," 15.68%   86.168      1 Template:Multiple_issues"," 10.12%   55.601      2 Template:Pagetype","  9.91%   54.431      1 Template:More_footnotes","  9.59%   52.691      2 Template:Ambox"]},"scribunto":{"limitreport-timeusage":{"value":"0.242","limit":"10.000"},"limitreport-memusage":{"value":4866059,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-nkl2n","timestamp":"20240927001439","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Readers\u2013writers problem","url":"https:\/\/en.wikipedia.org\/wiki\/Readers%E2%80%93writers_problem","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1146845","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1146845","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2006-02-25T02:10:24Z","dateModified":"2024-04-08T16:54:24Z","headline":"Computer science problem in concurrency"}
+  </script>
+ </body>
+</html>

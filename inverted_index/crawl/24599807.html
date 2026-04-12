@@ -1,0 +1,2657 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   CockroachDB - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"17f549e2-3e20-4b6f-9fa0-6c65dc1182e5","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"CockroachDB","wgTitle":"CockroachDB","wgCurRevisionId":1243446969,"wgRevisionId":1243446969,"wgArticleId":47530715,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Wikipedia articles with style issues from January 2023","All articles with style issues","Wikipedia introduction cleanup from December 2023","All pages needing cleanup","Articles covered by WikiProject Wikify from December 2023","All articles covered by WikiProject Wikify","Articles with multiple maintenance issues","Use mdy dates from March 2017","Cloud databases","Distributed computing","NewSQL",
+"Distributed data stores","Software using the Business Source License"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"CockroachDB","wgRelevantArticleId":47530715,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":
+false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q98731903","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site",
+"mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/en/3/31/Cockroach_Labs_Logo.png" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="1200" property="og:image:height"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/en/3/31/Cockroach_Labs_Logo.png" property="og:image"/>
+  <meta content="800" property="og:image:width"/>
+  <meta content="800" property="og:image:height"/>
+  <meta content="640" property="og:image:width"/>
+  <meta content="640" property="og:image:height"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="CockroachDB - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/CockroachDB" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=CockroachDB&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/CockroachDB" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/CockroachDB"/>
+  <meta eecs485_docid="24599807"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-CockroachDB rootpage-CockroachDB skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=CockroachDB" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=CockroachDB" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=CockroachDB" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=CockroachDB" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-History">
+           <a class="vector-toc-link" href="#History">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              History
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-History-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Features">
+           <a class="vector-toc-link" href="#Features">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Features
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Features-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         CockroachDB
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 1 language" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-1" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          1 language
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="CockroachDB" href="https://de.wikipedia.org/wiki/CockroachDB" hreflang="de" lang="de" title="CockroachDB – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q98731903#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/CockroachDB" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:CockroachDB" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/CockroachDB">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=CockroachDB&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=CockroachDB&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/CockroachDB">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=CockroachDB&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=CockroachDB&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/CockroachDB" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/CockroachDB" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=CockroachDB&amp;oldid=1243446969" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=CockroachDB&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=CockroachDB&amp;id=1243446969&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCockroachDB">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCockroachDB">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q98731903" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=CockroachDB&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=CockroachDB&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Distributed database management system
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <style data-mw-deduplicate="TemplateStyles:r1211361296">
+          .mw-parser-output .multiple-issues-text{width:95%;margin:0.2em 0}.mw-parser-output .multiple-issues-text>.mw-collapsible-content{margin-top:0.3em}.mw-parser-output .compact-ambox .ambox{border:none;border-collapse:collapse;background-color:transparent;margin:0 0 0 1.6em!important;padding:0!important;width:auto;display:block}body.mediawiki .mw-parser-output .compact-ambox .ambox.mbox-small-left{font-size:100%;width:auto;margin:0}.mw-parser-output .compact-ambox .ambox .mbox-text{padding:0!important;margin:0!important}.mw-parser-output .compact-ambox .ambox .mbox-text-span{display:list-item;line-height:1.5em;list-style-type:disc}body.skin-minerva .mw-parser-output .multiple-issues-text>.mw-collapsible-toggle{display:none}.mw-parser-output .compact-ambox .ambox .mbox-image,.mw-parser-output .compact-ambox .ambox .mbox-imageright,.mw-parser-output .compact-ambox .ambox .mbox-empty-cell,.mw-parser-output .compact-ambox .hide-when-compact{display:none}
+         </style>
+         <table class="box-Multiple_issues plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <span>
+                <img alt="" class="mw-file-element" data-file-height="40" data-file-width="40" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" width="40"/>
+               </span>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              <div class="multiple-issues-text mw-collapsible">
+               <b>
+                This article has multiple issues.
+               </b>
+               Please help
+               <b>
+                <a href="/wiki/Special:EditPage/CockroachDB" title="Special:EditPage/CockroachDB">
+                 improve it
+                </a>
+               </b>
+               or discuss these issues on the
+               <b>
+                <a href="/wiki/Talk:CockroachDB" title="Talk:CockroachDB">
+                 talk page
+                </a>
+               </b>
+               .
+               <small>
+                <i>
+                 (
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove these messages
+                 </a>
+                 )
+                </i>
+               </small>
+               <div class="mw-collapsible-content">
+                <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+                <table class="box-Tone plainlinks metadata ambox ambox-style ambox-Tone" role="presentation">
+                 <tbody>
+                  <tr>
+                   <td class="mbox-image">
+                    <div class="mbox-image-div">
+                     <span typeof="mw:File">
+                      <span>
+                       <img alt="" class="mw-file-element" data-file-height="48" data-file-width="48" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" width="40"/>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="mbox-text">
+                    <div class="mbox-text-span">
+                     This article's
+                     <b>
+                      tone or style may not reflect the
+                      <a href="/wiki/Wikipedia:Writing_better_articles#Tone" title="Wikipedia:Writing better articles">
+                       encyclopedic tone
+                      </a>
+                      used on Wikipedia
+                     </b>
+                     .
+                     <span class="hide-when-compact">
+                      Relevant discussion may be found on the
+                      <a href="/wiki/Talk:CockroachDB#POV_doubt" title="Talk:CockroachDB">
+                       talk page
+                      </a>
+                      . See Wikipedia's
+                      <a href="/wiki/Wikipedia:Writing_better_articles#Tone" title="Wikipedia:Writing better articles">
+                       guide to writing better articles
+                      </a>
+                      for suggestions.
+                     </span>
+                     <span class="date-container">
+                      <i>
+                       (
+                       <span class="date">
+                        January 2023
+                       </span>
+                       )
+                      </i>
+                     </span>
+                     <span class="hide-when-compact">
+                      <i>
+                       (
+                       <small>
+                        <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                         Learn how and when to remove this message
+                        </a>
+                       </small>
+                       )
+                      </i>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+                <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+                <table class="box-Lead_too_short plainlinks metadata ambox ambox-content ambox-lead_too_short" role="presentation">
+                 <tbody>
+                  <tr>
+                   <td class="mbox-image">
+                    <div class="mbox-image-div">
+                     <span typeof="mw:File">
+                      <a class="mw-file-description" href="/wiki/File:Wiki_letter_w.svg">
+                       <img class="mw-file-element" data-file-height="44" data-file-width="44" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/40px-Wiki_letter_w.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/60px-Wiki_letter_w.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/80px-Wiki_letter_w.svg.png 2x" width="40"/>
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="mbox-text">
+                    <div class="mbox-text-span">
+                     This article's
+                     <a href="/wiki/Wikipedia:Manual_of_Style/Lead_section#Length" title="Wikipedia:Manual of Style/Lead section">
+                      lead section
+                     </a>
+                     <b>
+                      may be too short to adequately
+                      <a href="/wiki/Wikipedia:Summary_style" title="Wikipedia:Summary style">
+                       summarize
+                      </a>
+                      the key points
+                     </b>
+                     .
+                     <span class="hide-when-compact">
+                      Please consider expanding the lead to
+                      <a href="/wiki/Wikipedia:Manual_of_Style/Lead_section#Provide_an_accessible_overview" title="Wikipedia:Manual of Style/Lead section">
+                       provide an accessible overview
+                      </a>
+                      of all important aspects of the article.
+                     </span>
+                     <span class="date-container">
+                      <i>
+                       (
+                       <span class="date">
+                        December 2023
+                       </span>
+                       )
+                      </i>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </div>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p class="mw-empty-elt">
+         </p>
+         <style data-mw-deduplicate="TemplateStyles:r1237879389">
+          .mw-parser-output .infobox-subbox{padding:0;border:none;margin:-3px;width:auto;min-width:100%;font-size:100%;clear:none;float:none;background-color:transparent}.mw-parser-output .infobox-3cols-child{margin:auto}.mw-parser-output .infobox .navbar{font-size:100%}body.skin-minerva .mw-parser-output .infobox-header,body.skin-minerva .mw-parser-output .infobox-subheader,body.skin-minerva .mw-parser-output .infobox-above,body.skin-minerva .mw-parser-output .infobox-title,body.skin-minerva .mw-parser-output .infobox-image,body.skin-minerva .mw-parser-output .infobox-full-data,body.skin-minerva .mw-parser-output .infobox-below{text-align:center}@media screen{html.skin-theme-clientpref-night .mw-parser-output .infobox-full-data:not(.notheme)>div:not(.notheme)[style]{background:#1f1f23!important;color:#f8f9fa}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .infobox-full-data:not(.notheme) div:not(.notheme){background:#1f1f23!important;color:#f8f9fa}}@media(min-width:640px){body.skin--responsive .mw-parser-output .infobox-table{display:table!important}body.skin--responsive .mw-parser-output .infobox-table>caption{display:table-caption!important}body.skin--responsive .mw-parser-output .infobox-table>tbody{display:table-row-group}body.skin--responsive .mw-parser-output .infobox-table tr{display:table-row!important}body.skin--responsive .mw-parser-output .infobox-table th,body.skin--responsive .mw-parser-output .infobox-table td{padding-left:inherit;padding-right:inherit}}
+         </style>
+         <table class="infobox vevent">
+          <tbody>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             <a href="/wiki/Programmer" title="Programmer">
+              Original author(s)
+             </a>
+            </th>
+            <td class="infobox-data">
+             <a href="/wiki/Spencer_Kimball_(computer_programmer)" title="Spencer Kimball (computer programmer)">
+              Spencer Kimball
+             </a>
+             ,
+             <a href="/wiki/Peter_Mattis" title="Peter Mattis">
+              Peter Mattis
+             </a>
+             ,
+             <a href="/wiki/Ben_Darnell" title="Ben Darnell">
+              Ben Darnell
+             </a>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             <a href="/wiki/Programmer" title="Programmer">
+              Developer(s)
+             </a>
+            </th>
+            <td class="infobox-data">
+             Cockroach Labs
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             Initial release
+            </th>
+            <td class="infobox-data">
+             2017
+             <span class="noprint">
+              ; 7 years ago
+             </span>
+             <span style="display:none">
+              (
+              <span class="bday dtstart published updated">
+               2017
+              </span>
+              )
+             </span>
+            </td>
+           </tr>
+           <tr style="display: none;">
+            <td class="infobox-full-data" colspan="2">
+             <link href="mw-data:TemplateStyles:r1237879389" rel="mw-deduplicated-inline-style"/>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             <a href="/wiki/Software_release_life_cycle" title="Software release life cycle">
+              Stable release
+             </a>
+            </th>
+            <td class="infobox-data">
+             <div style="margin:0px;">
+              24.1.0
+   / May 20, 2024
+              <span class="noprint">
+               ; 4 months ago
+              </span>
+              <span style="display:none">
+               (
+               <span class="bday dtstart published updated">
+                2024-05-20
+               </span>
+               )
+              </span>
+             </div>
+            </td>
+           </tr>
+           <tr style="display:none">
+            <td colspan="2">
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             <a href="/wiki/Repository_(version_control)" title="Repository (version control)">
+              Repository
+             </a>
+            </th>
+            <td class="infobox-data">
+             <style data-mw-deduplicate="TemplateStyles:r1126788409">
+              .mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}
+             </style>
+             <div class="plainlist">
+              <ul>
+               <li>
+                <span class="url">
+                 <a class="external text" href="https://github.com/cockroachdb/cockroach" rel="nofollow">
+                  github
+                  <wbr/>
+                  .com
+                  <wbr/>
+                  /cockroachdb
+                  <wbr/>
+                  /cockroach
+                 </a>
+                </span>
+                <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless">
+                 <a href="https://www.wikidata.org/wiki/Q98731903#P1324" title="Edit this at Wikidata">
+                  <img alt="Edit this at Wikidata" class="mw-file-element" data-file-height="20" data-file-width="20" decoding="async" height="10" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" width="10"/>
+                 </a>
+                </span>
+               </li>
+              </ul>
+             </div>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             Written in
+            </th>
+            <td class="infobox-data">
+             <a href="/wiki/Go_(programming_language)" title="Go (programming language)">
+              Go
+             </a>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             Available in
+            </th>
+            <td class="infobox-data">
+             <a href="/wiki/English_language" title="English language">
+              English
+             </a>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             <a href="/wiki/Software_categories#Categorization_approaches" title="Software categories">
+              Type
+             </a>
+            </th>
+            <td class="infobox-data">
+             <a class="mw-redirect" href="/wiki/Relational_database_management_system" title="Relational database management system">
+              RDBMS
+             </a>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row" style="white-space: nowrap;">
+             <a href="/wiki/Software_license" title="Software license">
+              License
+             </a>
+            </th>
+            <td class="infobox-data">
+             <a href="/wiki/Proprietary_software" title="Proprietary software">
+              Proprietary
+             </a>
+             <sup class="reference" id="cite_ref-1">
+              <a href="#cite_note-1">
+               <span class="cite-bracket">
+                [
+               </span>
+               1
+               <span class="cite-bracket">
+                ]
+               </span>
+              </a>
+             </sup>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <link href="mw-data:TemplateStyles:r1237879389" rel="mw-deduplicated-inline-style"/>
+         <style data-mw-deduplicate="TemplateStyles:r1242257876">
+          .mw-parser-output .ib-company .infobox-label{padding-right:0.5em}.mw-parser-output .ib-company .infobox-data,.mw-parser-output .ib-company .infobox-below{line-height:1.35em}.mw-parser-output .ib-company-logo img{background-color:#f8f9fa}.mw-parser-output .ib-company-locality,.mw-parser-output .ib-company-country{display:inline}
+         </style>
+         <table class="infobox ib-company vcard">
+          <caption class="infobox-title fn org">
+           Cockroach Labs, Inc.
+          </caption>
+          <tbody>
+           <tr>
+            <td class="infobox-image ib-company-logo logo" colspan="2">
+             <span class="mw-default-size" typeof="mw:File/Frameless">
+              <a class="mw-file-description" href="/wiki/File:Cockroach_Labs_Logo.png">
+               <img class="mw-file-element" data-file-height="304" data-file-width="304" decoding="async" height="220" src="//upload.wikimedia.org/wikipedia/en/thumb/3/31/Cockroach_Labs_Logo.png/220px-Cockroach_Labs_Logo.png" srcset="//upload.wikimedia.org/wikipedia/en/3/31/Cockroach_Labs_Logo.png 1.5x" width="220"/>
+              </a>
+             </span>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row">
+             Company type
+            </th>
+            <td class="infobox-data category">
+             <a class="mw-redirect" href="/wiki/Private_company" title="Private company">
+              Private
+             </a>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row">
+             Industry
+            </th>
+            <td class="infobox-data category">
+             <a href="/wiki/Software" title="Software">
+              Software
+             </a>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row">
+             Founded
+            </th>
+            <td class="infobox-data">
+             2015
+             <span class="noprint">
+              ; 9 years ago
+             </span>
+             <span style="display:none">
+              (
+              <span class="bday dtstart published updated">
+               2015
+              </span>
+              )
+             </span>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row">
+             Founder
+            </th>
+            <td class="infobox-data agent">
+             <a href="/wiki/Spencer_Kimball_(computer_programmer)" title="Spencer Kimball (computer programmer)">
+              Spencer Kimball
+             </a>
+             ,
+             <a href="/wiki/Peter_Mattis" title="Peter Mattis">
+              Peter Mattis
+             </a>
+             ,
+             <a href="/wiki/Ben_Darnell" title="Ben Darnell">
+              Ben Darnell
+             </a>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row">
+             Headquarters
+            </th>
+            <td class="infobox-data label">
+             <a href="/wiki/New_York_City" title="New York City">
+              New York City
+             </a>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row">
+             <div style="display: inline-block; line-height: 1.2em; padding: .1em 0;">
+              Key people
+             </div>
+            </th>
+            <td class="infobox-data agent">
+             Spencer Kimball
+             <small>
+              (CEO)
+             </small>
+             <br/>
+             Peter Mattis
+             <small>
+              (VP of Engineering)
+             </small>
+             <br/>
+             Ben Darnell
+             <small>
+              (CTO)
+             </small>
+             <br/>
+             Nate Stewart
+             <small>
+              (Chief Product Officer)
+             </small>
+             <br/>
+             Lindsay Grenawalt
+             <small>
+              (Chief People Officer)
+             </small>
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row">
+             Services
+            </th>
+            <td class="infobox-data category">
+             Commercial database management systems
+            </td>
+           </tr>
+           <tr>
+            <th class="infobox-label" scope="row">
+             Website
+            </th>
+            <td class="infobox-data">
+             <span class="url">
+              <a class="external text" href="https://www.cockroachlabs.com/" rel="nofollow">
+               cockroachlabs.com
+              </a>
+             </span>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          <b>
+           CockroachDB
+          </b>
+          is a source-available
+          <a href="/wiki/Distributed_SQL" title="Distributed SQL">
+           distributed SQL
+          </a>
+          <a class="mw-redirect" href="/wiki/Database_management_system" title="Database management system">
+           database management system
+          </a>
+          developed by Cockroach Labs.
+          <sup class="reference" id="cite_ref-WSJourscamper_2-0">
+           <a href="#cite_note-WSJourscamper-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-WiredExGoogle_3-0">
+           <a href="#cite_note-WiredExGoogle-3">
+            <span class="cite-bracket">
+             [
+            </span>
+            3
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          The relational functionality is built on top of a distributed, transactional, consistent key-value store that can survive a variety of different underlying infrastructure failures, and is wire-compatible with
+          <a href="/wiki/PostgreSQL" title="PostgreSQL">
+           PostgreSQL
+          </a>
+          which means users can take advantage of a wide range of drivers and tools from the extensive PostgreSQL ecosystem. A CockroachDB cluster consists of a number of nodes that can be spread across failure domains such as data centres or public cloud regions. A cluster can be scaled both horizontally
+          <sup class="reference" id="cite_ref-4">
+           <a href="#cite_note-4">
+            <span class="cite-bracket">
+             [
+            </span>
+            4
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          (by adding nodes) and vertically (by increasing the resources allocated to the existing nodes). It can provide high levels of resilience and availability and can be run in a variety of environments such as bare metal,
+          <a class="mw-redirect" href="/wiki/Virtual_Machine" title="Virtual Machine">
+           VMs
+          </a>
+          , containers and
+          <a href="/wiki/Kubernetes" title="Kubernetes">
+           Kubernetes
+          </a>
+          , both in private data centers and in the cloud. CockroachDB gets its name from cockroaches, as they are known for being disaster-resistant.
+          <sup class="reference" id="cite_ref-:0_5-0">
+           <a href="#cite_note-:0-5">
+            <span class="cite-bracket">
+             [
+            </span>
+            5
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="History">
+            History
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=CockroachDB&amp;action=edit&amp;section=1" title="Edit section: History">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Cockroach Labs was founded in 2015 by ex-
+           <a href="/wiki/Google" title="Google">
+            Google
+           </a>
+           employees
+           <a href="/wiki/Spencer_Kimball_(computer_programmer)" title="Spencer Kimball (computer programmer)">
+            Spencer Kimball
+           </a>
+           ,
+           <a href="/wiki/Peter_Mattis" title="Peter Mattis">
+            Peter Mattis
+           </a>
+           , and
+           <a href="/wiki/Ben_Darnell" title="Ben Darnell">
+            Ben Darnell
+           </a>
+           . Kimball and Mattis had been key members of the
+           <a href="/wiki/Google_File_System" title="Google File System">
+            Google File System
+           </a>
+           team,
+           <sup class="reference" id="cite_ref-GoogleCollususTeam_6-0">
+            <a href="#cite_note-GoogleCollususTeam-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           while Darnell was a key member of the
+           <a href="/wiki/Google_Reader" title="Google Reader">
+            Google Reader
+           </a>
+           team.
+           <sup class="reference" id="cite_ref-TechCrunchSteal_7-0">
+            <a href="#cite_note-TechCrunchSteal-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           While at Google, all three had used Google-owned DBMS’s
+           <a href="/wiki/Bigtable" title="Bigtable">
+            Bigtable
+           </a>
+           and its successor,
+           <a href="/wiki/Spanner_(database)" title="Spanner (database)">
+            Spanner
+           </a>
+           .
+           <sup class="reference" id="cite_ref-WiredExGoogle_3-1">
+            <a href="#cite_note-WiredExGoogle-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           After leaving Google, they wanted to design and build something similar.
+           <sup class="reference" id="cite_ref-VentureBeatFenton_8-0">
+            <a href="#cite_note-VentureBeatFenton-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Spencer Kimball wrote the first iteration of the design in January 2014, and began the open-source project on
+           <a href="/wiki/GitHub" title="GitHub">
+            GitHub
+           </a>
+           in February 2014, allowing outside access and contributions.
+           <sup class="reference" id="cite_ref-GithubIprogram_9-0">
+            <a href="#cite_note-GithubIprogram-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Development on GitHub attracted substantial contributions, which earned the project the
+           <i>
+            Open Source Rookie of the Year
+           </i>
+           award by Black Duck Software.
+           <sup class="reference" id="cite_ref-WiredHottest_10-0">
+            <a href="#cite_note-WiredHottest-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The co-founders  supported the project with conferences, networking, meet-ups, and fund-raising financial rounds.
+          </p>
+          <p>
+           In June 2019, Cockroach Labs announced that CockroachDB would change its license from the
+           <a href="/wiki/Free_software" title="Free software">
+            free
+           </a>
+           <a href="/wiki/Software_license" title="Software license">
+            software license
+           </a>
+           <a href="/wiki/Apache_License" title="Apache License">
+            Apache License 2.0
+           </a>
+           to its
+           <a href="/wiki/Source-available_software" title="Source-available software">
+            source-available license
+           </a>
+           , known as the
+           <a href="/wiki/Business_Source_License" title="Business Source License">
+            Business Source License (BuSL)
+           </a>
+           , which forbids “offer[ing] a commercial version of CockroachDB as a service without buying a license,” while remaining free of charge for community use.
+           <sup class="reference" id="cite_ref-11">
+            <a href="#cite_note-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-12">
+            <a href="#cite_note-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Features">
+            Features
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=CockroachDB&amp;action=edit&amp;section=2" title="Edit section: Features">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           CockroachDB stores copies of data in multiple locations to deliver quick access.
+           <sup class="reference" id="cite_ref-VentureBeatFenton_8-1">
+            <a href="#cite_note-VentureBeatFenton-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-Informationweekultimate_13-0">
+            <a href="#cite_note-Informationweekultimate-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           It is described as a scalable,
+           <a href="/wiki/Geo-replication" title="Geo-replication">
+            consistently-replicated
+           </a>
+           ,
+           <a href="/wiki/Data_store" title="Data store">
+            transactional data store
+           </a>
+           .
+           <sup class="reference" id="cite_ref-InfoQudatastore_14-0">
+            <a href="#cite_note-InfoQudatastore-14">
+             <span class="cite-bracket">
+              [
+             </span>
+             14
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           A single instance can scale from a single laptop to thousands of servers.
+           <sup class="reference" id="cite_ref-WiredExGoogle_3-2">
+            <a href="#cite_note-WiredExGoogle-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           CockroachDB is designed to run in the cloud and has a high
+           <a href="/wiki/Fault_tolerance" title="Fault tolerance">
+            fault tolerance
+           </a>
+           . According to popular news outlets, it is described as “almost impossible” to take down.
+           <sup class="reference" id="cite_ref-WiredUKResilient_15-0">
+            <a href="#cite_note-WiredUKResilient-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-WiredTakedown_16-0">
+            <a href="#cite_note-WiredTakedown-16">
+             <span class="cite-bracket">
+              [
+             </span>
+             16
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-Informationweekultimate_13-1">
+            <a href="#cite_note-Informationweekultimate-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           CockroachDB has a consistency model that is designed to match as closely as possible to the capabilities of
+           <a class="mw-redirect" href="/wiki/Google_Spanner" title="Google Spanner">
+            Google Spanner
+           </a>
+           , but without a dependence on specialized hardware for time synchronization. "No stale reads" is the simplest way to describe this consistency model which has deliberately made the trade-off of having non-linearizable transaction histories.
+           <sup class="reference" id="cite_ref-CockroachDB's_consistency_model_17-0">
+            <a href="#cite_note-CockroachDB's_consistency_model-17">
+             <span class="cite-bracket">
+              [
+             </span>
+             17
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Transactions containing overlapping keys are guaranteed to have external consistency. And so, in practice, systems relying on CockroachDB are very unlikely to reproduce consistency issues because nodes with high variations in clock skew can be removed from clusters, applications can rely on external consistency provided by overlapping keys and writing to the same range, and writes propagate changes to followers' timestamp caches.
+           <sup class="reference" id="cite_ref-The_One_Crucial_Difference_Between_Spanner_and_CockroachDB_18-0">
+            <a href="#cite_note-The_One_Crucial_Difference_Between_Spanner_and_CockroachDB-18">
+             <span class="cite-bracket">
+              [
+             </span>
+             18
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=CockroachDB&amp;action=edit&amp;section=3" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Comparison_of_relational_database_management_systems" title="Comparison of relational database management systems">
+             Comparison of relational database management systems
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/List_of_tech_companies_in_the_New_York_metropolitan_area" title="List of tech companies in the New York metropolitan area">
+             List of tech companies in the New York metropolitan area
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/YugabyteDB" title="YugabyteDB">
+             YugabyteDB
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/TiDB" title="TiDB">
+             TiDB
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=CockroachDB&amp;action=edit&amp;section=4" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist reflist-columns references-column-width" style="column-width: 30em;">
+           <ol class="references">
+            <li id="cite_note-1">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-1">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <style data-mw-deduplicate="TemplateStyles:r1238218222">
+               .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+              </style>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.cockroachlabs.com/docs/stable/licensing-faqs" rel="nofollow">
+                "Licensing FAQs"
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Licensing+FAQs&amp;rft_id=https%3A%2F%2Fwww.cockroachlabs.com%2Fdocs%2Fstable%2Flicensing-faqs&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-WSJourscamper-2">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-WSJourscamper_2-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1" id="CITEREFOvide2015">
+               Ovide, Shira (June 4, 2015).
+               <a class="external text" href="https://blogs.wsj.com/digits/2015/06/04/cockroachdb-scampers-off-with-6-3-million-to-tackle-database-shortcomings/" rel="nofollow">
+                "CockroachDB Scampers Off With $6.3 Million to Tackle Database Shortcomings"
+               </a>
+               .
+               <i>
+                The Wall Street Journal
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+Wall+Street+Journal&amp;rft.atitle=CockroachDB+Scampers+Off+With+%246.3+Million+to+Tackle+Database+Shortcomings&amp;rft.date=2015-06-04&amp;rft.aulast=Ovide&amp;rft.aufirst=Shira&amp;rft_id=https%3A%2F%2Fblogs.wsj.com%2Fdigits%2F2015%2F06%2F04%2Fcockroachdb-scampers-off-with-6-3-million-to-tackle-database-shortcomings%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-WiredExGoogle-3">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-WiredExGoogle_3-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-WiredExGoogle_3-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-WiredExGoogle_3-2">
+               <sup>
+                <i>
+                 <b>
+                  c
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1" id="CITEREFFinley2015">
+               Finley, Klint (June 4, 2015).
+               <a class="external text" href="https://www.wired.com/2015/06/cockroach-labs/" rel="nofollow">
+                "Ex-Googlers Get Millions to Help You Build the Next Google"
+               </a>
+               .
+               <i>
+                Wired
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Wired&amp;rft.atitle=Ex-Googlers+Get+Millions+to+Help+You+Build+the+Next+Google&amp;rft.date=2015-06-04&amp;rft.aulast=Finley&amp;rft.aufirst=Klint&amp;rft_id=https%3A%2F%2Fwww.wired.com%2F2015%2F06%2Fcockroach-labs%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-4">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-4">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFHeller2018">
+               Heller, Martin (January 4, 2018).
+               <a class="external text" href="https://www.infoworld.com/article/3246628/cockroachdb-review-a-scale-out-sql-database-built-for-survival.html" rel="nofollow">
+                "CockroachDB review: A scale-out SQL database built for survival"
+               </a>
+               .
+               <i>
+                InfoWorld
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 March 19,
+                </span>
+                2024
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=InfoWorld&amp;rft.atitle=CockroachDB+review%3A+A+scale-out+SQL+database+built+for+survival&amp;rft.date=2018-01-04&amp;rft.aulast=Heller&amp;rft.aufirst=Martin&amp;rft_id=https%3A%2F%2Fwww.infoworld.com%2Farticle%2F3246628%2Fcockroachdb-review-a-scale-out-sql-database-built-for-survival.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-:0-5">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-:0_5-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFPinaSáBernardino2023">
+               Pina, Eduardo; Sá, Filipe; Bernardino, Jorge (January 2023).
+               <a class="external text" href="https://doi.org/10.3390%2Ffi15010010" rel="nofollow">
+                "NewSQL Databases Assessment: CockroachDB, MariaDB Xpand, and VoltDB"
+               </a>
+               .
+               <i>
+                Future Internet
+               </i>
+               .
+               <b>
+                15
+               </b>
+               (1): 10.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <span class="id-lock-free" title="Freely accessible">
+                <a class="external text" href="https://doi.org/10.3390%2Ffi15010010" rel="nofollow">
+                 10.3390/fi15010010
+                </a>
+               </span>
+               .
+               <a class="mw-redirect" href="/wiki/Hdl_(identifier)" title="Hdl (identifier)">
+                hdl
+               </a>
+               :
+               <span class="id-lock-free" title="Freely accessible">
+                <a class="external text" href="https://hdl.handle.net/10316%2F114892" rel="nofollow">
+                 10316/114892
+                </a>
+               </span>
+               .
+               <a class="mw-redirect" href="/wiki/ISSN_(identifier)" title="ISSN (identifier)">
+                ISSN
+               </a>
+               <a class="external text" href="https://search.worldcat.org/issn/1999-5903" rel="nofollow">
+                1999-5903
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Future+Internet&amp;rft.atitle=NewSQL+Databases+Assessment%3A+CockroachDB%2C+MariaDB+Xpand%2C+and+VoltDB&amp;rft.volume=15&amp;rft.issue=1&amp;rft.pages=10&amp;rft.date=2023-01&amp;rft_id=info%3Ahdl%2F10316%2F114892&amp;rft.issn=1999-5903&amp;rft_id=info%3Adoi%2F10.3390%2Ffi15010010&amp;rft.aulast=Pina&amp;rft.aufirst=Eduardo&amp;rft.au=S%C3%A1%2C+Filipe&amp;rft.au=Bernardino%2C+Jorge&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.3390%252Ffi15010010&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-GoogleCollususTeam-6">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-GoogleCollususTeam_6-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1" id="CITEREFMetz2012">
+               Metz, Cade (July 10, 2012).
+               <a class="external text" href="https://www.wired.com/2012/07/google-colossus/" rel="nofollow">
+                "Google Remakes Online Empire with 'Colossus'
+                <span class="cs1-kern-right">
+                </span>
+                "
+               </a>
+               .
+               <i>
+                Wired
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Wired&amp;rft.atitle=Google+Remakes+Online+Empire+with+%27Colossus%27&amp;rft.date=2012-07-10&amp;rft.aulast=Metz&amp;rft.aufirst=Cade&amp;rft_id=https%3A%2F%2Fwww.wired.com%2F2012%2F07%2Fgoogle-colossus%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-TechCrunchSteal-7">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-TechCrunchSteal_7-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1" id="CITEREFWauters2009">
+               Wauters, Robin (July 28, 2009).
+               <a class="external text" href="https://techcrunch.com/2009/07/28/steal-ben-darnell-leaves-google-reader-team-joins-friendfeed/" rel="nofollow">
+                "Steal! Ben Darnell Leaves Google Reader Team, Joins FriendFeed"
+               </a>
+               . TechCrunch
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Steal%21+Ben+Darnell+Leaves+Google+Reader+Team%2C+Joins+FriendFeed&amp;rft.date=2009-07-28&amp;rft.aulast=Wauters&amp;rft.aufirst=Robin&amp;rft_id=https%3A%2F%2Ftechcrunch.com%2F2009%2F07%2F28%2Fsteal-ben-darnell-leaves-google-reader-team-joins-friendfeed%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-VentureBeatFenton-8">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-VentureBeatFenton_8-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-VentureBeatFenton_8-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1" id="CITEREFNovet2015">
+               Novet, Jordan (June 4, 2015).
+               <a class="external text" href="https://venturebeat.com/2015/06/04/peter-fentons-latest-investment-is-a-database-startup-called-cockroach/" rel="nofollow">
+                "Peter Fenton's latest investment is a database startup called Cockroach"
+               </a>
+               . VentureBeat
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Peter+Fenton%27s+latest+investment+is+a+database+startup+called+Cockroach&amp;rft.date=2015-06-04&amp;rft.aulast=Novet&amp;rft.aufirst=Jordan&amp;rft_id=https%3A%2F%2Fventurebeat.com%2F2015%2F06%2F04%2Fpeter-fentons-latest-investment-is-a-database-startup-called-cockroach%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-GithubIprogram-9">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-GithubIprogram_9-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFEwbank2015">
+               Ewbank, Kay (June 9, 2015).
+               <a class="external text" href="https://www.i-programmer.info/news/84-database/8672-cockroachdb-released.html" rel="nofollow">
+                "CockroachDB Released"
+               </a>
+               .
+               <i>
+                I Programmer
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=I+Programmer&amp;rft.atitle=CockroachDB+Released&amp;rft.date=2015-06-09&amp;rft.aulast=Ewbank&amp;rft.aufirst=Kay&amp;rft_id=https%3A%2F%2Fwww.i-programmer.info%2Fnews%2F84-database%2F8672-cockroachdb-released.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-WiredHottest-10">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-WiredHottest_10-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1" id="CITEREFFinleey2015">
+               Finleey, Klint (January 28, 2015).
+               <a class="external text" href="https://www.wired.com/2015/01/black-duck-rookies/" rel="nofollow">
+                "These are the hottest new open-source projects right now"
+               </a>
+               .
+               <i>
+                Wired
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Wired&amp;rft.atitle=These+are+the+hottest+new+open-source+projects+right+now&amp;rft.date=2015-01-28&amp;rft.aulast=Finleey&amp;rft.aufirst=Klint&amp;rft_id=https%3A%2F%2Fwww.wired.com%2F2015%2F01%2Fblack-duck-rookies%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-11">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-11">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFMattisDarnellKimball2019">
+               Mattis, Peter; Darnell, Ben; Kimball, Spencer (June 4, 2019).
+               <a class="external text" href="https://www.cockroachlabs.com/blog/oss-relicensing-cockroachdb/" rel="nofollow">
+                "Why We're Relicensing CockroachDB"
+               </a>
+               .
+               <i>
+                CockroachLabs.com
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=CockroachLabs.com&amp;rft.atitle=Why+We%27re+Relicensing+CockroachDB&amp;rft.date=2019-06-04&amp;rft.aulast=Mattis&amp;rft.aufirst=Peter&amp;rft.au=Darnell%2C+Ben&amp;rft.au=Kimball%2C+Spencer&amp;rft_id=https%3A%2F%2Fwww.cockroachlabs.com%2Fblog%2Foss-relicensing-cockroachdb%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-12">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-12">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.cockroachlabs.com/cockroachdb-community-license/" rel="nofollow">
+                "CockroachDB Community License"
+               </a>
+               .
+               <i>
+                Cockroach Labs
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 28,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Cockroach+Labs&amp;rft.atitle=CockroachDB+Community+License&amp;rft_id=https%3A%2F%2Fwww.cockroachlabs.com%2Fcockroachdb-community-license%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-Informationweekultimate-13">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-Informationweekultimate_13-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-Informationweekultimate_13-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1" id="CITEREFBabcock2015">
+               Babcock, Charles (June 4, 2015).
+               <a class="external text" href="https://www.informationweek.com/big-data/software-platforms/cockroachdb-ultimate-in-database-survival/d/d-id/1320700" rel="nofollow">
+                "CockroachDB: Ultimate in Database Survival"
+               </a>
+               . InformationWeek
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=CockroachDB%3A+Ultimate+in+Database+Survival&amp;rft.date=2015-06-04&amp;rft.aulast=Babcock&amp;rft.aufirst=Charles&amp;rft_id=https%3A%2F%2Fwww.informationweek.com%2Fbig-data%2Fsoftware-platforms%2Fcockroachdb-ultimate-in-database-survival%2Fd%2Fd-id%2F1320700&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-InfoQudatastore-14">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-InfoQudatastore_14-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1" id="CITEREFDarfler2014">
+               Darfler, Benjamin (August 29, 2014).
+               <a class="external text" href="https://www.infoq.com/news/2014/08/CockroachDB/" rel="nofollow">
+                "CockroachDB: A Scalable, Geo-Replicated, Transactional Datastore"
+               </a>
+               . InfoQ
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=CockroachDB%3A+A+Scalable%2C+Geo-Replicated%2C+Transactional+Datastore&amp;rft.date=2014-08-29&amp;rft.aulast=Darfler&amp;rft.aufirst=Benjamin&amp;rft_id=https%3A%2F%2Fwww.infoq.com%2Fnews%2F2014%2F08%2FCockroachDB%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-WiredUKResilient-15">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-WiredUKResilient_15-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1" id="CITEREFFinley2014">
+               Finley, Klint (July 22, 2014).
+               <a class="external text" href="https://web.archive.org/web/20150514123425/http://www.wired.co.uk/news/archive/2014-07/22/cockroachdb" rel="nofollow">
+                "CockroachDB is the resilient cloud software built by ex-Googlers"
+               </a>
+               .
+               <i>
+                Wired
+               </i>
+               . Archived from
+               <a class="external text" href="https://www.wired.co.uk/news/archive/2014-07/22/cockroachdb" rel="nofollow">
+                the original
+               </a>
+               on May 14, 2015
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Wired&amp;rft.atitle=CockroachDB+is+the+resilient+cloud+software+built+by+ex-Googlers&amp;rft.date=2014-07-22&amp;rft.aulast=Finley&amp;rft.aufirst=Klint&amp;rft_id=https%3A%2F%2Fwww.wired.co.uk%2Fnews%2Farchive%2F2014-07%2F22%2Fcockroachdb&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-WiredTakedown-16">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-WiredTakedown_16-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation news cs1" id="CITEREFFinley2014">
+               Finley, Klint (July 21, 2014).
+               <a class="external text" href="https://www.wired.com/2014/07/cockroachdb/" rel="nofollow">
+                "Out in the Open: Ex-Googlers Building Cloud Software That's Almost Impossible to Take Down"
+               </a>
+               .
+               <i>
+                Wired
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Wired&amp;rft.atitle=Out+in+the+Open%3A+Ex-Googlers+Building+Cloud+Software+That%27s+Almost+Impossible+to+Take+Down&amp;rft.date=2014-07-21&amp;rft.aulast=Finley&amp;rft.aufirst=Klint&amp;rft_id=https%3A%2F%2Fwww.wired.com%2F2014%2F07%2Fcockroachdb%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-CockroachDB's_consistency_model-17">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-CockroachDB's_consistency_model_17-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFMatei2019">
+               Matei, Andrei (January 24, 2019).
+               <a class="external text" href="https://www.cockroachlabs.com/blog/consistency-model/" rel="nofollow">
+                "CockroachDB's consistency model"
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=CockroachDB%27s+consistency+model&amp;rft.date=2019-01-24&amp;rft.aulast=Matei&amp;rft.aufirst=Andrei&amp;rft_id=https%3A%2F%2Fwww.cockroachlabs.com%2Fblog%2Fconsistency-model%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-The_One_Crucial_Difference_Between_Spanner_and_CockroachDB-18">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-The_One_Crucial_Difference_Between_Spanner_and_CockroachDB_18-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFCordell">
+               Cordell, Evan.
+               <a class="external text" href="https://authzed.com/blog/prevent-newenemy-cockroachdb" rel="nofollow">
+                "The One Crucial Difference Between Spanner and CockroachDB"
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=The+One+Crucial+Difference+Between+Spanner+and+CockroachDB&amp;rft.aulast=Cordell&amp;rft.aufirst=Evan&amp;rft_id=https%3A%2F%2Fauthzed.com%2Fblog%2Fprevent-newenemy-cockroachdb&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACockroachDB">
+              </span>
+             </span>
+            </li>
+           </ol>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=CockroachDB&amp;action=edit&amp;section=5" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <span class="official-website">
+             <span class="url">
+              <a class="external text" href="https://www.cockroachlabs.com/" rel="nofollow">
+               Official website
+              </a>
+             </span>
+            </span>
+           </li>
+          </ul>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐wxcx2
+Cached time: 20240927020535
+Cache expiry: 338071
+Reduced expiry: true
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.653 seconds
+Real time usage: 0.831 seconds
+Preprocessor visited node count: 3465/1000000
+Post‐expand include size: 74804/2097152 bytes
+Template argument size: 10796/2097152 bytes
+Highest expansion depth: 27/100
+Expensive parser function count: 8/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 75872/5000000 bytes
+Lua time usage: 0.379/10.000 seconds
+Lua memory usage: 9596493/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  747.335      1 -total
+ 45.94%  343.290      3 Template:Infobox
+ 29.26%  218.669      1 Template:Reflist
+ 28.54%  213.325      1 Template:Infobox_software
+ 16.09%  120.266      7 Template:Cite_web
+ 14.57%  108.893      1 Template:Multiple_issues
+ 13.69%  102.278      1 Template:Infobox_company
+ 10.58%   79.055      1 Template:Short_description
+  9.28%   69.325      2 Template:Wikidata
+  8.66%   64.746      2 Template:Ambox
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:47530715-0!canonical and timestamp 20240927020535 and revision id 1243446969. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=CockroachDB&amp;oldid=1243446969">
+          https://en.wikipedia.org/w/index.php?title=CockroachDB&amp;oldid=1243446969
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Cloud_databases" title="Category:Cloud databases">
+            Cloud databases
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Distributed_computing" title="Category:Distributed computing">
+            Distributed computing
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:NewSQL" title="Category:NewSQL">
+            NewSQL
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Distributed_data_stores" title="Category:Distributed data stores">
+            Distributed data stores
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Software_using_the_Business_Source_License" title="Category:Software using the Business Source License">
+            Software using the Business Source License
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">
+            Short description matches Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_articles_with_style_issues_from_January_2023" title="Category:Wikipedia articles with style issues from January 2023">
+            Wikipedia articles with style issues from January 2023
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_style_issues" title="Category:All articles with style issues">
+            All articles with style issues
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Wikipedia_introduction_cleanup_from_December_2023" title="Category:Wikipedia introduction cleanup from December 2023">
+            Wikipedia introduction cleanup from December 2023
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_pages_needing_cleanup" title="Category:All pages needing cleanup">
+            All pages needing cleanup
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_covered_by_WikiProject_Wikify_from_December_2023" title="Category:Articles covered by WikiProject Wikify from December 2023">
+            Articles covered by WikiProject Wikify from December 2023
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_covered_by_WikiProject_Wikify" title="Category:All articles covered by WikiProject Wikify">
+            All articles covered by WikiProject Wikify
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_multiple_maintenance_issues" title="Category:Articles with multiple maintenance issues">
+            Articles with multiple maintenance issues
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Use_mdy_dates_from_March_2017" title="Category:Use mdy dates from March 2017">
+            Use mdy dates from March 2017
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 1 September 2024, at 14:21
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=CockroachDB&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-wdm4b","wgBackendResponseTime":197,"wgPageParseReport":{"limitreport":{"cputime":"0.653","walltime":"0.831","ppvisitednodes":{"value":3465,"limit":1000000},"postexpandincludesize":{"value":74804,"limit":2097152},"templateargumentsize":{"value":10796,"limit":2097152},"expansiondepth":{"value":27,"limit":100},"expensivefunctioncount":{"value":8,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":75872,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  747.335      1 -total"," 45.94%  343.290      3 Template:Infobox"," 29.26%  218.669      1 Template:Reflist"," 28.54%  213.325      1 Template:Infobox_software"," 16.09%  120.266      7 Template:Cite_web"," 14.57%  108.893      1 Template:Multiple_issues"," 13.69%  102.278      1 Template:Infobox_company"," 10.58%   79.055      1 Template:Short_description","  9.28%   69.325      2 Template:Wikidata","  8.66%   64.746      2 Template:Ambox"]},"scribunto":{"limitreport-timeusage":{"value":"0.379","limit":"10.000"},"limitreport-memusage":{"value":9596493,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-wxcx2","timestamp":"20240927020535","ttl":338071,"transientcontent":true}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"CockroachDB","url":"https:\/\/en.wikipedia.org\/wiki\/CockroachDB","sameAs":"http:\/\/www.wikidata.org\/entity\/Q98731903","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q98731903","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2015-08-15T07:45:09Z","dateModified":"2024-09-01T14:21:56Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/en\/3\/31\/Cockroach_Labs_Logo.png","headline":"distributed database management system"}
+  </script>
+ </body>
+</html>

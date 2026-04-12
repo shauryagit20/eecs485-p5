@@ -1,0 +1,3677 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Segmentation fault - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d257fb2c-a5ad-4ebe-95cc-4de9ccfea666","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Segmentation_fault","wgTitle":"Segmentation fault","wgCurRevisionId":1220172090,"wgRevisionId":1220172090,"wgArticleId":28803,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Articles needing additional references from November 2011","All articles needing additional references","All articles with specifically marked weasel-worded phrases","Articles with specifically marked weasel-worded phrases from December 2021","All articles with dead external links","Articles with dead external links from July 2022","Articles with example C code","Computer errors",
+"Memory management"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Segmentation_fault","wgRelevantArticleId":28803,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,
+"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1062340","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.pygments.view",
+"mediawiki.page.media","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Segmentation fault - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Segmentation_fault" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Segmentation_fault&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Segmentation_fault" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Segmentation_fault"/>
+  <meta eecs485_docid="32280834"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Segmentation_fault rootpage-Segmentation_fault skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Segmentation+fault" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Segmentation+fault" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Segmentation+fault" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Segmentation+fault" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Overview">
+           <a class="vector-toc-link" href="#Overview">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Overview
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Overview-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Causes">
+           <a class="vector-toc-link" href="#Causes">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Causes
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Causes-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Handling">
+           <a class="vector-toc-link" href="#Handling">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Handling
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Handling-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Examples">
+           <a class="vector-toc-link" href="#Examples">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Examples
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Examples-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Examples subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Examples-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Writing_to_read-only_memory">
+             <a class="vector-toc-link" href="#Writing_to_read-only_memory">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.1
+               </span>
+               <span>
+                Writing to read-only memory
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Writing_to_read-only_memory-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Null_pointer_dereference">
+             <a class="vector-toc-link" href="#Null_pointer_dereference">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.2
+               </span>
+               <span>
+                Null pointer dereference
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Null_pointer_dereference-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Buffer_overflow">
+             <a class="vector-toc-link" href="#Buffer_overflow">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.3
+               </span>
+               <span>
+                Buffer overflow
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Buffer_overflow-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Stack_overflow">
+             <a class="vector-toc-link" href="#Stack_overflow">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.4
+               </span>
+               <span>
+                Stack overflow
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Stack_overflow-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              7
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Segmentation fault
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 21 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-21" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          21 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Falla de segmentació" href="https://ca.wikipedia.org/wiki/Falla_de_segmentaci%C3%B3" hreflang="ca" lang="ca" title="Falla de segmentació – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-cs mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Čeština" data-language-local-name="Czech" data-title="Porušení ochrany paměti" href="https://cs.wikipedia.org/wiki/Poru%C5%A1en%C3%AD_ochrany_pam%C4%9Bti" hreflang="cs" lang="cs" title="Porušení ochrany paměti – Czech">
+             <span>
+              Čeština
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Schutzverletzung" href="https://de.wikipedia.org/wiki/Schutzverletzung" hreflang="de" lang="de" title="Schutzverletzung – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Violación de acceso" href="https://es.wikipedia.org/wiki/Violaci%C3%B3n_de_acceso" hreflang="es" lang="es" title="Violación de acceso – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Erreur de segmentation" href="https://fr.wikipedia.org/wiki/Erreur_de_segmentation" hreflang="fr" lang="fr" title="Erreur de segmentation – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="세그멘테이션 오류" href="https://ko.wikipedia.org/wiki/%EC%84%B8%EA%B7%B8%EB%A9%98%ED%85%8C%EC%9D%B4%EC%85%98_%EC%98%A4%EB%A5%98" hreflang="ko" lang="ko" title="세그멘테이션 오류 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Errore di segmentazione" href="https://it.wikipedia.org/wiki/Errore_di_segmentazione" hreflang="it" lang="it" title="Errore di segmentazione – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="שגיאת סגמנטציה" href="https://he.wikipedia.org/wiki/%D7%A9%D7%92%D7%99%D7%90%D7%AA_%D7%A1%D7%92%D7%9E%D7%A0%D7%98%D7%A6%D7%99%D7%94" hreflang="he" lang="he" title="שגיאת סגמנטציה – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-mg mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Malagasy" data-language-local-name="Malagasy" data-title="Hadisoam-pizaran'arika" href="https://mg.wikipedia.org/wiki/Hadisoam-pizaran%27arika" hreflang="mg" lang="mg" title="Hadisoam-pizaran'arika – Malagasy">
+             <span>
+              Malagasy
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ms mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Bahasa Melayu" data-language-local-name="Malay" data-title="Kerosakan pensegmenan" href="https://ms.wikipedia.org/wiki/Kerosakan_pensegmenan" hreflang="ms" lang="ms" title="Kerosakan pensegmenan – Malay">
+             <span>
+              Bahasa Melayu
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="Protectiefout" href="https://nl.wikipedia.org/wiki/Protectiefout" hreflang="nl" lang="nl" title="Protectiefout – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="セグメンテーション違反" href="https://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%B0%E3%83%A1%E3%83%B3%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%81%95%E5%8F%8D" hreflang="ja" lang="ja" title="セグメンテーション違反 – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-no mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" data-title="Minnesegmentsfeil" href="https://no.wikipedia.org/wiki/Minnesegmentsfeil" hreflang="nb" lang="nb" title="Minnesegmentsfeil – Norwegian Bokmål">
+             <span>
+              Norsk bokmål
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Naruszenie ochrony pamięci" href="https://pl.wikipedia.org/wiki/Naruszenie_ochrony_pami%C4%99ci" hreflang="pl" lang="pl" title="Naruszenie ochrony pamięci – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Falha de segmentação" href="https://pt.wikipedia.org/wiki/Falha_de_segmenta%C3%A7%C3%A3o" hreflang="pt" lang="pt" title="Falha de segmentação – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Ошибка сегментации" href="https://ru.wikipedia.org/wiki/%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0_%D1%81%D0%B5%D0%B3%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8" hreflang="ru" lang="ru" title="Ошибка сегментации – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" data-title="Грешка сегментације" href="https://sr.wikipedia.org/wiki/%D0%93%D1%80%D0%B5%D1%88%D0%BA%D0%B0_%D1%81%D0%B5%D0%B3%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%98%D0%B5" hreflang="sr" lang="sr" title="Грешка сегментације – Serbian">
+             <span>
+              Српски / srpski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="Finnish" data-title="Muistialueen ylitys" href="https://fi.wikipedia.org/wiki/Muistialueen_ylitys" hreflang="fi" lang="fi" title="Muistialueen ylitys – Finnish">
+             <span>
+              Suomi
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sv mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Svenska" data-language-local-name="Swedish" data-title="Segmenteringsfel" href="https://sv.wikipedia.org/wiki/Segmenteringsfel" hreflang="sv" lang="sv" title="Segmenteringsfel – Swedish">
+             <span>
+              Svenska
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Помилка сегментації" href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BC%D0%B8%D0%BB%D0%BA%D0%B0_%D1%81%D0%B5%D0%B3%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D1%96%D1%97" hreflang="uk" lang="uk" title="Помилка сегментації – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="記憶體區段錯誤" href="https://zh.wikipedia.org/wiki/%E8%A8%98%E6%86%B6%E9%AB%94%E5%8D%80%E6%AE%B5%E9%8C%AF%E8%AA%A4" hreflang="zh" lang="zh" title="記憶體區段錯誤 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1062340#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Segmentation_fault" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Segmentation_fault" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Segmentation_fault">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Segmentation_fault&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Segmentation_fault&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Segmentation_fault">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Segmentation_fault&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Segmentation_fault&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Segmentation_fault" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Segmentation_fault" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Segmentation_fault&amp;oldid=1220172090" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Segmentation_fault&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Segmentation_fault&amp;id=1220172090&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSegmentation_fault">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSegmentation_fault">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1062340" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Segmentation_fault&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Segmentation_fault&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Computer fault caused by access to restricted memory
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          "Segfault" redirects here. For the website, see
+          <a href="/wiki/Segfault_(website)" title="Segfault (website)">
+           Segfault (website)
+          </a>
+          .
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+               </a>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              This article
+              <b>
+               needs additional citations for
+               <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                verification
+               </a>
+              </b>
+              .
+              <span class="hide-when-compact">
+               Please help
+               <a href="/wiki/Special:EditPage/Segmentation_fault" title="Special:EditPage/Segmentation fault">
+                improve this article
+               </a>
+               by
+               <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                adding citations to reliable sources
+               </a>
+               . Unsourced material may be challenged and removed.
+               <br/>
+               <small>
+                <span class="plainlinks">
+                 <i>
+                  Find sources:
+                 </i>
+                 <a class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Segmentation+fault%22" rel="nofollow">
+                  "Segmentation fault"
+                 </a>
+                 –
+                 <a class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Segmentation+fault%22+-wikipedia&amp;tbs=ar:1" rel="nofollow">
+                  news
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?&amp;q=%22Segmentation+fault%22&amp;tbs=bkt:s&amp;tbm=bks" rel="nofollow">
+                  newspapers
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Segmentation+fault%22+-wikipedia" rel="nofollow">
+                  books
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://scholar.google.com/scholar?q=%22Segmentation+fault%22" rel="nofollow">
+                  scholar
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Segmentation+fault%22&amp;acc=on&amp;wc=on" rel="nofollow">
+                  JSTOR
+                 </a>
+                </span>
+               </small>
+              </span>
+              <span class="date-container">
+               <i>
+                (
+                <span class="date">
+                 November 2011
+                </span>
+                )
+               </i>
+              </span>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          In
+          <a href="/wiki/Computing" title="Computing">
+           computing
+          </a>
+          , a
+          <b>
+           segmentation fault
+          </b>
+          (often shortened to
+          <b>
+           segfault
+          </b>
+          ) or
+          <b>
+           access violation
+          </b>
+          is a
+          <a class="mw-redirect" href="/wiki/Fault_(computing)" title="Fault (computing)">
+           fault
+          </a>
+          , or failure condition, raised by hardware with
+          <a href="/wiki/Memory_protection" title="Memory protection">
+           memory protection
+          </a>
+          , notifying an
+          <a href="/wiki/Operating_system" title="Operating system">
+           operating system
+          </a>
+          (OS) the software has attempted to access a restricted area of memory (a memory access violation). On standard
+          <a href="/wiki/X86" title="X86">
+           x86
+          </a>
+          computers, this is a form of
+          <a href="/wiki/General_protection_fault" title="General protection fault">
+           general protection fault
+          </a>
+          . The operating system
+          <a href="/wiki/Kernel_(operating_system)" title="Kernel (operating system)">
+           kernel
+          </a>
+          will, in response, usually perform some corrective action, generally passing the fault on to the offending
+          <a href="/wiki/Process_(computing)" title="Process (computing)">
+           process
+          </a>
+          by sending the process a
+          <a href="/wiki/Signal_(IPC)" title="Signal (IPC)">
+           signal
+          </a>
+          . Processes can in some cases install a custom signal handler, allowing them to recover on their own,
+          <sup class="reference" id="cite_ref-Peter_Van_der_Linden_1-0">
+           <a href="#cite_note-Peter_Van_der_Linden-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          but otherwise the OS default signal handler is used, generally causing
+          <a class="mw-redirect" href="/wiki/Abnormal_termination" title="Abnormal termination">
+           abnormal termination
+          </a>
+          of the process (a program
+          <a href="/wiki/Crash_(computing)" title="Crash (computing)">
+           crash
+          </a>
+          ), and sometimes a
+          <a href="/wiki/Core_dump" title="Core dump">
+           core dump
+          </a>
+          .
+         </p>
+         <p>
+          Segmentation faults are a common class of error in programs written in languages like
+          <a href="/wiki/C_(programming_language)" title="C (programming language)">
+           C
+          </a>
+          that provide low-level memory access and few to no safety checks. They arise primarily due to errors in use of
+          <a href="/wiki/Pointer_(computer_programming)" title="Pointer (computer programming)">
+           pointers
+          </a>
+          for
+          <a href="/wiki/Virtual_memory" title="Virtual memory">
+           virtual memory
+          </a>
+          addressing, particularly illegal access. Another type of memory access error is a
+          <a href="/wiki/Bus_error" title="Bus error">
+           bus error
+          </a>
+          , which also has various causes, but is today much rarer; these occur primarily due to incorrect
+          <i>
+           physical
+          </i>
+          memory addressing, or due to misaligned memory access – these are memory references that the hardware
+          <i>
+           cannot
+          </i>
+          address, rather than references that a process is not
+          <i>
+           allowed
+          </i>
+          to address.
+         </p>
+         <p>
+          Many programming languages have mechanisms designed to avoid segmentation faults and improve memory safety. For example,
+          <a href="/wiki/Rust_(programming_language)" title="Rust (programming language)">
+           Rust
+          </a>
+          employs an ownership-based
+          <sup class="reference" id="cite_ref-2">
+           <a href="#cite_note-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          model to ensure memory safety.
+          <sup class="reference" id="cite_ref-3">
+           <a href="#cite_note-3">
+            <span class="cite-bracket">
+             [
+            </span>
+            3
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          Other languages, such as
+          <a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">
+           Lisp
+          </a>
+          and
+          <a href="/wiki/Java_(programming_language)" title="Java (programming language)">
+           Java
+          </a>
+          , employ
+          <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">
+           garbage collection
+          </a>
+          ,
+          <sup class="reference" id="cite_ref-4">
+           <a href="#cite_note-4">
+            <span class="cite-bracket">
+             [
+            </span>
+            4
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          which avoids certain classes of memory errors that could lead to segmentation faults.
+          <sup class="reference" id="cite_ref-5">
+           <a href="#cite_note-5">
+            <span class="cite-bracket">
+             [
+            </span>
+            5
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Overview">
+            Overview
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Segmentation_fault&amp;action=edit&amp;section=1" title="Edit section: Overview">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <figure class="mw-default-size" typeof="mw:File/Thumb">
+           <a class="mw-file-description" href="/wiki/File:FreeBSD_kernel_panic.png">
+            <img class="mw-file-element" data-file-height="400" data-file-width="720" decoding="async" height="122" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d4/FreeBSD_kernel_panic.png/220px-FreeBSD_kernel_panic.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d4/FreeBSD_kernel_panic.png/330px-FreeBSD_kernel_panic.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d4/FreeBSD_kernel_panic.png/440px-FreeBSD_kernel_panic.png 2x" width="220"/>
+           </a>
+           <figcaption>
+            Example of human generated signal
+           </figcaption>
+          </figure>
+          <figure class="mw-default-size" typeof="mw:File/Thumb">
+           <a class="mw-file-description" href="/wiki/File:KDE_Crash_Handler_screenshot.png">
+            <img class="mw-file-element" data-file-height="417" data-file-width="663" decoding="async" height="138" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/42/KDE_Crash_Handler_screenshot.png/220px-KDE_Crash_Handler_screenshot.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/42/KDE_Crash_Handler_screenshot.png/330px-KDE_Crash_Handler_screenshot.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/42/KDE_Crash_Handler_screenshot.png/440px-KDE_Crash_Handler_screenshot.png 2x" width="220"/>
+           </a>
+           <figcaption>
+            Segmentation fault affecting
+            <a href="/wiki/Krita" title="Krita">
+             Krita
+            </a>
+            in
+            <a href="/wiki/KDE" title="KDE">
+             KDE
+            </a>
+            desktop environment
+           </figcaption>
+          </figure>
+          <figure class="mw-default-size" typeof="mw:File/Thumb">
+           <a class="mw-file-description" href="/wiki/File:Windows_null_ptr_dereference.png">
+            <img class="mw-file-element" data-file-height="198" data-file-width="478" decoding="async" height="91" src="//upload.wikimedia.org/wikipedia/en/thumb/4/49/Windows_null_ptr_dereference.png/220px-Windows_null_ptr_dereference.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/49/Windows_null_ptr_dereference.png/330px-Windows_null_ptr_dereference.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/49/Windows_null_ptr_dereference.png/440px-Windows_null_ptr_dereference.png 2x" width="220"/>
+           </a>
+           <figcaption>
+            A
+            <a href="/wiki/Null_pointer" title="Null pointer">
+             null pointer
+            </a>
+            <a class="mw-redirect" href="/wiki/Dereference_operator" title="Dereference operator">
+             dereference
+            </a>
+            on
+            <a href="/wiki/Windows_8" title="Windows 8">
+             Windows 8
+            </a>
+           </figcaption>
+          </figure>
+          <p>
+           A segmentation fault occurs when a program attempts to access a
+           <a href="/wiki/Computer_memory" title="Computer memory">
+            memory
+           </a>
+           location that it is not allowed to access, or attempts to access a memory location in a way that is not allowed (for example, attempting to write to a
+           <a href="/wiki/Read-only_memory" title="Read-only memory">
+            read-only
+           </a>
+           location, or to overwrite part of the
+           <a href="/wiki/Operating_system" title="Operating system">
+            operating system
+           </a>
+           ).
+          </p>
+          <p>
+           The term "segmentation" has various uses in computing; in the context of "segmentation fault", it refers to the address space of a
+           <i>
+            program.
+           </i>
+           <sup class="reference" id="cite_ref-6">
+            <a href="#cite_note-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           With memory protection, only the program's own address space is readable, and of this, only the
+           <a href="/wiki/Call_stack" title="Call stack">
+            stack
+           </a>
+           and the read/write portion of the
+           <a href="/wiki/Data_segment" title="Data segment">
+            data segment
+           </a>
+           of a program are writable, while read-only data allocated in the const segment and the
+           <a href="/wiki/Code_segment" title="Code segment">
+            code segment
+           </a>
+           are not writable. Thus attempting to read outside of the program's address space, or writing to a read-only segment of the address space, results in a segmentation fault, hence the name.
+          </p>
+          <p>
+           On systems using hardware
+           <a href="/wiki/Memory_segmentation" title="Memory segmentation">
+            memory segmentation
+           </a>
+           to provide
+           <a href="/wiki/Virtual_memory" title="Virtual memory">
+            virtual memory
+           </a>
+           , a segmentation fault occurs when the hardware detects an attempt to refer to a non-existent segment, or to refer to a location outside the bounds of a segment, or to refer to a location in a fashion not allowed by the permissions granted for that segment.  On systems using only
+           <a class="mw-redirect" href="/wiki/Paging" title="Paging">
+            paging
+           </a>
+           , an
+           <a class="mw-redirect" href="/wiki/Invalid_page_fault" title="Invalid page fault">
+            invalid page fault
+           </a>
+           generally leads to a segmentation fault, and segmentation faults and page faults are both faults raised by the
+           <a href="/wiki/Virtual_memory" title="Virtual memory">
+            virtual memory
+           </a>
+           management system. Segmentation faults can also occur independently of page faults: illegal access to a valid page is a segmentation fault, but not an invalid page fault, and segmentation faults can occur in the middle of a page (hence no page fault), for example in a
+           <a href="/wiki/Buffer_overflow" title="Buffer overflow">
+            buffer overflow
+           </a>
+           that stays within a page but illegally overwrites memory.
+          </p>
+          <p>
+           At the hardware level, the fault is initially raised by the
+           <a href="/wiki/Memory_management_unit" title="Memory management unit">
+            memory management unit
+           </a>
+           (MMU) on illegal access (if the referenced memory exists), as part of its memory protection feature, or an invalid page fault (if the referenced memory does not exist). If the problem is not an invalid logical address but instead an invalid physical address, a
+           <a href="/wiki/Bus_error" title="Bus error">
+            bus error
+           </a>
+           is raised instead, though these are not always distinguished.
+          </p>
+          <p>
+           At the operating system level, this fault is caught and a signal is passed on to the offending process, activating the process's handler for that signal. Different operating systems have different signal names to indicate that a segmentation fault has occurred. On
+           <a href="/wiki/Unix-like" title="Unix-like">
+            Unix-like
+           </a>
+           operating systems, a signal called SIGSEGV (abbreviated from
+           <i>
+            segmentation violation
+           </i>
+           ) is sent to the offending process. On
+           <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">
+            Microsoft Windows
+           </a>
+           , the offending process receives a STATUS_ACCESS_VIOLATION
+           <a href="/wiki/Exception_handling" title="Exception handling">
+            exception
+           </a>
+           .
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Causes">
+            Causes
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Segmentation_fault&amp;action=edit&amp;section=2" title="Edit section: Causes">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The conditions under which segmentation violations occur and how they manifest themselves are specific to hardware and the operating system: different hardware raises different faults for given conditions, and different operating systems convert these to different signals that are passed on to processes. The proximate cause is a memory access violation, while the underlying cause is generally a
+           <a href="/wiki/Software_bug" title="Software bug">
+            software bug
+           </a>
+           of some sort. Determining the
+           <a href="/wiki/Root_cause_analysis" title="Root cause analysis">
+            root cause
+           </a>
+           –
+           <a href="/wiki/Debugging" title="Debugging">
+            debugging
+           </a>
+           the bug – can be simple in some cases, where the program will consistently cause a segmentation fault (e.g., dereferencing a
+           <a href="/wiki/Null_pointer" title="Null pointer">
+            null pointer
+           </a>
+           ), while in other cases the bug can be difficult to reproduce and depend on memory allocation on each run (e.g., dereferencing a
+           <a href="/wiki/Dangling_pointer" title="Dangling pointer">
+            dangling pointer
+           </a>
+           ).
+          </p>
+          <p>
+           The following are some typical causes of a segmentation fault:
+          </p>
+          <ul>
+           <li>
+            Attempting to access a nonexistent memory address (outside process's address space)
+           </li>
+           <li>
+            Attempting to access memory the program does not have rights to (such as kernel structures in process context)
+           </li>
+           <li>
+            Attempting to write read-only memory (such as code segment)
+           </li>
+          </ul>
+          <p>
+           These in turn are often caused by programming errors that result in invalid memory access:
+          </p>
+          <ul>
+           <li>
+            Dereferencing a
+            <a href="/wiki/Null_pointer" title="Null pointer">
+             null pointer
+            </a>
+            , which usually points to an address that's not part of the process's address space
+           </li>
+           <li>
+            Dereferencing or assigning to an uninitialized pointer (
+            <a class="mw-redirect" href="/wiki/Wild_pointer" title="Wild pointer">
+             wild pointer
+            </a>
+            , which points to a random memory address)
+           </li>
+           <li>
+            Dereferencing or assigning to a freed pointer (
+            <a href="/wiki/Dangling_pointer" title="Dangling pointer">
+             dangling pointer
+            </a>
+            , which points to memory that has been freed/deallocated/deleted)
+           </li>
+           <li>
+            A
+            <a href="/wiki/Buffer_overflow" title="Buffer overflow">
+             buffer overflow
+            </a>
+           </li>
+           <li>
+            A
+            <a href="/wiki/Stack_overflow" title="Stack overflow">
+             stack overflow
+            </a>
+           </li>
+           <li>
+            Attempting to execute a program that does not compile correctly. (Some compilers
+            <sup class="noprint Inline-Template" style="white-space:nowrap;">
+             [
+             <i>
+              <a class="mw-redirect" href="/wiki/Wikipedia:Avoid_weasel_words" title="Wikipedia:Avoid weasel words">
+               <span title="The material near this tag possibly uses too vague attribution or weasel words. (December 2021)">
+                which?
+               </span>
+              </a>
+             </i>
+             ]
+            </sup>
+            will output an
+            <a class="mw-redirect" href="/wiki/Executable_file" title="Executable file">
+             executable file
+            </a>
+            despite the presence of compile-time errors.)
+           </li>
+          </ul>
+          <p>
+           In C code, segmentation faults most often occur because of errors in pointer use, particularly in
+           <a href="/wiki/C_dynamic_memory_allocation" title="C dynamic memory allocation">
+            C dynamic memory allocation
+           </a>
+           . Dereferencing a null pointer, which results in
+           <a href="/wiki/Undefined_behavior" title="Undefined behavior">
+            undefined behavior
+           </a>
+           , will usually cause a segmentation fault. This is because a null pointer cannot be a valid memory address. On the other hand, wild pointers and dangling pointers point to memory that may or may not exist, and may or may not be readable or writable, and thus can result in transient bugs. For example:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w">           </span><span class="c1">// Null pointer</span>
+<span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">p2</span><span class="p">;</span><span class="w">                  </span><span class="c1">// Wild pointer: not initialized at all.</span>
+<span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">p3</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">malloc</span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">));</span><span class="w">  </span><span class="c1">// Initialized pointer to allocated memory</span>
+<span class="w">                                        </span><span class="c1">// (assuming malloc did not fail)</span>
+<span class="n">free</span><span class="p">(</span><span class="n">p3</span><span class="p">);</span><span class="w">                  </span><span class="c1">// p3 is now a dangling pointer, as memory has been freed</span>
+</pre>
+          </div>
+          <p>
+           Dereferencing any of these variables could cause a segmentation fault: dereferencing the null pointer generally will cause a segfault, while reading from the wild pointer may instead result in random data but no segfault, and reading from the dangling pointer may result in valid data for a while, and then random data as it is overwritten.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Handling">
+            Handling
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Segmentation_fault&amp;action=edit&amp;section=3" title="Edit section: Handling">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The default action for a segmentation fault or bus error is
+           <a class="mw-redirect" href="/wiki/Abnormal_termination" title="Abnormal termination">
+            abnormal termination
+           </a>
+           of the process that triggered it. A
+           <a class="mw-redirect" href="/wiki/Core_file" title="Core file">
+            core file
+           </a>
+           may be generated to aid debugging, and other platform-dependent actions may also be performed. For example,
+           <a href="/wiki/Linux" title="Linux">
+            Linux
+           </a>
+           systems using the grsecurity patch may log SIGSEGV signals in order to monitor for possible intrusion attempts using
+           <a href="/wiki/Buffer_overflow" title="Buffer overflow">
+            buffer overflows
+           </a>
+           .
+          </p>
+          <p>
+           On some systems, like Linux and Windows, it is possible for the program itself to handle a segmentation fault.
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Depending on the architecture and operating system, the running program can not only handle the event but may extract some information about its state like getting a
+           <a href="/wiki/Stack_trace" title="Stack trace">
+            stack trace
+           </a>
+           ,
+           <a href="/wiki/Processor_register" title="Processor register">
+            processor register
+           </a>
+           values, the line of the source code when it was triggered, memory address that was invalidly accessed
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           and whether the action was a read or a write.
+           <sup class="reference" id="cite_ref-9">
+            <a href="#cite_note-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Although a segmentation fault generally means that the program has a bug that needs fixing, it is also possible to intentionally cause such failure for the purposes of testing, debugging and also to emulate platforms where direct access to memory is needed. On the latter case, the system must be able to allow the program to run even after the fault occurs. In this case, when the system allows, it is possible to handle the event and increment the processor program counter to "jump" over the failing instruction to continue the execution.
+           <sup class="reference" id="cite_ref-10">
+            <a href="#cite_note-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Examples">
+            Examples
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Segmentation_fault&amp;action=edit&amp;section=4" title="Edit section: Examples">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <figure class="mw-default-size mw-halign-right" typeof="mw:File/Thumb">
+           <a class="mw-file-description" href="/wiki/File:Card_reader_segfault.jpg">
+            <img class="mw-file-element" data-file-height="3264" data-file-width="2448" decoding="async" height="293" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/26/Card_reader_segfault.jpg/220px-Card_reader_segfault.jpg" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/26/Card_reader_segfault.jpg/330px-Card_reader_segfault.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/26/Card_reader_segfault.jpg/440px-Card_reader_segfault.jpg 2x" width="220"/>
+           </a>
+           <figcaption>
+            Segmentation fault on an
+            <a href="/wiki/EMV" title="EMV">
+             EMV
+            </a>
+            keypad
+           </figcaption>
+          </figure>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Writing_to_read-only_memory">
+            Writing to read-only memory
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Segmentation_fault&amp;action=edit&amp;section=5" title="Edit section: Writing to read-only memory">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Writing to read-only memory raises a segmentation fault. At the level of code errors, this occurs when the program writes to part of its own
+           <a href="/wiki/Code_segment" title="Code segment">
+            code segment
+           </a>
+           or the read-only portion of the
+           <a href="/wiki/Data_segment" title="Data segment">
+            data segment
+           </a>
+           , as these are loaded by the OS into read-only memory.
+          </p>
+          <p>
+           Here is an example of
+           <a href="/wiki/ANSI_C" title="ANSI C">
+            ANSI C
+           </a>
+           code that will generally cause a segmentation fault on platforms with memory protection. It attempts to modify a
+           <a href="/wiki/String_literal" title="String literal">
+            string literal
+           </a>
+           , which is undefined behavior according to the ANSI C standard. Most
+           <a href="/wiki/Compiler" title="Compiler">
+            compilers
+           </a>
+           will not catch this at compile time, and instead compile this to executable code that will crash:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"hello world"</span><span class="p">;</span>
+<span class="w">    </span><span class="o">*</span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'H'</span><span class="p">;</span>
+<span class="p">}</span>
+</pre>
+          </div>
+          <p>
+           When the program containing this code is compiled, the string "hello world" is placed in the
+           <a class="mw-redirect" href="/wiki/Rodata" title="Rodata">
+            rodata
+           </a>
+           section of the program
+           <a class="mw-redirect" href="/wiki/Executable_file" title="Executable file">
+            executable file
+           </a>
+           : the read-only section of the
+           <a href="/wiki/Data_segment" title="Data segment">
+            data segment
+           </a>
+           . When loaded, the operating system places it with other strings and
+           <a class="mw-redirect" href="/wiki/Constant_(programming)" title="Constant (programming)">
+            constant
+           </a>
+           data in a read-only segment of memory. When executed, a variable,
+           <i>
+            s
+           </i>
+           , is set to point to the string's location, and an attempt is made to write an
+           <i>
+            H
+           </i>
+           character through the variable into the memory, causing a segmentation fault. Compiling such a program with a compiler that does not check for the assignment of read-only locations at compile time, and running it on a Unix-like operating system produces the following
+           <a class="mw-redirect" href="/wiki/Runtime_error" title="Runtime error">
+            runtime error
+           </a>
+           :
+          </p>
+          <div class="mw-highlight mw-highlight-lang-console mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="gp">$ </span>gcc<span class="w"> </span>segfault.c<span class="w"> </span>-g<span class="w"> </span>-o<span class="w"> </span>segfault
+<span class="gp">$ </span>./segfault
+<span class="go">Segmentation fault</span>
+</pre>
+          </div>
+          <p>
+           <a class="mw-redirect" href="/wiki/Backtrace" title="Backtrace">
+            Backtrace
+           </a>
+           of the core file from
+           <a class="mw-redirect" href="/wiki/GDB" title="GDB">
+            GDB
+           </a>
+           :
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="n">Program</span><span class="w"> </span><span class="n">received</span><span class="w"> </span><span class="n">signal</span><span class="w"> </span><span class="n">SIGSEGV</span><span class="p">,</span><span class="w"> </span><span class="n">Segmentation</span><span class="w"> </span><span class="n">fault</span><span class="p">.</span>
+<span class="mh">0x1c0005c2</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="n">at</span><span class="w"> </span><span class="n">segfault</span><span class="p">.</span><span class="n">c</span><span class="o">:</span><span class="mi">6</span>
+<span class="mi">6</span><span class="w">               </span><span class="o">*</span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'H'</span><span class="p">;</span>
+</pre>
+          </div>
+          <p>
+           This code can be corrected by using an array instead of a character pointer, as this allocates memory on stack and initializes it to the value of the string literal:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kt">char</span><span class="w"> </span><span class="n">s</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"hello world"</span><span class="p">;</span>
+<span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'H'</span><span class="p">;</span><span class="w">  </span><span class="c1">// equivalently, *s = 'H';</span>
+</pre>
+          </div>
+          <p>
+           Even though string literals should not be modified (this has undefined behavior in the C standard), in C they are of
+           <code>
+            static char []
+           </code>
+           type,
+           <sup class="reference" id="cite_ref-11">
+            <a href="#cite_note-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-12">
+            <a href="#cite_note-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-13">
+            <a href="#cite_note-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           so there is no implicit conversion in the original code (which points a
+           <code>
+            char *
+           </code>
+           at that array), while in C++ they are of
+           <code>
+            static const char []
+           </code>
+           type, and thus there is an implicit conversion, so compilers will generally catch this particular error.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Null_pointer_dereference">
+            Null pointer dereference
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Segmentation_fault&amp;action=edit&amp;section=6" title="Edit section: Null pointer dereference">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           In C and C-like languages,
+           <a href="/wiki/Null_pointer" title="Null pointer">
+            null pointers
+           </a>
+           are used to mean "pointer to no object" and as an error indicator, and
+           <a class="mw-redirect" href="/wiki/Dereferencing" title="Dereferencing">
+            dereferencing
+           </a>
+           a null pointer (a read or write through a null pointer) is a very common program error. The C standard does not say that the null pointer is the same as the pointer to
+           <a href="/wiki/Memory_address" title="Memory address">
+            memory address
+           </a>
+           0, though that may be the case in practice. Most operating systems map the null pointer's address such that accessing it causes a segmentation fault. This behavior is not guaranteed by the C standard. Dereferencing a null pointer is
+           <a href="/wiki/Undefined_behavior" title="Undefined behavior">
+            undefined behavior
+           </a>
+           in C, and a conforming implementation is allowed to assume that any pointer that is dereferenced is not null.
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="p">);</span>
+</pre>
+          </div>
+          <p>
+           This sample code creates a
+           <a href="/wiki/Null_pointer" title="Null pointer">
+            null pointer
+           </a>
+           , and then tries to access its value (read the value). Doing so causes a segmentation fault at runtime on many operating systems.
+          </p>
+          <p>
+           Dereferencing a null pointer and then assigning to it (writing a value to a non-existent target) also usually causes a segmentation fault:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="o">*</span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</pre>
+          </div>
+          <p>
+           The following code includes a null pointer dereference, but when compiled will often not result in a segmentation fault, as the value is unused and thus the dereference will often be optimized away by
+           <a class="mw-redirect" href="/wiki/Dead_code_elimination" title="Dead code elimination">
+            dead code elimination
+           </a>
+           :
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+</pre>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Buffer_overflow">
+            Buffer overflow
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Segmentation_fault&amp;action=edit&amp;section=7" title="Edit section: Buffer overflow">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Buffer_overflow" title="Buffer overflow">
+            Buffer overflow
+           </a>
+          </div>
+          <p>
+           The following code accesses the character array
+           <code>
+            s
+           </code>
+           beyond its upper boundary. Depending on the compiler and the processor, this may result in a segmentation fault.
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kt">char</span><span class="w"> </span><span class="n">s</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"hello world"</span><span class="p">;</span>
+<span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+</pre>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Stack_overflow">
+            Stack overflow
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Segmentation_fault&amp;action=edit&amp;section=8" title="Edit section: Stack overflow">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Stack_overflow" title="Stack overflow">
+            Stack overflow
+           </a>
+          </div>
+          <p>
+           Another example is
+           <a href="/wiki/Recursion" title="Recursion">
+            recursion
+           </a>
+           without a base case:
+          </p>
+          <div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr">
+           <pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">main</span><span class="p">();</span>
+<span class="p">}</span>
+</pre>
+          </div>
+          <p>
+           which causes the
+           <a href="/wiki/Stack_overflow" title="Stack overflow">
+            stack to overflow
+           </a>
+           which results in a segmentation fault.
+           <sup class="reference" id="cite_ref-14">
+            <a href="#cite_note-14">
+             <span class="cite-bracket">
+              [
+             </span>
+             14
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Infinite recursion may not necessarily result in a stack overflow depending on the language, optimizations performed by the compiler and the exact structure of a code.  In this case, the behavior of unreachable code (the return statement) is undefined, so the compiler can eliminate it and use a
+           <a href="/wiki/Tail_call" title="Tail call">
+            tail call
+           </a>
+           optimization that might result in no stack usage.  Other optimizations could include translating the recursion into iteration, which given the structure of the example function would result in the program running forever, while probably not overflowing its stack.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Segmentation_fault&amp;action=edit&amp;section=9" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/General_protection_fault" title="General protection fault">
+             General protection fault
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Storage_violation" title="Storage violation">
+             Storage violation
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Guru_Meditation" title="Guru Meditation">
+             Guru Meditation
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Segmentation_fault&amp;action=edit&amp;section=10" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-Peter_Van_der_Linden-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Peter_Van_der_Linden_1-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <i>
+                Expert C programming: deep C secrets
+               </i>
+               By Peter Van der Linden, page 188
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html" rel="nofollow">
+                 "The Rust Programming Language - Ownership"
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=The+Rust+Programming+Language+-+Ownership&amp;rft_id=https%3A%2F%2Fdoc.rust-lang.org%2Fbook%2Fch04-01-what-is-ownership.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://blog.rust-lang.org/2015/04/10/Fearless-Concurrency.html" rel="nofollow">
+                 "Fearless Concurrency with Rust - The Rust Programming Language Blog"
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Fearless+Concurrency+with+Rust+-+The+Rust+Programming+Language+Blog&amp;rft_id=http%3A%2F%2Fblog.rust-lang.org%2F2015%2F04%2F10%2FFearless-Concurrency.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFMcCarthy1960">
+                <a href="/wiki/John_McCarthy_(computer_scientist)" title="John McCarthy (computer scientist)">
+                 McCarthy, John
+                </a>
+                (April 1960).
+                <a class="external text" href="http://www-formal.stanford.edu/jmc/recursive.html" rel="nofollow">
+                 "Recursive functions of symbolic expressions and their computation by machine, Part I"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/Communications_of_the_ACM" title="Communications of the ACM">
+                  Communications of the ACM
+                 </a>
+                </i>
+                .
+                <b>
+                 4
+                </b>
+                (3): 184–195.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://doi.org/10.1145%2F367177.367199" rel="nofollow">
+                  10.1145/367177.367199
+                 </a>
+                </span>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:1489409" rel="nofollow">
+                 1489409
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2018-09-22
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.atitle=Recursive+functions+of+symbolic+expressions+and+their+computation+by+machine%2C+Part+I&amp;rft.volume=4&amp;rft.issue=3&amp;rft.pages=184-195&amp;rft.date=1960-04&amp;rft_id=info%3Adoi%2F10.1145%2F367177.367199&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A1489409%23id-name%3DS2CID&amp;rft.aulast=McCarthy&amp;rft.aufirst=John&amp;rft_id=http%3A%2F%2Fwww-formal.stanford.edu%2Fjmc%2Frecursive.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation conference cs1" id="CITEREFDhurjatiKowshikAdveLattner2003">
+                Dhurjati, Dinakar; Kowshik, Sumant; Adve, Vikram; Lattner, Chris (1 January 2003).
+                <a class="external text" href="http://llvm.org/pubs/2003-05-05-LCTES03-CodeSafety.pdf" rel="nofollow">
+                 "Memory safety without runtime checks or garbage collection"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 Proceedings of the 2003 ACM SIGPLAN conference on Language, compiler, and tool for embedded systems
+                </i>
+                . Vol. 38. ACM. pp. 69–80.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1145%2F780732.780743" rel="nofollow">
+                 10.1145/780732.780743
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/1581136471" title="Special:BookSources/1581136471">
+                 <bdi>
+                  1581136471
+                 </bdi>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:1459540" rel="nofollow">
+                 1459540
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2018-09-22
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=Memory+safety+without+runtime+checks+or+garbage+collection&amp;rft.btitle=Proceedings+of+the+2003+ACM+SIGPLAN+conference+on+Language%2C+compiler%2C+and+tool+for+embedded+systems&amp;rft.pages=69-80&amp;rft.pub=ACM&amp;rft.date=2003-01-01&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A1459540%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F780732.780743&amp;rft.isbn=1581136471&amp;rft.aulast=Dhurjati&amp;rft.aufirst=Dinakar&amp;rft.au=Kowshik%2C+Sumant&amp;rft.au=Adve%2C+Vikram&amp;rft.au=Lattner%2C+Chris&amp;rft_id=http%3A%2F%2Fllvm.org%2Fpubs%2F2003-05-05-LCTES03-CodeSafety.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.cprogramming.com/debugging/segfaults.html" rel="nofollow">
+                 "Debugging Segmentation Faults and Pointer Problems - Cprogramming.com"
+                </a>
+                .
+                <i>
+                 www.cprogramming.com
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2021-02-03
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.cprogramming.com&amp;rft.atitle=Debugging+Segmentation+Faults+and+Pointer+Problems+-+Cprogramming.com&amp;rft_id=https%3A%2F%2Fwww.cprogramming.com%2Fdebugging%2Fsegfaults.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://feepingcreature.github.io/handling.html" rel="nofollow">
+                 "Cleanly recovering from Segfaults under Windows and Linux (32-bit, x86)"
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2020-08-23
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Cleanly+recovering+from+Segfaults+under+Windows+and+Linux+%2832-bit%2C+x86%29&amp;rft_id=https%3A%2F%2Ffeepingcreature.github.io%2Fhandling.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://github.com/vmarkovtsev/DeathHandler" rel="nofollow">
+                 "Implementation of the SIGSEGV/SIGABRT handler which prints the debug stack trace"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/GitHub" title="GitHub">
+                  GitHub
+                 </a>
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2020-08-23
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GitHub&amp;rft.atitle=Implementation+of+the+SIGSEGV%2FSIGABRT+handler+which+prints+the+debug+stack+trace.&amp;rft_id=https%3A%2F%2Fgithub.com%2Fvmarkovtsev%2FDeathHandler&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-9">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://stackoverflow.com/questions/17671869/how-to-identify-read-or-write-operations-of-page-fault-when-using-sigaction-hand" rel="nofollow">
+                 "How to identify read or write operations of page fault when using sigaction handler on SIGSEGV?(LINUX)"
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2020-08-23
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=How+to+identify+read+or+write+operations+of+page+fault+when+using+sigaction+handler+on+SIGSEGV%3F%28LINUX%29&amp;rft_id=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F17671869%2Fhow-to-identify-read-or-write-operations-of-page-fault-when-using-sigaction-hand&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://devarea.com/linux-writing-fault-handlers/" rel="nofollow">
+                 "LINUX – WRITING FAULT HANDLERS"
+                </a>
+                . 12 November 2017
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2020-08-23
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=LINUX+%E2%80%93+WRITING+FAULT+HANDLERS&amp;rft.date=2017-11-12&amp;rft_id=https%3A%2F%2Fdevarea.com%2Flinux-writing-fault-handlers%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-11">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1">
+                "6.1.4 String literals".
+                <i>
+                 ISO/IEC 9899:1990 - Programming languages -- C
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=6.1.4+String+literals&amp;rft.btitle=ISO%2FIEC+9899%3A1990+-+Programming+languages+--+C&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-12">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-12">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1">
+                "6.4.5 String literals".
+                <i>
+                 ISO/IEC 9899:1999 - Programming languages -- C
+                </i>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=6.4.5+String+literals&amp;rft.btitle=ISO%2FIEC+9899%3A1999+-+Programming+languages+--+C&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-13">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-13">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1">
+                "6.4.5 String literals".
+                <a class="external text" href="http://www.iso-9899.info/n1570.html#6.4.5p6" rel="nofollow">
+                 <i>
+                  ISO/IEC 9899:2011 - Programming languages -- C
+                 </i>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=6.4.5+String+literals&amp;rft.btitle=ISO%2FIEC+9899%3A2011+-+Programming+languages+--+C&amp;rft_id=http%3A%2F%2Fwww.iso-9899.info%2Fn1570.html%236.4.5p6&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-14">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-14">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://stackoverflow.com/questions/2685413/what-is-the-difference-between-a-segmentation-fault-and-a-stack-overflow/2685434#2685434" rel="nofollow">
+                 "What is the difference between a segmentation fault and a stack overflow?"
+                </a>
+                .
+                <i>
+                 Stack Overflow
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2023-11-11
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Stack+Overflow&amp;rft.atitle=What+is+the+difference+between+a+segmentation+fault+and+a+stack+overflow%3F&amp;rft_id=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F2685413%2Fwhat-is-the-difference-between-a-segmentation-fault-and-a-stack-overflow%2F2685434%232685434&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASegmentation+fault">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Segmentation_fault&amp;action=edit&amp;section=11" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1235681985">
+           .mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:var(--background-color-interactive-subtle,#f8f9fa);display:flow-root}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}
+          </style>
+          <style data-mw-deduplicate="TemplateStyles:r1237033735">
+           @media print{body.ns-0 .mw-parser-output .sistersitebox{display:none!important}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}
+          </style>
+          <div class="side-box side-box-right plainlinks sistersitebox">
+           <style data-mw-deduplicate="TemplateStyles:r1126788409">
+            .mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}
+           </style>
+           <div class="side-box-flex">
+            <div class="side-box-image">
+             <span class="noviewer" typeof="mw:File">
+              <span>
+               <img alt="" class="mw-file-element" data-file-height="512" data-file-width="512" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/40px-Wiktionary-logo-en-v2.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/60px-Wiktionary-logo-en-v2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/80px-Wiktionary-logo-en-v2.svg.png 2x" width="40"/>
+              </span>
+             </span>
+            </div>
+            <div class="side-box-text plainlist">
+             Look up
+             <i>
+              <b>
+               <a class="extiw" href="https://en.wiktionary.org/wiki/Special:Search/segmentation_fault" title="wiktionary:Special:Search/segmentation fault">
+                segmentation fault
+               </a>
+              </b>
+             </i>
+             in Wiktionary, the free dictionary.
+            </div>
+           </div>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="https://www.encious.com/process" rel="nofollow">
+             Process: focus boundary and segmentation fault
+            </a>
+            <sup class="noprint Inline-Template">
+             <span style="white-space: nowrap;">
+              [
+              <i>
+               <a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot">
+                <span title=" Dead link tagged July 2022">
+                 dead link
+                </span>
+               </a>
+              </i>
+              ]
+             </span>
+            </sup>
+           </li>
+           <li>
+            <a class="external text" href="http://www.faqs.org/qa/qa-673.html" rel="nofollow">
+             A FAQ: User contributed answers regarding the definition of a segmentation fault
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://c-faq.com/null/null1.html" rel="nofollow">
+             A "null pointer" explained
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://c-faq.com/null/varieties.html" rel="nofollow">
+             Answer to: NULL is guaranteed to be 0, but the null pointer is not?
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://www.opengroup.org/onlinepubs/009695399/basedefs/signal.h.html" rel="nofollow">
+             The Open Group Base Specifications Issue 6 signal.h
+            </a>
+           </li>
+          </ul>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Operating_systems" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Operating_systems" title="Template:Operating systems">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Operating_systems" title="Template talk:Operating systems">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Operating_systems" title="Special:EditPage/Template:Operating systems">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Operating_systems" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Operating_system" title="Operating system">
+                 Operating systems
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               General
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Comparison_of_operating_systems" title="Comparison of operating systems">
+                   Comparison
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Forensic_software_engineering" title="Forensic software engineering">
+                   Forensic engineering
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/History_of_operating_systems" title="History of operating systems">
+                   History
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/List_of_operating_systems" title="List of operating systems">
+                   List
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Timeline_of_operating_systems" title="Timeline of operating systems">
+                   Timeline
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Usage_share_of_operating_systems" title="Usage share of operating systems">
+                   Usage share
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Comparison_of_user_features_of_operating_systems" title="Comparison of user features of operating systems">
+                   User features comparison
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Variants
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Disk_operating_system" title="Disk operating system">
+                   Disk operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Distributed_operating_system" title="Distributed operating system">
+                   Distributed operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Embedded_operating_system" title="Embedded operating system">
+                   Embedded operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Hobbyist_operating_system" title="Hobbyist operating system">
+                   Hobbyist operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Just_enough_operating_system" title="Just enough operating system">
+                   Just enough operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Mobile_operating_system" title="Mobile operating system">
+                   Mobile operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Network_operating_system" title="Network operating system">
+                   Network operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Object-oriented_operating_system" title="Object-oriented operating system">
+                   Object-oriented operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Real-time_operating_system" title="Real-time operating system">
+                   Real-time operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Supercomputer_operating_system" title="Supercomputer operating system">
+                   Supercomputer operating system
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Kernel_(operating_system)" title="Kernel (operating system)">
+                Kernel
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:6em">
+                   <a href="/wiki/Computer_architecture" title="Computer architecture">
+                    Architectures
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Exokernel" title="Exokernel">
+                       Exokernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Hybrid_kernel" title="Hybrid kernel">
+                       Hybrid
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Microkernel" title="Microkernel">
+                       Microkernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Monolithic_kernel" title="Monolithic kernel">
+                       Monolithic
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Multikernel" title="Multikernel">
+                       Multikernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Vkernel" title="Vkernel">
+                       vkernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Rump_kernel" title="Rump kernel">
+                       Rump kernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Unikernel" title="Unikernel">
+                       Unikernel
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:6em">
+                   Components
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Device_driver" title="Device driver">
+                       Device driver
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Loadable_kernel_module" title="Loadable kernel module">
+                       Loadable kernel module
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/User_space_and_kernel_space" title="User space and kernel space">
+                       User space and kernel space
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Process_management_(computing)" title="Process management (computing)">
+                Process management
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:6em">
+                   Concepts
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Computer_multitasking" title="Computer multitasking">
+                       Computer multitasking
+                      </a>
+                      (
+                      <a href="/wiki/Cooperative_multitasking" title="Cooperative multitasking">
+                       Cooperative
+                      </a>
+                      ,
+                      <a href="/wiki/Preemption_(computing)" title="Preemption (computing)">
+                       Preemptive
+                      </a>
+                      )
+                     </li>
+                     <li>
+                      <a href="/wiki/Context_switch" title="Context switch">
+                       Context switch
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Interrupt" title="Interrupt">
+                       Interrupt
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Inter-process_communication" title="Inter-process communication">
+                       IPC
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Process_(computing)" title="Process (computing)">
+                       Process
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Process_control_block" title="Process control block">
+                       Process control block
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Real-time_operating_system" title="Real-time operating system">
+                       Real-time
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Thread_(computing)" title="Thread (computing)">
+                       Thread
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Time-sharing" title="Time-sharing">
+                       Time-sharing
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:6em">
+                   <a href="/wiki/Scheduling_(computing)" title="Scheduling (computing)">
+                    Scheduling
+                    <br/>
+                    algorithms
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Fixed-priority_pre-emptive_scheduling" title="Fixed-priority pre-emptive scheduling">
+                       Fixed-priority preemptive
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Multilevel_feedback_queue" title="Multilevel feedback queue">
+                       Multilevel feedback queue
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Round-robin_scheduling" title="Round-robin scheduling">
+                       Round-robin
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Shortest_job_next" title="Shortest job next">
+                       Shortest job next
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Memory_management_(operating_systems)" title="Memory management (operating systems)">
+                Memory management
+               </a>
+               ,
+               <br/>
+               <a href="/wiki/System_resource" title="System resource">
+                resource
+               </a>
+               protection
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Bus_error" title="Bus error">
+                   Bus error
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/General_protection_fault" title="General protection fault">
+                   General protection fault
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Memory_paging" title="Memory paging">
+                   Memory paging
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Memory_protection" title="Memory protection">
+                   Memory protection
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Protection_ring" title="Protection ring">
+                   Protection ring
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Segmentation fault
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Virtual_memory" title="Virtual memory">
+                   Virtual memory
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Non-volatile_memory" title="Non-volatile memory">
+                Storage
+               </a>
+               access,
+               <br/>
+               <a href="/wiki/File_system" title="File system">
+                file systems
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Booting#BOOT-LOADER" title="Booting">
+                   Boot loader
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Defragmentation" title="Defragmentation">
+                   Defragmentation
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Device_file" title="Device file">
+                   Device file
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/File_attribute" title="File attribute">
+                   File attribute
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Inode" title="Inode">
+                   Inode
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Journaling_file_system" title="Journaling file system">
+                   Journal
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Disk_partitioning" title="Disk partitioning">
+                   Partition
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Virtual_file_system" title="Virtual file system">
+                   Virtual file system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Virtual_tape_library" title="Virtual tape library">
+                   Virtual tape library
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Supporting concepts
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/API" title="API">
+                   API
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Computer_network" title="Computer network">
+                   Computer network
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Hardware_abstraction" title="Hardware abstraction">
+                   HAL
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Live_CD" title="Live CD">
+                   Live CD
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Live_USB" title="Live USB">
+                   Live USB
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Shell_(computing)" title="Shell (computing)">
+                   Shell
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Command-line_interface" title="Command-line interface">
+                     CLI
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/User_interface" title="User interface">
+                     User interface
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Preboot_Execution_Environment" title="Preboot Execution Environment">
+                   PXE
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div class="navbox-styles">
+           <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+           <link href="mw-data:TemplateStyles:r1236075235" rel="mw-deduplicated-inline-style"/>
+          </div>
+          <div aria-labelledby="Error_messages" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <link href="mw-data:TemplateStyles:r1239400231" rel="mw-deduplicated-inline-style"/>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Error_messages" title="Template:Error messages">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Error_messages" title="Template talk:Error messages">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Error_messages" title="Special:EditPage/Template:Error messages">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Error_messages" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Error_message" title="Error message">
+                 Error messages
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               System failure
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Bomb_(icon)" title="Bomb (icon)">
+                   Bomb icon
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Fatal_system_error" title="Fatal system error">
+                   Fatal system error
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Guru_Meditation" title="Guru Meditation">
+                   Guru Meditation
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Kernel_panic" title="Kernel panic">
+                   Kernel panic
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Linux_kernel_oops" title="Linux kernel oops">
+                   Linux kernel oops
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Xbox_360_technical_problems" title="Xbox 360 technical problems">
+                   Red Ring of Death
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Macintosh_startup#Sad_Mac" title="Macintosh startup">
+                   Sad Mac
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Screen_of_death" title="Screen of death">
+                   Screen of death
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Blue_screen_of_death" title="Blue screen of death">
+                     Blue
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Black_screen_of_death" title="Black screen of death">
+                     Black
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Application failure
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Abnormal_end" title="Abnormal end">
+                   ABEND
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Fatal_exception_error" title="Fatal exception error">
+                   Fatal exception error
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Segmentation fault
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Device and data errors
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/HTTP_402" title="HTTP 402">
+                   HTTP 402
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/HTTP_403" title="HTTP 403">
+                   HTTP 403
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/HTTP_404" title="HTTP 404">
+                   HTTP 404
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/HTTP_500" title="HTTP 500">
+                   HTTP 500
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Lp0_on_fire" title="Lp0 on fire">
+                   lp0 on fire
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Not_a_typewriter" title="Not a typewriter">
+                   Not a typewriter
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/PC_LOAD_LETTER" title="PC LOAD LETTER">
+                   PC LOAD LETTER
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Other
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Abort,_Retry,_Fail%3F" title="Abort, Retry, Fail?">
+                   Abort, Retry, Fail?
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Bad_command_or_file_name" title="Bad command or file name">
+                   Bad command or file name
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Halt_and_Catch_Fire_(computing)" title="Halt and Catch Fire (computing)">
+                   Halt and Catch Fire
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Hyper_Text_Coffee_Pot_Control_Protocol" title="Hyper Text Coffee Pot Control Protocol">
+                   HTTP 418
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Out_of_memory" title="Out of memory">
+                   Out of memory
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Does_not_compute" title="Does not compute">
+                   Does not compute
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Lists
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/List_of_HTTP_status_codes" title="List of HTTP status codes">
+                   List of HTTP status codes
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/List_of_FTP_server_return_codes" title="List of FTP server return codes">
+                   List of FTP server return codes
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/List_of_SMTP_server_return_codes" title="List of SMTP server return codes">
+                   List of SMTP server return codes
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Related
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Spinning_pinwheel" title="Spinning pinwheel">
+                   Spinning pinwheel
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Windows_wait_cursor" title="Windows wait cursor">
+                   Windows wait cursor
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/2024_CrowdStrike_incident" title="2024 CrowdStrike incident">
+                   2024 CrowdStrike incident
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐5kdsn
+Cached time: 20240926232231
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.638 seconds
+Real time usage: 0.920 seconds
+Preprocessor visited node count: 1630/1000000
+Post‐expand include size: 67946/2097152 bytes
+Template argument size: 2013/2097152 bytes
+Highest expansion depth: 15/100
+Expensive parser function count: 18/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 73096/5000000 bytes
+Lua time usage: 0.417/10.000 seconds
+Lua memory usage: 6255560/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  812.881      1 -total
+ 26.54%  215.745      1 Template:Reflist
+ 20.66%  167.962      4 Template:Navbox
+ 19.55%  158.895      1 Template:Operating_System
+ 18.09%  147.025      8 Template:Cite_web
+ 13.66%  111.070      1 Template:More_citations_needed
+ 12.77%  103.767      1 Template:Ambox
+ 10.89%   88.538      1 Template:Short_description
+  6.61%   53.738      2 Template:Pagetype
+  5.43%   44.134      1 Template:Wiktionary
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:28803-0!canonical and timestamp 20240926232231 and revision id 1220172090. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Segmentation_fault&amp;oldid=1220172090">
+          https://en.wikipedia.org/w/index.php?title=Segmentation_fault&amp;oldid=1220172090
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Computer_errors" title="Category:Computer errors">
+            Computer errors
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Memory_management" title="Category:Memory management">
+            Memory management
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_November_2011" title="Category:Articles needing additional references from November 2011">
+            Articles needing additional references from November 2011
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_specifically_marked_weasel-worded_phrases" title="Category:All articles with specifically marked weasel-worded phrases">
+            All articles with specifically marked weasel-worded phrases
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_specifically_marked_weasel-worded_phrases_from_December_2021" title="Category:Articles with specifically marked weasel-worded phrases from December 2021">
+            Articles with specifically marked weasel-worded phrases from December 2021
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_dead_external_links" title="Category:All articles with dead external links">
+            All articles with dead external links
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_dead_external_links_from_July_2022" title="Category:Articles with dead external links from July 2022">
+            Articles with dead external links from July 2022
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_example_C_code" title="Category:Articles with example C code">
+            Articles with example C code
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 22 April 2024, at 06:50
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Segmentation_fault&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-98w8b","wgBackendResponseTime":166,"wgPageParseReport":{"limitreport":{"cputime":"0.638","walltime":"0.920","ppvisitednodes":{"value":1630,"limit":1000000},"postexpandincludesize":{"value":67946,"limit":2097152},"templateargumentsize":{"value":2013,"limit":2097152},"expansiondepth":{"value":15,"limit":100},"expensivefunctioncount":{"value":18,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":73096,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  812.881      1 -total"," 26.54%  215.745      1 Template:Reflist"," 20.66%  167.962      4 Template:Navbox"," 19.55%  158.895      1 Template:Operating_System"," 18.09%  147.025      8 Template:Cite_web"," 13.66%  111.070      1 Template:More_citations_needed"," 12.77%  103.767      1 Template:Ambox"," 10.89%   88.538      1 Template:Short_description","  6.61%   53.738      2 Template:Pagetype","  5.43%   44.134      1 Template:Wiktionary"]},"scribunto":{"limitreport-timeusage":{"value":"0.417","limit":"10.000"},"limitreport-memusage":{"value":6255560,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-5kdsn","timestamp":"20240926232231","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Segmentation fault","url":"https:\/\/en.wikipedia.org\/wiki\/Segmentation_fault","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1062340","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1062340","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-11-06T02:42:10Z","dateModified":"2024-04-22T06:50:29Z","headline":"fault, or failure condition, raised by hardware with memory protection, notifying an operating system the software has attempted to access a restricted area of memory"}
+  </script>
+ </body>
+</html>

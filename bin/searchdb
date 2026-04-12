@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+
+from bs4 import BeautifulSoup
+from pathlib import Path
+import sqlite3
+import os
+
+in_dir="inverted_index/crawl/"
+os.makedirs("var", exist_ok=True)
+connection = sqlite3.connect("var/search.sqlite3")
+cur = connection.cursor()
+cur.execute("DROP TABLE IF EXISTS documents")
+cur.execute("""CREATE TABLE documents (
+             docid INTEGER PRIMARY KEY,
+             title VARCHAR(150),
+             summary VARCHAR(250),
+             url VARCHAR(150)
+             )""")
+
+for filepath in Path(in_dir).iterdir():
+  with open(filepath) as doc:
+    content = doc.read()
+
+    soup = BeautifulSoup(content, "html.parser")
+
+    title = soup.title.get_text()
+    title = title.replace(" - Wikipedia", "")
+    docid = soup.find("meta", attrs={"eecs485_docid": True}).get("eecs485_docid")
+    url = soup.find("meta", attrs={"eecs485_url": True}).get("eecs485_url")
+
+    # getting doc summary
+    summary = ""
+    p_elts = soup.find_all("p", class_=False)
+    for p in p_elts:
+      p = p.text
+      if p.strip() and len(p) > 50:
+        summary = p.strip()[0:247]
+        summary = summary.replace("\n", " ")
+        summary = summary + "..."
+        break
+
+    cur.execute("""INSERT INTO documents (docid, title, summary, url)
+                 VALUES (?, ?, ?, ?)""",
+                 (docid, title, summary, url)
+                 )
+
+# commit and close db
+connection.commit()
+connection.close()

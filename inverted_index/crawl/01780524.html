@@ -1,0 +1,2475 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   In-memory processing - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"feb77394-7313-49f7-ae97-ccdc9aca12b7","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"In-memory_processing","wgTitle":"In-memory processing","wgCurRevisionId":1239112072,"wgRevisionId":1239112072,"wgArticleId":33797289,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Articles with a promotional tone from November 2018","All articles with a promotional tone","All articles with failed verification","Articles with failed verification from July 2024","All articles with unsourced statements","Articles with unsourced statements from January 2016","Computer memory","Database management systems"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en",
+"wgPageContentModel":"wikitext","wgRelevantPageName":"In-memory_processing","wgRelevantArticleId":33797289,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q6008583",
+"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips",
+"ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="In-memory processing - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/In-memory_processing" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=In-memory_processing&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/In-memory_processing" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/In-memory_processing"/>
+  <meta eecs485_docid="01780524"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-In-memory_processing rootpage-In-memory_processing skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=In-memory+processing" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=In-memory+processing" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=In-memory+processing" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=In-memory+processing" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Hardware_(PIM)">
+           <a class="vector-toc-link" href="#Hardware_(PIM)">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Hardware (PIM)
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Hardware_(PIM)-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Hardware (PIM) subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Hardware_(PIM)-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Application_of_in-memory_technology_in_everyday_life">
+             <a class="vector-toc-link" href="#Application_of_in-memory_technology_in_everyday_life">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.1
+               </span>
+               <span>
+                Application of in-memory technology in everyday life
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Application_of_in-memory_technology_in_everyday_life-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Software">
+           <a class="vector-toc-link" href="#Software">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Software
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Software-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Software subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Software-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Disk-based_data_access">
+             <a class="vector-toc-link" href="#Disk-based_data_access">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.1
+               </span>
+               <span>
+                Disk-based data access
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Disk-based_data_access-sublist">
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Data_structures">
+               <a class="vector-toc-link" href="#Data_structures">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  2.1.1
+                 </span>
+                 <span>
+                  Data structures
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Data_structures-sublist">
+               </ul>
+              </li>
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Processing_speed">
+               <a class="vector-toc-link" href="#Processing_speed">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  2.1.2
+                 </span>
+                 <span>
+                  Processing speed
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Processing_speed-sublist">
+               </ul>
+              </li>
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-In-memory_data_access">
+             <a class="vector-toc-link" href="#In-memory_data_access">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.2
+               </span>
+               <span>
+                In-memory data access
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-In-memory_data_access-sublist">
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Advantages_of_in-memory_processing_technology">
+               <a class="vector-toc-link" href="#Advantages_of_in-memory_processing_technology">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  2.2.1
+                 </span>
+                 <span>
+                  Advantages of in-memory processing technology
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Advantages_of_in-memory_processing_technology-sublist">
+               </ul>
+              </li>
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Application_in_business">
+               <a class="vector-toc-link" href="#Application_in_business">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  2.2.2
+                 </span>
+                 <span>
+                  Application in business
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Application_in_business-sublist">
+               </ul>
+              </li>
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Adoption_of_in-memory_technology">
+               <a class="vector-toc-link" href="#Adoption_of_in-memory_technology">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  2.2.3
+                 </span>
+                 <span>
+                  Adoption of in-memory technology
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Adoption_of_in-memory_technology-sublist">
+               </ul>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         In-memory processing
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 3 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-3" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          3 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Processament en memòria" href="https://ca.wikipedia.org/wiki/Processament_en_mem%C3%B2ria" hreflang="ca" lang="ca" title="Processament en memòria – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Türkçe" data-language-local-name="Turkish" data-title="Bellek içi işleme" href="https://tr.wikipedia.org/wiki/Bellek_i%C3%A7i_i%C5%9Fleme" hreflang="tr" lang="tr" title="Bellek içi işleme – Turkish">
+             <span>
+              Türkçe
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="存内计算" href="https://zh.wikipedia.org/wiki/%E5%AD%98%E5%86%85%E8%AE%A1%E7%AE%97" hreflang="zh" lang="zh" title="存内计算 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q6008583#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/In-memory_processing" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:In-memory_processing" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/In-memory_processing">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=In-memory_processing&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=In-memory_processing&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/In-memory_processing">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=In-memory_processing&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=In-memory_processing&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/In-memory_processing" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/In-memory_processing" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=In-memory_processing&amp;oldid=1239112072" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=In-memory_processing&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=In-memory_processing&amp;id=1239112072&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FIn-memory_processing">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FIn-memory_processing">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q6008583" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=In-memory_processing&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=In-memory_processing&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Processing data technology
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <table class="box-Advert plainlinks metadata ambox ambox-content ambox-Advert" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <span>
+                <img alt="" class="mw-file-element" data-file-height="40" data-file-width="40" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" width="40"/>
+               </span>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              This article
+              <b>
+               contains content that is written like
+               <a href="/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_soapbox_or_means_of_promotion" title="Wikipedia:What Wikipedia is not">
+                an advertisement
+               </a>
+              </b>
+              .
+              <span class="hide-when-compact">
+               Please help
+               <a class="external text" href="https://en.wikipedia.org/w/index.php?title=In-memory_processing&amp;action=edit">
+                improve it
+               </a>
+               by removing
+               <a href="/wiki/Wikipedia:Spam" title="Wikipedia:Spam">
+                promotional content
+               </a>
+               and inappropriate
+               <a href="/wiki/Wikipedia:External_links#Advertising_and_conflicts_of_interest" title="Wikipedia:External links">
+                external links
+               </a>
+               , and by adding encyclopedic content written from a
+               <a href="/wiki/Wikipedia:Neutral_point_of_view" title="Wikipedia:Neutral point of view">
+                neutral point of view
+               </a>
+               .
+              </span>
+              <span class="date-container">
+               <i>
+                (
+                <span class="date">
+                 November 2018
+                </span>
+                )
+               </i>
+              </span>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          The term is used for two different things:
+         </p>
+         <ol>
+          <li>
+           In
+           <a href="/wiki/Computer_science" title="Computer science">
+            computer science
+           </a>
+           ,
+           <b>
+            in-memory processing
+           </b>
+           (PIM) is a
+           <a href="/wiki/Computer_architecture" title="Computer architecture">
+            computer architecture
+           </a>
+           in which data operations are available directly on the data memory, rather than having to be transferred to
+           <a href="/wiki/Central_processing_unit" title="Central processing unit">
+            CPU
+           </a>
+           registers first.
+           <sup class="reference" id="cite_ref-1">
+            <a href="#cite_note-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           This may improve the
+           <a href="/wiki/Electric_power" title="Electric power">
+            power usage
+           </a>
+           and
+           <a href="/wiki/Computer_performance" title="Computer performance">
+            performance
+           </a>
+           of moving data between the processor and the main memory.
+          </li>
+          <li>
+           In
+           <a href="/wiki/Software_engineering" title="Software engineering">
+            software engineering
+           </a>
+           ,
+           <b>
+            in-memory processing
+           </b>
+           is a
+           <a href="/wiki/Software_architecture" title="Software architecture">
+            software architecture
+           </a>
+           where a database is kept entirely in
+           <a href="/wiki/Random-access_memory" title="Random-access memory">
+            random-access memory
+           </a>
+           (RAM) or
+           <a href="/wiki/Flash_memory" title="Flash memory">
+            flash memory
+           </a>
+           so that usual accesses, in particular read or query operations, do not require access to
+           <a href="/wiki/Disk_storage" title="Disk storage">
+            disk storage
+           </a>
+           .
+           <sup class="reference" id="cite_ref-2">
+            <a href="#cite_note-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           This may allow faster data operations such as "joins", and faster reporting and decision-making in business.
+           <sup class="reference" id="cite_ref-3">
+            <a href="#cite_note-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </li>
+         </ol>
+         <p>
+          Extremely large datasets may be divided between co-operating systems as  in-memory
+          <a href="/wiki/Data_grid" title="Data grid">
+           data grids
+          </a>
+          .
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Hardware_(PIM)">
+            <span id="Hardware_.28PIM.29">
+            </span>
+            Hardware (PIM)
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=In-memory_processing&amp;action=edit&amp;section=1" title="Edit section: Hardware (PIM)">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           PIM could be implemented by:
+           <sup class="reference" id="cite_ref-4">
+            <a href="#cite_note-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <ul>
+           <li>
+            Processing-using-Memory (PuM)
+            <ul>
+             <li>
+              Adding limited processing capability (e.g., floating point multiplication units, 4K row operations such as copy or zero, bitwise operations on two rows) to conventional memory modules (e.g., DIMM modules); or
+             </li>
+             <li>
+              Adding processing capability to memory controllers so that the data that is accessed does not need to be forwarded to the CPU or affect the CPU' cache, but is dealt with immediately.
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <ul>
+           <li>
+            Processing-near-Memory (PnM)
+            <ul>
+             <li>
+              New 3D arrangements of silicon with memory layers and processing layers.
+             </li>
+            </ul>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Application_of_in-memory_technology_in_everyday_life">
+            Application of in-memory technology in everyday life
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=In-memory_processing&amp;action=edit&amp;section=2" title="Edit section: Application of in-memory technology in everyday life">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           In-memory processing techniques are frequently used by modern smartphones and tablets to improve application performance. This can result in speedier app loading times and more enjoyable user experiences.
+          </p>
+          <ul>
+           <li>
+            In-memory processing may be used by gaming consoles such as the
+            <a href="/wiki/PlayStation" title="PlayStation">
+             PlayStation
+            </a>
+            and
+            <a href="/wiki/Xbox" title="Xbox">
+             Xbox
+            </a>
+            to improve game speed.
+            <sup class="reference" id="cite_ref-5">
+             <a href="#cite_note-5">
+              <span class="cite-bracket">
+               [
+              </span>
+              5
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            <sup class="noprint Inline-Template" style="white-space:nowrap;">
+             [
+             <i>
+              <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+               <span title="The material near this tag failed verification of its source citation(s). (July 2024)">
+                failed verification
+               </span>
+              </a>
+             </i>
+             ]
+            </sup>
+            Rapid data access is critical for providing a smooth game experience.
+           </li>
+          </ul>
+          <ul>
+           <li>
+            Certain wearable devices, like smartwatches and fitness trackers, may incorporate in-memory processing to swiftly process sensor data and provide real-time feedback to users. Several commonplace gadgets use in-memory processing to improve performance and responsiveness.
+            <sup class="reference" id="cite_ref-6">
+             <a href="#cite_note-6">
+              <span class="cite-bracket">
+               [
+              </span>
+              6
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+          </ul>
+          <ul>
+           <li>
+            In-memory processing is used by smart TVs to enhance interface navigation and content delivery. It is used in digital cameras for real-time image processing, filtering, and effects.
+            <sup class="reference" id="cite_ref-7">
+             <a href="#cite_note-7">
+              <span class="cite-bracket">
+               [
+              </span>
+              7
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            Voice-activated assistants and other home automation systems may benefit from faster understanding and response to user orders.
+           </li>
+          </ul>
+          <ul>
+           <li>
+            In-memory processing is also used by embedded systems in appliances and high-end digital cameras for efficient data handling. Through in-memory processing techniques, certain IoT devices prioritize fast data processing and response times.
+            <sup class="reference" id="cite_ref-8">
+             <a href="#cite_note-8">
+              <span class="cite-bracket">
+               [
+              </span>
+              8
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Software">
+            Software
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=In-memory_processing&amp;action=edit&amp;section=3" title="Edit section: Software">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Disk-based_data_access">
+            Disk-based data access
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=In-memory_processing&amp;action=edit&amp;section=4" title="Edit section: Disk-based data access">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Data_structures">
+            Data structures
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=In-memory_processing&amp;action=edit&amp;section=5" title="Edit section: Data structures">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           With disk-based technology, data is loaded on to the computer's
+           <a class="mw-redirect" href="/wiki/Hard_disk" title="Hard disk">
+            hard disk
+           </a>
+           in the form of multiple tables and multi-dimensional structures against which queries are run. Disk-based technologies are often
+           <a class="mw-redirect" href="/wiki/Relational_database_management_system" title="Relational database management system">
+            relational database management systems
+           </a>
+           (RDBMS), often based on the structured query language (
+           <a href="/wiki/SQL" title="SQL">
+            SQL
+           </a>
+           ), such as
+           <a href="/wiki/Microsoft_SQL_Server" title="Microsoft SQL Server">
+            SQL Server
+           </a>
+           ,
+           <a href="/wiki/MySQL" title="MySQL">
+            MySQL
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Oracle_database" title="Oracle database">
+            Oracle
+           </a>
+           and many others. RDBMS are designed for the requirements of
+           <a href="/wiki/Software_transactional_memory" title="Software transactional memory">
+            transactional processing
+           </a>
+           . Using a database that supports insertions and updates as well as performing aggregations,
+           <a href="/wiki/Join_(SQL)" title="Join (SQL)">
+            joins
+           </a>
+           (typical in BI solutions) are typically very slow. Another drawback is that SQL is designed to efficiently fetch rows of data, while BI queries usually involve fetching of partial rows of data involving heavy calculations.
+          </p>
+          <p>
+           To improve query performance, multidimensional databases or
+           <a href="/wiki/OLAP_cube" title="OLAP cube">
+            OLAP cubes
+           </a>
+           - also called multidimensional online analytical processing (MOLAP) - may be constructed. Designing a cube may be an elaborate and lengthy process, and changing the cube's structure to adapt to dynamically changing business needs may be cumbersome. Cubes are pre-populated with data to answer specific queries and although they increase performance, they are still not optimal for answering all ad-hoc queries.
+           <sup class="reference" id="cite_ref-9">
+            <a href="#cite_note-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Information technology (IT) staff may spend substantial development time on optimizing databases, constructing
+           <a class="mw-redirect" href="/wiki/Index_(database)" title="Index (database)">
+            indexes
+           </a>
+           and
+           <a href="/wiki/Aggregate_(data_warehouse)" title="Aggregate (data warehouse)">
+            aggregates
+           </a>
+           , designing cubes and
+           <a href="/wiki/Star_schema" title="Star schema">
+            star schemas
+           </a>
+           ,
+           <a href="/wiki/Data_modeling" title="Data modeling">
+            data modeling
+           </a>
+           , and query analysis.
+           <sup class="reference" id="cite_ref-10">
+            <a href="#cite_note-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Processing_speed">
+            Processing speed
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=In-memory_processing&amp;action=edit&amp;section=6" title="Edit section: Processing speed">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Reading data from the hard disk is much slower (possibly hundreds of times) when compared to reading the same data from RAM. Especially when analyzing large volumes of data, performance is severely degraded. Though SQL is a very powerful tool, arbitrary complex queries with a disk-based implementation take a relatively long time to execute and often result in bringing down the performance of transactional processing. In order to obtain results within an acceptable response time, many
+           <a href="/wiki/Data_warehouse" title="Data warehouse">
+            data warehouses
+           </a>
+           have been designed to pre-calculate summaries and answer specific queries only. Optimized aggregation algorithms are needed to increase performance.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="In-memory_data_access">
+            In-memory data access
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=In-memory_processing&amp;action=edit&amp;section=7" title="Edit section: In-memory data access">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           With both in-memory database and
+           <a href="/wiki/Data_grid" title="Data grid">
+            data grid
+           </a>
+           , all information is initially loaded into memory RAM or flash memory instead of
+           <a class="mw-redirect" href="/wiki/Hard_disk" title="Hard disk">
+            hard disks
+           </a>
+           . With a
+           <a href="/wiki/Data_grid" title="Data grid">
+            data grid
+           </a>
+           processing occurs at three
+           <a class="mw-redirect" href="/wiki/Orders_of_magnitude" title="Orders of magnitude">
+            order of magnitude
+           </a>
+           faster than relational databases which have advanced functionality such as
+           <a href="/wiki/ACID" title="ACID">
+            ACID
+           </a>
+           which degrade performance in compensation for the additional functionality. The arrival of
+           <a class="mw-redirect" href="/wiki/Column-oriented_DBMS" title="Column-oriented DBMS">
+            column centric databases
+           </a>
+           , which store similar information together, allow data to be stored more efficiently and with greater
+           <a href="/wiki/Data_compression" title="Data compression">
+            compression
+           </a>
+           ratios. This allows huge amounts of data to be stored in the same physical space, reducing the amount of memory needed to perform a query and increasing processing speed. Many users and software vendors have integrated flash memory into their systems to allow systems to scale to larger data sets more economically.
+          </p>
+          <p>
+           Users query the data loaded into the system's memory, thereby avoiding slower database access and performance
+           <a href="/wiki/Bottleneck_(software)" title="Bottleneck (software)">
+            bottlenecks
+           </a>
+           . This differs from
+           <a class="mw-redirect" href="/wiki/Caching_(computing)" title="Caching (computing)">
+            caching
+           </a>
+           , a very widely used method to speed up query performance, in that caches are subsets of very specific pre-defined organized data. With in-memory tools, data available for analysis can be as large as a
+           <a href="/wiki/Data_mart" title="Data mart">
+            data mart
+           </a>
+           or small data warehouse which is entirely in memory. This can be accessed quickly by multiple concurrent users or applications at a detailed level and offers the potential for enhanced analytics and for scaling and increasing the speed of an application. Theoretically, the improvement in data access speed is 10,000 to 1,000,000 times compared to the disk.
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (January 2016)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           It also minimizes the need for performance tuning by IT staff and provides faster service for end users.
+          </p>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Advantages_of_in-memory_processing_technology">
+            Advantages of in-memory processing technology
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=In-memory_processing&amp;action=edit&amp;section=8" title="Edit section: Advantages of in-memory processing technology">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Certain developments in computer technology and business needs have tended to increase the relative advantages of in-memory technology.
+           <sup class="reference" id="cite_ref-11">
+            <a href="#cite_note-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <ul>
+           <li>
+            Following
+            <a href="/wiki/Moore%27s_law" title="Moore's law">
+             Moore's law
+            </a>
+            , the number of transistors per square unit doubles every two or so years. This is reflected in changes to price, performance, packaging and capabilities of the components.
+            <a href="/wiki/Random-access_memory" title="Random-access memory">
+             Random-access memory
+            </a>
+            price and CPU computing power in particular have improved over the decades.  CPU processing, memory and disk storage are all subject to some variation of this law. As well, hardware innovations such as
+            <a href="/wiki/Multi-core_processor" title="Multi-core processor">
+             multi-core architecture
+            </a>
+            ,
+            <a class="mw-redirect" href="/wiki/NAND_flash_memory" title="NAND flash memory">
+             NAND flash memory
+            </a>
+            ,
+            <a href="/wiki/Parallel_computing" title="Parallel computing">
+             parallel servers
+            </a>
+            , and increased memory processing capability, have contributed to the technical and economic feasibility of in-memory approaches.
+           </li>
+           <li>
+            In turn, software innovations such as column centric databases, compression techniques and handling aggregate tables, enable efficient in-memory products.
+            <sup class="reference" id="cite_ref-12">
+             <a href="#cite_note-12">
+              <span class="cite-bracket">
+               [
+              </span>
+              12
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            The advent of
+            <i>
+             <a class="mw-redirect" href="/wiki/64-bit_operating_system" title="64-bit operating system">
+              64-bit operating systems
+             </a>
+            </i>
+            , which allow access to far more RAM (up to 100 GB or more) than the 2 or 4 GB accessible on
+            <a href="/wiki/32-bit_computing" title="32-bit computing">
+             32-bit systems
+            </a>
+            . By providing Terabytes (1 TB = 1,024 GB) of space for storage and analysis, 64-bit operating systems make in-memory processing scalable. The use of flash memory enables systems to scale to many Terabytes more economically.
+           </li>
+           <li>
+            Increasing
+            <i>
+             volumes of data
+            </i>
+            have meant that traditional data warehouses may be less able to process the data in a timely and accurate way. The
+            <a href="/wiki/Extract,_transform,_load" title="Extract, transform, load">
+             extract, transform, load
+            </a>
+            (ETL) process that periodically updates disk-based data warehouses with operational data may result in lags and stale data. In-memory processing may enable faster access to terabytes of data for better real time reporting.
+           </li>
+           <li>
+            In-memory processing may be available at a
+            <i>
+             lower cost
+            </i>
+            compared to disk-based processing, and can be more easily deployed and maintained. According to Gartner survey,
+            <sup class="reference" id="cite_ref-13">
+             <a href="#cite_note-13">
+              <span class="cite-bracket">
+               [
+              </span>
+              13
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            deploying traditional BI tools can take as long as 17 months.
+           </li>
+           <li>
+            Decreases in power consumption and increases in throughput due to a lower access latency, and greater memory bandwidth and hardware parallelism.
+            <sup class="reference" id="cite_ref-14">
+             <a href="#cite_note-14">
+              <span class="cite-bracket">
+               [
+              </span>
+              14
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Application_in_business">
+            Application in business
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=In-memory_processing&amp;action=edit&amp;section=9" title="Edit section: Application in business">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           A range of in-memory products provide ability to connect to existing data sources and access to visually rich interactive dashboards. This allows business analysts and end users to create custom reports and queries without much training or expertise. Easy navigation and ability to modify queries on the fly is of benefit to many users. Since these dashboards can be populated with fresh data, users have access to real time data and can create reports within minutes. In-memory processing may be of particular benefit in
+           <a class="mw-redirect" href="/wiki/Call_center" title="Call center">
+            call centers
+           </a>
+           and warehouse management.
+          </p>
+          <p>
+           With in-memory processing, the source database is queried only once instead of accessing the database every time a query is run, thereby eliminating repetitive processing and reducing the burden on database servers. By scheduling to populate the in-memory database overnight, the database servers can be used for operational purposes during peak hours.
+          </p>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Adoption_of_in-memory_technology">
+            Adoption of in-memory technology
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=In-memory_processing&amp;action=edit&amp;section=10" title="Edit section: Adoption of in-memory technology">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           With a large number of users, a large amount of
+           <a href="/wiki/Random-access_memory" title="Random-access memory">
+            RAM
+           </a>
+           is needed for an in-memory configuration, which in turn affects the hardware costs. The investment is more likely to be suitable in situations where speed of query response is a high priority, and where there is significant growth in data volume and increase in demand for reporting facilities; it may still not be cost-effective where information is not subject to rapid change.
+           <a href="/wiki/Computer_security" title="Computer security">
+            Security
+           </a>
+           is another consideration, as in-memory tools expose huge amounts of data to end users. Makers advise ensuring that only  authorized users are given access to the data.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=In-memory_processing&amp;action=edit&amp;section=11" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Computational_RAM" title="Computational RAM">
+             Computational RAM
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/System_on_a_chip" title="System on a chip">
+             System on a chip
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Network_on_a_chip" title="Network on a chip">
+             Network on a chip
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=In-memory_processing&amp;action=edit&amp;section=12" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation journal cs1" id="CITEREFGhose2019">
+                Ghose, S. (November 2019).
+                <a class="external text" href="https://www.pdl.cmu.edu/PDL-FTP/associated/19ibmjrd_pim.pdf" rel="nofollow">
+                 "Processing-in-memory: A workload-driven perspective"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 IBM Journal of Research and Development
+                </i>
+                .
+                <b>
+                 63
+                </b>
+                (6): 3:1–19.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1147%2FJRD.2019.2934048" rel="nofollow">
+                 10.1147/JRD.2019.2934048
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:202025511" rel="nofollow">
+                 202025511
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IBM+Journal+of+Research+and+Development&amp;rft.atitle=Processing-in-memory%3A+A+workload-driven+perspective&amp;rft.volume=63&amp;rft.issue=6&amp;rft.pages=3%3A1-19&amp;rft.date=2019-11&amp;rft_id=info%3Adoi%2F10.1147%2FJRD.2019.2934048&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A202025511%23id-name%3DS2CID&amp;rft.aulast=Ghose&amp;rft.aufirst=S.&amp;rft_id=https%3A%2F%2Fwww.pdl.cmu.edu%2FPDL-FTP%2Fassociated%2F19ibmjrd_pim.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFZhangGang_ChenBeng_Chin_OoiKian-Lee_Tan2015">
+                Zhang, Hao; Gang Chen; Beng Chin Ooi; Kian-Lee Tan; Meihui Zhang (July 2015).
+                <a class="external text" href="https://doi.org/10.1109%2FTKDE.2015.2427795" rel="nofollow">
+                 "In-Memory Big Data Management and Processing: A Survey"
+                </a>
+                .
+                <i>
+                 IEEE Transactions on Knowledge and Data Engineering
+                </i>
+                .
+                <b>
+                 27
+                </b>
+                (7): 1920–1948.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://doi.org/10.1109%2FTKDE.2015.2427795" rel="nofollow">
+                  10.1109/TKDE.2015.2427795
+                 </a>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Knowledge+and+Data+Engineering&amp;rft.atitle=In-Memory+Big+Data+Management+and+Processing%3A+A+Survey&amp;rft.volume=27&amp;rft.issue=7&amp;rft.pages=1920-1948&amp;rft.date=2015-07&amp;rft_id=info%3Adoi%2F10.1109%2FTKDE.2015.2427795&amp;rft.aulast=Zhang&amp;rft.aufirst=Hao&amp;rft.au=Gang+Chen&amp;rft.au=Beng+Chin+Ooi&amp;rft.au=Kian-Lee+Tan&amp;rft.au=Meihui+Zhang&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1109%252FTKDE.2015.2427795&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFPlattnerZeier2012">
+                Plattner, Hasso; Zeier, Alexander (2012).
+                <a class="external text" href="https://books.google.com/books?id=HySCgzCApsEC&amp;q=%22in-memory%22" rel="nofollow">
+                 <i>
+                  In-Memory Data Management: Technology and Applications
+                 </i>
+                </a>
+                . Springer Science &amp; Business Media.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/9783642295744" title="Special:BookSources/9783642295744">
+                 <bdi>
+                  9783642295744
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=In-Memory+Data+Management%3A+Technology+and+Applications&amp;rft.pub=Springer+Science+%26+Business+Media&amp;rft.date=2012&amp;rft.isbn=9783642295744&amp;rft.aulast=Plattner&amp;rft.aufirst=Hasso&amp;rft.au=Zeier%2C+Alexander&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DHySCgzCApsEC%26q%3D%2522in-memory%2522&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.youtube.com/watch?v=R-sEqnOmDT4" rel="nofollow">
+                 "Processing-in-Memory Course: Lecture 1: Exploring the PIM Paradigm for Future Systems - Spring 2022"
+                </a>
+                .
+                <i>
+                 <a href="/wiki/YouTube" title="YouTube">
+                  YouTube
+                 </a>
+                </i>
+                . 10 March 2022.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=YouTube&amp;rft.atitle=Processing-in-Memory+Course%3A+Lecture+1%3A+Exploring+the+PIM+Paradigm+for+Future+Systems+-+Spring+2022&amp;rft.date=2022-03-10&amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DR-sEqnOmDT4&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFPark2023">
+                Park, Kate (2023-07-27).
+                <a class="external text" href="https://techcrunch.com/2023/07/27/samsung-extends-cut-in-memory-chip-production-will-focus-on-high-end-ai-chips-instead/" rel="nofollow">
+                 "Samsung extends cut in memory chip production, will focus on high-end AI chips instead"
+                </a>
+                .
+                <i>
+                 TechCrunch
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2023-12-05
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=TechCrunch&amp;rft.atitle=Samsung+extends+cut+in+memory+chip+production%2C+will+focus+on+high-end+AI+chips+instead&amp;rft.date=2023-07-27&amp;rft.aulast=Park&amp;rft.aufirst=Kate&amp;rft_id=https%3A%2F%2Ftechcrunch.com%2F2023%2F07%2F27%2Fsamsung-extends-cut-in-memory-chip-production-will-focus-on-high-end-ai-chips-instead%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFTanCaiOoiWong2015">
+                Tan, Kian-Lee; Cai, Qingchao; Ooi, Beng Chin; Wong, Weng-Fai; Yao, Chang; Zhang, Hao (2015-08-12).
+                <a class="external text" href="https://doi.org/10.1145/2814710.2814717" rel="nofollow">
+                 "In-memory Databases: Challenges and Opportunities From Software and Hardware Perspectives"
+                </a>
+                .
+                <i>
+                 ACM SIGMOD Record
+                </i>
+                .
+                <b>
+                 44
+                </b>
+                (2): 35–40.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1145%2F2814710.2814717" rel="nofollow">
+                 10.1145/2814710.2814717
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISSN_(identifier)" title="ISSN (identifier)">
+                 ISSN
+                </a>
+                <a class="external text" href="https://search.worldcat.org/issn/0163-5808" rel="nofollow">
+                 0163-5808
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:14238437" rel="nofollow">
+                 14238437
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+SIGMOD+Record&amp;rft.atitle=In-memory+Databases%3A+Challenges+and+Opportunities+From+Software+and+Hardware+Perspectives&amp;rft.volume=44&amp;rft.issue=2&amp;rft.pages=35-40&amp;rft.date=2015-08-12&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A14238437%23id-name%3DS2CID&amp;rft.issn=0163-5808&amp;rft_id=info%3Adoi%2F10.1145%2F2814710.2814717&amp;rft.aulast=Tan&amp;rft.aufirst=Kian-Lee&amp;rft.au=Cai%2C+Qingchao&amp;rft.au=Ooi%2C+Beng+Chin&amp;rft.au=Wong%2C+Weng-Fai&amp;rft.au=Yao%2C+Chang&amp;rft.au=Zhang%2C+Hao&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1145%2F2814710.2814717&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFFatemiehReshadinezhadTaherinejad2022">
+                Fatemieh, Seyed Erfan; Reshadinezhad, Mohammad Reza; Taherinejad, Nima (2022).
+                <a class="external text" href="https://ieeexplore.ieee.org/document/9937475" rel="nofollow">
+                 "Approximate In-Memory Computing using Memristive IMPLY Logic and its Application to Image Processing"
+                </a>
+                .
+                <i>
+                 2022 IEEE International Symposium on Circuits and Systems (ISCAS)
+                </i>
+                . pp. 3115–3119.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2FISCAS48785.2022.9937475" rel="nofollow">
+                 10.1109/ISCAS48785.2022.9937475
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-1-6654-8485-5" title="Special:BookSources/978-1-6654-8485-5">
+                 <bdi>
+                  978-1-6654-8485-5
+                 </bdi>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:253462291" rel="nofollow">
+                 253462291
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2023-12-05
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Approximate+In-Memory+Computing+using+Memristive+IMPLY+Logic+and+its+Application+to+Image+Processing&amp;rft.btitle=2022+IEEE+International+Symposium+on+Circuits+and+Systems+%28ISCAS%29&amp;rft.pages=3115-3119&amp;rft.date=2022&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A253462291%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FISCAS48785.2022.9937475&amp;rft.isbn=978-1-6654-8485-5&amp;rft.aulast=Fatemieh&amp;rft.aufirst=Seyed+Erfan&amp;rft.au=Reshadinezhad%2C+Mohammad+Reza&amp;rft.au=Taherinejad%2C+Nima&amp;rft_id=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F9937475&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.techtarget.com/searchbusinessanalytics/definition/processing-in-memory-PIM" rel="nofollow">
+                 "What is processing in memory (PIM) and how does it work?"
+                </a>
+                .
+                <i>
+                 Business Analytics
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2023-12-05
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Business+Analytics&amp;rft.atitle=What+is+processing+in+memory+%28PIM%29+and+how+does+it+work%3F&amp;rft_id=https%3A%2F%2Fwww.techtarget.com%2Fsearchbusinessanalytics%2Fdefinition%2Fprocessing-in-memory-PIM&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-9">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFGill2007">
+                Gill, John (2007).
+                <a class="external text" href="https://web.archive.org/web/20150924203158/http://www.highbeam.com/doc/1P3-1636785121.html" rel="nofollow">
+                 "Shifting the BI Paradigm with In-Memory Database Technologies"
+                </a>
+                .
+                <i>
+                 Business Intelligence Journal
+                </i>
+                .
+                <b>
+                 12
+                </b>
+                (2): 58–62. Archived from
+                <a class="external text" href="http://www.highbeam.com/doc/1P3-1636785121.html" rel="nofollow">
+                 the original
+                </a>
+                on 2015-09-24.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Business+Intelligence+Journal&amp;rft.atitle=Shifting+the+BI+Paradigm+with+In-Memory+Database+Technologies&amp;rft.volume=12&amp;rft.issue=2&amp;rft.pages=58-62&amp;rft.date=2007&amp;rft.aulast=Gill&amp;rft.aufirst=John&amp;rft_id=http%3A%2F%2Fwww.highbeam.com%2Fdoc%2F1P3-1636785121.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFEarls2011">
+                Earls, A (2011).
+                <a class="external text" href="https://web.archive.org/web/20120425232535/http://www.analyticsearches.com/site/files/776/66977/259607/579091/In-Memory_Analytics_11.10.11.pdf" rel="nofollow">
+                 <i>
+                  Tips on evaluating, deploying and managing in-memory analytics tools
+                 </i>
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                . Tableau. Archived from
+                <a class="external text" href="http://www.analyticsearches.com/site/files/776/66977/259607/579091/In-Memory_Analytics_11.10.11.pdf" rel="nofollow">
+                 the original
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                on 2012-04-25.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Tips+on+evaluating%2C+deploying+and+managing+in-memory+analytics+tools&amp;rft.pub=Tableau&amp;rft.date=2011&amp;rft.aulast=Earls&amp;rft.aufirst=A&amp;rft_id=http%3A%2F%2Fwww.analyticsearches.com%2Fsite%2Ffiles%2F776%2F66977%2F259607%2F579091%2FIn-Memory_Analytics_11.10.11.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-11">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://www.yellowfinbi.com/Document.i4?DocumentId=104879" rel="nofollow">
+                 "In_memory Analytics"
+                </a>
+                . yellowfin. p. 6.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=In_memory+Analytics&amp;rft.pages=6&amp;rft.pub=yellowfin&amp;rft_id=http%3A%2F%2Fwww.yellowfinbi.com%2FDocument.i4%3FDocumentId%3D104879&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-12">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-12">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFKote">
+                Kote, Sparjan.
+                <a class="external text" href="https://web.archive.org/web/20110424013629/http://www.infosysblogs.com/oracle/2011/03/in-memory_computing_in_busines.html" rel="nofollow">
+                 "In-memory computing in Business Intelligence"
+                </a>
+                . Archived from
+                <a class="external text" href="http://www.infosysblogs.com/oracle/2011/03/in-memory_computing_in_busines.html" rel="nofollow">
+                 the original
+                </a>
+                on April 24, 2011.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=In-memory+computing+in+Business+Intelligence&amp;rft.aulast=Kote&amp;rft.aufirst=Sparjan&amp;rft_id=http%3A%2F%2Fwww.infosysblogs.com%2Foracle%2F2011%2F03%2Fin-memory_computing_in_busines.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-13">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-13">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.gartner.com/en/documents/3753469" rel="nofollow">
+                 "Survey Analysis: Why BI and Analytics Adoption Remains Low and How to Expand Its Reach"
+                </a>
+                .
+                <i>
+                 Gartner
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2023-12-05
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Gartner&amp;rft.atitle=Survey+Analysis%3A+Why+BI+and+Analytics+Adoption+Remains+Low+and+How+to+Expand+Its+Reach&amp;rft_id=https%3A%2F%2Fwww.gartner.com%2Fen%2Fdocuments%2F3753469&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-14">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-14">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFUpchurchSterlingBrockman2004">
+                Upchurch, E.; Sterling, T.; Brockman, J. (2004).
+                <a class="external text" href="https://ieeexplore.ieee.org/document/1392942" rel="nofollow">
+                 "Analysis and Modeling of Advanced PIM Architecture Design Tradeoffs"
+                </a>
+                .
+                <a class="external text" href="https://resolver.caltech.edu/CaltechAUTHORS:20170103-172751346" rel="nofollow">
+                 <i>
+                  Proceedings of the ACM/IEEE SC2004 Conference
+                 </i>
+                </a>
+                . Pittsburgh, PA, USA: IEEE. p. 12.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2FSC.2004.11" rel="nofollow">
+                 10.1109/SC.2004.11
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-7695-2153-4" title="Special:BookSources/978-0-7695-2153-4">
+                 <bdi>
+                  978-0-7695-2153-4
+                 </bdi>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:9089044" rel="nofollow">
+                 9089044
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Analysis+and+Modeling+of+Advanced+PIM+Architecture+Design+Tradeoffs&amp;rft.btitle=Proceedings+of+the+ACM%2FIEEE+SC2004+Conference&amp;rft.place=Pittsburgh%2C+PA%2C+USA&amp;rft.pages=12&amp;rft.pub=IEEE&amp;rft.date=2004&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A9089044%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FSC.2004.11&amp;rft.isbn=978-0-7695-2153-4&amp;rft.aulast=Upchurch&amp;rft.aufirst=E.&amp;rft.au=Sterling%2C+T.&amp;rft.au=Brockman%2C+J.&amp;rft_id=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F1392942&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIn-memory+processing">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐gk7sz
+Cached time: 20240927012859
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.308 seconds
+Real time usage: 0.405 seconds
+Preprocessor visited node count: 1374/1000000
+Post‐expand include size: 38270/2097152 bytes
+Template argument size: 1555/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 4/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 53601/5000000 bytes
+Lua time usage: 0.198/10.000 seconds
+Lua memory usage: 6142104/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  371.088      1 -total
+ 46.00%  170.700      1 Template:Reflist
+ 26.87%   99.703      4 Template:Cite_journal
+ 26.63%   98.835      1 Template:Short_description
+ 18.00%   66.786      1 Template:Advert
+ 14.37%   53.322      1 Template:Ambox
+ 12.79%   47.465      2 Template:Pagetype
+ 10.21%   37.887      4 Template:Main_other
+  9.55%   35.453      1 Template:SDcat
+  6.32%   23.436      6 Template:Cite_web
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:33797289-0!canonical and timestamp 20240927012859 and revision id 1239112072. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=In-memory_processing&amp;oldid=1239112072">
+          https://en.wikipedia.org/w/index.php?title=In-memory_processing&amp;oldid=1239112072
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Computer_memory" title="Category:Computer memory">
+            Computer memory
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Database_management_systems" title="Category:Database management systems">
+            Database management systems
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_a_promotional_tone_from_November_2018" title="Category:Articles with a promotional tone from November 2018">
+            Articles with a promotional tone from November 2018
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_a_promotional_tone" title="Category:All articles with a promotional tone">
+            All articles with a promotional tone
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_failed_verification" title="Category:All articles with failed verification">
+            All articles with failed verification
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_failed_verification_from_July_2024" title="Category:Articles with failed verification from July 2024">
+            Articles with failed verification from July 2024
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">
+            All articles with unsourced statements
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_January_2016" title="Category:Articles with unsourced statements from January 2016">
+            Articles with unsourced statements from January 2016
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 7 August 2024, at 12:03
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=In-memory_processing&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-2qdmg","wgBackendResponseTime":134,"wgPageParseReport":{"limitreport":{"cputime":"0.308","walltime":"0.405","ppvisitednodes":{"value":1374,"limit":1000000},"postexpandincludesize":{"value":38270,"limit":2097152},"templateargumentsize":{"value":1555,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":53601,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  371.088      1 -total"," 46.00%  170.700      1 Template:Reflist"," 26.87%   99.703      4 Template:Cite_journal"," 26.63%   98.835      1 Template:Short_description"," 18.00%   66.786      1 Template:Advert"," 14.37%   53.322      1 Template:Ambox"," 12.79%   47.465      2 Template:Pagetype"," 10.21%   37.887      4 Template:Main_other","  9.55%   35.453      1 Template:SDcat","  6.32%   23.436      6 Template:Cite_web"]},"scribunto":{"limitreport-timeusage":{"value":"0.198","limit":"10.000"},"limitreport-memusage":{"value":6142104,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-gk7sz","timestamp":"20240927012859","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"In-memory processing","url":"https:\/\/en.wikipedia.org\/wiki\/In-memory_processing","sameAs":"http:\/\/www.wikidata.org\/entity\/Q6008583","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q6008583","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2011-11-19T07:42:54Z","dateModified":"2024-08-07T12:03:36Z","headline":"processing data tecnology"}
+  </script>
+ </body>
+</html>

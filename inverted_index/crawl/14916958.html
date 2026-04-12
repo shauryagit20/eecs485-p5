@@ -1,0 +1,2784 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Distributed database - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"45668de9-9782-42f1-a71a-240ada8f6cf3","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Distributed_database","wgTitle":"Distributed database","wgCurRevisionId":1237869130,"wgRevisionId":1237869130,"wgArticleId":41054,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Articles needing additional references from August 2010","All articles needing additional references","Articles lacking in-text citations from April 2013","All articles lacking in-text citations","Articles with multiple maintenance issues","Database management systems","Data management","Types of databases","Distributed computing architecture","Applications of distributed computing"],
+"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Distributed_database","wgRelevantArticleId":41054,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":8000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,
+"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q989016","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible",
+"mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Distributed database - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Distributed_database" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Distributed_database&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Distributed_database" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Distributed_database"/>
+  <meta eecs485_docid="14916958"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Distributed_database rootpage-Distributed_database skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Distributed+database" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Distributed+database" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Distributed+database" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Distributed+database" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Architecture">
+           <a class="vector-toc-link" href="#Architecture">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Architecture
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Architecture-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Architecture subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Architecture-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-List_of_shared-nothing_databases">
+             <a class="vector-toc-link" href="#List_of_shared-nothing_databases">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.1
+               </span>
+               <span>
+                List of shared-nothing databases
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-List_of_shared-nothing_databases-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-List_of_shared-disk_databases">
+             <a class="vector-toc-link" href="#List_of_shared-disk_databases">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.2
+               </span>
+               <span>
+                List of shared-disk databases
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-List_of_shared-disk_databases-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Distributed database
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 25 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-25" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          25 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="قاعدة بيانات موزعة" href="https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%B9%D8%AF%D8%A9_%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA_%D9%85%D9%88%D8%B2%D8%B9%D8%A9" hreflang="ar" lang="ar" title="قاعدة بيانات موزعة – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ba mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Башҡортса" data-language-local-name="Bashkir" data-title="Бүлгеләнгән бирелмәләр базаһы" href="https://ba.wikipedia.org/wiki/%D0%91%D2%AF%D0%BB%D0%B3%D0%B5%D0%BB%D3%99%D0%BD%D0%B3%D3%99%D0%BD_%D0%B1%D0%B8%D1%80%D0%B5%D0%BB%D0%BC%D3%99%D0%BB%D3%99%D1%80_%D0%B1%D0%B0%D0%B7%D0%B0%D2%BB%D1%8B" hreflang="ba" lang="ba" title="Бүлгеләнгән бирелмәләр базаһы – Bashkir">
+             <span>
+              Башҡортса
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-be mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Беларуская" data-language-local-name="Belarusian" data-title="Размеркаваная база даных" href="https://be.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%D0%BA%D0%B0%D0%B2%D0%B0%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B0%D0%B7%D0%B0_%D0%B4%D0%B0%D0%BD%D1%8B%D1%85" hreflang="be" lang="be" title="Размеркаваная база даных – Belarusian">
+             <span>
+              Беларуская
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-bg mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Български" data-language-local-name="Bulgarian" data-title="Разпределена база от данни" href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B0_%D0%B1%D0%B0%D0%B7%D0%B0_%D0%BE%D1%82_%D0%B4%D0%B0%D0%BD%D0%BD%D0%B8" hreflang="bg" lang="bg" title="Разпределена база от данни – Bulgarian">
+             <span>
+              Български
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Base de dades distribuïda" href="https://ca.wikipedia.org/wiki/Base_de_dades_distribu%C3%AFda" hreflang="ca" lang="ca" title="Base de dades distribuïda – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Verteiltes Datenbankmanagementsystem" href="https://de.wikipedia.org/wiki/Verteiltes_Datenbankmanagementsystem" hreflang="de" lang="de" title="Verteiltes Datenbankmanagementsystem – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-el mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Ελληνικά" data-language-local-name="Greek" data-title="Κατανεμημένες Βάσεις Δεδομένων" href="https://el.wikipedia.org/wiki/%CE%9A%CE%B1%CF%84%CE%B1%CE%BD%CE%B5%CE%BC%CE%B7%CE%BC%CE%AD%CE%BD%CE%B5%CF%82_%CE%92%CE%AC%CF%83%CE%B5%CE%B9%CF%82_%CE%94%CE%B5%CE%B4%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD" hreflang="el" lang="el" title="Κατανεμημένες Βάσεις Δεδομένων – Greek">
+             <span>
+              Ελληνικά
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Base de datos distribuida" href="https://es.wikipedia.org/wiki/Base_de_datos_distribuida" hreflang="es" lang="es" title="Base de datos distribuida – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-eu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Euskara" data-language-local-name="Basque" data-title="Datu-base banatu" href="https://eu.wikipedia.org/wiki/Datu-base_banatu" hreflang="eu" lang="eu" title="Datu-base banatu – Basque">
+             <span>
+              Euskara
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="پایگاه داده توزیع‌شده" href="https://fa.wikipedia.org/wiki/%D9%BE%D8%A7%DB%8C%DA%AF%D8%A7%D9%87_%D8%AF%D8%A7%D8%AF%D9%87_%D8%AA%D9%88%D8%B2%DB%8C%D8%B9%E2%80%8C%D8%B4%D8%AF%D9%87" hreflang="fa" lang="fa" title="پایگاه داده توزیع‌شده – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Base de données distribuée" href="https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es_distribu%C3%A9e" hreflang="fr" lang="fr" title="Base de données distribuée – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="분산 데이터베이스" href="https://ko.wikipedia.org/wiki/%EB%B6%84%EC%82%B0_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4" hreflang="ko" lang="ko" title="분산 데이터베이스 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Database distribuito" href="https://it.wikipedia.org/wiki/Database_distribuito" hreflang="it" lang="it" title="Database distribuito – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Magyar" data-language-local-name="Hungarian" data-title="Elosztott adatbázis" href="https://hu.wikipedia.org/wiki/Elosztott_adatb%C3%A1zis" hreflang="hu" lang="hu" title="Elosztott adatbázis – Hungarian">
+             <span>
+              Magyar
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-nl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="Dutch" data-title="Gedistribueerde database" href="https://nl.wikipedia.org/wiki/Gedistribueerde_database" hreflang="nl" lang="nl" title="Gedistribueerde database – Dutch">
+             <span>
+              Nederlands
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="分散データベース" href="https://ja.wikipedia.org/wiki/%E5%88%86%E6%95%A3%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" hreflang="ja" lang="ja" title="分散データベース – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Rozproszona baza danych" href="https://pl.wikipedia.org/wiki/Rozproszona_baza_danych" hreflang="pl" lang="pl" title="Rozproszona baza danych – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Banco de dados distribuído" href="https://pt.wikipedia.org/wiki/Banco_de_dados_distribu%C3%ADdo" hreflang="pt" lang="pt" title="Banco de dados distribuído – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ro mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Română" data-language-local-name="Romanian" data-title="Bază de date distribuită" href="https://ro.wikipedia.org/wiki/Baz%C4%83_de_date_distribuit%C4%83" hreflang="ro" lang="ro" title="Bază de date distribuită – Romanian">
+             <span>
+              Română
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Распределённая база данных" href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B0%D0%B7%D0%B0_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" hreflang="ru" lang="ru" title="Распределённая база данных – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="Finnish" data-title="Hajautettu tietokanta" href="https://fi.wikipedia.org/wiki/Hajautettu_tietokanta" hreflang="fi" lang="fi" title="Hajautettu tietokanta – Finnish">
+             <span>
+              Suomi
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Türkçe" data-language-local-name="Turkish" data-title="Dağıtık veritabanı yönetim sistemi" href="https://tr.wikipedia.org/wiki/Da%C4%9F%C4%B1t%C4%B1k_veritaban%C4%B1_y%C3%B6netim_sistemi" hreflang="tr" lang="tr" title="Dağıtık veritabanı yönetim sistemi – Turkish">
+             <span>
+              Türkçe
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Розподілена база даних" href="https://uk.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B7%D0%BF%D0%BE%D0%B4%D1%96%D0%BB%D0%B5%D0%BD%D0%B0_%D0%B1%D0%B0%D0%B7%D0%B0_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85" hreflang="uk" lang="uk" title="Розподілена база даних – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-vi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" data-title="Cơ sở dữ liệu phân tán" href="https://vi.wikipedia.org/wiki/C%C6%A1_s%E1%BB%9F_d%E1%BB%AF_li%E1%BB%87u_ph%C3%A2n_t%C3%A1n" hreflang="vi" lang="vi" title="Cơ sở dữ liệu phân tán – Vietnamese">
+             <span>
+              Tiếng Việt
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="分布式数据库" href="https://zh.wikipedia.org/wiki/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93" hreflang="zh" lang="zh" title="分布式数据库 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q989016#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Distributed_database" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Distributed_database" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Distributed_database">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Distributed_database&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Distributed_database&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Distributed_database">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Distributed_database&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Distributed_database&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Distributed_database" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Distributed_database" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Distributed_database&amp;oldid=1237869130" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Distributed_database&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Distributed_database&amp;id=1237869130&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDistributed_database">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDistributed_database">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q989016" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Distributed_database&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Distributed_database&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          A database in which data is stored across different physical locations.
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <style data-mw-deduplicate="TemplateStyles:r1211361296">
+          .mw-parser-output .multiple-issues-text{width:95%;margin:0.2em 0}.mw-parser-output .multiple-issues-text>.mw-collapsible-content{margin-top:0.3em}.mw-parser-output .compact-ambox .ambox{border:none;border-collapse:collapse;background-color:transparent;margin:0 0 0 1.6em!important;padding:0!important;width:auto;display:block}body.mediawiki .mw-parser-output .compact-ambox .ambox.mbox-small-left{font-size:100%;width:auto;margin:0}.mw-parser-output .compact-ambox .ambox .mbox-text{padding:0!important;margin:0!important}.mw-parser-output .compact-ambox .ambox .mbox-text-span{display:list-item;line-height:1.5em;list-style-type:disc}body.skin-minerva .mw-parser-output .multiple-issues-text>.mw-collapsible-toggle{display:none}.mw-parser-output .compact-ambox .ambox .mbox-image,.mw-parser-output .compact-ambox .ambox .mbox-imageright,.mw-parser-output .compact-ambox .ambox .mbox-empty-cell,.mw-parser-output .compact-ambox .hide-when-compact{display:none}
+         </style>
+         <table class="box-Multiple_issues plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <span>
+                <img alt="" class="mw-file-element" data-file-height="40" data-file-width="40" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" width="40"/>
+               </span>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              <div class="multiple-issues-text mw-collapsible">
+               <b>
+                This article has multiple issues.
+               </b>
+               Please help
+               <b>
+                <a href="/wiki/Special:EditPage/Distributed_database" title="Special:EditPage/Distributed database">
+                 improve it
+                </a>
+               </b>
+               or discuss these issues on the
+               <b>
+                <a href="/wiki/Talk:Distributed_database" title="Talk:Distributed database">
+                 talk page
+                </a>
+               </b>
+               .
+               <small>
+                <i>
+                 (
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove these messages
+                 </a>
+                 )
+                </i>
+               </small>
+               <div class="mw-collapsible-content">
+                <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+                <table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+                 <tbody>
+                  <tr>
+                   <td class="mbox-image">
+                    <div class="mbox-image-div">
+                     <span typeof="mw:File">
+                      <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                       <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+                      </a>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="mbox-text">
+                    <div class="mbox-text-span">
+                     This article
+                     <b>
+                      needs additional citations for
+                      <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                       verification
+                      </a>
+                     </b>
+                     .
+                     <span class="hide-when-compact">
+                      Please help
+                      <a href="/wiki/Special:EditPage/Distributed_database" title="Special:EditPage/Distributed database">
+                       improve this article
+                      </a>
+                      by
+                      <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                       adding citations to reliable sources
+                      </a>
+                      . Unsourced material may be challenged and removed.
+                      <br/>
+                      <small>
+                       <span class="plainlinks">
+                        <i>
+                         Find sources:
+                        </i>
+                        <a class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Distributed+database%22" rel="nofollow">
+                         "Distributed database"
+                        </a>
+                        –
+                        <a class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Distributed+database%22+-wikipedia&amp;tbs=ar:1" rel="nofollow">
+                         news
+                        </a>
+                        <b>
+                         ·
+                        </b>
+                        <a class="external text" href="https://www.google.com/search?&amp;q=%22Distributed+database%22&amp;tbs=bkt:s&amp;tbm=bks" rel="nofollow">
+                         newspapers
+                        </a>
+                        <b>
+                         ·
+                        </b>
+                        <a class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Distributed+database%22+-wikipedia" rel="nofollow">
+                         books
+                        </a>
+                        <b>
+                         ·
+                        </b>
+                        <a class="external text" href="https://scholar.google.com/scholar?q=%22Distributed+database%22" rel="nofollow">
+                         scholar
+                        </a>
+                        <b>
+                         ·
+                        </b>
+                        <a class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Distributed+database%22&amp;acc=on&amp;wc=on" rel="nofollow">
+                         JSTOR
+                        </a>
+                       </span>
+                      </small>
+                     </span>
+                     <span class="date-container">
+                      <i>
+                       (
+                       <span class="date">
+                        August 2010
+                       </span>
+                       )
+                      </i>
+                     </span>
+                     <span class="hide-when-compact">
+                      <i>
+                       (
+                       <small>
+                        <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                         Learn how and when to remove this message
+                        </a>
+                       </small>
+                       )
+                      </i>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+                <link href="mw-data:TemplateStyles:r1236091366" rel="mw-deduplicated-inline-style"/>
+                <table class="box-More_footnotes_needed plainlinks metadata ambox ambox-style ambox-More_footnotes_needed" role="presentation">
+                 <tbody>
+                  <tr>
+                   <td class="mbox-image">
+                    <div class="mbox-image-div">
+                     <span typeof="mw:File">
+                      <span>
+                       <img alt="" class="mw-file-element" data-file-height="48" data-file-width="48" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" width="40"/>
+                      </span>
+                     </span>
+                    </div>
+                   </td>
+                   <td class="mbox-text">
+                    <div class="mbox-text-span">
+                     This article includes a list of general
+                     <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">
+                      references
+                     </a>
+                     , but
+                     <b>
+                      it lacks sufficient corresponding
+                      <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">
+                       inline citations
+                      </a>
+                     </b>
+                     .
+                     <span class="hide-when-compact">
+                      Please help to
+                      <a href="/wiki/Wikipedia:WikiProject_Reliability" title="Wikipedia:WikiProject Reliability">
+                       improve
+                      </a>
+                      this article by
+                      <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">
+                       introducing
+                      </a>
+                      more precise citations.
+                     </span>
+                     <span class="date-container">
+                      <i>
+                       (
+                       <span class="date">
+                        April 2013
+                       </span>
+                       )
+                      </i>
+                     </span>
+                     <span class="hide-when-compact">
+                      <i>
+                       (
+                       <small>
+                        <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                         Learn how and when to remove this message
+                        </a>
+                       </small>
+                       )
+                      </i>
+                     </span>
+                    </div>
+                   </td>
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </div>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          A
+          <b>
+           distributed database
+          </b>
+          is a
+          <a href="/wiki/Database" title="Database">
+           database
+          </a>
+          in which data is stored across different physical locations.
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          It may be stored in multiple
+          <a class="mw-redirect" href="/wiki/Computers" title="Computers">
+           computers
+          </a>
+          located in the same physical location (e.g. a data centre); or maybe dispersed over a
+          <a href="/wiki/Computer_network" title="Computer network">
+           network
+          </a>
+          of interconnected computers. Unlike
+          <a href="/wiki/Parallel_computing" title="Parallel computing">
+           parallel systems
+          </a>
+          , in which the processors are tightly coupled and constitute a single database system, a distributed database system consists of loosely coupled sites that share no physical components.
+         </p>
+         <p>
+          System administrators can distribute collections of data (e.g. in a database) across multiple physical locations. A distributed database can reside on organised
+          <a class="mw-redirect" href="/wiki/Network_servers" title="Network servers">
+           network servers
+          </a>
+          or
+          <a class="mw-redirect" href="/wiki/Blockchain_(database)" title="Blockchain (database)">
+           decentralised independent computers
+          </a>
+          on the
+          <a href="/wiki/Internet" title="Internet">
+           Internet
+          </a>
+          , on corporate
+          <a class="mw-redirect" href="/wiki/Intranets" title="Intranets">
+           intranets
+          </a>
+          or
+          <a class="mw-redirect" href="/wiki/Extranets" title="Extranets">
+           extranets
+          </a>
+          , or on other organisation
+          <a href="/wiki/Computer_network" title="Computer network">
+           networks
+          </a>
+          . Because distributed databases store data across multiple computers, distributed databases may improve performance at
+          <a class="mw-redirect" href="/wiki/End-user" title="End-user">
+           end-user
+          </a>
+          worksites by allowing transactions to be processed on many machines, instead of being limited to one.
+          <sup class="reference" id="cite_ref-O'Brien_2-0">
+           <a href="#cite_note-O'Brien-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          Two processes ensure that the distributed databases remain up-to-date and current:
+          <a href="/wiki/Replication_(computing)" title="Replication (computing)">
+           replication
+          </a>
+          <sup class="reference" id="cite_ref-3">
+           <a href="#cite_note-3">
+            <span class="cite-bracket">
+             [
+            </span>
+            3
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          and
+          <a class="mw-redirect" href="/wiki/Data_transmission" title="Data transmission">
+           duplication
+          </a>
+          .
+         </p>
+         <ol>
+          <li>
+           Replication involves using specialized software that looks for changes in the distributive database. Once the changes have been identified, the replication process makes all the databases look the same. The replication process can be complex and time-consuming, depending on the size and number of the distributed databases. This process can also require much time and computer resources.
+          </li>
+          <li>
+           Duplication, on the other hand, has less complexity. It identifies one database as a
+           <a class="mw-redirect" href="/wiki/Master/slave_(technology)" title="Master/slave (technology)">
+            master
+           </a>
+           and then duplicates that database. The duplication process is normally done at a set time after hours. This is to ensure that each distributed location has the same data.  In the duplication process, users may change only the master database. This ensures that local data will not be overwritten.
+          </li>
+         </ol>
+         <p>
+          Both replication and duplication can keep the data current in all distributive locations.
+          <sup class="reference" id="cite_ref-O'Brien_2-1">
+           <a href="#cite_note-O'Brien-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          Besides distributed database replication and fragmentation, there are many other distributed database design technologies. For example, local autonomy, synchronous, and asynchronous distributed database technologies. The implementation of these technologies can and do depend on the needs of the business and the sensitivity/
+          <a href="/wiki/Confidentiality" title="Confidentiality">
+           confidentiality
+          </a>
+          of the data stored in the database and the price the business is willing to spend on ensuring
+          <a href="/wiki/Data_security" title="Data security">
+           data security
+          </a>
+          ,
+          <a href="/wiki/Data_consistency" title="Data consistency">
+           consistency
+          </a>
+          and
+          <a href="/wiki/Data_integrity" title="Data integrity">
+           integrity
+          </a>
+          .
+         </p>
+         <p>
+          When discussing access to distributed databases,
+          <a href="/wiki/Microsoft" title="Microsoft">
+           Microsoft
+          </a>
+          favors the term
+          <b>
+           distributed query
+          </b>
+          , which it defines in protocol-specific manner as "[a]ny SELECT, INSERT, UPDATE, or DELETE statement that references tables and rowsets from one or more external OLE DB data sources".
+          <sup class="reference" id="cite_ref-4">
+           <a href="#cite_note-4">
+            <span class="cite-bracket">
+             [
+            </span>
+            4
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <a href="/wiki/Oracle_Database" title="Oracle Database">
+           Oracle
+          </a>
+          provides a more language-centric view in which distributed queries and
+          <a href="/wiki/Distributed_transaction" title="Distributed transaction">
+           distributed transactions
+          </a>
+          form part of
+          <b>
+           distributed SQL
+          </b>
+          .
+          <sup class="reference" id="cite_ref-5">
+           <a href="#cite_note-5">
+            <span class="cite-bracket">
+             [
+            </span>
+            5
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Architecture">
+            Architecture
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Distributed_database&amp;action=edit&amp;section=1" title="Edit section: Architecture">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           There are 3 main architecture types for distributed databases:
+          </p>
+          <ul>
+           <li>
+            <a href="/wiki/Shared-memory_architecture" title="Shared-memory architecture">
+             Shared-memory
+            </a>
+            : very rarely used
+            <sup class="reference" id="cite_ref-:0_6-0">
+             <a href="#cite_note-:0-6">
+              <span class="cite-bracket">
+               [
+              </span>
+              6
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            <a href="/wiki/Shared-disk_architecture" title="Shared-disk architecture">
+             Shared-disk
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Shared-nothing_architecture" title="Shared-nothing architecture">
+             Shared-nothing
+            </a>
+           </li>
+          </ul>
+          <p>
+           In the shared-memory and shared-disk architectures, the data is not
+           <a href="/wiki/Partition_(database)" title="Partition (database)">
+            partitioned
+           </a>
+           , but it has to be in a shared-nothing architecture.
+          </p>
+          <p>
+           Shared-disk architecture is more common for
+           <a href="/wiki/Cloud_database" title="Cloud database">
+            cloud databases
+           </a>
+           than for on-premise.
+           <sup class="reference" id="cite_ref-:0_6-1">
+            <a href="#cite_note-:0-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Historically, shared-nothing was the first architecture to be implemented on the cloud, before the advent of shared cloud storage made shared-disk possible.
+          </p>
+          <p>
+           In practice, different layers of the database can have different architectures. It is now common to have a compute layer with a shared nothing architecture, and a storage layer with a shared disk architecture. This is for instance the case of
+           <a href="/wiki/Snowflake_Inc." title="Snowflake Inc.">
+            Snowflake
+           </a>
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           and
+           <a href="/wiki/Amazon_Aurora" title="Amazon Aurora">
+            AWS Aurora
+           </a>
+           .
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="List_of_shared-nothing_databases">
+            List of shared-nothing databases
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Distributed_database&amp;action=edit&amp;section=2" title="Edit section: List of shared-nothing databases">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/IBM_Db2" title="IBM Db2">
+             IBM Db2
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Greenplum" title="Greenplum">
+             Greenplum
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Netezza" title="Netezza">
+             Netezza
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Teradata" title="Teradata">
+             Teradata
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/TiDB" title="TiDB">
+             TiDB
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Vertica" title="Vertica">
+             Vertica
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="List_of_shared-disk_databases">
+            List of shared-disk databases
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Distributed_database&amp;action=edit&amp;section=3" title="Edit section: List of shared-disk databases">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Amazon_Aurora" title="Amazon Aurora">
+             AWS Aurora
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="https://neon.tech/" rel="nofollow">
+             Neon
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Snowflake_Inc." title="Snowflake Inc.">
+             Snowflake
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Distributed_database&amp;action=edit&amp;section=4" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Centralized_database" title="Centralized database">
+             Centralized database
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Data_grid" title="Data grid">
+             Data grid
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Distributed_cache" title="Distributed cache">
+             Distributed cache
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Distributed_data_store" title="Distributed data store">
+             Distributed data store
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Distributed_hash_table" title="Distributed hash table">
+             Distributed hash table
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Routing_protocol" title="Routing protocol">
+             Routing protocol
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Distributed_database&amp;action=edit&amp;section=5" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist reflist-columns references-column-width" style="column-width: 30em;">
+           <ol class="references">
+            <li id="cite_note-1">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-1">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <style data-mw-deduplicate="TemplateStyles:r1238218222">
+               .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+              </style>
+              <cite class="citation web cs1">
+               <a class="external text" href="http://www.its.bldrdoc.gov/fs-1037/dir-012/_1750.htm" rel="nofollow">
+                "Definition: distributed database"
+               </a>
+               .
+               <i>
+                www.its.bldrdoc.gov
+               </i>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.its.bldrdoc.gov&amp;rft.atitle=Definition%3A+distributed+database&amp;rft_id=http%3A%2F%2Fwww.its.bldrdoc.gov%2Ffs-1037%2Fdir-012%2F_1750.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADistributed+database">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-O'Brien-2">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-O'Brien_2-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-O'Brien_2-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              O'Brien, J. &amp; Marakas, G.M.(2008) Management Information Systems (pp. 185-189). New York, NY: McGraw-Hill Irwin
+             </span>
+            </li>
+            <li id="cite_note-3">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-3">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFOzsuValduriez1991">
+               Ozsu, M.T.; Valduriez, P. (1991).
+               <a class="external text" href="https://ieeexplore.ieee.org/document/84879" rel="nofollow">
+                "Distributed database systems: where are we now?"
+               </a>
+               .
+               <i>
+                Computer
+               </i>
+               .
+               <b>
+                24
+               </b>
+               (8): 68–78.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1109%2F2.84879" rel="nofollow">
+                10.1109/2.84879
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/ISSN_(identifier)" title="ISSN (identifier)">
+                ISSN
+               </a>
+               <a class="external text" href="https://search.worldcat.org/issn/1558-0814" rel="nofollow">
+                1558-0814
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                S2CID
+               </a>
+               <a class="external text" href="https://api.semanticscholar.org/CorpusID:5898169" rel="nofollow">
+                5898169
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computer&amp;rft.atitle=Distributed+database+systems%3A+where+are+we+now%3F&amp;rft.volume=24&amp;rft.issue=8&amp;rft.pages=68-78&amp;rft.date=1991&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A5898169%23id-name%3DS2CID&amp;rft.issn=1558-0814&amp;rft_id=info%3Adoi%2F10.1109%2F2.84879&amp;rft.aulast=Ozsu&amp;rft.aufirst=M.T.&amp;rft.au=Valduriez%2C+P.&amp;rft_id=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F84879&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADistributed+database">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-4">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-4">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://technet.microsoft.com/en-us/library/cc966484.aspx" rel="nofollow">
+                "TechNet Glossary"
+               </a>
+               . Microsoft. 28 January 2010
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2013-07-16
+                </span>
+               </span>
+               .
+               <q>
+                distributed query[:] Any SELECT, INSERT, UPDATE, or DELETE statement that references tables and rowsets from one or more external OLE DB data sources.
+               </q>
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=TechNet+Glossary&amp;rft.pub=Microsoft&amp;rft.date=2010-01-28&amp;rft_id=https%3A%2F%2Ftechnet.microsoft.com%2Fen-us%2Flibrary%2Fcc966484.aspx&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADistributed+database">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-5">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-5">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFAshdownKyte2011">
+               Ashdown, Lance; Kyte, Tom (September 2011).
+               <a class="external text" href="https://web.archive.org/web/20130715001716/http://docs.oracle.com/cd/E11882_01/server.112/e25789/toc.htm" rel="nofollow">
+                "Oracle Database Concepts, 11g Release 2 (11.2)"
+               </a>
+               . Oracle Corporation. Archived from
+               <a class="external text" href="http://docs.oracle.com/cd/E11882_01/server.112/e25789/toc.htm" rel="nofollow">
+                the original
+               </a>
+               on 2013-07-15
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2013-07-17
+                </span>
+               </span>
+               .
+               <q>
+                Distributed SQL synchronously accesses and updates data distributed among multiple databases. [...] Distributed SQL includes distributed queries and distributed transactions.
+               </q>
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Oracle+Database+Concepts%2C+11g+Release+2+%2811.2%29&amp;rft.pub=Oracle+Corporation&amp;rft.date=2011-09&amp;rft.aulast=Ashdown&amp;rft.aufirst=Lance&amp;rft.au=Kyte%2C+Tom&amp;rft_id=http%3A%2F%2Fdocs.oracle.com%2Fcd%2FE11882_01%2Fserver.112%2Fe25789%2Ftoc.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADistributed+database">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-:0-6">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-:0_6-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-:0_6-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFGarrod2023">
+               Garrod, Charlie (2023).
+               <a class="external text" href="https://15445.courses.cs.cmu.edu/spring2023/notes/21-distributed.pdf" rel="nofollow">
+                "Lecture #21: Introduction to Distributed Databases"
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               .
+               <i>
+                Carnegie Mellon University - School of Computer Science
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2023-03-12
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Carnegie+Mellon+University+-+School+of+Computer+Science&amp;rft.atitle=Lecture+%2321%3A+Introduction+to+Distributed+Databases&amp;rft.date=2023&amp;rft.aulast=Garrod&amp;rft.aufirst=Charlie&amp;rft_id=https%3A%2F%2F15445.courses.cs.cmu.edu%2Fspring2023%2Fnotes%2F21-distributed.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADistributed+database">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-7">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-7">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFKaushik2020">
+               Kaushik, Arun (2020-02-14).
+               <a class="external text" href="https://medium.com/@a.kaushik5587/what-makes-snowflake-so-powerful-its-the-hybrid-of-shared-disk-and-shared-nothing-architecture-5b4fa8f039fa" rel="nofollow">
+                "What Makes Snowflake So Powerful — It's the Hybrid of Shared Disk and Shared Nothing Architecture"
+               </a>
+               .
+               <i>
+                Medium
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2024-03-12
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Medium&amp;rft.atitle=What+Makes+Snowflake+So+Powerful+%E2%80%94+It%27s+the+Hybrid+of+Shared+Disk+and+Shared+Nothing+Architecture&amp;rft.date=2020-02-14&amp;rft.aulast=Kaushik&amp;rft.aufirst=Arun&amp;rft_id=https%3A%2F%2Fmedium.com%2F%40a.kaushik5587%2Fwhat-makes-snowflake-so-powerful-its-the-hybrid-of-shared-disk-and-shared-nothing-architecture-5b4fa8f039fa&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADistributed+database">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-8">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-8">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFBrahmadesamTernstrom2019">
+               Brahmadesam, Murali; Ternstrom, Tobias (2019).
+               <a class="external text" href="https://d1.awsstatic.com/events/reinvent/2019/REPEAT_Amazon_Aurora_storage_demystified_How_it_all_works_DAT309-R.pdf" rel="nofollow">
+                "Amazon Aurora storage demystified: How it all works"
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 2024-03-12
+                </span>
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Amazon+Aurora+storage+demystified%3A+How+it+all+works&amp;rft.date=2019&amp;rft.aulast=Brahmadesam&amp;rft.aufirst=Murali&amp;rft.au=Ternstrom%2C+Tobias&amp;rft_id=https%3A%2F%2Fd1.awsstatic.com%2Fevents%2Freinvent%2F2019%2FREPEAT_Amazon_Aurora_storage_demystified_How_it_all_works_DAT309-R.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADistributed+database">
+              </span>
+             </span>
+            </li>
+           </ol>
+          </div>
+          <ul>
+           <li>
+            M. T. Özsu and P. Valduriez,
+            <i>
+             Principles of Distributed Databases
+            </i>
+            (3rd edition) (2011), Springer,
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+             ISBN
+            </a>
+            <a href="/wiki/Special:BookSources/978-1-4419-8833-1" title="Special:BookSources/978-1-4419-8833-1">
+             978-1-4419-8833-1
+            </a>
+           </li>
+           <li>
+            Elmasri and Navathe,
+            <i>
+             Fundamentals of database systems
+            </i>
+            (3rd edition), Addison-Wesley Longman,
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+             ISBN
+            </a>
+            <a href="/wiki/Special:BookSources/0-201-54263-3" title="Special:BookSources/0-201-54263-3">
+             0-201-54263-3
+            </a>
+           </li>
+           <li>
+            <i>
+             Oracle Database Administrator's Guide 10g
+            </i>
+            (Release 1),
+            <a class="external free" href="http://docs.oracle.com/cd/B14117_01/server.101/b10739/ds_concepts.htm" rel="nofollow">
+             http://docs.oracle.com/cd/B14117_01/server.101/b10739/ds_concepts.htm
+            </a>
+           </li>
+          </ul>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Database_management_systems" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Databases" title="Template:Databases">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Databases" title="Template talk:Databases">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Databases" title="Special:EditPage/Template:Databases">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Database_management_systems" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Database" title="Database">
+                 Database management systems
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Types
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Object_database" title="Object database">
+                   Object-oriented
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Comparison_of_object_database_management_systems" title="Comparison of object database management systems">
+                     comparison
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Relational_database" title="Relational database">
+                   Relational
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/List_of_relational_database_management_systems" title="List of relational database management systems">
+                     list
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Comparison_of_relational_database_management_systems" title="Comparison of relational database management systems">
+                     comparison
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Key%E2%80%93value_database" title="Key–value database">
+                   Key–value
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Column-oriented_DBMS" title="Column-oriented DBMS">
+                   Column-oriented
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/List_of_column-oriented_DBMSes" title="List of column-oriented DBMSes">
+                     list
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Document-oriented_database" title="Document-oriented database">
+                   Document-oriented
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Wide-column_store" title="Wide-column store">
+                   Wide-column store
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Graph_database" title="Graph database">
+                   Graph
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/NoSQL" title="NoSQL">
+                   NoSQL
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/NewSQL" title="NewSQL">
+                   NewSQL
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/In-memory_database" title="In-memory database">
+                   In-memory
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/List_of_in-memory_databases" title="List of in-memory databases">
+                     list
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Multi-model_database" title="Multi-model database">
+                   Multi-model
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Comparison_of_multi-model_databases" title="Comparison of multi-model databases">
+                     comparison
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Cloud_database" title="Cloud database">
+                   Cloud
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Blockchain-based_database" title="Blockchain-based database">
+                   Blockchain-based database
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Concepts
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Database" title="Database">
+                   Database
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/ACID" title="ACID">
+                   ACID
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Armstrong%27s_axioms" title="Armstrong's axioms">
+                   Armstrong's axioms
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Codd%27s_12_rules" title="Codd's 12 rules">
+                   Codd's 12 rules
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/CAP_theorem" title="CAP theorem">
+                   CAP theorem
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Create,_read,_update_and_delete" title="Create, read, update and delete">
+                   CRUD
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Null_(SQL)" title="Null (SQL)">
+                   Null
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Candidate_key" title="Candidate key">
+                   Candidate key
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Foreign_key" title="Foreign key">
+                   Foreign key
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Superkey" title="Superkey">
+                   Superkey
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Surrogate_key" title="Surrogate key">
+                   Surrogate key
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Unique_key" title="Unique key">
+                   Unique key
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Objects
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Relation_(database)" title="Relation (database)">
+                   Relation
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Table_(database)" title="Table (database)">
+                     table
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Column_(database)" title="Column (database)">
+                     column
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Row_(database)" title="Row (database)">
+                     row
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/View_(SQL)" title="View (SQL)">
+                   View
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Database_transaction" title="Database transaction">
+                   Transaction
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Transaction_log" title="Transaction log">
+                   Transaction log
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Database_trigger" title="Database trigger">
+                   Trigger
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Database_index" title="Database index">
+                   Index
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Stored_procedure" title="Stored procedure">
+                   Stored procedure
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Cursor_(databases)" title="Cursor (databases)">
+                   Cursor
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Partition_(database)" title="Partition (database)">
+                   Partition
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Components
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Concurrency_control" title="Concurrency control">
+                   Concurrency control
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Data_dictionary" title="Data dictionary">
+                   Data dictionary
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Java_Database_Connectivity" title="Java Database Connectivity">
+                   JDBC
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/XQuery_API_for_Java" title="XQuery API for Java">
+                   XQJ
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Open_Database_Connectivity" title="Open Database Connectivity">
+                   ODBC
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Query_language" title="Query language">
+                   Query language
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Query_optimization" title="Query optimization">
+                   Query optimizer
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Query_Rewriting" title="Query Rewriting">
+                   Query rewriting system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Query_plan" title="Query plan">
+                   Query plan
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Functions
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Database_administration" title="Database administration">
+                   Administration
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Query_optimization" title="Query optimization">
+                   Query optimization
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Replication_(computing)#DATABASE" title="Replication (computing)">
+                   Replication
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Shard_(database_architecture)" title="Shard (database architecture)">
+                   Sharding
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Related topics
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Database_model" title="Database model">
+                   Database models
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Database_normalization" title="Database normalization">
+                   Database normalization
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Database_storage_structures" title="Database storage structures">
+                   Database storage
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Distributed database
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Federated_database_system" title="Federated database system">
+                   Federated database system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Referential_integrity" title="Referential integrity">
+                   Referential integrity
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Relational_algebra" title="Relational algebra">
+                   Relational algebra
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Relational_calculus" title="Relational calculus">
+                   Relational calculus
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Relational_model" title="Relational model">
+                   Relational model
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Object%E2%80%93relational_database" title="Object–relational database">
+                   Object–relational database
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Transaction_processing" title="Transaction processing">
+                   Transaction processing
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <td class="navbox-abovebelow" colspan="2">
+               <div>
+                <ul>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Category">
+                    <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Category:Database_management_systems" title="Category:Database management systems">
+                   Category
+                  </a>
+                 </li>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="Outline">
+                    <img alt="" class="mw-file-element" data-file-height="200" data-file-width="130" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Global_thinking.svg/10px-Global_thinking.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Global_thinking.svg/15px-Global_thinking.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/41/Global_thinking.svg/21px-Global_thinking.svg.png 2x" width="10"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Outline_of_databases" title="Outline of databases">
+                   Outline
+                  </a>
+                 </li>
+                 <li>
+                  <span class="noviewer" typeof="mw:File">
+                   <span title="WikiProject">
+                    <img alt="" class="mw-file-element" data-file-height="100" data-file-width="100" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/16px-People_icon.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/24px-People_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/32px-People_icon.svg.png 2x" width="16"/>
+                   </span>
+                  </span>
+                  <a href="/wiki/Wikipedia:WikiProject_Databases" title="Wikipedia:WikiProject Databases">
+                   WikiProject
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div class="navbox-styles">
+           <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+           <link href="mw-data:TemplateStyles:r1236075235" rel="mw-deduplicated-inline-style"/>
+           <style data-mw-deduplicate="TemplateStyles:r1038841319">
+            .mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}
+           </style>
+           <link href="mw-data:TemplateStyles:r1038841319" rel="mw-deduplicated-inline-style"/>
+           <link href="mw-data:TemplateStyles:r1038841319" rel="mw-deduplicated-inline-style"/>
+          </div>
+          <div aria-label="Navbox" class="navbox authority-control" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Help:Authority_control" title="Help:Authority control">
+                Authority control databases
+               </a>
+               : National
+               <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless">
+                <a href="https://www.wikidata.org/wiki/Q989016#identifiers" title="Edit this at Wikidata">
+                 <img alt="Edit this at Wikidata" class="mw-file-element" data-file-height="20" data-file-width="20" decoding="async" height="10" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" width="10"/>
+                </a>
+               </span>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <span class="uid">
+                   <span class="rt-commentedText tooltip tooltip-dotted" title="Distributed databases">
+                    <a class="external text" href="https://id.loc.gov/authorities/sh88000865" rel="nofollow">
+                     United States
+                    </a>
+                   </span>
+                  </span>
+                 </li>
+                 <li>
+                  <span class="uid">
+                   <span class="rt-commentedText tooltip tooltip-dotted" title="Bases de données réparties">
+                    <a class="external text" href="https://catalogue.bnf.fr/ark:/12148/cb11976418x" rel="nofollow">
+                     France
+                    </a>
+                   </span>
+                  </span>
+                 </li>
+                 <li>
+                  <span class="uid">
+                   <span class="rt-commentedText tooltip tooltip-dotted" title="Bases de données réparties">
+                    <a class="external text" href="https://data.bnf.fr/ark:/12148/cb11976418x" rel="nofollow">
+                     BnF data
+                    </a>
+                   </span>
+                  </span>
+                 </li>
+                 <li>
+                  <span class="uid">
+                   <a class="external text" href="http://olduli.nli.org.il/F/?func=find-b&amp;local_base=NLX10&amp;find_code=UID&amp;request=987007529961905171" rel="nofollow">
+                    Israel
+                   </a>
+                  </span>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐46f92
+Cached time: 20240926232210
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.471 seconds
+Real time usage: 0.607 seconds
+Preprocessor visited node count: 1851/1000000
+Post‐expand include size: 66961/2097152 bytes
+Template argument size: 10369/2097152 bytes
+Highest expansion depth: 18/100
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 50665/5000000 bytes
+Lua time usage: 0.319/10.000 seconds
+Lua memory usage: 6277403/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  540.841      1 -total
+ 27.97%  151.263      1 Template:Reflist
+ 21.99%  118.923      6 Template:Cite_web
+ 20.30%  109.804      1 Template:Multiple_issues
+ 20.16%  109.013      1 Template:Databases
+ 19.64%  106.205      1 Template:Navbox
+ 15.59%   84.292      1 Template:Short_description
+ 13.53%   73.190      2 Template:Ambox
+ 12.63%   68.287      1 Template:More_citations_needed
+ 10.52%   56.878      1 Template:Authority_control
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:41054-0!canonical and timestamp 20240926232210 and revision id 1237869130. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Distributed_database&amp;oldid=1237869130">
+          https://en.wikipedia.org/w/index.php?title=Distributed_database&amp;oldid=1237869130
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Database_management_systems" title="Category:Database management systems">
+            Database management systems
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Data_management" title="Category:Data management">
+            Data management
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Types_of_databases" title="Category:Types of databases">
+            Types of databases
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Distributed_computing_architecture" title="Category:Distributed computing architecture">
+            Distributed computing architecture
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Applications_of_distributed_computing" title="Category:Applications of distributed computing">
+            Applications of distributed computing
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_August_2010" title="Category:Articles needing additional references from August 2010">
+            Articles needing additional references from August 2010
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_lacking_in-text_citations_from_April_2013" title="Category:Articles lacking in-text citations from April 2013">
+            Articles lacking in-text citations from April 2013
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">
+            All articles lacking in-text citations
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_multiple_maintenance_issues" title="Category:Articles with multiple maintenance issues">
+            Articles with multiple maintenance issues
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 31 July 2024, at 22:00
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Distributed_database&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-xgx8r","wgBackendResponseTime":148,"wgPageParseReport":{"limitreport":{"cputime":"0.471","walltime":"0.607","ppvisitednodes":{"value":1851,"limit":1000000},"postexpandincludesize":{"value":66961,"limit":2097152},"templateargumentsize":{"value":10369,"limit":2097152},"expansiondepth":{"value":18,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":50665,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  540.841      1 -total"," 27.97%  151.263      1 Template:Reflist"," 21.99%  118.923      6 Template:Cite_web"," 20.30%  109.804      1 Template:Multiple_issues"," 20.16%  109.013      1 Template:Databases"," 19.64%  106.205      1 Template:Navbox"," 15.59%   84.292      1 Template:Short_description"," 13.53%   73.190      2 Template:Ambox"," 12.63%   68.287      1 Template:More_citations_needed"," 10.52%   56.878      1 Template:Authority_control"]},"scribunto":{"limitreport-timeusage":{"value":"0.319","limit":"10.000"},"limitreport-memusage":{"value":6277403,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-46f92","timestamp":"20240926232210","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Distributed database","url":"https:\/\/en.wikipedia.org\/wiki\/Distributed_database","sameAs":"http:\/\/www.wikidata.org\/entity\/Q989016","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q989016","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-02-25T15:51:15Z","dateModified":"2024-07-31T22:00:48Z","headline":"database in which data is stored across different physical locations"}
+  </script>
+ </body>
+</html>

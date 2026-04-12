@@ -1,0 +1,3917 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Data engineering - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"72b64658-5f1f-4d92-951f-d7783cc62fd2","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Data_engineering","wgTitle":"Data engineering","wgCurRevisionId":1243290325,"wgRevisionId":1243290325,"wgArticleId":455220,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 errors: missing periodical","Articles with short description","Short description is different from Wikidata","Use mdy dates from August 2021","Commons category link is locally defined","Webarchive template wayback links","Software development process","Information systems","Data management"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Data_engineering","wgRelevantArticleId":455220,"wgIsProbablyEditable":true,
+"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Information_technology_engineering","wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgULSCurrentAutonym":"English","wgInternalRedirectTargetUrl":"/wiki/Data_engineering","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q104659521",
+"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp",
+"ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Data engineering - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Data_engineering" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Data_engineering&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Data_engineering" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Information_technology_engineering"/>
+  <meta eecs485_docid="53193800"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Data_engineering rootpage-Data_engineering skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Data+engineering" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Data+engineering" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Data+engineering" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Data+engineering" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-History">
+           <a class="vector-toc-link" href="#History">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              History
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-History-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Tools">
+           <a class="vector-toc-link" href="#Tools">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Tools
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Tools-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Tools subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Tools-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Compute">
+             <a class="vector-toc-link" href="#Compute">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.1
+               </span>
+               <span>
+                Compute
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Compute-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Storage">
+             <a class="vector-toc-link" href="#Storage">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.2
+               </span>
+               <span>
+                Storage
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Storage-sublist">
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Databases">
+               <a class="vector-toc-link" href="#Databases">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  2.2.1
+                 </span>
+                 <span>
+                  Databases
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Databases-sublist">
+               </ul>
+              </li>
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Data_warehouses">
+               <a class="vector-toc-link" href="#Data_warehouses">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  2.2.2
+                 </span>
+                 <span>
+                  Data warehouses
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Data_warehouses-sublist">
+               </ul>
+              </li>
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Data_lakes">
+               <a class="vector-toc-link" href="#Data_lakes">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  2.2.3
+                 </span>
+                 <span>
+                  Data lakes
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Data_lakes-sublist">
+               </ul>
+              </li>
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-Files">
+               <a class="vector-toc-link" href="#Files">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  2.2.4
+                 </span>
+                 <span>
+                  Files
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-Files-sublist">
+               </ul>
+              </li>
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Management">
+             <a class="vector-toc-link" href="#Management">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.3
+               </span>
+               <span>
+                Management
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Management-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Lifecycle">
+           <a class="vector-toc-link" href="#Lifecycle">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Lifecycle
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Lifecycle-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Lifecycle subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Lifecycle-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Business_planning">
+             <a class="vector-toc-link" href="#Business_planning">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.1
+               </span>
+               <span>
+                Business planning
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Business_planning-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Systems_design">
+             <a class="vector-toc-link" href="#Systems_design">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.2
+               </span>
+               <span>
+                Systems design
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Systems_design-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Data_modeling">
+             <a class="vector-toc-link" href="#Data_modeling">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.3
+               </span>
+               <span>
+                Data modeling
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Data_modeling-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Roles">
+           <a class="vector-toc-link" href="#Roles">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Roles
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Roles-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Roles subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Roles-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Data_engineer">
+             <a class="vector-toc-link" href="#Data_engineer">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.1
+               </span>
+               <span>
+                Data engineer
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Data_engineer-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Data_scientist">
+             <a class="vector-toc-link" href="#Data_scientist">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.2
+               </span>
+               <span>
+                Data scientist
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Data_scientist-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Further_reading">
+           <a class="vector-toc-link" href="#Further_reading">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              7
+             </span>
+             <span>
+              Further reading
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Further_reading-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              8
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Data engineering
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 3 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-3" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          3 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="هندسة البيانات" href="https://ar.wikipedia.org/wiki/%D9%87%D9%86%D8%AF%D8%B3%D8%A9_%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA" hreflang="ar" lang="ar" title="هندسة البيانات – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="IsiZulu" data-language-local-name="Zulu" data-title="Umngcikisho wemininingo" href="https://zu.wikipedia.org/wiki/Umngcikisho_wemininingo" hreflang="zu" lang="zu" title="Umngcikisho wemininingo – Zulu">
+             <span>
+              IsiZulu
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Engenharia de dados" href="https://pt.wikipedia.org/wiki/Engenharia_de_dados" hreflang="pt" lang="pt" title="Engenharia de dados – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q104659521#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Data_engineering" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Data_engineering" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Data_engineering">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Data_engineering&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Data_engineering&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Data_engineering">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Data_engineering&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Data_engineering&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Data_engineering" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Data_engineering" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Data_engineering&amp;oldid=1243290325" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Data_engineering&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Data_engineering&amp;id=1243290325&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FData_engineering">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FData_engineering">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q104659521" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Data_engineering&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Data_engineering&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+         <span class="mw-redirectedfrom">
+          (Redirected from
+          <a class="mw-redirect" href="/w/index.php?title=Information_technology_engineering&amp;redirect=no" title="Information technology engineering">
+           Information technology engineering
+          </a>
+          )
+         </span>
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          Not to be confused with
+          <a class="mw-redirect" href="/wiki/Information_Engineering" title="Information Engineering">
+           Information Engineering
+          </a>
+          .
+         </div>
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Software engineering approach to designing and developing information systems
+         </div>
+         <p>
+          <b>
+           Data engineering
+          </b>
+          refers to the building of
+          <a href="/wiki/System" title="System">
+           systems
+          </a>
+          to enable the collection and usage of
+          <a href="/wiki/Data" title="Data">
+           data
+          </a>
+          . This data is usually used to enable subsequent
+          <a class="mw-redirect" href="/wiki/Data_analytics" title="Data analytics">
+           analysis
+          </a>
+          and
+          <a href="/wiki/Data_science" title="Data science">
+           data science
+          </a>
+          , which often involves
+          <a href="/wiki/Machine_learning" title="Machine learning">
+           machine learning
+          </a>
+          .
+          <sup class="reference" id="cite_ref-whatis1_1-0">
+           <a href="#cite_note-whatis1-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <sup class="reference" id="cite_ref-whatis2_2-0">
+           <a href="#cite_note-whatis2-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          Making the data usable usually involves substantial
+          <a href="/wiki/Computer" title="Computer">
+           compute
+          </a>
+          and
+          <a href="/wiki/Computer_data_storage" title="Computer data storage">
+           storage
+          </a>
+          , as well as
+          <a href="/wiki/Data_processing" title="Data processing">
+           data processing
+          </a>
+          .
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="History">
+            History
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=1" title="Edit section: History">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Around the 1970s/1980s the term
+           <b>
+            information engineering methodology
+           </b>
+           (IEM) was created to describe
+           <a href="/wiki/Database_design" title="Database design">
+            database design
+           </a>
+           and the use of
+           <a href="/wiki/Software" title="Software">
+            software
+           </a>
+           for data analysis and processing.
+           <sup class="reference" id="cite_ref-hist1_3-0">
+            <a href="#cite_note-hist1-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-ScienceDirect_4-0">
+            <a href="#cite_note-ScienceDirect-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           These techniques were intended to be used by
+           <a href="/wiki/Database_administrator" title="Database administrator">
+            database administrators
+           </a>
+           (DBAs) and by
+           <a href="/wiki/Systems_analyst" title="Systems analyst">
+            systems analysts
+           </a>
+           based upon an understanding of the operational processing needs of organizations for the 1980s. In particular, these techniques were meant to help bridge the gap between strategic business planning and information systems. A key early contributor (often called the "father" of information engineering methodology) was the Australian
+           <a href="/wiki/Clive_Finkelstein" title="Clive Finkelstein">
+            Clive Finkelstein
+           </a>
+           , who wrote several articles about it between 1976 and 1980, and also co-authored an influential
+           <a class="new" href="/w/index.php?title=Savant_Institute&amp;action=edit&amp;redlink=1" title="Savant Institute (page does not exist)">
+            Savant Institute
+           </a>
+           report on it with James Martin.
+           <sup class="reference" id="cite_ref-5">
+            <a href="#cite_note-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-6">
+            <a href="#cite_note-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Over the next few years, Finkelstein continued work in a more business-driven direction, which was intended to address a rapidly changing business environment; Martin continued work in a more data processing-driven direction. From 1983 to 1987, Charles M. Richter, guided by Clive Finkelstein, played a significant role in revamping IEM as well as helping to design the IEM software product (user data), which helped automate IEM.
+          </p>
+          <p>
+           In the early 2000s, the data and data tooling was generally held by the
+           <a href="/wiki/Information_technology" title="Information technology">
+            information technology
+           </a>
+           (IT) teams in most companies.
+           <sup class="reference" id="cite_ref-hist2_8-0">
+            <a href="#cite_note-hist2-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Other teams then used data for their work (e.g. reporting), and there was usually little overlap in data skillset between these parts of the business.
+          </p>
+          <p>
+           In the early 2010s, with the rise of the
+           <a href="/wiki/Internet" title="Internet">
+            internet
+           </a>
+           , the massive increase in data volumes, velocity, and variety led to the term
+           <a href="/wiki/Big_data" title="Big data">
+            big data
+           </a>
+           to describe the data itself, and data-driven tech companies like
+           <a href="/wiki/Facebook" title="Facebook">
+            Facebook
+           </a>
+           and
+           <a href="/wiki/Airbnb" title="Airbnb">
+            Airbnb
+           </a>
+           started using the phrase
+           <b>
+            data engineer
+           </b>
+           .
+           <sup class="reference" id="cite_ref-hist1_3-1">
+            <a href="#cite_note-hist1-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-hist2_8-1">
+            <a href="#cite_note-hist2-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Due to the new scale of the data, major firms like
+           <a href="/wiki/Google" title="Google">
+            Google
+           </a>
+           , Facebook,
+           <a href="/wiki/Amazon_(company)" title="Amazon (company)">
+            Amazon
+           </a>
+           ,
+           <a href="/wiki/Apple_Inc." title="Apple Inc.">
+            Apple
+           </a>
+           ,
+           <a href="/wiki/Microsoft" title="Microsoft">
+            Microsoft
+           </a>
+           , and
+           <a href="/wiki/Netflix" title="Netflix">
+            Netflix
+           </a>
+           started to move away from traditional
+           <a class="mw-redirect" href="/wiki/Extract_transform_load" title="Extract transform load">
+            ETL
+           </a>
+           and storage techniques. They started creating
+           <b>
+            data engineering
+           </b>
+           , a type of
+           <a href="/wiki/Software_engineering" title="Software engineering">
+            software engineering
+           </a>
+           focused on data, and in particular
+           <a href="/wiki/Data_infrastructure" title="Data infrastructure">
+            infrastructure
+           </a>
+           ,
+           <a href="/wiki/Data_warehouse" title="Data warehouse">
+            warehousing
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Data_protection" title="Data protection">
+            data protection
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Cybersecurity" title="Cybersecurity">
+            cybersecurity
+           </a>
+           ,
+           <a href="/wiki/Data_mining" title="Data mining">
+            mining
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Data_modelling" title="Data modelling">
+            modelling
+           </a>
+           ,
+           <a href="/wiki/Data_processing" title="Data processing">
+            processing
+           </a>
+           , and
+           <a href="/wiki/Metadata" title="Metadata">
+            metadata
+           </a>
+           management.
+           <sup class="reference" id="cite_ref-hist1_3-2">
+            <a href="#cite_note-hist1-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-hist2_8-2">
+            <a href="#cite_note-hist2-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           This change in approach was particularly focused on
+           <a href="/wiki/Cloud_computing" title="Cloud computing">
+            cloud computing
+           </a>
+           .
+           <sup class="reference" id="cite_ref-hist2_8-3">
+            <a href="#cite_note-hist2-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Data started to be handled and used by many parts of the business, such as
+           <a href="/wiki/Sales" title="Sales">
+            sales
+           </a>
+           and
+           <a href="/wiki/Marketing" title="Marketing">
+            marketing
+           </a>
+           , and not just IT.
+           <sup class="reference" id="cite_ref-hist2_8-4">
+            <a href="#cite_note-hist2-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Tools">
+            Tools
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=2" title="Edit section: Tools">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Compute">
+            Compute
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=3" title="Edit section: Compute">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           High-performance computing is critical for the processing and analysis of data. One particularly widespread approach to computing for data engineering is
+           <a href="/wiki/Dataflow_programming" title="Dataflow programming">
+            dataflow programming
+           </a>
+           , in which the computation is represented as a
+           <a href="/wiki/Directed_graph" title="Directed graph">
+            directed graph
+           </a>
+           (dataflow graph); nodes are the operations, and edges represent the flow of data.
+           <sup class="reference" id="cite_ref-sigops_9-0">
+            <a href="#cite_note-sigops-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Popular implementations include
+           <a href="/wiki/Apache_Spark" title="Apache Spark">
+            Apache Spark
+           </a>
+           , and the
+           <a href="/wiki/Deep_learning" title="Deep learning">
+            deep learning
+           </a>
+           specific
+           <a href="/wiki/TensorFlow" title="TensorFlow">
+            TensorFlow
+           </a>
+           .
+           <sup class="reference" id="cite_ref-sigops_9-1">
+            <a href="#cite_note-sigops-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-sparkpaper_10-0">
+            <a href="#cite_note-sparkpaper-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-tensorflow_paper_11-0">
+            <a href="#cite_note-tensorflow_paper-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           More recent implementations, such as
+           <a class="new" href="/w/index.php?title=Differential_Dataflow&amp;action=edit&amp;redlink=1" title="Differential Dataflow (page does not exist)">
+            Differential
+           </a>
+           /
+           <a class="new" href="/w/index.php?title=Timely_Dataflow&amp;action=edit&amp;redlink=1" title="Timely Dataflow (page does not exist)">
+            Timely
+           </a>
+           Dataflow, have used
+           <a href="/wiki/Incremental_computing" title="Incremental computing">
+            incremental computing
+           </a>
+           for much more efficient data processing.
+           <sup class="reference" id="cite_ref-sigops_9-2">
+            <a href="#cite_note-sigops-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-differential-paper_12-0">
+            <a href="#cite_note-differential-paper-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-differential-github_13-0">
+            <a href="#cite_note-differential-github-13">
+             <span class="cite-bracket">
+              [
+             </span>
+             13
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Storage">
+            Storage
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=4" title="Edit section: Storage">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Data is stored in a variety of ways, one of the key deciding factors is in how the data will be used.
+Data engineers optimize data storage and processing systems to reduce costs. They use data compression, partitioning, and archiving.
+          </p>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Databases">
+            Databases
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=5" title="Edit section: Databases">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           If the data is structured and some form of
+           <a href="/wiki/Online_transaction_processing" title="Online transaction processing">
+            online transaction processing
+           </a>
+           is required, then
+           <a class="mw-redirect" href="/wiki/Databases" title="Databases">
+            databases
+           </a>
+           are generally used.
+           <sup class="reference" id="cite_ref-mit_14-0">
+            <a href="#cite_note-mit-14">
+             <span class="cite-bracket">
+              [
+             </span>
+             14
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Originally mostly
+           <a href="/wiki/Relational_database" title="Relational database">
+            relational databases
+           </a>
+           were used, with strong
+           <a href="/wiki/ACID" title="ACID">
+            ACID
+           </a>
+           transaction correctness guarantees; most relational databases use
+           <a href="/wiki/SQL" title="SQL">
+            SQL
+           </a>
+           for their queries. However, with the growth of data in the 2010s,
+           <a href="/wiki/NoSQL" title="NoSQL">
+            NoSQL
+           </a>
+           databases have also become popular since they
+           <a class="mw-redirect" href="/wiki/Horizontal_scaling#Horizontal_and_vertical_scaling" title="Horizontal scaling">
+            horizontally scaled
+           </a>
+           more easily than relational databases by giving up the ACID transaction guarantees, as well as reducing the
+           <a class="mw-redirect" href="/wiki/Object-relational_impedance_mismatch" title="Object-relational impedance mismatch">
+            object-relational impedance mismatch
+           </a>
+           .
+           <sup class="reference" id="cite_ref-leavitt_15-0">
+            <a href="#cite_note-leavitt-15">
+             <span class="cite-bracket">
+              [
+             </span>
+             15
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           More recently,
+           <a href="/wiki/NewSQL" title="NewSQL">
+            NewSQL
+           </a>
+           databases — which attempt to allow horizontal scaling while retaining ACID guarantees — have become popular.
+           <sup class="reference" id="cite_ref-aslett2012_16-0">
+            <a href="#cite_note-aslett2012-16">
+             <span class="cite-bracket">
+              [
+             </span>
+             16
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-sigmodrecord_17-0">
+            <a href="#cite_note-sigmodrecord-17">
+             <span class="cite-bracket">
+              [
+             </span>
+             17
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-18">
+            <a href="#cite_note-18">
+             <span class="cite-bracket">
+              [
+             </span>
+             18
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-high_scalability_19-0">
+            <a href="#cite_note-high_scalability-19">
+             <span class="cite-bracket">
+              [
+             </span>
+             19
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Data_warehouses">
+            Data warehouses
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=6" title="Edit section: Data warehouses">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Data_warehouse" title="Data warehouse">
+            Data warehouse
+           </a>
+          </div>
+          <p>
+           If the data is structured and
+           <a href="/wiki/Online_analytical_processing" title="Online analytical processing">
+            online analytical processing
+           </a>
+           is required (but not online transaction processing), then
+           <a href="/wiki/Data_warehouse" title="Data warehouse">
+            data warehouses
+           </a>
+           are a main choice.
+           <sup class="reference" id="cite_ref-ibm1_20-0">
+            <a href="#cite_note-ibm1-20">
+             <span class="cite-bracket">
+              [
+             </span>
+             20
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           They enable data analysis, mining, and
+           <a href="/wiki/Artificial_intelligence" title="Artificial intelligence">
+            artificial intelligence
+           </a>
+           on a much larger scale than databases can allow,
+           <sup class="reference" id="cite_ref-ibm1_20-1">
+            <a href="#cite_note-ibm1-20">
+             <span class="cite-bracket">
+              [
+             </span>
+             20
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           and indeed data often flow from databases into data warehouses.
+           <sup class="reference" id="cite_ref-aws1_21-0">
+            <a href="#cite_note-aws1-21">
+             <span class="cite-bracket">
+              [
+             </span>
+             21
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <a href="/wiki/Business_analyst" title="Business analyst">
+            Business analysts
+           </a>
+           , data engineers, and data scientists can access data warehouses using tools such as SQL or
+           <a href="/wiki/Business_intelligence" title="Business intelligence">
+            business intelligence
+           </a>
+           software.
+           <sup class="reference" id="cite_ref-aws1_21-1">
+            <a href="#cite_note-aws1-21">
+             <span class="cite-bracket">
+              [
+             </span>
+             21
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Data_lakes">
+            Data lakes
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=7" title="Edit section: Data lakes">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           A
+           <a href="/wiki/Data_lake" title="Data lake">
+            data lake
+           </a>
+           is a centralized repository for storing, processing, and securing large volumes of data. A data lake can contain
+           <a class="mw-redirect" href="/wiki/Structured_data" title="Structured data">
+            structured data
+           </a>
+           from
+           <a href="/wiki/Relational_database" title="Relational database">
+            relational databases
+           </a>
+           ,
+           <a href="/wiki/Semi-structured_data" title="Semi-structured data">
+            semi-structured data
+           </a>
+           ,
+           <a href="/wiki/Unstructured_data" title="Unstructured data">
+            unstructured data
+           </a>
+           , and
+           <a href="/wiki/Binary_data" title="Binary data">
+            binary data
+           </a>
+           . A data lake can be created on premises or in a cloud-based environment using the services from
+           <a href="/wiki/Cloud_computing" title="Cloud computing">
+            public cloud
+           </a>
+           vendors such as
+           <a href="/wiki/Amazon_(company)" title="Amazon (company)">
+            Amazon
+           </a>
+           ,
+           <a href="/wiki/Microsoft" title="Microsoft">
+            Microsoft
+           </a>
+           , or
+           <a href="/wiki/Google" title="Google">
+            Google
+           </a>
+           .
+          </p>
+          <div class="mw-heading mw-heading4">
+           <h4 id="Files">
+            Files
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=8" title="Edit section: Files">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           If the data is less structured, then often they are just stored as
+           <a href="/wiki/Computer_file" title="Computer file">
+            files
+           </a>
+           . There are several options:
+          </p>
+          <ul>
+           <li>
+            <a href="/wiki/File_system" title="File system">
+             File systems
+            </a>
+            represent data hierarchically in nested folders.
+            <sup class="reference" id="cite_ref-redhat1_22-0">
+             <a href="#cite_note-redhat1-22">
+              <span class="cite-bracket">
+               [
+              </span>
+              22
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+           <li>
+            <a class="mw-redirect" href="/wiki/Block_storage" title="Block storage">
+             Block storage
+            </a>
+            splits data into regularly sized chunks;
+            <sup class="reference" id="cite_ref-redhat1_22-1">
+             <a href="#cite_note-redhat1-22">
+              <span class="cite-bracket">
+               [
+              </span>
+              22
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            this often matches up with (virtual)
+            <a class="mw-redirect" href="/wiki/Hard_drives" title="Hard drives">
+             hard drives
+            </a>
+            or
+            <a class="mw-redirect" href="/wiki/Solid_state_drives" title="Solid state drives">
+             solid state drives
+            </a>
+            .
+           </li>
+           <li>
+            <a href="/wiki/Object_storage" title="Object storage">
+             Object storage
+            </a>
+            manages data using
+            <a href="/wiki/Metadata" title="Metadata">
+             metadata
+            </a>
+            ;
+            <sup class="reference" id="cite_ref-redhat1_22-2">
+             <a href="#cite_note-redhat1-22">
+              <span class="cite-bracket">
+               [
+              </span>
+              22
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+            often each file is assigned a key such as a
+            <a class="mw-redirect" href="/wiki/UUID" title="UUID">
+             UUID
+            </a>
+            .
+            <sup class="reference" id="cite_ref-s3_23-0">
+             <a href="#cite_note-s3-23">
+              <span class="cite-bracket">
+               [
+              </span>
+              23
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Management">
+            Management
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=9" title="Edit section: Management">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The number and variety of different data processes and storage locations can become overwhelming for users. This inspired the usage of a
+           <a href="/wiki/Workflow_management_system" title="Workflow management system">
+            workflow management system
+           </a>
+           (e.g.
+           <a href="/wiki/Apache_Airflow" title="Apache Airflow">
+            Airflow
+           </a>
+           ) to allow the data tasks to be specified, created, and monitored.
+           <sup class="reference" id="cite_ref-airflow_24-0">
+            <a href="#cite_note-airflow-24">
+             <span class="cite-bracket">
+              [
+             </span>
+             24
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The tasks are often specified as a
+           <a href="/wiki/Directed_acyclic_graph" title="Directed acyclic graph">
+            directed acyclic graph (DAG)
+           </a>
+           .
+           <sup class="reference" id="cite_ref-airflow_24-1">
+            <a href="#cite_note-airflow-24">
+             <span class="cite-bracket">
+              [
+             </span>
+             24
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Lifecycle">
+            Lifecycle
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=10" title="Edit section: Lifecycle">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Business_planning">
+            Business planning
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=11" title="Edit section: Business planning">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Business objectives that executives set for what's to come are characterized in key business plans, with their more noteworthy definition in tactical business plans and implementation in operational business plans. Most businesses today recognize the fundamental need to grow a business plan that follows this strategy. It is often difficult to implement these plans because of the lack of transparency at the tactical and operational degrees of organizations. This kind of planning requires feedback to allow for early correction of problems that are due to miscommunication and misinterpretation of the business plan.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Systems_design">
+            Systems design
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=12" title="Edit section: Systems design">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The design of data systems involves several components such as architecting data platforms, and designing data stores.
+           <sup class="reference" id="cite_ref-course_25-0">
+            <a href="#cite_note-course-25">
+             <span class="cite-bracket">
+              [
+             </span>
+             25
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-26">
+            <a href="#cite_note-26">
+             <span class="cite-bracket">
+              [
+             </span>
+             26
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Data_modeling">
+            Data modeling
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=13" title="Edit section: Data modeling">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a class="mw-redirect" href="/wiki/Data_modelling" title="Data modelling">
+            Data modelling
+           </a>
+          </div>
+          <p>
+           This is the process of producing a
+           <a href="/wiki/Data_model" title="Data model">
+            data model
+           </a>
+           , an
+           <a class="mw-redirect" href="/wiki/Abstract_model" title="Abstract model">
+            abstract model
+           </a>
+           to describe the data and relationships between different parts of the data.
+           <sup class="reference" id="cite_ref-model1_27-0">
+            <a href="#cite_note-model1-27">
+             <span class="cite-bracket">
+              [
+             </span>
+             27
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Roles">
+            Roles
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=14" title="Edit section: Roles">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Data_engineer">
+            Data engineer
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=15" title="Edit section: Data engineer">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           A
+           <b>
+            data engineer
+           </b>
+           is a type of software engineer who creates
+           <a href="/wiki/Big_data" title="Big data">
+            big data
+           </a>
+           <a href="/wiki/Extract,_transform,_load" title="Extract, transform, load">
+            ETL
+           </a>
+           pipelines to manage the flow of data through the organization. This makes it possible to take huge amounts of data and translate it into
+           <a href="/wiki/Business_intelligence" title="Business intelligence">
+            insights
+           </a>
+           .
+           <sup class="reference" id="cite_ref-28">
+            <a href="#cite_note-28">
+             <span class="cite-bracket">
+              [
+             </span>
+             28
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           They are focused on the production readiness of data and things like formats, resilience, scaling, and security. Data engineers usually hail from a software engineering background and are proficient in programming languages like
+           <a href="/wiki/Java_(programming_language)" title="Java (programming language)">
+            Java
+           </a>
+           ,
+           <a href="/wiki/Python_(programming_language)" title="Python (programming language)">
+            Python
+           </a>
+           ,
+           <a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">
+            Scala
+           </a>
+           , and
+           <a href="/wiki/Rust_(programming_language)" title="Rust (programming language)">
+            Rust
+           </a>
+           .
+           <sup class="reference" id="cite_ref-29">
+            <a href="#cite_note-29">
+             <span class="cite-bracket">
+              [
+             </span>
+             29
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-hist1_3-3">
+            <a href="#cite_note-hist1-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           They will be more familiar with databases, architecture, cloud computing, and
+           <a href="/wiki/Agile_software_development" title="Agile software development">
+            Agile software development
+           </a>
+           .
+           <sup class="reference" id="cite_ref-hist1_3-4">
+            <a href="#cite_note-hist1-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Data_scientist">
+            Data scientist
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=16" title="Edit section: Data scientist">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Data_science" title="Data science">
+            Data science
+           </a>
+          </div>
+          <p>
+           <b>
+            Data scientists
+           </b>
+           are more focused on the analysis of the data, they will be more familiar with
+           <a href="/wiki/Mathematics" title="Mathematics">
+            mathematics
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Algorithms" title="Algorithms">
+            algorithms
+           </a>
+           ,
+           <a href="/wiki/Statistics" title="Statistics">
+            statistics
+           </a>
+           , and
+           <a href="/wiki/Machine_learning" title="Machine learning">
+            machine learning
+           </a>
+           .
+           <sup class="reference" id="cite_ref-hist1_3-5">
+            <a href="#cite_note-hist1-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-30">
+            <a href="#cite_note-30">
+             <span class="cite-bracket">
+              [
+             </span>
+             30
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=17" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Big_data" title="Big data">
+             Big data
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Information_technology" title="Information technology">
+             Information technology
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Software_engineering" title="Software engineering">
+             Software engineering
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Computer_science" title="Computer science">
+             Computer science
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=18" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist reflist-columns references-column-width reflist-columns-2">
+           <ol class="references">
+            <li id="cite_note-whatis1-1">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-whatis1_1-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <style data-mw-deduplicate="TemplateStyles:r1238218222">
+               .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+              </style>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.educba.com/what-is-data-engineering/" rel="nofollow">
+                "What is Data Engineering? | A Quick Glance of Data Engineering"
+               </a>
+               .
+               <i>
+                EDUCBA
+               </i>
+               . January 5, 2020
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=EDUCBA&amp;rft.atitle=What+is+Data+Engineering%3F+%7C+A+Quick+Glance+of+Data+Engineering&amp;rft.date=2020-01-05&amp;rft_id=https%3A%2F%2Fwww.educba.com%2Fwhat-is-data-engineering%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-whatis2-2">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-whatis2_2-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.dremio.com/resources/guides/intro-data-engineering/" rel="nofollow">
+                "Introduction to Data Engineering"
+               </a>
+               .
+               <i>
+                Dremio
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Dremio&amp;rft.atitle=Introduction+to+Data+Engineering&amp;rft_id=https%3A%2F%2Fwww.dremio.com%2Fresources%2Fguides%2Fintro-data-engineering%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-hist1-3">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-hist1_3-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-hist1_3-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-hist1_3-2">
+               <sup>
+                <i>
+                 <b>
+                  c
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-hist1_3-3">
+               <sup>
+                <i>
+                 <b>
+                  d
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-hist1_3-4">
+               <sup>
+                <i>
+                 <b>
+                  e
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-hist1_3-5">
+               <sup>
+                <i>
+                 <b>
+                  f
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFBlack2020">
+               Black, Nathan (January 15, 2020).
+               <a class="external text" href="https://quanthub.com/what-is-data-engineering/" rel="nofollow">
+                "What is Data Engineering and Why Is It So Important?"
+               </a>
+               .
+               <i>
+                QuantHub
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=QuantHub&amp;rft.atitle=What+is+Data+Engineering+and+Why+Is+It+So+Important%3F&amp;rft.date=2020-01-15&amp;rft.aulast=Black&amp;rft.aufirst=Nathan&amp;rft_id=https%3A%2F%2Fquanthub.com%2Fwhat-is-data-engineering%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-ScienceDirect-4">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-ScienceDirect_4-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.sciencedirect.com/topics/computer-science/information-engineering" rel="nofollow">
+                "Information Engineering - an overview | ScienceDirect Topics"
+               </a>
+               .
+               <i>
+                www.sciencedirect.com
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 August 23,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.sciencedirect.com&amp;rft.atitle=Information+Engineering+-+an+overview+%7C+ScienceDirect+Topics&amp;rft_id=https%3A%2F%2Fwww.sciencedirect.com%2Ftopics%2Fcomputer-science%2Finformation-engineering&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-5">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-5">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              "Information engineering,"
+              <a class="external text" href="https://books.google.com/books?id=U2Da-O9RAgIC&amp;pg=PA29" rel="nofollow">
+               part 3
+              </a>
+              ,
+              <a class="external text" href="https://books.google.com/books?id=aMrnCDJzb9MC&amp;pg=RA1-PA1" rel="nofollow">
+               part 4
+              </a>
+              ,
+              <a class="external text" href="https://books.google.com/books?id=Ux9iw6tMs6MC&amp;pg=PA32" rel="nofollow">
+               part 5
+              </a>
+              ,
+              <a class="external text" href="https://books.google.com/books?id=dPLZ7QidjbEC&amp;pg=RA1-PA1" rel="nofollow">
+               Part 6
+              </a>
+              " by Clive Finkelstein. In
+              <i>
+               Computerworld, In depths, appendix.
+              </i>
+              May 25 – June 15, 1981.
+             </span>
+            </li>
+            <li id="cite_note-6">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-6">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              Christopher Allen, Simon Chatwin, Catherine Creary (2003).
+              <i>
+               Introduction to Relational Databases and SQL Programming.
+              </i>
+             </span>
+            </li>
+            <li id="cite_note-7">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-7">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <a href="/wiki/Terry_Halpin" title="Terry Halpin">
+               Terry Halpin
+              </a>
+              ,
+              <a href="/wiki/Tony_Morgan_(computer_scientist)" title="Tony Morgan (computer scientist)">
+               Tony Morgan
+              </a>
+              (2010).
+              <i>
+               Information Modeling and Relational Databases.
+              </i>
+              p. 343
+             </span>
+            </li>
+            <li id="cite_note-hist2-8">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-hist2_8-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-hist2_8-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-hist2_8-2">
+               <sup>
+                <i>
+                 <b>
+                  c
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-hist2_8-3">
+               <sup>
+                <i>
+                 <b>
+                  d
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-hist2_8-4">
+               <sup>
+                <i>
+                 <b>
+                  e
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFDodds">
+               Dodds, Eric.
+               <a class="external text" href="https://www.rudderstack.com/blog/the-data-engineering-megatrend-a-brief-history" rel="nofollow">
+                "The History of the Data Engineering and the Megatrends"
+               </a>
+               .
+               <i>
+                Rudderstack
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Rudderstack&amp;rft.atitle=The+History+of+the+Data+Engineering+and+the+Megatrends&amp;rft.aulast=Dodds&amp;rft.aufirst=Eric&amp;rft_id=https%3A%2F%2Fwww.rudderstack.com%2Fblog%2Fthe-data-engineering-megatrend-a-brief-history&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-sigops-9">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-sigops_9-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-sigops_9-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-sigops_9-2">
+               <sup>
+                <i>
+                 <b>
+                  c
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFSchwarzkopf2020">
+               Schwarzkopf, Malte (March 7, 2020).
+               <a class="external text" href="https://www.sigops.org/2020/the-remarkable-utility-of-dataflow-computing/" rel="nofollow">
+                "The Remarkable Utility of Dataflow Computing"
+               </a>
+               .
+               <i>
+                ACM SIGOPS
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=ACM+SIGOPS&amp;rft.atitle=The+Remarkable+Utility+of+Dataflow+Computing&amp;rft.date=2020-03-07&amp;rft.aulast=Schwarzkopf&amp;rft.aufirst=Malte&amp;rft_id=https%3A%2F%2Fwww.sigops.org%2F2020%2Fthe-remarkable-utility-of-dataflow-computing%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-sparkpaper-10">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-sparkpaper_10-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://cs.stanford.edu/~matei/papers/2016/cacm_apache_spark.pdf" rel="nofollow">
+                "sparkpaper"
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=sparkpaper&amp;rft_id=https%3A%2F%2Fcs.stanford.edu%2F~matei%2Fpapers%2F2016%2Fcacm_apache_spark.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-tensorflow_paper-11">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-tensorflow_paper_11-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFAbadiBarhamChenChen2016">
+               Abadi, Martin; Barham, Paul; Chen, Jianmin; Chen, Zhifeng; Davis, Andy; Dean, Jeffrey; Devin, Matthieu; Ghemawat, Sanjay; Irving, Geoffrey; Isard, Michael; Kudlur, Manjunath; Levenberg, Josh; Monga, Rajat; Moore, Sherry; Murray, Derek G.; Steiner, Benoit; Tucker, Paul; Vasudevan, Vijay; Warden, Pete; Wicke, Martin; Yu, Yuan; Zheng, Xiaoqiang (2016).
+               <a class="external text" href="https://research.google/pubs/pub45381/" rel="nofollow">
+                "TensorFlow: A system for large-scale machine learning"
+               </a>
+               .
+               <i>
+                12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)
+               </i>
+               . pp. 265–283
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=12th+USENIX+Symposium+on+Operating+Systems+Design+and+Implementation+%28OSDI+16%29&amp;rft.atitle=TensorFlow%3A+A+system+for+large-scale+machine+learning&amp;rft.pages=265-283&amp;rft.date=2016&amp;rft.aulast=Abadi&amp;rft.aufirst=Martin&amp;rft.au=Barham%2C+Paul&amp;rft.au=Chen%2C+Jianmin&amp;rft.au=Chen%2C+Zhifeng&amp;rft.au=Davis%2C+Andy&amp;rft.au=Dean%2C+Jeffrey&amp;rft.au=Devin%2C+Matthieu&amp;rft.au=Ghemawat%2C+Sanjay&amp;rft.au=Irving%2C+Geoffrey&amp;rft.au=Isard%2C+Michael&amp;rft.au=Kudlur%2C+Manjunath&amp;rft.au=Levenberg%2C+Josh&amp;rft.au=Monga%2C+Rajat&amp;rft.au=Moore%2C+Sherry&amp;rft.au=Murray%2C+Derek+G.&amp;rft.au=Steiner%2C+Benoit&amp;rft.au=Tucker%2C+Paul&amp;rft.au=Vasudevan%2C+Vijay&amp;rft.au=Warden%2C+Pete&amp;rft.au=Wicke%2C+Martin&amp;rft.au=Yu%2C+Yuan&amp;rft.au=Zheng%2C+Xiaoqiang&amp;rft_id=https%3A%2F%2Fresearch.google%2Fpubs%2Fpub45381%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-differential-paper-12">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-differential-paper_12-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFMcSherryMurrayIsaacsIsard2013">
+               McSherry, Frank; Murray, Derek; Isaacs, Rebecca; Isard, Michael (January 5, 2013).
+               <a class="external text" href="https://www.microsoft.com/en-us/research/publication/differential-dataflow/" rel="nofollow">
+                "Differential dataflow"
+               </a>
+               .
+               <i>
+                <a href="/wiki/Microsoft" title="Microsoft">
+                 Microsoft
+                </a>
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Microsoft&amp;rft.atitle=Differential+dataflow&amp;rft.date=2013-01-05&amp;rft.aulast=McSherry&amp;rft.aufirst=Frank&amp;rft.au=Murray%2C+Derek&amp;rft.au=Isaacs%2C+Rebecca&amp;rft.au=Isard%2C+Michael&amp;rft_id=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fresearch%2Fpublication%2Fdifferential-dataflow%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-differential-github-13">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-differential-github_13-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://github.com/TimelyDataflow/differential-dataflow" rel="nofollow">
+                "Differential Dataflow"
+               </a>
+               . Timely Dataflow. July 30, 2022
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Differential+Dataflow&amp;rft.pub=Timely+Dataflow&amp;rft.date=2022-07-30&amp;rft_id=https%3A%2F%2Fgithub.com%2FTimelyDataflow%2Fdifferential-dataflow&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-mit-14">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-mit_14-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/pages/lecture-notes/" rel="nofollow">
+                "Lecture Notes | Database Systems | Electrical Engineering and Computer Science | MIT OpenCourseWare"
+               </a>
+               .
+               <i>
+                ocw.mit.edu
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=ocw.mit.edu&amp;rft.atitle=Lecture+Notes+%7C+Database+Systems+%7C+Electrical+Engineering+and+Computer+Science+%7C+MIT+OpenCourseWare&amp;rft_id=https%3A%2F%2Focw.mit.edu%2Fcourses%2F6-830-database-systems-fall-2010%2Fpages%2Flecture-notes%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-leavitt-15">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-leavitt_15-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFLeavitt2010">
+               Leavitt, Neal (2010).
+               <a class="external text" href="http://www.leavcom.com/pdf/NoSQL.pdf" rel="nofollow">
+                "Will NoSQL Databases Live Up to Their Promise?"
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               .
+               <i>
+                <a class="mw-redirect" href="/wiki/IEEE_Computer" title="IEEE Computer">
+                 IEEE Computer
+                </a>
+               </i>
+               .
+               <b>
+                43
+               </b>
+               (2): 12–14.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.1109%2FMC.2010.58" rel="nofollow">
+                10.1109/MC.2010.58
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                S2CID
+               </a>
+               <a class="external text" href="https://api.semanticscholar.org/CorpusID:26876882" rel="nofollow">
+                26876882
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Computer&amp;rft.atitle=Will+NoSQL+Databases+Live+Up+to+Their+Promise%3F&amp;rft.volume=43&amp;rft.issue=2&amp;rft.pages=12-14&amp;rft.date=2010&amp;rft_id=info%3Adoi%2F10.1109%2FMC.2010.58&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A26876882%23id-name%3DS2CID&amp;rft.aulast=Leavitt&amp;rft.aufirst=Neal&amp;rft_id=http%3A%2F%2Fwww.leavcom.com%2Fpdf%2FNoSQL.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-aslett2012-16">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-aslett2012_16-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFAslett2011">
+               Aslett, Matthew (2011).
+               <a class="external text" href="http://cs.brown.edu/courses/cs227/archives/2012/papers/newsql/aslett-newsql.pdf" rel="nofollow">
+                "How Will The Database Incumbents Respond To NoSQL And NewSQL?"
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               . 451 Group (published April 4, 2011)
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=How+Will+The+Database+Incumbents+Respond+To+NoSQL+And+NewSQL%3F&amp;rft.pub=451+Group&amp;rft.date=2011&amp;rft.aulast=Aslett&amp;rft.aufirst=Matthew&amp;rft_id=http%3A%2F%2Fcs.brown.edu%2Fcourses%2Fcs227%2Farchives%2F2012%2Fpapers%2Fnewsql%2Faslett-newsql.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-sigmodrecord-17">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-sigmodrecord_17-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation conference cs1" id="CITEREFPavloAslett2016">
+               Pavlo, Andrew; Aslett, Matthew (2016).
+               <a class="external text" href="https://db.cs.cmu.edu/papers/2016/pavlo-newsql-sigmodrec2016.pdf" rel="nofollow">
+                "What's Really New with NewSQL?"
+               </a>
+               <span class="cs1-format">
+                (PDF)
+               </span>
+               .
+               <i>
+                SIGMOD Record
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=What%27s+Really+New+with+NewSQL%3F&amp;rft.btitle=SIGMOD+Record&amp;rft.date=2016&amp;rft.aulast=Pavlo&amp;rft.aufirst=Andrew&amp;rft.au=Aslett%2C+Matthew&amp;rft_id=https%3A%2F%2Fdb.cs.cmu.edu%2Fpapers%2F2016%2Fpavlo-newsql-sigmodrec2016.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-18">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-18">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFStonebraker2011">
+               Stonebraker, Michael (June 16, 2011).
+               <a class="external text" href="https://cacm.acm.org/blogs/blog-cacm/109710-new-sql-an-alternative-to-nosql-and-old-sql-for-new-oltp-apps/fulltext" rel="nofollow">
+                "NewSQL: An Alternative to NoSQL and Old SQL for New OLTP Apps"
+               </a>
+               . Communications of the ACM Blog
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=NewSQL%3A+An+Alternative+to+NoSQL+and+Old+SQL+for+New+OLTP+Apps&amp;rft.pub=Communications+of+the+ACM+Blog&amp;rft.date=2011-06-16&amp;rft.aulast=Stonebraker&amp;rft.aufirst=Michael&amp;rft_id=https%3A%2F%2Fcacm.acm.org%2Fblogs%2Fblog-cacm%2F109710-new-sql-an-alternative-to-nosql-and-old-sql-for-new-oltp-apps%2Ffulltext&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-high_scalability-19">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-high_scalability_19-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1" id="CITEREFHoff2012">
+               Hoff, Todd (September 24, 2012).
+               <a class="external text" href="http://highscalability.com/blog/2012/9/24/google-spanners-most-surprising-revelation-nosql-is-out-and.html" rel="nofollow">
+                "Google Spanner's Most Surprising Revelation: NoSQL is Out and NewSQL is In"
+               </a>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 February 22,
+                </span>
+                2020
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Google+Spanner%27s+Most+Surprising+Revelation%3A+NoSQL+is+Out+and+NewSQL+is+In&amp;rft.date=2012-09-24&amp;rft.aulast=Hoff&amp;rft.aufirst=Todd&amp;rft_id=http%3A%2F%2Fhighscalability.com%2Fblog%2F2012%2F9%2F24%2Fgoogle-spanners-most-surprising-revelation-nosql-is-out-and.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-ibm1-20">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-ibm1_20-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-ibm1_20-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.ibm.com/cloud/learn/data-warehouse" rel="nofollow">
+                "What is a Data Warehouse?"
+               </a>
+               .
+               <i>
+                www.ibm.com
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.ibm.com&amp;rft.atitle=What+is+a+Data+Warehouse%3F&amp;rft_id=https%3A%2F%2Fwww.ibm.com%2Fcloud%2Flearn%2Fdata-warehouse&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-aws1-21">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-aws1_21-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-aws1_21-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://aws.amazon.com/data-warehouse/" rel="nofollow">
+                "What is a Data Warehouse? | Key Concepts | Amazon Web Services"
+               </a>
+               .
+               <i>
+                Amazon Web Services, Inc
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Amazon+Web+Services%2C+Inc.&amp;rft.atitle=What+is+a+Data+Warehouse%3F+%7C+Key+Concepts+%7C+Amazon+Web+Services&amp;rft_id=https%3A%2F%2Faws.amazon.com%2Fdata-warehouse%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-redhat1-22">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-redhat1_22-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-redhat1_22-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-redhat1_22-2">
+               <sup>
+                <i>
+                 <b>
+                  c
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.redhat.com/en/topics/data-storage/file-block-object-storage" rel="nofollow">
+                "File storage, block storage, or object storage?"
+               </a>
+               .
+               <i>
+                www.redhat.com
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.redhat.com&amp;rft.atitle=File+storage%2C+block+storage%2C+or+object+storage%3F&amp;rft_id=https%3A%2F%2Fwww.redhat.com%2Fen%2Ftopics%2Fdata-storage%2Ffile-block-object-storage&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-s3-23">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-s3_23-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://aws.amazon.com/s3" rel="nofollow">
+                "Cloud Object Storage – Amazon S3 – Amazon Web Services"
+               </a>
+               .
+               <i>
+                Amazon Web Services, Inc
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Amazon+Web+Services%2C+Inc.&amp;rft.atitle=Cloud+Object+Storage+%E2%80%93+Amazon+S3+%E2%80%93+Amazon+Web+Services&amp;rft_id=https%3A%2F%2Faws.amazon.com%2Fs3&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-airflow-24">
+             <span class="mw-cite-backlink">
+              ^
+              <a href="#cite_ref-airflow_24-0">
+               <sup>
+                <i>
+                 <b>
+                  a
+                 </b>
+                </i>
+               </sup>
+              </a>
+              <a href="#cite_ref-airflow_24-1">
+               <sup>
+                <i>
+                 <b>
+                  b
+                 </b>
+                </i>
+               </sup>
+              </a>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://airflow.apache.org/" rel="nofollow">
+                "Home"
+               </a>
+               .
+               <i>
+                Apache Airflow
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Apache+Airflow&amp;rft.atitle=Home&amp;rft_id=https%3A%2F%2Fairflow.apache.org%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-course-25">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-course_25-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.coursera.org/learn/introduction-to-data-engineering" rel="nofollow">
+                "Introduction to Data Engineering"
+               </a>
+               .
+               <i>
+                Coursera
+               </i>
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Coursera&amp;rft.atitle=Introduction+to+Data+Engineering&amp;rft_id=https%3A%2F%2Fwww.coursera.org%2Flearn%2Fintroduction-to-data-engineering&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-26">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-26">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation book cs1" id="CITEREFFinkelstein">
+               Finkelstein, Clive.
+               <i>
+                What are The Phases of Information Engineering
+               </i>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=What+are+The+Phases+of+Information+Engineering&amp;rft.aulast=Finkelstein&amp;rft.aufirst=Clive&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-model1-27">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-model1_27-0">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.simplilearn.com/what-is-data-modeling-article" rel="nofollow">
+                "What is Data Modelling? Overview, Basic Concepts, and Types in Detail"
+               </a>
+               .
+               <i>
+                Simplilearn.com
+               </i>
+               . June 15, 2021
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 July 31,
+                </span>
+                2022
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Simplilearn.com&amp;rft.atitle=What+is+Data+Modelling%3F+Overview%2C+Basic+Concepts%2C+and+Types+in+Detail&amp;rft.date=2021-06-15&amp;rft_id=https%3A%2F%2Fwww.simplilearn.com%2Fwhat-is-data-modeling-article&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-28">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-28">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation journal cs1" id="CITEREFTamirMillerGagliardi2015">
+               Tamir, Mike; Miller, Steven; Gagliardi, Alessandro (December 11, 2015).
+               <a class="external text" href="https://papers.ssrn.com/abstract=2762013" rel="nofollow">
+                "The Data Engineer"
+               </a>
+               . Rochester, NY.
+               <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                doi
+               </a>
+               :
+               <a class="external text" href="https://doi.org/10.2139%2Fssrn.2762013" rel="nofollow">
+                10.2139/ssrn.2762013
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                S2CID
+               </a>
+               <a class="external text" href="https://api.semanticscholar.org/CorpusID:113342650" rel="nofollow">
+                113342650
+               </a>
+               .
+               <a class="mw-redirect" href="/wiki/SSRN_(identifier)" title="SSRN (identifier)">
+                SSRN
+               </a>
+               <a class="external text" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2762013" rel="nofollow">
+                2762013
+               </a>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The+Data+Engineer&amp;rft.date=2015-12-11&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A113342650%23id-name%3DS2CID&amp;rft_id=https%3A%2F%2Fpapers.ssrn.com%2Fsol3%2Fpapers.cfm%3Fabstract_id%3D2762013%23id-name%3DSSRN&amp;rft_id=info%3Adoi%2F10.2139%2Fssrn.2762013&amp;rft.aulast=Tamir&amp;rft.aufirst=Mike&amp;rft.au=Miller%2C+Steven&amp;rft.au=Gagliardi%2C+Alessandro&amp;rft_id=https%3A%2F%2Fpapers.ssrn.com%2Fabstract%3D2762013&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+              <span class="cs1-visible-error citation-comment">
+               <code class="cs1-code">
+                {{
+                <a href="/wiki/Template:Cite_journal" title="Template:Cite journal">
+                 cite journal
+                </a>
+                }}
+               </code>
+               :
+              </span>
+              <span class="cs1-visible-error citation-comment">
+               Cite journal requires
+               <code class="cs1-code">
+                |journal=
+               </code>
+               (
+               <a href="/wiki/Help:CS1_errors#missing_periodical" title="Help:CS1 errors">
+                help
+               </a>
+               )
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-29">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-29">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.springboard.com/blog/data-engineer-vs-data-scientist/" rel="nofollow">
+                "Data Engineer vs. Data Scientist"
+               </a>
+               .
+               <i>
+                Springboard Blog
+               </i>
+               . February 7, 2019
+               <span class="reference-accessdate">
+                . Retrieved
+                <span class="nowrap">
+                 March 14,
+                </span>
+                2021
+               </span>
+               .
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Springboard+Blog&amp;rft.atitle=Data+Engineer+vs.+Data+Scientist&amp;rft.date=2019-02-07&amp;rft_id=https%3A%2F%2Fwww.springboard.com%2Fblog%2Fdata-engineer-vs-data-scientist%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+            <li id="cite_note-30">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-30">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+              <cite class="citation web cs1">
+               <a class="external text" href="https://www.edureka.co/blog/what-is-data-science/" rel="nofollow">
+                "What is Data Science and Why it's Important"
+               </a>
+               . Edureka. January 5, 2017.
+              </cite>
+              <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=What+is+Data+Science+and+Why+it%27s+Important&amp;rft.pub=Edureka&amp;rft.date=2017-01-05&amp;rft_id=https%3A%2F%2Fwww.edureka.co%2Fblog%2Fwhat-is-data-science%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+engineering">
+              </span>
+             </span>
+            </li>
+           </ol>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Further_reading">
+            Further reading
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=19" title="Edit section: Further reading">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239549316">
+           .mw-parser-output .refbegin{margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li{margin-left:0;padding-left:3.2em;text-indent:-3.2em}.mw-parser-output .refbegin-hanging-indents ul,.mw-parser-output .refbegin-hanging-indents ul li{list-style:none}@media(max-width:720px){.mw-parser-output .refbegin-hanging-indents>ul>li{padding-left:1.6em;text-indent:-1.6em}}.mw-parser-output .refbegin-columns{margin-top:0.3em}.mw-parser-output .refbegin-columns ul{margin-top:0}.mw-parser-output .refbegin-columns li{page-break-inside:avoid;break-inside:avoid-column}@media screen{.mw-parser-output .refbegin{font-size:90%}}
+          </style>
+          <div class="refbegin refbegin-columns references-column-width" style="column-width: 30em">
+           <ul>
+            <li>
+             John Hares (1992). "Information Engineering for the Advanced Practitioner", Wiley.
+            </li>
+            <li>
+             Clive Finkelstein (1989).
+             <i>
+              An Introduction to Information Engineering: From Strategic Planning to Information Systems
+             </i>
+             . Sydney: Addison-Wesley.
+            </li>
+            <li>
+             Clive Finkelstein (1992). "Information Engineering: Strategic Systems Development". Sydney: Addison-Wesley.
+            </li>
+            <li>
+             Ian Macdonald (1986). "Information engineering". in:
+             <i>
+              Information Systems Design Methodologies
+             </i>
+             . T.W. Olle et al. (ed.). North-Holland.
+            </li>
+            <li>
+             Ian Macdonald (1988). "Automating the Information engineering methodology with the Information Engineering Facility". In:
+             <i>
+              Computerized Assistance during the Information Systems Life Cycle
+             </i>
+             .
+             <a class="mw-redirect" href="/wiki/T.W._Olle" title="T.W. Olle">
+              T.W. Olle
+             </a>
+             et al. (ed.). North-Holland.
+            </li>
+            <li>
+             <a href="/wiki/James_Martin_(author)" title="James Martin (author)">
+              James Martin
+             </a>
+             and
+             <a href="/wiki/Clive_Finkelstein" title="Clive Finkelstein">
+              Clive Finkelstein
+             </a>
+             .  (1981).
+             <i>
+              Information engineering
+             </i>
+             . Technical Report (2 volumes), Savant Institute, Carnforth, Lancs, UK.
+            </li>
+            <li>
+             James Martin (1989).
+             <i>
+              Information engineering
+             </i>
+             . (3 volumes), Prentice-Hall Inc.
+            </li>
+            <li>
+             Clive Finkelstein (2006) "Enterprise Architecture for Integration: Rapid Delivery Methods and Technologies". First Edition, Artech House, Norwood MA in hardcover.
+            </li>
+            <li>
+             Clive Finkelstein (2011) "Enterprise Architecture for Integration: Rapid Delivery Methods and Technologies". Second Edition is in PDF at www.ies.aust.com and as an ebook on the Apple iPad and ebook on the Amazon Kindle.
+            </li>
+            <li>
+             Reis, Joe; Housley, Matt (2022) "Fundamentals of Data Engineering". O'Reilly Media, Inc. ISBN 9781098108304
+            </li>
+           </ul>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Data_engineering&amp;action=edit&amp;section=20" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1235681985">
+           .mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:var(--background-color-interactive-subtle,#f8f9fa);display:flow-root}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}
+          </style>
+          <style data-mw-deduplicate="TemplateStyles:r1237033735">
+           @media print{body.ns-0 .mw-parser-output .sistersitebox{display:none!important}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}
+          </style>
+          <div class="side-box side-box-right plainlinks sistersitebox">
+           <style data-mw-deduplicate="TemplateStyles:r1126788409">
+            .mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}
+           </style>
+           <div class="side-box-flex">
+            <div class="side-box-image">
+             <span class="noviewer" typeof="mw:File">
+              <span>
+               <img alt="" class="mw-file-element" data-file-height="1376" data-file-width="1024" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" width="30"/>
+              </span>
+             </span>
+            </div>
+            <div class="side-box-text plainlist">
+             Wikimedia Commons has media related to
+             <span style="font-weight: bold; font-style: italic;">
+              <a class="extiw" href="https://commons.wikimedia.org/wiki/Category:_Information_Engineering" title="commons:Category: Information Engineering">
+               Information Engineering
+              </a>
+             </span>
+             .
+            </div>
+           </div>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="http://www.informatik.uni-bremen.de/uniform/gdpa/methods/m-iem.htm" rel="nofollow">
+             The Complex Method IEM
+            </a>
+            <a class="external text" href="https://web.archive.org/web/20190720070308/http://www.informatik.uni-bremen.de/uniform/gdpa/methods/m-iem.htm" rel="nofollow">
+             Archived
+            </a>
+            July 20, 2019, at the
+            <a href="/wiki/Wayback_Machine" title="Wayback Machine">
+             Wayback Machine
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="https://web.archive.org/web/20060215222446/http://sysdev.ucdavis.edu/WEBADM/document/rad-archapproach.htm" rel="nofollow">
+             Rapid Application Development
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://www.ies.aust.com" rel="nofollow">
+             Enterprise Engineering and Rapid Delivery of Enterprise Architecture
+            </a>
+           </li>
+          </ul>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐qn2h9
+Cached time: 20240926235217
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.485 seconds
+Real time usage: 0.597 seconds
+Preprocessor visited node count: 2053/1000000
+Post‐expand include size: 49154/2097152 bytes
+Template argument size: 1509/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 6/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 102202/5000000 bytes
+Lua time usage: 0.285/10.000 seconds
+Lua memory usage: 5700315/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  531.611      1 -total
+ 48.94%  260.183      1 Template:Reflist
+ 36.39%  193.429     23 Template:Cite_web
+ 13.36%   71.021      1 Template:Short_description
+ 11.94%   63.451      1 Template:Commons_category
+ 11.59%   61.634      1 Template:Sister_project
+ 11.25%   59.802      1 Template:Side_box
+  7.78%   41.334      1 Template:Distinguish
+  6.03%   32.055      2 Template:Pagetype
+  5.25%   27.906      4 Template:Main_other
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:455220-0!canonical and timestamp 20240926235217 and revision id 1243290325. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Data_engineering&amp;oldid=1243290325">
+          https://en.wikipedia.org/w/index.php?title=Data_engineering&amp;oldid=1243290325
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Software_development_process" title="Category:Software development process">
+            Software development process
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Information_systems" title="Category:Information systems">
+            Information systems
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Data_management" title="Category:Data management">
+            Data management
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:CS1_errors:_missing_periodical" title="Category:CS1 errors: missing periodical">
+            CS1 errors: missing periodical
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Use_mdy_dates_from_August_2021" title="Category:Use mdy dates from August 2021">
+            Use mdy dates from August 2021
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Commons_category_link_is_locally_defined" title="Category:Commons category link is locally defined">
+            Commons category link is locally defined
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">
+            Webarchive template wayback links
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 31 August 2024, at 16:51
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Data_engineering&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-2lpcz","wgBackendResponseTime":184,"wgPageParseReport":{"limitreport":{"cputime":"0.485","walltime":"0.597","ppvisitednodes":{"value":2053,"limit":1000000},"postexpandincludesize":{"value":49154,"limit":2097152},"templateargumentsize":{"value":1509,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":6,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":102202,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  531.611      1 -total"," 48.94%  260.183      1 Template:Reflist"," 36.39%  193.429     23 Template:Cite_web"," 13.36%   71.021      1 Template:Short_description"," 11.94%   63.451      1 Template:Commons_category"," 11.59%   61.634      1 Template:Sister_project"," 11.25%   59.802      1 Template:Side_box","  7.78%   41.334      1 Template:Distinguish","  6.03%   32.055      2 Template:Pagetype","  5.25%   27.906      4 Template:Main_other"]},"scribunto":{"limitreport-timeusage":{"value":"0.285","limit":"10.000"},"limitreport-memusage":{"value":5700315,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-qn2h9","timestamp":"20240926235217","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Data engineering","url":"https:\/\/en.wikipedia.org\/wiki\/Data_engineering","sameAs":"http:\/\/www.wikidata.org\/entity\/Q104659521","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q104659521","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-02-05T00:34:41Z","dateModified":"2024-08-31T16:51:48Z","headline":"field for dealing with data processing pipelines"}
+  </script>
+ </body>
+</html>

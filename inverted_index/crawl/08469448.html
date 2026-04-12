@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Round-trip engineering - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"a50d08ed-a417-4ba5-bbb1-392bb616c708","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Round-trip_engineering","wgTitle":"Round-trip engineering","wgCurRevisionId":1233617703,"wgRevisionId":1233617703,"wgArticleId":637240,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from December 2009","All articles needing additional references","All articles with vague or ambiguous time","Vague or ambiguous time from July 2023","All articles with unsourced statements","Articles with unsourced statements from January 2018","Programming tools","Reverse engineering"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Round-trip_engineering",
+"wgRelevantArticleId":637240,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1509981","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands",
+"fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.pygments.view","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher",
+"ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Round-trip engineering - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Round-trip_engineering" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Round-trip_engineering&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Round-trip_engineering" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Round-trip_engineering"/>
+  <meta eecs485_docid="08469448"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Round-trip_engineering rootpage-Round-trip_engineering skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Round-trip+engineering" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Round-trip+engineering" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Round-trip+engineering" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Round-trip+engineering" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Overview">
+           <a class="vector-toc-link" href="#Overview">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Overview
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Overview-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Overview subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Overview-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Types">
+             <a class="vector-toc-link" href="#Types">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.1
+               </span>
+               <span>
+                Types
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Types-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Auto_synchronization">
+             <a class="vector-toc-link" href="#Auto_synchronization">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.2
+               </span>
+               <span>
+                Auto synchronization
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Auto_synchronization-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Iterative_approach">
+             <a class="vector-toc-link" href="#Iterative_approach">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.3
+               </span>
+               <span>
+                Iterative approach
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Iterative_approach-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Software">
+           <a class="vector-toc-link" href="#Software">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Software
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Software-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Limitations">
+           <a class="vector-toc-link" href="#Limitations">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Limitations
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Limitations-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Controversies">
+           <a class="vector-toc-link" href="#Controversies">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Controversies
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Controversies-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Controversies subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Controversies-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Code_generation_controversy">
+             <a class="vector-toc-link" href="#Code_generation_controversy">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                4.1
+               </span>
+               <span>
+                Code generation controversy
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Code_generation_controversy-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Disadvantages">
+           <a class="vector-toc-link" href="#Disadvantages">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              Disadvantages
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Disadvantages-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Examples_in_software_engineering">
+           <a class="vector-toc-link" href="#Examples_in_software_engineering">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              Examples in software engineering
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Examples_in_software_engineering-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              7
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Round-trip engineering
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 4 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-4" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          4 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="هندسة زمن المسار ذهابا وعودة" href="https://ar.wikipedia.org/wiki/%D9%87%D9%86%D8%AF%D8%B3%D8%A9_%D8%B2%D9%85%D9%86_%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1_%D8%B0%D9%87%D8%A7%D8%A8%D8%A7_%D9%88%D8%B9%D9%88%D8%AF%D8%A9" hreflang="ar" lang="ar" title="هندسة زمن المسار ذهابا وعودة – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Round-Trip-Engineering" href="https://de.wikipedia.org/wiki/Round-Trip-Engineering" hreflang="de" lang="de" title="Round-Trip-Engineering – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Round-trip engineering" href="https://it.wikipedia.org/wiki/Round-trip_engineering" hreflang="it" lang="it" title="Round-trip engineering – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="雙向工程" href="https://zh.wikipedia.org/wiki/%E9%9B%99%E5%90%91%E5%B7%A5%E7%A8%8B" hreflang="zh" lang="zh" title="雙向工程 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1509981#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Round-trip_engineering" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Round-trip_engineering" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Round-trip_engineering">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Round-trip_engineering&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Round-trip_engineering&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Round-trip_engineering">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Round-trip_engineering&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Round-trip_engineering&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Round-trip_engineering" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Round-trip_engineering" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Round-trip_engineering&amp;oldid=1233617703" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Round-trip_engineering&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Round-trip_engineering&amp;id=1233617703&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRound-trip_engineering">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRound-trip_engineering">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1509981" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Round-trip_engineering&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Round-trip_engineering&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+               </a>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              This article
+              <b>
+               needs additional citations for
+               <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                verification
+               </a>
+              </b>
+              .
+              <span class="hide-when-compact">
+               Please help
+               <a href="/wiki/Special:EditPage/Round-trip_engineering" title="Special:EditPage/Round-trip engineering">
+                improve this article
+               </a>
+               by
+               <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                adding citations to reliable sources
+               </a>
+               . Unsourced material may be challenged and removed.
+               <br/>
+               <small>
+                <span class="plainlinks">
+                 <i>
+                  Find sources:
+                 </i>
+                 <a class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Round-trip+engineering%22" rel="nofollow">
+                  "Round-trip engineering"
+                 </a>
+                 –
+                 <a class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Round-trip+engineering%22+-wikipedia&amp;tbs=ar:1" rel="nofollow">
+                  news
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?&amp;q=%22Round-trip+engineering%22&amp;tbs=bkt:s&amp;tbm=bks" rel="nofollow">
+                  newspapers
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Round-trip+engineering%22+-wikipedia" rel="nofollow">
+                  books
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://scholar.google.com/scholar?q=%22Round-trip+engineering%22" rel="nofollow">
+                  scholar
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Round-trip+engineering%22&amp;acc=on&amp;wc=on" rel="nofollow">
+                  JSTOR
+                 </a>
+                </span>
+               </small>
+              </span>
+              <span class="date-container">
+               <i>
+                (
+                <span class="date">
+                 December 2009
+                </span>
+                )
+               </i>
+              </span>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          <b>
+           Round-trip engineering
+          </b>
+          (
+          <b>
+           RTE
+          </b>
+          ) in the context of
+          <a href="/wiki/Model-driven_architecture" title="Model-driven architecture">
+           model-driven architecture
+          </a>
+          is a functionality of
+          <a class="mw-redirect" href="/wiki/Software_development_tools" title="Software development tools">
+           software development tools
+          </a>
+          that synchronizes two or more related software artifacts, such as, source code,
+          <a class="mw-redirect" href="/wiki/Conceptual_model_(computer_science)" title="Conceptual model (computer science)">
+           models
+          </a>
+          , configuration files, documentation, etc. between each other.
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          The need for round-trip engineering arises when the same information is present in multiple artifacts and when an inconsistency may arise in case some artifacts are updated. For example, some piece of information was added to/changed in only one artifact (source code) and, as a result, it became missing in/inconsistent with the other artifacts (in models).
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Overview">
+            Overview
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Round-trip_engineering&amp;action=edit&amp;section=1" title="Edit section: Overview">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Round-trip engineering is closely related to traditional
+           <a href="/wiki/Software_engineering" title="Software engineering">
+            software engineering
+           </a>
+           disciplines: forward engineering (creating software from specifications),
+           <a href="/wiki/Reverse_engineering" title="Reverse engineering">
+            reverse engineering
+           </a>
+           (creating specifications from existing software), and
+           <a class="mw-redirect" href="/wiki/Reengineering_(software)" title="Reengineering (software)">
+            reengineering
+           </a>
+           (understanding existing software and modifying it). Round-trip engineering is often wrongly defined as simply supporting both forward and reverse engineering. In fact, the key characteristic of round-trip engineering that distinguishes it from forward and reverse engineering is the ability to synchronize
+           <i>
+            existing
+           </i>
+           artifacts that evolved
+           <i>
+            concurrently
+           </i>
+           by
+           <i>
+            incrementally
+           </i>
+           updating each artifact to reflect changes made to the other artifacts. Furthermore, forward engineering can be seen as a special instance of RTE in which only the specification is present and reverse engineering can be seen as a special instance of RTE in which only the software is present. Many reengineering activities can also be understood as RTE when the software is updated to reflect changes made to the previously reverse engineered specification.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Types">
+            Types
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Round-trip_engineering&amp;action=edit&amp;section=2" title="Edit section: Types">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Various books describe two types of RTE:
+           <sup class="reference" id="cite_ref-2">
+            <a href="#cite_note-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference nowrap">
+            <span title="Page: 459">
+             : 459
+            </span>
+           </sup>
+          </p>
+          <ul>
+           <li>
+            <b>
+             partial
+            </b>
+            or
+            <b>
+             uni-directional
+            </b>
+            RTE: changes made to a higher level representation of a code and model are reflected in lower level, but not otherwise; the latter might be allowed, but with limitations that may not affect higher-level abstractions
+           </li>
+           <li>
+            <b>
+             full
+            </b>
+            or
+            <b>
+             bi-directional
+            </b>
+            RTE: regardless of changes, both higher and lower-level code and model representations are synchronized if any of them altered
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Auto_synchronization">
+            Auto synchronization
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Round-trip_engineering&amp;action=edit&amp;section=3" title="Edit section: Auto synchronization">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Another characteristic of round-trip engineering is
+           <i>
+            automatic
+           </i>
+           update of the artifacts in response to
+           <i>
+            automatically
+           </i>
+           detected inconsistencies. In that sense, it is different from forward- and reverse engineering which can be both manual (traditionally) and automatic (via automatic generation or analysis of the artifacts). The automatic update can be either
+           <i>
+            instantaneous
+           </i>
+           or
+           <i>
+            on-demand
+           </i>
+           . In instantaneous RTE, all related artifacts are immediately updated after each change made to one of them. In on-demand RTE, authors of the artifacts may concurrently update the artifacts (even in a distributed setting) and at some point choose to execute matching to identify inconsistencies and choose to propagate some of them and reconcile potential conflicts.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Iterative_approach">
+            Iterative approach
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Round-trip_engineering&amp;action=edit&amp;section=4" title="Edit section: Iterative approach">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Round trip engineering may involve an iterative development process. After you have synchronized your model with revised code, you are still free to choose the best way to work – make further modifications to the code or make changes to your model. You can synchronize in either direction at any time and you can repeat the cycle as many times as necessary.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Software">
+            Software
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Round-trip_engineering&amp;action=edit&amp;section=5" title="Edit section: Software">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Many commercial tools and research prototypes support this form of RTE; a 2007 book lists
+           <a class="mw-redirect" href="/wiki/Rational_Rose" title="Rational Rose">
+            Rational Rose
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Micro_Focus_Together" title="Micro Focus Together">
+            Micro Focus Together
+           </a>
+           ,
+           <a class="new" href="/w/index.php?title=ESS-Model&amp;action=edit&amp;redlink=1" title="ESS-Model (page does not exist)">
+            ESS-Model
+           </a>
+           ,
+           <a href="/wiki/BlueJ" title="BlueJ">
+            BlueJ
+           </a>
+           , and
+           <a class="new" href="/w/index.php?title=Fujaba&amp;action=edit&amp;redlink=1" title="Fujaba (page does not exist)">
+            Fujaba
+           </a>
+           among those capable, with Fujaba said to be capable to also identify
+           <a href="/wiki/Design_pattern" title="Design pattern">
+            design patterns
+           </a>
+           .
+           <sup class="reference" id="cite_ref-Diehl2007_3-0">
+            <a href="#cite_note-Diehl2007-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Limitations">
+            Limitations
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Round-trip_engineering&amp;action=edit&amp;section=6" title="Edit section: Limitations">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           A 2005 book on
+           <a href="/wiki/Visual_Studio" title="Visual Studio">
+            Visual Studio
+           </a>
+           notes for instance that a common problem in RTE tools is that the model reversed is not the same as the original one, unless the tools are aided by leaving laborious annotations in the source code.
+           <sup class="reference" id="cite_ref-FilevLoton2005_4-0">
+            <a href="#cite_note-FilevLoton2005-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The behavioral parts of UML impose even more challenges for RTE.
+          </p>
+          <p>
+           Usually, UML class diagrams are supported to some degree; however, certain UML concepts, such as
+           <i>
+            associations
+           </i>
+           and
+           <i>
+            containment
+           </i>
+           do not have straightforward representations in many programming languages which limits the usability of the created code and accuracy of code analysis/reverse engineering (e.g., containment is hard to recognize in the code).
+          </p>
+          <p>
+           A more tractable form of round-trip engineering is implemented in the context of framework
+           <a class="mw-redirect" href="/wiki/Application_programming_interface" title="Application programming interface">
+            application programming interfaces
+           </a>
+           (APIs), whereby a model describing the usage of a framework API by an application is synchronized with that application's code. In this setting, the API
+           <i>
+            prescribes
+           </i>
+           all correct ways the framework can be used in applications, which allows precise and complete detection of API usages in the code as well as creation of useful code implementing correct API usages. Two prominent RTE implementations in this category are
+           <a href="/wiki/Framework-specific_modeling_language" title="Framework-specific modeling language">
+            framework-specific modeling languages
+           </a>
+           and
+           <a href="/wiki/Spring_Roo" title="Spring Roo">
+            Spring Roo
+           </a>
+           (Java).
+          </p>
+          <p>
+           Round-trip engineering is critical for maintaining consistency among multiple models and between the models and the code in
+           <a href="/wiki/Object_Management_Group" title="Object Management Group">
+            Object Management Group
+           </a>
+           's (OMG)
+           <a href="/wiki/Model-driven_architecture" title="Model-driven architecture">
+            Model-driven architecture
+           </a>
+           . OMG proposed the
+           <a href="/wiki/QVT" title="QVT">
+            QVT
+           </a>
+           (query/view/transformation) standard to handle model transformations required for MDA. To date
+           <sup class="noprint Inline-Template" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items" title="Wikipedia:Manual of Style/Dates and numbers">
+              <span title="The time period mentioned near this tag is ambiguous. (July 2023)">
+               when?
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+           , a few implementations of the standard have been created. (Need to present practical experiences with MDA in relation to RTE).
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Controversies">
+            Controversies
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Round-trip_engineering&amp;action=edit&amp;section=7" title="Edit section: Controversies">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Code_generation_controversy">
+            Code generation controversy
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Round-trip_engineering&amp;action=edit&amp;section=8" title="Edit section: Code generation controversy">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           <a href="/wiki/Automatic_programming" title="Automatic programming">
+            Code generation
+           </a>
+           (forward-engineering) from models means that the user abstractly models solutions, which are connoted by some model data, and then an automated tool derives from the models parts or all of the
+           <a href="/wiki/Source_code" title="Source code">
+            source code
+           </a>
+           for the software system. In some tools, the user can provide a skeleton of the program source code, in the form of a source code
+           <a class="mw-redirect" href="/wiki/Template_(programming)" title="Template (programming)">
+            template
+           </a>
+           where predefined tokens are then replaced with program source code parts during the code generation process.
+          </p>
+          <p>
+           <a class="mw-redirect" href="/wiki/UML" title="UML">
+            UML
+           </a>
+           (if used for MDA) diagrams specification was criticized for lack the detail which is needed to contain the same information as is covered with the program source. Some developers even claim that "the Code
+           <i>
+            is
+           </i>
+           the design".
+           <sup class="reference" id="cite_ref-5">
+            <a href="#cite_note-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-6">
+            <a href="#cite_note-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Disadvantages">
+            Disadvantages
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Round-trip_engineering&amp;action=edit&amp;section=9" title="Edit section: Disadvantages">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           There is a serious risk that the generated code will rapidly differ from the model or that the reverse-engineered model will lose its reflection on the code or a mix of these two problems as result of cycled reengineering efforts.
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Regarding behavioral/dynamic part of
+           <a class="mw-redirect" href="/wiki/UML" title="UML">
+            UML
+           </a>
+           for features like
+           <a href="/wiki/State_diagram" title="State diagram">
+            statechart diagram
+           </a>
+           there is no equivalents in programming languages. Their translation during code-generation will result in common programming statement (.e.g
+           <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" dir="ltr" style="">
+            if,switch,enum
+           </code>
+           ) being either missing or misinterpreted. If edited and imported back may result in different or incomplete model.
+           <sup class="reference" id="cite_ref-:0_8-0">
+            <a href="#cite_note-:0-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-:1_9-0">
+            <a href="#cite_note-:1-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The same goes for code snippets used for code generation stage for the pattern-implementation and user-specific logic: intermixed they may not be easily reverse-engineered back.
+           <sup class="reference" id="cite_ref-:0_8-1">
+            <a href="#cite_note-:0-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-:1_9-1">
+            <a href="#cite_note-:1-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           There is also general lack of advanced tooling for modelling that are comparable to that of modern IDEs (for testing, debugging, navigation, etc.) for
+           <a href="/wiki/General-purpose_programming_language" title="General-purpose programming language">
+            general-purpose programming languages
+           </a>
+           and
+           <a href="/wiki/Domain-specific_language" title="Domain-specific language">
+            domain-specific languages
+           </a>
+           .
+           <sup class="reference" id="cite_ref-:1_9-2">
+            <a href="#cite_note-:1-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Examples_in_software_engineering">
+            Examples in software engineering
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Round-trip_engineering&amp;action=edit&amp;section=10" title="Edit section: Examples in software engineering">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Perhaps the most common form of round-trip engineering is synchronization between UML (
+           <a href="/wiki/Unified_Modeling_Language" title="Unified Modeling Language">
+            Unified Modeling Language
+           </a>
+           ) models and the corresponding source code and
+           <a href="/wiki/Entity%E2%80%93relationship_model" title="Entity–relationship model">
+            entity–relationship diagrams
+           </a>
+           in
+           <a href="/wiki/Data_modeling" title="Data modeling">
+            data modelling
+           </a>
+           and
+           <a class="mw-redirect" href="/wiki/Database_modelling" title="Database modelling">
+            database modelling
+           </a>
+           .
+          </p>
+          <p>
+           Round-trip engineering based on
+           <a href="/wiki/Unified_Modeling_Language" title="Unified Modeling Language">
+            Unified Modeling Language
+           </a>
+           (UML) needs three basic tools for software development:
+           <sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">
+            [
+            <i>
+             <a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">
+              <span title="This claim needs references to reliable sources. (January 2018)">
+               citation needed
+              </span>
+             </a>
+            </i>
+            ]
+           </sup>
+          </p>
+          <ul>
+           <li>
+            Source Code Editor;
+           </li>
+           <li>
+            UML Editor for the Attributes and Methods;
+           </li>
+           <li>
+            Visualisation of UML structure
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Round-trip_engineering&amp;action=edit&amp;section=11" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation book cs1" id="CITEREFGentle2012">
+                Gentle, Anne (2012).
+                <i>
+                 Conversation and Community: The Social Web for Documentation
+                </i>
+                (2nd ed.). XML Press.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-1937434106" title="Special:BookSources/978-1937434106">
+                 <bdi>
+                  978-1937434106
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Conversation+and+Community%3A+The+Social+Web+for+Documentation&amp;rft.edition=2nd&amp;rft.pub=XML+Press&amp;rft.date=2012&amp;rft.isbn=978-1937434106&amp;rft.aulast=Gentle&amp;rft.aufirst=Anne&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARound-trip+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFSobh2008">
+                Sobh, Tarek M. (2008).
+                <i>
+                 Advances in computer and information sciences and engineering
+                </i>
+                . International Conference on Systems, Computing Sciences and Software Engineering. New York?: Springer.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-1-4020-8741-7" title="Special:BookSources/978-1-4020-8741-7">
+                 <bdi>
+                  978-1-4020-8741-7
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Advances+in+computer+and+information+sciences+and+engineering&amp;rft.place=New+York%3F&amp;rft.pub=Springer&amp;rft.date=2008&amp;rft.isbn=978-1-4020-8741-7&amp;rft.aulast=Sobh&amp;rft.aufirst=Tarek+M.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARound-trip+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Diehl2007-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Diehl2007_3-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFStephan_Diehl2007">
+                Stephan Diehl (2007).
+                <i>
+                 Software Visualization: Visualizing the Structure, Behaviour, and Evolution of Software
+                </i>
+                . Springer Science &amp; Business Media. p. 63.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-3-540-46505-8" title="Special:BookSources/978-3-540-46505-8">
+                 <bdi>
+                  978-3-540-46505-8
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Software+Visualization%3A+Visualizing+the+Structure%2C+Behaviour%2C+and+Evolution+of+Software&amp;rft.pages=63&amp;rft.pub=Springer+Science+%26+Business+Media&amp;rft.date=2007&amp;rft.isbn=978-3-540-46505-8&amp;rft.au=Stephan+Diehl&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARound-trip+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-FilevLoton2005-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-FilevLoton2005_4-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFAndrew_FilevTony_LotonKevin_McNeishBen_Schoellmann2005">
+                Andrew Filev; Tony Loton; Kevin McNeish; Ben Schoellmann; John Slater; Chaur G. Wu (2005).
+                <i>
+                 Professional UML Using Visual Studio .Net
+                </i>
+                . John Wiley &amp; Sons. p. 181.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-7645-5875-7" title="Special:BookSources/978-0-7645-5875-7">
+                 <bdi>
+                  978-0-7645-5875-7
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Professional+UML+Using+Visual+Studio+.Net&amp;rft.pages=181&amp;rft.pub=John+Wiley+%26+Sons&amp;rft.date=2005&amp;rft.isbn=978-0-7645-5875-7&amp;rft.au=Andrew+Filev&amp;rft.au=Tony+Loton&amp;rft.au=Kevin+McNeish&amp;rft.au=Ben+Schoellmann&amp;rft.au=John+Slater&amp;rft.au=Chaur+G.+Wu&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARound-trip+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <a class="external free" href="http://www.developerdotstar.com/mag/articles/reeves_design_main.html" rel="nofollow">
+                http://www.developerdotstar.com/mag/articles/reeves_design_main.html
+               </a>
+               by Jack W. Reeves
+              </span>
+             </li>
+             <li id="cite_note-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-6">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFReeves1992">
+                Reeves, Jack W. (1992).
+                <a class="external text" href="http://www.bleading-edge.com/Publications/C++Journal/Cpjour2.htm" rel="nofollow">
+                 "What is software engineering"
+                </a>
+                .
+                <i>
+                 www.bleading-edge.com
+                </i>
+                . C++ Journal
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2023-07-25
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.bleading-edge.com&amp;rft.atitle=What+is+software+engineering&amp;rft.date=1992&amp;rft.aulast=Reeves&amp;rft.aufirst=Jack+W.&amp;rft_id=http%3A%2F%2Fwww.bleading-edge.com%2FPublications%2FC%2B%2BJournal%2FCpjour2.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARound-trip+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.modeliosoft.com/modelio-help/41/en/index.jsp?topic=/csdesigner-doc/html/Csdesigner_choose_functional_mode_round_trip.html" rel="nofollow">
+                 "Help -"
+                </a>
+                .
+                <i>
+                 www.modeliosoft.com
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2023-07-25
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.modeliosoft.com&amp;rft.atitle=Help+-&amp;rft_id=https%3A%2F%2Fwww.modeliosoft.com%2Fmodelio-help%2F41%2Fen%2Findex.jsp%3Ftopic%3D%2Fcsdesigner-doc%2Fhtml%2FCsdesigner_choose_functional_mode_round_trip.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARound-trip+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:0-8">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:0_8-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:0_8-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFSiegl">
+                Siegl, Daniel.
+                <a class="external text" href="https://blog.lieberlieber.com/2015/09/05/why-round-trip-engineering-does-not-work/" rel="nofollow">
+                 "Why Round-Trip Engineering does not work | LieberLieber Modelling Expert"
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2023-07-25
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Why+Round-Trip+Engineering+does+not+work+%7C+LieberLieber+Modelling+Expert&amp;rft.aulast=Siegl&amp;rft.aufirst=Daniel&amp;rft_id=https%3A%2F%2Fblog.lieberlieber.com%2F2015%2F09%2F05%2Fwhy-round-trip-engineering-does-not-work%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARound-trip+engineering">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:1-9">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:1_9-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:1_9-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:1_9-2">
+                <sup>
+                 <i>
+                  <b>
+                   c
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://www.infoq.com/articles/8-reasons-why-MDE-fails/" rel="nofollow">
+                 "8 Reasons Why Model-Driven Approaches (will) Fail"
+                </a>
+                .
+                <i>
+                 InfoQ
+                </i>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2023-07-29
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=InfoQ&amp;rft.atitle=8+Reasons+Why+Model-Driven+Approaches+%28will%29+Fail&amp;rft_id=https%3A%2F%2Fwww.infoq.com%2Farticles%2F8-reasons-why-MDE-fails%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARound-trip+engineering">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐api‐int.codfw.main‐578c476b7b‐qqpt4
+Cached time: 20240926195039
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.364 seconds
+Real time usage: 0.571 seconds
+Preprocessor visited node count: 1154/1000000
+Post‐expand include size: 26682/2097152 bytes
+Template argument size: 1194/2097152 bytes
+Highest expansion depth: 15/100
+Expensive parser function count: 5/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 30789/5000000 bytes
+Lua time usage: 0.219/10.000 seconds
+Lua memory usage: 6073833/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  525.324      1 -total
+ 36.99%  194.325      1 Template:Reflist
+ 36.08%  189.528      1 Template:Refimprove
+ 26.44%  138.895      4 Template:Cite_book
+ 23.66%  124.306      1 Template:Ambox
+ 13.80%   72.481      2 Template:Fix
+ 13.05%   68.574      1 Template:When
+  6.55%   34.391      1 Template:Rp
+  5.61%   29.457      1 Template:R/superscript
+  4.50%   23.641      4 Template:Cite_web
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:637240-0!canonical and timestamp 20240926195039 and revision id 1233617703. Rendering was triggered because: api-parse
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Round-trip_engineering&amp;oldid=1233617703">
+          https://en.wikipedia.org/w/index.php?title=Round-trip_engineering&amp;oldid=1233617703
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Programming_tools" title="Category:Programming tools">
+            Programming tools
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Reverse_engineering" title="Category:Reverse engineering">
+            Reverse engineering
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_December_2009" title="Category:Articles needing additional references from December 2009">
+            Articles needing additional references from December 2009
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_vague_or_ambiguous_time" title="Category:All articles with vague or ambiguous time">
+            All articles with vague or ambiguous time
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Vague_or_ambiguous_time_from_July_2023" title="Category:Vague or ambiguous time from July 2023">
+            Vague or ambiguous time from July 2023
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">
+            All articles with unsourced statements
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_unsourced_statements_from_January_2018" title="Category:Articles with unsourced statements from January 2018">
+            Articles with unsourced statements from January 2018
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 10 July 2024, at 01:41
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Round-trip_engineering&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-c6dm4","wgBackendResponseTime":161,"wgPageParseReport":{"limitreport":{"cputime":"0.364","walltime":"0.571","ppvisitednodes":{"value":1154,"limit":1000000},"postexpandincludesize":{"value":26682,"limit":2097152},"templateargumentsize":{"value":1194,"limit":2097152},"expansiondepth":{"value":15,"limit":100},"expensivefunctioncount":{"value":5,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":30789,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  525.324      1 -total"," 36.99%  194.325      1 Template:Reflist"," 36.08%  189.528      1 Template:Refimprove"," 26.44%  138.895      4 Template:Cite_book"," 23.66%  124.306      1 Template:Ambox"," 13.80%   72.481      2 Template:Fix"," 13.05%   68.574      1 Template:When","  6.55%   34.391      1 Template:Rp","  5.61%   29.457      1 Template:R/superscript","  4.50%   23.641      4 Template:Cite_web"]},"scribunto":{"limitreport-timeusage":{"value":"0.219","limit":"10.000"},"limitreport-memusage":{"value":6073833,"limit":52428800}},"cachereport":{"origin":"mw-api-int.codfw.main-578c476b7b-qqpt4","timestamp":"20240926195039","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Round-trip engineering","url":"https:\/\/en.wikipedia.org\/wiki\/Round-trip_engineering","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1509981","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1509981","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-05-05T19:58:42Z","dateModified":"2024-07-10T01:41:31Z","headline":"software engineering concept"}
+  </script>
+ </body>
+</html>

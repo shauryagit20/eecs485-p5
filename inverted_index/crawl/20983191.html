@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Bit-level parallelism - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"a3e6dbb4-a269-458a-9353-9f3bf5674b2b","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Bit-level_parallelism","wgTitle":"Bit-level parallelism","wgCurRevisionId":1231905444,"wgRevisionId":1231905444,"wgArticleId":14229148,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Articles needing additional references from June 2024","All articles needing additional references","Parallel computing"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Bit-level_parallelism","wgRelevantArticleId":14229148,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":2000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1279909","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,
+"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups",
+"ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Bit-level parallelism - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Bit-level_parallelism" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Bit-level_parallelism&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Bit-level_parallelism" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Bit-level_parallelism"/>
+  <meta eecs485_docid="20983191"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Bit-level_parallelism rootpage-Bit-level_parallelism skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Bit-level+parallelism" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Bit-level+parallelism" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Bit-level+parallelism" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Bit-level+parallelism" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Bit-level parallelism
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 7 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-7" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          7 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="توازي على مستوى البت" href="https://ar.wikipedia.org/wiki/%D8%AA%D9%88%D8%A7%D8%B2%D9%8A_%D8%B9%D9%84%D9%89_%D9%85%D8%B3%D8%AA%D9%88%D9%89_%D8%A7%D9%84%D8%A8%D8%AA" hreflang="ar" lang="ar" title="توازي على مستوى البت – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="موازی‌سازی بیتی" href="https://fa.wikipedia.org/wiki/%D9%85%D9%88%D8%A7%D8%B2%DB%8C%E2%80%8C%D8%B3%D8%A7%D8%B2%DB%8C_%D8%A8%DB%8C%D8%AA%DB%8C" hreflang="fa" lang="fa" title="موازی‌سازی بیتی – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Bit-level parallelism" href="https://ru.wikipedia.org/wiki/Bit-level_parallelism" hreflang="ru" lang="ru" title="Bit-level parallelism – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-simple mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Simple English" data-language-local-name="Simple English" data-title="Bit-level parallelism" href="https://simple.wikipedia.org/wiki/Bit-level_parallelism" hreflang="en-simple" lang="en-simple" title="Bit-level parallelism – Simple English">
+             <span>
+              Simple English
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" data-title="Паралелизам на нивоу бита" href="https://sr.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%BB%D0%B5%D0%BB%D0%B8%D0%B7%D0%B0%D0%BC_%D0%BD%D0%B0_%D0%BD%D0%B8%D0%B2%D0%BE%D1%83_%D0%B1%D0%B8%D1%82%D0%B0" hreflang="sr" lang="sr" title="Паралелизам на нивоу бита – Serbian">
+             <span>
+              Српски / srpski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Паралелізм бітового рівня" href="https://uk.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%BB%D0%B5%D0%BB%D1%96%D0%B7%D0%BC_%D0%B1%D1%96%D1%82%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE_%D1%80%D1%96%D0%B2%D0%BD%D1%8F" hreflang="uk" lang="uk" title="Паралелізм бітового рівня – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="位元層級平行" href="https://zh.wikipedia.org/wiki/%E4%BD%8D%E5%85%83%E5%B1%A4%E7%B4%9A%E5%B9%B3%E8%A1%8C" hreflang="zh" lang="zh" title="位元層級平行 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1279909#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Bit-level_parallelism" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Bit-level_parallelism" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Bit-level_parallelism">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Bit-level_parallelism&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Bit-level_parallelism&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Bit-level_parallelism">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Bit-level_parallelism&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Bit-level_parallelism&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Bit-level_parallelism" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Bit-level_parallelism" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Bit-level_parallelism&amp;oldid=1231905444" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Bit-level_parallelism&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Bit-level_parallelism&amp;id=1231905444&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBit-level_parallelism">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBit-level_parallelism">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1279909" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Bit-level_parallelism&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Bit-level_parallelism&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Form of parallel computing
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <table class="box-One_source plainlinks metadata ambox ambox-content ambox-one_source" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                <img class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+               </a>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              This article
+              <b>
+               relies largely or entirely on a
+               <a href="/wiki/Wikipedia:Articles_with_a_single_source" title="Wikipedia:Articles with a single source">
+                single source
+               </a>
+              </b>
+              .
+              <span class="hide-when-compact">
+               Relevant discussion may be found on the
+               <a href="/wiki/Talk:Bit-level_parallelism##" title="Talk:Bit-level parallelism">
+                talk page
+               </a>
+               . Please help
+               <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Bit-level_parallelism&amp;action=edit">
+                improve this article
+               </a>
+               by
+               <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                introducing  citations to additional sources
+               </a>
+               .
+               <br/>
+               <small>
+                <span class="plainlinks">
+                 <i>
+                  Find sources:
+                 </i>
+                 <a class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Bit-level+parallelism%22" rel="nofollow">
+                  "Bit-level parallelism"
+                 </a>
+                 –
+                 <a class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Bit-level+parallelism%22+-wikipedia&amp;tbs=ar:1" rel="nofollow">
+                  news
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?&amp;q=%22Bit-level+parallelism%22&amp;tbs=bkt:s&amp;tbm=bks" rel="nofollow">
+                  newspapers
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Bit-level+parallelism%22+-wikipedia" rel="nofollow">
+                  books
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://scholar.google.com/scholar?q=%22Bit-level+parallelism%22" rel="nofollow">
+                  scholar
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Bit-level+parallelism%22&amp;acc=on&amp;wc=on" rel="nofollow">
+                  JSTOR
+                 </a>
+                </span>
+               </small>
+              </span>
+              <span class="date-container">
+               <i>
+                (
+                <span class="date">
+                 June 2024
+                </span>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          <b>
+           Bit-level parallelism
+          </b>
+          is a form of
+          <a href="/wiki/Parallel_computing" title="Parallel computing">
+           parallel computing
+          </a>
+          based on increasing
+          <a class="mw-redirect" href="/wiki/Word_(data_type)" title="Word (data type)">
+           processor word size
+          </a>
+          . Increasing the word size reduces the number of instructions the processor must execute in order to perform an operation on variables whose sizes are greater than the length of the word. (For example, consider a case where an
+          <a href="/wiki/8-bit_computing" title="8-bit computing">
+           8-bit
+          </a>
+          processor must add two
+          <a href="/wiki/16-bit_computing" title="16-bit computing">
+           16-bit
+          </a>
+          <a href="/wiki/Integer" title="Integer">
+           integers
+          </a>
+          . The processor must first add the 8 lower-order bits from each integer, then add the 8 higher-order bits, requiring two instructions to complete a single operation. A 16-bit processor would be able to complete the operation with single instruction.)
+         </p>
+         <p>
+          Originally, all electronic computers were serial (single-bit) computers. The first electronic computer that was not a
+          <a href="/wiki/Serial_computer" title="Serial computer">
+           serial computer
+          </a>
+          —the first bit-parallel computer—was the 16-bit
+          <a class="mw-redirect" href="/wiki/Whirlwind_(computer)" title="Whirlwind (computer)">
+           Whirlwind
+          </a>
+          from 1951.
+         </p>
+         <p>
+          From the advent of
+          <a href="/wiki/Very-large-scale_integration" title="Very-large-scale integration">
+           very-large-scale integration
+          </a>
+          (VLSI) computer chip fabrication technology in the 1970s until about 1986, advancements in computer architecture were done by increasing bit-level parallelism,
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          as
+          <a href="/wiki/4-bit_computing" title="4-bit computing">
+           4-bit
+          </a>
+          microprocessors were replaced by
+          <a href="/wiki/8-bit_computing" title="8-bit computing">
+           8-bit
+          </a>
+          , then
+          <a href="/wiki/16-bit_computing" title="16-bit computing">
+           16-bit
+          </a>
+          , then
+          <a href="/wiki/32-bit_computing" title="32-bit computing">
+           32-bit
+          </a>
+          microprocessors. This trend generally came to an end with the introduction of 32-bit processors, which were a standard in general purpose computing for two decades. 64 bit architectures were introduced to the mainstream with the eponymous Nintendo 64 (1996), but beyond this introduction stayed uncommon until the advent of
+          <a href="/wiki/X86-64" title="X86-64">
+           x86-64
+          </a>
+          architectures around the year 2003, and 2014 for mobile devices with the ARMv8-A instruction set.
+         </p>
+         <p>
+          On 32-bit processors, external
+          <a href="/wiki/Bus_(computing)" title="Bus (computing)">
+           data bus
+          </a>
+          width continues to increase. For example,
+          <a class="mw-redirect" href="/wiki/DDR1_SDRAM" title="DDR1 SDRAM">
+           DDR1 SDRAM
+          </a>
+          transfers 128 bits per clock cycle.
+          <a href="/wiki/DDR2_SDRAM" title="DDR2 SDRAM">
+           DDR2 SDRAM
+          </a>
+          transfers a minimum of 256 bits per burst.
+         </p>
+         <div class="mw-heading mw-heading2">
+          <h2 id="See_also">
+           See also
+          </h2>
+          <span class="mw-editsection">
+           <span class="mw-editsection-bracket">
+            [
+           </span>
+           <a href="/w/index.php?title=Bit-level_parallelism&amp;action=edit&amp;section=1" title="Edit section: See also">
+            <span>
+             edit
+            </span>
+           </a>
+           <span class="mw-editsection-bracket">
+            ]
+           </span>
+          </span>
+         </div>
+         <ul>
+          <li>
+           <a href="/wiki/Single_instruction,_multiple_data" title="Single instruction, multiple data">
+            Single Instruction, Multiple Data
+           </a>
+           (SIMD)
+          </li>
+          <li>
+           <a href="/wiki/SWAR" title="SWAR">
+            SIMD Within A Register
+           </a>
+          </li>
+         </ul>
+         <div class="mw-heading mw-heading2">
+          <h2 id="References">
+           References
+          </h2>
+          <span class="mw-editsection">
+           <span class="mw-editsection-bracket">
+            [
+           </span>
+           <a href="/w/index.php?title=Bit-level_parallelism&amp;action=edit&amp;section=2" title="Edit section: References">
+            <span>
+             edit
+            </span>
+           </a>
+           <span class="mw-editsection-bracket">
+            ]
+           </span>
+          </span>
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1239543626">
+          .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+         </style>
+         <div class="reflist">
+          <div class="mw-references-wrap">
+           <ol class="references">
+            <li id="cite_note-1">
+             <span class="mw-cite-backlink">
+              <b>
+               <a href="#cite_ref-1">
+                ^
+               </a>
+              </b>
+             </span>
+             <span class="reference-text">
+              David E. Culler, Jaswinder Pal Singh, Anoop Gupta. Parallel Computer Architecture - A Hardware/Software Approach. Morgan Kaufmann Publishers, 1999.
+              <style data-mw-deduplicate="TemplateStyles:r1238218222">
+               .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+              </style>
+              <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+               ISBN
+              </a>
+              <a href="/wiki/Special:BookSources/1-55860-343-3" title="Special:BookSources/1-55860-343-3">
+               1-55860-343-3
+              </a>
+              , pg 15
+             </span>
+            </li>
+           </ol>
+          </div>
+         </div>
+         <div class="navbox-styles">
+          <style data-mw-deduplicate="TemplateStyles:r1129693374">
+           .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+          </style>
+          <style data-mw-deduplicate="TemplateStyles:r1236075235">
+           .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+          </style>
+         </div>
+         <div aria-labelledby="Parallel_computing" class="navbox" role="navigation" style="padding:3px">
+          <table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+           <tbody>
+            <tr>
+             <th class="navbox-title" colspan="2" scope="col">
+              <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+              <style data-mw-deduplicate="TemplateStyles:r1239400231">
+               .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+              </style>
+              <div class="navbar plainlinks hlist navbar-mini">
+               <ul>
+                <li class="nv-view">
+                 <a href="/wiki/Template:Parallel_computing" title="Template:Parallel computing">
+                  <abbr title="View this template">
+                   v
+                  </abbr>
+                 </a>
+                </li>
+                <li class="nv-talk">
+                 <a href="/wiki/Template_talk:Parallel_computing" title="Template talk:Parallel computing">
+                  <abbr title="Discuss this template">
+                   t
+                  </abbr>
+                 </a>
+                </li>
+                <li class="nv-edit">
+                 <a href="/wiki/Special:EditPage/Template:Parallel_computing" title="Special:EditPage/Template:Parallel computing">
+                  <abbr title="Edit this template">
+                   e
+                  </abbr>
+                 </a>
+                </li>
+               </ul>
+              </div>
+              <div id="Parallel_computing" style="font-size:114%;margin:0 4em">
+               <a href="/wiki/Parallel_computing" title="Parallel computing">
+                Parallel computing
+               </a>
+              </div>
+             </th>
+            </tr>
+            <tr>
+             <th class="navbox-group" scope="row" style="width:1%">
+              General
+             </th>
+             <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+              <div style="padding:0 0.25em">
+               <ul>
+                <li>
+                 <a href="/wiki/Distributed_computing" title="Distributed computing">
+                  Distributed computing
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Parallel_computing" title="Parallel computing">
+                  Parallel computing
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Massively_parallel" title="Massively parallel">
+                  Massively parallel
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Cloud_computing" title="Cloud computing">
+                  Cloud computing
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/High-performance_computing" title="High-performance computing">
+                  High-performance computing
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Multiprocessing" title="Multiprocessing">
+                  Multiprocessing
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Manycore_processor" title="Manycore processor">
+                  Manycore processor
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/General-purpose_computing_on_graphics_processing_units" title="General-purpose computing on graphics processing units">
+                  GPGPU
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Computer_network" title="Computer network">
+                  Computer network
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Systolic_array" title="Systolic array">
+                  Systolic array
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <th class="navbox-group" scope="row" style="width:1%">
+              Levels
+             </th>
+             <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+              <div style="padding:0 0.25em">
+               <ul>
+                <li>
+                 <a class="mw-selflink selflink">
+                  Bit
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Instruction-level_parallelism" title="Instruction-level parallelism">
+                  Instruction
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Task_parallelism" title="Task parallelism">
+                  Thread
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Task_parallelism" title="Task parallelism">
+                  Task
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Data_parallelism" title="Data parallelism">
+                  Data
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Memory-level_parallelism" title="Memory-level parallelism">
+                  Memory
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Loop-level_parallelism" title="Loop-level parallelism">
+                  Loop
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Pipeline_(computing)" title="Pipeline (computing)">
+                  Pipeline
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <th class="navbox-group" scope="row" style="width:1%">
+              <a href="/wiki/Multithreading_(computer_architecture)" title="Multithreading (computer architecture)">
+               Multithreading
+              </a>
+             </th>
+             <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+              <div style="padding:0 0.25em">
+               <ul>
+                <li>
+                 <a href="/wiki/Temporal_multithreading" title="Temporal multithreading">
+                  Temporal
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Simultaneous_multithreading" title="Simultaneous multithreading">
+                  Simultaneous
+                 </a>
+                 (SMT)
+                </li>
+                <li>
+                 <a href="/wiki/Simultaneous_and_heterogeneous_multithreading" title="Simultaneous and heterogeneous multithreading">
+                  Simultaneous and heterogenous
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Speculative_multithreading" title="Speculative multithreading">
+                  Speculative
+                 </a>
+                 (SpMT)
+                </li>
+                <li>
+                 <a href="/wiki/Preemption_(computing)" title="Preemption (computing)">
+                  Preemptive
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Computer_multitasking#Cooperative_multitasking" title="Computer multitasking">
+                  Cooperative
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Bulldozer_(microarchitecture)#Bulldozer_core" title="Bulldozer (microarchitecture)">
+                  Clustered multi-thread
+                 </a>
+                 (CMT)
+                </li>
+                <li>
+                 <a href="/wiki/Hardware_scout" title="Hardware scout">
+                  Hardware scout
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <th class="navbox-group" scope="row" style="width:1%">
+              Theory
+             </th>
+             <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+              <div style="padding:0 0.25em">
+               <ul>
+                <li>
+                 <a href="/wiki/Parallel_RAM" title="Parallel RAM">
+                  PRAM model
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Parallel_external_memory" title="Parallel external memory">
+                  PEM model
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Analysis_of_parallel_algorithms" title="Analysis of parallel algorithms">
+                  Analysis of parallel algorithms
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Amdahl%27s_law" title="Amdahl's law">
+                  Amdahl's law
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Gustafson%27s_law" title="Gustafson's law">
+                  Gustafson's law
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Cost_efficiency" title="Cost efficiency">
+                  Cost efficiency
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Karp%E2%80%93Flatt_metric" title="Karp–Flatt metric">
+                  Karp–Flatt metric
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Parallel_slowdown" title="Parallel slowdown">
+                  Slowdown
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Speedup" title="Speedup">
+                  Speedup
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <th class="navbox-group" scope="row" style="width:1%">
+              Elements
+             </th>
+             <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+              <div style="padding:0 0.25em">
+               <ul>
+                <li>
+                 <a href="/wiki/Process_(computing)" title="Process (computing)">
+                  Process
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Thread_(computing)" title="Thread (computing)">
+                  Thread
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Fiber_(computer_science)" title="Fiber (computer science)">
+                  Fiber
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Instruction_window" title="Instruction window">
+                  Instruction window
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Array_(data_structure)" title="Array (data structure)">
+                  Array
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <th class="navbox-group" scope="row" style="width:1%">
+              Coordination
+             </th>
+             <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+              <div style="padding:0 0.25em">
+               <ul>
+                <li>
+                 <a href="/wiki/Multiprocessing" title="Multiprocessing">
+                  Multiprocessing
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Memory_coherence" title="Memory coherence">
+                  Memory coherence
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Cache_coherence" title="Cache coherence">
+                  Cache coherence
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Cache_invalidation" title="Cache invalidation">
+                  Cache invalidation
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Barrier_(computer_science)" title="Barrier (computer science)">
+                  Barrier
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Synchronization_(computer_science)" title="Synchronization (computer science)">
+                  Synchronization
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Application_checkpointing" title="Application checkpointing">
+                  Application checkpointing
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <th class="navbox-group" scope="row" style="width:1%">
+              <a href="/wiki/Computer_programming" title="Computer programming">
+               Programming
+              </a>
+             </th>
+             <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+              <div style="padding:0 0.25em">
+               <ul>
+                <li>
+                 <a href="/wiki/Stream_processing" title="Stream processing">
+                  Stream processing
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Dataflow_programming" title="Dataflow programming">
+                  Dataflow programming
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Parallel_programming_model" title="Parallel programming model">
+                  Models
+                 </a>
+                 <ul>
+                  <li>
+                   <a href="/wiki/Implicit_parallelism" title="Implicit parallelism">
+                    Implicit parallelism
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Explicit_parallelism" title="Explicit parallelism">
+                    Explicit parallelism
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">
+                    Concurrency
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li>
+                 <a href="/wiki/Non-blocking_algorithm" title="Non-blocking algorithm">
+                  Non-blocking algorithm
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <th class="navbox-group" scope="row" style="width:1%">
+              <a href="/wiki/Computer_hardware" title="Computer hardware">
+               Hardware
+              </a>
+             </th>
+             <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+              <div style="padding:0 0.25em">
+               <ul>
+                <li>
+                 <a href="/wiki/Flynn%27s_taxonomy" title="Flynn's taxonomy">
+                  Flynn's taxonomy
+                 </a>
+                 <ul>
+                  <li>
+                   <a href="/wiki/Single_instruction,_single_data" title="Single instruction, single data">
+                    SISD
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Single_instruction,_multiple_data" title="Single instruction, multiple data">
+                    SIMD
+                   </a>
+                   <ul>
+                    <li>
+                     <a href="/wiki/Single_instruction,_multiple_threads" title="Single instruction, multiple threads">
+                      Array processing
+                     </a>
+                     (SIMT)
+                    </li>
+                    <li>
+                     <a href="/wiki/Flynn%27s_taxonomy#Pipelined_processor" title="Flynn's taxonomy">
+                      Pipelined processing
+                     </a>
+                    </li>
+                    <li>
+                     <a href="/wiki/Flynn%27s_taxonomy#Associative_processor" title="Flynn's taxonomy">
+                      Associative processing
+                     </a>
+                    </li>
+                   </ul>
+                  </li>
+                  <li>
+                   <a href="/wiki/Multiple_instruction,_single_data" title="Multiple instruction, single data">
+                    MISD
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Multiple_instruction,_multiple_data" title="Multiple instruction, multiple data">
+                    MIMD
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li>
+                 <a href="/wiki/Dataflow_architecture" title="Dataflow architecture">
+                  Dataflow architecture
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Instruction_pipelining" title="Instruction pipelining">
+                  Pipelined processor
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Superscalar_processor" title="Superscalar processor">
+                  Superscalar processor
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Vector_processor" title="Vector processor">
+                  Vector processor
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Multiprocessing" title="Multiprocessing">
+                  Multiprocessor
+                 </a>
+                 <ul>
+                  <li>
+                   <a href="/wiki/Symmetric_multiprocessing" title="Symmetric multiprocessing">
+                    symmetric
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Asymmetric_multiprocessing" title="Asymmetric multiprocessing">
+                    asymmetric
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li>
+                 <a href="/wiki/Semiconductor_memory" title="Semiconductor memory">
+                  Memory
+                 </a>
+                 <ul>
+                  <li>
+                   <a href="/wiki/Shared_memory" title="Shared memory">
+                    shared
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Distributed_memory" title="Distributed memory">
+                    distributed
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Distributed_shared_memory" title="Distributed shared memory">
+                    distributed shared
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Uniform_memory_access" title="Uniform memory access">
+                    UMA
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Non-uniform_memory_access" title="Non-uniform memory access">
+                    NUMA
+                   </a>
+                  </li>
+                  <li>
+                   <a href="/wiki/Cache-only_memory_architecture" title="Cache-only memory architecture">
+                    COMA
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li>
+                 <a href="/wiki/Massively_parallel" title="Massively parallel">
+                  Massively parallel
+                 </a>
+                 computer
+                </li>
+                <li>
+                 <a href="/wiki/Computer_cluster" title="Computer cluster">
+                  Computer cluster
+                 </a>
+                 <ul>
+                  <li>
+                   <a href="/wiki/Beowulf_cluster" title="Beowulf cluster">
+                    Beowulf cluster
+                   </a>
+                  </li>
+                 </ul>
+                </li>
+                <li>
+                 <a href="/wiki/Grid_computing" title="Grid computing">
+                  Grid computer
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Hardware_acceleration" title="Hardware acceleration">
+                  Hardware acceleration
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <th class="navbox-group" scope="row" style="width:1%">
+              <a href="/wiki/API" title="API">
+               APIs
+              </a>
+             </th>
+             <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+              <div style="padding:0 0.25em">
+               <ul>
+                <li>
+                 <a href="/wiki/Ateji_PX" title="Ateji PX">
+                  Ateji PX
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Boost_(C%2B%2B_libraries)" title="Boost (C++ libraries)">
+                  Boost
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Chapel_(programming_language)" title="Chapel (programming language)">
+                  Chapel
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/HPX" title="HPX">
+                  HPX
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Charm%2B%2B" title="Charm++">
+                  Charm++
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Cilk" title="Cilk">
+                  Cilk
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Coarray_Fortran" title="Coarray Fortran">
+                  Coarray Fortran
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/CUDA" title="CUDA">
+                  CUDA
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Dryad_(programming)" title="Dryad (programming)">
+                  Dryad
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/C%2B%2B_AMP" title="C++ AMP">
+                  C++ AMP
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Global_Arrays" title="Global Arrays">
+                  Global Arrays
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/GPUOpen" title="GPUOpen">
+                  GPUOpen
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Message_Passing_Interface" title="Message Passing Interface">
+                  MPI
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/OpenMP" title="OpenMP">
+                  OpenMP
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/OpenCL" title="OpenCL">
+                  OpenCL
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/OpenHMPP" title="OpenHMPP">
+                  OpenHMPP
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/OpenACC" title="OpenACC">
+                  OpenACC
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Parallel_Extensions" title="Parallel Extensions">
+                  Parallel Extensions
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Parallel_Virtual_Machine" title="Parallel Virtual Machine">
+                  PVM
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Pthreads" title="Pthreads">
+                  pthreads
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/RaftLib" title="RaftLib">
+                  RaftLib
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/ROCm" title="ROCm">
+                  ROCm
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Unified_Parallel_C" title="Unified Parallel C">
+                  UPC
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Threading_Building_Blocks" title="Threading Building Blocks">
+                  TBB
+                 </a>
+                </li>
+                <li>
+                 <a class="mw-redirect" href="/wiki/ZPL_(programming_language)" title="ZPL (programming language)">
+                  ZPL
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <th class="navbox-group" scope="row" style="width:1%">
+              Problems
+             </th>
+             <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+              <div style="padding:0 0.25em">
+               <ul>
+                <li>
+                 <a href="/wiki/Automatic_parallelization" title="Automatic parallelization">
+                  Automatic parallelization
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Deadlock_(computer_science)" title="Deadlock (computer science)">
+                  Deadlock
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Deterministic_algorithm" title="Deterministic algorithm">
+                  Deterministic algorithm
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Embarrassingly_parallel" title="Embarrassingly parallel">
+                  Embarrassingly parallel
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Parallel_slowdown" title="Parallel slowdown">
+                  Parallel slowdown
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Race_condition" title="Race condition">
+                  Race condition
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Software_lockout" title="Software lockout">
+                  Software lockout
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Scalability" title="Scalability">
+                  Scalability
+                 </a>
+                </li>
+                <li>
+                 <a href="/wiki/Starvation_(computer_science)" title="Starvation (computer science)">
+                  Starvation
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <td class="navbox-abovebelow" colspan="2">
+              <div>
+               <ul>
+                <li>
+                 <span class="noviewer" typeof="mw:File">
+                  <span title="Category">
+                   <img alt="" class="mw-file-element" data-file-height="185" data-file-width="180" decoding="async" height="16" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" width="16"/>
+                  </span>
+                 </span>
+                 <a href="/wiki/Category:Parallel_computing" title="Category:Parallel computing">
+                  Category: Parallel computing
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+         <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐s25xr
+Cached time: 20240927010740
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.280 seconds
+Real time usage: 0.381 seconds
+Preprocessor visited node count: 636/1000000
+Post‐expand include size: 33020/2097152 bytes
+Template argument size: 630/2097152 bytes
+Highest expansion depth: 16/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 13822/5000000 bytes
+Lua time usage: 0.185/10.000 seconds
+Lua memory usage: 2741658/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+         <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  323.258      1 -total
+ 35.08%  113.395      1 Template:Parallel_computing
+ 34.31%  110.912      1 Template:Navbox
+ 23.02%   74.409      1 Template:Short_description
+ 20.56%   66.460      1 Template:Reflist
+ 20.13%   65.077      1 Template:One_source
+ 18.76%   60.658      1 Template:Ambox
+ 15.80%   51.085      1 Template:ISBN
+ 13.22%   42.721      1 Template:Catalog_lookup_link
+ 12.44%   40.224      2 Template:Pagetype
+-->
+         <!-- Saved in parser cache with key enwiki:pcache:idhash:14229148-0!canonical and timestamp 20240927010740 and revision id 1231905444. Rendering was triggered because: page-view
+ -->
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Bit-level_parallelism&amp;oldid=1231905444">
+          https://en.wikipedia.org/w/index.php?title=Bit-level_parallelism&amp;oldid=1231905444
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Category
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Parallel_computing" title="Category:Parallel computing">
+            Parallel computing
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_June_2024" title="Category:Articles needing additional references from June 2024">
+            Articles needing additional references from June 2024
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 30 June 2024, at 22:33
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Bit-level_parallelism&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-4rtrv","wgBackendResponseTime":187,"wgPageParseReport":{"limitreport":{"cputime":"0.280","walltime":"0.381","ppvisitednodes":{"value":636,"limit":1000000},"postexpandincludesize":{"value":33020,"limit":2097152},"templateargumentsize":{"value":630,"limit":2097152},"expansiondepth":{"value":16,"limit":100},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":13822,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  323.258      1 -total"," 35.08%  113.395      1 Template:Parallel_computing"," 34.31%  110.912      1 Template:Navbox"," 23.02%   74.409      1 Template:Short_description"," 20.56%   66.460      1 Template:Reflist"," 20.13%   65.077      1 Template:One_source"," 18.76%   60.658      1 Template:Ambox"," 15.80%   51.085      1 Template:ISBN"," 13.22%   42.721      1 Template:Catalog_lookup_link"," 12.44%   40.224      2 Template:Pagetype"]},"scribunto":{"limitreport-timeusage":{"value":"0.185","limit":"10.000"},"limitreport-memusage":{"value":2741658,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-s25xr","timestamp":"20240927010740","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Bit-level parallelism","url":"https:\/\/en.wikipedia.org\/wiki\/Bit-level_parallelism","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1279909","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1279909","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2007-11-13T15:26:14Z","dateModified":"2024-06-30T22:33:42Z","headline":"Parallel Computing Base"}
+  </script>
+ </body>
+</html>

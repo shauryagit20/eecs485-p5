@@ -1,0 +1,3385 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Procedural programming - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"ac084ebb-cb0b-440b-bf72-60bcd0d4cdc4","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Procedural_programming","wgTitle":"Procedural programming","wgCurRevisionId":1243823001,"wgRevisionId":1243823001,"wgArticleId":23801,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Articles needing additional references from April 2008","All articles needing additional references","Articles contradicting other articles","Articles with Curlie links","Programming paradigms"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Procedural_programming","wgRelevantArticleId":23801,"wgIsProbablyEditable":true,
+"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":9000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1418502","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],
+"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin",
+"mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Procedural programming - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Procedural_programming" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Procedural_programming&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Procedural_programming" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Procedural_programming"/>
+  <meta eecs485_docid="03349845"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Procedural_programming rootpage-Procedural_programming skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Procedural+programming" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Procedural+programming" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Procedural+programming" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Procedural+programming" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Development_practices">
+           <a class="vector-toc-link" href="#Development_practices">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Development practices
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Development_practices-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Development practices subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Development_practices-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Modularity_and_scoping">
+             <a class="vector-toc-link" href="#Modularity_and_scoping">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.1
+               </span>
+               <span>
+                Modularity and scoping
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Modularity_and_scoping-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Sharing">
+             <a class="vector-toc-link" href="#Sharing">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.2
+               </span>
+               <span>
+                Sharing
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Sharing-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Comparison_with_other_programming_paradigms">
+           <a class="vector-toc-link" href="#Comparison_with_other_programming_paradigms">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Comparison with other programming paradigms
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Comparison_with_other_programming_paradigms-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Comparison with other programming paradigms subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Comparison_with_other_programming_paradigms-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Imperative_programming">
+             <a class="vector-toc-link" href="#Imperative_programming">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.1
+               </span>
+               <span>
+                Imperative programming
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Imperative_programming-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Object-oriented_programming">
+             <a class="vector-toc-link" href="#Object-oriented_programming">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.2
+               </span>
+               <span>
+                Object-oriented programming
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Object-oriented_programming-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Functional_programming">
+             <a class="vector-toc-link" href="#Functional_programming">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.3
+               </span>
+               <span>
+                Functional programming
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Functional_programming-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Logic_programming">
+             <a class="vector-toc-link" href="#Logic_programming">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.4
+               </span>
+               <span>
+                Logic programming
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Logic_programming-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also_2">
+           <a class="vector-toc-link" href="#See_also_2">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also_2-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Procedural programming
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 36 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-36" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          36 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="برمجة إجرائية" href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D8%A5%D8%AC%D8%B1%D8%A7%D8%A6%D9%8A%D8%A9" hreflang="ar" lang="ar" title="برمجة إجرائية – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-be mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Беларуская" data-language-local-name="Belarusian" data-title="Працэдурнае праграмаванне" href="https://be.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D1%86%D1%8D%D0%B4%D1%83%D1%80%D0%BD%D0%B0%D0%B5_%D0%BF%D1%80%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%B0%D0%B2%D0%B0%D0%BD%D0%BD%D0%B5" hreflang="be" lang="be" title="Працэдурнае праграмаванне – Belarusian">
+             <span>
+              Беларуская
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-be-x-old mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Беларуская (тарашкевіца)" data-language-local-name="Belarusian (Taraškievica orthography)" data-title="Працэдурнае праграмаваньне" href="https://be-tarask.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D1%86%D1%8D%D0%B4%D1%83%D1%80%D0%BD%D0%B0%D0%B5_%D0%BF%D1%80%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%B0%D0%B2%D0%B0%D0%BD%D1%8C%D0%BD%D0%B5" hreflang="be-tarask" lang="be-tarask" title="Працэдурнае праграмаваньне – Belarusian (Taraškievica orthography)">
+             <span>
+              Беларуская (тарашкевіца)
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Programació procedimental" href="https://ca.wikipedia.org/wiki/Programaci%C3%B3_procedimental" hreflang="ca" lang="ca" title="Programació procedimental – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Prozedurale Programmierung" href="https://de.wikipedia.org/wiki/Prozedurale_Programmierung" hreflang="de" lang="de" title="Prozedurale Programmierung – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-et mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Eesti" data-language-local-name="Estonian" data-title="Protseduraalne programmeerimine" href="https://et.wikipedia.org/wiki/Protseduraalne_programmeerimine" hreflang="et" lang="et" title="Protseduraalne programmeerimine – Estonian">
+             <span>
+              Eesti
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-el mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Ελληνικά" data-language-local-name="Greek" data-title="Δομημένος προγραμματισμός" href="https://el.wikipedia.org/wiki/%CE%94%CE%BF%CE%BC%CE%B7%CE%BC%CE%AD%CE%BD%CE%BF%CF%82_%CF%80%CF%81%CE%BF%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CF%83%CE%BC%CF%8C%CF%82" hreflang="el" lang="el" title="Δομημένος προγραμματισμός – Greek">
+             <span>
+              Ελληνικά
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Programación por procedimientos" href="https://es.wikipedia.org/wiki/Programaci%C3%B3n_por_procedimientos" hreflang="es" lang="es" title="Programación por procedimientos – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="برنامه‌نویسی رویه‌ای" href="https://fa.wikipedia.org/wiki/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C_%D8%B1%D9%88%DB%8C%D9%87%E2%80%8C%D8%A7%DB%8C" hreflang="fa" lang="fa" title="برنامه‌نویسی رویه‌ای – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Programmation procédurale" href="https://fr.wikipedia.org/wiki/Programmation_proc%C3%A9durale" hreflang="fr" lang="fr" title="Programmation procédurale – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ga mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Gaeilge" data-language-local-name="Irish" data-title="Clárú gnásúil" href="https://ga.wikipedia.org/wiki/Cl%C3%A1r%C3%BA_gn%C3%A1s%C3%BAil" hreflang="ga" lang="ga" title="Clárú gnásúil – Irish">
+             <span>
+              Gaeilge
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="절차적 프로그래밍" href="https://ko.wikipedia.org/wiki/%EC%A0%88%EC%B0%A8%EC%A0%81_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" hreflang="ko" lang="ko" title="절차적 프로그래밍 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-id mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Bahasa Indonesia" data-language-local-name="Indonesian" data-title="Pemrograman prosedural" href="https://id.wikipedia.org/wiki/Pemrograman_prosedural" hreflang="id" lang="id" title="Pemrograman prosedural – Indonesian">
+             <span>
+              Bahasa Indonesia
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="Programmazione procedurale" href="https://it.wikipedia.org/wiki/Programmazione_procedurale" hreflang="it" lang="it" title="Programmazione procedurale – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-he mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="Hebrew" data-title="תכנות פרוצדורלי" href="https://he.wikipedia.org/wiki/%D7%AA%D7%9B%D7%A0%D7%95%D7%AA_%D7%A4%D7%A8%D7%95%D7%A6%D7%93%D7%95%D7%A8%D7%9C%D7%99" hreflang="he" lang="he" title="תכנות פרוצדורלי – Hebrew">
+             <span>
+              עברית
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-kk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Қазақша" data-language-local-name="Kazakh" data-title="Процедуралық-бағдарланған программалау" href="https://kk.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D0%B0%D0%BB%D1%8B%D2%9B-%D0%B1%D0%B0%D2%93%D0%B4%D0%B0%D1%80%D0%BB%D0%B0%D0%BD%D2%93%D0%B0%D0%BD_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%D0%BB%D0%B0%D1%83" hreflang="kk" lang="kk" title="Процедуралық-бағдарланған программалау – Kazakh">
+             <span>
+              Қазақша
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-hu mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Magyar" data-language-local-name="Hungarian" data-title="Procedurális programozás" href="https://hu.wikipedia.org/wiki/Procedur%C3%A1lis_programoz%C3%A1s" hreflang="hu" lang="hu" title="Procedurális programozás – Hungarian">
+             <span>
+              Magyar
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ml mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="മലയാളം" data-language-local-name="Malayalam" data-title="പ്രോസീജറൽ പ്രോഗ്രാമിംഗ്" href="https://ml.wikipedia.org/wiki/%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B5%8B%E0%B4%B8%E0%B5%80%E0%B4%9C%E0%B4%B1%E0%B5%BD_%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B5%8B%E0%B4%97%E0%B5%8D%E0%B4%B0%E0%B4%BE%E0%B4%AE%E0%B4%BF%E0%B4%82%E0%B4%97%E0%B5%8D" hreflang="ml" lang="ml" title="പ്രോസീജറൽ പ്രോഗ്രാമിംഗ് – Malayalam">
+             <span>
+              മലയാളം
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ms mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Bahasa Melayu" data-language-local-name="Malay" data-title="Pengaturcaraan bertatacara" href="https://ms.wikipedia.org/wiki/Pengaturcaraan_bertatacara" hreflang="ms" lang="ms" title="Pengaturcaraan bertatacara – Malay">
+             <span>
+              Bahasa Melayu
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-mn mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Монгол" data-language-local-name="Mongolian" data-title="Процедур хандалтат программчлал" href="https://mn.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80_%D1%85%D0%B0%D0%BD%D0%B4%D0%B0%D0%BB%D1%82%D0%B0%D1%82_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%87%D0%BB%D0%B0%D0%BB" hreflang="mn" lang="mn" title="Процедур хандалтат программчлал – Mongolian">
+             <span>
+              Монгол
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="手続き型プログラミング" href="https://ja.wikipedia.org/wiki/%E6%89%8B%E7%B6%9A%E3%81%8D%E5%9E%8B%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" hreflang="ja" lang="ja" title="手続き型プログラミング – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-no mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" data-title="Prosedyrisk programmering" href="https://no.wikipedia.org/wiki/Prosedyrisk_programmering" hreflang="nb" lang="nb" title="Prosedyrisk programmering – Norwegian Bokmål">
+             <span>
+              Norsk bokmål
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Programowanie proceduralne" href="https://pl.wikipedia.org/wiki/Programowanie_proceduralne" hreflang="pl" lang="pl" title="Programowanie proceduralne – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Programação procedural" href="https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_procedural" hreflang="pt" lang="pt" title="Programação procedural – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ro mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Română" data-language-local-name="Romanian" data-title="Programare procedurală" href="https://ro.wikipedia.org/wiki/Programare_procedural%C4%83" hreflang="ro" lang="ro" title="Programare procedurală – Romanian">
+             <span>
+              Română
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Процедурное программирование" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" hreflang="ru" lang="ru" title="Процедурное программирование – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Srpskohrvatski / српскохрватски" data-language-local-name="Serbo-Croatian" data-title="Proceduralno programiranje" href="https://sh.wikipedia.org/wiki/Proceduralno_programiranje" hreflang="sh" lang="sh" title="Proceduralno programiranje – Serbo-Croatian">
+             <span>
+              Srpskohrvatski / српскохрватски
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="Finnish" data-title="Proseduraalinen ohjelmointi" href="https://fi.wikipedia.org/wiki/Proseduraalinen_ohjelmointi" hreflang="fi" lang="fi" title="Proseduraalinen ohjelmointi – Finnish">
+             <span>
+              Suomi
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-sv mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Svenska" data-language-local-name="Swedish" data-title="Procedurell programmering" href="https://sv.wikipedia.org/wiki/Procedurell_programmering" hreflang="sv" lang="sv" title="Procedurell programmering – Swedish">
+             <span>
+              Svenska
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ta mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="தமிழ்" data-language-local-name="Tamil" data-title="படிமுறை நிரலாக்கம்" href="https://ta.wikipedia.org/wiki/%E0%AE%AA%E0%AE%9F%E0%AE%BF%E0%AE%AE%E0%AF%81%E0%AE%B1%E0%AF%88_%E0%AE%A8%E0%AE%BF%E0%AE%B0%E0%AE%B2%E0%AE%BE%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D" hreflang="ta" lang="ta" title="படிமுறை நிரலாக்கம் – Tamil">
+             <span>
+              தமிழ்
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-tr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Türkçe" data-language-local-name="Turkish" data-title="Yordamsal programlama" href="https://tr.wikipedia.org/wiki/Yordamsal_programlama" hreflang="tr" lang="tr" title="Yordamsal programlama – Turkish">
+             <span>
+              Türkçe
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Процедурне програмування" href="https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D0%BD%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" hreflang="uk" lang="uk" title="Процедурне програмування – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ur mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="اردو" data-language-local-name="Urdu" data-title="طریقہ کار پروگرامنگ" href="https://ur.wikipedia.org/wiki/%D8%B7%D8%B1%DB%8C%D9%82%DB%81_%DA%A9%D8%A7%D8%B1_%D9%BE%D8%B1%D9%88%DA%AF%D8%B1%D8%A7%D9%85%D9%86%DA%AF" hreflang="ur" lang="ur" title="طریقہ کار پروگرامنگ – Urdu">
+             <span>
+              اردو
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-vi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" data-title="Lập trình thủ tục" href="https://vi.wikipedia.org/wiki/L%E1%BA%ADp_tr%C3%ACnh_th%E1%BB%A7_t%E1%BB%A5c" hreflang="vi" lang="vi" title="Lập trình thủ tục – Vietnamese">
+             <span>
+              Tiếng Việt
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh-yue mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="粵語" data-language-local-name="Cantonese" data-title="程序式編程" href="https://zh-yue.wikipedia.org/wiki/%E7%A8%8B%E5%BA%8F%E5%BC%8F%E7%B7%A8%E7%A8%8B" hreflang="yue" lang="yue" title="程序式編程 – Cantonese">
+             <span>
+              粵語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="过程式编程" href="https://zh.wikipedia.org/wiki/%E8%BF%87%E7%A8%8B%E5%BC%8F%E7%BC%96%E7%A8%8B" hreflang="zh" lang="zh" title="过程式编程 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1418502#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Procedural_programming" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Procedural_programming" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Procedural_programming">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Procedural_programming&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Procedural_programming&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Procedural_programming">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Procedural_programming&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Procedural_programming&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Procedural_programming" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Procedural_programming" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Procedural_programming&amp;oldid=1243823001" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Procedural_programming&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Procedural_programming&amp;id=1243823001&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FProcedural_programming">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FProcedural_programming">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1418502" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Procedural_programming&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Procedural_programming&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Programming paradigm
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236090951">
+          .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+         </style>
+         <div class="hatnote navigation-not-searchable" role="note">
+          This article is about the computer programming paradigm. For the method of algorithmic content creation, see
+          <a href="/wiki/Procedural_generation" title="Procedural generation">
+           Procedural generation
+          </a>
+          .
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+               </a>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              This article
+              <b>
+               needs additional citations for
+               <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                verification
+               </a>
+              </b>
+              .
+              <span class="hide-when-compact">
+               Please help
+               <a href="/wiki/Special:EditPage/Procedural_programming" title="Special:EditPage/Procedural programming">
+                improve this article
+               </a>
+               by
+               <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                adding citations to reliable sources
+               </a>
+               . Unsourced material may be challenged and removed.
+               <br/>
+               <small>
+                <span class="plainlinks">
+                 <i>
+                  Find sources:
+                 </i>
+                 <a class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Procedural+programming%22" rel="nofollow">
+                  "Procedural programming"
+                 </a>
+                 –
+                 <a class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Procedural+programming%22+-wikipedia&amp;tbs=ar:1" rel="nofollow">
+                  news
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?&amp;q=%22Procedural+programming%22&amp;tbs=bkt:s&amp;tbm=bks" rel="nofollow">
+                  newspapers
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Procedural+programming%22+-wikipedia" rel="nofollow">
+                  books
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://scholar.google.com/scholar?q=%22Procedural+programming%22" rel="nofollow">
+                  scholar
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Procedural+programming%22&amp;acc=on&amp;wc=on" rel="nofollow">
+                  JSTOR
+                 </a>
+                </span>
+               </small>
+              </span>
+              <span class="date-container">
+               <i>
+                (
+                <span class="date">
+                 April 2008
+                </span>
+                )
+               </i>
+              </span>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          <b>
+           Procedural programming
+          </b>
+          is a
+          <a href="/wiki/Programming_paradigm" title="Programming paradigm">
+           programming paradigm
+          </a>
+          , classified as
+          <a href="/wiki/Imperative_programming" title="Imperative programming">
+           imperative programming
+          </a>
+          ,
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          that involves implementing the behavior of a
+          <a href="/wiki/Computer_program" title="Computer program">
+           computer program
+          </a>
+          as
+          <a href="/wiki/Function_(computer_programming)" title="Function (computer programming)">
+           procedures (a.k.a. functions, subroutines)
+          </a>
+          that call each other. The resulting program is a series of steps that forms a hierarchy of calls to its constituent procedures.
+         </p>
+         <p>
+          The first major procedural programming languages appeared
+          <abbr title="circa">
+           c.
+          </abbr>
+          <span style="white-space:nowrap;">
+           1957
+          </span>
+          –1964, including
+          <a href="/wiki/Fortran" title="Fortran">
+           Fortran
+          </a>
+          ,
+          <a href="/wiki/ALGOL" title="ALGOL">
+           ALGOL
+          </a>
+          ,
+          <a href="/wiki/COBOL" title="COBOL">
+           COBOL
+          </a>
+          ,
+          <a href="/wiki/PL/I" title="PL/I">
+           PL/I
+          </a>
+          and
+          <a href="/wiki/BASIC" title="BASIC">
+           BASIC
+          </a>
+          .
+          <sup class="reference" id="cite_ref-:0_2-0">
+           <a href="#cite_note-:0-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          <a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">
+           Pascal
+          </a>
+          and
+          <a href="/wiki/C_(programming_language)" title="C (programming language)">
+           C
+          </a>
+          were published
+          <abbr title="circa">
+           c.
+          </abbr>
+          <span style="white-space:nowrap;">
+           1970
+          </span>
+          –1972.
+         </p>
+         <p>
+          <a class="mw-redirect" href="/wiki/Computer_processor" title="Computer processor">
+           Computer processors
+          </a>
+          provide hardware support for procedural programming through a
+          <a href="/wiki/Stack_register" title="Stack register">
+           stack register
+          </a>
+          and instructions for
+          <a class="mw-redirect" href="/wiki/Subroutine#Jump_to_subroutine" title="Subroutine">
+           calling procedures
+          </a>
+          and returning from them. Hardware support for other types of programming is possible, like
+          <a class="mw-redirect" href="/wiki/Lisp_machines" title="Lisp machines">
+           Lisp machines
+          </a>
+          or
+          <a href="/wiki/Java_processor" title="Java processor">
+           Java processors
+          </a>
+          , but no attempt was commercially successful.
+          <sup class="noprint Inline-Template" style="white-space:nowrap;">
+           [
+           <i>
+            <a href="/wiki/Java_processor" title="Java processor">
+             <span title="It says they are today the most popular form of a high-level language computer architecture. (October 2017)">
+              contradictory
+             </span>
+            </a>
+           </i>
+           ]
+          </sup>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Development_practices">
+            Development practices
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Procedural_programming&amp;action=edit&amp;section=1" title="Edit section: Development practices">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Certain
+           <a href="/wiki/Software_development" title="Software development">
+            software development
+           </a>
+           practices are often employed with procedural programming in order to enhance quality and lower development and maintenance costs.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Modularity_and_scoping">
+            Modularity and scoping
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Procedural_programming&amp;action=edit&amp;section=2" title="Edit section: Modularity and scoping">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           <a class="mw-redirect" href="/wiki/Modularity_(programming)" title="Modularity (programming)">
+            Modularity
+           </a>
+           is about organizing the procedures of a program into separate modules -- each of which has a specific and understandable purpose.
+          </p>
+          <p>
+           Minimizing the
+           <a class="mw-redirect" href="/wiki/Scoping" title="Scoping">
+            scope
+           </a>
+           of variables and procedures can enhance software quality by reducing the
+           <a href="/wiki/Cognitive_load" title="Cognitive load">
+            cognitive load
+           </a>
+           of procedures and modules.
+          </p>
+          <p>
+           A program lacking modularity or wide scoping tends to have procedures that consume many
+           <a class="mw-redirect" href="/wiki/Variable_(programming)" title="Variable (programming)">
+            variables
+           </a>
+           that other procedures also consume. The resulting code is relatively hard to understand and to maintain.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Sharing">
+            Sharing
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Procedural_programming&amp;action=edit&amp;section=3" title="Edit section: Sharing">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Since a procedure can specify a well-defined interface and be self-contained it supports
+           <a href="/wiki/Code_reuse" title="Code reuse">
+            code reuse
+           </a>
+           -- in particular via the
+           <a href="/wiki/Library_(computing)" title="Library (computing)">
+            software library
+           </a>
+           .
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Comparison_with_other_programming_paradigms">
+            Comparison with other programming paradigms
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Procedural_programming&amp;action=edit&amp;section=4" title="Edit section: Comparison with other programming paradigms">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Imperative_programming">
+            Imperative programming
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Procedural_programming&amp;action=edit&amp;section=5" title="Edit section: Imperative programming">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Procedural programming is classified as an
+           <a href="/wiki/Imperative_programming" title="Imperative programming">
+            imperative programming
+           </a>
+           , because it involves direct command of execution.
+          </p>
+          <p>
+           Procedural is a sub-class of imperative since procedural includes
+           <a href="/wiki/Block_(programming)" title="Block (programming)">
+            block
+           </a>
+           and
+           <a href="/wiki/Scope_(computer_science)" title="Scope (computer science)">
+            scope
+           </a>
+           concepts, whereas imperative describes a more general concept that does not require such features. Procedural languages generally use reserved words that define blocks, such as
+           <code>
+            if
+           </code>
+           ,
+           <code>
+            while
+           </code>
+           , and
+           <code>
+            for
+           </code>
+           , to implement
+           <a href="/wiki/Control_flow" title="Control flow">
+            control flow
+           </a>
+           , whereas
+           <a href="/wiki/Non-structured_programming" title="Non-structured programming">
+            non-structured
+           </a>
+           imperative languages (i.e.
+           <a href="/wiki/Assembly_language" title="Assembly language">
+            assembly language
+           </a>
+           ) use
+           <a href="/wiki/Goto" title="Goto">
+            goto
+           </a>
+           and
+           <a href="/wiki/Branch_table" title="Branch table">
+            branch tables
+           </a>
+           for this purpose.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Object-oriented_programming">
+            Object-oriented programming
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Procedural_programming&amp;action=edit&amp;section=6" title="Edit section: Object-oriented programming">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Also classified as imperative,
+           <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">
+            object-oriented programming
+           </a>
+           (OOP) involves dividing a program implementation into objects that expose behavior (methods) and data (members) via a well-defined interface. In contrast, procedural programming is about dividing the program implementation into
+           <a class="mw-redirect" href="/wiki/Variable_(programming)" title="Variable (programming)">
+            variables
+           </a>
+           ,
+           <a href="/wiki/Data_structure" title="Data structure">
+            data structures
+           </a>
+           , and
+           <a class="mw-redirect" href="/wiki/Subroutine" title="Subroutine">
+            subroutines
+           </a>
+           . An important distinction is that while procedural involves procedures to operate on data structures, OOP bundles the two together. An object is a data structure and the behavior associated with that data structure.
+           <sup class="reference" id="cite_ref-3">
+            <a href="#cite_note-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Some OOP languages support the class concept which allows for creating an object based on a definition.
+          </p>
+          <p>
+           Nomenclature varies between the two, although they have similar semantics:
+          </p>
+          <table class="wikitable">
+           <tbody>
+            <tr>
+             <th width="33%">
+              Procedural
+             </th>
+             <th width="33%">
+              Object-oriented
+             </th>
+            </tr>
+            <tr>
+             <td>
+              Procedure
+             </td>
+             <td>
+              <a class="mw-redirect" href="/wiki/Method_(computer_science)" title="Method (computer science)">
+               Method
+              </a>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <a href="/wiki/Record_(computer_science)" title="Record (computer science)">
+               Record
+              </a>
+             </td>
+             <td>
+              Object
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Module
+             </td>
+             <td>
+              Class
+             </td>
+            </tr>
+            <tr>
+             <td>
+              Procedure call
+             </td>
+             <td>
+              Message
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Functional_programming">
+            Functional programming
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Procedural_programming&amp;action=edit&amp;section=7" title="Edit section: Functional programming">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The principles of modularity and code reuse in
+           <a href="/wiki/Functional_programming" title="Functional programming">
+            functional
+           </a>
+           languages are fundamentally the same as in procedural languages, since they both stem from
+           <a href="/wiki/Structured_programming" title="Structured programming">
+            structured programming
+           </a>
+           . For example:
+          </p>
+          <ul>
+           <li>
+            Procedures correspond to functions.  Both allow the reuse of the same code in various parts of the programs, and at various points of its execution.
+           </li>
+           <li>
+            By the same token, procedure calls correspond to function application.
+           </li>
+           <li>
+            Functions and their modularly separated from each other in the same manner, by the use of function arguments, return values and variable scopes.
+           </li>
+          </ul>
+          <p>
+           The main difference between the styles is that functional programming languages remove or at least deemphasize the imperative elements of procedural programming.  The feature set of functional languages is therefore designed to support writing programs as much as possible in terms of
+           <a href="/wiki/Pure_function" title="Pure function">
+            pure functions
+           </a>
+           :
+          </p>
+          <ul>
+           <li>
+            Whereas procedural languages model execution of the program as a sequence of imperative commands that may implicitly alter shared state, functional programming languages model execution as the evaluation of complex expressions that only depend on each other in terms of arguments and return values.  For this reason, functional programs can have a free order of code execution, and the languages may offer little control over the order in which various parts of the program are executed; for example, the arguments to a procedure invocation in
+            <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">
+             Scheme
+            </a>
+            are evaluated in an arbitrary order.
+           </li>
+           <li>
+            Functional programming languages support (and heavily use)
+            <a href="/wiki/First-class_function" title="First-class function">
+             first-class functions
+            </a>
+            ,
+            <a href="/wiki/Anonymous_function" title="Anonymous function">
+             anonymous functions
+            </a>
+            and
+            <a href="/wiki/Closure_(computer_programming)" title="Closure (computer programming)">
+             closures
+            </a>
+            , although these concepts have also been included in procedural languages at least since
+            <a class="mw-redirect" href="/wiki/Algol_68" title="Algol 68">
+             Algol 68
+            </a>
+            .
+           </li>
+           <li>
+            Functional programming languages tend to rely on
+            <a class="mw-redirect" href="/wiki/Tail_call_optimization" title="Tail call optimization">
+             tail call optimization
+            </a>
+            and
+            <a href="/wiki/Higher-order_function" title="Higher-order function">
+             higher-order functions
+            </a>
+            instead of imperative looping constructs.
+           </li>
+          </ul>
+          <p>
+           Many functional languages, however, are in fact impurely functional and offer imperative/procedural constructs that allow the programmer to write programs in procedural style, or in a combination of both styles.  It is common for
+           <a href="/wiki/Input/output" title="Input/output">
+            input/output
+           </a>
+           code in functional languages to be written in a procedural style.
+          </p>
+          <p>
+           There do exist a few
+           <a href="/wiki/Esoteric_programming_language" title="Esoteric programming language">
+            esoteric
+           </a>
+           functional languages (like
+           <a href="/wiki/Unlambda" title="Unlambda">
+            Unlambda
+           </a>
+           ) that eschew
+           <a href="/wiki/Structured_programming" title="Structured programming">
+            structured programming
+           </a>
+           precepts for the sake of being difficult to program in (and therefore challenging).  These languages are the exception to the common ground between procedural and functional languages.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Logic_programming">
+            Logic programming
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Procedural_programming&amp;action=edit&amp;section=8" title="Edit section: Logic programming">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           In
+           <a href="/wiki/Logic_programming" title="Logic programming">
+            logic programming
+           </a>
+           , a program is a set of premises, and computation is performed by attempting to prove candidate theorems. From this point of view, logic programs are
+           <a href="/wiki/Declarative_programming" title="Declarative programming">
+            declarative
+           </a>
+           , focusing on what the problem is, rather than on how to solve it.
+          </p>
+          <p>
+           However, the
+           <a class="mw-redirect" href="/wiki/Backward_reasoning" title="Backward reasoning">
+            backward reasoning
+           </a>
+           technique, implemented by
+           <a href="/wiki/SLD_resolution" title="SLD resolution">
+            SLD resolution
+           </a>
+           , used to solve problems in logic programming languages such as
+           <a href="/wiki/Prolog" title="Prolog">
+            Prolog
+           </a>
+           , treats programs as goal-reduction procedures. Thus  clauses of the form:
+          </p>
+          <dl>
+           <dd>
+            <style data-mw-deduplicate="TemplateStyles:r886049734">
+             .mw-parser-output .monospaced{font-family:monospace,monospace}
+            </style>
+            <span class="monospaced">
+             H :- B
+             <sub>
+              1
+             </sub>
+             , …, B
+             <sub>
+              n
+             </sub>
+             .
+            </span>
+           </dd>
+          </dl>
+          <p>
+           have a dual interpretation, both as procedures
+          </p>
+          <dl>
+           <dd>
+            to show/solve
+            <link href="mw-data:TemplateStyles:r886049734" rel="mw-deduplicated-inline-style"/>
+            <span class="monospaced">
+             H
+            </span>
+            , show/solve
+            <link href="mw-data:TemplateStyles:r886049734" rel="mw-deduplicated-inline-style"/>
+            <span class="monospaced">
+             B
+             <sub>
+              1
+             </sub>
+            </span>
+            and … and
+            <link href="mw-data:TemplateStyles:r886049734" rel="mw-deduplicated-inline-style"/>
+            <span class="monospaced">
+             B
+             <sub>
+              n
+             </sub>
+            </span>
+           </dd>
+          </dl>
+          <p>
+           and as logical implications:
+          </p>
+          <dl>
+           <dd>
+            <link href="mw-data:TemplateStyles:r886049734" rel="mw-deduplicated-inline-style"/>
+            <span class="monospaced">
+             B
+             <sub>
+              1
+             </sub>
+             and … and B
+             <sub>
+              n
+             </sub>
+             implies H
+            </span>
+            .
+           </dd>
+          </dl>
+          <p>
+           A skilled logic programmer uses the procedural interpretation to write programs that are effective and efficient, and uses the declarative interpretation to help ensure that programs are correct.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Procedural_programming&amp;action=edit&amp;section=9" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Declarative_programming" title="Declarative programming">
+             Declarative programming
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Functional_programming" title="Functional programming">
+             Functional programming
+            </a>
+            (contrast)
+           </li>
+           <li>
+            <a href="/wiki/Imperative_programming" title="Imperative programming">
+             Imperative programming
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Logic_programming" title="Logic programming">
+             Logic programming
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">
+             Object-oriented programming
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Programming_paradigm" title="Programming paradigm">
+             Programming paradigms
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Programming_language" title="Programming language">
+             Programming language
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Structured_programming" title="Structured programming">
+             Structured programming
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/SQL#Procedural_extensions" title="SQL">
+             SQL procedural extensions
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Procedural_programming&amp;action=edit&amp;section=10" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation web cs1">
+                <a class="external text" href="https://cs.lmu.edu/~ray/notes/paradigms/" rel="nofollow">
+                 "Programming Paradigms"
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Programming+Paradigms&amp;rft_id=https%3A%2F%2Fcs.lmu.edu%2F~ray%2Fnotes%2Fparadigms%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProcedural+programming">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:0-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-:0_2-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation conference cs1">
+                "Welcome to IEEE Xplore 2.0: Use of procedural programming languages for controlling production systems".
+                <i>
+                 Proceedings. The Seventh IEEE Conference on Artificial Intelligence Application
+                </i>
+                .
+                <a class="mw-redirect" href="/wiki/IEEE" title="IEEE">
+                 IEEE
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2FCAIA.1991.120848" rel="nofollow">
+                 10.1109/CAIA.1991.120848
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:58175293" rel="nofollow">
+                 58175293
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=Welcome+to+IEEE+Xplore+2.0%3A+Use+of+procedural+programming+languages+for+controlling+production+systems&amp;rft.btitle=Proceedings.+The+Seventh+IEEE+Conference+on+Artificial+Intelligence+Application&amp;rft.pub=IEEE&amp;rft_id=info%3Adoi%2F10.1109%2FCAIA.1991.120848&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A58175293%23id-name%3DS2CID&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProcedural+programming">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFStevenson2013">
+                Stevenson, Joseph (August 2013).
+                <a class="external text" href="http://neonbrand.com/procedural-programming-vs-object-oriented-programming-a-review/" rel="nofollow">
+                 "Procedural programming vs object-oriented programming"
+                </a>
+                . neonbrand.com
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2013-08-19
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Procedural+programming+vs+object-oriented+programming&amp;rft.pub=neonbrand.com&amp;rft.date=2013-08&amp;rft.aulast=Stevenson&amp;rft.aufirst=Joseph&amp;rft_id=http%3A%2F%2Fneonbrand.com%2Fprocedural-programming-vs-object-oriented-programming-a-review%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AProcedural+programming">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Procedural_programming&amp;action=edit&amp;section=11" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <span class="tfd tfd-dated" style="font-size: 85%; border: 1px solid #aaa;">
+             ‹The
+             <a href="/wiki/Help:Template" title="Help:Template">
+              template
+             </a>
+             <i>
+              <a href="/wiki/Template:Curlie" title="Template:Curlie">
+               Curlie
+              </a>
+             </i>
+             is being
+             <a href="/wiki/Wikipedia:Templates_for_discussion/Log/2024_September_20#Template:Curlie" title="Wikipedia:Templates for discussion/Log/2024 September 20">
+              considered for deletion
+             </a>
+             .›
+            </span>
+            <a class="external text" href="https://curlie.org/Computers/Programming/Languages/Procedural" rel="nofollow">
+             Procedural Languages
+            </a>
+            at
+            <a class="mw-redirect" href="/wiki/Curlie" title="Curlie">
+             Curlie
+            </a>
+           </li>
+          </ul>
+          <div class="navbox-styles">
+           <style data-mw-deduplicate="TemplateStyles:r1129693374">
+            .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+           </style>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Programming_paradigms_(Comparison_by_language)" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <style data-mw-deduplicate="TemplateStyles:r1239400231">
+                .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+               </style>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Programming_paradigms_navbox" title="Template:Programming paradigms navbox">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Programming_paradigms_navbox" title="Template talk:Programming paradigms navbox">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Programming_paradigms_navbox" title="Special:EditPage/Template:Programming paradigms navbox">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Programming_paradigms_(Comparison_by_language)" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Programming_paradigm" title="Programming paradigm">
+                 Programming paradigms
+                </a>
+                (
+                <a href="/wiki/Comparison_of_multi-paradigm_programming_languages" title="Comparison of multi-paradigm programming languages">
+                 Comparison by language
+                </a>
+                )
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Imperative_programming" title="Imperative programming">
+                Imperative
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Structured_programming" title="Structured programming">
+                    Structured
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Jackson_structured_programming" title="Jackson structured programming">
+                       Jackson structures
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Block_(programming)" title="Block (programming)">
+                       Block-structured
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Modular_programming" title="Modular programming">
+                       Modular
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Non-structured_programming" title="Non-structured programming">
+                       Non-structured
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-selflink selflink">
+                       Procedural
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Programming_in_the_large_and_programming_in_the_small" title="Programming in the large and programming in the small">
+                       Programming in the large and in the small
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Design_by_contract" title="Design by contract">
+                       Design by contract
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Invariant-based_programming" title="Invariant-based programming">
+                       Invariant-based
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Nested_function" title="Nested function">
+                       Nested function
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">
+                    Object-oriented
+                   </a>
+                   <br/>
+                   (
+                   <a href="/wiki/Comparison_of_programming_languages_(object-oriented_programming)" title="Comparison of programming languages (object-oriented programming)">
+                    comparison
+                   </a>
+                   ,
+                   <a href="/wiki/List_of_object-oriented_programming_languages" title="List of object-oriented programming languages">
+                    list
+                   </a>
+                   )
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Class-based_programming" title="Class-based programming">
+                       Class-based
+                      </a>
+                      ,
+                      <a href="/wiki/Prototype-based_programming" title="Prototype-based programming">
+                       Prototype-based
+                      </a>
+                      ,
+                      <a href="/wiki/Object-based_language" title="Object-based language">
+                       Object-based
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Agent-oriented_programming" title="Agent-oriented programming">
+                       Agent
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Immutable_object" title="Immutable object">
+                       Immutable object
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Persistent_programming_language" title="Persistent programming language">
+                       Persistent
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Uniform_Function_Call_Syntax" title="Uniform Function Call Syntax">
+                       Uniform Function Call Syntax
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Declarative_programming" title="Declarative programming">
+                Declarative
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Functional_programming" title="Functional programming">
+                    Functional
+                   </a>
+                   <br/>
+                   (
+                   <a href="/wiki/Comparison_of_functional_programming_languages" title="Comparison of functional programming languages">
+                    comparison
+                   </a>
+                   )
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Recursion_(computer_science)" title="Recursion (computer science)">
+                       Recursive
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Anonymous_function" title="Anonymous function">
+                       Anonymous function
+                      </a>
+                      (
+                      <a href="/wiki/Partial_application" title="Partial application">
+                       Partial application
+                      </a>
+                      )
+                     </li>
+                     <li>
+                      <a href="/wiki/Higher-order_programming" title="Higher-order programming">
+                       Higher-order
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Purely_functional_programming" title="Purely functional programming">
+                       Purely functional
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Total_functional_programming" title="Total functional programming">
+                       Total
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Strict_programming_language" title="Strict programming language">
+                       Strict
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Generalized_algebraic_data_type" title="Generalized algebraic data type">
+                       GADTs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Dependent_type" title="Dependent type">
+                       Dependent types
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Functional_logic_programming" title="Functional logic programming">
+                       Functional logic
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Tacit_programming" title="Tacit programming">
+                       Point-free style
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Expression-oriented_programming_language" title="Expression-oriented programming language">
+                       Expression-oriented
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Applicative_programming_language" title="Applicative programming language">
+                       Applicative
+                      </a>
+                      ,
+                      <a href="/wiki/Concatenative_programming_language" title="Concatenative programming language">
+                       Concatenative
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Function-level_programming" title="Function-level programming">
+                       Function-level
+                      </a>
+                      ,
+                      <a href="/wiki/Value-level_programming" title="Value-level programming">
+                       Value-level
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Dataflow_programming" title="Dataflow programming">
+                    Dataflow
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Flow-based_programming" title="Flow-based programming">
+                       Flow-based
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Reactive_programming" title="Reactive programming">
+                       Reactive
+                      </a>
+                      (
+                      <a href="/wiki/Functional_reactive_programming" title="Functional reactive programming">
+                       Functional reactive
+                      </a>
+                      )
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Signal_programming" title="Signal programming">
+                       Signals
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Stream_processing" title="Stream processing">
+                       Streams
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Synchronous_programming_language" title="Synchronous programming language">
+                       Synchronous
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Logic_programming" title="Logic programming">
+                    Logic
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Abductive_logic_programming" title="Abductive logic programming">
+                       Abductive logic
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Answer_set_programming" title="Answer set programming">
+                       Answer set
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Constraint_programming" title="Constraint programming">
+                       Constraint
+                      </a>
+                      (
+                      <a href="/wiki/Constraint_logic_programming" title="Constraint logic programming">
+                       Constraint logic
+                      </a>
+                      )
+                     </li>
+                     <li>
+                      <a href="/wiki/Inductive_logic_programming" title="Inductive logic programming">
+                       Inductive logic
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Nondeterministic_programming" title="Nondeterministic programming">
+                       Nondeterministic
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Ontology_language" title="Ontology language">
+                       Ontology
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Probabilistic_logic_programming" title="Probabilistic logic programming">
+                       Probabilistic logic
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Query_language" title="Query language">
+                       Query
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Domain-specific_language" title="Domain-specific language">
+                    DSL
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Algebraic_modeling_language" title="Algebraic modeling language">
+                       Algebraic modeling
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Array_programming" title="Array programming">
+                       Array
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Automata-based_programming" title="Automata-based programming">
+                       Automata-based
+                      </a>
+                      (
+                      <a href="/wiki/Action_language" title="Action language">
+                       Action
+                      </a>
+                      )
+                     </li>
+                     <li>
+                      <a href="/wiki/Command_language" title="Command language">
+                       Command
+                      </a>
+                      (
+                      <a href="/wiki/Spacecraft_command_language" title="Spacecraft command language">
+                       Spacecraft
+                      </a>
+                      )
+                     </li>
+                     <li>
+                      <a href="/wiki/Differentiable_programming" title="Differentiable programming">
+                       Differentiable
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/End-user_development" title="End-user development">
+                       End-user
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Grammar-oriented_programming" title="Grammar-oriented programming">
+                       Grammar-oriented
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Interface_description_language" title="Interface description language">
+                       Interface description
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Language-oriented_programming" title="Language-oriented programming">
+                       Language-oriented
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/List_comprehension" title="List comprehension">
+                       List comprehension
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Low-code_development_platform" title="Low-code development platform">
+                       Low-code
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Modeling_language" title="Modeling language">
+                       Modeling
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Natural-language_programming" title="Natural-language programming">
+                       Natural language
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">
+                       Non-English-based
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Page_description_language" title="Page description language">
+                       Page description
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Pipeline_(software)" title="Pipeline (software)">
+                       Pipes
+                      </a>
+                      and
+                      <a href="/wiki/Filter_(software)" title="Filter (software)">
+                       filters
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Probabilistic_programming" title="Probabilistic programming">
+                       Probabilistic
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Quantum_programming" title="Quantum programming">
+                       Quantum
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Scientific_programming_language" title="Scientific programming language">
+                       Scientific
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Scripting_language" title="Scripting language">
+                       Scripting
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Set_theoretic_programming" title="Set theoretic programming">
+                       Set-theoretic
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Simulation_language" title="Simulation language">
+                       Simulation
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Stack-oriented_programming" title="Stack-oriented programming">
+                       Stack-based
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/System_programming_language" title="System programming language">
+                       System
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Tactile_programming_language" title="Tactile programming language">
+                       Tactile
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Template_processor" title="Template processor">
+                       Templating
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Transformation_language" title="Transformation language">
+                       Transformation
+                      </a>
+                      (
+                      <a href="/wiki/Graph_rewriting" title="Graph rewriting">
+                       Graph rewriting
+                      </a>
+                      ,
+                      <a href="/wiki/Production_system_(computer_science)" title="Production system (computer science)">
+                       Production
+                      </a>
+                      ,
+                      <a href="/wiki/Pattern_matching" title="Pattern matching">
+                       Pattern
+                      </a>
+                      )
+                     </li>
+                     <li>
+                      <a href="/wiki/Visual_programming_language" title="Visual programming language">
+                       Visual
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Concurrent_computing" title="Concurrent computing">
+                Concurrent
+               </a>
+               ,
+               <br/>
+               <a href="/wiki/Distributed_computing" title="Distributed computing">
+                distributed
+               </a>
+               ,
+               <br/>
+               <a href="/wiki/Parallel_computing" title="Parallel computing">
+                parallel
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Actor_model" title="Actor model">
+                   Actor-based
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Automatic_mutual_exclusion" title="Automatic mutual exclusion">
+                   Automatic mutual exclusion
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Choreographic_programming" title="Choreographic programming">
+                   Choreographic programming
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Concurrent_logic_programming" title="Concurrent logic programming">
+                   Concurrent logic
+                  </a>
+                  (
+                  <a href="/wiki/Concurrent_constraint_logic_programming" title="Concurrent constraint logic programming">
+                   Concurrent constraint logic
+                  </a>
+                  )
+                 </li>
+                 <li>
+                  <a href="/wiki/Concurrent_object-oriented_programming" title="Concurrent object-oriented programming">
+                   Concurrent OO
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Macroprogramming" title="Macroprogramming">
+                   Macroprogramming
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Multitier_programming" title="Multitier programming">
+                   Multitier programming
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Organic_computing" title="Organic computing">
+                   Organic computing
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Parallel_programming_model" title="Parallel programming model">
+                   Parallel programming models
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Partitioned_global_address_space" title="Partitioned global address space">
+                   Partitioned global address space
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Process-oriented_programming" title="Process-oriented programming">
+                   Process-oriented
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Relativistic_programming" title="Relativistic programming">
+                   Relativistic programming
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Service-oriented_programming" title="Service-oriented programming">
+                   Service-oriented
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Structured_concurrency" title="Structured concurrency">
+                   Structured concurrency
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Metaprogramming" title="Metaprogramming">
+                Metaprogramming
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Attribute-oriented_programming" title="Attribute-oriented programming">
+                   Attribute-oriented
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Automatic_programming" title="Automatic programming">
+                   Automatic
+                  </a>
+                  (
+                  <a href="/wiki/Inductive_programming" title="Inductive programming">
+                   Inductive
+                  </a>
+                  )
+                 </li>
+                 <li>
+                  <a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">
+                   Dynamic
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Extensible_programming" title="Extensible programming">
+                   Extensible
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Generic_programming" title="Generic programming">
+                   Generic
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Homoiconicity" title="Homoiconicity">
+                   Homoiconicity
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Interactive_programming" title="Interactive programming">
+                   Interactive
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">
+                   Macro
+                  </a>
+                  (
+                  <a href="/wiki/Hygienic_macro" title="Hygienic macro">
+                   Hygienic
+                  </a>
+                  )
+                 </li>
+                 <li>
+                  <a href="/wiki/Metalinguistic_abstraction" title="Metalinguistic abstraction">
+                   Metalinguistic abstraction
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Multi-stage_programming" title="Multi-stage programming">
+                   Multi-stage
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Program_synthesis" title="Program synthesis">
+                   Program synthesis
+                  </a>
+                  (
+                  <a href="/wiki/Bayesian_program_synthesis" title="Bayesian program synthesis">
+                   Bayesian
+                  </a>
+                  ,
+                  <a href="/wiki/Inferential_programming" title="Inferential programming">
+                   Inferential
+                  </a>
+                  ,
+                  <a href="/wiki/Programming_by_demonstration" title="Programming by demonstration">
+                   by demonstration
+                  </a>
+                  ,
+                  <a href="/wiki/Programming_by_example" title="Programming by example">
+                   by example
+                  </a>
+                  )
+                 </li>
+                 <li>
+                  <a href="/wiki/Reflective_programming" title="Reflective programming">
+                   Reflective
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Self-modifying_code" title="Self-modifying code">
+                   Self-modifying code
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Symbolic_programming" title="Symbolic programming">
+                   Symbolic
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Template_metaprogramming" title="Template metaprogramming">
+                   Template
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Separation_of_concerns" title="Separation of concerns">
+                Separation
+                <br/>
+                of concerns
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">
+                   Aspects
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Component-based_software_engineering" title="Component-based software engineering">
+                   Components
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Data-driven_programming" title="Data-driven programming">
+                   Data-driven
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Data-oriented_design" title="Data-oriented design">
+                   Data-oriented
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Event-driven_programming" title="Event-driven programming">
+                   Event-driven
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Feature-oriented_programming" title="Feature-oriented programming">
+                   Features
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Intentional_programming" title="Intentional programming">
+                   Intentional
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Literate_programming" title="Literate programming">
+                   Literate
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Role-oriented_programming" title="Role-oriented programming">
+                   Roles
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Subject-oriented_programming" title="Subject-oriented programming">
+                   Subjects
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div class="navbox-styles">
+           <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+           <link href="mw-data:TemplateStyles:r1236075235" rel="mw-deduplicated-inline-style"/>
+          </div>
+          <div aria-labelledby="Types_of_programming_languages" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <link href="mw-data:TemplateStyles:r1239400231" rel="mw-deduplicated-inline-style"/>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Types_of_programming_languages" title="Template:Types of programming languages">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Types_of_programming_languages" title="Template talk:Types of programming languages">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Types_of_programming_languages" title="Special:EditPage/Template:Types of programming languages">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Types_of_programming_languages" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Programming_paradigm" title="Programming paradigm">
+                 Types of programming languages
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Level
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Machine_code" title="Machine code">
+                   Machine
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Assembly_language" title="Assembly language">
+                   Assembly
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Compiled_language" title="Compiled language">
+                   Compiled
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Interpreted_language" title="Interpreted language">
+                   Interpreted
+                  </a>
+                 </li>
+                </ul>
+                <ul>
+                 <li>
+                  <a href="/wiki/Low-level_programming_language" title="Low-level programming language">
+                   Low-level
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/High-level_programming_language" title="High-level programming language">
+                   High-level
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Very_high-level_programming_language" title="Very high-level programming language">
+                   Very high-level
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Esoteric_programming_language" title="Esoteric programming language">
+                   Esoteric
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Programming_language_generations" title="Programming language generations">
+                Generation
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/First-generation_programming_language" title="First-generation programming language">
+                   First
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Second-generation_programming_language" title="Second-generation programming language">
+                   Second
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Third-generation_programming_language" title="Third-generation programming language">
+                   Third
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Fourth-generation_programming_language" title="Fourth-generation programming language">
+                   Fourth
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Fifth-generation_programming_language" title="Fifth-generation programming language">
+                   Fifth
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also_2">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Template:Types_of_programming_languages&amp;action=edit&amp;section=T-1" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <span class="nowrap">
+             {{
+            </span>
+            <a href="/wiki/Template:Computer_language" title="Template:Computer language">
+             Computer language
+            </a>
+            <span class="nowrap">
+             }}
+            </span>
+           </li>
+           <li>
+            <span class="nowrap">
+             {{
+            </span>
+            <a href="/wiki/Template:Programming_languages" title="Template:Programming languages">
+             Programming languages
+            </a>
+            <span class="nowrap">
+             }}
+            </span>
+           </li>
+           <li>
+            <span class="nowrap">
+             {{
+            </span>
+            <a href="/wiki/Template:Programming_paradigms_navbox" title="Template:Programming paradigms navbox">
+             Programming paradigms navbox
+            </a>
+            <span class="nowrap">
+             }}
+            </span>
+           </li>
+          </ul>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐s8wlz
+Cached time: 20240926232108
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.367 seconds
+Real time usage: 0.569 seconds
+Preprocessor visited node count: 1199/1000000
+Post‐expand include size: 67770/2097152 bytes
+Template argument size: 1757/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 30508/5000000 bytes
+Lua time usage: 0.224/10.000 seconds
+Lua memory usage: 5093196/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  495.043      1 -total
+ 29.00%  143.573      1 Template:Reflist
+ 25.23%  124.904      2 Template:Cite_web
+ 21.50%  106.436      1 Template:Refimprove
+ 20.22%  100.089      1 Template:Ambox
+ 17.01%   84.192      4 Template:Navbox
+ 16.38%   81.067      1 Template:Short_description
+ 16.23%   80.370      1 Template:Programming_paradigms_navbox
+ 10.88%   53.856      1 Template:Find_sources_mainspace
+  9.02%   44.651      2 Template:Pagetype
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:23801-0!canonical and timestamp 20240926232108 and revision id 1243823001. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Procedural_programming&amp;oldid=1243823001">
+          https://en.wikipedia.org/w/index.php?title=Procedural_programming&amp;oldid=1243823001
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Category
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Programming_paradigms" title="Category:Programming paradigms">
+            Programming paradigms
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">
+            Short description matches Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_April_2008" title="Category:Articles needing additional references from April 2008">
+            Articles needing additional references from April 2008
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_contradicting_other_articles" title="Category:Articles contradicting other articles">
+            Articles contradicting other articles
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_Curlie_links" title="Category:Articles with Curlie links">
+            Articles with Curlie links
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 3 September 2024, at 16:57
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Procedural_programming&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-s8wlz","wgBackendResponseTime":792,"wgPageParseReport":{"limitreport":{"cputime":"0.367","walltime":"0.569","ppvisitednodes":{"value":1199,"limit":1000000},"postexpandincludesize":{"value":67770,"limit":2097152},"templateargumentsize":{"value":1757,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":30508,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  495.043      1 -total"," 29.00%  143.573      1 Template:Reflist"," 25.23%  124.904      2 Template:Cite_web"," 21.50%  106.436      1 Template:Refimprove"," 20.22%  100.089      1 Template:Ambox"," 17.01%   84.192      4 Template:Navbox"," 16.38%   81.067      1 Template:Short_description"," 16.23%   80.370      1 Template:Programming_paradigms_navbox"," 10.88%   53.856      1 Template:Find_sources_mainspace","  9.02%   44.651      2 Template:Pagetype"]},"scribunto":{"limitreport-timeusage":{"value":"0.224","limit":"10.000"},"limitreport-memusage":{"value":5093196,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-s8wlz","timestamp":"20240926232108","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Procedural programming","url":"https:\/\/en.wikipedia.org\/wiki\/Procedural_programming","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1418502","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1418502","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-02-25T15:51:15Z","dateModified":"2024-09-03T16:57:18Z","headline":"programming paradigm"}
+  </script>
+ </body>
+</html>

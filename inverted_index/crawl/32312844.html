@@ -1,0 +1,4142 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Virtual file system - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d6e9c83d-c3be-45db-92b3-2fa58cfda7b0","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Virtual_file_system","wgTitle":"Virtual file system","wgCurRevisionId":1167047508,"wgRevisionId":1167047508,"wgArticleId":351131,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Articles lacking in-text citations from October 2009","All articles lacking in-text citations","Computer file systems","Virtualization"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Virtual_file_system","wgRelevantArticleId":351131,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1330734","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,
+"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.imagemap.styles":"ready","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.imagemap","ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar",
+"ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.imagemap.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Operating_system_placement.svg/1200px-Operating_system_placement.svg.png" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="1776" property="og:image:height"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Operating_system_placement.svg/800px-Operating_system_placement.svg.png" property="og:image"/>
+  <meta content="800" property="og:image:width"/>
+  <meta content="1184" property="og:image:height"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Operating_system_placement.svg/640px-Operating_system_placement.svg.png" property="og:image"/>
+  <meta content="640" property="og:image:width"/>
+  <meta content="947" property="og:image:height"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Virtual file system - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Virtual_file_system" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Virtual_file_system&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Virtual_file_system" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Virtual_file_system"/>
+  <meta eecs485_docid="32312844"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Virtual_file_system rootpage-Virtual_file_system skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Virtual+file+system" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Virtual+file+system" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Virtual+file+system" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Virtual+file+system" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Implementations">
+           <a class="vector-toc-link" href="#Implementations">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Implementations
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Implementations-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Single-file_virtual_file_systems">
+           <a class="vector-toc-link" href="#Single-file_virtual_file_systems">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Single-file virtual file systems
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Single-file_virtual_file_systems-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Single-file virtual file systems subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Single-file_virtual_file_systems-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Implementation_of_single-file_virtual_filesystems">
+             <a class="vector-toc-link" href="#Implementation_of_single-file_virtual_filesystems">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.1
+               </span>
+               <span>
+                Implementation of single-file virtual filesystems
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Implementation_of_single-file_virtual_filesystems-sublist">
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-PCTask">
+               <a class="vector-toc-link" href="#PCTask">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  2.1.1
+                 </span>
+                 <span>
+                  PCTask
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-PCTask-sublist">
+               </ul>
+              </li>
+              <li class="vector-toc-list-item vector-toc-level-3" id="toc-WinUAE">
+               <a class="vector-toc-link" href="#WinUAE">
+                <div class="vector-toc-text">
+                 <span class="vector-toc-numb">
+                  2.1.2
+                 </span>
+                 <span>
+                  WinUAE
+                 </span>
+                </div>
+               </a>
+               <ul class="vector-toc-list" id="toc-WinUAE-sublist">
+               </ul>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Notes">
+           <a class="vector-toc-link" href="#Notes">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Notes
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Notes-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-External_links">
+           <a class="vector-toc-link" href="#External_links">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              External links
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-External_links-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Virtual file system
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 15 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-15" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          15 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ca mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="Catalan" data-title="Sistema virtual de fitxers" href="https://ca.wikipedia.org/wiki/Sistema_virtual_de_fitxers" hreflang="ca" lang="ca" title="Sistema virtual de fitxers – Catalan">
+             <span>
+              Català
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-cs mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Čeština" data-language-local-name="Czech" data-title="Virtuální souborový systém" href="https://cs.wikipedia.org/wiki/Virtu%C3%A1ln%C3%AD_souborov%C3%BD_syst%C3%A9m" hreflang="cs" lang="cs" title="Virtuální souborový systém – Czech">
+             <span>
+              Čeština
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Virtuelles Dateisystem" href="https://de.wikipedia.org/wiki/Virtuelles_Dateisystem" hreflang="de" lang="de" title="Virtuelles Dateisystem – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Sistema de archivos virtual" href="https://es.wikipedia.org/wiki/Sistema_de_archivos_virtual" hreflang="es" lang="es" title="Sistema de archivos virtual – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="سامانه پرونده مجازی" href="https://fa.wikipedia.org/wiki/%D8%B3%D8%A7%D9%85%D8%A7%D9%86%D9%87_%D9%BE%D8%B1%D9%88%D9%86%D8%AF%D9%87_%D9%85%D8%AC%D8%A7%D8%B2%DB%8C" hreflang="fa" lang="fa" title="سامانه پرونده مجازی – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fr mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="French" data-title="Système de fichiers virtuel" href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_fichiers_virtuel" hreflang="fr" lang="fr" title="Système de fichiers virtuel – French">
+             <span>
+              Français
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ko mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="Korean" data-title="가상 파일 시스템" href="https://ko.wikipedia.org/wiki/%EA%B0%80%EC%83%81_%ED%8C%8C%EC%9D%BC_%EC%8B%9C%EC%8A%A4%ED%85%9C" hreflang="ko" lang="ko" title="가상 파일 시스템 – Korean">
+             <span>
+              한국어
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-it mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="Italian" data-title="File system virtuale" href="https://it.wikipedia.org/wiki/File_system_virtuale" hreflang="it" lang="it" title="File system virtuale – Italian">
+             <span>
+              Italiano
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ja mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="Japanese" data-title="仮想ファイルシステム" href="https://ja.wikipedia.org/wiki/%E4%BB%AE%E6%83%B3%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0" hreflang="ja" lang="ja" title="仮想ファイルシステム – Japanese">
+             <span>
+              日本語
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-no mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" data-title="Virtuelt filsystem" href="https://no.wikipedia.org/wiki/Virtuelt_filsystem" hreflang="nb" lang="nb" title="Virtuelt filsystem – Norwegian Bokmål">
+             <span>
+              Norsk bokmål
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Wirtualny system plików" href="https://pl.wikipedia.org/wiki/Wirtualny_system_plik%C3%B3w" hreflang="pl" lang="pl" title="Wirtualny system plików – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pt mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="Portuguese" data-title="Sistema de arquivos virtual" href="https://pt.wikipedia.org/wiki/Sistema_de_arquivos_virtual" hreflang="pt" lang="pt" title="Sistema de arquivos virtual – Portuguese">
+             <span>
+              Português
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Виртуальная файловая система" href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0" hreflang="ru" lang="ru" title="Виртуальная файловая система – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Віртуальна файлова система" href="https://uk.wikipedia.org/wiki/%D0%92%D1%96%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0" hreflang="uk" lang="uk" title="Віртуальна файлова система – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-zh mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="Chinese" data-title="虛擬檔案系統" href="https://zh.wikipedia.org/wiki/%E8%99%9B%E6%93%AC%E6%AA%94%E6%A1%88%E7%B3%BB%E7%B5%B1" hreflang="zh" lang="zh" title="虛擬檔案系統 – Chinese">
+             <span>
+              中文
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1330734#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Virtual_file_system" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Virtual_file_system" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Virtual_file_system">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Virtual_file_system&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Virtual_file_system&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Virtual_file_system">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Virtual_file_system&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Virtual_file_system&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Virtual_file_system" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Virtual_file_system" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Virtual_file_system&amp;oldid=1167047508" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Virtual_file_system&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Virtual_file_system&amp;id=1167047508&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVirtual_file_system">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVirtual_file_system">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q1330734" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Virtual_file_system&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Virtual_file_system&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Abstract layer on top of a more concrete file system
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <table class="box-More_footnotes_needed plainlinks metadata ambox ambox-style ambox-More_footnotes_needed" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <span>
+                <img alt="" class="mw-file-element" data-file-height="48" data-file-width="48" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" width="40"/>
+               </span>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              This article includes a list of general
+              <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">
+               references
+              </a>
+              , but
+              <b>
+               it lacks sufficient corresponding
+               <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">
+                inline citations
+               </a>
+              </b>
+              .
+              <span class="hide-when-compact">
+               Please help to
+               <a href="/wiki/Wikipedia:WikiProject_Reliability" title="Wikipedia:WikiProject Reliability">
+                improve
+               </a>
+               this article by
+               <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">
+                introducing
+               </a>
+               more precise citations.
+              </span>
+              <span class="date-container">
+               <i>
+                (
+                <span class="date">
+                 October 2009
+                </span>
+                )
+               </i>
+              </span>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <style data-mw-deduplicate="TemplateStyles:r1129693374">
+          .mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}
+         </style>
+         <style data-mw-deduplicate="TemplateStyles:r1246091330">
+          .mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:var(--background-color-neutral-subtle,#f8f9fa);border:1px solid var(--border-color-base,#a2a9b1);padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:640px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}body.skin--responsive .mw-parser-output .sidebar a>img{max-width:none!important}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sidebar:not(.notheme) .sidebar-list-title,html.skin-theme-clientpref-night .mw-parser-output .sidebar:not(.notheme) .sidebar-title-with-pretitle{background:transparent!important}html.skin-theme-clientpref-night .mw-parser-output .sidebar:not(.notheme) .sidebar-title-with-pretitle a{color:var(--color-progressive)!important}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sidebar:not(.notheme) .sidebar-list-title,html.skin-theme-clientpref-os .mw-parser-output .sidebar:not(.notheme) .sidebar-title-with-pretitle{background:transparent!important}html.skin-theme-clientpref-os .mw-parser-output .sidebar:not(.notheme) .sidebar-title-with-pretitle a{color:var(--color-progressive)!important}}@media print{body.ns-0 .mw-parser-output .sidebar{display:none!important}}
+         </style>
+         <table class="sidebar nomobile nowraplinks">
+          <tbody>
+           <tr>
+            <th class="sidebar-title">
+             <a href="/wiki/Operating_system" title="Operating system">
+              Operating systems
+             </a>
+            </th>
+           </tr>
+           <tr>
+            <td class="sidebar-image">
+             <figure class="mw-halign-center noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File">
+              <span>
+               <img class="mw-file-element" data-file-height="370" data-file-width="250" decoding="async" height="244" resource="/wiki/File:Operating_system_placement.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Operating_system_placement.svg/165px-Operating_system_placement.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Operating_system_placement.svg/248px-Operating_system_placement.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Operating_system_placement.svg/330px-Operating_system_placement.svg.png 2x" usemap="#ImageMap_4c9a165895b5ed35" width="165"/>
+              </span>
+              <map name="ImageMap_4c9a165895b5ed35">
+               <area alt="User" coords="1,1,165,59" href="/wiki/User_(computing)" shape="rect" title="User"/>
+               <area alt="Application" coords="1,60,165,119" href="/wiki/Application_software" shape="rect" title="Application"/>
+               <area alt="Operating system" coords="1,119,165,178" href="/wiki/Operating_system" shape="rect" title="Operating system"/>
+               <area alt="Hardware" coords="1,179,165,237" href="/wiki/Computer_hardware" shape="rect" title="Hardware"/>
+              </map>
+              <figcaption>
+              </figcaption>
+             </figure>
+            </td>
+           </tr>
+           <tr>
+            <th class="sidebar-heading" style="font-size:110%;">
+             Common features
+            </th>
+           </tr>
+           <tr>
+            <td class="sidebar-content hlist">
+             <ul>
+              <li>
+               <a href="/wiki/Process_management_(computing)" title="Process management (computing)">
+                Process management
+               </a>
+              </li>
+              <li>
+               <a href="/wiki/Interrupt" title="Interrupt">
+                Interrupts
+               </a>
+              </li>
+              <li>
+               <a href="/wiki/Memory_management" title="Memory management">
+                Memory management
+               </a>
+              </li>
+              <li>
+               <a href="/wiki/File_system" title="File system">
+                File system
+               </a>
+              </li>
+              <li>
+               <a href="/wiki/Device_driver" title="Device driver">
+                Device drivers
+               </a>
+              </li>
+              <li>
+               <a href="/wiki/Computer_network" title="Computer network">
+                Networking
+               </a>
+              </li>
+              <li>
+               <a href="/wiki/Computer_security" title="Computer security">
+                Security
+               </a>
+              </li>
+              <li>
+               <a href="/wiki/Input/output" title="Input/output">
+                Input/output
+               </a>
+              </li>
+             </ul>
+            </td>
+           </tr>
+           <tr>
+            <td class="sidebar-navbar">
+             <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+             <style data-mw-deduplicate="TemplateStyles:r1239400231">
+              .mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}
+             </style>
+             <div class="navbar plainlinks hlist navbar-mini">
+              <ul>
+               <li class="nv-view">
+                <a href="/wiki/Template:OS" title="Template:OS">
+                 <abbr title="View this template">
+                  v
+                 </abbr>
+                </a>
+               </li>
+               <li class="nv-talk">
+                <a href="/wiki/Template_talk:OS" title="Template talk:OS">
+                 <abbr title="Discuss this template">
+                  t
+                 </abbr>
+                </a>
+               </li>
+               <li class="nv-edit">
+                <a href="/wiki/Special:EditPage/Template:OS" title="Special:EditPage/Template:OS">
+                 <abbr title="Edit this template">
+                  e
+                 </abbr>
+                </a>
+               </li>
+              </ul>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          A
+          <b>
+           virtual file system
+          </b>
+          (
+          <b>
+           VFS
+          </b>
+          ) or
+          <b>
+           virtual filesystem switch
+          </b>
+          is an abstract layer on top of a more concrete
+          <a href="/wiki/File_system" title="File system">
+           file system
+          </a>
+          . The purpose of a VFS is to allow client applications to access different types of concrete file systems in a uniform way. A VFS can, for example, be used to access
+          <a href="/wiki/Direct-attached_storage" title="Direct-attached storage">
+           local
+          </a>
+          and network storage devices transparently without the client application noticing the difference. It can be used to bridge the differences in
+          <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">
+           Windows
+          </a>
+          ,
+          <a href="/wiki/Classic_Mac_OS" title="Classic Mac OS">
+           classic Mac OS
+          </a>
+          /
+          <a href="/wiki/MacOS" title="MacOS">
+           macOS
+          </a>
+          and
+          <a href="/wiki/Unix" title="Unix">
+           Unix
+          </a>
+          filesystems, so that applications can access files on local file systems of those types without having to know what type of file system they are accessing.
+         </p>
+         <p>
+          A VFS specifies an
+          <a href="/wiki/Interface_(computing)" title="Interface (computing)">
+           interface
+          </a>
+          (or a "contract") between the
+          <a href="/wiki/Kernel_(operating_system)" title="Kernel (operating system)">
+           kernel
+          </a>
+          and a concrete file system. Therefore, it is easy to add support for new file system types to the kernel simply by fulfilling the contract.  The terms of the contract might change incompatibly from release to release, which would require that concrete file system support be recompiled, and possibly modified before recompilation, to allow it to work with a new release of the operating system; or the supplier of the operating system might make only backward-compatible changes to the contract, so that concrete file system support built for a given release of the operating system would work with future versions of the operating system.
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Implementations">
+            Implementations
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Virtual_file_system&amp;action=edit&amp;section=1" title="Edit section: Implementations">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <figure class="mw-default-size mw-halign-right" typeof="mw:File/Thumb">
+           <a class="mw-file-description" href="/wiki/File:The_Linux_Storage_Stack_Diagram.svg">
+            <img class="mw-file-element" data-file-height="1645" data-file-width="1161" decoding="async" height="623" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fb/The_Linux_Storage_Stack_Diagram.svg/440px-The_Linux_Storage_Stack_Diagram.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fb/The_Linux_Storage_Stack_Diagram.svg/660px-The_Linux_Storage_Stack_Diagram.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fb/The_Linux_Storage_Stack_Diagram.svg/880px-The_Linux_Storage_Stack_Diagram.svg.png 2x" width="440"/>
+           </a>
+           <figcaption>
+            The position of the VFS layer within various parts of the
+            <a href="/wiki/Linux_kernel" title="Linux kernel">
+             Linux kernel
+            </a>
+            's storage stack.
+            <sup class="reference" id="cite_ref-1">
+             <a href="#cite_note-1">
+              <span class="cite-bracket">
+               [
+              </span>
+              1
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </figcaption>
+          </figure>
+          <p>
+           One of the first virtual file system mechanisms on
+           <a href="/wiki/Unix-like" title="Unix-like">
+            Unix-like
+           </a>
+           systems was introduced by
+           <a href="/wiki/Sun_Microsystems" title="Sun Microsystems">
+            Sun Microsystems
+           </a>
+           in
+           <a href="/wiki/SunOS" title="SunOS">
+            SunOS
+           </a>
+           2.0 in 1985.
+           <sup class="reference" id="cite_ref-2">
+            <a href="#cite_note-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           It allowed Unix system calls to access local
+           <a href="/wiki/Unix_File_System" title="Unix File System">
+            UFS
+           </a>
+           file systems and remote
+           <a class="mw-redirect" href="/wiki/Network_File_System_(protocol)" title="Network File System (protocol)">
+            NFS
+           </a>
+           file systems transparently.  For this reason, Unix vendors who licensed the NFS code from Sun often copied the design of Sun's VFS.  Other file systems could be plugged into it also: there was an implementation of the
+           <a href="/wiki/MS-DOS" title="MS-DOS">
+            MS-DOS
+           </a>
+           <a href="/wiki/File_Allocation_Table" title="File Allocation Table">
+            FAT
+           </a>
+           file system developed at Sun that plugged into the SunOS VFS, although it wasn't shipped as a product until SunOS 4.1.  The SunOS implementation was the basis of the VFS mechanism in
+           <a class="mw-redirect" href="/wiki/System_V_Release_4" title="System V Release 4">
+            System V Release 4
+           </a>
+           .
+          </p>
+          <p>
+           <a href="/wiki/John_Heidemann" title="John Heidemann">
+            John Heidemann
+           </a>
+           developed a
+           <i>
+            stacking
+           </i>
+           VFS under SunOS 4.0 for the experimental
+           <a class="new" href="/w/index.php?title=Ficus_(file_system)&amp;action=edit&amp;redlink=1" title="Ficus (file system) (page does not exist)">
+            Ficus file system
+           </a>
+           .  This design provided for
+           <a href="/wiki/Code_reuse" title="Code reuse">
+            code reuse
+           </a>
+           among file system types with differing but similar semantics (
+           <i>
+            e.g.
+           </i>
+           , an encrypting file system could reuse all of the naming and storage-management code of a non-encrypting file system).  Heidemann adapted this work for use in
+           <a class="mw-redirect" href="/wiki/4.4BSD" title="4.4BSD">
+            4.4BSD
+           </a>
+           as a part of his
+           <a href="/wiki/Thesis" title="Thesis">
+            thesis
+           </a>
+           research; descendants of this code underpin the file system implementations in modern BSD derivatives including
+           <a href="/wiki/MacOS" title="MacOS">
+            macOS
+           </a>
+           .
+          </p>
+          <p>
+           Other Unix virtual file systems include the File System Switch in
+           <a class="mw-redirect" href="/wiki/System_V_Release_3" title="System V Release 3">
+            System V Release 3
+           </a>
+           , the Generic File System in
+           <a href="/wiki/Ultrix" title="Ultrix">
+            Ultrix
+           </a>
+           , and the VFS in
+           <a href="/wiki/Linux" title="Linux">
+            Linux
+           </a>
+           .  In
+           <a href="/wiki/OS/2" title="OS/2">
+            OS/2
+           </a>
+           and
+           <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">
+            Microsoft Windows
+           </a>
+           , the virtual file system mechanism is called the
+           <a href="/wiki/Installable_File_System" title="Installable File System">
+            Installable File System
+           </a>
+           .
+          </p>
+          <p>
+           The
+           <a href="/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace">
+            Filesystem in Userspace
+           </a>
+           (FUSE) mechanism allows
+           <a class="mw-redirect" href="/wiki/Userland_(computing)" title="Userland (computing)">
+            userland
+           </a>
+           code to plug into the virtual file system mechanism in Linux,
+           <a href="/wiki/NetBSD" title="NetBSD">
+            NetBSD
+           </a>
+           ,
+           <a href="/wiki/FreeBSD" title="FreeBSD">
+            FreeBSD
+           </a>
+           ,
+           <a href="/wiki/OpenSolaris" title="OpenSolaris">
+            OpenSolaris
+           </a>
+           , and macOS.
+          </p>
+          <p>
+           In Microsoft Windows, virtual filesystems can also be implemented through userland
+           <a class="mw-redirect" href="/wiki/Shell_extension" title="Shell extension">
+            Shell namespace extensions
+           </a>
+           ; however, they do not support the lowest-level file system access
+           <a class="mw-redirect" href="/wiki/Application_programming_interface" title="Application programming interface">
+            application programming interfaces
+           </a>
+           in Windows, so not all applications will be able to access file systems that are implemented as namespace extensions.
+           <a href="/wiki/KIO" title="KIO">
+            KIO
+           </a>
+           and
+           <a href="/wiki/GVfs" title="GVfs">
+            GVfs
+           </a>
+           /
+           <a href="/wiki/GIO_(software)" title="GIO (software)">
+            GIO
+           </a>
+           provide similar mechanisms in the
+           <a href="/wiki/KDE" title="KDE">
+            KDE
+           </a>
+           and
+           <a href="/wiki/GNOME" title="GNOME">
+            GNOME
+           </a>
+           desktop environments (respectively), with similar limitations, although they can be made to use FUSE techniques and therefore integrate smoothly into the system.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Single-file_virtual_file_systems">
+            Single-file virtual file systems
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Virtual_file_system&amp;action=edit&amp;section=2" title="Edit section: Single-file virtual file systems">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Sometimes Virtual File System refers to a file or a group of files (not necessarily inside a concrete file system) that acts as a manageable container which should provide the functionality of a concrete file system through the usage of software. Examples of such containers are CBFS Storage or a
+           <a href="/wiki/Disk_image#Virtualization" title="Disk image">
+            single-file virtual file system
+           </a>
+           in an emulator like
+           <a class="new" href="/w/index.php?title=PCTask&amp;action=edit&amp;redlink=1" title="PCTask (page does not exist)">
+            PCTask
+           </a>
+           or so-called
+           <a class="mw-redirect" href="/wiki/WinUAE" title="WinUAE">
+            WinUAE
+           </a>
+           , Oracle's
+           <a href="/wiki/VirtualBox" title="VirtualBox">
+            VirtualBox
+           </a>
+           , Microsoft's
+           <a href="/wiki/Virtual_PC" title="Virtual PC">
+            Virtual PC
+           </a>
+           ,
+           <a href="/wiki/VMware" title="VMware">
+            VMware
+           </a>
+           .
+          </p>
+          <p>
+           The primary benefit for this type of file system is that it is centralized and easy to remove. A single-file virtual file system may include all the basic features expected of any file system (virtual or otherwise), but access to the internal structure of these file systems is often limited to programs specifically written to make use of the single-file virtual file system (instead of implementation through a driver allowing universal access). Another major drawback is that performance is relatively low when compared to other virtual file systems. Low performance is mostly due to the cost of shuffling virtual files when data is written or deleted from the virtual file system.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Implementation_of_single-file_virtual_filesystems">
+            Implementation of single-file virtual filesystems
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Virtual_file_system&amp;action=edit&amp;section=3" title="Edit section: Implementation of single-file virtual filesystems">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Direct examples of single-file virtual file systems include emulators, such as PCTask and WinUAE, which encapsulate not only the filesystem data but also emulated disk layout. This makes it easy to treat an OS installation like any other piece of software—transferring it with removable media or over the network.
+          </p>
+          <div class="mw-heading mw-heading4">
+           <h4 id="PCTask">
+            PCTask
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Virtual_file_system&amp;action=edit&amp;section=4" title="Edit section: PCTask">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The
+           <a href="/wiki/Amiga" title="Amiga">
+            Amiga
+           </a>
+           emulator
+           <a class="new" href="/w/index.php?title=PCTask&amp;action=edit&amp;redlink=1" title="PCTask (page does not exist)">
+            PCTask
+           </a>
+           emulated an
+           <a href="/wiki/Intel" title="Intel">
+            Intel
+           </a>
+           PC
+           <a href="/wiki/Intel_8088" title="Intel 8088">
+            8088
+           </a>
+           based machine clocked at 4.77
+           <a class="mw-redirect" href="/wiki/MHz" title="MHz">
+            MHz
+           </a>
+           (and later an
+           <a class="mw-redirect" href="/wiki/80486" title="80486">
+            80486
+           </a>
+           SX clocked at 25 MHz). Users of PCTask could create a file of large size on the Amiga filesystem, and this file would be virtually accessed from the emulator as if it were a real PC Hard Disk. The file could be formatted with the FAT16 filesystem to store normal MS-DOS or Windows files.
+           <style data-mw-deduplicate="TemplateStyles:r1041539562">
+            .mw-parser-output .citation{word-wrap:break-word}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}
+           </style>
+           <sup class="citation nobold" id="ref_PC_Drives">
+            <a href="#endnote_PC_Drives">
+             [1]
+            </a>
+           </sup>
+           <link href="mw-data:TemplateStyles:r1041539562" rel="mw-deduplicated-inline-style"/>
+           <sup class="citation nobold" id="ref_PCTask">
+            <a href="#endnote_PCTask">
+             [2]
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading4">
+           <h4 id="WinUAE">
+            WinUAE
+           </h4>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Virtual_file_system&amp;action=edit&amp;section=5" title="Edit section: WinUAE">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The
+           <a href="/wiki/UAE_(emulator)" title="UAE (emulator)">
+            UAE
+           </a>
+           for
+           <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">
+            Windows
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/WinUAE" title="WinUAE">
+            WinUAE
+           </a>
+           , allows for large single files on Windows to be treated as Amiga file systems. In WinUAE this file is called a
+           <i>
+            hardfile
+           </i>
+           .
+           <link href="mw-data:TemplateStyles:r1041539562" rel="mw-deduplicated-inline-style"/>
+           <sup class="citation nobold" id="ref_WinUAE_Hardfile">
+            <a href="#endnote_WinUAE_Hardfile">
+             [3]
+            </a>
+           </sup>
+          </p>
+          <p>
+           UAE could also treat a directory on the host filesystem (
+           <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">
+            Windows
+           </a>
+           ,
+           <a href="/wiki/Linux" title="Linux">
+            Linux
+           </a>
+           ,
+           <a href="/wiki/MacOS" title="MacOS">
+            macOS
+           </a>
+           ,
+           <a href="/wiki/AmigaOS" title="AmigaOS">
+            AmigaOS
+           </a>
+           ) as an Amiga filesystem.
+           <link href="mw-data:TemplateStyles:r1041539562" rel="mw-deduplicated-inline-style"/>
+           <sup class="citation nobold" id="ref_WinUAE_Add_Directory">
+            <a href="#endnote_WinUAE_Add_Directory">
+             [4]
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Virtual_file_system&amp;action=edit&amp;section=6" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/9P_(protocol)" title="9P (protocol)">
+             9P (protocol)
+            </a>
+            –  a distributed file system protocol that maps directly to the VFS layer of Plan 9, making all file system access network-transparent
+           </li>
+           <li>
+            <a href="/wiki/Synthetic_file_system" title="Synthetic file system">
+             Synthetic file system
+            </a>
+            –  a hierarchical interface to non-file objects that appear as if they were regular files in the tree of a disk-based file system
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Notes">
+            Notes
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Virtual_file_system&amp;action=edit&amp;section=7" title="Edit section: Notes">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ol>
+           <li>
+            <link href="mw-data:TemplateStyles:r1041539562" rel="mw-deduplicated-inline-style"/>
+            <span class="citation wikicite" id="endnote_PC_Drives">
+             <b>
+              <a href="#ref_PC_Drives">
+               ^
+              </a>
+             </b>
+            </span>
+            <a class="external text" href="http://www.simon.mooli.org.uk/AF/8.html" rel="nofollow">
+             Emulation on Amiga
+            </a>
+            Comparison between PCX and PCTask, Amiga PC emulators.
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1041539562" rel="mw-deduplicated-inline-style"/>
+            <span class="citation wikicite" id="endnote_PCTask">
+             <b>
+              <a href="#ref_PCTask">
+               ^
+              </a>
+             </b>
+            </span>
+            See also
+            <a class="external text" href="http://www.unitechelectronics.com/emul.htm" rel="nofollow">
+             This article
+            </a>
+            explaining how it works PCTask.
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1041539562" rel="mw-deduplicated-inline-style"/>
+            <span class="citation wikicite" id="endnote_WinUAE_Hardfile">
+             <b>
+              <a href="#ref_WinUAE_Hardfile">
+               ^
+              </a>
+             </b>
+            </span>
+            <a class="external text" href="http://winuaehelp.back2roots.org/gui/hard-drives.htm" rel="nofollow">
+             Help About WinUAE
+            </a>
+            (See Hardfile section).
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1041539562" rel="mw-deduplicated-inline-style"/>
+            <span class="citation wikicite" id="endnote_WinUAE_Add_Directory">
+             <b>
+              <a href="#ref_WinUAE_Add_Directory">
+               ^
+              </a>
+             </b>
+            </span>
+            <a class="external text" href="http://winuaehelp.back2roots.org/gui/hard-drives.htm" rel="nofollow">
+             Help About WinUAE
+            </a>
+            (See Add Directory section)
+           </li>
+          </ol>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Virtual_file_system&amp;action=edit&amp;section=8" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation web cs1" id="CITEREFWerner_FischerGeorg_Schönberger2015">
+                Werner Fischer; Georg Schönberger (2015-06-01).
+                <a class="external text" href="https://www.thomas-krenn.com/en/wiki/Linux_Storage_Stack_Diagram" rel="nofollow">
+                 "Linux Storage Stack Diagram"
+                </a>
+                . Thomas-Krenn.AG
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2015-06-08
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Linux+Storage+Stack+Diagram&amp;rft.pub=Thomas-Krenn.AG&amp;rft.date=2015-06-01&amp;rft.au=Werner+Fischer&amp;rft.au=Georg+Sch%C3%B6nberger&amp;rft_id=https%3A%2F%2Fwww.thomas-krenn.com%2Fen%2Fwiki%2FLinux_Storage_Stack_Diagram&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVirtual+file+system">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="2">
+                Kleiman, Steve R. (June 1986).
+                <a class="external text" href="https://web.archive.org/web/20140629172905/http://www.arl.wustl.edu/~fredk/Courses/cs523/fall01/Papers/kleiman86vnodes.pdf" rel="nofollow">
+                 "Vnodes: An Architecture for Multiple File System Types in Sun UNIX"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 USENIX Summer
+                </i>
+                .
+                <b>
+                 86
+                </b>
+                : 238–247. Archived from
+                <a class="external text" href="http://www.arl.wustl.edu/~fredk/Courses/cs523/fall01/Papers/kleiman86vnodes.pdf" rel="nofollow">
+                 the original
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                on 2014-06-29
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  31 December
+                 </span>
+                 2016
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=USENIX+Summer&amp;rft.atitle=Vnodes%3A+An+Architecture+for+Multiple+File+System+Types+in+Sun+UNIX&amp;rft.volume=86&amp;rft.pages=238-247&amp;rft.date=1986-06&amp;rft.aulast=Kleiman&amp;rft.aufirst=Steve+R.&amp;rft_id=http%3A%2F%2Fwww.arl.wustl.edu%2F~fredk%2FCourses%2Fcs523%2Ffall01%2FPapers%2Fkleiman86vnodes.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVirtual+file+system">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="http://www.science.unitn.it/~fiorella/guidelinux/tlk/node102.html#SECTION001120000000000000000" rel="nofollow">
+             Linux kernel's Virtual File System
+            </a>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation conference cs1" id="CITEREFRodriguezM._KoehlerR._Hyde1986">
+             Rodriguez, R.; M. Koehler; R. Hyde (June 1986). "The Generic File System".
+             <i>
+              Proceedings of the USENIX Summer Technical Conference
+             </i>
+             . Atlanta, Georgia:
+             <a href="/wiki/USENIX" title="USENIX">
+              USENIX Association
+             </a>
+             . pp. 260–269.
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=The+Generic+File+System&amp;rft.btitle=Proceedings+of+the+USENIX+Summer+Technical+Conference&amp;rft.place=Atlanta%2C+Georgia&amp;rft.pages=260-269&amp;rft.pub=USENIX+Association&amp;rft.date=1986-06&amp;rft.aulast=Rodriguez&amp;rft.aufirst=R.&amp;rft.au=M.+Koehler&amp;rft.au=R.+Hyde&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVirtual+file+system">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation conference cs1" id="CITEREFKarelsM._K._McKusick1986">
+             <a class="mw-redirect" href="/wiki/Mike_Karels" title="Mike Karels">
+              Karels, M.
+             </a>
+             ;
+             <a class="mw-redirect" href="/wiki/Kirk_McKusick" title="Kirk McKusick">
+              M. K. McKusick
+             </a>
+             (September 1986). "Towards a Compatible File System Interface".
+             <i>
+              Proceedings of the European UNIX Users Group Meeting
+             </i>
+             . Manchester, England:
+             <a class="mw-redirect" href="/wiki/EurOpen" title="EurOpen">
+              EUUG
+             </a>
+             . pp. 481–496.
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=Towards+a+Compatible+File+System+Interface&amp;rft.btitle=Proceedings+of+the+European+UNIX+Users+Group+Meeting&amp;rft.place=Manchester%2C+England&amp;rft.pages=481-496&amp;rft.pub=EUUG&amp;rft.date=1986-09&amp;rft.aulast=Karels&amp;rft.aufirst=M.&amp;rft.au=M.+K.+McKusick&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVirtual+file+system">
+            </span>
+           </li>
+           <li>
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <cite class="citation techreport cs1" id="CITEREFHeidemann1995">
+             Heidemann, John (1995).
+             <a class="external text" href="http://www.isi.edu/~johnh/PAPERS/Heidemann95e.html" rel="nofollow">
+              <i>
+               Stackable Design of File Systems
+              </i>
+             </a>
+             (Technical report).
+             <a href="/wiki/University_of_California,_Los_Angeles" title="University of California, Los Angeles">
+              UCLA
+             </a>
+             . CSD-950032.
+            </cite>
+            <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=Stackable+Design+of+File+Systems&amp;rft.pub=UCLA&amp;rft.date=1995&amp;rft.aulast=Heidemann&amp;rft.aufirst=John&amp;rft_id=http%3A%2F%2Fwww.isi.edu%2F~johnh%2FPAPERS%2FHeidemann95e.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVirtual+file+system">
+            </span>
+           </li>
+           <li>
+            <i>
+             The Linux VFS
+            </i>
+            , Chapter 4 of
+            <i>
+             Linux File Systems
+            </i>
+            by
+            <a href="/wiki/Moshe_Bar_(investor)" title="Moshe Bar (investor)">
+             Moshe Bar
+            </a>
+            (
+            <a class="mw-redirect" href="/wiki/McGraw-Hill" title="McGraw-Hill">
+             McGraw-Hill
+            </a>
+            , 2001).
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+             ISBN
+            </a>
+            <a href="/wiki/Special:BookSources/0-07-212955-7" title="Special:BookSources/0-07-212955-7">
+             0-07-212955-7
+            </a>
+           </li>
+           <li>
+            Chapter 12 of
+            <i>
+             Understanding the Linux Kernel
+            </i>
+            by Daniel P. Bovet, Marco Cesati (
+            <a href="/wiki/O%27Reilly_Media" title="O'Reilly Media">
+             O'Reilly Media
+            </a>
+            , 2005).
+            <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+            <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+             ISBN
+            </a>
+            <a href="/wiki/Special:BookSources/0-596-00565-2" title="Special:BookSources/0-596-00565-2">
+             0-596-00565-2
+            </a>
+           </li>
+           <li>
+            <a class="external text" href="http://www.atalon.cz/vfs-m/linux-vfs-model/" rel="nofollow">
+             The Linux VFS Model: Naming structure
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="External_links">
+            External links
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Virtual_file_system&amp;action=edit&amp;section=9" title="Edit section: External links">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a class="external text" href="http://www.ibm.com/developerworks/library/l-virtual-filesystem-switch/" rel="nofollow">
+             Anatomy of the Linux virtual file system switch
+            </a>
+           </li>
+          </ul>
+          <div class="navbox-styles">
+           <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+           <style data-mw-deduplicate="TemplateStyles:r1236075235">
+            .mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}
+           </style>
+          </div>
+          <div aria-labelledby="Storage_virtualization" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <link href="mw-data:TemplateStyles:r1239400231" rel="mw-deduplicated-inline-style"/>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Storage_virtualization" title="Template:Storage virtualization">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Storage_virtualization" title="Template talk:Storage virtualization">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Storage_virtualization" title="Special:EditPage/Template:Storage virtualization">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Storage_virtualization" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Storage_virtualization" title="Storage virtualization">
+                 Storage virtualization
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <td class="navbox-list navbox-odd hlist" colspan="2" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Block-level_storage" title="Block-level storage">
+                   Block-level storage
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Disk_aggregation" title="Disk aggregation">
+                   Disk aggregation
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Distributed_file_system" title="Distributed file system">
+                   Distributed file systems
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Comparison_of_distributed_file_systems" title="Comparison of distributed file systems">
+                     Comparison
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/File_virtualization" title="File virtualization">
+                   File virtualization
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Logical_disk" title="Logical disk">
+                   Logical disk
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/RAID" title="RAID">
+                   RAID
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Software-defined_storage" title="Software-defined storage">
+                   Software-defined storage
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Virtual_disk" title="Virtual disk">
+                   Virtual disk
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Virtual file system
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div class="navbox-styles">
+           <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+           <link href="mw-data:TemplateStyles:r1236075235" rel="mw-deduplicated-inline-style"/>
+          </div>
+          <div aria-labelledby="File_systems" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <link href="mw-data:TemplateStyles:r1239400231" rel="mw-deduplicated-inline-style"/>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:File_systems" title="Template:File systems">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:File_systems" title="Template talk:File systems">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:File_systems" title="Special:EditPage/Template:File systems">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="File_systems" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/File_system" title="File system">
+                 File systems
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <td class="navbox-abovebelow" colspan="2">
+               <div>
+                <ul>
+                 <li>
+                  <a href="/wiki/Comparison_of_file_systems" title="Comparison of file systems">
+                   Comparison of file systems
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Comparison_of_distributed_file_systems" title="Comparison of distributed file systems">
+                     distributed
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Unix_filesystem" title="Unix filesystem">
+                   Unix filesystem
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Disk and
+               <br/>
+               non-rotating
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <td class="navbox-list navbox-odd" colspan="2" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Advanced_Disc_Filing_System" title="Advanced Disc Filing System">
+                       ADFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/AdvFS" title="AdvFS">
+                       AdvFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Amiga_Fast_File_System" title="Amiga Fast File System">
+                       Amiga FFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Amiga_Old_File_System" title="Amiga Old File System">
+                       Amiga OFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Apple_File_System" title="Apple File System">
+                       APFS
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/AtheOS_File_System" title="AtheOS File System">
+                       AthFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Bcachefs" title="Bcachefs">
+                       bcachefs
+                      </a>
+                     </li>
+                     <li>
+                      BFS
+                      <ul>
+                       <li>
+                        <a href="/wiki/Be_File_System" title="Be File System">
+                         Be File System
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Boot_File_System" title="Boot File System">
+                         Boot File System
+                        </a>
+                       </li>
+                       <li>
+                        Byte File System (
+                        <a href="/wiki/Z/VM" title="Z/VM">
+                         z/VM
+                        </a>
+                        )
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Btrfs" title="Btrfs">
+                       Btrfs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/StorNext_File_System" title="StorNext File System">
+                       CVFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/CXFS" title="CXFS">
+                       CXFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Disc_Filing_System" title="Disc Filing System">
+                       DFS
+                      </a>
+                     </li>
+                     <li>
+                      EFS
+                      <ul>
+                       <li>
+                        <a href="/wiki/Encrypting_File_System" title="Encrypting File System">
+                         Encrypting File System
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Extent_File_System" title="Extent File System">
+                         Extent File System
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Episode_filesystem" title="Episode filesystem">
+                       Episode
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Extended_file_system" title="Extended file system">
+                       ext
+                      </a>
+                      <ul>
+                       <li>
+                        <a href="/wiki/Ext2" title="Ext2">
+                         ext2
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Ext3" title="Ext3">
+                         ext3
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Ext3cow" title="Ext3cow">
+                         ext3cow
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Ext4" title="Ext4">
+                         ext4
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/File_Allocation_Table" title="File Allocation Table">
+                       FAT
+                      </a>
+                      <ul>
+                       <li>
+                        <a href="/wiki/ExFAT" title="ExFAT">
+                         exFAT
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Files-11" title="Files-11">
+                       Files-11
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Fossil_(file_system)" title="Fossil (file system)">
+                       Fossil
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/GPFS" title="GPFS">
+                       GPFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/HAMMER_(file_system)" title="HAMMER (file system)">
+                       HAMMER
+                      </a>
+                      <ul>
+                       <li>
+                        <a href="/wiki/HAMMER2" title="HAMMER2">
+                         HAMMER2
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Hierarchical_File_System_(Apple)" title="Hierarchical File System (Apple)">
+                       HFS
+                      </a>
+                      (
+                      <a href="/wiki/Classic_Mac_OS" title="Classic Mac OS">
+                       Classic Mac OS
+                      </a>
+                      )
+                     </li>
+                     <li>
+                      <a href="/wiki/Hierarchical_File_System_(IBM_MVS)" title="Hierarchical File System (IBM MVS)">
+                       HFS
+                      </a>
+                      (
+                      <a href="/wiki/MVS" title="MVS">
+                       MVS
+                      </a>
+                      )
+                     </li>
+                     <li>
+                      <a href="/wiki/HFS_Plus" title="HFS Plus">
+                       HFS+
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/High_Performance_File_System" title="High Performance File System">
+                       HPFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/High_Throughput_File_System" title="High Throughput File System">
+                       HTFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/JFS_(file_system)" title="JFS (file system)">
+                       JFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Log-structured_File_System_(BSD)" title="Log-structured File System (BSD)">
+                       LFS
+                      </a>
+                     </li>
+                     <li>
+                      MFS
+                      <ul>
+                       <li>
+                        <a href="/wiki/Macintosh_File_System" title="Macintosh File System">
+                         Macintosh File System
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/TiVo_Media_File_System" title="TiVo Media File System">
+                         TiVo Media File System
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/MINIX_file_system" title="MINIX file system">
+                       MINIX
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/NetWare_File_System" title="NetWare File System">
+                       NetWare File System
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Next3" title="Next3">
+                       Next3
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/NILFS" title="NILFS">
+                       NILFS
+                      </a>
+                      <ul>
+                       <li>
+                        <a href="/wiki/NILFS" title="NILFS">
+                         NILFS2
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Novell_Storage_Services" title="Novell Storage Services">
+                       NSS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/NTFS" title="NTFS">
+                       NTFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/OneFS_distributed_file_system" title="OneFS distributed file system">
+                       OneFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/OpenZFS" title="OpenZFS">
+                       OpenZFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Professional_File_System" title="Professional File System">
+                       PFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/QFS" title="QFS">
+                       QFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/QNX4FS" title="QNX4FS">
+                       QNX4FS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/ReFS" title="ReFS">
+                       ReFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/ReiserFS" title="ReiserFS">
+                       ReiserFS
+                      </a>
+                      <ul>
+                       <li>
+                        <a href="/wiki/Reiser4" title="Reiser4">
+                         Reiser4
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Datalight#Reliance_family" title="Datalight">
+                       Reliance
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Datalight#Reliance_Nitro" title="Datalight">
+                       Reliance Nitro
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Remote_File_Sharing" title="Remote File Sharing">
+                       RFS
+                      </a>
+                     </li>
+                     <li>
+                      SFS
+                      <ul>
+                       <li>
+                        Shared File System (
+                        <a href="/wiki/VM_(operating_system)" title="VM (operating system)">
+                         VM
+                        </a>
+                        )
+                       </li>
+                       <li>
+                        <a href="/wiki/Smart_File_System" title="Smart File System">
+                         Smart File System
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/StorNext_File_System" title="StorNext File System">
+                       SNFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Soup_(Apple)" title="Soup (Apple)">
+                       Soup (Apple)
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Tux3" title="Tux3">
+                       Tux3
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/UBIFS" title="UBIFS">
+                       UBIFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Unix_File_System" title="Unix File System">
+                       UFS/UFS2
+                      </a>
+                      <ul>
+                       <li>
+                        <a href="/wiki/Soft_updates" title="Soft updates">
+                         soft updates
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Write_Ahead_Physical_Block_Logging" title="Write Ahead Physical Block Logging">
+                         WAPBL
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/Veritas_File_System" title="Veritas File System">
+                       VxFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Write_Anywhere_File_Layout" title="Write Anywhere File Layout">
+                       WAFL
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Xiafs" title="Xiafs">
+                       Xiafs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/XFS" title="XFS">
+                       XFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Xsan" title="Xsan">
+                       Xsan
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/ZFS_(z/OS_file_system)" title="ZFS (z/OS file system)">
+                       zFS
+                      </a>
+                      (
+                      <a href="/wiki/Z/OS" title="Z/OS">
+                       z/OS
+                      </a>
+                      )
+                     </li>
+                     <li>
+                      <a href="/wiki/ZFS" title="ZFS">
+                       ZFS
+                      </a>
+                      (
+                      <a href="/wiki/Sun_Microsystems" title="Sun Microsystems">
+                       Sun
+                      </a>
+                      )
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Optical_disc" title="Optical disc">
+                    Optical disc
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/High_Sierra_Format" title="High Sierra Format">
+                       HSF
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/ISO_9660" title="ISO 9660">
+                       ISO 9660
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/ISO_13490" title="ISO 13490">
+                       ISO 13490
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Universal_Disk_Format" title="Universal Disk Format">
+                       UDF
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Flash_memory" title="Flash memory">
+                    Flash memory
+                   </a>
+                   and
+                   <a href="/wiki/Solid-state_drive" title="Solid-state drive">
+                    SSD
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Apple_File_System" title="Apple File System">
+                       APFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/File_Allocation_Table" title="File Allocation Table">
+                       FAT
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/ExFAT" title="ExFAT">
+                       exFAT
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Transaction-Safe_FAT_File_System" title="Transaction-Safe FAT File System">
+                       TFAT
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/EROFS" title="EROFS">
+                       EROFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/F2FS" title="F2FS">
+                       F2FS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/JFS_(file_system)" title="JFS (file system)">
+                       JFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Non-Volatile_File_System" title="Non-Volatile File System">
+                       NVFS
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                   <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                    <tbody>
+                     <tr>
+                      <th class="navbox-group" id="host-side_wear_leveling" scope="row" style="width:1%">
+                       host-side
+                       <a href="/wiki/Wear_leveling" title="Wear leveling">
+                        wear leveling
+                       </a>
+                      </th>
+                      <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                       <div style="padding:0 0.25em">
+                        <ul>
+                         <li>
+                          <a href="/wiki/CHFS" title="CHFS">
+                           CHFS
+                          </a>
+                         </li>
+                         <li>
+                          <a href="/wiki/JFFS" title="JFFS">
+                           JFFS
+                          </a>
+                         </li>
+                         <li>
+                          <a href="/wiki/JFFS2" title="JFFS2">
+                           JFFS2
+                          </a>
+                         </li>
+                         <li>
+                          <a href="/wiki/LogFS" title="LogFS">
+                           LogFS
+                          </a>
+                         </li>
+                         <li>
+                          <a href="/wiki/NILFS" title="NILFS">
+                           NILFS
+                          </a>
+                          <ul>
+                           <li>
+                            <a href="/wiki/NILFS" title="NILFS">
+                             NILFS2
+                            </a>
+                           </li>
+                          </ul>
+                         </li>
+                         <li>
+                          <a href="/wiki/YAFFS" title="YAFFS">
+                           YAFFS
+                          </a>
+                         </li>
+                         <li>
+                          <a href="/wiki/UBIFS" title="UBIFS">
+                           UBIFS
+                          </a>
+                         </li>
+                        </ul>
+                       </div>
+                      </td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <div>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Clustered_file_system#Distributed_file_systems" title="Clustered file system">
+                    Distributed parallel
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/BeeGFS" title="BeeGFS">
+                       BeeGFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Ceph_(software)" title="Ceph (software)">
+                       Ceph
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/CXFS" title="CXFS">
+                       CXFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/GFS2" title="GFS2">
+                       GFS2
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Google_File_System" title="Google File System">
+                       Google File System
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/OCFS2" title="OCFS2">
+                       OCFS2
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/OrangeFS" title="OrangeFS">
+                       OrangeFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Parallel_Virtual_File_System" title="Parallel Virtual File System">
+                       PVFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Quantcast_File_System" title="Quantcast File System">
+                       QFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Xsan" title="Xsan">
+                       Xsan
+                      </a>
+                     </li>
+                     <li>
+                      <i>
+                       <a href="/wiki/List_of_file_systems#Distributed_parallel_file_systems" title="List of file systems">
+                        more...
+                       </a>
+                      </i>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Network-attached_storage" title="Network-attached storage">
+                NAS
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/9P_(protocol)" title="9P (protocol)">
+                   9P
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Andrew_File_System" title="Andrew File System">
+                   AFS
+                  </a>
+                  (
+                  <a href="/wiki/OpenAFS" title="OpenAFS">
+                   OpenAFS
+                  </a>
+                  )
+                 </li>
+                 <li>
+                  <a href="/wiki/Apple_Filing_Protocol" title="Apple Filing Protocol">
+                   AFP
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Coda_(file_system)" title="Coda (file system)">
+                   Coda
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Distributed_File_System_(Microsoft)" title="Distributed File System (Microsoft)">
+                   DFS
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Google_File_System" title="Google File System">
+                   Google File System
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/GPFS" title="GPFS">
+                   GPFS
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Lustre_(file_system)" title="Lustre (file system)">
+                   Lustre
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/NetWare_Core_Protocol" title="NetWare Core Protocol">
+                   NCP
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Network_File_System" title="Network File System">
+                   NFS
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Elliptics" title="Elliptics">
+                   POHMELFS
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Apache_Hadoop" title="Apache Hadoop">
+                   Hadoop
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Server_Message_Block" title="Server Message Block">
+                   SMB (CIFS)
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/SSHFS" title="SSHFS">
+                   SSHFS
+                  </a>
+                 </li>
+                 <li>
+                  <i>
+                   <a href="/wiki/List_of_file_systems#Distributed_file_systems" title="List of file systems">
+                    more...
+                   </a>
+                  </i>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Specialized
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <td class="navbox-list navbox-odd" colspan="2" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Aufs" title="Aufs">
+                       Aufs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/AXFS" title="AXFS">
+                       AXFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Boot_File_System" title="Boot File System">
+                       Boot File System
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/CDfs" title="CDfs">
+                       CDfs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Compact_Disc_File_System" title="Compact Disc File System">
+                       Compact Disc File System
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Cramfs" title="Cramfs">
+                       cramfs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Davfs2" title="Davfs2">
+                       Davfs2
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/EROFS" title="EROFS">
+                       EROFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/FTPFS" title="FTPFS">
+                       FTPFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace">
+                       FUSE
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Lnfs" title="Lnfs">
+                       Lnfs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Linear_Tape_File_System" title="Linear Tape File System">
+                       LTFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/NOVA_(filesystem)" title="NOVA (filesystem)">
+                       NOVA
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Rational_MultiVersion_File_System" title="Rational MultiVersion File System">
+                       MVFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/SquashFS" title="SquashFS">
+                       SquashFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/FAT_filesystem_and_Linux" title="FAT filesystem and Linux">
+                       UMSDOS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/OverlayFS" title="OverlayFS">
+                       OverlayFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/UnionFS" title="UnionFS">
+                       UnionFS
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   Pseudo
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Configfs" title="Configfs">
+                       configfs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Device_file" title="Device file">
+                       devfs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Debugfs" title="Debugfs">
+                       debugfs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Kernfs_(BSD)" title="Kernfs (BSD)">
+                       kernfs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Procfs" title="Procfs">
+                       procfs
+                      </a>
+                     </li>
+                     <li>
+                      specfs
+                     </li>
+                     <li>
+                      <a href="/wiki/Sysfs" title="Sysfs">
+                       sysfs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Tmpfs" title="Tmpfs">
+                       tmpfs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/WinFS" title="WinFS">
+                       WinFS
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Filesystem-level_encryption" title="Filesystem-level encryption">
+                    Encrypted
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/ECryptfs" title="ECryptfs">
+                       eCryptfs
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/EncFS" title="EncFS">
+                       EncFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Encrypting_File_System" title="Encrypting File System">
+                       EFS
+                      </a>
+                     </li>
+                     <li>
+                      <a class="mw-redirect" href="/wiki/Rubberhose_(file_system)" title="Rubberhose (file system)">
+                       Rubberhose
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/SSHFS" title="SSHFS">
+                       SSHFS
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Oracle_ZFS" title="Oracle ZFS">
+                       ZFS
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Types
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Clustered_file_system" title="Clustered file system">
+                   Clustered
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Global_file_system" title="Global file system">
+                     Global
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Grid_file_system" title="Grid file system">
+                     Grid
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/Self-certifying_File_System" title="Self-certifying File System">
+                     Self-certifying
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Flash_file_system" title="Flash file system">
+                   Flash
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Journaling_file_system" title="Journaling file system">
+                   Journaling
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Log-structured_file_system" title="Log-structured file system">
+                   Log-structured
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Object_storage" title="Object storage">
+                   Object
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Record-oriented_filesystem" title="Record-oriented filesystem">
+                   Record-oriented
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Semantic_file_system" title="Semantic file system">
+                   Semantic
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Steganographic_file_system" title="Steganographic file system">
+                   Steganographic
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Synthetic_file_system" title="Synthetic file system">
+                   Synthetic
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Versioning_file_system" title="Versioning file system">
+                   Versioning
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Features
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <td class="navbox-list navbox-odd" colspan="2" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Case_preservation" title="Case preservation">
+                       Case preservation
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Copy-on-write" title="Copy-on-write">
+                       Copy-on-write
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Data_deduplication" title="Data deduplication">
+                       Data deduplication
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Data_scrubbing" title="Data scrubbing">
+                       Data scrubbing
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Execute_in_place" title="Execute in place">
+                       Execute in place
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Extent_(file_systems)" title="Extent (file systems)">
+                       Extent
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/File_attribute" title="File attribute">
+                       File attribute
+                      </a>
+                      <ul>
+                       <li>
+                        <a href="/wiki/Extended_file_attributes" title="Extended file attributes">
+                         Extended file attributes
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                     <li>
+                      <a href="/wiki/File_change_log" title="File change log">
+                       File change log
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Fork_(file_system)" title="Fork (file system)">
+                       Fork
+                      </a>
+                     </li>
+                     <li>
+                      Links
+                      <ul>
+                       <li>
+                        <a href="/wiki/Hard_link" title="Hard link">
+                         Hard
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Symbolic_link" title="Symbolic link">
+                         Symbolic
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:1%">
+                   <a href="/wiki/Computer_access_control" title="Computer access control">
+                    Access control
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Access-control_list" title="Access-control list">
+                       Access-control list
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Filesystem-level_encryption" title="Filesystem-level encryption">
+                       Filesystem-level encryption
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/File-system_permissions" title="File-system permissions">
+                       Permissions
+                      </a>
+                      <ul>
+                       <li>
+                        <a href="/wiki/Chmod" title="Chmod">
+                         Modes
+                        </a>
+                       </li>
+                       <li>
+                        <a href="/wiki/Sticky_bit" title="Sticky bit">
+                         Sticky bit
+                        </a>
+                       </li>
+                      </ul>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Interface_(computing)" title="Interface (computing)">
+                Interfaces
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/File_manager" title="File manager">
+                   File manager
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/File_system_API" title="File system API">
+                   File system API
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Installable_File_System" title="Installable File System">
+                     Installable File System
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Virtual file system
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/List_of_file_systems" title="List of file systems">
+                Lists
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/List_of_cryptographic_file_systems" title="List of cryptographic file systems">
+                   Cryptographic
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/List_of_default_file_systems" title="List of default file systems">
+                   Default
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/List_of_log-structured_file_systems" title="List of log-structured file systems">
+                   Log-structured
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Layouts
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a class="mw-redirect" href="/wiki/Master_Boot_Record" title="Master Boot Record">
+                   Master Boot Record
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/GUID_Partition_Table" title="GUID Partition Table">
+                   GUID Partition Table
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Apple_Partition_Map" title="Apple Partition Map">
+                   Apple Partition Map
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <div class="navbox-styles">
+           <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+           <link href="mw-data:TemplateStyles:r1236075235" rel="mw-deduplicated-inline-style"/>
+          </div>
+          <div aria-labelledby="Operating_systems" class="navbox" role="navigation" style="padding:3px">
+           <table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+            <tbody>
+             <tr>
+              <th class="navbox-title" colspan="2" scope="col">
+               <link href="mw-data:TemplateStyles:r1129693374" rel="mw-deduplicated-inline-style"/>
+               <link href="mw-data:TemplateStyles:r1239400231" rel="mw-deduplicated-inline-style"/>
+               <div class="navbar plainlinks hlist navbar-mini">
+                <ul>
+                 <li class="nv-view">
+                  <a href="/wiki/Template:Operating_systems" title="Template:Operating systems">
+                   <abbr title="View this template">
+                    v
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-talk">
+                  <a href="/wiki/Template_talk:Operating_systems" title="Template talk:Operating systems">
+                   <abbr title="Discuss this template">
+                    t
+                   </abbr>
+                  </a>
+                 </li>
+                 <li class="nv-edit">
+                  <a href="/wiki/Special:EditPage/Template:Operating_systems" title="Special:EditPage/Template:Operating systems">
+                   <abbr title="Edit this template">
+                    e
+                   </abbr>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+               <div id="Operating_systems" style="font-size:114%;margin:0 4em">
+                <a href="/wiki/Operating_system" title="Operating system">
+                 Operating systems
+                </a>
+               </div>
+              </th>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               General
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Comparison_of_operating_systems" title="Comparison of operating systems">
+                   Comparison
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Forensic_software_engineering" title="Forensic software engineering">
+                   Forensic engineering
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/History_of_operating_systems" title="History of operating systems">
+                   History
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/List_of_operating_systems" title="List of operating systems">
+                   List
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Timeline_of_operating_systems" title="Timeline of operating systems">
+                   Timeline
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Usage_share_of_operating_systems" title="Usage share of operating systems">
+                   Usage share
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Comparison_of_user_features_of_operating_systems" title="Comparison of user features of operating systems">
+                   User features comparison
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Variants
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Disk_operating_system" title="Disk operating system">
+                   Disk operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Distributed_operating_system" title="Distributed operating system">
+                   Distributed operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Embedded_operating_system" title="Embedded operating system">
+                   Embedded operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Hobbyist_operating_system" title="Hobbyist operating system">
+                   Hobbyist operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Just_enough_operating_system" title="Just enough operating system">
+                   Just enough operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Mobile_operating_system" title="Mobile operating system">
+                   Mobile operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Network_operating_system" title="Network operating system">
+                   Network operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Object-oriented_operating_system" title="Object-oriented operating system">
+                   Object-oriented operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Real-time_operating_system" title="Real-time operating system">
+                   Real-time operating system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Supercomputer_operating_system" title="Supercomputer operating system">
+                   Supercomputer operating system
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Kernel_(operating_system)" title="Kernel (operating system)">
+                Kernel
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:6em">
+                   <a href="/wiki/Computer_architecture" title="Computer architecture">
+                    Architectures
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Exokernel" title="Exokernel">
+                       Exokernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Hybrid_kernel" title="Hybrid kernel">
+                       Hybrid
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Microkernel" title="Microkernel">
+                       Microkernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Monolithic_kernel" title="Monolithic kernel">
+                       Monolithic
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Multikernel" title="Multikernel">
+                       Multikernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Vkernel" title="Vkernel">
+                       vkernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Rump_kernel" title="Rump kernel">
+                       Rump kernel
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Unikernel" title="Unikernel">
+                       Unikernel
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:6em">
+                   Components
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Device_driver" title="Device driver">
+                       Device driver
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Loadable_kernel_module" title="Loadable kernel module">
+                       Loadable kernel module
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/User_space_and_kernel_space" title="User space and kernel space">
+                       User space and kernel space
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Process_management_(computing)" title="Process management (computing)">
+                Process management
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+               </div>
+               <table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+                <tbody>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:6em">
+                   Concepts
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-odd" style="padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Computer_multitasking" title="Computer multitasking">
+                       Computer multitasking
+                      </a>
+                      (
+                      <a href="/wiki/Cooperative_multitasking" title="Cooperative multitasking">
+                       Cooperative
+                      </a>
+                      ,
+                      <a href="/wiki/Preemption_(computing)" title="Preemption (computing)">
+                       Preemptive
+                      </a>
+                      )
+                     </li>
+                     <li>
+                      <a href="/wiki/Context_switch" title="Context switch">
+                       Context switch
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Interrupt" title="Interrupt">
+                       Interrupt
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Inter-process_communication" title="Inter-process communication">
+                       IPC
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Process_(computing)" title="Process (computing)">
+                       Process
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Process_control_block" title="Process control block">
+                       Process control block
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Real-time_operating_system" title="Real-time operating system">
+                       Real-time
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Thread_(computing)" title="Thread (computing)">
+                       Thread
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Time-sharing" title="Time-sharing">
+                       Time-sharing
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                 <tr>
+                  <th class="navbox-group" scope="row" style="width:6em">
+                   <a href="/wiki/Scheduling_(computing)" title="Scheduling (computing)">
+                    Scheduling
+                    <br/>
+                    algorithms
+                   </a>
+                  </th>
+                  <td class="navbox-list-with-group navbox-list navbox-even" style="padding:0">
+                   <div style="padding:0 0.25em">
+                    <ul>
+                     <li>
+                      <a href="/wiki/Fixed-priority_pre-emptive_scheduling" title="Fixed-priority pre-emptive scheduling">
+                       Fixed-priority preemptive
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Multilevel_feedback_queue" title="Multilevel feedback queue">
+                       Multilevel feedback queue
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Round-robin_scheduling" title="Round-robin scheduling">
+                       Round-robin
+                      </a>
+                     </li>
+                     <li>
+                      <a href="/wiki/Shortest_job_next" title="Shortest job next">
+                       Shortest job next
+                      </a>
+                     </li>
+                    </ul>
+                   </div>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               <div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Memory_management_(operating_systems)" title="Memory management (operating systems)">
+                Memory management
+               </a>
+               ,
+               <br/>
+               <a href="/wiki/System_resource" title="System resource">
+                resource
+               </a>
+               protection
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Bus_error" title="Bus error">
+                   Bus error
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/General_protection_fault" title="General protection fault">
+                   General protection fault
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Memory_paging" title="Memory paging">
+                   Memory paging
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Memory_protection" title="Memory protection">
+                   Memory protection
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Protection_ring" title="Protection ring">
+                   Protection ring
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Segmentation_fault" title="Segmentation fault">
+                   Segmentation fault
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Virtual_memory" title="Virtual memory">
+                   Virtual memory
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               <a href="/wiki/Non-volatile_memory" title="Non-volatile memory">
+                Storage
+               </a>
+               access,
+               <br/>
+               <a href="/wiki/File_system" title="File system">
+                file systems
+               </a>
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/Booting#BOOT-LOADER" title="Booting">
+                   Boot loader
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Defragmentation" title="Defragmentation">
+                   Defragmentation
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Device_file" title="Device file">
+                   Device file
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/File_attribute" title="File attribute">
+                   File attribute
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Inode" title="Inode">
+                   Inode
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Journaling_file_system" title="Journaling file system">
+                   Journal
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Disk_partitioning" title="Disk partitioning">
+                   Partition
+                  </a>
+                 </li>
+                 <li>
+                  <a class="mw-selflink selflink">
+                   Virtual file system
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Virtual_tape_library" title="Virtual tape library">
+                   Virtual tape library
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+             <tr>
+              <th class="navbox-group" scope="row" style="width:1%">
+               Supporting concepts
+              </th>
+              <td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0">
+               <div style="padding:0 0.25em">
+                <ul>
+                 <li>
+                  <a href="/wiki/API" title="API">
+                   API
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Computer_network" title="Computer network">
+                   Computer network
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Hardware_abstraction" title="Hardware abstraction">
+                   HAL
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Live_CD" title="Live CD">
+                   Live CD
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Live_USB" title="Live USB">
+                   Live USB
+                  </a>
+                 </li>
+                 <li>
+                  <a href="/wiki/Shell_(computing)" title="Shell (computing)">
+                   Shell
+                  </a>
+                  <ul>
+                   <li>
+                    <a href="/wiki/Command-line_interface" title="Command-line interface">
+                     CLI
+                    </a>
+                   </li>
+                   <li>
+                    <a href="/wiki/User_interface" title="User interface">
+                     User interface
+                    </a>
+                   </li>
+                  </ul>
+                 </li>
+                 <li>
+                  <a href="/wiki/Preboot_Execution_Environment" title="Preboot Execution Environment">
+                   PXE
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐wwsv5
+Cached time: 20240926233202
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.592 seconds
+Real time usage: 0.769 seconds
+Preprocessor visited node count: 1760/1000000
+Post‐expand include size: 89856/2097152 bytes
+Template argument size: 1241/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 58106/5000000 bytes
+Lua time usage: 0.370/10.000 seconds
+Lua memory usage: 5609161/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  625.388      1 -total
+ 22.37%  139.927      1 Template:Reflist
+ 22.33%  139.677      1 Template:OS
+ 21.99%  137.502      1 Template:Sidebar
+ 18.07%  113.024      1 Template:Cite_web
+ 16.68%  104.340      9 Template:Navbox
+ 15.26%   95.459      1 Template:Short_description
+ 12.08%   75.562      1 Template:More_footnotes
+ 10.73%   67.135      1 Template:Ambox
+  9.81%   61.323      1 Template:Storage_virtualization
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:351131-0!canonical and timestamp 20240926233202 and revision id 1167047508. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Virtual_file_system&amp;oldid=1167047508">
+          https://en.wikipedia.org/w/index.php?title=Virtual_file_system&amp;oldid=1167047508
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Computer_file_systems" title="Category:Computer file systems">
+            Computer file systems
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Virtualization" title="Category:Virtualization">
+            Virtualization
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_lacking_in-text_citations_from_October_2009" title="Category:Articles lacking in-text citations from October 2009">
+            Articles lacking in-text citations from October 2009
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">
+            All articles lacking in-text citations
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 25 July 2023, at 10:18
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Virtual_file_system&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-hl7ln","wgBackendResponseTime":191,"wgPageParseReport":{"limitreport":{"cputime":"0.592","walltime":"0.769","ppvisitednodes":{"value":1760,"limit":1000000},"postexpandincludesize":{"value":89856,"limit":2097152},"templateargumentsize":{"value":1241,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":58106,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  625.388      1 -total"," 22.37%  139.927      1 Template:Reflist"," 22.33%  139.677      1 Template:OS"," 21.99%  137.502      1 Template:Sidebar"," 18.07%  113.024      1 Template:Cite_web"," 16.68%  104.340      9 Template:Navbox"," 15.26%   95.459      1 Template:Short_description"," 12.08%   75.562      1 Template:More_footnotes"," 10.73%   67.135      1 Template:Ambox","  9.81%   61.323      1 Template:Storage_virtualization"]},"scribunto":{"limitreport-timeusage":{"value":"0.370","limit":"10.000"},"limitreport-memusage":{"value":5609161,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-wwsv5","timestamp":"20240926233202","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Virtual file system","url":"https:\/\/en.wikipedia.org\/wiki\/Virtual_file_system","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1330734","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1330734","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-10-27T20:20:46Z","dateModified":"2023-07-25T10:18:30Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/e\/e1\/Operating_system_placement.svg","headline":"abstraction layer on top of one or more concrete file system, allowing applications to access files via a uniform logical representation"}
+  </script>
+ </body>
+</html>

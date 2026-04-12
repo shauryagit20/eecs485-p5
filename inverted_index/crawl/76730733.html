@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Cloud computing architecture - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"f12062b9-f19b-4547-aa0e-6bdc615d7225","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Cloud_computing_architecture","wgTitle":"Cloud computing architecture","wgCurRevisionId":1234168403,"wgRevisionId":1234168403,"wgArticleId":35954361,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: multiple names: authors list","CS1 maint: numeric names: authors list","Articles with short description","Short description is different from Wikidata","Cloud computing"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Cloud_computing_architecture","wgRelevantArticleId":35954361,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q5135697","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,
+"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init",
+"ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CloudComputingSampleArchitecture.svg/1200px-CloudComputingSampleArchitecture.svg.png" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="818" property="og:image:height"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CloudComputingSampleArchitecture.svg/800px-CloudComputingSampleArchitecture.svg.png" property="og:image"/>
+  <meta content="800" property="og:image:width"/>
+  <meta content="545" property="og:image:height"/>
+  <meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CloudComputingSampleArchitecture.svg/640px-CloudComputingSampleArchitecture.svg.png" property="og:image"/>
+  <meta content="640" property="og:image:width"/>
+  <meta content="436" property="og:image:height"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Cloud computing architecture - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Cloud_computing_architecture" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Cloud_computing_architecture" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Cloud_computing_architecture"/>
+  <meta eecs485_docid="76730733"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Cloud_computing_architecture rootpage-Cloud_computing_architecture skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Cloud+computing+architecture" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Cloud+computing+architecture" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Cloud+computing+architecture" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Cloud+computing+architecture" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Client_platforms">
+           <a class="vector-toc-link" href="#Client_platforms">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Client platforms
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Client_platforms-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Client platforms subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Client_platforms-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Zero_client">
+             <a class="vector-toc-link" href="#Zero_client">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                1.1
+               </span>
+               <span>
+                Zero client
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Zero_client-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Storage">
+           <a class="vector-toc-link" href="#Storage">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Storage
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Storage-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Delivery">
+           <a class="vector-toc-link" href="#Delivery">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Delivery
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Delivery-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Delivery subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Delivery-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Software_as_a_service_(SaaS)">
+             <a class="vector-toc-link" href="#Software_as_a_service_(SaaS)">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.1
+               </span>
+               <span>
+                Software as a service (SaaS)
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Software_as_a_service_(SaaS)-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Development_as_a_service_(DaaS)">
+             <a class="vector-toc-link" href="#Development_as_a_service_(DaaS)">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.2
+               </span>
+               <span>
+                Development as a service (DaaS)
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Development_as_a_service_(DaaS)-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Data_as_a_service_(DaaS)">
+             <a class="vector-toc-link" href="#Data_as_a_service_(DaaS)">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.3
+               </span>
+               <span>
+                Data as a service (DaaS)
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Data_as_a_service_(DaaS)-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Platform_as_a_service_(PaaS)">
+             <a class="vector-toc-link" href="#Platform_as_a_service_(PaaS)">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.4
+               </span>
+               <span>
+                Platform as a service (PaaS)
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Platform_as_a_service_(PaaS)-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Infrastructure_as_a_service_(IaaS)">
+             <a class="vector-toc-link" href="#Infrastructure_as_a_service_(IaaS)">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.5
+               </span>
+               <span>
+                Infrastructure as a service (IaaS)
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Infrastructure_as_a_service_(IaaS)-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Networking">
+           <a class="vector-toc-link" href="#Networking">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              Networking
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Networking-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Further_reading">
+           <a class="vector-toc-link" href="#Further_reading">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              6
+             </span>
+             <span>
+              Further reading
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Further_reading-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              7
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Cloud computing architecture
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 2 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-2" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          2 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="بنية الحوسبة السحابية" href="https://ar.wikipedia.org/wiki/%D8%A8%D9%86%D9%8A%D8%A9_%D8%A7%D9%84%D8%AD%D9%88%D8%B3%D8%A8%D8%A9_%D8%A7%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9" hreflang="ar" lang="ar" title="بنية الحوسبة السحابية – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-vi mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" data-title="Kiến trúc điện toán đám mây" href="https://vi.wikipedia.org/wiki/Ki%E1%BA%BFn_tr%C3%BAc_%C4%91i%E1%BB%87n_to%C3%A1n_%C4%91%C3%A1m_m%C3%A2y" hreflang="vi" lang="vi" title="Kiến trúc điện toán đám mây – Vietnamese">
+             <span>
+              Tiếng Việt
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q5135697#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Cloud_computing_architecture" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Cloud_computing_architecture" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Cloud_computing_architecture">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Cloud_computing_architecture&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Cloud_computing_architecture">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Cloud_computing_architecture" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Cloud_computing_architecture" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Cloud_computing_architecture&amp;oldid=1234168403" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Cloud_computing_architecture&amp;id=1234168403&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCloud_computing_architecture">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCloud_computing_architecture">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q5135697" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Cloud_computing_architecture&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Cloud_computing_architecture&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <p>
+          <b>
+           Cloud computing architecture
+          </b>
+          refers to the components and subcomponents required for
+          <a href="/wiki/Cloud_computing" title="Cloud computing">
+           cloud computing
+          </a>
+          .  These components typically consist of a front end platform (fat client, thin client, mobile), back end platforms (servers, storage), a cloud based delivery, and a network (Internet, Intranet, Intercloud). Combined, these components make up cloud computing architecture.
+         </p>
+         <figure class="mw-halign-right mw-image-border" typeof="mw:File/Frameless">
+          <a class="mw-file-description" href="/wiki/File:CloudComputingSampleArchitecture.svg" title="Cloud Computing Sample Architecture">
+           <img alt="" class="mw-file-element" data-file-height="375" data-file-width="550" decoding="async" height="300" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/79/CloudComputingSampleArchitecture.svg/440px-CloudComputingSampleArchitecture.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/79/CloudComputingSampleArchitecture.svg/660px-CloudComputingSampleArchitecture.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/79/CloudComputingSampleArchitecture.svg/880px-CloudComputingSampleArchitecture.svg.png 2x" width="440"/>
+          </a>
+          <figcaption>
+           Cloud Computing Sample Architecture
+          </figcaption>
+         </figure>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Client_platforms">
+            Client platforms
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=1" title="Edit section: Client platforms">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1236090951">
+           .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+          </style>
+          <div class="hatnote navigation-not-searchable" role="note">
+           See also:
+           <a href="/wiki/Category:Cloud_clients" title="Category:Cloud clients">
+            Category:Cloud clients
+           </a>
+          </div>
+          <p>
+           Cloud computing architectures consist of front-end platforms called clients or cloud clients. These clients are servers, fat (or thick) clients, thin clients, zero clients,
+           <a href="/wiki/Tablet_computer" title="Tablet computer">
+            tablets
+           </a>
+           and mobile devices that users directly interact with. These client platforms interact with the cloud data storage via an application (middle ware), via a web browser, or through a virtual session. Virtual sessions in particular require secure encryption algorithm frame working which spans the entire interface.
+           <sup class="reference" id="cite_ref-1">
+            <a href="#cite_note-1">
+             <span class="cite-bracket">
+              [
+             </span>
+             1
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Zero_client">
+            Zero client
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=2" title="Edit section: Zero client">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The zero or ultra-thin client initializes the network to gather required configuration files that then tell it where its OS binaries are stored.
+           <sup class="reference" id="cite_ref-2">
+            <a href="#cite_note-2">
+             <span class="cite-bracket">
+              [
+             </span>
+             2
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The entire zero client device runs via the network.  This creates a single point of failure, in that, if the network goes down, the device is rendered useless.
+           <sup class="reference" id="cite_ref-3">
+            <a href="#cite_note-3">
+             <span class="cite-bracket">
+              [
+             </span>
+             3
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Storage">
+            Storage
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=3" title="Edit section: Storage">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Cloud_storage" title="Cloud storage">
+            Cloud storage
+           </a>
+          </div>
+          <p>
+           An online network storage where data is stored and accessible to multiple clients.  Cloud storage is generally deployed in the following configurations:
+           <a href="/wiki/Cloud_computing#Public" title="Cloud computing">
+            public cloud
+           </a>
+           ,
+           <a href="/wiki/Cloud_computing#Private_cloud" title="Cloud computing">
+            private cloud
+           </a>
+           ,
+           <a href="/wiki/Cloud_computing#Community" title="Cloud computing">
+            community cloud
+           </a>
+           , or some combination of the three also known as
+           <a href="/wiki/Cloud_computing#Hybrid" title="Cloud computing">
+            hybrid cloud
+           </a>
+           .
+           <sup class="reference" id="cite_ref-bare_url_4-0">
+            <a href="#cite_note-bare_url-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           In order to be effective, the cloud storage needs to be agile, flexible, scalable,
+           <a class="mw-redirect" href="/wiki/Multi-tenancy" title="Multi-tenancy">
+            multi-tenancy
+           </a>
+           , and secure.
+           <sup class="reference" id="cite_ref-5">
+            <a href="#cite_note-5">
+             <span class="cite-bracket">
+              [
+             </span>
+             5
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Delivery">
+            Delivery
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=4" title="Edit section: Delivery">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Software_as_a_service_(SaaS)">
+            <span id="Software_as_a_service_.28SaaS.29">
+            </span>
+            Software as a service (SaaS)
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=5" title="Edit section: Software as a service (SaaS)">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Software_as_a_service" title="Software as a service">
+            Software as a service
+           </a>
+          </div>
+          <p>
+           The
+           <a class="mw-redirect" href="/wiki/Software-as-a-service" title="Software-as-a-service">
+            software-as-a-service
+           </a>
+           (SaaS) service-model involves the cloud provider installing and maintaining software in the cloud and users running the software from cloud over the Internet (or Intranet).  The users' client machines require no installation of any application-specific software since cloud applications run in the cloud.  SaaS is scalable, and system administrators may load the applications on several servers.  In the past, each customer would purchase and load their own copy of the application to each of their own servers, but with the SaaS the customer can access the application without installing the software locally. SaaS typically involves a monthly or annual fee.
+           <sup class="reference" id="cite_ref-Chou_6-0">
+            <a href="#cite_note-Chou-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-7">
+            <a href="#cite_note-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Software as a service provides the equivalent of installed applications in the traditional (non-cloud computing) delivery of applications.
+           <sup class="reference" id="cite_ref-enterpriseirregulars_8-0">
+            <a href="#cite_note-enterpriseirregulars-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           Software as a service has four common approaches:
+           <sup class="reference" id="cite_ref-enterpriseirregulars_8-1">
+            <a href="#cite_note-enterpriseirregulars-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           <sup class="reference" id="cite_ref-citrix_9-0">
+            <a href="#cite_note-citrix-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <ol>
+           <li>
+            single instance
+           </li>
+           <li>
+            multi-instance
+           </li>
+           <li>
+            multi-tenant
+           </li>
+           <li>
+            flex tenancy
+           </li>
+          </ol>
+          <p>
+           Of these, flex tenancy is considered the most user adaptive SaaS paradigm in designated multi-input four way manifold models.
+           <sup class="reference" id="cite_ref-Andrikopoulos_10-0">
+            <a href="#cite_note-Andrikopoulos-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           Such systems are based on simplified encryption methods that target listed data sequences over multiple passes.
+           <sup class="reference" id="cite_ref-Li_11-0">
+            <a href="#cite_note-Li-11">
+             <span class="cite-bracket">
+              [
+             </span>
+             11
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           The simplicity of this concept makes flex tenancy SaaS popular among those without informatics processing experience, such as basic maintenance and custodial staff in franchise businesses.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Development_as_a_service_(DaaS)">
+            <span id="Development_as_a_service_.28DaaS.29">
+            </span>
+            Development as a service (DaaS)
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=6" title="Edit section: Development as a service (DaaS)">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Development as a service is web based, community shared tool set.  This is the equivalent to locally installed development tools in the traditional (non-cloud computing) delivery of development tools.
+           <sup class="reference" id="cite_ref-enterpriseirregulars_8-2">
+            <a href="#cite_note-enterpriseirregulars-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Data_as_a_service_(DaaS)">
+            <span id="Data_as_a_service_.28DaaS.29">
+            </span>
+            Data as a service (DaaS)
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=7" title="Edit section: Data as a service (DaaS)">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           <a href="/wiki/Data_as_a_service" title="Data as a service">
+            Data as a service
+           </a>
+           web based design construct where cloud data is accessed through a defined API layer.  DaaS services are often considered as a specialized subset of a Software as a Service (SaaS) offering.
+           <sup class="reference" id="cite_ref-12">
+            <a href="#cite_note-12">
+             <span class="cite-bracket">
+              [
+             </span>
+             12
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Platform_as_a_service_(PaaS)">
+            <span id="Platform_as_a_service_.28PaaS.29">
+            </span>
+            Platform as a service (PaaS)
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=8" title="Edit section: Platform as a service (PaaS)">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Platform_as_a_service" title="Platform as a service">
+            Platform as a service
+           </a>
+          </div>
+          <p>
+           <a href="/wiki/Platform_as_a_service" title="Platform as a service">
+            Platform as a service
+           </a>
+           is cloud computing service which provides the users with application platforms and databases as a service.
+           <sup class="reference" id="cite_ref-bare_url_4-1">
+            <a href="#cite_note-bare_url-4">
+             <span class="cite-bracket">
+              [
+             </span>
+             4
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           This is equivalent to middleware in the traditional (non-cloud computing) delivery of application platforms and databases.
+           <sup class="reference" id="cite_ref-enterpriseirregulars_8-3">
+            <a href="#cite_note-enterpriseirregulars-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Infrastructure_as_a_service_(IaaS)">
+            <span id="Infrastructure_as_a_service_.28IaaS.29">
+            </span>
+            Infrastructure as a service (IaaS)
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=9" title="Edit section: Infrastructure as a service (IaaS)">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           <a href="/wiki/Infrastructure_as_a_service" title="Infrastructure as a service">
+            Infrastructure as a service
+           </a>
+           is taking the physical hardware and going completely virtual (e.g. all servers, networks, storage, and system management all existing in the cloud).  This is the equivalent to infrastructure and hardware in the traditional (non-cloud computing) method running in the cloud.  In other words, businesses pay a fee (monthly or annually) to run virtual servers, networks, storage from the cloud.  This will mitigate the need for a data center, heating, cooling, and maintaining hardware at the local level.
+           <sup class="reference" id="cite_ref-enterpriseirregulars_8-4">
+            <a href="#cite_note-enterpriseirregulars-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Networking">
+            Networking
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=10" title="Edit section: Networking">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <link href="mw-data:TemplateStyles:r1236090951" rel="mw-deduplicated-inline-style"/>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a href="/wiki/Data_center_network_architectures" title="Data center network architectures">
+            Data center network architectures
+           </a>
+          </div>
+          <p>
+           Generally, the cloud network layer should offer:
+          </p>
+          <ul>
+           <li>
+            High bandwidth and
+            <a class="mw-redirect" href="/wiki/Network_latency" title="Network latency">
+             low latency
+            </a>
+           </li>
+          </ul>
+          <dl>
+           <dd>
+            Allowing users to have uninterrupted access to their data and applications.
+            <sup class="reference" id="cite_ref-architecture_13-0">
+             <a href="#cite_note-architecture-13">
+              <span class="cite-bracket">
+               [
+              </span>
+              13
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </dd>
+          </dl>
+          <ul>
+           <li>
+            Agile network
+           </li>
+          </ul>
+          <dl>
+           <dd>
+            On-demand access to resources requires the ability to move quickly and efficiently between servers and possibly even clouds.
+           </dd>
+          </dl>
+          <ul>
+           <li>
+            Network security
+           </li>
+          </ul>
+          <dl>
+           <dd>
+            Security is always important, but when you are dealing with multi-tenancy, it becomes much more important because you're dealing with segregating multiple customers.
+            <sup class="reference" id="cite_ref-14">
+             <a href="#cite_note-14">
+              <span class="cite-bracket">
+               [
+              </span>
+              14
+              <span class="cite-bracket">
+               ]
+              </span>
+             </a>
+            </sup>
+           </dd>
+          </dl>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=11" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Cloud_collaboration" title="Cloud collaboration">
+             Cloud collaboration
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Cloud_computing" title="Cloud computing">
+             Cloud computing
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Cloud-computing_comparison" title="Cloud-computing comparison">
+             Cloud-computing comparison
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Cloud_database" title="Cloud database">
+             Cloud database
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Cloud_storage" title="Cloud storage">
+             Cloud storage
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Further_reading">
+            Further reading
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=12" title="Edit section: Further reading">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            Reese, G. (2009).  Cloud Application Architectures: Building Applications and Infrastructure in the Cloud.  Sebastopol, CA: O'Reilly Media, Inc. (2009).
+           </li>
+           <li>
+            Rhoton, J. and Haukioja, R. (2011).  Cloud Computing Architected: Solution Design Handbook.  Recursive Limited, 2011.
+            <style data-mw-deduplicate="TemplateStyles:r1238218222">
+             .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+            </style>
+            <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+             ISBN
+            </a>
+            <a href="/wiki/Special:BookSources/0-9563556-1-7" title="Special:BookSources/0-9563556-1-7">
+             0-9563556-1-7
+            </a>
+            .
+           </li>
+           <li>
+            Shroff, Dr. Gautam.  Enterprise Cloud Computing: Technology, Architecture, Applications.
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Cloud_computing_architecture&amp;action=edit&amp;section=13" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap mw-references-columns">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFSudha2012">
+                Sudha, M (2012). "Enhanced security framework to ensure data security in cloud computing using cryptography".
+                <i>
+                 Advances in Computer Science and Its Applications
+                </i>
+                .
+                <b>
+                 1
+                </b>
+                (1).
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Advances+in+Computer+Science+and+Its+Applications&amp;rft.atitle=Enhanced+security+framework+to+ensure+data+security+in+cloud+computing+using+cryptography&amp;rft.volume=1&amp;rft.issue=1&amp;rft.date=2012&amp;rft.aulast=Sudha&amp;rft.aufirst=M&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACloud+computing+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-2">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-2">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFMadden,_B._(May_19,_2012)2010">
+                Madden, B. (May 19, 2012) (2010-05-19).
+                <a class="external text" href="http://www.brianmadden.com/blogs/brianmadden/archive/2010/05/19/wyse-unveils-a-new-extensible-zero-client-platform-how-quot-zero-quot-is-this-and-how-will-it-help-citrix-here-s-our-full-analysis.aspx" rel="nofollow">
+                 "Wyse hopes to shake up the thin client industry with a new zero client platform. Will it work?"
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2012-05-27
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Wyse+hopes+to+shake+up+the+thin+client+industry+with+a+new+zero+client+platform.+Will+it+work%3F&amp;rft.date=2010-05-19&amp;rft.au=Madden%2C+B.+%28May+19%2C+2012%29&amp;rft_id=http%3A%2F%2Fwww.brianmadden.com%2Fblogs%2Fbrianmadden%2Farchive%2F2010%2F05%2F19%2Fwyse-unveils-a-new-extensible-zero-client-platform-how-quot-zero-quot-is-this-and-how-will-it-help-citrix-here-s-our-full-analysis.aspx&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACloud+computing+architecture">
+               </span>
+               <span class="cs1-maint citation-comment">
+                <code class="cs1-code">
+                 {{
+                 <a href="/wiki/Template:Cite_web" title="Template:Cite web">
+                  cite web
+                 </a>
+                 }}
+                </code>
+                :  CS1 maint: multiple names: authors list (
+                <a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">
+                 link
+                </a>
+                ) CS1 maint: numeric names: authors list (
+                <a href="/wiki/Category:CS1_maint:_numeric_names:_authors_list" title="Category:CS1 maint: numeric names: authors list">
+                 link
+                </a>
+                )
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFSegal,_I.">
+                Segal, I.
+                <a class="external text" href="https://web.archive.org/web/20030403135932/http://assurx.com/pdf/ZeroClient.pdf" rel="nofollow">
+                 "
+                 <span class="cs1-kern-left">
+                 </span>
+                 "When Is Zero Client Not Zero Client?", SysGen, Inc"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                . Archived from
+                <a class="external text" href="http://www.assurx.com/pdf/ZeroClient.pdf" rel="nofollow">
+                 the original
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                on 2003-04-03
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2012-05-27
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=%22When+Is+Zero+Client+Not+Zero+Client%3F%22%2C+SysGen%2C+Inc&amp;rft.au=Segal%2C+I.&amp;rft_id=http%3A%2F%2Fwww.assurx.com%2Fpdf%2FZeroClient.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACloud+computing+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-bare_url-4">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-bare_url_4-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-bare_url_4-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFMell,_P.Grance,_T.2011">
+                Mell, P.; Grance, T. (September 2011).
+                <a class="external text" href="http://csrc.nist.gov/publications/nistpubs/800-145/SP800-145.pdf" rel="nofollow">
+                 "The NIST Definition of Cloud Computing. NIST Special Publication 800-145 (September 2011). National Institute of Standards and Technology, U.S. Department of Commerce"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2012-05-20
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=The+NIST+Definition+of+Cloud+Computing.+NIST+Special+Publication+800-145+%28September+2011%29.+National+Institute+of+Standards+and+Technology%2C+U.S.+Department+of+Commerce&amp;rft.date=2011-09&amp;rft.au=Mell%2C+P.&amp;rft.au=Grance%2C+T.&amp;rft_id=http%3A%2F%2Fcsrc.nist.gov%2Fpublications%2Fnistpubs%2F800-145%2FSP800-145.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACloud+computing+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFSherbak,_T.Sweere,_N.Belapurkar,_V.">
+                Sherbak, T.; Sweere, N. &amp; Belapurkar, V.
+                <a class="external text" href="http://i.dell.com/sites/content/business/solutions/power/en/Documents/ps1q12-20120209-sherbak.pdf" rel="nofollow">
+                 "Virtualized Enterprise Storage for Flexible, Scalable Private Clouds. Reprinted from Dell Power Solutions, 2012 Issue 1"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2012-05-27
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Virtualized+Enterprise+Storage+for+Flexible%2C+Scalable+Private+Clouds.+Reprinted+from+Dell+Power+Solutions%2C+2012+Issue+1&amp;rft.au=Sherbak%2C+T.&amp;rft.au=Sweere%2C+N.&amp;rft.au=Belapurkar%2C+V.&amp;rft_id=http%3A%2F%2Fi.dell.com%2Fsites%2Fcontent%2Fbusiness%2Fsolutions%2Fpower%2Fen%2FDocuments%2Fps1q12-20120209-sherbak.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACloud+computing+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Chou-6">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Chou_6-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFChou">
+                Chou, Timothy.
+                <a class="external text" href="https://www.scribd.com/doc/64699897/Introduction-to-Cloud-Computing-Business-and-Technology" rel="nofollow">
+                 <i>
+                  Introduction to Cloud Computing: Business &amp; Technology
+                 </i>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+Cloud+Computing%3A+Business+%26+Technology&amp;rft.aulast=Chou&amp;rft.aufirst=Timothy&amp;rft_id=https%3A%2F%2Fwww.scribd.com%2Fdoc%2F64699897%2FIntroduction-to-Cloud-Computing-Business-and-Technology&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACloud+computing+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-7">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-7">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFDaisy">
+                Daisy, witson.
+                <a class="external text" href="https://www.janbasktraining.com/blog/what-is-cloud-computing/" rel="nofollow">
+                 "what is cloud computing"
+                </a>
+                . JanBask.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=what+is+cloud+computing&amp;rft.pub=JanBask&amp;rft.aulast=Daisy&amp;rft.aufirst=witson&amp;rft_id=https%3A%2F%2Fwww.janbasktraining.com%2Fblog%2Fwhat-is-cloud-computing%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACloud+computing+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-enterpriseirregulars-8">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-enterpriseirregulars_8-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-enterpriseirregulars_8-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-enterpriseirregulars_8-2">
+                <sup>
+                 <i>
+                  <b>
+                   c
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-enterpriseirregulars_8-3">
+                <sup>
+                 <i>
+                  <b>
+                   d
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-enterpriseirregulars_8-4">
+                <sup>
+                 <i>
+                  <b>
+                   e
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1" id="CITEREFWang,_R">
+                Wang, R.
+                <a class="external text" href="http://www.enterpriseirregulars.com/15231/tuesdays-tip-understanding-the-many-flavors-of-cloud-computing-and-saas/" rel="nofollow">
+                 "Tuesday's Tip: Understanding The Many Flavors of Cloud Computing and SaaS"
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2012-05-27
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Tuesday%27s+Tip%3A+Understanding+The+Many+Flavors+of+Cloud+Computing+and+SaaS&amp;rft.au=Wang%2C+R&amp;rft_id=http%3A%2F%2Fwww.enterpriseirregulars.com%2F15231%2Ftuesdays-tip-understanding-the-many-flavors-of-cloud-computing-and-saas%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACloud+computing+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-citrix-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-citrix_9-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation web cs1">
+                <a class="external text" href="http://support.citrix.com/proddocs/topic/ns-flextenancy-map/ns-flextenancy-understanding-flextenancy-architecture.html" rel="nofollow">
+                 "Understanding the Flex Tenancy Architecture by CITRIX"
+                </a>
+                <span class="reference-accessdate">
+                 . Retrieved
+                 <span class="nowrap">
+                  2012-05-27
+                 </span>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Understanding+the+Flex+Tenancy+Architecture+by+CITRIX&amp;rft_id=http%3A%2F%2Fsupport.citrix.com%2Fproddocs%2Ftopic%2Fns-flextenancy-map%2Fns-flextenancy-understanding-flextenancy-architecture.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACloud+computing+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Andrikopoulos-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Andrikopoulos_10-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFAndrikopoulos2013">
+                Andrikopoulos, Vasilios (2013). "Towards Modeling and Execution of Collective Adaptive Systems".
+                <i>
+                 ICSOC 2013: Service-Oriented Computing – ICSOC 2013 Workshops
+                </i>
+                . Lecture Notes in Computer Science.
+                <b>
+                 8377
+                </b>
+                : 69–81.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1007%2F978-3-319-06859-6_7" rel="nofollow">
+                 10.1007/978-3-319-06859-6_7
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-3-319-06858-9" title="Special:BookSources/978-3-319-06858-9">
+                 <bdi>
+                  978-3-319-06858-9
+                 </bdi>
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/S2CID_(identifier)" title="S2CID (identifier)">
+                 S2CID
+                </a>
+                <a class="external text" href="https://api.semanticscholar.org/CorpusID:15216208" rel="nofollow">
+                 15216208
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ICSOC+2013%3A+Service-Oriented+Computing+%E2%80%93+ICSOC+2013+Workshops&amp;rft.atitle=Towards+Modeling+and+Execution+of+Collective+Adaptive+Systems&amp;rft.volume=8377&amp;rft.pages=69-81&amp;rft.date=2013&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A15216208%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-319-06859-6_7&amp;rft.isbn=978-3-319-06858-9&amp;rft.aulast=Andrikopoulos&amp;rft.aufirst=Vasilios&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACloud+computing+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Li-11">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Li_11-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFLi2014">
+                Li, Lin (2014).
+                <a class="external text" href="http://benthamopen.com/contents/pdf/TOCSJ/TOCSJ-8-322.pdf" rel="nofollow">
+                 "Multi-tenant Data Authentication Model for SaaS"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 The Open Cybernetics and Systematics Journal
+                </i>
+                .
+                <b>
+                 8
+                </b>
+                (8): 322–329.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <span class="id-lock-free" title="Freely accessible">
+                 <a class="external text" href="https://doi.org/10.2174%2F1874110X01408010322" rel="nofollow">
+                  10.2174/1874110X01408010322
+                 </a>
+                </span>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+Open+Cybernetics+and+Systematics+Journal&amp;rft.atitle=Multi-tenant+Data+Authentication+Model+for+SaaS&amp;rft.volume=8&amp;rft.issue=8&amp;rft.pages=322-329&amp;rft.date=2014&amp;rft_id=info%3Adoi%2F10.2174%2F1874110X01408010322&amp;rft.aulast=Li&amp;rft.aufirst=Lin&amp;rft_id=http%3A%2F%2Fbenthamopen.com%2Fcontents%2Fpdf%2FTOCSJ%2FTOCSJ-8-322.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACloud+computing+architecture">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-12">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-12">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               O. Terzo, P. Ruiu, E. Bucci and F. Xhafa, "Data as a Service (DaaS) for Sharing and Processing of Large Data Collections in the Cloud,"
+               <i>
+                2013 Seventh International Conference on Complex, Intelligent, and Software Intensive Systems
+               </i>
+               , Taichung, 2013
+              </span>
+             </li>
+             <li id="cite_note-architecture-13">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-architecture_13-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               M. Noormohammadpour, C. S. Raghavendra,
+               <a class="external text" href="https://www.researchgate.net/publication/321744877_Datacenter_Traffic_Control_Understanding_Techniques_and_Trade-offs" rel="nofollow">
+                "Datacenter Traffic Control: Understanding Techniques and Trade-offs,"
+               </a>
+               IEEE Communications Surveys &amp; Tutorials, vol. PP, no. 99, pp. 1-1.
+              </span>
+             </li>
+             <li id="cite_note-14">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-14">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation conference cs1" id="CITEREFPaladiGehrmann2015">
+                Paladi, Nicolae; Gehrmann, Christian (2015).
+                <a class="external text" href="https://www.diva-portal.org/smash/get/diva2:1041286/FULLTEXT01.pdf" rel="nofollow">
+                 "Towards Secure Multi-tenant Virtualized Networks"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 2015 IEEE Trustcom/BigDataSE/ISPA
+                </i>
+                . Vol. 1. pp. 1180–1185.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2FTrustcom.2015.502" rel="nofollow">
+                 10.1109/Trustcom.2015.502
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=Towards+Secure+Multi-tenant+Virtualized+Networks&amp;rft.btitle=2015+IEEE+Trustcom%2FBigDataSE%2FISPA&amp;rft.pages=1180-1185&amp;rft.date=2015&amp;rft_id=info%3Adoi%2F10.1109%2FTrustcom.2015.502&amp;rft.aulast=Paladi&amp;rft.aufirst=Nicolae&amp;rft.au=Gehrmann%2C+Christian&amp;rft_id=https%3A%2F%2Fwww.diva-portal.org%2Fsmash%2Fget%2Fdiva2%3A1041286%2FFULLTEXT01.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACloud+computing+architecture">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <p>
+           <br/>
+          </p>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐mctbr
+Cached time: 20240927015206
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.253 seconds
+Real time usage: 0.326 seconds
+Preprocessor visited node count: 1108/1000000
+Post‐expand include size: 26105/2097152 bytes
+Template argument size: 430/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 6/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 50292/5000000 bytes
+Lua time usage: 0.145/10.000 seconds
+Lua memory usage: 5617385/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  288.763      1 -total
+ 43.10%  124.464      1 Template:Reflist
+ 24.09%   69.553      1 Template:Short_description
+ 21.71%   62.689      3 Template:Cite_journal
+ 15.18%   43.844      1 Template:ISBN
+ 12.78%   36.906      2 Template:Pagetype
+ 12.60%   36.372      1 Template:Catalog_lookup_link
+ 10.60%   30.595      7 Template:Cite_web
+  8.17%   23.584      1 Template:See_also
+  6.63%   19.158      4 Template:Main_other
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:35954361-0!canonical and timestamp 20240927015206 and revision id 1234168403. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Cloud_computing_architecture&amp;oldid=1234168403">
+          https://en.wikipedia.org/w/index.php?title=Cloud_computing_architecture&amp;oldid=1234168403
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Category
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Cloud_computing" title="Category:Cloud computing">
+            Cloud computing
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">
+            CS1 maint: multiple names: authors list
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:CS1_maint:_numeric_names:_authors_list" title="Category:CS1 maint: numeric names: authors list">
+            CS1 maint: numeric names: authors list
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 12 July 2024, at 23:08
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Cloud_computing_architecture&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-npjft","wgBackendResponseTime":146,"wgPageParseReport":{"limitreport":{"cputime":"0.253","walltime":"0.326","ppvisitednodes":{"value":1108,"limit":1000000},"postexpandincludesize":{"value":26105,"limit":2097152},"templateargumentsize":{"value":430,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":6,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":50292,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  288.763      1 -total"," 43.10%  124.464      1 Template:Reflist"," 24.09%   69.553      1 Template:Short_description"," 21.71%   62.689      3 Template:Cite_journal"," 15.18%   43.844      1 Template:ISBN"," 12.78%   36.906      2 Template:Pagetype"," 12.60%   36.372      1 Template:Catalog_lookup_link"," 10.60%   30.595      7 Template:Cite_web","  8.17%   23.584      1 Template:See_also","  6.63%   19.158      4 Template:Main_other"]},"scribunto":{"limitreport-timeusage":{"value":"0.145","limit":"10.000"},"limitreport-memusage":{"value":5617385,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-mctbr","timestamp":"20240927015206","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Cloud computing architecture","url":"https:\/\/en.wikipedia.org\/wiki\/Cloud_computing_architecture","sameAs":"http:\/\/www.wikidata.org\/entity\/Q5135697","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q5135697","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2012-05-27T19:29:52Z","dateModified":"2024-07-12T23:08:37Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/7\/79\/CloudComputingSampleArchitecture.svg","headline":"overview about the cloud computing architecture"}
+  </script>
+ </body>
+</html>

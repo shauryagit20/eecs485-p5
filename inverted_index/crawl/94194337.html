@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Key-agreement protocol - Wikipedia
+  </title>
+  <script>
+   (function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy",
+"wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"fd019c26-3fcb-40ab-8da8-af74696c9031","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Key-agreement_protocol","wgTitle":"Key-agreement protocol","wgCurRevisionId":1240460412,"wgRevisionId":1240460412,"wgArticleId":63944,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Articles needing additional references from March 2024","All articles needing additional references","Cryptography","Key-agreement protocols"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Key-agreement_protocol","wgRelevantArticleId":63944,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit"
+:[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":6,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgULSCurrentAutonym":"English","wgRelatedArticlesCompat":[],"wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q3306713","wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,
+"wgGETopicsMatchModeEnabled":false,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init",
+"ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession","wikibase.sidebar.tracking"];
+  </script>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});
+  </script>
+  <link href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022">
+  </script>
+  <meta content="" name="ResourceLoaderDynamicStyles"/>
+  <link href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022" rel="stylesheet"/>
+  <meta content="MediaWiki 1.43.0-wmf.24" name="generator"/>
+  <meta content="origin" name="referrer"/>
+  <meta content="origin-when-cross-origin" name="referrer"/>
+  <meta content="max-image-preview:standard" name="robots"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=1120" name="viewport"/>
+  <meta content="Key-agreement protocol - Wikipedia" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <link href="//upload.wikimedia.org" rel="preconnect"/>
+  <link href="//en.m.wikipedia.org/wiki/Key-agreement_protocol" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="/w/index.php?title=Key-agreement_protocol&amp;action=edit" rel="alternate" title="Edit this page" type="application/x-wiki"/>
+  <link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+  <link href="/static/favicon/wikipedia.ico" rel="icon"/>
+  <link href="/w/rest.php/v1/search" rel="search" title="Wikipedia (en)" type="application/opensearchdescription+xml"/>
+  <link href="//en.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+  <link href="https://en.wikipedia.org/wiki/Key-agreement_protocol" rel="canonical"/>
+  <link href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" rel="license"/>
+  <link href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="Wikipedia Atom feed" type="application/atom+xml"/>
+  <link href="//meta.wikimedia.org" rel="dns-prefetch">
+   <link href="//login.wikimedia.org" rel="dns-prefetch"/>
+  </link>
+  <meta eecs485_url="https://en.wikipedia.org/wiki/Key-agreement_protocol"/>
+  <meta eecs485_docid="94194337"/>
+ </head>
+ <body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Key-agreement_protocol rootpage-Key-agreement_protocol skin-vector-2022 action-view">
+  <a class="mw-jump-link" href="#bodyContent">
+   Jump to content
+  </a>
+  <div class="vector-header-container">
+   <header class="vector-header mw-header">
+    <div class="vector-header-start">
+     <nav aria-label="Site" class="vector-main-menu-landmark">
+      <div class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right" id="vector-main-menu-dropdown">
+       <input aria-haspopup="true" aria-label="Main menu" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-main-menu-dropdown" id="vector-main-menu-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-main-menu-dropdown-checkbox" id="vector-main-menu-dropdown-label">
+        <span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Main menu
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-unpinned-container" id="vector-main-menu-unpinned-container">
+         <div class="vector-main-menu vector-pinnable-element" id="vector-main-menu">
+          <div class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned" data-feature-name="main-menu-pinned" data-pinnable-element-id="vector-main-menu" data-pinned-container-id="vector-main-menu-pinned-container" data-unpinned-container-id="vector-main-menu-unpinned-container">
+           <div class="vector-pinnable-header-label">
+            Main menu
+           </div>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">
+            move to sidebar
+           </button>
+           <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">
+            hide
+           </button>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-navigation" id="p-navigation">
+           <div class="vector-menu-heading">
+            Navigation
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-mainpage-description">
+              <a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]">
+               <span>
+                Main page
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contents">
+              <a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">
+               <span>
+                Contents
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-currentevents">
+              <a href="/wiki/Portal:Current_events" title="Articles related to current events">
+               <span>
+                Current events
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-randompage">
+              <a accesskey="x" href="/wiki/Special:Random" title="Visit a randomly selected article [x]">
+               <span>
+                Random article
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-aboutsite">
+              <a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works">
+               <span>
+                About Wikipedia
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-contactpage">
+              <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">
+               <span>
+                Contact us
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-menu mw-portlet mw-portlet-interaction" id="p-interaction">
+           <div class="vector-menu-heading">
+            Contribute
+           </div>
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="mw-list-item" id="n-help">
+              <a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">
+               <span>
+                Help
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-introduction">
+              <a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia">
+               <span>
+                Learn to edit
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-portal">
+              <a href="/wiki/Wikipedia:Community_portal" title="The hub for editors">
+               <span>
+                Community portal
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-recentchanges">
+              <a accesskey="r" href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]">
+               <span>
+                Recent changes
+               </span>
+              </a>
+             </li>
+             <li class="mw-list-item" id="n-upload">
+              <a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia">
+               <span>
+                Upload file
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+     <a class="mw-logo" href="/wiki/Main_Page">
+      <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+      <span class="mw-logo-container skin-invert">
+       <img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+       <img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+      </span>
+     </a>
+    </div>
+    <div class="vector-header-end">
+     <div class="vector-search-box-vue vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+      <a accesskey="f" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" href="/wiki/Special:Search" title="Search Wikipedia [f]">
+       <span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search">
+       </span>
+       <span>
+        Search
+       </span>
+      </a>
+      <div class="vector-typeahead-search-container">
+       <div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+        <form action="/w/index.php" class="cdx-search-input cdx-search-input--has-end-button" id="searchform">
+         <div class="cdx-search-input__input-wrapper" data-search-loc="header-moved" id="simpleSearch">
+          <div class="cdx-text-input cdx-text-input--has-start-icon">
+           <input accesskey="f" aria-label="Search Wikipedia" autocapitalize="sentences" class="cdx-text-input__input" id="searchInput" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" type="search"/>
+           <span class="cdx-text-input__icon cdx-text-input__start-icon">
+           </span>
+          </div>
+          <input name="title" type="hidden" value="Special:Search"/>
+         </div>
+         <button class="cdx-button cdx-search-input__end-button">
+          Search
+         </button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <nav aria-label="Personal tools" class="vector-user-links vector-user-links-wide">
+      <div class="vector-user-links-main">
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-preferences">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-userpage">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="mw-list-item user-links-collapsible-item" id="ca-sitesupport">
+           <a class="" data-mw="interface" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation">
+            <span>
+             Donate
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <nav aria-label="Appearance" class="vector-appearance-landmark">
+        <div class="vector-dropdown" id="vector-appearance-dropdown" title="Change the appearance of the page's font size, width, and color">
+         <input aria-haspopup="true" aria-label="Appearance" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-appearance-dropdown" id="vector-appearance-dropdown-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-appearance-dropdown-checkbox" id="vector-appearance-dropdown-label">
+          <span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Appearance
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-appearance-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <div class="vector-menu mw-portlet emptyPortlet" id="p-vector-user-menu-notifications">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+         </ul>
+        </div>
+       </div>
+       <div class="vector-menu mw-portlet" id="p-vector-user-menu-overflow">
+        <div class="vector-menu-content">
+         <ul class="vector-menu-content-list">
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-createaccount-2">
+           <a class="" data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Key-agreement+protocol" title="You are encouraged to create an account and log in; however, it is not mandatory">
+            <span>
+             Create account
+            </span>
+           </a>
+          </li>
+          <li class="user-links-collapsible-item mw-list-item user-links-collapsible-item" id="pt-login-2">
+           <a accesskey="o" class="" data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Key-agreement+protocol" title="You're encouraged to log in; however, it's not mandatory. [o]">
+            <span>
+             Log in
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out" id="vector-user-links-dropdown" title="Log in and more options">
+       <input aria-haspopup="true" aria-label="Personal tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-user-links-dropdown" id="vector-user-links-dropdown-checkbox" role="button" type="checkbox"/>
+       <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-user-links-dropdown-checkbox" id="vector-user-links-dropdown-label">
+        <span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis">
+        </span>
+        <span class="vector-dropdown-label-text">
+         Personal tools
+        </span>
+       </label>
+       <div class="vector-dropdown-content">
+        <div class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item" id="p-personal" title="User menu">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="user-links-collapsible-item mw-list-item" id="pt-createaccount">
+            <a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Key-agreement+protocol" title="You are encouraged to create an account and log in; however, it is not mandatory">
+             <span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd">
+             </span>
+             <span>
+              Create account
+             </span>
+            </a>
+           </li>
+           <li class="user-links-collapsible-item mw-list-item" id="pt-login">
+            <a accesskey="o" href="/w/index.php?title=Special:UserLogin&amp;returnto=Key-agreement+protocol" title="You're encouraged to log in; however, it's not mandatory. [o]">
+             <span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn">
+             </span>
+             <span>
+              Log in
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor" id="p-user-menu-anon-editor">
+         <div class="vector-menu-heading">
+          Pages for logged out editors
+          <a aria-label="Learn more about editing" href="/wiki/Help:Introduction">
+           <span>
+            learn more
+           </span>
+          </a>
+         </div>
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="mw-list-item" id="pt-anoncontribs">
+            <a accesskey="y" href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]">
+             <span>
+              Contributions
+             </span>
+            </a>
+           </li>
+           <li class="mw-list-item" id="pt-anontalk">
+            <a accesskey="n" href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]">
+             <span>
+              Talk
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </header>
+  </div>
+  <div class="mw-page-container">
+   <div class="mw-page-container-inner">
+    <div class="vector-sitenotice-container">
+     <div id="siteNotice">
+      <!-- CentralNotice -->
+     </div>
+    </div>
+    <div class="vector-column-start">
+     <div class="vector-main-menu-container">
+      <div id="mw-navigation">
+       <nav aria-label="Site" class="vector-main-menu-landmark" id="mw-panel">
+        <div class="vector-pinned-container" id="vector-main-menu-pinned-container">
+        </div>
+       </nav>
+      </div>
+     </div>
+     <div class="vector-sticky-pinned-container">
+      <nav aria-label="Contents" class="mw-table-of-contents-container vector-toc-landmark" data-event-name="ui.sidebar-toc" id="mw-panel-toc">
+       <div class="vector-pinned-container" id="vector-toc-pinned-container">
+        <div class="vector-toc vector-pinnable-element" id="vector-toc">
+         <div class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned" data-feature-name="toc-pinned" data-pinnable-element-id="vector-toc">
+          <h2 class="vector-pinnable-header-label">
+           Contents
+          </h2>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">
+           move to sidebar
+          </button>
+          <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">
+           hide
+          </button>
+         </div>
+         <ul class="vector-toc-contents" id="mw-panel-toc-list">
+          <li class="vector-toc-list-item vector-toc-level-1" id="toc-mw-content-text">
+           <a class="vector-toc-link" href="#">
+            <div class="vector-toc-text">
+             (Top)
+            </div>
+           </a>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Exponential_key_exchange">
+           <a class="vector-toc-link" href="#Exponential_key_exchange">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              1
+             </span>
+             <span>
+              Exponential key exchange
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-Exponential_key_exchange-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Symmetric_Key_Agreement">
+           <a class="vector-toc-link" href="#Symmetric_Key_Agreement">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              2
+             </span>
+             <span>
+              Symmetric Key Agreement
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Symmetric_Key_Agreement-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Symmetric Key Agreement subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Symmetric_Key_Agreement-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Types_of_Secret_Key_Agreement">
+             <a class="vector-toc-link" href="#Types_of_Secret_Key_Agreement">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                2.1
+               </span>
+               <span>
+                Types of Secret Key Agreement
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Types_of_Secret_Key_Agreement-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-Authentication">
+           <a class="vector-toc-link" href="#Authentication">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              3
+             </span>
+             <span>
+              Authentication
+             </span>
+            </div>
+           </a>
+           <button aria-controls="toc-Authentication-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+            <span class="vector-icon mw-ui-icon-wikimedia-expand">
+            </span>
+            <span>
+             Toggle Authentication subsection
+            </span>
+           </button>
+           <ul class="vector-toc-list" id="toc-Authentication-sublist">
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Public_keys">
+             <a class="vector-toc-link" href="#Public_keys">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.1
+               </span>
+               <span>
+                Public keys
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Public_keys-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Hybrid_systems">
+             <a class="vector-toc-link" href="#Hybrid_systems">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.2
+               </span>
+               <span>
+                Hybrid systems
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Hybrid_systems-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Passwords">
+             <a class="vector-toc-link" href="#Passwords">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.3
+               </span>
+               <span>
+                Passwords
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Passwords-sublist">
+             </ul>
+            </li>
+            <li class="vector-toc-list-item vector-toc-level-2" id="toc-Other_tricks">
+             <a class="vector-toc-link" href="#Other_tricks">
+              <div class="vector-toc-text">
+               <span class="vector-toc-numb">
+                3.4
+               </span>
+               <span>
+                Other tricks
+               </span>
+              </div>
+             </a>
+             <ul class="vector-toc-list" id="toc-Other_tricks-sublist">
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-See_also">
+           <a class="vector-toc-link" href="#See_also">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              4
+             </span>
+             <span>
+              See also
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-See_also-sublist">
+           </ul>
+          </li>
+          <li class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded" id="toc-References">
+           <a class="vector-toc-link" href="#References">
+            <div class="vector-toc-text">
+             <span class="vector-toc-numb">
+              5
+             </span>
+             <span>
+              References
+             </span>
+            </div>
+           </a>
+           <ul class="vector-toc-list" id="toc-References-sublist">
+           </ul>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="mw-content-container">
+     <main class="mw-body" id="content">
+      <header class="mw-body-header vector-page-titlebar">
+       <nav aria-label="Contents" class="vector-toc-landmark">
+        <div class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left" id="vector-page-titlebar-toc">
+         <input aria-haspopup="true" aria-label="Toggle the table of contents" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-titlebar-toc" id="vector-page-titlebar-toc-checkbox" role="button" type="checkbox"/>
+         <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" for="vector-page-titlebar-toc-checkbox" id="vector-page-titlebar-toc-label">
+          <span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet">
+          </span>
+          <span class="vector-dropdown-label-text">
+           Toggle the table of contents
+          </span>
+         </label>
+         <div class="vector-dropdown-content">
+          <div class="vector-unpinned-container" id="vector-page-titlebar-toc-unpinned-container">
+          </div>
+         </div>
+        </div>
+       </nav>
+       <h1 class="firstHeading mw-first-heading" id="firstHeading">
+        <span class="mw-page-title-main">
+         Key-agreement protocol
+        </span>
+       </h1>
+       <div class="vector-dropdown mw-portlet mw-portlet-lang" id="p-lang-btn">
+        <input aria-haspopup="true" aria-label="Go to an article in another language. Available in 8 languages" class="vector-dropdown-checkbox mw-interlanguage-selector" data-event-name="ui.dropdown-p-lang-btn" id="p-lang-btn-checkbox" role="button" type="checkbox"/>
+        <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-8" for="p-lang-btn-checkbox" id="p-lang-btn-label">
+         <span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive">
+         </span>
+         <span class="vector-dropdown-label-text">
+          8 languages
+         </span>
+        </label>
+        <div class="vector-dropdown-content">
+         <div class="vector-menu-content">
+          <ul class="vector-menu-content-list">
+           <li class="interlanguage-link interwiki-ar mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="Arabic" data-title="بروتوكول الاتفاق على مفتاح" href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82_%D8%B9%D9%84%D9%89_%D9%85%D9%81%D8%AA%D8%A7%D8%AD" hreflang="ar" lang="ar" title="بروتوكول الاتفاق على مفتاح – Arabic">
+             <span>
+              العربية
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-de mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="German" data-title="Schlüsselaustauschprotokoll" href="https://de.wikipedia.org/wiki/Schl%C3%BCsselaustauschprotokoll" hreflang="de" lang="de" title="Schlüsselaustauschprotokoll – German">
+             <span>
+              Deutsch
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-es mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="Spanish" data-title="Protocolo de establecimiento de claves" href="https://es.wikipedia.org/wiki/Protocolo_de_establecimiento_de_claves" hreflang="es" lang="es" title="Protocolo de establecimiento de claves – Spanish">
+             <span>
+              Español
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-fa mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="Persian" data-title="تبادل کلید" href="https://fa.wikipedia.org/wiki/%D8%AA%D8%A8%D8%A7%D8%AF%D9%84_%DA%A9%D9%84%DB%8C%D8%AF" hreflang="fa" lang="fa" title="تبادل کلید – Persian">
+             <span>
+              فارسی
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-pl mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="Polish" data-title="Protokół uzgadniania kluczy" href="https://pl.wikipedia.org/wiki/Protok%C3%B3%C5%82_uzgadniania_kluczy" hreflang="pl" lang="pl" title="Protokół uzgadniania kluczy – Polish">
+             <span>
+              Polski
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-ru mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Русский" data-language-local-name="Russian" data-title="Протокол совместной выработки ключа" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB_%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%B9_%D0%B2%D1%8B%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8_%D0%BA%D0%BB%D1%8E%D1%87%D0%B0" hreflang="ru" lang="ru" title="Протокол совместной выработки ключа – Russian">
+             <span>
+              Русский
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-simple mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Simple English" data-language-local-name="Simple English" data-title="Key-agreement protocol" href="https://simple.wikipedia.org/wiki/Key-agreement_protocol" hreflang="en-simple" lang="en-simple" title="Key-agreement protocol – Simple English">
+             <span>
+              Simple English
+             </span>
+            </a>
+           </li>
+           <li class="interlanguage-link interwiki-uk mw-list-item">
+            <a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="Ukrainian" data-title="Протокол узгодження ключів" href="https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB_%D1%83%D0%B7%D0%B3%D0%BE%D0%B4%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F_%D0%BA%D0%BB%D1%8E%D1%87%D1%96%D0%B2" hreflang="uk" lang="uk" title="Протокол узгодження ключів – Ukrainian">
+             <span>
+              Українська
+             </span>
+            </a>
+           </li>
+          </ul>
+          <div class="after-portlet after-portlet-lang">
+           <span class="wb-langlinks-edit wb-langlinks-link">
+            <a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q3306713#sitelinks-wikipedia" title="Edit interlanguage links">
+             Edit links
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </header>
+      <div class="vector-page-toolbar">
+       <div class="vector-page-toolbar-container">
+        <div id="left-navigation">
+         <nav aria-label="Namespaces">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages" id="p-associated-pages">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-nstab-main">
+              <a accesskey="c" href="/wiki/Key-agreement_protocol" title="View the content page [c]">
+               <span>
+                Article
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-talk">
+              <a accesskey="t" href="/wiki/Talk:Key-agreement_protocol" rel="discussion" title="Discuss improvements to the content page [t]">
+               <span>
+                Talk
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <div class="vector-dropdown emptyPortlet" id="vector-variants-dropdown">
+           <input aria-haspopup="true" aria-label="Change language variant" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-variants-dropdown" id="vector-variants-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-variants-dropdown-checkbox" id="vector-variants-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             English
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-menu mw-portlet mw-portlet-variants emptyPortlet" id="p-variants">
+             <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+        <div class="vector-collapsible" id="right-navigation">
+         <nav aria-label="Views">
+          <div class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views" id="p-views">
+           <div class="vector-menu-content">
+            <ul class="vector-menu-content-list">
+             <li class="selected vector-tab-noicon mw-list-item" id="ca-view">
+              <a href="/wiki/Key-agreement_protocol">
+               <span>
+                Read
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-edit">
+              <a accesskey="e" href="/w/index.php?title=Key-agreement_protocol&amp;action=edit" title="Edit this page [e]">
+               <span>
+                Edit
+               </span>
+              </a>
+             </li>
+             <li class="vector-tab-noicon mw-list-item" id="ca-history">
+              <a accesskey="h" href="/w/index.php?title=Key-agreement_protocol&amp;action=history" title="Past revisions of this page [h]">
+               <span>
+                View history
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </nav>
+         <nav aria-label="Page tools" class="vector-page-tools-landmark">
+          <div class="vector-dropdown vector-page-tools-dropdown" id="vector-page-tools-dropdown">
+           <input aria-haspopup="true" aria-label="Tools" class="vector-dropdown-checkbox" data-event-name="ui.dropdown-vector-page-tools-dropdown" id="vector-page-tools-dropdown-checkbox" role="button" type="checkbox"/>
+           <label aria-hidden="true" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" for="vector-page-tools-dropdown-checkbox" id="vector-page-tools-dropdown-label">
+            <span class="vector-dropdown-label-text">
+             Tools
+            </span>
+           </label>
+           <div class="vector-dropdown-content">
+            <div class="vector-unpinned-container" id="vector-page-tools-unpinned-container">
+             <div class="vector-page-tools vector-pinnable-element" id="vector-page-tools">
+              <div class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned" data-feature-name="page-tools-pinned" data-pinnable-element-id="vector-page-tools" data-pinned-container-id="vector-page-tools-pinned-container" data-unpinned-container-id="vector-page-tools-unpinned-container">
+               <div class="vector-pinnable-header-label">
+                Tools
+               </div>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">
+                move to sidebar
+               </button>
+               <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">
+                hide
+               </button>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items" id="p-cactions" title="More options">
+               <div class="vector-menu-heading">
+                Actions
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="selected vector-more-collapsible-item mw-list-item" id="ca-more-view">
+                  <a href="/wiki/Key-agreement_protocol">
+                   <span>
+                    Read
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-edit">
+                  <a accesskey="e" href="/w/index.php?title=Key-agreement_protocol&amp;action=edit" title="Edit this page [e]">
+                   <span>
+                    Edit
+                   </span>
+                  </a>
+                 </li>
+                 <li class="vector-more-collapsible-item mw-list-item" id="ca-more-history">
+                  <a href="/w/index.php?title=Key-agreement_protocol&amp;action=history">
+                   <span>
+                    View history
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-tb" id="p-tb">
+               <div class="vector-menu-heading">
+                General
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="t-whatlinkshere">
+                  <a accesskey="j" href="/wiki/Special:WhatLinksHere/Key-agreement_protocol" title="List of all English Wikipedia pages containing links to this page [j]">
+                   <span>
+                    What links here
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-recentchangeslinked">
+                  <a accesskey="k" href="/wiki/Special:RecentChangesLinked/Key-agreement_protocol" rel="nofollow" title="Recent changes in pages linked from this page [k]">
+                   <span>
+                    Related changes
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-upload">
+                  <a accesskey="u" href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]">
+                   <span>
+                    Upload file
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-specialpages">
+                  <a accesskey="q" href="/wiki/Special:SpecialPages" title="A list of all special pages [q]">
+                   <span>
+                    Special pages
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-permalink">
+                  <a href="/w/index.php?title=Key-agreement_protocol&amp;oldid=1240460412" title="Permanent link to this revision of this page">
+                   <span>
+                    Permanent link
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-info">
+                  <a href="/w/index.php?title=Key-agreement_protocol&amp;action=info" title="More information about this page">
+                   <span>
+                    Page information
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-cite">
+                  <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Key-agreement_protocol&amp;id=1240460412&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+                   <span>
+                    Cite this page
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener">
+                  <a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKey-agreement_protocol">
+                   <span>
+                    Get shortened URL
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-urlshortener-qrcode">
+                  <a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKey-agreement_protocol">
+                   <span>
+                    Download QR code
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-wikibase">
+                  <a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q3306713" title="Structured data on this page hosted by Wikidata [g]">
+                   <span>
+                    Wikidata item
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-coll-print_export" id="p-coll-print_export">
+               <div class="vector-menu-heading">
+                Print/export
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                 <li class="mw-list-item" id="coll-download-as-rl">
+                  <a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Key-agreement_protocol&amp;action=show-download-screen" title="Download this page as a PDF file">
+                   <span>
+                    Download as PDF
+                   </span>
+                  </a>
+                 </li>
+                 <li class="mw-list-item" id="t-print">
+                  <a accesskey="p" href="/w/index.php?title=Key-agreement_protocol&amp;printable=yes" title="Printable version of this page [p]">
+                   <span>
+                    Printable version
+                   </span>
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </div>
+              <div class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet" id="p-wikibase-otherprojects">
+               <div class="vector-menu-heading">
+                In other projects
+               </div>
+               <div class="vector-menu-content">
+                <ul class="vector-menu-content-list">
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <div class="vector-column-end">
+       <div class="vector-sticky-pinned-container">
+        <nav aria-label="Page tools" class="vector-page-tools-landmark">
+         <div class="vector-pinned-container" id="vector-page-tools-pinned-container">
+         </div>
+        </nav>
+        <nav aria-label="Appearance" class="vector-appearance-landmark">
+         <div class="vector-pinned-container" id="vector-appearance-pinned-container">
+          <div class="vector-appearance vector-pinnable-element" id="vector-appearance">
+           <div class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned" data-feature-name="appearance-pinned" data-pinnable-element-id="vector-appearance" data-pinned-container-id="vector-appearance-pinned-container" data-unpinned-container-id="vector-appearance-unpinned-container">
+            <div class="vector-pinnable-header-label">
+             Appearance
+            </div>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">
+             move to sidebar
+            </button>
+            <button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">
+             hide
+            </button>
+           </div>
+          </div>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <div aria-labelledby="firstHeading" class="vector-body" data-mw-ve-target-container="" id="bodyContent">
+       <div class="vector-body-before-content">
+        <div class="mw-indicators">
+        </div>
+        <div class="noprint" id="siteSub">
+         From Wikipedia, the free encyclopedia
+        </div>
+       </div>
+       <div id="contentSub">
+        <div id="mw-content-subtitle">
+        </div>
+       </div>
+       <div class="mw-body-content" id="mw-content-text">
+        <div class="mw-content-ltr mw-parser-output" dir="ltr" lang="en">
+         <div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">
+          Protocol for agreeing on a cryptographic key
+         </div>
+         <style data-mw-deduplicate="TemplateStyles:r1236091366">
+          .mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}
+         </style>
+         <table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+          <tbody>
+           <tr>
+            <td class="mbox-image">
+             <div class="mbox-image-div">
+              <span typeof="mw:File">
+               <a class="mw-file-description" href="/wiki/File:Question_book-new.svg">
+                <img alt="" class="mw-file-element" data-file-height="399" data-file-width="512" decoding="async" height="39" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" width="50"/>
+               </a>
+              </span>
+             </div>
+            </td>
+            <td class="mbox-text">
+             <div class="mbox-text-span">
+              This article
+              <b>
+               needs additional citations for
+               <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">
+                verification
+               </a>
+              </b>
+              .
+              <span class="hide-when-compact">
+               Please help
+               <a href="/wiki/Special:EditPage/Key-agreement_protocol" title="Special:EditPage/Key-agreement protocol">
+                improve this article
+               </a>
+               by
+               <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">
+                adding citations to reliable sources
+               </a>
+               . Unsourced material may be challenged and removed.
+               <br/>
+               <small>
+                <span class="plainlinks">
+                 <i>
+                  Find sources:
+                 </i>
+                 <a class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Key-agreement+protocol%22" rel="nofollow">
+                  "Key-agreement protocol"
+                 </a>
+                 –
+                 <a class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Key-agreement+protocol%22+-wikipedia&amp;tbs=ar:1" rel="nofollow">
+                  news
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?&amp;q=%22Key-agreement+protocol%22&amp;tbs=bkt:s&amp;tbm=bks" rel="nofollow">
+                  newspapers
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Key-agreement+protocol%22+-wikipedia" rel="nofollow">
+                  books
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://scholar.google.com/scholar?q=%22Key-agreement+protocol%22" rel="nofollow">
+                  scholar
+                 </a>
+                 <b>
+                  ·
+                 </b>
+                 <a class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Key-agreement+protocol%22&amp;acc=on&amp;wc=on" rel="nofollow">
+                  JSTOR
+                 </a>
+                </span>
+               </small>
+              </span>
+              <span class="date-container">
+               <i>
+                (
+                <span class="date">
+                 March 2024
+                </span>
+                )
+               </i>
+              </span>
+              <span class="hide-when-compact">
+               <i>
+                (
+                <small>
+                 <a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">
+                  Learn how and when to remove this message
+                 </a>
+                </small>
+                )
+               </i>
+              </span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          In cryptography, a
+          <b>
+           key-agreement protocol
+          </b>
+          is a protocol whereby two (or more) parties generate a cryptographic
+          <a href="/wiki/Key_(cryptography)" title="Key (cryptography)">
+           key
+          </a>
+          as a function of information provided by each honest party so that no party can predetermine the resulting value.
+          <sup class="reference" id="cite_ref-1">
+           <a href="#cite_note-1">
+            <span class="cite-bracket">
+             [
+            </span>
+            1
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          In particular, all honest participants influence the outcome. A key-agreement protocol is a specialisation of a key-exchange protocol.
+          <sup class="reference" id="cite_ref-Canetti2001_2-0">
+           <a href="#cite_note-Canetti2001-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+         </p>
+         <p>
+          At the end of the agreement, all parties share the same key. A key-agreement protocol precludes undesired third parties from forcing a key choice on the agreeing parties.A secure key agreement can ensure
+          <a href="/wiki/Confidentiality" title="Confidentiality">
+           confidentiality
+          </a>
+          and
+          <a href="/wiki/Data_integrity" title="Data integrity">
+           data integrity
+          </a>
+          <sup class="reference" id="cite_ref-3">
+           <a href="#cite_note-3">
+            <span class="cite-bracket">
+             [
+            </span>
+            3
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          in communications systems, ranging from simple messaging applications to complex banking transactions.
+         </p>
+         <p>
+          Secure agreement is defined relative to a security model, for example the Universal Model.
+          <sup class="reference" id="cite_ref-Canetti2001_2-1">
+           <a href="#cite_note-Canetti2001-2">
+            <span class="cite-bracket">
+             [
+            </span>
+            2
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          More generally, when evaluating protocols, it is important to state security goals and the security model.
+          <sup class="reference" id="cite_ref-4">
+           <a href="#cite_note-4">
+            <span class="cite-bracket">
+             [
+            </span>
+            4
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          For example, it may be required for the session key to be
+          <a href="/wiki/Authenticated_Key_Exchange" title="Authenticated Key Exchange">
+           authenticated
+          </a>
+          . A protocol can be evaluated for success only in the context of its goals and attack model.
+          <sup class="reference" id="cite_ref-5">
+           <a href="#cite_note-5">
+            <span class="cite-bracket">
+             [
+            </span>
+            5
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          An example of an adversarial model is the
+          <a class="mw-redirect" href="/wiki/Dolev-Yao_model" title="Dolev-Yao model">
+           Dolev-Yao model
+          </a>
+          .
+         </p>
+         <p>
+          In many key exchange systems, one party generates the key, and  sends that key to the
+          <sup class="reference" id="cite_ref-:0_6-0">
+           <a href="#cite_note-:0-6">
+            <span class="cite-bracket">
+             [
+            </span>
+            6
+            <span class="cite-bracket">
+             ]
+            </span>
+           </a>
+          </sup>
+          other party; the other party has no influence on the key.
+         </p>
+         <p>
+          <br/>
+         </p>
+         <meta property="mw:PageProp/toc">
+          <div class="mw-heading mw-heading2">
+           <h2 id="Exponential_key_exchange">
+            Exponential key exchange
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Key-agreement_protocol&amp;action=edit&amp;section=1" title="Edit section: Exponential key exchange">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           The first publicly known
+           <sup class="reference" id="cite_ref-:0_6-1">
+            <a href="#cite_note-:0-6">
+             <span class="cite-bracket">
+              [
+             </span>
+             6
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           public-key agreement protocol that meets the above criteria was the
+           <a href="/wiki/Diffie%E2%80%93Hellman_key_exchange" title="Diffie–Hellman key exchange">
+            Diffie–Hellman key exchange
+           </a>
+           , in which two parties jointly
+           <a href="/wiki/Exponentiation" title="Exponentiation">
+            exponentiate
+           </a>
+           a generator with random numbers, in such a way that an eavesdropper cannot feasibly determine what the resultant value used to produce a shared key is.
+          </p>
+          <p>
+           Exponential key exchange in and of itself does not specify any prior agreement or subsequent authentication between the participants.  It has thus been described as an anonymous key agreement protocol.
+          </p>
+          <p>
+           <br/>
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Symmetric_Key_Agreement">
+            Symmetric Key Agreement
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Key-agreement_protocol&amp;action=edit&amp;section=2" title="Edit section: Symmetric Key Agreement">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Symmetric Key Agreement (SKA) is a method of key-agreement that uses solely
+           <a href="/wiki/Symmetric-key_algorithm" title="Symmetric-key algorithm">
+            symmetric cryptography
+           </a>
+           and
+           <a class="mw-redirect" href="/wiki/Cryptographic_hash_functions" title="Cryptographic hash functions">
+            cryptographic hash functions
+           </a>
+           as
+           <a href="/wiki/Cryptographic_primitive" title="Cryptographic primitive">
+            cryptographic primitives
+           </a>
+           . It is related to Symmetric Authenticated Key Exchange.
+           <sup class="reference" id="cite_ref-Boyd2021_7-0">
+            <a href="#cite_note-Boyd2021-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           SKA may assume the use of initial
+           <a href="/wiki/Shared_secret" title="Shared secret">
+            shared secrets
+           </a>
+           <sup class="reference" id="cite_ref-Boyd2021_7-1">
+            <a href="#cite_note-Boyd2021-7">
+             <span class="cite-bracket">
+              [
+             </span>
+             7
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           or a
+           <a href="/wiki/Trusted_third_party" title="Trusted third party">
+            trusted third party
+           </a>
+           with whom the agreeing parties share a secret is assumed.
+           <sup class="reference" id="cite_ref-8">
+            <a href="#cite_note-8">
+             <span class="cite-bracket">
+              [
+             </span>
+             8
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           If no third party is present, then achieving SKA can be trivial: we assume that two parties share an initial secret and have tautologically achieved SKA.
+          </p>
+          <p>
+           SKA contrasts with key-agreement protocols that include techniques from
+           <a href="/wiki/Public-key_cryptography" title="Public-key cryptography">
+            asymmetric cryptography
+           </a>
+           . For example,
+           <a href="/wiki/Key_encapsulation_mechanism" title="Key encapsulation mechanism">
+            key encapsulation mechanisms
+           </a>
+           .
+          </p>
+          <p>
+           The initial exchange of a shared key must be done in a manner that is private and integrity-assured. Historically, this was achieved by physical means, such as by using a trusted
+           <a href="/wiki/Courier" title="Courier">
+            courier
+           </a>
+           .
+          </p>
+          <p>
+           An example of a SKA protocol is the
+           <a href="/wiki/Needham%E2%80%93Schroeder_protocol" title="Needham–Schroeder protocol">
+            Needham-Schroeder Symmetric Key Protocol
+           </a>
+           . It establishes a
+           <a href="/wiki/Session_key" title="Session key">
+            session key
+           </a>
+           between two parties on the same
+           <a href="/wiki/Computer_network" title="Computer network">
+            network
+           </a>
+           , using a
+           <a href="/wiki/Server_(computing)" title="Server (computing)">
+            server
+           </a>
+           as a trusted third party.  
+The original Needham-Schroeder protocol is vulnerable to a replay attack.
+           <a href="/wiki/Timestamp" title="Timestamp">
+            Timestamps
+           </a>
+           and
+           <a href="/wiki/Cryptographic_nonce" title="Cryptographic nonce">
+            nonces
+           </a>
+           are included to fix this attack. It forms the basis for the
+           <a href="/wiki/Kerberos_(protocol)" title="Kerberos (protocol)">
+            Kerberos protocol
+           </a>
+           .
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Types_of_Secret_Key_Agreement">
+            Types of Secret Key Agreement
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Key-agreement_protocol&amp;action=edit&amp;section=3" title="Edit section: Types of Secret Key Agreement">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Boyd et al.
+           <sup class="reference" id="cite_ref-Boyd2020_9-0">
+            <a href="#cite_note-Boyd2020-9">
+             <span class="cite-bracket">
+              [
+             </span>
+             9
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+           classify two-party key agreement protocols according to two criteria as follows:
+          </p>
+          <ol>
+           <li>
+            whether a pre-shared key already exists or not
+           </li>
+           <li>
+            the method of generating the
+            <a href="/wiki/Session_key" title="Session key">
+             session key
+            </a>
+            .
+           </li>
+          </ol>
+          <p>
+           The pre-shared key may be shared between the two parties, or each party may share a key with a trusted third party. If there is no secure channel (as may be established via a pre-shared key), it is impossible to create an authenticated session key.
+           <sup class="reference" id="cite_ref-10">
+            <a href="#cite_note-10">
+             <span class="cite-bracket">
+              [
+             </span>
+             10
+             <span class="cite-bracket">
+              ]
+             </span>
+            </a>
+           </sup>
+          </p>
+          <p>
+           The session key may be generated via: key transport, key agreement and hybrid. If there is no trusted third party, then the cases of key transport and hybrid session key generation are indistinguishable. SKA is concerned with protocols in which the session key is established using only symmetric primitives.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="Authentication">
+            Authentication
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Key-agreement_protocol&amp;action=edit&amp;section=4" title="Edit section: Authentication">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1236090951">
+           .mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}
+          </style>
+          <div class="hatnote navigation-not-searchable" role="note">
+           Main article:
+           <a class="mw-redirect" href="/wiki/Authenticated_key_agreement" title="Authenticated key agreement">
+            Authenticated key agreement
+           </a>
+          </div>
+          <p>
+           Anonymous key exchange, like Diffie–Hellman, does not provide
+           <a href="/wiki/Authentication" title="Authentication">
+            authentication
+           </a>
+           of the parties, and is thus vulnerable to
+           <a href="/wiki/Man-in-the-middle_attack" title="Man-in-the-middle attack">
+            man-in-the-middle attacks
+           </a>
+           .
+          </p>
+          <p>
+           A wide variety of cryptographic authentication schemes and protocols have been developed to provide authenticated key agreement to prevent man-in-the-middle and related attacks. These methods generally mathematically bind the agreed key to other agreed-upon data, such as the following:
+          </p>
+          <ul>
+           <li>
+            Public/private key pairs
+           </li>
+           <li>
+            Shared secret keys
+           </li>
+           <li>
+            Passwords
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Public_keys">
+            Public keys
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Key-agreement_protocol&amp;action=edit&amp;section=5" title="Edit section: Public keys">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           A widely used mechanism for defeating such attacks is the use of
+           <a href="/wiki/Digital_signature" title="Digital signature">
+            digitally signed
+           </a>
+           keys that must be integrity-assured: if Bob's key is signed by a
+           <a href="/wiki/Trusted_third_party" title="Trusted third party">
+            trusted third party
+           </a>
+           vouching for his identity, Alice can have considerable confidence that a signed key she receives is not an attempt to intercept by Eve. When
+           <a href="/wiki/Alice_and_Bob" title="Alice and Bob">
+            Alice and Bob
+           </a>
+           have a public-key infrastructure, they may digitally sign an agreed Diffie–Hellman key, or exchanged Diffie–Hellman public keys. Such signed keys, sometimes signed by a
+           <a href="/wiki/Certificate_authority" title="Certificate authority">
+            certificate authority
+           </a>
+           , are one of the primary mechanisms used for secure
+           <a href="/wiki/Web_traffic" title="Web traffic">
+            web traffic
+           </a>
+           (including
+           <a href="/wiki/HTTPS" title="HTTPS">
+            HTTPS
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/Secure_Sockets_Layer" title="Secure Sockets Layer">
+            SSL
+           </a>
+           or
+           <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">
+            Transport Layer Security
+           </a>
+           protocols). Other specific examples are
+           <a href="/wiki/MQV" title="MQV">
+            MQV
+           </a>
+           ,
+           <a href="/wiki/YAK_(cryptography)" title="YAK (cryptography)">
+            YAK
+           </a>
+           and the
+           <a href="/wiki/Internet_Security_Association_and_Key_Management_Protocol" title="Internet Security Association and Key Management Protocol">
+            ISAKMP
+           </a>
+           component of the IPsec protocol suite for securing Internet Protocol communications. However, these systems require care in endorsing the match between identity information and public keys by certificate authorities in order to work properly.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Hybrid_systems">
+            Hybrid systems
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Key-agreement_protocol&amp;action=edit&amp;section=6" title="Edit section: Hybrid systems">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           Hybrid systems use public-key cryptography to exchange secret keys, which are then used in a symmetric-key cryptography systems. Most practical applications of cryptography use a combination of cryptographic functions to implement an overall system that provides all of the four desirable features of secure communications (confidentiality, integrity, authentication, and non-repudiation).
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Passwords">
+            <a class="mw-redirect" href="/wiki/Passwords" title="Passwords">
+             Passwords
+            </a>
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Key-agreement_protocol&amp;action=edit&amp;section=7" title="Edit section: Passwords">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           <a href="/wiki/Password-authenticated_key_agreement" title="Password-authenticated key agreement">
+            Password-authenticated key agreement
+           </a>
+           protocols require the separate establishment of a password (which may be smaller than a key) in a manner that is both private and integrity-assured. These are designed to resist man-in-the-middle and other active attacks on the password and the established keys. For example, DH-
+           <a href="/wiki/Encrypted_key_exchange" title="Encrypted key exchange">
+            EKE
+           </a>
+           ,
+           <a class="mw-redirect" href="/wiki/SPEKE_(cryptography)" title="SPEKE (cryptography)">
+            SPEKE
+           </a>
+           , and
+           <a class="mw-redirect" href="/wiki/Secure_remote_password_protocol" title="Secure remote password protocol">
+            SRP
+           </a>
+           are password-authenticated variations of Diffie–Hellman.
+          </p>
+          <div class="mw-heading mw-heading3">
+           <h3 id="Other_tricks">
+            Other tricks
+           </h3>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Key-agreement_protocol&amp;action=edit&amp;section=8" title="Edit section: Other tricks">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <p>
+           If one has an integrity-assured way to verify a shared key over a public channel, one may engage in a
+           <a href="/wiki/Diffie%E2%80%93Hellman_key_exchange" title="Diffie–Hellman key exchange">
+            Diffie–Hellman key exchange
+           </a>
+           to derive a short-term shared key, and then subsequently authenticate that the keys match. One way is to use a voice-authenticated read-out of the key, as in
+           <a href="/wiki/PGPfone" title="PGPfone">
+            PGPfone
+           </a>
+           . Voice authentication, however, presumes that it is infeasible for a man-in-the-middle to spoof one participant's voice to the other in real-time, which may be an undesirable assumption. Such protocols may be designed to work with even a small public value, such as a password. Variations on this theme have been proposed for
+           <a href="/wiki/Bluetooth" title="Bluetooth">
+            Bluetooth
+           </a>
+           pairing protocols.
+          </p>
+          <p>
+           In an attempt to avoid using any additional out-of-band authentication factors, Davies and Price proposed the use of the
+           <a href="/wiki/Interlock_protocol" title="Interlock protocol">
+            interlock protocol
+           </a>
+           of
+           <a href="/wiki/Ron_Rivest" title="Ron Rivest">
+            Ron Rivest
+           </a>
+           and
+           <a href="/wiki/Adi_Shamir" title="Adi Shamir">
+            Adi Shamir
+           </a>
+           , which has been subject to both attack and subsequent refinement.
+          </p>
+          <div class="mw-heading mw-heading2">
+           <h2 id="See_also">
+            See also
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Key-agreement_protocol&amp;action=edit&amp;section=9" title="Edit section: See also">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <ul>
+           <li>
+            <a href="/wiki/Key_(cryptography)" title="Key (cryptography)">
+             Key (cryptography)
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Computer_security" title="Computer security">
+             Computer security
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Cryptanalysis" title="Cryptanalysis">
+             Cryptanalysis
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Secure_channel" title="Secure channel">
+             Secure channel
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Digital_signature" title="Digital signature">
+             Digital signature
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Key_encapsulation_mechanism" title="Key encapsulation mechanism">
+             Key encapsulation mechanism
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Key_management" title="Key management">
+             Key management
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Password-authenticated_key_agreement" title="Password-authenticated key agreement">
+             Password-authenticated key agreement
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Interlock_protocol" title="Interlock protocol">
+             Interlock protocol
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Zero-knowledge_password_proof" title="Zero-knowledge password proof">
+             Zero-knowledge password proof
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Neural_cryptography#Neural_key_exchange_protocol" title="Neural cryptography">
+             Neural cryptography § Neural key exchange protocol
+            </a>
+           </li>
+           <li>
+            <a href="/wiki/Quantum_key_distribution" title="Quantum key distribution">
+             Quantum key distribution
+            </a>
+           </li>
+          </ul>
+          <div class="mw-heading mw-heading2">
+           <h2 id="References">
+            References
+           </h2>
+           <span class="mw-editsection">
+            <span class="mw-editsection-bracket">
+             [
+            </span>
+            <a href="/w/index.php?title=Key-agreement_protocol&amp;action=edit&amp;section=10" title="Edit section: References">
+             <span>
+              edit
+             </span>
+            </a>
+            <span class="mw-editsection-bracket">
+             ]
+            </span>
+           </span>
+          </div>
+          <style data-mw-deduplicate="TemplateStyles:r1239543626">
+           .mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}
+          </style>
+          <div class="reflist">
+           <div class="mw-references-wrap">
+            <ol class="references">
+             <li id="cite_note-1">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-1">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <style data-mw-deduplicate="TemplateStyles:r1238218222">
+                .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}
+               </style>
+               <cite class="citation book cs1" id="CITEREFMenezesOorschotVanstone1997">
+                Menezes, A.; Oorschot, P. van; Vanstone, S. (1997).
+                <span class="id-lock-registration" title="Free registration required">
+                 <a class="external text" href="https://archive.org/details/handbookofapplie0000mene" rel="nofollow">
+                  <i>
+                   Handbook of Applied Cryptography
+                  </i>
+                 </a>
+                </span>
+                (5th ed.). CRC Press.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/0-8493-8523-7" title="Special:BookSources/0-8493-8523-7">
+                 <bdi>
+                  0-8493-8523-7
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Handbook+of+Applied+Cryptography&amp;rft.edition=5th&amp;rft.pub=CRC+Press&amp;rft.date=1997&amp;rft.isbn=0-8493-8523-7&amp;rft.aulast=Menezes&amp;rft.aufirst=A.&amp;rft.au=Oorschot%2C+P.+van&amp;rft.au=Vanstone%2C+S.&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fhandbookofapplie0000mene&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKey-agreement+protocol">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Canetti2001-2">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-Canetti2001_2-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Canetti2001_2-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFCanettiKrawczyk2001">
+                Canetti, Ran; Krawczyk, Hugo (6 May 2001).
+                <a class="external text" href="https://dl.acm.org/doi/abs/10.5555/647086.715688" rel="nofollow">
+                 "Analysis of Key-Exchange Protocols and Their Use for Building Secure Channels"
+                </a>
+                .
+                <i>
+                 Proceedings of the International Conference on the Theory and Application of Cryptographic Techniques: Advances in Cryptology
+                </i>
+                . Springer-Verlag: 453–474.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-3-540-42070-5" title="Special:BookSources/978-3-540-42070-5">
+                 <bdi>
+                  978-3-540-42070-5
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+International+Conference+on+the+Theory+and+Application+of+Cryptographic+Techniques%3A+Advances+in+Cryptology&amp;rft.atitle=Analysis+of+Key-Exchange+Protocols+and+Their+Use+for+Building+Secure+Channels&amp;rft.pages=453-474&amp;rft.date=2001-05-06&amp;rft.isbn=978-3-540-42070-5&amp;rft.aulast=Canetti&amp;rft.aufirst=Ran&amp;rft.au=Krawczyk%2C+Hugo&amp;rft_id=https%3A%2F%2Fdl.acm.org%2Fdoi%2Fabs%2F10.5555%2F647086.715688&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKey-agreement+protocol">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-3">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-3">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFBellareCanettiKrawczyk1998">
+                Bellare, Mihir; Canetti, Ran; Krawczyk, Hugo (23 May 1998).
+                <a class="external text" href="https://doi.org/10.1145/276698.276854" rel="nofollow">
+                 "A modular approach to the design and analysis of authentication and key exchange protocols (Extended abstract)"
+                </a>
+                .
+                <i>
+                 Proceedings of the thirtieth annual ACM symposium on Theory of computing - STOC '98
+                </i>
+                . Association for Computing Machinery. pp. 419–428.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1145%2F276698.276854" rel="nofollow">
+                 10.1145/276698.276854
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/0-89791-962-9" title="Special:BookSources/0-89791-962-9">
+                 <bdi>
+                  0-89791-962-9
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=A+modular+approach+to+the+design+and+analysis+of+authentication+and+key+exchange+protocols+%28Extended+abstract%29&amp;rft.btitle=Proceedings+of+the+thirtieth+annual+ACM+symposium+on+Theory+of+computing+-+STOC+%2798&amp;rft.pages=419-428&amp;rft.pub=Association+for+Computing+Machinery&amp;rft.date=1998-05-23&amp;rft_id=info%3Adoi%2F10.1145%2F276698.276854&amp;rft.isbn=0-89791-962-9&amp;rft.aulast=Bellare&amp;rft.aufirst=Mihir&amp;rft.au=Canetti%2C+Ran&amp;rft.au=Krawczyk%2C+Hugo&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1145%2F276698.276854&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKey-agreement+protocol">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-4">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-4">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFGollmann1996">
+                Gollmann, D. (6 May 1996).
+                <a class="external text" href="https://dl.acm.org/doi/10.5555/525080.884256" rel="nofollow">
+                 "What do we mean by entity authentication?"
+                </a>
+                .
+                <i>
+                 Proceedings 1996 IEEE Symposium on Security and Privacy
+                </i>
+                . IEEE Computer Society. pp. 46–54.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2FSECPRI.1996.502668" rel="nofollow">
+                 10.1109/SECPRI.1996.502668
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0-8186-7417-4" title="Special:BookSources/978-0-8186-7417-4">
+                 <bdi>
+                  978-0-8186-7417-4
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=What+do+we+mean+by+entity+authentication%3F&amp;rft.btitle=Proceedings+1996+IEEE+Symposium+on+Security+and+Privacy&amp;rft.pages=46-54&amp;rft.pub=IEEE+Computer+Society&amp;rft.date=1996-05-06&amp;rft_id=info%3Adoi%2F10.1109%2FSECPRI.1996.502668&amp;rft.isbn=978-0-8186-7417-4&amp;rft.aulast=Gollmann&amp;rft.aufirst=D.&amp;rft_id=https%3A%2F%2Fdl.acm.org%2Fdoi%2F10.5555%2F525080.884256&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKey-agreement+protocol">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-5">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-5">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFKatzLindell2021">
+                Katz, Jonathan; Lindell, Yehuda (2021).
+                <i>
+                 Introduction to modern cryptography
+                </i>
+                (Third ed.). Boca Raton London New York: CRC Press Taylor &amp; Francis Group. p. 49.
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-0815354369" title="Special:BookSources/978-0815354369">
+                 <bdi>
+                  978-0815354369
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+modern+cryptography&amp;rft.place=Boca+Raton+London+New+York&amp;rft.pages=49&amp;rft.edition=Third&amp;rft.pub=CRC+Press+Taylor+%26+Francis+Group&amp;rft.date=2021&amp;rft.isbn=978-0815354369&amp;rft.aulast=Katz&amp;rft.aufirst=Jonathan&amp;rft.au=Lindell%2C+Yehuda&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKey-agreement+protocol">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-:0-6">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-:0_6-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-:0_6-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               See
+               <a href="/wiki/Diffie%E2%80%93Hellman_key_exchange" title="Diffie–Hellman key exchange">
+                Diffie–Hellman key exchange
+               </a>
+               for a more complete history of both the secret and public development of public-key cryptography.
+              </span>
+             </li>
+             <li id="cite_note-Boyd2021-7">
+              <span class="mw-cite-backlink">
+               ^
+               <a href="#cite_ref-Boyd2021_7-0">
+                <sup>
+                 <i>
+                  <b>
+                   a
+                  </b>
+                 </i>
+                </sup>
+               </a>
+               <a href="#cite_ref-Boyd2021_7-1">
+                <sup>
+                 <i>
+                  <b>
+                   b
+                  </b>
+                 </i>
+                </sup>
+               </a>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFBoydDaviesde_KockGellert2021">
+                Boyd, Colin; Davies, Gareth T.; de Kock, Bor; Gellert, Kai; Jager, Tibor; Millerjord, Lise (2021).
+                <a class="external text" href="https://hdl.handle.net/handle/11250/2989781" rel="nofollow">
+                 "Symmetric Key Exchange with Full Forward Security and Robust Synchronization"
+                </a>
+                .
+                <i>
+                 Advances in Cryptology – ASIACRYPT 2021
+                </i>
+                . Lecture Notes in Computer Science. Vol. 13093. Springer International Publishing. pp. 681–710.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1007%2F978-3-030-92068-5_23" rel="nofollow">
+                 10.1007/978-3-030-92068-5_23
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/Hdl_(identifier)" title="Hdl (identifier)">
+                 hdl
+                </a>
+                :
+                <a class="external text" href="https://hdl.handle.net/11250%2F2989781" rel="nofollow">
+                 11250/2989781
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-3-030-92067-8" title="Special:BookSources/978-3-030-92067-8">
+                 <bdi>
+                  978-3-030-92067-8
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Symmetric+Key+Exchange+with+Full+Forward+Security+and+Robust+Synchronization&amp;rft.btitle=Advances+in+Cryptology+%E2%80%93+ASIACRYPT+2021&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.pages=681-710&amp;rft.pub=Springer+International+Publishing&amp;rft.date=2021&amp;rft_id=info%3Ahdl%2F11250%2F2989781&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-030-92068-5_23&amp;rft.isbn=978-3-030-92067-8&amp;rft.aulast=Boyd&amp;rft.aufirst=Colin&amp;rft.au=Davies%2C+Gareth+T.&amp;rft.au=de+Kock%2C+Bor&amp;rft.au=Gellert%2C+Kai&amp;rft.au=Jager%2C+Tibor&amp;rft.au=Millerjord%2C+Lise&amp;rft_id=https%3A%2F%2Fhdl.handle.net%2Fhandle%2F11250%2F2989781&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKey-agreement+protocol">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-8">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-8">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFPagniaGaertner1999">
+                Pagnia, Henning; Gaertner, Felix (1999).
+                <a class="external text" href="https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=208b22c7a094ada20736593afcc8c759c7d1b79c" rel="nofollow">
+                 "On the impossibility of fair exchange without a trusted third party"
+                </a>
+                .
+                <i>
+                 Echnical Report TUD-BS-1999-02
+                </i>
+                : 1–15.
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Echnical+Report+TUD-BS-1999-02&amp;rft.atitle=On+the+impossibility+of+fair+exchange+without+a+trusted+third+party&amp;rft.pages=1-15&amp;rft.date=1999&amp;rft.aulast=Pagnia&amp;rft.aufirst=Henning&amp;rft.au=Gaertner%2C+Felix&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fdocument%3Frepid%3Drep1%26type%3Dpdf%26doi%3D208b22c7a094ada20736593afcc8c759c7d1b79c&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKey-agreement+protocol">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-Boyd2020-9">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-Boyd2020_9-0">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation book cs1" id="CITEREFBoydMathuriaStebila2020">
+                Boyd, Colin; Mathuria, Anish; Stebila, Douglas (2020).
+                <a class="external text" href="https://link.springer.com/book/10.1007/978-3-662-58146-9" rel="nofollow">
+                 <i>
+                  Protocols for Authentication and Key Establishment
+                 </i>
+                </a>
+                . Information Security and Cryptography.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1007%2F978-3-662-58146-9" rel="nofollow">
+                 10.1007/978-3-662-58146-9
+                </a>
+                .
+                <a class="mw-redirect" href="/wiki/ISBN_(identifier)" title="ISBN (identifier)">
+                 ISBN
+                </a>
+                <a href="/wiki/Special:BookSources/978-3-662-58145-2" title="Special:BookSources/978-3-662-58145-2">
+                 <bdi>
+                  978-3-662-58145-2
+                 </bdi>
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Protocols+for+Authentication+and+Key+Establishment&amp;rft.series=Information+Security+and+Cryptography&amp;rft.date=2020&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-662-58146-9&amp;rft.isbn=978-3-662-58145-2&amp;rft.aulast=Boyd&amp;rft.aufirst=Colin&amp;rft.au=Mathuria%2C+Anish&amp;rft.au=Stebila%2C+Douglas&amp;rft_id=https%3A%2F%2Flink.springer.com%2Fbook%2F10.1007%2F978-3-662-58146-9&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKey-agreement+protocol">
+               </span>
+              </span>
+             </li>
+             <li id="cite_note-10">
+              <span class="mw-cite-backlink">
+               <b>
+                <a href="#cite_ref-10">
+                 ^
+                </a>
+               </b>
+              </span>
+              <span class="reference-text">
+               <link href="mw-data:TemplateStyles:r1238218222" rel="mw-deduplicated-inline-style"/>
+               <cite class="citation journal cs1" id="CITEREFBoyd1993">
+                Boyd, C. (June 1993).
+                <a class="external text" href="https://gnusha.org/~nmz787/pdf/Security%20Architectures%20Using%20Formal%20Methods.pdf" rel="nofollow">
+                 "Security architectures using formal methods"
+                </a>
+                <span class="cs1-format">
+                 (PDF)
+                </span>
+                .
+                <i>
+                 IEEE Journal on Selected Areas in Communications
+                </i>
+                .
+                <b>
+                 11
+                </b>
+                (5): 694–701.
+                <a class="mw-redirect" href="/wiki/Doi_(identifier)" title="Doi (identifier)">
+                 doi
+                </a>
+                :
+                <a class="external text" href="https://doi.org/10.1109%2F49.223872" rel="nofollow">
+                 10.1109/49.223872
+                </a>
+                .
+               </cite>
+               <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Journal+on+Selected+Areas+in+Communications&amp;rft.atitle=Security+architectures+using+formal+methods&amp;rft.volume=11&amp;rft.issue=5&amp;rft.pages=694-701&amp;rft.date=1993-06&amp;rft_id=info%3Adoi%2F10.1109%2F49.223872&amp;rft.aulast=Boyd&amp;rft.aufirst=C.&amp;rft_id=https%3A%2F%2Fgnusha.org%2F~nmz787%2Fpdf%2FSecurity%2520Architectures%2520Using%2520Formal%2520Methods.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKey-agreement+protocol">
+               </span>
+              </span>
+             </li>
+            </ol>
+           </div>
+          </div>
+          <!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐64999cd48f‐npjft
+Cached time: 20240926232536
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.279 seconds
+Real time usage: 0.352 seconds
+Preprocessor visited node count: 882/1000000
+Post‐expand include size: 31278/2097152 bytes
+Template argument size: 602/2097152 bytes
+Highest expansion depth: 9/100
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 38274/5000000 bytes
+Lua time usage: 0.186/10.000 seconds
+Lua memory usage: 6480184/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+          <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  323.409      1 -total
+ 47.48%  153.544      1 Template:Reflist
+ 36.08%  116.700      6 Template:Cite_book
+ 22.25%   71.968      1 Template:Short_description
+ 19.61%   63.426      1 Template:More_citations_needed
+ 18.21%   58.906      1 Template:Ambox
+ 11.02%   35.630      2 Template:Pagetype
+  7.70%   24.911      3 Template:Main_other
+  7.05%   22.792      1 Template:SDcat
+  6.33%   20.456      1 Template:Main
+-->
+          <!-- Saved in parser cache with key enwiki:pcache:idhash:63944-0!canonical and timestamp 20240926232536 and revision id 1240460412. Rendering was triggered because: page-view
+ -->
+         </meta>
+        </div>
+        <!--esi <esi:include src="/esitest-fa8a495983347898/content" /> -->
+        <noscript>
+         <img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" style="border: none; position: absolute;" width="1"/>
+        </noscript>
+        <div class="printfooter" data-nosnippet="">
+         Retrieved from "
+         <a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Key-agreement_protocol&amp;oldid=1240460412">
+          https://en.wikipedia.org/w/index.php?title=Key-agreement_protocol&amp;oldid=1240460412
+         </a>
+         "
+        </div>
+       </div>
+       <div class="catlinks" data-mw="interface" id="catlinks">
+        <div class="mw-normal-catlinks" id="mw-normal-catlinks">
+         <a href="/wiki/Help:Category" title="Help:Category">
+          Categories
+         </a>
+         :
+         <ul>
+          <li>
+           <a href="/wiki/Category:Cryptography" title="Category:Cryptography">
+            Cryptography
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Key-agreement_protocols" title="Category:Key-agreement protocols">
+            Key-agreement protocols
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">
+         Hidden categories:
+         <ul>
+          <li>
+           <a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">
+            Articles with short description
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">
+            Short description is different from Wikidata
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:Articles_needing_additional_references_from_March_2024" title="Category:Articles needing additional references from March 2024">
+            Articles needing additional references from March 2024
+           </a>
+          </li>
+          <li>
+           <a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">
+            All articles needing additional references
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </main>
+    </div>
+    <div class="mw-footer-container">
+     <footer class="mw-footer" id="footer">
+      <ul id="footer-info">
+       <li id="footer-info-lastmod">
+        This page was last edited on 15 August 2024, at 13:22
+        <span class="anonymous-show">
+         (UTC)
+        </span>
+        .
+       </li>
+       <li id="footer-info-copyright">
+        Text is available under the
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license">
+         Creative Commons Attribution-ShareAlike License 4.0
+        </a>
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" rel="license" style="display:none;">
+        </a>
+        ;
+additional terms may apply. By using this site, you agree to the
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">
+         Terms of Use
+        </a>
+        and
+        <a href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy Policy
+        </a>
+        . Wikipedia® is a registered trademark of the
+        <a href="//wikimediafoundation.org/">
+         Wikimedia Foundation, Inc.
+        </a>
+        , a non-profit organization.
+       </li>
+      </ul>
+      <ul id="footer-places">
+       <li id="footer-places-privacy">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+         Privacy policy
+        </a>
+       </li>
+       <li id="footer-places-about">
+        <a href="/wiki/Wikipedia:About">
+         About Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-disclaimers">
+        <a href="/wiki/Wikipedia:General_disclaimer">
+         Disclaimers
+        </a>
+       </li>
+       <li id="footer-places-contact">
+        <a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">
+         Contact Wikipedia
+        </a>
+       </li>
+       <li id="footer-places-wm-codeofconduct">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">
+         Code of Conduct
+        </a>
+       </li>
+       <li id="footer-places-developers">
+        <a href="https://developer.wikimedia.org">
+         Developers
+        </a>
+       </li>
+       <li id="footer-places-statslink">
+        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+         Statistics
+        </a>
+       </li>
+       <li id="footer-places-cookiestatement">
+        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+         Cookie statement
+        </a>
+       </li>
+       <li id="footer-places-mobileview">
+        <a class="noprint stopMobileRedirectToggle" href="//en.m.wikipedia.org/w/index.php?title=Key-agreement_protocol&amp;mobileaction=toggle_view_mobile">
+         Mobile view
+        </a>
+       </li>
+      </ul>
+      <ul class="noprint" id="footer-icons">
+       <li id="footer-copyrightico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/">
+         <img alt="Wikimedia Foundation" height="29" loading="lazy" src="/static/images/footer/wikimedia-button.svg" width="84"/>
+        </a>
+       </li>
+       <li id="footer-poweredbyico">
+        <a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/">
+         <img alt="Powered by MediaWiki" height="31" loading="lazy" src="/w/resources/assets/poweredby_mediawiki.svg" width="88"/>
+        </a>
+       </li>
+      </ul>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <div class="vector-settings" id="p-dock-bottom">
+   <ul>
+   </ul>
+  </div>
+  <script>
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-64999cd48f-rgrdj","wgBackendResponseTime":144,"wgPageParseReport":{"limitreport":{"cputime":"0.279","walltime":"0.352","ppvisitednodes":{"value":882,"limit":1000000},"postexpandincludesize":{"value":31278,"limit":2097152},"templateargumentsize":{"value":602,"limit":2097152},"expansiondepth":{"value":9,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":38274,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  323.409      1 -total"," 47.48%  153.544      1 Template:Reflist"," 36.08%  116.700      6 Template:Cite_book"," 22.25%   71.968      1 Template:Short_description"," 19.61%   63.426      1 Template:More_citations_needed"," 18.21%   58.906      1 Template:Ambox"," 11.02%   35.630      2 Template:Pagetype","  7.70%   24.911      3 Template:Main_other","  7.05%   22.792      1 Template:SDcat","  6.33%   20.456      1 Template:Main"]},"scribunto":{"limitreport-timeusage":{"value":"0.186","limit":"10.000"},"limitreport-memusage":{"value":6480184,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-64999cd48f-npjft","timestamp":"20240926232536","ttl":2592000,"transientcontent":false}}});});
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https:\/\/schema.org","@type":"Article","name":"Key-agreement protocol","url":"https:\/\/en.wikipedia.org\/wiki\/Key-agreement_protocol","sameAs":"http:\/\/www.wikidata.org\/entity\/Q3306713","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q3306713","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-07-24T11:16:19Z","dateModified":"2024-08-15T13:22:24Z","headline":"protocol whereby two or more parties can agree on a key in such a way that both influence the outcome"}
+  </script>
+ </body>
+</html>
