@@ -50,7 +50,7 @@ def show_index():
     context = {
         "results": results,
         "q": query,
-        "weight": weight,
+        "w": weight,
     }
 
     return flask.render_template("base.html", **context)

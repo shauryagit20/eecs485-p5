@@ -14,89 +14,39 @@ def _first_existing(*paths):
 
 
 def load_index():
-    """
-    Load:
-    - inverted index segment(s)
-    - pagerank.out
-    - stopwords.txt
-
-    into global in-memory structures.
-    Runs ONCE at startup.
-    """
-
-    # ----------------------------
-    # Resolve index path (IMPORTANT)
-    # ----------------------------
+    """Load inverted index, pagerank, and stopwords into memory."""
+    # Load single inverted index segment
     index_path = Path(app.config["INDEX_PATH"])
+    data_dir = index_path.parent.parent  # up from inverted_index/ to index/
 
-    segments_dir = index_path.parent
-    data_dir = segments_dir.parent
-
-    # ----------------------------
-    # Load inverted index segment(s)
-    # ----------------------------
-    raw = {}
-
-    for file in sorted(segments_dir.glob("inverted_index_*.txt")):
-        with file.open(encoding="utf-8") as f:
-            for line in f:
-                parts = line.strip().split()
-                if len(parts) < 2:
-                    continue
-
-                term = parts[0]
-                idf = float(parts[1])
-
-                postings = parts[2:]
-
-                # docid tf norm repeating triples
-                for i in range(0, len(postings), 3):
-                    docid = int(postings[i])
-                    tf = float(postings[i + 1])
-
-                    if term not in raw:
-                        raw[term] = (idf, defaultdict(float))
-
-                    raw[term][1][docid] += tf
-
-    # ----------------------------
-    # Compute document norms
-    # ----------------------------
-    doc_norm_sq = defaultdict(float)
-
-    for idf, doc_dict in raw.values():
-        for docid, tf in doc_dict.items():
-            doc_norm_sq[docid] += (tf * idf) ** 2
-
-    doc_norm = {
-        docid: math.sqrt(val) for docid, val in doc_norm_sq.items()
-    }
-
-    # ----------------------------
-    # Build final INDEX structure
-    # ----------------------------
     INDEX.clear()
 
-    for term, (idf, doc_dict) in raw.items():
-        INDEX[term] = (
-            idf,
-            {
-                docid: (tf, doc_norm[docid])
-                for docid, tf in doc_dict.items()
-            },
-        )
+    with index_path.open(encoding="utf-8") as f:
+        for line in f:
+            parts = line.strip().split()
+            if len(parts) < 2:
+                continue
 
-    # ----------------------------
+            term = parts[0]
+            idf = float(parts[1])
+            postings = parts[2:]
+
+            if term not in INDEX:
+                INDEX[term] = (idf, {})
+
+            for i in range(0, len(postings), 3):
+                docid = int(postings[i])
+                tf = float(postings[i + 1])
+                norm = float(postings[i + 2])
+                INDEX[term][1][docid] = (tf, norm)
+
     # Load PageRank
-    # ----------------------------
     PAGERANK.clear()
-
-    pagerank_path = _first_existing(
-        segments_dir / "pagerank.out",
-        data_dir / "pagerank.out",
-    )
-
-    if pagerank_path is None:
+    pagerank_path = data_dir / "pagerank.out"
+    if not pagerank_path.exists():
+        # Also check same directory as the index file
+        pagerank_path = index_path.parent / "pagerank.out"
+    if not pagerank_path.exists():
         raise FileNotFoundError("pagerank.out not found")
 
     with pagerank_path.open(encoding="utf-8") as f:
@@ -107,17 +57,12 @@ def load_index():
             docid, score = line.split(",", 1)
             PAGERANK[int(docid)] = float(score)
 
-    # ----------------------------
     # Load Stopwords
-    # ----------------------------
     STOPWORDS.clear()
-
-    stopwords_path = _first_existing(
-        segments_dir / "stopwords.txt",
-        data_dir / "stopwords.txt",
-    )
-
-    if stopwords_path is None:
+    stopwords_path = data_dir / "stopwords.txt"
+    if not stopwords_path.exists():
+        stopwords_path = index_path.parent / "stopwords.txt"
+    if not stopwords_path.exists():
         raise FileNotFoundError("stopwords.txt not found")
 
     with stopwords_path.open(encoding="utf-8") as f:

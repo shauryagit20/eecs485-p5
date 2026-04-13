@@ -28,7 +28,7 @@
                         <a class="doc_url" href="{{ doc.url }}">{{ doc.display_url }}</a>
                         <div class="doc_title">{{ doc.title }}</div>
                         {% if doc.summary %}
-                            <div class="doc_summary">{ doc.summary }</div>
+                            <div class="doc_summary">{{ doc.summary }}</div>
                         {% else %}
                             <div class="doc_summary">No summary available</div>
                         {% endif %}
