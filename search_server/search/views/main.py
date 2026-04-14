@@ -1,10 +1,9 @@
 """Main.py handel '/' routes for search server."""
+import threading
+from urllib.parse import unquote
 import flask
 import search
 import requests
-import threading
-from urllib.parse import unquote
-import heapq
 
 
 @search.app.route('/')
@@ -18,7 +17,7 @@ def show_index():
     results = []
 
     def make_request(url):
-        r = requests.get(url, params={"q": query, "w": weight})
+        r = requests.get(url, params={"q": query, "w": weight}, timeout=10)
         results.extend(r.json()["hits"])
     threads = []
     for url in search.app.config["SEARCH_INDEX_SEGMENT_API_URLS"]:

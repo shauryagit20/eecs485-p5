@@ -1,7 +1,6 @@
 """model.py -- connecting & closing sqlite3 database."""
-import flask
-import search
 import sqlite3
+import flask
 
 
 def get_db():

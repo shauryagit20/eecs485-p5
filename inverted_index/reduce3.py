@@ -6,16 +6,16 @@ from collections import defaultdict
 
 
 def emit(
-    term: str,
-    idf: str,
-    postings: list[tuple[str, str]],
-    doc_norm: dict[str, float],
+    emit_term: str,
+    emit_idf: str,
+    emit_postings: list[tuple[str, str]],
+    emit_doc_norm: dict[str, float],
 ) -> None:
     """Emit final inverted-index line for one term."""
-    postings.sort(key=lambda posting: posting[0])
-    parts = [term, idf]
-    for doc_id, tf in postings:
-        parts.extend([doc_id, tf, str(doc_norm[doc_id])])
+    emit_postings.sort(key=lambda posting: posting[0])
+    parts = [emit_term, emit_idf]
+    for emit_doc_id, emit_tf in emit_postings:
+        parts.extend([emit_doc_id, emit_tf, str(emit_doc_norm[emit_doc_id])])
     print(" ".join(parts))
 
 

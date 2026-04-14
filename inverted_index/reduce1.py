@@ -1,3 +1,4 @@
+#!/usr/bin/env -S python3 -u
 """Reduce 1."""
 import sys
 

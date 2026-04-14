@@ -25,7 +25,8 @@ Cleaning pipeline:
 import sys
 import re
 
-STOPWORDS = set(open("stopwords.txt").read().split())
+with open("stopwords.txt", encoding="utf-8") as f:
+    STOPWORDS = set(f.read().split())
 
 
 def _clean(text):
@@ -33,8 +34,8 @@ def _clean(text):
     text = text.casefold()
     _terms = text.split()
 
-    terms = [term for term in _terms if term not in STOPWORDS]
-    return terms
+    filtered_terms = [term for term in _terms if term not in STOPWORDS]
+    return filtered_terms
 
 
 for line in sys.stdin:

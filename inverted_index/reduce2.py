@@ -11,7 +11,7 @@ inverted_index_tf: DefaultDict[str, DefaultDict[str, int]] = defaultdict(
 )
 inverted_index_idf: dict[str, float] = {}
 
-with open("total_document_count.txt", "r") as f:
+with open("total_document_count.txt", "r", encoding="utf-8") as f:
     total_document_count = int(f.read())
 
 
