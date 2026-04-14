@@ -1,5 +1,3 @@
-"""Index Server."""
-
 import os
 from pathlib import Path
 

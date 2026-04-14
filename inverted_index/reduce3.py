@@ -1,5 +1,5 @@
 #!/usr/bin/env -S python3 -u
-"""Reduce 3."""
+
 import sys
 import math
 from collections import defaultdict

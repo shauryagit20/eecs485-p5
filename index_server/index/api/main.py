@@ -1,4 +1,4 @@
-"""Index Server API main."""
+# index_server/index/api/main.py
 
 import math
 import re
@@ -12,7 +12,6 @@ bp = Blueprint("api", __name__)
 
 @bp.route("/api/v1/")
 def services():
-    """Return all available services."""
     return jsonify({
         "hits": "/api/v1/hits/",
         "url": "/api/v1/"
@@ -20,7 +19,6 @@ def services():
 
 
 def clean_query(text):
-    """Clean query using regex."""
     text = re.sub(r"[^a-zA-Z0-9 ]+", "", text)
     text = text.casefold()
     _terms = text.split()
@@ -31,7 +29,6 @@ def clean_query(text):
 
 @bp.route("/api/v1/hits/")
 def hits():
-    """Return search results for a query."""
     query = request.args.get("q", "")
     w = float(request.args.get("w", 0.5))
 

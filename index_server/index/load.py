@@ -1,5 +1,5 @@
-"""Load index, pagerank, and stopwords into memory."""
-
+import math
+from collections import defaultdict
 from pathlib import Path
 
 from index import INDEX, PAGERANK, STOPWORDS, app
