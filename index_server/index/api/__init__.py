@@ -1,4 +1,4 @@
-# index_server/index/api/__init__.py
+"""Index Server API."""
 
 from index import app
 from index.api.main import bp
