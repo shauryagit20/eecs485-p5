@@ -1,4 +1,5 @@
 #!/usr/bin/env -S python3 -u
+"""Partition."""
 import sys
 
 

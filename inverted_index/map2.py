@@ -1,7 +1,8 @@
 #!/usr/bin/env -S python3 -u
 
 
-"""Map 2: Clean parsed document text and emit term-document pairs.
+r"""
+Map 2: Clean parsed document text and emit term-document pairs.
 
 Reads parsed documents from stdin, applies normalization and filtering, and
 emits one record per remaining term occurrence.
@@ -34,7 +35,6 @@ def _clean(text):
 
     terms = [term for term in _terms if term not in STOPWORDS]
     return terms
-
 
 
 for line in sys.stdin:
